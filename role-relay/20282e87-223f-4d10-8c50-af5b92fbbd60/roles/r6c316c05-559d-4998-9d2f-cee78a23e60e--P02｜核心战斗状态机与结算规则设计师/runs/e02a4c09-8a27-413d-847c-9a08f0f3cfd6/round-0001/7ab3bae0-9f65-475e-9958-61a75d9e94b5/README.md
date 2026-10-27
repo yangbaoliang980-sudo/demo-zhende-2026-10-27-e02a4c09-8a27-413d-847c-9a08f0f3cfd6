@@ -1,0 +1,106 @@
+# P02｜核心战斗状态机与结算规则设计师
+
+S01 规则交付进行中 · 工程集成受阻
+
+## 一、上游实际核验
+
+已使用 GitHub 连接及本地执行工具检查上游资料。
+
+| 核验项目 | 实际结果 |
+| --- | --- |
+| V6.0 岗位职责 | 已读取 GitHub 固定版本 |
+| GitHub 固定提交 | `8c370d731c323f86ff19642f4cc73f818498f641` |
+| P01 完整交接 ZIP | SHA-256 与交接声明一致 |
+| ZIP 内部完整性 | 16 项文件，CRC 检查通过 |
+| P01 需求、任务与决策基线 | 已取得完整 ZIP 内版本 |
+| `actual_path_mapping.json` | BLOCKED，未取得 |
+| 真实游戏运行工程 | 尚未核实，不能认定已存在 |
+| P35 独立验收 | NOT_RUN |
+
+发现一项需要保留的上游文件差异：独立上传的 `decisions_pending(1).tsv` 只有 11 字节，而完整 ZIP 内对应文件为 3,021 字节，包含 DEC-001 至 DEC-012。此次以通过 SHA-256 清单核对的完整 ZIP 内版本作为主要输入，保留差异记录，不修改 P01 原件。
+
+执行边界： 本岗可独立提交规则文件和可检查的确定性测试向量，但在 P13 完成真实路径映射前，不向 GitHub 工程路径写入任何文件。
+
+## 二、本岗已形成的规则成果
+
+# 33
+回放测试夹具
+
+# 30
+结算优先级规则
+
+# 24
+终局与阶段真值案例
+
+采用以下核心不变量：
+
+1. P14 唯一写入：费用、牌区、生命、护盾和回合状态在同一个权威状态事务中提交。
+2. 拒绝请求不产生副作用：无效目标、资源不足、旧版本指令和重复出牌不能导致额外扣费。
+3. 死亡连锁后判胜负：WIN、LOSS、DRAW 互斥，终局事件不可重入。
+4. BOSS 阶段不得抢在终局之前：只有仍存活且符合阶段条件的 BOSS 才能提出切阶段请求。
+5. 动画与战斗计算隔离：相同快照、命令和随机种子必须产生相同的逻辑结果。
+
+已实际运行本岗的静态规范检查，当前通过 3,917 项断言。这些断言验证的是文件结构、预期事件与快照的一致性、数值守恒、随机序列和去重预期；不等于 P14 战斗程序已通过 3,917 项测试。
+
+## 三、正式交付文件
+
+P02 S01 V0.1 完整交付包
+15 份实体文件 · 约 47 KB · ZIP CRC 与清单哈希校验通过
+
+下载 P02 完整交付 ZIP
+
+ZIP SHA-256：`969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501`
+
+四份岗位强制交付文件均可独立下载：
+
+| 文件 | 下载 |
+| --- | --- |
+| `battle_state_machine.md` | 状态机完整规范 |
+| `effect_priority.tsv` | 结算优先级表 |
+| `terminal_phase_truth_table.tsv` | 终局与阶段真值表 |
+| `battle_replay_fixtures.json` | 确定性回放测试向量 |
+
+另外提供 可编辑 Mermaid 状态机图、接口 RFC 与阻塞说明、实际静态检查日志 和 完整交接 README。
+
+## 四、正式验收状态
+
+| 验收层次 | 状态 |
+| --- | --- |
+| P02 实体文件生成 | PASS |
+| 本岗静态一致性校验 | PASS |
+| ZIP 完整性及哈希校验 | PASS |
+| P13 正式 DTO 与路径映射 | BLOCKED |
+| P14 实际战斗运行时 | NOT_RUN |
+| P32 独立单元/契约测试 | NOT_RUN |
+| 真实游戏与动画等价测试 | NOT_RUN |
+| P35 独立审核 | NOT_RUN |
+| 跨岗位源码集成 | NOT_RUN |
+
+本岗结论：`LOCAL_SPEC_DELIVERED / IMPLEMENTATION_BLOCKED`。
+
+## 五、下一岗位交接
+
+本次文件可以直接提供给 P13 进行正式 DTO 与路径映射审查；P03、P05、P06、P14、P15 可据此开展各自范围内的设计或独立实现。P32 接收回放向量后，需针对 P14 的真实运行结果执行独立测试。
+
+目前所有下游回执仍为待签收，未擅自修改 GitHub 仓库，也没有代替 P14 开发战斗运行时。
+
+P02 本轮职责范围内的实体成果已交付，正式工程准入和独立验收仍待解除阻塞。
+
+---
+
+## 本次归档的原始文件
+
+- [requirements_baseline_v6.txt](files/documents/requirements_baseline_v6.txt)
+- [decisions_pending.tsv](files/data/decisions_pending.tsv)
+- [task_register.tsv](files/data/task_register.tsv)
+- [handoff_receipts.tsv](files/data/handoff_receipts.tsv)
+- [gate_issues.tsv](files/data/gate_issues.tsv)
+- [P01_S00_V6_完整交接包.zip](files/archives/P01_S00_V6_%E5%AE%8C%E6%95%B4%E4%BA%A4%E6%8E%A5%E5%8C%85.zip)
+- [battle_state_machine.md](files/documents/battle_state_machine.md)
+- [effect_priority.tsv](files/data/effect_priority.tsv)
+- [terminal_phase_truth_table.tsv](files/data/terminal_phase_truth_table.tsv)
+- [battle_replay_fixtures.json](files/data/battle_replay_fixtures.json)
+- [interface_rfc_and_blockers.md](files/documents/interface_rfc_and_blockers.md)
+- [P02_DELIVERY_README.md](files/documents/P02_DELIVERY_README.md)
+- [P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip](files/archives/P02_S01_%E6%88%98%E6%96%97%E7%8A%B6%E6%80%81%E6%9C%BA%E4%B8%8E%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%BB%93%E7%AE%97%E8%A7%84%E5%88%99_V0.1_%E5%AE%8C%E6%95%B4%E4%BA%A4%E4%BB%98%E5%8C%85.zip)
+
