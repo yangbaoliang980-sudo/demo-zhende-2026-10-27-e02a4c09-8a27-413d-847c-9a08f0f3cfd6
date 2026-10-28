@@ -1,0 +1,42 @@
+[
+  {
+    "local_origin": "work/intake/archives/e9818b1abe21a7e1/files/046/P08_Anki_Reward_Policy_V0.1.zip",
+    "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+    "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab",
+    "size": 2523333,
+    "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+    "commit": "021008f602b13cba62a15bc317cb5074e2086a74",
+    "repository_path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+    "status": "PASS_BYTES_MATCH_GIT_BLOB_TREE"
+  },
+  {
+    "local_origin": "work/intake/archives/e9818b1abe21a7e1/files/039/study_policy_draft.md",
+    "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+    "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba",
+    "size": 18083,
+    "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+    "commit": "021008f602b13cba62a15bc317cb5074e2086a74",
+    "repository_path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/study_policy_draft.md",
+    "status": "PASS_BYTES_MATCH_GIT_BLOB_TREE"
+  },
+  {
+    "local_origin": "work/intake/archives/e9818b1abe21a7e1/files/037/P08_delivery_receipt.json",
+    "sha256": "e9673a528e697a51cdc55d683621cc08b53b9626834547e2ae5a966463459c24",
+    "git_blob_sha1": "92d78fd0036278774cf9f2f51b7f44c0cb03c1ce",
+    "size": 14175,
+    "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+    "commit": "021008f602b13cba62a15bc317cb5074e2086a74",
+    "repository_path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/data/P08_delivery_receipt.json",
+    "status": "PASS_BYTES_MATCH_GIT_BLOB_TREE"
+  },
+  {
+    "local_origin": "work/intake/archives/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "size": 226868,
+    "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+    "status": "PASS_BYTES_MATCH_GIT_BLOB_TREE"
+  }
+]

@@ -1,0 +1,4 @@
+task_id	requirement_id	source	artifact	author_verification	independent_owner	independent_status
+P09-S04-S05-MAP-001	REQ-012	SRC-P01-TRACE	content/linguistic/pos_mapping_rules.json;category_dictionary.json;classification_cases.jsonl	verify_delivery.py;test_pos_mapper.py	P22/P32/P35	NOT_RUN
+P09-S04-S05-MAP-001	REQ-011	SRC-P01-TRACE;SRC-P08-POLICY	design/linguistic/anki_field_observations.md;reference/pos_mapper.py	No real events claimed; reference refuses ANKI_OBSERVED	P10/P32/P35	NOT_RUN
+P09-S04-S05-MAP-001	REQ-026	SRC-P01-TRACE;SRC-P08-POLICY	design/linguistic/override_and_rollback.md;content/linguistic/override_log.synthetic.jsonl	test_override_replay.py;no_wallet_delta	P11/P21/P32/P35	NOT_RUN

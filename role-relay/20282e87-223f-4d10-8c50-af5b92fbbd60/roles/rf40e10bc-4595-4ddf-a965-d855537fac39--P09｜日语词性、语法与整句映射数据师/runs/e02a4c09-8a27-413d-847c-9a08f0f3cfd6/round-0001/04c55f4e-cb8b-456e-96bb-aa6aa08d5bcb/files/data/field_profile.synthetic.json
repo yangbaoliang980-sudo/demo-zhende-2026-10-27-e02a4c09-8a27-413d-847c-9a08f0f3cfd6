@@ -1,0 +1,24 @@
+{
+  "schema_version": "P09-FIELD-PROFILE/0.1.0-proposal",
+  "profile_id": "P09-SYNTHETIC-JA/0.1.0",
+  "usage": "SYNTHETIC_ONLY",
+  "authorization_ref": "SYNTHETIC_FIXTURE_NO_REAL_GRANT",
+  "scope_ref": "syn:collection-a:note-type-a:template-0",
+  "bindings": {
+    "category_label": "GameCategory",
+    "unit_kind": "StudyUnit",
+    "pos_label": "品詞",
+    "lemma": "Expression",
+    "context": "Sentence"
+  },
+  "allowed_fields": [
+    "GameCategory",
+    "StudyUnit",
+    "品詞",
+    "Expression",
+    "Sentence"
+  ],
+  "actual_anki_version": null,
+  "actual_note_type": null,
+  "actual_grant_sha256": null
+}

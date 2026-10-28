@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scope": "SYNTHETIC_CLI_SMOKE_ONLY",
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-B",
+    "design/linguistic/reference/demo.py",
+    "--input",
+    "content/linguistic/example_entries.synthetic.jsonl",
+    "--rules",
+    "content/linguistic/pos_mapping_rules.json",
+    "--rules-sha256",
+    "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+    "--rules-version",
+    "P09-POS-MAP/0.1.0-proposal",
+    "--profile",
+    "content/linguistic/field_profile.synthetic.json"
+  ],
+  "cwd": "/workspace/scratch/9f6767b845ea/P09_Linguistic_Mapping_V0.1",
+  "exit_code": 0,
+  "output_rows": 24,
+  "recorded_at_utc": "2026-10-28T08:00:26.995815+00:00",
+  "stdout_sha256": "2ff53123da62e6c10945a7fb6d5df9c16291e14d3f01b81f64230f90ad0be37e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

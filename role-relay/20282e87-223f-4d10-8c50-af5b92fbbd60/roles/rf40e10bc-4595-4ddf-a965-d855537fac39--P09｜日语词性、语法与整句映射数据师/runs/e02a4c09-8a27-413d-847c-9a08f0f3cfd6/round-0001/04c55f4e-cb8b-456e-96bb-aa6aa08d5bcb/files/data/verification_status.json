@@ -1,0 +1,41 @@
+{
+  "schema_version": "P09-VALIDATION-STATUS/0.1.0",
+  "authoritative_run": "design/linguistic/evidence/author_run_003",
+  "source_integrity": "PASS",
+  "source_counts": {
+    "unique_zip_archives": 12,
+    "zip_occurrences": 32,
+    "relay_manifest_entries": 153,
+    "tsv_manifest_entries": 252,
+    "loose_manifests_not_applicable": 5,
+    "source_snapshots": 8,
+    "git_blob_bindings": 4
+  },
+  "author_data_cases": {
+    "status": "PASS",
+    "passed": 72,
+    "total": 72,
+    "scope": "SYNTHETIC_ONLY"
+  },
+  "author_reference_unit": {
+    "status": "PASS",
+    "test_methods": 34,
+    "contains_same_72_cases": true
+  },
+  "cli_demo": "PASS",
+  "formal_preflight": {
+    "status": "BLOCKED",
+    "exit_code": 3
+  },
+  "independent_design_review": "NOT_RUN",
+  "P22_schema_engine_validation": "NOT_RUN",
+  "P32_independent_unit": "NOT_RUN",
+  "formal_contract_tests": "NOT_RUN",
+  "P33_manual": "NOT_RUN",
+  "target_machine": "NOT_RUN",
+  "real_anki_E2E": "NOT_RUN",
+  "P35_gate": "NOT_RUN",
+  "real_anki_observed_events": 0,
+  "real_rewards_issued": 0,
+  "accuracy_claim": null
+}

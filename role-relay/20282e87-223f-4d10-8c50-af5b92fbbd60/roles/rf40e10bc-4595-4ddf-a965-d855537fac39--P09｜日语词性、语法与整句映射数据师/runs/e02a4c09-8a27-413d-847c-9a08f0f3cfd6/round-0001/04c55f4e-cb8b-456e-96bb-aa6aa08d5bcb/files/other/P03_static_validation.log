@@ -1,0 +1,15 @@
+command: /opt/pyvenv/bin/python content/cards/validate_card_content.py --p01 /mnt/data/P01_S00_V6_完整交接包(2).zip --p02 /mnt/data/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包(1).zip
+working_directory: /mnt/data/P03_S01_S02_卡牌内容交付_V0.1
+python: 3.13.5
+exit_code: 0
+--- stdout ---
+P03_STATIC_CONTENT_VALIDATION: PASS
+cards=10 active_mock_cards=8 proposed_blocked_cards=2
+character_fixture_slots=4 ordered_parties=24 choice_cases=17
+effect_examples=10 validator_checks=1747 negative_mutation_tests_rejected=6
+upstream_P01_manifest=15/15 verified upstream_P02_manifest=14/14 verified
+P13_SCHEMA/P22_GLOBAL_ID/P15_DECKPATCH/P14_RUNTIME/P32_INDEPENDENT/P35_GATE: NOT_RUN_OR_BLOCKED
+
+--- stderr ---
+
+classification: P03_LOCAL_STATIC_ONLY; NO_P14_RUNTIME_NO_P32_INDEPENDENT_NO_P35_REVIEW

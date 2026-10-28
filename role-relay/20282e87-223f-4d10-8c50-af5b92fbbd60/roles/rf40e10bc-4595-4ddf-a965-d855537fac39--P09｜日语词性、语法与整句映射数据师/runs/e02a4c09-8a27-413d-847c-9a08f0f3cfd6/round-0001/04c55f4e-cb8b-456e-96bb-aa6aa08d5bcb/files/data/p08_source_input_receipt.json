@@ -1,0 +1,399 @@
+{
+  "format_version": "P08-SOURCE-RECEIPT/0.1.0",
+  "task_id": "P08-S04-S05-POLICY-001",
+  "policy_version": "P08-REWARD-POLICY/0.1.0-proposal",
+  "archive_inputs": [
+    {
+      "source_id": "ORIGINAL-RELAY",
+      "package_path": "design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip",
+      "source_path": "upload/relay-materials-1-3c7e523083.zip",
+      "size_bytes": 2559544,
+      "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "origin": "user_uploaded_attachment",
+      "library_file_id": "libfile_705a2d5e4e2c81919ad0ec49033fcf78"
+    },
+    {
+      "source_id": "ORIGINAL-P07",
+      "package_path": "design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+      "source_path": "intake/p07_linked/P07_Stage_Delivery_V0.1.zip",
+      "size_bytes": 1214430,
+      "sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "origin": "user_supplied_exact_library_link",
+      "library_file_id": "libfile_2d4cd8ee786c81918587e7546bc2878f"
+    }
+  ],
+  "resolved_inputs": [
+    {
+      "source_id": "SRC-V6",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "source_version": "V6.0",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+        "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+        "url": "https://github.com/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/blob/8c370d731c323f86ff19642f4cc73f818498f641/role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--%E7%AC%AC%E5%85%AD%E8%BD%AE%EF%BD%9C%E6%9C%80%E7%BB%88%E7%A0%94%E5%8F%91%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%B2%97%E4%BD%8D%E8%81%8C%E8%B4%A3%E5%86%BB%E7%BB%93%E5%AE%98/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/%E7%AC%AC%E5%85%AD%E8%BD%AE_%E6%B8%B8%E6%88%8F%E7%A0%94%E5%8F%91%E5%B2%97%E4%BD%8D%E4%BD%93%E7%B3%BB%E6%9C%80%E7%BB%88%E5%86%BB%E7%BB%93%E7%89%88V6.0.txt",
+        "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+      }
+    },
+    {
+      "source_id": "SRC-P01-REQ",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p01_requirements.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "source_version": "P01-S00-V0.1",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/006/P01_S00_V6_完整交接包.zip",
+          "spec/product/requirements_baseline_v6.txt"
+        ],
+        "inner_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+        "fixed_source_path": "intake/139034e2179f/spec/product/requirements_baseline_v6.txt"
+      }
+    },
+    {
+      "source_id": "SRC-P01-TRACE",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p01_requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "source_version": "P01-REQ-V0.1",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/006/P01_S00_V6_完整交接包.zip",
+          "spec/product/requirements_traceability.tsv"
+        ],
+        "inner_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+        "fixed_source_path": "intake/139034e2179f/spec/product/requirements_traceability.tsv"
+      }
+    },
+    {
+      "source_id": "SRC-P01-DEC",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p01_decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "source_version": "P01-S00-V0.1",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/006/P01_S00_V6_完整交接包.zip",
+          "planning/decisions/decisions_pending.tsv"
+        ],
+        "inner_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+        "fixed_source_path": "intake/139034e2179f/planning/decisions/decisions_pending.tsv"
+      }
+    },
+    {
+      "source_id": "SRC-P01-SCOPE",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p01_scope.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "source_version": "P01-S00-V0.1",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/006/P01_S00_V6_完整交接包.zip",
+          "spec/product/prd_scope_v0.md"
+        ],
+        "inner_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+        "fixed_source_path": "intake/139034e2179f/spec/product/prd_scope_v0.md"
+      }
+    },
+    {
+      "source_id": "SRC-P05-PARAM",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p05_balance_parameters.tsv",
+      "size_bytes": 25009,
+      "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487",
+      "source_version": "P05-BALANCE-0.1.0-provisional",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+          "content/balance/balance_parameters.tsv"
+        ],
+        "inner_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+        "fixed_source_path": "intake/98592b1b16bd/content/balance/balance_parameters.tsv"
+      }
+    },
+    {
+      "source_id": "SRC-P05-ABUSE",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p05_reward_abuse_cases.md",
+      "size_bytes": 6147,
+      "sha256": "0bf10cacae1820528d7a6e4d1d76e1d7f7e600142c38364cb659b234991b54c1",
+      "source_version": "P05-BALANCE-0.1.0-provisional",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+          "design/balance/reward_abuse_cases.md"
+        ],
+        "inner_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+        "fixed_source_path": "intake/98592b1b16bd/design/balance/reward_abuse_cases.md"
+      }
+    },
+    {
+      "source_id": "SRC-P05-BUDGET",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p05_stage_resource_budget.tsv",
+      "size_bytes": 1381,
+      "sha256": "d4849f7f8237eec1d359ae06d7a0689b3500552ed17dbd1bb67213b5f4f225d9",
+      "source_version": "P05-BALANCE-0.1.0-provisional",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+          "content/balance/stage_resource_budget.tsv"
+        ],
+        "inner_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+        "fixed_source_path": "intake/98592b1b16bd/content/balance/stage_resource_budget.tsv"
+      }
+    },
+    {
+      "source_id": "SRC-P05-RFC",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p05_interface_rfc.md",
+      "size_bytes": 4088,
+      "sha256": "6ba91ea29b4adef4da2e59dfb2f8d52ea3feaddc7b697eff7c4a4d3ed554358a",
+      "source_version": "P05-BALANCE-0.1.0-provisional",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-RELAY",
+        "member_chain": [
+          "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+          "design/balance/interface_rfc_blockers.md"
+        ],
+        "inner_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+        "fixed_source_path": "intake/98592b1b16bd/design/balance/interface_rfc_blockers.md"
+      }
+    },
+    {
+      "source_id": "SRC-P07-POLICY",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p07_first_clear_policy.md",
+      "size_bytes": 10814,
+      "sha256": "af618365ca6a875489589dfe20c9ae4be2c11f1569edb0251fc9e0c3eff3be1f",
+      "source_version": "P07-STAGES-0.1.0-proposal",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-P07",
+        "member_chain": [
+          "P07_Stage_Delivery_V0.1/design/stages/first_clear_policy.md"
+        ],
+        "fixed_source_path": "intake/p07/P07_Stage_Delivery_V0.1/design/stages/first_clear_policy.md"
+      }
+    },
+    {
+      "source_id": "SRC-P07-GRAPH",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p07_stage_graph.json",
+      "size_bytes": 12644,
+      "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+      "source_version": "P07-STAGES-0.1.0-proposal",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-P07",
+        "member_chain": [
+          "P07_Stage_Delivery_V0.1/content/stages/stage_graph.json"
+        ],
+        "fixed_source_path": "intake/p07/P07_Stage_Delivery_V0.1/content/stages/stage_graph.json"
+      }
+    },
+    {
+      "source_id": "SRC-P07-REWARDS",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p07_stage_rewards.tsv",
+      "size_bytes": 2597,
+      "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+      "source_version": "P07-STAGES-0.1.0-proposal",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-P07",
+        "member_chain": [
+          "P07_Stage_Delivery_V0.1/content/stages/stage_rewards.tsv"
+        ],
+        "fixed_source_path": "intake/p07/P07_Stage_Delivery_V0.1/content/stages/stage_rewards.tsv"
+      }
+    },
+    {
+      "source_id": "SRC-P07-RFC",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p07_interface_rfc.md",
+      "size_bytes": 5238,
+      "sha256": "77a835355414a01de665f6ba66b2588c89a67e83fcfc1c1211961ed8be50d59b",
+      "source_version": "P07-STAGES-0.1.0-proposal",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "root_archive_source": "ORIGINAL-P07",
+        "member_chain": [
+          "P07_Stage_Delivery_V0.1/design/stages/interface_rfc_and_blockers.md"
+        ],
+        "fixed_source_path": "intake/p07/P07_Stage_Delivery_V0.1/design/stages/interface_rfc_and_blockers.md"
+      }
+    },
+    {
+      "source_id": "SRC-P07-ANSWER",
+      "package_path": "design/anki_rewards/evidence/readonly_sources/p07_github_answer.md",
+      "size_bytes": 12131,
+      "sha256": "bb64d15fde5e404e08bf5b633ff54c3532c85b7f8d99f4e030f0973159c2592a",
+      "source_version": "a44a2d92d388a3456b34ec3594663cc78a5c031c",
+      "inspection": "CONTENT_READ_AND_BYTES_VERIFIED",
+      "authority": "FROZEN_REFERENCE_NOT_POLICY_APPROVAL",
+      "origin": {
+        "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+        "commit": "a44a2d92d388a3456b34ec3594663cc78a5c031c",
+        "url": "https://github.com/yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6/blob/a44a2d92d388a3456b34ec3594663cc78a5c031c/role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07%EF%BD%9C%E7%AB%A0%E8%8A%82%E6%8E%A8%E5%85%B3%E3%80%81%E5%85%B3%E5%8D%A1%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%8E%89%E8%90%BD%E7%AD%96%E5%88%92/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/answer.md",
+        "git_blob_sha1": "4b3bd74ccd455de5ed263bfd5b3b1d793453150e"
+      }
+    }
+  ],
+  "missing_inputs": [
+    {
+      "id": "P08-BLK-01",
+      "owner": "P13",
+      "required_artifacts": "actual_path_mapping.json; do_not_touch.txt; 真实工程固定commit; 写入白名单; internal_api_contracts.json",
+      "affects": "正式工程写入/内部DTO",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-02",
+      "owner": "P09",
+      "required_artifacts": "pos_mapping_rules.json; unknown_fallback_cases.tsv; anki_field_observations.md，实际路径/版本/SHA均未取得",
+      "affects": "分类合同与UNKNOWN正式资源",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-03",
+      "owner": "P10",
+      "required_artifacts": "能力报告实际路径待报; probe_log_redacted.txt; addon_manifest.json; 真实四键/Undo/redo/旧备份脱敏样例及身份限制",
+      "affects": "S04能力与自动授奖",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-04",
+      "owner": "P01",
+      "required_artifacts": "DEC-001/DEC-002/DEC-003/DEC-011对应用户书面PolicyRecord，原文/版本/生效范围/SHA未取得",
+      "affects": "经济与权益政策批准",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-05",
+      "owner": "P05",
+      "required_artifacts": "正式学习预算、封顶/舍入/资源价值/存储上限接收回执；现有仅provisional影子参数",
+      "affects": "经济参数冻结",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-06",
+      "owner": "P12",
+      "required_artifacts": "ipc_schema.json; protocol_version_matrix.tsv及目标版接收回执",
+      "affects": "IC-14/18正式契约",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-07",
+      "owner": "P17",
+      "required_artifacts": "钱包来源分摊与允许消耗合同，版本/哈希/案例未取得",
+      "affects": "未消费可回收量与混合来源",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-08",
+      "owner": "P21",
+      "required_artifacts": "IC-17/19原子事务、世代/恢复水位及提交回执合同",
+      "affects": "真实发奖/撤销事务",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-09",
+      "owner": "P22",
+      "required_artifacts": "正式resource/category ID注册表与校验Schema",
+      "affects": "正式内容引用",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-10",
+      "owner": "P34",
+      "required_artifacts": "目标OS/引擎/Anki精确版/插件版/时区策略环境指纹",
+      "affects": "真机目标",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-11",
+      "owner": "P35",
+      "required_artifacts": "独立SPEC门禁及后续UNIT/CONTRACT/RUNTIME/E2E分级回执",
+      "affects": "独立验收",
+      "status": "NOT_RUN",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-12",
+      "owner": "P32",
+      "required_artifacts": "真实模块固定提交及独立单元/契约/故障注入原始结果",
+      "affects": "独立自动化",
+      "status": "NOT_RUN",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-13",
+      "owner": "P33",
+      "required_artifacts": "同目标构建的四键/撤销/已消费/离线/重启人工旅程记录",
+      "affects": "人工验收",
+      "status": "NOT_RUN",
+      "received_version": null,
+      "sha256": null
+    },
+    {
+      "id": "P08-BLK-14",
+      "owner": "P01",
+      "required_artifacts": "EXT-INTEGRATOR用户指定与范围授权",
+      "affects": "跨模块整合",
+      "status": "BLOCKED",
+      "received_version": null,
+      "sha256": null
+    }
+  ],
+  "current_user_activation": {
+    "evidence": "CURRENT_TASK_VISIBLE_MESSAGE",
+    "raw_chat_sha256": null,
+    "note": "本次用户明确启动P08；无完整聊天原始字节，不伪造全文哈希。"
+  },
+  "source_precedence": "当前用户要求 > 核验的V6约束 > P01需求/未决策 > P05/P07未批准候选；能力/批准缺失不以候选替代"
+}

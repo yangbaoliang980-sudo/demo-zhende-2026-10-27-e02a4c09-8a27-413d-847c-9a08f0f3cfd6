@@ -1,0 +1,12 @@
+{
+  "record_type": "TOOL_RESULT_TRANSCRIPT",
+  "status": "FAIL",
+  "scope": "OPTIONAL_LOCAL_DEPENDENCY_PROBE",
+  "command": "python - [stdin: importlib.metadata.version(\"jsonschema\") before source manifest loop]",
+  "exit_code": 1,
+  "observed_exception": "importlib.metadata.PackageNotFoundError: No package metadata was found for jsonschema",
+  "consequence": "The combined source-manifest check in that probe did not run. It is subsequently executed by verify_source_inputs.py.",
+  "resolution": "Use Python standard-library contract guards; third-party JSON Schema engine validation remains NOT_RUN for P22.",
+  "fix_owner": "P09",
+  "raw_tool_result_available": "Current session tool response; this JSON is a labelled transcript, not fabricated stdout/stderr."
+}

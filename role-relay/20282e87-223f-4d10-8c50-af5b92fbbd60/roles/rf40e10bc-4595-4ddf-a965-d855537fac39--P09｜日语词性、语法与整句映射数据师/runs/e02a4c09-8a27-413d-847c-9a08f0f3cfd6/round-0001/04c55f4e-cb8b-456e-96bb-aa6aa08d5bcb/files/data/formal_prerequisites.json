@@ -1,0 +1,118 @@
+{
+  "schema_version": "P09-PREFLIGHT/0.1.0",
+  "task_id": "P09-S04-S05-MAP-001",
+  "production_authorized": false,
+  "real_field_observation_count": 0,
+  "checks": [
+    {
+      "id": "P09-BLK-01",
+      "owner": "P10",
+      "required_artifacts": "真实最小字段样本、note type/template字段表、字段可观察报告、脱敏原始证据",
+      "status": "BLOCKED",
+      "affects": "真实字段分类",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-02",
+      "owner": "P38",
+      "required_artifacts": "用户授权字段白名单、用途/范围/留存约束、授权原文与SHA；必要时经P01取得用户批准",
+      "status": "BLOCKED",
+      "affects": "真实字段读取",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-03",
+      "owner": "P13",
+      "required_artifacts": "actual_path_mapping.json、真实工程固定commit、do_not_touch.txt、写入白名单和内部DTO版本/SHA",
+      "status": "BLOCKED",
+      "affects": "实际工程写入和DTO接入",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-04",
+      "owner": "P34",
+      "required_artifacts": "目标OS、引擎和Anki精确版本及环境指纹",
+      "status": "BLOCKED",
+      "affects": "目标机复现",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-05",
+      "owner": "P12",
+      "required_artifacts": "已接收字段观察/分类封装的跨进程合同、版本兼容表、接收回执",
+      "status": "BLOCKED",
+      "affects": "正式契约",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-06",
+      "owner": "P22",
+      "required_artifacts": "八类语义键与资源候选的正式内容ID/Schema注册、映射表独立校验回执",
+      "status": "BLOCKED",
+      "affects": "正式内容引用",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-07",
+      "owner": "P08",
+      "required_artifacts": "P01转交的用户批准政策、选定经济资源模型及P05预算；映射接收回执",
+      "status": "BLOCKED",
+      "affects": "实际收益",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-08",
+      "owner": "P32",
+      "required_artifacts": "本包固定哈希的独立自动化及正式契约执行原始记录",
+      "status": "NOT_RUN",
+      "affects": "独立测试",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-09",
+      "owner": "P33",
+      "required_artifacts": "目标版字段配置、人工改错及撤销旅程记录",
+      "status": "NOT_RUN",
+      "affects": "人工验证",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-10",
+      "owner": "P35",
+      "required_artifacts": "SPEC/UNIT/CONTRACT/RUNTIME/E2E分级独立门禁回执",
+      "status": "NOT_RUN",
+      "affects": "独立验收",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    },
+    {
+      "id": "P09-BLK-11",
+      "owner": "P01",
+      "required_artifacts": "用户指定EXT-INTEGRATOR及整合范围授权",
+      "status": "BLOCKED",
+      "affects": "跨模块整合",
+      "version": null,
+      "sha256": null,
+      "receipt": null
+    }
+  ]
+}

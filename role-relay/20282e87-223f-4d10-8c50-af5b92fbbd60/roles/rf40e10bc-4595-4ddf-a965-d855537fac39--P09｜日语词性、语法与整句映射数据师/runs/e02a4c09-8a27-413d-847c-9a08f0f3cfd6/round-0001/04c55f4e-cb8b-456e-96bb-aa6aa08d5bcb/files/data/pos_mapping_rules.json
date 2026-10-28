@@ -1,0 +1,253 @@
+{
+  "schema_version": "P09-RULES/0.1.0-proposal",
+  "mapping_version": "P09-POS-MAP/0.1.0-proposal",
+  "task_id": "P09-S04-S05-MAP-001",
+  "requirements": [
+    "REQ-012",
+    "REQ-011",
+    "REQ-026"
+  ],
+  "interfaces": [
+    "IC-15",
+    "IC-16"
+  ],
+  "usage": "SYNTHETIC_REFERENCE_ONLY",
+  "production_authorized": false,
+  "actual_path_mapping_status": "BLOCKED_MISSING_P13",
+  "normalization_id": "P09-LABEL-NORM/1",
+  "unknown_category": "UNKNOWN",
+  "precedence": [
+    "BOUND_MANUAL_OVERRIDE",
+    "CATEGORY_LABEL",
+    "UNIT_KIND",
+    "POS_LABEL",
+    "UNKNOWN"
+  ],
+  "categories": [
+    {
+      "code": "NOUN",
+      "display_zh": "名词",
+      "definition": "学习目标是名词，且已授权标签明确标注名词；不因汉字、长度或中文释义猜测。",
+      "synthetic_example": "本",
+      "resource_role_proposal": "GUARD_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "VERB",
+      "display_zh": "动词",
+      "definition": "学习目标是动词，标签可明确说明五段、一段、サ变或カ变；不凭以う/る结尾认定。",
+      "synthetic_example": "読む",
+      "resource_role_proposal": "ATTACK_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "I_ADJECTIVE",
+      "display_zh": "形容词",
+      "definition": "日语い形容词；包括词典/用户明确给出的形容词标签；不凭い词尾认定。",
+      "synthetic_example": "高い",
+      "resource_role_proposal": "SUPPORT_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "NA_ADJECTIVE",
+      "display_zh": "形容动词",
+      "definition": "日语な形容词/学校文法形容动词；明确形状詞标签仅作为本项目兼容别名。",
+      "synthetic_example": "静か",
+      "resource_role_proposal": "SUPPORT_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "ADVERB",
+      "display_zh": "副词",
+      "definition": "学习目标是副词且有明确单一标签；名詞-副詞可能不自动取其中之一。",
+      "synthetic_example": "ゆっくり",
+      "resource_role_proposal": "TACTIC_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "GRAMMAR",
+      "display_zh": "语法",
+      "definition": "学习目标是语法结构、句型或功能表达；这是项目学习单位分类，不是额外词性。",
+      "synthetic_example": "〜てもいい",
+      "resource_role_proposal": "TACTIC_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "SENTENCE",
+      "display_zh": "整句",
+      "definition": "复习目标是整个句子/明确整句学习单位；例句字段存在本身不构成整句依据。",
+      "synthetic_example": "今日は雨です。",
+      "resource_role_proposal": "GENERAL_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    },
+    {
+      "code": "UNKNOWN",
+      "display_zh": "未知",
+      "definition": "证据不足、字段不可观察、冲突或范围外项目；固定通用用途候选，不代表无效学习。",
+      "synthetic_example": "生（未给词性）",
+      "resource_role_proposal": "GENERAL_MATERIAL",
+      "formal_category_id": null,
+      "formal_resource_id": null,
+      "quantity": null,
+      "registration_status": "PENDING_P22"
+    }
+  ],
+  "category_aliases": {
+    "noun": "NOUN",
+    "名詞": "NOUN",
+    "名词": "NOUN",
+    "名": "NOUN",
+    "n": "NOUN",
+    "n.": "NOUN",
+    "verb": "VERB",
+    "動詞": "VERB",
+    "动词": "VERB",
+    "動": "VERB",
+    "动": "VERB",
+    "v": "VERB",
+    "v.": "VERB",
+    "五段動詞": "VERB",
+    "一段動詞": "VERB",
+    "サ変動詞": "VERB",
+    "カ変動詞": "VERB",
+    "i_adjective": "I_ADJECTIVE",
+    "形容詞": "I_ADJECTIVE",
+    "形容词": "I_ADJECTIVE",
+    "い形容詞": "I_ADJECTIVE",
+    "イ形容詞": "I_ADJECTIVE",
+    "adj-i": "I_ADJECTIVE",
+    "i-adjective": "I_ADJECTIVE",
+    "na_adjective": "NA_ADJECTIVE",
+    "形容動詞": "NA_ADJECTIVE",
+    "形容动词": "NA_ADJECTIVE",
+    "形動": "NA_ADJECTIVE",
+    "形动": "NA_ADJECTIVE",
+    "な形容詞": "NA_ADJECTIVE",
+    "ナ形容詞": "NA_ADJECTIVE",
+    "形状詞": "NA_ADJECTIVE",
+    "adj-na": "NA_ADJECTIVE",
+    "na-adjective": "NA_ADJECTIVE",
+    "adverb": "ADVERB",
+    "副詞": "ADVERB",
+    "副词": "ADVERB",
+    "副": "ADVERB",
+    "adv": "ADVERB",
+    "adv.": "ADVERB",
+    "grammar": "GRAMMAR",
+    "文法": "GRAMMAR",
+    "语法": "GRAMMAR",
+    "文型": "GRAMMAR",
+    "句型": "GRAMMAR",
+    "sentence": "SENTENCE",
+    "整句": "SENTENCE",
+    "文全体": "SENTENCE",
+    "例文全体": "SENTENCE",
+    "unknown": "UNKNOWN",
+    "未知": "UNKNOWN",
+    "不明": "UNKNOWN",
+    "未分類": "UNKNOWN",
+    "未分类": "UNKNOWN"
+  },
+  "unit_aliases": {
+    "word": "WORD",
+    "単語": "WORD",
+    "单词": "WORD",
+    "語彙": "WORD",
+    "词汇": "WORD",
+    "grammar": "GRAMMAR",
+    "文法": "GRAMMAR",
+    "语法": "GRAMMAR",
+    "文型": "GRAMMAR",
+    "sentence": "SENTENCE",
+    "整句": "SENTENCE",
+    "文全体": "SENTENCE",
+    "mixed": "MIXED",
+    "混合": "MIXED",
+    "複数項目": "MIXED",
+    "unknown": "UNKNOWN",
+    "未知": "UNKNOWN",
+    "不明": "UNKNOWN"
+  },
+  "compound_pos_labels": {
+    "名詞-普通名詞-一般": [
+      "NOUN"
+    ],
+    "名詞-固有名詞-一般": [
+      "NOUN"
+    ],
+    "動詞-一般": [
+      "VERB"
+    ],
+    "形容詞-一般": [
+      "I_ADJECTIVE"
+    ],
+    "形状詞-一般": [
+      "NA_ADJECTIVE"
+    ],
+    "名詞-普通名詞-サ変可能": [
+      "NOUN",
+      "VERB"
+    ],
+    "名詞-普通名詞-形状詞可能": [
+      "NOUN",
+      "NA_ADJECTIVE"
+    ],
+    "名詞-普通名詞-副詞可能": [
+      "NOUN",
+      "ADVERB"
+    ],
+    "名詞-普通名詞-サ変形状詞可能": [
+      "NOUN",
+      "VERB",
+      "NA_ADJECTIVE"
+    ]
+  },
+  "policy": {
+    "missing_mapping": "BLOCKED_NOT_UNKNOWN",
+    "unrecognized_nonempty_label": "TERMINAL_UNKNOWN",
+    "same_tier_distinct_categories": "TERMINAL_UNKNOWN",
+    "duplicate_aliases_same_category": "COLLAPSE_TO_ONE",
+    "same_pos_multiple_senses": "KEEP_EXPLICIT_POS_NO_SENSE_INFERENCE",
+    "mixed_items": "UNKNOWN_UNLESS_VALID_BOUND_MANUAL_OVERRIDE",
+    "sentence_without_unit_label": "NO_TEXT_INFERENCE",
+    "lemma_suffix_inference": false,
+    "example_field_presence_inference": false,
+    "network_classification": false,
+    "whole_deck_read": false,
+    "real_reward_amount": null,
+    "historical_reward_reclassification": "NO_NEW_ENTITLEMENT",
+    "formal_resource_schema_owner": "P22",
+    "transport_owner": "P12",
+    "internal_dto_owner": "P13",
+    "transaction_owner": "P21"
+  },
+  "source_ids": [
+    "SRC-V6",
+    "SRC-P01-TRACE",
+    "SRC-P08-POLICY",
+    "SRC-P08-RESOURCES",
+    "REF-NINJAL-UNIDIC",
+    "REF-ANKI-FIELDS"
+  ]
+}

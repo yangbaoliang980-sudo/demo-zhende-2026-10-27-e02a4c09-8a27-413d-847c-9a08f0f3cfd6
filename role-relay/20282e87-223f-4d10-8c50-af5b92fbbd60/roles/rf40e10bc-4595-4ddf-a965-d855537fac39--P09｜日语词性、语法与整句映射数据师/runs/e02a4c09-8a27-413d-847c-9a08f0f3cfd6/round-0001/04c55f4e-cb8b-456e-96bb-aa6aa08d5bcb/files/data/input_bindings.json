@@ -1,0 +1,185 @@
+{
+  "captured_before_execution": true,
+  "inputs": [
+    {
+      "relative_path": "content/linguistic/category_dictionary.json",
+      "actual_bytes": 3545,
+      "sha256": "877bfa21f32d6db822dae200dd8cbcf901d2acb9acbb8321f39e1e09d28aaf31"
+    },
+    {
+      "relative_path": "content/linguistic/classification_cases.jsonl",
+      "actual_bytes": 49971,
+      "sha256": "a9e8e2df7a2b4faa8cb84f255979691edc08445ff345533e3b028f87a493f03d"
+    },
+    {
+      "relative_path": "content/linguistic/example_entries.synthetic.jsonl",
+      "actual_bytes": 16389,
+      "sha256": "ef0bbff0d6c738cfe907e5067015fba12969e6bf41b21a45301a624878e781ad"
+    },
+    {
+      "relative_path": "content/linguistic/field_profile.synthetic.json",
+      "actual_bytes": 616,
+      "sha256": "7d73465b1a2361391fc098690c007f25489f9755491430159484a49157ccdee8"
+    },
+    {
+      "relative_path": "content/linguistic/fixtures/rollback_rules.synthetic.json",
+      "actual_bytes": 7652,
+      "sha256": "d61f65428d5294c6ee3c73246d6d48ccb318ecb1f788af0964e9d04dcb38bbd7"
+    },
+    {
+      "relative_path": "content/linguistic/mapping_release_registry.json",
+      "actual_bytes": 474,
+      "sha256": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd"
+    },
+    {
+      "relative_path": "content/linguistic/override_log.synthetic.jsonl",
+      "actual_bytes": 5297,
+      "sha256": "dbc67c0679093d09ed8093b6dc037a07dd4e5ba000f0a05035ad30b4dc781611"
+    },
+    {
+      "relative_path": "content/linguistic/pos_mapping_rules.json",
+      "actual_bytes": 7559,
+      "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab"
+    },
+    {
+      "relative_path": "content/linguistic/resource_affinity_candidates.tsv",
+      "actual_bytes": 725,
+      "sha256": "657c33b528207e3f6f8beb230d5086bfb16df441b4df8b93af292e68855208f1"
+    },
+    {
+      "relative_path": "content/linguistic/schema/mapping_input.schema.json",
+      "actual_bytes": 2060,
+      "sha256": "045f133ec14a06396b9d01998b050bf2b5942be5ee1ec1b7f0be472d8b1c49b4"
+    },
+    {
+      "relative_path": "content/linguistic/schema/mapping_output.schema.json",
+      "actual_bytes": 4107,
+      "sha256": "b4529469d917271ad41f0abd69a2cc5eb54db3f69c7f73419f86c0805623e9ce"
+    },
+    {
+      "relative_path": "content/linguistic/schema/override_event.schema.json",
+      "actual_bytes": 3224,
+      "sha256": "3bee4b352a1cf38e8656056eec7011f27916b9dc56093aa2c7c45cee8dd4823d"
+    },
+    {
+      "relative_path": "content/linguistic/unknown_fallback_cases.tsv",
+      "actual_bytes": 7365,
+      "sha256": "2efd2074893243d0d0b63dda458e75c56fcd45df2434359a4498d7ae667aecd4"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/intake/git_blob_bindings.json",
+      "actual_bytes": 3208,
+      "sha256": "f4082f1dfb7f8605bfdc6dfc9be88bf81ec89b434a0df3e092c3cdb9f3a329ba"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/intake/intake_report.json",
+      "actual_bytes": 45369,
+      "sha256": "0c96fed2b03df8b72e5be59208871befe81b8035acf6b6ab702786de0ba48795"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/intake/p08_github_tree.json",
+      "actual_bytes": 241521,
+      "sha256": "8c1aa51f19073d59e87111343937e7a86696d3610f17154a736bf8e133845444"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/intake/v6_github_tree.json",
+      "actual_bytes": 99096,
+      "sha256": "a74661a907f3c2741a7d41d7fbbbaaaa7f5b647f606554b085f7ff3a339add8c"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p01_requirements_baseline_v6.txt",
+      "actual_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p01_requirements_traceability.tsv",
+      "actual_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p08_delivery_receipt.json",
+      "actual_bytes": 14175,
+      "sha256": "e9673a528e697a51cdc55d683621cc08b53b9626834547e2ae5a966463459c24"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p08_interface_rfc.md",
+      "actual_bytes": 3756,
+      "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p08_resource_mapping_candidates.tsv",
+      "actual_bytes": 1675,
+      "sha256": "6b0bd706bb6bffcea14d1e85d0f9862cac515b840e0ae704b3cb9295619fe8a6"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p08_source_input_receipt.json",
+      "actual_bytes": 17591,
+      "sha256": "06878cf96ef332619de530c1231d87c7b045016d7a21f2fca2d29cdffff643f1"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/p08_study_policy_draft.md",
+      "actual_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e"
+    },
+    {
+      "relative_path": "design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+      "actual_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d"
+    },
+    {
+      "relative_path": "design/linguistic/formal_prerequisites.json",
+      "actual_bytes": 3498,
+      "sha256": "30368c8678af30e43f1db8a86ab16523c062cab3ff9cef855e380331edb05b16"
+    },
+    {
+      "relative_path": "design/linguistic/reference/demo.py",
+      "actual_bytes": 1522,
+      "sha256": "8d5de82cf2c44bb6df9a3b2a5df798a82ed268a3bc5e92bef3848c4a617391e6"
+    },
+    {
+      "relative_path": "design/linguistic/reference/pos_mapper.py",
+      "actual_bytes": 20592,
+      "sha256": "5d603a4076636a00fb56672dacade42063b189f08731a42a239290d8d93a4dbf"
+    },
+    {
+      "relative_path": "design/linguistic/source_input_receipt.json",
+      "actual_bytes": 6747,
+      "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e"
+    },
+    {
+      "relative_path": "design/linguistic/verification/reproduction_notes.md",
+      "actual_bytes": 1999,
+      "sha256": "ed4d11a7095095c137d7a7ac4c57ab4e15247bd31e58289f7c924c796fbdab1e"
+    },
+    {
+      "relative_path": "design/linguistic/verification/run_checks.py",
+      "actual_bytes": 3165,
+      "sha256": "b88e6b8bcddb6acf52840c87ef452daeba3a6dd02ff2b8dcd1213a82d58a3e72"
+    },
+    {
+      "relative_path": "design/linguistic/verification/test_override_replay.py",
+      "actual_bytes": 5577,
+      "sha256": "18464bdabc55d89b7efc7837700994e4f829a9831fe20ef556e9d641ca09ba6e"
+    },
+    {
+      "relative_path": "design/linguistic/verification/test_pos_mapper.py",
+      "actual_bytes": 5993,
+      "sha256": "03ec3a89baf7d1347479344973a05cc52fe4e1f8ea0c6dcdefdcc992655e684e"
+    },
+    {
+      "relative_path": "design/linguistic/verification/verify_delivery.py",
+      "actual_bytes": 3976,
+      "sha256": "9baba541b63cc5b4b55d8b66dad71dc327a2c82fdc9935819ce9c81210a25065"
+    },
+    {
+      "relative_path": "design/linguistic/verification/verify_manifest.py",
+      "actual_bytes": 1199,
+      "sha256": "3e228e8d58136b88d91d15a38de90eb814991c8c1e324fa9f38fa154704bc3a6"
+    },
+    {
+      "relative_path": "design/linguistic/verification/verify_source_inputs.py",
+      "actual_bytes": 4756,
+      "sha256": "93125b97f141a3badbf5698accfb058d580e7b271b7b313c271a349561caa798"
+    }
+  ]
+}

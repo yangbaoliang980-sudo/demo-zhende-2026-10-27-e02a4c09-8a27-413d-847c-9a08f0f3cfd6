@@ -1,0 +1,175 @@
+{
+  "schema_version": "P09-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P09-S04-S05-MAP-001",
+  "mapping_version": "P09-POS-MAP/0.1.0-proposal",
+  "status": "LOCAL_MAPPING_DELIVERED_REAL_FIELD_CLASSIFICATION_BLOCKED",
+  "archive": {
+    "filename": "P09_Linguistic_Mapping_V0.1.zip",
+    "actual_bytes": 5041990,
+    "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+    "files": 86
+  },
+  "manifest": {
+    "relative_path": "delivery_manifest.sha256.tsv",
+    "actual_bytes": 103886,
+    "sha256": "5cb9219aefcebd3d70f9e37ccf725db3f26704b8520bb0c30c19f813f49f2a4a"
+  },
+  "primary_deliverables": [
+    {
+      "relative_path": "content/linguistic/pos_mapping_rules.json",
+      "actual_bytes": 7559,
+      "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab"
+    },
+    {
+      "relative_path": "content/linguistic/unknown_fallback_cases.tsv",
+      "actual_bytes": 7365,
+      "sha256": "2efd2074893243d0d0b63dda458e75c56fcd45df2434359a4498d7ae667aecd4"
+    },
+    {
+      "relative_path": "design/linguistic/anki_field_observations.md",
+      "actual_bytes": 3396,
+      "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4"
+    }
+  ],
+  "source_input_receipt": {
+    "relative_path": "design/linguistic/source_input_receipt.json",
+    "actual_bytes": 6747,
+    "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e"
+  },
+  "author_verification_status": {
+    "schema_version": "P09-VALIDATION-STATUS/0.1.0",
+    "authoritative_run": "design/linguistic/evidence/author_run_003",
+    "source_integrity": "PASS",
+    "source_counts": {
+      "unique_zip_archives": 12,
+      "zip_occurrences": 32,
+      "relay_manifest_entries": 153,
+      "tsv_manifest_entries": 252,
+      "loose_manifests_not_applicable": 5,
+      "source_snapshots": 8,
+      "git_blob_bindings": 4
+    },
+    "author_data_cases": {
+      "status": "PASS",
+      "passed": 72,
+      "total": 72,
+      "scope": "SYNTHETIC_ONLY"
+    },
+    "author_reference_unit": {
+      "status": "PASS",
+      "test_methods": 34,
+      "contains_same_72_cases": true
+    },
+    "cli_demo": "PASS",
+    "formal_preflight": {
+      "status": "BLOCKED",
+      "exit_code": 3
+    },
+    "independent_design_review": "NOT_RUN",
+    "P22_schema_engine_validation": "NOT_RUN",
+    "P32_independent_unit": "NOT_RUN",
+    "formal_contract_tests": "NOT_RUN",
+    "P33_manual": "NOT_RUN",
+    "target_machine": "NOT_RUN",
+    "real_anki_E2E": "NOT_RUN",
+    "P35_gate": "NOT_RUN",
+    "real_anki_observed_events": 0,
+    "real_rewards_issued": 0,
+    "accuracy_claim": null
+  },
+  "package_verification": {
+    "status": "PASS",
+    "scope": "PACKAGE_BYTES_AND_SYNTHETIC_STATIC_RECHECK_ONLY",
+    "zip_crc": "PASS",
+    "files_in_zip": 86,
+    "manifest_entries": 85,
+    "tested_input_bindings_verified": 36,
+    "handover_file_bindings_verified": 46,
+    "commands": [
+      {
+        "name": "manifest_before_zip",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "design/linguistic/verification/verify_manifest.py"
+        ],
+        "cwd": "/workspace/scratch/9f6767b845ea/P09_Linguistic_Mapping_V0.1",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "status": "PASS",
+        "stdout_sha256": "f0fa1a8228398c3278f139d63e9e40b6989e1910a17ee447fb09fabb05cbe1c3",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "manifest_after_zip",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "design/linguistic/verification/verify_manifest.py"
+        ],
+        "cwd": "/workspace/scratch/9f6767b845ea/deliverables/package_verification/reextracted/P09_Linguistic_Mapping_V0.1",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "status": "PASS",
+        "stdout_sha256": "f0fa1a8228398c3278f139d63e9e40b6989e1910a17ee447fb09fabb05cbe1c3",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "mapping_after_zip",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "design/linguistic/verification/verify_delivery.py"
+        ],
+        "cwd": "/workspace/scratch/9f6767b845ea/deliverables/package_verification/reextracted/P09_Linguistic_Mapping_V0.1",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "status": "PASS",
+        "stdout_sha256": "28bbb23ae2d264efcd24574ec330c7668e1e30d977a02285bfedfa58958b8631",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "recorded_at_utc": "2026-10-28T08:00:28.757108+00:00"
+  },
+  "scope_limits": {
+    "real_anki_observations": 0,
+    "real_rewards_issued": 0,
+    "target_anki_version": null,
+    "actual_path_mapping_authorized": false,
+    "integration_performed": false,
+    "independent_acceptance": "NOT_RUN"
+  },
+  "receivers": [
+    "P08",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P22",
+    "P32",
+    "P33",
+    "P35",
+    "P38"
+  ],
+  "source_hashes": {
+    "source_receipt": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+    "primary_archive": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+    "SRC-V6": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "SRC-P01-TRACE": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+    "SRC-P01-BASELINE": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+    "SRC-P08-POLICY": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+    "SRC-P08-RESOURCES": "6b0bd706bb6bffcea14d1e85d0f9862cac515b840e0ae704b3cb9295619fe8a6",
+    "SRC-P08-RFC": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e",
+    "SRC-P08-RECEIPT": "e9673a528e697a51cdc55d683621cc08b53b9626834547e2ae5a966463459c24",
+    "SRC-P08-SOURCE": "06878cf96ef332619de530c1231d87c7b045016d7a21f2fca2d29cdffff643f1"
+  },
+  "availability": {
+    "workspace_artifacts": "GENERATED_AND_VERIFIED",
+    "persistent_save": "BLOCKED_AUTO_REVIEW_REJECTED",
+    "uploaded_files": 0,
+    "rejected_action": "Upload P09 ZIP, README, three mandatory deliverables, external receipt and delivery manifest to ChatGPT file area.",
+    "review_reason": "Project materials were classified as private; explicit authorization for the identified files and destination, and destination trust, were not established by the automatic reviewer.",
+    "retry_performed_after_rejection": false,
+    "authorization_needed": "User approval to save this P09 complete delivery package and its six companion files to the user ChatGPT file area."
+  }
+}

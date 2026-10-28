@@ -1,0 +1,1122 @@
+{
+  "input_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+  "archives": [
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip",
+      "sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "bytes": 7825496,
+      "members": 49,
+      "extracted_path": "work/intake/archives/e9818b1abe21a7e1",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/006/P01_S00_V6_完整交接包.zip",
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "bytes": 34628,
+      "members": 16,
+      "extracted_path": "work/intake/archives/139034e2179fbe35",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "bytes": 47224,
+      "members": 15,
+      "extracted_path": "work/intake/archives/969c7e7688f795aa",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "bytes": 29930,
+      "members": 17,
+      "extracted_path": "work/intake/archives/de0fa1b8309eb504",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "bytes": 38736,
+      "members": 20,
+      "extracted_path": "work/intake/archives/8a6c28d2eb87a495",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "bytes": 55092,
+      "members": 20,
+      "extracted_path": "work/intake/archives/98592b1b16bd8e03",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip",
+      "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "bytes": 639564,
+      "members": 35,
+      "extracted_path": "work/intake/archives/3559b922b7639cc4",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip!/files/006/P01_S00_V6_完整交接包.zip",
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "duplicate_of": "work/intake/archives/139034e2179fbe35"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip!/files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "duplicate_of": "work/intake/archives/969c7e7688f795aa"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip!/files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "duplicate_of": "work/intake/archives/de0fa1b8309eb504"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip!/files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "duplicate_of": "work/intake/archives/8a6c28d2eb87a495"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/035/relay-materials-1-3559b922b7.zip!/files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "duplicate_of": "work/intake/archives/98592b1b16bd8e03"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip",
+      "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "bytes": 1279557,
+      "members": 36,
+      "extracted_path": "work/intake/archives/1b174d40f030b442",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/006/P01_S00_V6_完整交接包.zip",
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "duplicate_of": "work/intake/archives/139034e2179fbe35"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "duplicate_of": "work/intake/archives/969c7e7688f795aa"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "duplicate_of": "work/intake/archives/de0fa1b8309eb504"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "duplicate_of": "work/intake/archives/8a6c28d2eb87a495"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "duplicate_of": "work/intake/archives/98592b1b16bd8e03"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/036/relay-materials-1-1b174d40f0.zip!/files/035/relay-materials-1-3559b922b7.zip",
+      "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "duplicate_of": "work/intake/archives/3559b922b7639cc4"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip",
+      "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "bytes": 2523333,
+      "members": 62,
+      "extracted_path": "work/intake/archives/c61826ec9af75cbd",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+      "sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "bytes": 1214430,
+      "members": 67,
+      "extracted_path": "work/intake/archives/cd494cd3f6a29d1f",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip!/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/P06_Enemy_Delivery_V0.1.zip",
+      "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "bytes": 168593,
+      "members": 43,
+      "extracted_path": "work/intake/archives/0a2912acc81c594b",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip!/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/received_relay_materials.zip",
+      "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "duplicate_of": "work/intake/archives/1b174d40f030b442"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip",
+      "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "bytes": 2559544,
+      "members": 37,
+      "extracted_path": "work/intake/archives/3c7e523083a36a9d",
+      "crc": "PASS"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/006/P01_S00_V6_完整交接包.zip",
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "duplicate_of": "work/intake/archives/139034e2179fbe35"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "duplicate_of": "work/intake/archives/969c7e7688f795aa"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "duplicate_of": "work/intake/archives/de0fa1b8309eb504"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "duplicate_of": "work/intake/archives/8a6c28d2eb87a495"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "duplicate_of": "work/intake/archives/98592b1b16bd8e03"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/035/relay-materials-1-3559b922b7.zip",
+      "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "duplicate_of": "work/intake/archives/3559b922b7639cc4"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/046/P08_Anki_Reward_Policy_V0.1.zip!/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip!/files/036/relay-materials-1-1b174d40f0.zip",
+      "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "duplicate_of": "work/intake/archives/1b174d40f030b442"
+    },
+    {
+      "source_chain": "upload/relay-materials-1-e9818b1abe.zip!/files/048/relay-materials-1-3c7e523083.zip",
+      "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "duplicate_of": "work/intake/archives/3c7e523083a36a9d"
+    }
+  ],
+  "manifest_entries": [
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/001/requirements_baseline_v6.txt",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/002/decisions_pending.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/003/task_register.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/004/handoff_receipts.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/005/gate_issues.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/006/P01_S00_V6_完整交接包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/007/battle_state_machine.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/008/effect_priority.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/009/terminal_phase_truth_table.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/010/battle_replay_fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/011/interface_rfc_and_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/012/P02_DELIVERY_README.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/014/9c42e18d-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/015/9c42e18d-1-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/016/card_catalog.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/017/card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/018/interface_rfc_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/019/manifest.sha256.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/020/P03_static_validation.log",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/021/card_effect_examples.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/023/party_deck_rules.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/024/P04_character_skeleton.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/025/P04_party_constraints.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/026/P04_progression_costs.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/027/P04_character_deck_contribution.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/029/balance_parameters.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/030/fixed_seed_simulation.py",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/031/simulation_results.csv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/032/reward_abuse_cases.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/033/balance_report.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/035/relay-materials-1-3559b922b7.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/036/relay-materials-1-1b174d40f0.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/037/P08_delivery_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/038/P08_README.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/039/study_policy_draft.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/040/undo_compensation_options.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/041/quarantine_resolution_policy.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/042/P08_delivery_manifest.sha256.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/043/P08_p07_boundary_response.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/044/P08_source_input_receipt.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/045/P08_decisions_pending.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/047/four_rating_policy_matrix.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "manifest": "manifest.json",
+      "path": "files/048/relay-materials-1-3c7e523083.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/001/requirements_baseline_v6.txt",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/002/decisions_pending.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/003/task_register.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/004/handoff_receipts.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/005/gate_issues.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/006/P01_S00_V6_完整交接包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/007/battle_state_machine.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/008/effect_priority.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/009/terminal_phase_truth_table.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/010/battle_replay_fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/011/interface_rfc_and_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/012/P02_DELIVERY_README.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/014/9c42e18d-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/015/9c42e18d-1-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/016/card_catalog.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/017/card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/018/interface_rfc_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/019/manifest.sha256.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/020/P03_static_validation.log",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/021/card_effect_examples.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/023/party_deck_rules.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/024/P04_character_skeleton.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/025/P04_party_constraints.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/026/P04_progression_costs.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/027/P04_character_deck_contribution.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/029/balance_parameters.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/030/fixed_seed_simulation.py",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/031/simulation_results.csv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/032/reward_abuse_cases.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/033/balance_report.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "manifest": "manifest.json",
+      "path": "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/001/requirements_baseline_v6.txt",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/002/decisions_pending.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/003/task_register.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/004/handoff_receipts.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/005/gate_issues.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/006/P01_S00_V6_完整交接包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/007/battle_state_machine.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/008/effect_priority.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/009/terminal_phase_truth_table.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/010/battle_replay_fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/011/interface_rfc_and_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/012/P02_DELIVERY_README.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/014/9c42e18d-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/015/9c42e18d-1-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/016/card_catalog.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/017/card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/018/interface_rfc_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/019/manifest.sha256.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/020/P03_static_validation.log",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/021/card_effect_examples.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/023/party_deck_rules.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/024/P04_character_skeleton.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/025/P04_party_constraints.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/026/P04_progression_costs.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/027/P04_character_deck_contribution.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/029/balance_parameters.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/030/fixed_seed_simulation.py",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/031/simulation_results.csv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/032/reward_abuse_cases.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/033/balance_report.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "manifest": "manifest.json",
+      "path": "files/035/relay-materials-1-3559b922b7.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/001/requirements_baseline_v6.txt",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/002/decisions_pending.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/003/task_register.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/004/handoff_receipts.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/005/gate_issues.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/006/P01_S00_V6_完整交接包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/007/battle_state_machine.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/008/effect_priority.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/009/terminal_phase_truth_table.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/010/battle_replay_fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/011/interface_rfc_and_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/012/P02_DELIVERY_README.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/014/9c42e18d-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/015/9c42e18d-1-card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/016/card_catalog.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/017/card_choice_cases.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/018/interface_rfc_blockers.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/019/manifest.sha256.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/020/P03_static_validation.log",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/021/card_effect_examples.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/023/party_deck_rules.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/024/P04_character_skeleton.json",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/025/P04_party_constraints.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/026/P04_progression_costs.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/027/P04_character_deck_contribution.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/029/balance_parameters.tsv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/030/fixed_seed_simulation.py",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/031/simulation_results.csv",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/032/reward_abuse_cases.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/033/balance_report.md",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/034/P05_S01_Balance_Delivery_V0.1.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/035/relay-materials-1-3559b922b7.zip",
+      "status": "PASS"
+    },
+    {
+      "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "manifest": "manifest.json",
+      "path": "files/036/relay-materials-1-1b174d40f0.zip",
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}
