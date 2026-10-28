@@ -1,0 +1,10 @@
+decision_ref	decision_authority	proposal_status	concrete_options	required_close_evidence	preparation_owner	decision_status	approved_value	approval_sha256	scope_note
+DEC-001	P01→USER	PROPOSAL	推荐四键同额基础B；可比较同额加差额但本版不启用	实际B、所有评分差额、资源ID与P05/P39反诱导证据	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+DEC-002	P01→USER	PROPOSAL	推荐已消费差额隔离人工裁决；比较保留/未来抵扣/可逆冻结	批准选项、自动可处理范围、原消费可追溯性和恢复规则	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+DEC-003	P01→USER	PROPOSAL	推荐零学习保留基础可玩；数量/来源/领取身份未定	P03/P05/P39最低可玩方案和用户批准；P03仍是准备owner	P03	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+DEC-011	P01→USER	PROPOSAL	身份或Undo不可靠则隔离，不猜来源；善意补偿另列来源	P10目标版能力报告、世代/恢复证据与退化体验批准	P10	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+P08-DEC-CAP	P01→USER	PROPOSAL	CAP-A无日经济上限/CAP-B预算封顶/CAP-C软封顶暂存，未选	P05预算、单位/舍入、跨类聚合、过量与离线追溯规则	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+P08-DEC-DAY	P01→USER	PROPOSAL	依据可信发生时间固定奖励日；Undo/恢复复用原日	目标时区、日界、DST/迁移规则、可用发生证据	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+P08-DEC-MAP	P01→USER	PROPOSAL	统一学习凭证+分类用途标签，或五类材料；未选	P09真实映射、P03可消费用途、P05价值、P22正式ID及成本批准	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+P08-DEC-RETENTION	P01→USER	PROPOSAL	隔离可查询/复核，不自动到期变已奖或作废	P38字段/保留与清理方案；P11/P12背压与防重历史保留	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
+P08-DEC-EPISODE	P01→USER	PROPOSAL	只用评分等额不足以消除重复Again长期激励，评估按事件与episode方案	P10是否可观测episode；P05/P39对完整学习行为评估；不直接同卡日限1	P08	PENDING	UNSET	UNSET	P08本地裁决补充；不覆盖P01台账
