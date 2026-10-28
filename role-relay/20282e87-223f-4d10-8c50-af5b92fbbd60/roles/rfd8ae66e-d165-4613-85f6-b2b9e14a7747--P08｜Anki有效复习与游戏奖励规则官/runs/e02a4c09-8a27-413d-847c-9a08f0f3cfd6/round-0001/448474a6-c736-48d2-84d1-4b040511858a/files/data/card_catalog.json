@@ -1,0 +1,480 @@
+{
+  "producer": "P03",
+  "task_id": "TASK-P03-S01-S02-LOCAL-001",
+  "format_version": "P03-CARDS-0.1.0-draft",
+  "release_status": "ISOLATED_TEST_ONLY_NOT_APPROVED_FOR_RUNTIME",
+  "mapping_status": "P13_ACTUAL_PATH_MAPPING_BLOCKED",
+  "contract_status": "P13_DTO_P22_SCHEMA_P04_ROSTER_P05_NUMBERS_P08_REWARD_PENDING",
+  "source_p01_zip_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+  "source_p02_zip_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+  "source_git_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "format": "P03-CARD-CATALOG",
+  "id_namespace": "MOCK_P03_* (isolated local fixture; reserved by nobody; awaiting P22 ID registry)",
+  "approval_flags": {
+    "p01_mvp_quantity_approved": false,
+    "p22_registry_approved": false,
+    "p13_schema_approved": false,
+    "p04_character_profile_approved": false,
+    "p05_balance_approved": false,
+    "p08_study_policy_approved": false
+  },
+  "fixture_only_character_slots": [
+    {
+      "character_id": "MOCK_P03_CHAR_A",
+      "fixture_display_name": "测试锋刃位",
+      "fixture_role": "ATTACK",
+      "skill_id": "MOCK_P03_SKILL_A",
+      "signature_card_id": "MOCK_P03_CARD_A_EDGE",
+      "official_character": false
+    },
+    {
+      "character_id": "MOCK_P03_CHAR_B",
+      "fixture_display_name": "测试守护位",
+      "fixture_role": "DEFENSE",
+      "skill_id": "MOCK_P03_SKILL_B",
+      "signature_card_id": "MOCK_P03_CARD_B_WALL",
+      "official_character": false
+    },
+    {
+      "character_id": "MOCK_P03_CHAR_C",
+      "fixture_display_name": "测试治愈位",
+      "fixture_role": "HEAL",
+      "skill_id": "MOCK_P03_SKILL_C",
+      "signature_card_id": "MOCK_P03_CARD_C_MEND",
+      "official_character": false
+    },
+    {
+      "character_id": "MOCK_P03_CHAR_D",
+      "fixture_display_name": "测试咒术位",
+      "fixture_role": "STATUS",
+      "skill_id": "MOCK_P03_SKILL_D",
+      "signature_card_id": "MOCK_P03_CARD_D_BRAND",
+      "official_character": false
+    }
+  ],
+  "skills": [
+    {
+      "skill_id": "MOCK_P03_SKILL_A",
+      "character_id": "MOCK_P03_CHAR_A",
+      "card_id": "MOCK_P03_CARD_A_EDGE",
+      "trigger_code": "ON_PLAY",
+      "mock_not_approved": true
+    },
+    {
+      "skill_id": "MOCK_P03_SKILL_B",
+      "character_id": "MOCK_P03_CHAR_B",
+      "card_id": "MOCK_P03_CARD_B_WALL",
+      "trigger_code": "ON_PLAY",
+      "mock_not_approved": true
+    },
+    {
+      "skill_id": "MOCK_P03_SKILL_C",
+      "character_id": "MOCK_P03_CHAR_C",
+      "card_id": "MOCK_P03_CARD_C_MEND",
+      "trigger_code": "ON_PLAY",
+      "mock_not_approved": true
+    },
+    {
+      "skill_id": "MOCK_P03_SKILL_D",
+      "character_id": "MOCK_P03_CHAR_D",
+      "card_id": "MOCK_P03_CARD_D_BRAND",
+      "trigger_code": "ON_PLAY",
+      "mock_not_approved": true
+    }
+  ],
+  "effects": [
+    {
+      "effect_id": "MOCK_P03_EF_STRIKE",
+      "effect_code": "DAMAGE",
+      "target_side": "ENEMY",
+      "amount": 4,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_BARRIER",
+      "effect_code": "SHIELD",
+      "target_side": "PLAYER",
+      "amount": 4,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_RECOVER",
+      "effect_code": "HEAL",
+      "target_side": "PLAYER",
+      "amount": 5,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_EMBER",
+      "effect_code": "STATUS",
+      "target_side": "ENEMY",
+      "amount": 2,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY",
+      "status_id": "MOCK_P03_STATUS_BURN",
+      "status_kind": "DOT",
+      "remaining_owner_turns": 1,
+      "tick_at": "OWNER_TURN_ENTER",
+      "stack_policy": "UNRESOLVED_IF_REAPPLIED"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_A_EDGE",
+      "effect_code": "DAMAGE",
+      "target_side": "ENEMY",
+      "amount": 6,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_B_WALL",
+      "effect_code": "SHIELD",
+      "target_side": "PLAYER",
+      "amount": 6,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_C_MEND",
+      "effect_code": "HEAL",
+      "target_side": "PLAYER",
+      "amount": 7,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_D_BRAND",
+      "effect_code": "STATUS",
+      "target_side": "ENEMY",
+      "amount": 3,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "P02_TEST_EFFECT_SHAPE_ONLY",
+      "status_id": "MOCK_P03_STATUS_BURN_STRONG",
+      "status_kind": "DOT",
+      "remaining_owner_turns": 1,
+      "tick_at": "OWNER_TURN_ENTER",
+      "stack_policy": "UNRESOLVED_IF_REAPPLIED"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_FOCUS",
+      "effect_code": "STATUS",
+      "target_side": "PLAYER",
+      "amount": 2,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "BLOCKED_PENDING_BUFF_DEBUFF_CONTRACT",
+      "status_id": "MOCK_P03_STATUS_FOCUS",
+      "status_kind": "BUFF",
+      "proposed_modifier": "NEXT_OWN_DAMAGE_PLUS_FLAT",
+      "remaining_owner_turns": 1,
+      "stack_policy": "NOT_DEFINED",
+      "timing": "NOT_DEFINED"
+    },
+    {
+      "effect_id": "MOCK_P03_EF_FEEBLE",
+      "effect_code": "STATUS",
+      "target_side": "ENEMY",
+      "amount": 2,
+      "trigger_code": "ON_PLAY",
+      "contract_gate": "BLOCKED_PENDING_BUFF_DEBUFF_CONTRACT",
+      "status_id": "MOCK_P03_STATUS_FEEBLE",
+      "status_kind": "DEBUFF",
+      "proposed_modifier": "NEXT_OWN_DAMAGE_MINUS_FLAT",
+      "remaining_owner_turns": 1,
+      "stack_policy": "NOT_DEFINED",
+      "timing": "NOT_DEFINED"
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "MOCK_P03_CARD_STRIKE",
+      "display_name": "试验·斩击",
+      "category": "ATTACK",
+      "introduction_stage": "S01",
+      "scope": "COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "ENEMY",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_STRIKE"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_BARRIER",
+      "display_name": "试验·防护",
+      "category": "DEFENSE",
+      "introduction_stage": "S01",
+      "scope": "COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "PLAYER",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_BARRIER"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_RECOVER",
+      "display_name": "试验·疗愈",
+      "category": "HEAL",
+      "introduction_stage": "S01",
+      "scope": "COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "PLAYER",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_RECOVER"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_EMBER",
+      "display_name": "试验·灼印",
+      "category": "STATUS",
+      "introduction_stage": "S02",
+      "scope": "COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "ENEMY",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_EMBER"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_A_EDGE",
+      "display_name": "试验·锋刃专属",
+      "category": "ATTACK",
+      "introduction_stage": "S02",
+      "scope": "SIGNATURE",
+      "owner_character_id": "MOCK_P03_CHAR_A",
+      "skill_id": "MOCK_P03_SKILL_A",
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 2
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "ENEMY",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_A_EDGE"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_B_WALL",
+      "display_name": "试验·铁壁专属",
+      "category": "DEFENSE",
+      "introduction_stage": "S02",
+      "scope": "SIGNATURE",
+      "owner_character_id": "MOCK_P03_CHAR_B",
+      "skill_id": "MOCK_P03_SKILL_B",
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 2
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "PLAYER",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_B_WALL"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_C_MEND",
+      "display_name": "试验·治愈专属",
+      "category": "HEAL",
+      "introduction_stage": "S02",
+      "scope": "SIGNATURE",
+      "owner_character_id": "MOCK_P03_CHAR_C",
+      "skill_id": "MOCK_P03_SKILL_C",
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 2
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "PLAYER",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_C_MEND"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_D_BRAND",
+      "display_name": "试验·咒术专属",
+      "category": "STATUS",
+      "introduction_stage": "S02",
+      "scope": "SIGNATURE",
+      "owner_character_id": "MOCK_P03_CHAR_D",
+      "skill_id": "MOCK_P03_SKILL_D",
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 2
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "ENEMY",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_D_BRAND"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": true,
+      "gate": "PROVISIONAL_S01_S02_TEST_ONLY",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_FOCUS_DRAFT",
+      "display_name": "拟议·凝神增益",
+      "category": "STATUS",
+      "introduction_stage": "S02_RFC",
+      "scope": "PROPOSED_COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "PLAYER",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_FOCUS"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": false,
+      "gate": "BLOCKED_CONTRACT_EXTENSION",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    },
+    {
+      "card_id": "MOCK_P03_CARD_FEEBLE_DRAFT",
+      "display_name": "拟议·虚弱减益",
+      "category": "STATUS",
+      "introduction_stage": "S02_RFC",
+      "scope": "PROPOSED_COMMON",
+      "owner_character_id": null,
+      "skill_id": null,
+      "cost": {
+        "resource": "BATTLE_ENERGY",
+        "amount": 1
+      },
+      "target_rule": {
+        "selector": "EXPLICIT_SINGLE",
+        "side": "ENEMY",
+        "living_only": true,
+        "target_count": 1
+      },
+      "effect_ids": [
+        "MOCK_P03_EF_FEEBLE"
+      ],
+      "trigger_code": "ON_PLAY",
+      "zone_after_play": "DISCARD",
+      "mock_playable": false,
+      "gate": "BLOCKED_CONTRACT_EXTENSION",
+      "parameter_origin": "P03_TEST_FIXTURE_VALUES_UNAPPROVED_BY_P05",
+      "notes": "仅用于隔离内容验证，禁止直接作为正式游戏卡数值"
+    }
+  ],
+  "active_mock_card_count": 8,
+  "unapproved_keyword_extension_card_count": 2,
+  "policy_notes": [
+    "S01恰好三张基本牌：斩击/防护/疗愈。",
+    "S02测试四类：ATTACK/DEFENSE/HEAL/STATUS(DOT)；BUFF/DEBUFF状态作为blocked示例。",
+    "MOCK角色槽不是已批准的新角色，正式character_id只能由P04给出并经P22登记。",
+    "牌组拥有权与抽牌实现分离；P15候选DeckPatch，P14权威提交。",
+    "不得推导零学习日免费基础牌或永久资源政策。"
+  ]
+}
