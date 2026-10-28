@@ -1,0 +1,43 @@
+{
+  "schema_version": "P11-PATH-REQUEST/0.1.0-proposal",
+  "owner": "P11",
+  "requested_from": "P13",
+  "status": "BLOCKED",
+  "actual_path_mapping": null,
+  "actual_game_repository_commit": null,
+  "production_write_authorized": false,
+  "isolated_delivery_whitelist": [
+    "P11_StudyLedger_V0.1/** except read-only sources and historical evidence"
+  ],
+  "planned_target_paths": [
+    "runtime/anki/ledger/**",
+    "runtime/anki/reward_transactions/**"
+  ],
+  "actual_target_paths": null,
+  "engine": null,
+  "language_in_isolation": "Python >=3.11",
+  "mapping_candidates": [
+    {
+      "source": "ledger_runtime/service.py",
+      "purpose": "StudyLedger business orchestration"
+    },
+    {
+      "source": "ledger_runtime/types.py",
+      "purpose": "Local DTO proposal; P13 maps actual internal DTO"
+    },
+    {
+      "source": "ledger_runtime/ports.py",
+      "purpose": "Port proposal; no production adapters"
+    },
+    {
+      "source": "ledger_runtime/audit.py",
+      "purpose": "P11 audit and invariant checks"
+    }
+  ],
+  "do_not_integrate": [
+    "tests/support/** as P17/P21 runtime",
+    "sources/** as editable engine source",
+    "evidence/author_run_002/failing_sources.zip"
+  ],
+  "cross_module_integrator": "USER_DESIGNATED_EXT_INTEGRATOR_REQUIRED"
+}

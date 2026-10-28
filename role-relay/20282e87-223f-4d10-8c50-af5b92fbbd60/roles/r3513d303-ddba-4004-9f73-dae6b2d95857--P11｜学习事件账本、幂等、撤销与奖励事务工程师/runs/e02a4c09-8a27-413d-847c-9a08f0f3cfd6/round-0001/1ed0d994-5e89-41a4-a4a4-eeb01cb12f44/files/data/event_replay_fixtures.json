@@ -1,0 +1,1062 @@
+{
+  "schema_version": "P11-EVENT-REPLAY/0.1.0",
+  "task_id": "P11-S05-LEDGER-001",
+  "evidence_scope": "ISOLATED_SYNTHETIC_SIMULATION",
+  "not_p12_wire_schema": true,
+  "amount_source": "sources/P08/compensation_arithmetic_cases.json; P08-MATH-A01 Q=10, never a four-button reward amount",
+  "events": {
+    "review": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "review-1",
+      "family_id": "family-1",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "857b1f49f39c110acbd5f358550e49e0d4ca028479f1df1fe572a6506ed7f658"
+    },
+    "undo": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "undo-1",
+      "family_id": "family-1",
+      "kind": "UNDO",
+      "revision": 1,
+      "predecessor_event_id": "review-1",
+      "rating": null,
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "befee6911c7355a76da27811efc2b02bb4f0d6194bee479d8da6c11cdad664b5"
+    },
+    "restore": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "restore-1",
+      "family_id": "family-1",
+      "kind": "RESTORE",
+      "revision": 2,
+      "predecessor_event_id": "undo-1",
+      "rating": null,
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "34b17eaf2290e7f7836819a96ce48bb66d43861885088d800b64d89e65d3ead6"
+    },
+    "undo_again": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "undo-2",
+      "family_id": "family-1",
+      "kind": "UNDO",
+      "revision": 3,
+      "predecessor_event_id": "restore-1",
+      "rating": null,
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "4e7b75786f8a2319f0bca50f6ca24e1fe23f22a7e1795b1797418cc60ee8e609"
+    },
+    "same_id_changed": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "review-1",
+      "family_id": "family-1",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Easy",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "857b1f49f39c110acbd5f358550e49e0d4ca028479f1df1fe572a6506ed7f658"
+    },
+    "same_card_new": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "review-2",
+      "family_id": "family-2",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "92ed4960531d65cf0388055c57669fd875fdc400664313114159cb5e0923d611"
+    },
+    "cross_epoch": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-2",
+      "beneficiary_id": "fixture:player",
+      "event_id": "epoch2-review",
+      "family_id": "family-1",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "85f57bd9308b2731cd9d5412a24a6010461d7521b00752755cd3d4b4a7cc9dc9"
+    },
+    "no_identity": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": null,
+      "family_id": null,
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "34c1fa5506a0deec90d622113d2ac77a48fbb15f9a0b5ba74eba63a9b9ca4674"
+    },
+    "real_unverified": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "anki:unverified",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "review-1",
+      "family_id": "family-1",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "857b1f49f39c110acbd5f358550e49e0d4ca028479f1df1fe572a6506ed7f658"
+    },
+    "Again": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "rating-Again",
+      "family_id": "family-Again",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Again",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "7c62a96a0ebaa2236184f2a3acb3e5a22fa1e6d42d8926a93aa63f969757a265"
+    },
+    "Hard": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "rating-Hard",
+      "family_id": "family-Hard",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Hard",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "592f73e81f6afa3e54e95416f0d88024298f7e461ef2a58c5a5888b09580506e"
+    },
+    "Good": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "rating-Good",
+      "family_id": "family-Good",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Good",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "98bbc172800d53c5f0df9aed518a4dad1152ea4cea9b480b96a1140c46675913"
+    },
+    "Easy": {
+      "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+      "source_id": "fixture:source",
+      "collection_lineage": "fixture:lineage",
+      "collection_epoch": "fixture:epoch-1",
+      "beneficiary_id": "fixture:player",
+      "event_id": "rating-Easy",
+      "family_id": "family-Easy",
+      "kind": "REVIEW",
+      "revision": 0,
+      "predecessor_event_id": null,
+      "rating": "Easy",
+      "card_reference": "fixture:card-1",
+      "source_evidence_sha256": "1984fbb75eb370107cf84c216154aaac064414a0200ef9b073144560d011365d"
+    }
+  },
+  "cases": [
+    {
+      "case_id": "P11-REPLAY-001",
+      "title": "Again 合成单次资格",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "Again",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-002",
+      "title": "Hard 合成单次资格",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "Hard",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-003",
+      "title": "Good 合成单次资格",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "Good",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-004",
+      "title": "Easy 合成单次资格",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "Easy",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-005",
+      "title": "同一身份1000次重投",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-CASE-006"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          },
+          "repeat": 1000
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-006",
+      "title": "同身份改评分隔离",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P03"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "same_id_changed",
+          "expect": {
+            "balance": 10,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "query",
+          "outcome": "review",
+          "expect": {
+            "state": "APPLIED",
+            "balance": 10
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-007",
+      "title": "同卡自然下一次复习",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P02"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "same_card_new",
+          "expect": {
+            "balance": 20,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-008",
+      "title": "仅接收不授奖",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-C02"
+      ],
+      "steps": [
+        {
+          "action": "receive",
+          "event": "review",
+          "expect": {
+            "ack": "ACK_RECEIVED",
+            "balance": 0
+          }
+        },
+        {
+          "action": "restart"
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-009",
+      "title": "Undo先到、重启、迟到原事件",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P03",
+        "P08-U02"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        },
+        {
+          "action": "restart"
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-010",
+      "title": "全未消费撤销及旧完成重投",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-MATH-A02"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          },
+          "repeat": 20
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-011",
+      "title": "撤销后恢复一次",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P08"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "restore",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          },
+          "repeat": 100
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-012",
+      "title": "花7回收3恢复3再撤销",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-MATH-A03",
+        "P08-MATH-A04",
+        "P08-MATH-A05",
+        "P08-MATH-A06"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "spend",
+          "event": "review",
+          "amount": 7,
+          "expect": {
+            "balance": 3
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "PENDING_RECONCILIATION"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "PENDING_RECONCILIATION"
+          },
+          "repeat": 20
+        },
+        {
+          "action": "deliver",
+          "event": "restore",
+          "expect": {
+            "balance": 3,
+            "state": "APPLIED"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo_again",
+          "expect": {
+            "balance": 0,
+            "state": "PENDING_RECONCILIATION"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-013",
+      "title": "未批准回收保留全部权益差额",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-MATH-A08"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "spend",
+          "event": "review",
+          "amount": 7
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 3,
+            "state": "PENDING_RECONCILIATION"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "restore",
+          "expect": {
+            "balance": 3,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN",
+      "policy_overrides": {
+        "reclaim": false
+      }
+    },
+    {
+      "case_id": "P11-REPLAY-014",
+      "title": "不扣其他来源余额",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-U02"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "other_source",
+          "amount": 100
+        },
+        {
+          "action": "spend",
+          "event": "review",
+          "amount": 7
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 100,
+            "state": "PENDING_RECONCILIATION"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-015",
+      "title": "来源消费归属不明",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-U02"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "hide_attribution",
+          "event": "review"
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 10,
+            "state": "PENDING_RECONCILIATION"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-016",
+      "title": "政策补齐不自动释放，绑定新证据后恢复",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-Q04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "restart"
+        },
+        {
+          "action": "policy_available",
+          "value": true
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "resolve",
+          "outcome": "review",
+          "evidence_ref": "fixture:policy-evidence-v2",
+          "expect": {
+            "state": "APPLIED",
+            "balance": 10
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN",
+      "policy_overrides": {
+        "available": false
+      }
+    },
+    {
+      "case_id": "P11-REPLAY-017",
+      "title": "映射缺失不能变UNKNOWN",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-C03"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN",
+      "policy_overrides": {
+        "mapping_available": false
+      }
+    },
+    {
+      "case_id": "P11-REPLAY-018",
+      "title": "获准合成映射返回UNKNOWN",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-C03"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN",
+      "policy_overrides": {
+        "category": "UNKNOWN"
+      }
+    },
+    {
+      "case_id": "P11-REPLAY-019",
+      "title": "恢复乱序先等因果再处理",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P03"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "restore",
+          "expect": {
+            "balance": 10,
+            "state": "PENDING_RECONCILIATION"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        },
+        {
+          "action": "resolve",
+          "outcome": "restore",
+          "evidence_ref": "fixture:predecessor-commit",
+          "expect": {
+            "state": "APPLIED",
+            "balance": 10
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-020",
+      "title": "跨epoch先隔离，证据链接仅查原权益",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-Q02",
+        "P08-Q04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "cross_epoch",
+          "expect": {
+            "balance": 10,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "resolve",
+          "outcome": "cross_epoch",
+          "resolution_action": "LINK_DUPLICATE",
+          "target": "review",
+          "evidence_ref": "fixture:verified-epoch-alias",
+          "expect": {
+            "state": "APPLIED",
+            "balance": 10
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-021",
+      "title": "身份不足隔离",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-C01"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "no_identity",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-022",
+      "title": "真实来源不能使用合成证明",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P10-QUARANTINED"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "real_unverified",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-023",
+      "title": "提交成功但回复丢失",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-C02",
+        "P08-Q04"
+      ],
+      "steps": [
+        {
+          "action": "reply_loss"
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "PENDING_RECONCILIATION",
+            "ack": null
+          }
+        },
+        {
+          "action": "lookup_restore"
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-024",
+      "title": "旧备份栅栏及权威恢复",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P02",
+        "P08-Q02"
+      ],
+      "steps": [
+        {
+          "action": "snapshot",
+          "name": "old"
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "checkpoint",
+          "name": "current"
+        },
+        {
+          "action": "restore_old_backup",
+          "name": "old"
+        },
+        {
+          "action": "reconcile",
+          "checkpoint": "current",
+          "expect": {
+            "state": "PENDING_RECONCILIATION",
+            "balance": 0
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "ack": null
+          }
+        },
+        {
+          "action": "p21_authoritative_repair"
+        },
+        {
+          "action": "reconcile",
+          "checkpoint": "current",
+          "expect": {
+            "state": "CONSISTENT_SNAPSHOT",
+            "balance": 10
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10,
+            "state": "APPLIED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-025",
+      "title": "新授奖停用仍处理既有Undo",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-P03"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 10
+          }
+        },
+        {
+          "action": "policy_available",
+          "value": false
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "REVERTED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN"
+    },
+    {
+      "case_id": "P11-REPLAY-026",
+      "title": "有证据拒绝后不靠新控制事件重开",
+      "fixture_only": true,
+      "upstream_refs": [
+        "P08-Q04"
+      ],
+      "steps": [
+        {
+          "action": "deliver",
+          "event": "review",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "resolve",
+          "outcome": "review",
+          "resolution_action": "REJECT",
+          "evidence_ref": "fixture:fact-ineligible",
+          "expect": {
+            "state": "REJECTED",
+            "balance": 0
+          }
+        },
+        {
+          "action": "policy_available",
+          "value": true
+        },
+        {
+          "action": "deliver",
+          "event": "undo",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        },
+        {
+          "action": "deliver",
+          "event": "restore",
+          "expect": {
+            "balance": 0,
+            "state": "QUARANTINED"
+          }
+        }
+      ],
+      "independent_execution": "NOT_RUN",
+      "policy_overrides": {
+        "available": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,1012 @@
+[
+  {
+    "role": "P08",
+    "relative_path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/acceptance_matrix.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/decisions_pending.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_environment.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_review.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_revision_notes.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/policy_static.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/policy_static.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/validator_guards.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/author_run_001/validator_guards.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/github_read_evidence.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/intake_findings.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/intake_variants.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/packaging_failure_001/failed_script.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/packaging_failure_001/failure_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/packaging_failure_001/stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/packaging_failure_001/stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p01_decisions_pending.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p01_requirements.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p01_scope.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p05_balance_parameters.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p05_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p05_reward_abuse_cases.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p05_stage_resource_budget.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p07_first_clear_policy.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p07_github_answer.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p07_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p07_stage_graph.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/p07_stage_rewards.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/evidence/table_authoring.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/format_and_usage.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/p07_boundary_response.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/path_mapping_request.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/quarantine_resolution_policy.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/undo_compensation_options.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/verification/run_author_checks.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/verification/test_policy_guards.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/verification/verify_manifest.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/verification/verify_policy_artifacts.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "design/anki_rewards/verification/verify_sources.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/compensation_arithmetic_cases.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/four_rating_policy_matrix.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/policy_cases.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/policy_record.proposal.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/policy_registry.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/rating_matrix_data.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/resource_mapping_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P08",
+    "relative_path": "spec/anki/reward_semantics/study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/category_dictionary.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/classification_cases.jsonl",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/example_entries.synthetic.jsonl",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/field_profile.synthetic.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/fixtures/rollback_rules.synthetic.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/mapping_release_registry.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/override_log.synthetic.jsonl",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/pos_mapping_rules.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/resource_affinity_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/schema/mapping_input.schema.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/schema/mapping_output.schema.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/schema/override_event.schema.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "content/linguistic/unknown_fallback_cases.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/anki_field_observations.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/blockers.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/classification_spec.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/environment.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_001/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/environment.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_002/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/environment.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/input_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/author_run_003/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/cli_demo_001/run_result.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/cli_demo_001/stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/cli_demo_001/stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/intake/git_blob_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/intake/intake_report.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/intake/p08_github_tree.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/intake/v6_github_tree.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p01_requirements_baseline_v6.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p08_delivery_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p08_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p08_resource_mapping_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p08_source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/p08_study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/evidence/setup_probe.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/field_protocol_proposal.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/known_issues_and_history.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/override_and_rollback.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/path_mapping_request.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/reference/demo.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/reference/pos_mapper.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/rfc_ic15_ic16.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/source_notes.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/reproduction_notes.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/run_checks.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/test_override_replay.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/test_pos_mapper.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/verify_delivery.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/verify_manifest.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification/verify_source_inputs.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P09",
+    "relative_path": "design/linguistic/verification_status.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "QUARANTINED.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "addon_manifest.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "anki_hook_probe.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "configuration_disable_uninstall.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "deliverable_status.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/input_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/report_guard_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/report_guard_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/static_reference.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/author_run_002/static_reference.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/anki_ref.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/git_blob_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/intake.exec_output.log",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/intake_archives_method.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/intake_execution_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/intake_report.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/p09_tree.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/upstream_manifest_checks.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/intake/v6_tree.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "evidence/reproduction_and_revision_notes.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "hook_probe_report.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "probe_log_redacted.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "reference_inputs.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "rfc_ic14_ic15.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sample_inventory.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/LICENSE",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/proto/anki/collection.proto",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/pylib/anki/collection.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/aqt/main.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/aqt/operations/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/aqt/operations/collection.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/aqt/reviewer.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/aqt/undo.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/qt/tools/genhooks_gui.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/anki_reference/source-version.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p01_requirements_baseline_v6.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p08_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p08_quarantine_resolution_policy.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p08_study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p09_anki_field_observations.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p09_field_protocol_proposal.md",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p09_formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/p09_source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "sources/upstream/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "verification/run_author_checks.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "verification/test_report_guards.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "verification/verify_delivery.py",
+    "status": "PASS"
+  },
+  {
+    "role": "P10",
+    "relative_path": "verification_status.json",
+    "status": "PASS"
+  }
+]

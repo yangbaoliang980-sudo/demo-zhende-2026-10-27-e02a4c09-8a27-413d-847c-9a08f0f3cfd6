@@ -1,0 +1,635 @@
+{
+  "schema_version": "P11-SOURCE-RECEIPT/0.1.0",
+  "primary_inputs": [
+    {
+      "input_path": "upload/relay-materials-1-f92b299dcb(1).zip",
+      "sha256": "f92b299dcb511cc3be26f1425cf4357f374e217f5de1d49ddad23c7bbf59378c",
+      "size_bytes": 16672725,
+      "member_count": 104,
+      "crc_status": "PASS",
+      "relay_manifest_entries_verified": 103
+    },
+    {
+      "input_path": "upload/relay-materials-2-c01e4fe1d7.zip",
+      "sha256": "c01e4fe1d7688aff40fa0cf3e5cb985d0d56ad6b6ab410c78a2a4b090823c129",
+      "size_bytes": 15184243,
+      "member_count": 75,
+      "crc_status": "PASS",
+      "relay_manifest_entries_verified": 74
+    }
+  ],
+  "package_bindings": [
+    {
+      "input_path": "intake/f92b299dcb511cc3be26f1425cf4357f374e217f5de1d49ddad23c7bbf59378c/files/006/P09_Linguistic_Mapping_V0.1.zip",
+      "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "size_bytes": 5041990,
+      "member_count": 86,
+      "crc_status": "PASS",
+      "relay_manifest_entries_verified": 0,
+      "git_blob_sha1": "1c7afd51845d68be0c786234fbc88e8944501e04",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P09_Linguistic_Mapping_V0.1.zip",
+          "git_blob_sha1": "1c7afd51845d68be0c786234fbc88e8944501e04"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/archives/P09_Linguistic_Mapping_V0.1.zip",
+          "git_blob_sha1": "1c7afd51845d68be0c786234fbc88e8944501e04"
+        }
+      ]
+    },
+    {
+      "input_path": "intake/c01e4fe1d7688aff40fa0cf3e5cb985d0d56ad6b6ab410c78a2a4b090823c129/files/001/P08_Anki_Reward_Policy_V0.1.zip",
+      "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "size_bytes": 2523333,
+      "member_count": 62,
+      "crc_status": "PASS",
+      "relay_manifest_entries_verified": 0,
+      "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+          "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+          "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_P08_Anki_Reward_Policy_V0.1.zip.txt",
+          "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+          "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab"
+        }
+      ]
+    },
+    {
+      "input_path": "intake/c01e4fe1d7688aff40fa0cf3e5cb985d0d56ad6b6ab410c78a2a4b090823c129/files/005/P10_S04_Probe_Report_V0.1.zip",
+      "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "size_bytes": 271956,
+      "member_count": 57,
+      "crc_status": "PASS",
+      "relay_manifest_entries_verified": 0,
+      "git_blob_sha1": "db455026bcd4ca717189b06228089ebcebb905ad",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P10_S04_Probe_Report_V0.1.zip",
+          "git_blob_sha1": "db455026bcd4ca717189b06228089ebcebb905ad"
+        }
+      ]
+    }
+  ],
+  "consumed_files": [
+    {
+      "source_id": "P08-study_policy_draft",
+      "relative_path": "sources/P08/study_policy_draft.md",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/study_policy_draft.md",
+      "size_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p08_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p08_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        }
+      ],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-policy_record.proposal",
+      "relative_path": "sources/P08/policy_record.proposal.json",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/policy_record.proposal.json",
+      "size_bytes": 2259,
+      "sha256": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+      "fixed_git_bindings": [],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-policy_cases",
+      "relative_path": "sources/P08/policy_cases.json",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/policy_cases.json",
+      "size_bytes": 40755,
+      "sha256": "3c34dae65d5cb91a1a656cb572d5ffda78a823daa1fae96062a08db1c2f9a1b4",
+      "fixed_git_bindings": [],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-compensation_arithmetic_cases",
+      "relative_path": "sources/P08/compensation_arithmetic_cases.json",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/compensation_arithmetic_cases.json",
+      "size_bytes": 7297,
+      "sha256": "110e0c9e29ffd940ba13a0ef5d53d0649a87b2ad5da81f3b89eab973a18eb1ea",
+      "fixed_git_bindings": [],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-four_rating_policy_matrix",
+      "relative_path": "sources/P08/four_rating_policy_matrix.tsv",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/four_rating_policy_matrix.tsv",
+      "size_bytes": 18719,
+      "sha256": "75d5637641998a27259de410662c642c2bbb40935fc8e5cdf1a3b8eb010e8c45",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/four_rating_policy_matrix.tsv",
+          "git_blob_sha1": "3195f1ecd20891ad3d07bc4bc94bfd95e0443cb4"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/four_rating_policy_matrix.tsv",
+          "git_blob_sha1": "3195f1ecd20891ad3d07bc4bc94bfd95e0443cb4"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/data/75d5637641998a27259de410662c642c2bbb40935fc8e5cdf1a3b8eb010e8c45/four_rating_policy_matrix.tsv",
+          "git_blob_sha1": "3195f1ecd20891ad3d07bc4bc94bfd95e0443cb4"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/data/four_rating_policy_matrix.tsv",
+          "git_blob_sha1": "3195f1ecd20891ad3d07bc4bc94bfd95e0443cb4"
+        }
+      ],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-undo_compensation_options",
+      "relative_path": "sources/P08/undo_compensation_options.md",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/undo_compensation_options.md",
+      "size_bytes": 8519,
+      "sha256": "2900f3cb73d56fc12a415f5f83dc0541661aa6ca1f1d07fa0613eeed8e09508c",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/undo_compensation_options.md",
+          "git_blob_sha1": "57f9ce74dbc049df2917cff74a6d0f71682e5da5"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/undo_compensation_options.md",
+          "git_blob_sha1": "57f9ce74dbc049df2917cff74a6d0f71682e5da5"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_undo_compensation_options.md",
+          "git_blob_sha1": "57f9ce74dbc049df2917cff74a6d0f71682e5da5"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/undo_compensation_options.md",
+          "git_blob_sha1": "57f9ce74dbc049df2917cff74a6d0f71682e5da5"
+        }
+      ],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-quarantine_resolution_policy",
+      "relative_path": "sources/P08/quarantine_resolution_policy.md",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/quarantine_resolution_policy.md",
+      "size_bytes": 7026,
+      "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p08_quarantine_resolution_policy.md",
+          "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/quarantine_resolution_policy.md",
+          "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/quarantine_resolution_policy.md",
+          "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_quarantine_resolution_policy.md",
+          "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/quarantine_resolution_policy.md",
+          "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33"
+        }
+      ],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-interface_rfc",
+      "relative_path": "sources/P08/interface_rfc.md",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/interface_rfc.md",
+      "size_bytes": 3756,
+      "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p08_interface_rfc.md",
+          "git_blob_sha1": "d178791e74ee631cd1a4299edab36907d8e35615"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p08_interface_rfc.md",
+          "git_blob_sha1": "d178791e74ee631cd1a4299edab36907d8e35615"
+        }
+      ],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P08-formal_prerequisites",
+      "relative_path": "sources/P08/formal_prerequisites.json",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "source_archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/formal_prerequisites.json",
+      "size_bytes": 4723,
+      "sha256": "0d682957a5913ddefb57e266337338f46753bb88f622d49bdb7818312353b3b6",
+      "fixed_git_bindings": [],
+      "owner": "P08",
+      "mutable": false
+    },
+    {
+      "source_id": "P09-pos_mapping_rules",
+      "relative_path": "sources/P09/pos_mapping_rules.json",
+      "source_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "source_archive_member": "P09_Linguistic_Mapping_V0.1/content/linguistic/pos_mapping_rules.json",
+      "size_bytes": 7559,
+      "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/pos_mapping_rules.json",
+          "git_blob_sha1": "a86f13efc4cd6f2acc4e2992236f3afdae0e956a"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/pos_mapping_rules.json",
+          "git_blob_sha1": "a86f13efc4cd6f2acc4e2992236f3afdae0e956a"
+        }
+      ],
+      "owner": "P09",
+      "mutable": false
+    },
+    {
+      "source_id": "P09-mapping_release_registry",
+      "relative_path": "sources/P09/mapping_release_registry.json",
+      "source_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "source_archive_member": "P09_Linguistic_Mapping_V0.1/content/linguistic/mapping_release_registry.json",
+      "size_bytes": 474,
+      "sha256": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/mapping_release_registry.json",
+          "git_blob_sha1": "651f642dcb0e14f919b22300ecfbc16ab5227848"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/mapping_release_registry.json",
+          "git_blob_sha1": "651f642dcb0e14f919b22300ecfbc16ab5227848"
+        }
+      ],
+      "owner": "P09",
+      "mutable": false
+    },
+    {
+      "source_id": "P09-classification_spec",
+      "relative_path": "sources/P09/classification_spec.md",
+      "source_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "source_archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/classification_spec.md",
+      "size_bytes": 5591,
+      "sha256": "f1bc56097935f8165005c7768af4aa4c46956adada4496ea8f483d825f61f3dd",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/classification_spec.md",
+          "git_blob_sha1": "a4582fa81923207d1407a18fbcee669820d7e277"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/classification_spec.md",
+          "git_blob_sha1": "a4582fa81923207d1407a18fbcee669820d7e277"
+        }
+      ],
+      "owner": "P09",
+      "mutable": false
+    },
+    {
+      "source_id": "P09-field_protocol_proposal",
+      "relative_path": "sources/P09/field_protocol_proposal.md",
+      "source_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "source_archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/field_protocol_proposal.md",
+      "size_bytes": 3987,
+      "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/field_protocol_proposal.md",
+          "git_blob_sha1": "9912b1080ceca2e038a8c668eeb20c7459307f0c"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p09_field_protocol_proposal.md",
+          "git_blob_sha1": "9912b1080ceca2e038a8c668eeb20c7459307f0c"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/field_protocol_proposal.md",
+          "git_blob_sha1": "9912b1080ceca2e038a8c668eeb20c7459307f0c"
+        }
+      ],
+      "owner": "P09",
+      "mutable": false
+    },
+    {
+      "source_id": "P09-anki_field_observations",
+      "relative_path": "sources/P09/anki_field_observations.md",
+      "source_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "source_archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/anki_field_observations.md",
+      "size_bytes": 3396,
+      "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/anki_field_observations.md",
+          "git_blob_sha1": "d714b5b6b3adb7d0971d69bc8f24dc6dee163cc3"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p09_anki_field_observations.md",
+          "git_blob_sha1": "d714b5b6b3adb7d0971d69bc8f24dc6dee163cc3"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/anki_field_observations.md",
+          "git_blob_sha1": "d714b5b6b3adb7d0971d69bc8f24dc6dee163cc3"
+        }
+      ],
+      "owner": "P09",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-QUARANTINED",
+      "relative_path": "sources/P10/QUARANTINED.json",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/QUARANTINED.json",
+          "git_blob_sha1": "b375f45192fd28561ed53f4d3343fe1b5c8efd52"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-prerequisites",
+      "relative_path": "sources/P10/prerequisites.json",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/prerequisites.json",
+      "size_bytes": 2843,
+      "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/prerequisites.json",
+          "git_blob_sha1": "8ce5c4b62d4a88a9b4d64b416ee1ec1b9194a6a1"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-sample_inventory",
+      "relative_path": "sources/P10/sample_inventory.json",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/sample_inventory.json",
+          "git_blob_sha1": "9c1ce0ebe6a14ad3b47e17e27e7b0b30b53bad47"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-hook_probe_report",
+      "relative_path": "sources/P10/hook_probe_report.md",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/hook_probe_report.md",
+          "git_blob_sha1": "dd5e6cbf414ab4b4b7f15cf2892a31c74bb257e4"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-v6_freeze",
+      "relative_path": "sources/P10/v6_freeze.txt",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/sources/upstream/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository_id": "V6",
+          "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+          "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository_id": "V6",
+          "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+          "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-p01_requirements_baseline_v6",
+      "relative_path": "sources/P10/p01_requirements_baseline_v6.txt",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/sources/upstream/p01_requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    },
+    {
+      "source_id": "P10-p01_requirements_traceability",
+      "relative_path": "sources/P10/p01_requirements_traceability.tsv",
+      "source_archive_sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "source_archive_member": "P10_S04_Probe_Report_V0.1/sources/upstream/p01_requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "fixed_git_bindings": [
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        },
+        {
+          "repository_id": "P10_RELAY",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        }
+      ],
+      "owner": "P10",
+      "mutable": false
+    }
+  ],
+  "repository_scope": [
+    {
+      "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+      "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+      "tree_entries": 736,
+      "truncated": false
+    },
+    {
+      "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+      "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+      "tree_entries": 170,
+      "truncated": false
+    }
+  ],
+  "actual_path_mapping": null,
+  "production_authorized": false,
+  "user_instruction_source": "Current conversation; full message raw byte SHA unavailable, not invented."
+}

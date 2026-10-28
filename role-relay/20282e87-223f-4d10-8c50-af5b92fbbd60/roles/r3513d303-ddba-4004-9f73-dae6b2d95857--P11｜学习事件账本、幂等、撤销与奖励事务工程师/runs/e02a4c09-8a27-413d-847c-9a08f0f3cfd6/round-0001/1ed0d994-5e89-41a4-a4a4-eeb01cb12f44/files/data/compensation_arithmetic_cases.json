@@ -1,0 +1,320 @@
+{
+  "format_version": "P08-MATH-FIXTURES/0.1.0",
+  "scope": "STATIC_ARITHMETIC_NO_LEDGER_OR_WALLET_EXECUTION",
+  "policy_version": "P08-REWARD-POLICY/0.1.0-proposal",
+  "cases": [
+    {
+      "case_id": "P08-MATH-A01",
+      "title": "授予未消费",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 0,
+        "S": 0,
+        "A": 10,
+        "T": 10,
+        "U": 0,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A02",
+      "title": "未消费全部撤销",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 10,
+        "S": 0,
+        "A": 0,
+        "T": 0,
+        "U": 0,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A03",
+      "title": "已花7回收3",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 3,
+        "S": 7,
+        "A": 0,
+        "T": 0,
+        "U": 7,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A04",
+      "title": "同族重复Undo不增量",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 3,
+        "S": 7,
+        "A": 0,
+        "T": 0,
+        "U": 7,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A05",
+      "title": "恢复原事实差额3已补",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 13,
+        "R": 3,
+        "S": 7,
+        "A": 3,
+        "T": 10,
+        "U": 0,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A06",
+      "title": "再撤销只能再回收3",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 13,
+        "R": 6,
+        "S": 7,
+        "A": 0,
+        "T": 0,
+        "U": 7,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A07",
+      "title": "已消费7批准保留为补偿",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 3,
+        "S": 7,
+        "A": 0,
+        "T": 0,
+        "U": 0,
+        "K": 7,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A08",
+      "title": "尚未批准回收，全部待审",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 0,
+        "S": 7,
+        "A": 3,
+        "T": 0,
+        "U": 10,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A09",
+      "title": "已全部消费10",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 0,
+        "S": 10,
+        "A": 0,
+        "T": 0,
+        "U": 10,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A10",
+      "title": "恢复尚待差额3",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 10,
+        "R": 3,
+        "S": 7,
+        "A": 0,
+        "T": 10,
+        "U": 0,
+        "K": 0,
+        "M": 3
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A11",
+      "title": "没有历史授奖",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 0,
+        "R": 0,
+        "S": 0,
+        "A": 0,
+        "T": 0,
+        "U": 0,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    },
+    {
+      "case_id": "P08-MATH-A12",
+      "title": "未消费全撤后原事实恢复",
+      "policy_status": "PROPOSAL",
+      "fixture_only": true,
+      "formal_award_amount": null,
+      "resource_unit": "SYNTHETIC_SINGLE_UNIT",
+      "values": {
+        "G": 20,
+        "R": 10,
+        "S": 0,
+        "A": 10,
+        "T": 10,
+        "U": 0,
+        "K": 0,
+        "M": 0
+      },
+      "invariants": [
+        "A+S=G-R",
+        "G-R+M=T+U+K",
+        "ALL_NONNEGATIVE",
+        "U_AND_M_NOT_BOTH_POSITIVE"
+      ],
+      "runtime_execution_status": "NOT_RUN"
+    }
+  ],
+  "future_offset_examples": [
+    {
+      "case_id": "P08-OFFSET-01",
+      "n": 5,
+      "h": 2,
+      "w": 3,
+      "D_before": 7,
+      "D_after": 5,
+      "fixture_only": true,
+      "policy_status": "PROPOSAL",
+      "runtime_execution_status": "NOT_RUN"
+    }
+  ]
+}

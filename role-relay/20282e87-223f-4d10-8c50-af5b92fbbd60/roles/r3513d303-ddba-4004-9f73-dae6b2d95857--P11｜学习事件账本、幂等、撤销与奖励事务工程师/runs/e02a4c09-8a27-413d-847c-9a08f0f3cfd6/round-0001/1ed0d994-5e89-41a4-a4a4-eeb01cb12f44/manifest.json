@@ -1,0 +1,2708 @@
+{
+  "version": 1,
+  "presetId": "20282e87-223f-4d10-8c50-af5b92fbbd60",
+  "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "roleKey": "r3513d303-ddba-4004-9f73-dae6b2d95857",
+  "roleName": "P11｜学习事件账本、幂等、撤销与奖励事务工程师",
+  "round": 1,
+  "handoffToken": "1ed0d994-5e89-41a4-a4a4-eeb01cb12f44",
+  "materials": {
+    "assets": [
+      {
+        "hash": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+        "name": "pos_mapping_rules.json",
+        "kind": "file",
+        "size": 7559,
+        "type": "application/json",
+        "sourceUrls": [
+          "https://chatgpt.com/backend-api/estuary/content?id=file_0000000008b881f58dc849c34ac1f722&ts=498104&p=fs&cid=1&sig=140430aa60fade6259f7d8546b59f61f45ac8f0ceb2694fffde2b0b217e5a675&v=0"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+        "name": "anki_field_observations.md",
+        "kind": "file",
+        "size": 3396,
+        "type": "text/markdown",
+        "sourceUrls": [
+          "https://chatgpt.com/backend-api/estuary/content?id=file_000000003ba081f5b64fc2881366258e&ts=498104&p=fs&cid=1&sig=806f5d3f46c8c8c9156d07c78698e04ec13dca1ac45089d3e57b0a895525bcd9&v=0"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd",
+        "name": "mapping_release_registry.json",
+        "kind": "file",
+        "size": 474,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "f1bc56097935f8165005c7768af4aa4c46956adada4496ea8f483d825f61f3dd",
+        "name": "classification_spec.md",
+        "kind": "file",
+        "size": 5591,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+        "name": "p01_requirements_baseline_v6.txt",
+        "kind": "file",
+        "size": 6715,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+        "name": "p01_requirements_traceability.tsv",
+        "kind": "file",
+        "size": 17235,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+        "name": "v6_freeze.txt",
+        "kind": "file",
+        "size": 226868,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+        "name": "field_protocol_proposal.md",
+        "kind": "file",
+        "size": 3987,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+        "name": "study_policy_draft.md",
+        "kind": "file",
+        "size": 18083,
+        "type": "text/markdown",
+        "sourceUrls": [
+          "https://sdmntprwestus2.oaiusercontent.com/files/00000000-8198-81f8-a948-cc3f645f4830/raw?se=2026-10-28T05%3A58%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=a73e3bdd-c9d5-4e14-92c6-989175490cb4&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T14%3A05%3A38Z&ske=2026-10-28T14%3A05%3A38Z&sks=b&skv=2026-02-06&sig=s46QC14E1a8QxpwfugNSGPu6DyySyzfw%2BH/Pr1dYUIA%3D"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "2900f3cb73d56fc12a415f5f83dc0541661aa6ca1f1d07fa0613eeed8e09508c",
+        "name": "undo_compensation_options.md",
+        "kind": "file",
+        "size": 8519,
+        "type": "text/markdown",
+        "sourceUrls": [
+          "https://sdmntprwestus3.oaiusercontent.com/files/00000000-acb8-81fd-9e0f-0a000c9c0231/raw?se=2026-10-28T05%3A58%3A30Z&sp=r&sv=2026-02-06&sr=b&scid=a007a694-5e1f-42f4-9dd5-351c16cf7d0d&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T12%3A00%3A20Z&ske=2026-10-28T12%3A00%3A20Z&sks=b&skv=2026-02-06&sig=2ZC/W6wXuI8X9qfjMPJiNmq5y9ahXNc4it7QR8MOgWw%3D"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+        "name": "quarantine_resolution_policy.md",
+        "kind": "file",
+        "size": 7026,
+        "type": "text/markdown",
+        "sourceUrls": [
+          "https://sdmntprwestus.oaiusercontent.com/files/00000000-7c34-8230-92d8-0bda077514cc/raw?se=2026-10-28T05%3A58%3A32Z&sp=r&sv=2026-02-06&sr=b&scid=61bc2aca-164d-4f17-8d29-d295ede951e2&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T11%3A57%3A53Z&ske=2026-10-28T11%3A57%3A53Z&sks=b&skv=2026-02-06&sig=iD8ceKV6zK0kLCeFqhxiQOhcUDT6h6gJi19TmQLiA8c%3D"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "75d5637641998a27259de410662c642c2bbb40935fc8e5cdf1a3b8eb010e8c45",
+        "name": "four_rating_policy_matrix.tsv",
+        "kind": "file",
+        "size": 18719,
+        "type": "text/tab-separated-values",
+        "sourceUrls": [
+          "https://sdmntprwestus3.oaiusercontent.com/files/00000000-6c64-81fd-8223-7c36d6d52042/raw?se=2026-10-28T07%3A22%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=caa2f2cc-e9f5-4ef6-9be6-e889c44681b2&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-28T01%3A34%3A45Z&ske=2026-10-29T01%3A34%3A45Z&sks=b&skv=2026-02-06&sig=Xrj6ypFxzaG4W8Km%2BPu04jlEACcNwWqztb92Y8ncIIY%3D"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+        "name": "QUARANTINED.json",
+        "kind": "file",
+        "size": 834,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "name": "preflight.stderr.log",
+        "kind": "file",
+        "size": 0,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+        "name": "hook_probe_report.md",
+        "kind": "file",
+        "size": 15187,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+        "name": "prerequisites.json",
+        "kind": "file",
+        "size": 2843,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+        "name": "sample_inventory.json",
+        "kind": "file",
+        "size": 4578,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "name": "P11_StudyLedger_V0.1.zip",
+        "kind": "file",
+        "size": 435064,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/9d238abd-1172-41f4-8df3-049b82eb990d",
+          "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1.zip"
+        ]
+      },
+      {
+        "name": "eb9febc0-1-README.md",
+        "size": 6108,
+        "type": "text/markdown",
+        "hash": "eb9febc0c075efb36110924af6b530d1787c87a25323dcaed9cf69a4e0228897",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/README.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/README.md",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "README.md"
+      },
+      {
+        "name": "defect_log.json",
+        "size": 4265,
+        "type": "application/json",
+        "hash": "92d671410a98a33c01f075ee86c2854068cd9397faddf48c156654e0d0031cee",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/defect_log.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/defect_log.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "54e96c2a-1-delivery_manifest.sha256.tsv",
+        "size": 251979,
+        "type": "application/octet-stream",
+        "hash": "54e96c2aaab995728b1937388f87cf81ed2dd5c82e4b4d65c6a7465bba07159c",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "delivery_manifest.sha256.tsv"
+      },
+      {
+        "name": "15bc6522-1-downstream_handoff.json",
+        "size": 12579,
+        "type": "application/json",
+        "hash": "15bc6522f4cb86c6422c0c86f20e23ed34c4363e2b759cac66a8470746852698",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/downstream_handoff.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/downstream_handoff.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "downstream_handoff.json"
+      },
+      {
+        "name": "event_replay_fixtures.json",
+        "size": 26512,
+        "type": "application/json",
+        "hash": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/event_replay_fixtures.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/event_replay_fixtures.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "failing_sources.zip",
+        "size": 24998,
+        "type": "application/octet-stream",
+        "hash": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/failing_sources.zip",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/failing_sources.zip",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "regression.stderr.log",
+        "size": 3997,
+        "type": "application/octet-stream",
+        "hash": "fa0b8a02c1298e8085d898bd9dce0cf71508a8bd9aaefdc3ca0ba82580917195",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stderr.log",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stderr.log",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "regression.stdout.log",
+        "size": 0,
+        "type": "application/octet-stream",
+        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stdout.log",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stdout.log",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "1704a210-1-preflight.stdout.log",
+        "size": 3466,
+        "type": "application/octet-stream",
+        "hash": "1704a210a058bd40b9d07bc0b3774fba6fedc3d7372134119c0370449ed90354",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/preflight.stdout.log",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/preflight.stdout.log",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "preflight.stdout.log"
+      },
+      {
+        "name": "P11-REPLAY-001.json",
+        "size": 13576,
+        "type": "application/json",
+        "hash": "682e9acdad90a80cf24bef3967549788b58535fcf8cf304602fccc61010ab982",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-001.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-001.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-002.json",
+        "size": 13563,
+        "type": "application/json",
+        "hash": "6d8a3d8f1f985b174d89b002e5a5ef85cad5f0b89fdcba984379d1821570d80a",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-002.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-002.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-003.json",
+        "size": 13563,
+        "type": "application/json",
+        "hash": "f41ce1a14e92fdfffe63873e9ddf665ee700c934f4bda65fbe2a6d206dfeac6f",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-003.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-003.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-004.json",
+        "size": 13563,
+        "type": "application/json",
+        "hash": "e887a7a1ab75de84970aff9f8bb645cc8edbbcdc26a790a61a447bcfa03109bc",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-004.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-004.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-005.json",
+        "size": 13562,
+        "type": "application/json",
+        "hash": "6ad91e80444ca87f19f75908445bff672d5542f27436768a7b4a6e9a8e046628",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-005.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-005.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-006.json",
+        "size": 21224,
+        "type": "application/json",
+        "hash": "02b961d4326b50a58f3ba4f54d74cd04bb77dcbe41b80d2eba6eba74758ae359",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-006.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-006.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-007.json",
+        "size": 26360,
+        "type": "application/json",
+        "hash": "5538501ef2a729511213746c5c5adc45c89c47d7828157d2c8edecc26b7f4982",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-007.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-007.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-008.json",
+        "size": 14990,
+        "type": "application/json",
+        "hash": "ccd3cbf26d10bc6d13dc75e7e7fbd6e980ebbad196732e7e8569b6826a8a612e",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-008.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-008.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-009.json",
+        "size": 16985,
+        "type": "application/json",
+        "hash": "381483a4c5f183c7592601119734fa3120a3969234925bb13f6668746748d860",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-009.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-009.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-010.json",
+        "size": 26094,
+        "type": "application/json",
+        "hash": "66b91ae7ce08b12e1b3cd8454d397ad0eada3ec70e1f0fe29883dcfc78543a4e",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-010.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-010.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-011.json",
+        "size": 33547,
+        "type": "application/json",
+        "hash": "ed126fb6a26793afabfca0d2a9134c49bb72936ae12c46744af2da51a70c1465",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-011.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-011.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-012.json",
+        "size": 45496,
+        "type": "application/json",
+        "hash": "6cbcde67964d03dbe89d1683f1a8672adcb041b12160821e515dfa9f92a5ce48",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-012.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-012.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-013.json",
+        "size": 33992,
+        "type": "application/json",
+        "hash": "0cba1ff3195151bb63b4549d6b0a577c101d64ab6c3b3e056722f17c57c8d242",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-013.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-013.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-014.json",
+        "size": 24245,
+        "type": "application/json",
+        "hash": "039de258c99fdd7eb4efa6fc6b997a85f8d005413b4fe717a999313c696474dc",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-014.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-014.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-015.json",
+        "size": 22016,
+        "type": "application/json",
+        "hash": "6239308c77073222ce5deb524bb4dddc43be0fa3da3f61791c8f64cb32454441",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-015.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-015.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-016.json",
+        "size": 19145,
+        "type": "application/json",
+        "hash": "85652eefd156f7e386a2a210b6f4db0611b53405c47b533222bfc089fe57b755",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-016.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-016.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-017.json",
+        "size": 8682,
+        "type": "application/json",
+        "hash": "de89cdc5227fd2ebd48a00ac181a7cd9387aa13ad93409a6f6f18dbe35385026",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-017.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-017.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-018.json",
+        "size": 13539,
+        "type": "application/json",
+        "hash": "ea93fa6a4cbd33ace4a883ce9fbfd41337ae41bd20f4e4050579671c0450f49d",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-018.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-018.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-019.json",
+        "size": 37371,
+        "type": "application/json",
+        "hash": "9aeb7bbafe0c54ceca0ec1416bb83f9ba0e82d2c7808f89a9ef9b4dc476a5264",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-019.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-019.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-020.json",
+        "size": 24087,
+        "type": "application/json",
+        "hash": "91eb6f2db83aa746dc28fcec9d01751c524ba23c3f5e2180674fe76004e18d0c",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-020.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-020.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-021.json",
+        "size": 6708,
+        "type": "application/json",
+        "hash": "4e13b0a2dbf1c0024c0bef16dac7a31d9f8719bb986aa708c7c3660bc15e6ce3",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-021.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-021.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-022.json",
+        "size": 6753,
+        "type": "application/json",
+        "hash": "314168349530d0442eae2cf19ae9deb6c66b5f01651e1235733ae14307d4a798",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-022.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-022.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-023.json",
+        "size": 14650,
+        "type": "application/json",
+        "hash": "d9dd419273f77cdf9d74163cae60e42d3315a01fbc9050ee994e100ebe78baa9",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-023.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-023.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-024.json",
+        "size": 18434,
+        "type": "application/json",
+        "hash": "2a0608d5268e121fa778921b9835cd71a0a570e28625d9c8d7ce9f6aebe1e05d",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-024.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-024.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-025.json",
+        "size": 23777,
+        "type": "application/json",
+        "hash": "31dba735418a0d3450b2d345a5f1872adf26c439b111b2e45e23c464b8bd405e",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-025.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-025.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "P11-REPLAY-026.json",
+        "size": 25641,
+        "type": "application/json",
+        "hash": "a17b819df9a9e99cd073fd87685c672b9d69785131cb2f8bc33ca2e8c2585a36",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-026.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-026.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "summary.json",
+        "size": 7210,
+        "type": "application/json",
+        "hash": "b367ccecd8b151d0011859d875af688b63f6ef5202b7a1b36b0cac7758fbbc08",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/summary.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/summary.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "replay.stderr.log",
+        "size": 0,
+        "type": "application/octet-stream",
+        "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stderr.log",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stderr.log",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "replay.stdout.log",
+        "size": 116,
+        "type": "application/octet-stream",
+        "hash": "ee766ffba195ee6ddc37e153b6739b775342ba6b4e2b6bdafb0bde689b1490ae",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stdout.log",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stdout.log",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "delivery_consistency.json",
+        "size": 434,
+        "type": "application/json",
+        "hash": "67f1e03e1c9fc4009659918c8b66258649292e850d4e79964671c5209b9e32e9",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/delivery_consistency.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/delivery_consistency.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "findings.json",
+        "size": 1136,
+        "type": "application/json",
+        "hash": "1163542b067389232fd01422cac3dbe833e2bf49cc27174ad027eb920345cf42",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/findings.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/findings.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "github_p10_tree.json",
+        "size": 434173,
+        "type": "application/json",
+        "hash": "efbbbed1f502cd5bb35848e6145cf375e5437feb54213f5c25561624c09d6185",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/github_p10_tree.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/github_p10_tree.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "github_v6_tree.json",
+        "size": 99095,
+        "type": "application/json",
+        "hash": "85a6a3b00d3e841b6cec8e36e54b2862385158f8a6158d1ed12bf1b46e8909fa",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/github_v6_tree.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/github_v6_tree.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "intake_archives.py",
+        "size": 3136,
+        "type": "application/octet-stream",
+        "hash": "0a0b898174a05732b5e6eecd8da4684a4f8bccd51102423e5c0a8d6882f65b63",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_archives.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_archives.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "0b7f2182-1-intake_report.json",
+        "size": 386860,
+        "type": "application/json",
+        "hash": "0b7f2182ddef148168daae6b5e61cdf91e06bbba987cf065c15b1674909ec0a1",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_report.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_report.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "intake_report.json"
+      },
+      {
+        "name": "16d34503-1-upstream_manifest_checks.json",
+        "size": 25127,
+        "type": "application/json",
+        "hash": "16d3450375dd3786db552466abd4024423cf1d9d71521c4599a752e7fddf23c9",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/upstream_manifest_checks.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/evidence/intake/upstream_manifest_checks.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "upstream_manifest_checks.json"
+      },
+      {
+        "name": "ledger_invariants.json",
+        "size": 10500,
+        "type": "application/json",
+        "hash": "c4310207d826724475d7901d5d0116741b9f223ae46a839860f14db1075a2438",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_invariants.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_invariants.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "__main__.py",
+        "size": 2208,
+        "type": "application/octet-stream",
+        "hash": "de5ec9437a760f9e342a3a1578ec59703d48d3f075e14540092ed1c72318e88c",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/__main__.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/__main__.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "audit.py",
+        "size": 5670,
+        "type": "application/octet-stream",
+        "hash": "e47ae26b1324da05ab514973dcbff4feab90881de34a020c653a84da96254fc0",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/audit.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/audit.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "ports.py",
+        "size": 1847,
+        "type": "application/octet-stream",
+        "hash": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/ports.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/ports.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "service.py",
+        "size": 24128,
+        "type": "application/octet-stream",
+        "hash": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/service.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/service.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "types.py",
+        "size": 7051,
+        "type": "application/octet-stream",
+        "hash": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/types.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/types.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "5060fd81-1-path_mapping_request.json",
+        "size": 1278,
+        "type": "application/json",
+        "hash": "5060fd816146192f36083d7ab3206df337d142ff63f19c0d3787385174557874",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/path_mapping_request.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/path_mapping_request.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "path_mapping_request.json"
+      },
+      {
+        "name": "reconciliation_and_recovery.md",
+        "size": 4971,
+        "type": "text/markdown",
+        "hash": "ac27457241ec3666744f4a2cba3bb85ea8340e907015704820e33fdae0c80d79",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/reconciliation_and_recovery.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/reconciliation_and_recovery.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "ba7a6b13-1-source_input_receipt.json",
+        "size": 39756,
+        "type": "application/json",
+        "hash": "ba7a6b13d0891c64cdd0995bd118c4d25b9a0246f0da2c1202c240124ddb4c86",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/source_input_receipt.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/source_input_receipt.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "source_input_receipt.json"
+      },
+      {
+        "name": "compensation_arithmetic_cases.json",
+        "size": 7297,
+        "type": "application/json",
+        "hash": "110e0c9e29ffd940ba13a0ef5d53d0649a87b2ad5da81f3b89eab973a18eb1ea",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/compensation_arithmetic_cases.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/sources/P08/compensation_arithmetic_cases.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "policy_cases.json",
+        "size": 40755,
+        "type": "application/json",
+        "hash": "3c34dae65d5cb91a1a656cb572d5ffda78a823daa1fae96062a08db1c2f9a1b4",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/policy_cases.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/sources/P08/policy_cases.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "policy_record.proposal.json",
+        "size": 2259,
+        "type": "application/json",
+        "hash": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/policy_record.proposal.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/sources/P08/policy_record.proposal.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "study_ledger_state_machine.md",
+        "size": 13833,
+        "type": "text/markdown",
+        "hash": "1a9941910b04afc3fb4480a01ed5588be5c05b0a63e281c277bcc2d18c71334f",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "task_receipt.json",
+        "size": 1405,
+        "type": "application/json",
+        "hash": "b7e3b9c36f1e5e4585b85eec71474b55b74f01d52eba6708bb7fe0f2840be7da",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/task_receipt.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/task_receipt.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "crash_worker.py",
+        "size": 882,
+        "type": "application/octet-stream",
+        "hash": "fb084af225818f0a2b5337f665527685244e7eaeda0206761f1198f1099a5701",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/tests/crash_worker.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/tests/crash_worker.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "simulated_ports.py",
+        "size": 7541,
+        "type": "application/octet-stream",
+        "hash": "8062f11a0ff60f2bd9c48b145aefa1757634a5b0659adaccb8ad27c2354a4102",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/tests/support/simulated_ports.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/tests/support/simulated_ports.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "sqlite_atomic_model.py",
+        "size": 10504,
+        "type": "application/octet-stream",
+        "hash": "e307630cdb2d0fd13340a4a3d1d8807d55f9188bfb59a57a457d69c9ce443093",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/tests/support/sqlite_atomic_model.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/tests/support/sqlite_atomic_model.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "test_ledger.py",
+        "size": 25995,
+        "type": "application/octet-stream",
+        "hash": "daf46e9053c87ac375d047f31ae6ed03fd5ef91d27b5463322284dfa67ae46bc",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/tests/test_ledger.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/tests/test_ledger.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "replay.py",
+        "size": 7668,
+        "type": "application/octet-stream",
+        "hash": "193a77c046212a3444d5bd25c7ec6628fdeaa3bff4c56096d3f598ad5ff10aaf",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/verification/replay.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/verification/replay.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "a407b72c-1-run_author_checks.py",
+        "size": 2679,
+        "type": "application/octet-stream",
+        "hash": "a407b72c977a2d40adbb30f2c0551546ceeb2a1437791f7ae469e792a0b0d6d8",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/verification/run_author_checks.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/verification/run_author_checks.py",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "run_author_checks.py"
+      },
+      {
+        "name": "04da9e7a-1-verify_delivery.py",
+        "size": 2351,
+        "type": "application/octet-stream",
+        "hash": "04da9e7a62dccd2ff16fe738e37b01f2857750c633f935b4e98b6deba3023f78",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/verification/verify_delivery.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/verification/verify_delivery.py",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "verify_delivery.py"
+      },
+      {
+        "name": "491ec078-1-verification_status.json",
+        "size": 2151,
+        "type": "application/json",
+        "hash": "491ec07894e835218482e2e969db4b79d6f253af68987137c160297e4b917af6",
+        "kind": "file",
+        "zipEntryPath": "P11_StudyLedger_V0.1/verification_status.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P11_StudyLedger_V0.1.zip",
+          "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "entryPath": "P11_StudyLedger_V0.1/verification_status.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "verification_status.json"
+      },
+      {
+        "hash": "06a51e39979adaa3379f8eab1ff8205a7e36abea64f08e37db83bb18f1908b95",
+        "name": "P11_delivery_receipt.json",
+        "kind": "file",
+        "size": 5286,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/f0461205-65e6-4ef6-a4d3-5bb28f945b88",
+          "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_delivery_receipt.json"
+        ]
+      },
+      {
+        "hash": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063",
+        "name": "interface_rfc.md",
+        "kind": "file",
+        "size": 6099,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/a8ed241e-27d9-4093-a922-cb4fb44f2e9b",
+          "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1%2Finterface_rfc.md"
+        ]
+      },
+      {
+        "hash": "41e652c47f1c9d76d2af166ed32b0da8509d445dd5612e46949ba8b681ae1ead",
+        "name": "compensation_log.jsonl",
+        "kind": "file",
+        "size": 31450,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/52975886-a2f5-45ed-b124-6caa43f3c255",
+          "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1%2Fcompensation_log.jsonl"
+        ]
+      },
+      {
+        "name": "relay-materials-1-a9385ef43d.zip",
+        "size": 16362831,
+        "hash": "a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-2-c668973fc2.zip",
+        "size": 15139774,
+        "hash": "c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e",
+        "type": "application/zip",
+        "kind": "file"
+      }
+    ],
+    "complete": true,
+    "issues": [],
+    "issueDetails": []
+  },
+  "coverage": {
+    "kind": "readable-dom",
+    "complete": false,
+    "message": "按本次交接编号取回原会话回答，未重新发送。"
+  },
+  "completion": "recovered-ui-controls-and-stable-text",
+  "fileRecovery": {
+    "overflowRecovery": {
+      "sourceUrl": "https://chatgpt.com/c/6ae1feaf-7a88-83e9-9bc4-15963c884171",
+      "handoffToken": "a73cace6-f9ec-4161-9a76-5374c8558b06",
+      "inputs": [
+        {
+          "id": "r1-g10-direct",
+          "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5"
+        }
+      ],
+      "originalFileCount": 248,
+      "transportFileCount": 90
+    }
+  },
+  "snapshotHash": "9791ffe04b9893dd0a6252c67e4668401a66910b1670de76bfbc9d412f8c4d4b",
+  "answerBlob": "caaa6a6f1f400517ac6aa8a0841cb39ed14ae63b",
+  "answerHash": "ca86e40259171c80a4c73a2a0d753e2f2f1f8018b58d6a83c061acb21c82a915",
+  "presentation": {
+    "name": "answer-r3513d303-ddba-4004-9f73-1ed0d994-5e89-41a4-a4a4-eeb01cb12f44.md",
+    "readmeBlob": "35ee2dec3ff6166b9d91a503e3acd5f18cdfe11d",
+    "readmeHash": "86a548a65a50f1cae6d87ced3bc9448cd0a2195b016c809a4431544a74833099",
+    "htmlBlob": "5e8e07cb3d0d6dae2c1f47ee7f68c699e5e09536",
+    "htmlHash": "147febc022deadc483a27c4a83a82448ecfd1ae5d7389828b758f2ccd4d76fe2"
+  },
+  "files": [
+    {
+      "hash": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+      "name": "pos_mapping_rules.json",
+      "kind": "file",
+      "size": 7559,
+      "type": "application/json",
+      "sourceUrls": [
+        "https://chatgpt.com/backend-api/estuary/content?id=file_0000000008b881f58dc849c34ac1f722&ts=498104&p=fs&cid=1&sig=140430aa60fade6259f7d8546b59f61f45ac8f0ceb2694fffde2b0b217e5a675&v=0"
+      ],
+      "presentation": false,
+      "blob": "a86f13efc4cd6f2acc4e2992236f3afdae0e956a",
+      "path": "files/data/pos_mapping_rules.json"
+    },
+    {
+      "hash": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+      "name": "anki_field_observations.md",
+      "kind": "file",
+      "size": 3396,
+      "type": "text/markdown",
+      "sourceUrls": [
+        "https://chatgpt.com/backend-api/estuary/content?id=file_000000003ba081f5b64fc2881366258e&ts=498104&p=fs&cid=1&sig=806f5d3f46c8c8c9156d07c78698e04ec13dca1ac45089d3e57b0a895525bcd9&v=0"
+      ],
+      "presentation": false,
+      "blob": "d714b5b6b3adb7d0971d69bc8f24dc6dee163cc3",
+      "path": "files/documents/anki_field_observations.md"
+    },
+    {
+      "hash": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd",
+      "name": "mapping_release_registry.json",
+      "kind": "file",
+      "size": 474,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "651f642dcb0e14f919b22300ecfbc16ab5227848",
+      "path": "files/data/mapping_release_registry.json"
+    },
+    {
+      "hash": "f1bc56097935f8165005c7768af4aa4c46956adada4496ea8f483d825f61f3dd",
+      "name": "classification_spec.md",
+      "kind": "file",
+      "size": 5591,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "a4582fa81923207d1407a18fbcee669820d7e277",
+      "path": "files/documents/classification_spec.md"
+    },
+    {
+      "hash": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "name": "p01_requirements_baseline_v6.txt",
+      "kind": "file",
+      "size": 6715,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31",
+      "path": "files/documents/p01_requirements_baseline_v6.txt"
+    },
+    {
+      "hash": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "name": "p01_requirements_traceability.tsv",
+      "kind": "file",
+      "size": 17235,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "e2a396b1892eabb3fd1fa837e4cb073b90492055",
+      "path": "files/data/p01_requirements_traceability.tsv"
+    },
+    {
+      "hash": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "name": "v6_freeze.txt",
+      "kind": "file",
+      "size": 226868,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "path": "files/documents/v6_freeze.txt"
+    },
+    {
+      "hash": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+      "name": "field_protocol_proposal.md",
+      "kind": "file",
+      "size": 3987,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "9912b1080ceca2e038a8c668eeb20c7459307f0c",
+      "path": "files/documents/field_protocol_proposal.md"
+    },
+    {
+      "hash": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "name": "study_policy_draft.md",
+      "kind": "file",
+      "size": 18083,
+      "type": "text/markdown",
+      "sourceUrls": [
+        "https://sdmntprwestus2.oaiusercontent.com/files/00000000-8198-81f8-a948-cc3f645f4830/raw?se=2026-10-28T05%3A58%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=a73e3bdd-c9d5-4e14-92c6-989175490cb4&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T14%3A05%3A38Z&ske=2026-10-28T14%3A05%3A38Z&sks=b&skv=2026-02-06&sig=s46QC14E1a8QxpwfugNSGPu6DyySyzfw%2BH/Pr1dYUIA%3D"
+      ],
+      "presentation": false,
+      "blob": "442b9a8e89ca980417624da9a4d93d96af9a4eba",
+      "path": "files/documents/study_policy_draft.md"
+    },
+    {
+      "hash": "2900f3cb73d56fc12a415f5f83dc0541661aa6ca1f1d07fa0613eeed8e09508c",
+      "name": "undo_compensation_options.md",
+      "kind": "file",
+      "size": 8519,
+      "type": "text/markdown",
+      "sourceUrls": [
+        "https://sdmntprwestus3.oaiusercontent.com/files/00000000-acb8-81fd-9e0f-0a000c9c0231/raw?se=2026-10-28T05%3A58%3A30Z&sp=r&sv=2026-02-06&sr=b&scid=a007a694-5e1f-42f4-9dd5-351c16cf7d0d&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T12%3A00%3A20Z&ske=2026-10-28T12%3A00%3A20Z&sks=b&skv=2026-02-06&sig=2ZC/W6wXuI8X9qfjMPJiNmq5y9ahXNc4it7QR8MOgWw%3D"
+      ],
+      "presentation": false,
+      "blob": "57f9ce74dbc049df2917cff74a6d0f71682e5da5",
+      "path": "files/documents/undo_compensation_options.md"
+    },
+    {
+      "hash": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+      "name": "quarantine_resolution_policy.md",
+      "kind": "file",
+      "size": 7026,
+      "type": "text/markdown",
+      "sourceUrls": [
+        "https://sdmntprwestus.oaiusercontent.com/files/00000000-7c34-8230-92d8-0bda077514cc/raw?se=2026-10-28T05%3A58%3A32Z&sp=r&sv=2026-02-06&sr=b&scid=61bc2aca-164d-4f17-8d29-d295ede951e2&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T11%3A57%3A53Z&ske=2026-10-28T11%3A57%3A53Z&sks=b&skv=2026-02-06&sig=iD8ceKV6zK0kLCeFqhxiQOhcUDT6h6gJi19TmQLiA8c%3D"
+      ],
+      "presentation": false,
+      "blob": "d045a742c49b2de0b2bcc549b2bc4f4422563a33",
+      "path": "files/documents/quarantine_resolution_policy.md"
+    },
+    {
+      "hash": "75d5637641998a27259de410662c642c2bbb40935fc8e5cdf1a3b8eb010e8c45",
+      "name": "four_rating_policy_matrix.tsv",
+      "kind": "file",
+      "size": 18719,
+      "type": "text/tab-separated-values",
+      "sourceUrls": [
+        "https://sdmntprwestus3.oaiusercontent.com/files/00000000-6c64-81fd-8223-7c36d6d52042/raw?se=2026-10-28T07%3A22%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=caa2f2cc-e9f5-4ef6-9be6-e889c44681b2&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-28T01%3A34%3A45Z&ske=2026-10-29T01%3A34%3A45Z&sks=b&skv=2026-02-06&sig=Xrj6ypFxzaG4W8Km%2BPu04jlEACcNwWqztb92Y8ncIIY%3D"
+      ],
+      "presentation": false,
+      "blob": "3195f1ecd20891ad3d07bc4bc94bfd95e0443cb4",
+      "path": "files/data/four_rating_policy_matrix.tsv"
+    },
+    {
+      "hash": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "name": "QUARANTINED.json",
+      "kind": "file",
+      "size": 834,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "b375f45192fd28561ed53f4d3343fe1b5c8efd52",
+      "path": "files/data/QUARANTINED.json"
+    },
+    {
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "name": "preflight.stderr.log",
+      "kind": "file",
+      "size": 0,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "files/other/preflight.stderr.log"
+    },
+    {
+      "hash": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "name": "hook_probe_report.md",
+      "kind": "file",
+      "size": 15187,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "dd5e6cbf414ab4b4b7f15cf2892a31c74bb257e4",
+      "path": "files/documents/hook_probe_report.md"
+    },
+    {
+      "hash": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "name": "prerequisites.json",
+      "kind": "file",
+      "size": 2843,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "8ce5c4b62d4a88a9b4d64b416ee1ec1b9194a6a1",
+      "path": "files/data/prerequisites.json"
+    },
+    {
+      "hash": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "name": "sample_inventory.json",
+      "kind": "file",
+      "size": 4578,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "9c1ce0ebe6a14ad3b47e17e27e7b0b30b53bad47",
+      "path": "files/data/sample_inventory.json"
+    },
+    {
+      "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+      "name": "P11_StudyLedger_V0.1.zip",
+      "kind": "file",
+      "size": 435064,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/9d238abd-1172-41f4-8df3-049b82eb990d",
+        "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1.zip"
+      ],
+      "blob": "234e1e2e510a7c08deaba3a8ac82dc7ebe328630",
+      "path": "files/archives/P11_StudyLedger_V0.1.zip"
+    },
+    {
+      "name": "eb9febc0-1-README.md",
+      "size": 6108,
+      "type": "text/markdown",
+      "hash": "eb9febc0c075efb36110924af6b530d1787c87a25323dcaed9cf69a4e0228897",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/README.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/README.md",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "README.md",
+      "blob": "066e45e0994b943958666762b25c476b5dcd5720",
+      "path": "files/documents/eb9febc0-1-README.md"
+    },
+    {
+      "name": "defect_log.json",
+      "size": 4265,
+      "type": "application/json",
+      "hash": "92d671410a98a33c01f075ee86c2854068cd9397faddf48c156654e0d0031cee",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/defect_log.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/defect_log.json",
+        "crcVerified": true
+      },
+      "blob": "8856b5913fc1269bd7420b42693e30e4e276c490",
+      "path": "files/data/defect_log.json"
+    },
+    {
+      "name": "54e96c2a-1-delivery_manifest.sha256.tsv",
+      "size": 251979,
+      "type": "application/octet-stream",
+      "hash": "54e96c2aaab995728b1937388f87cf81ed2dd5c82e4b4d65c6a7465bba07159c",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "delivery_manifest.sha256.tsv",
+      "blob": "ad387b574fe8b8004918df80d8416f0e9754b47f",
+      "path": "files/data/54e96c2a-1-delivery_manifest.sha256.tsv"
+    },
+    {
+      "name": "15bc6522-1-downstream_handoff.json",
+      "size": 12579,
+      "type": "application/json",
+      "hash": "15bc6522f4cb86c6422c0c86f20e23ed34c4363e2b759cac66a8470746852698",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/downstream_handoff.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/downstream_handoff.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "downstream_handoff.json",
+      "blob": "9570d4510947b1f1789cdb29e672aa26916a45f3",
+      "path": "files/data/15bc6522-1-downstream_handoff.json"
+    },
+    {
+      "name": "event_replay_fixtures.json",
+      "size": 26512,
+      "type": "application/json",
+      "hash": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/event_replay_fixtures.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/event_replay_fixtures.json",
+        "crcVerified": true
+      },
+      "blob": "1a782285524ca2b745588f10e136dff8358ee66b",
+      "path": "files/data/event_replay_fixtures.json"
+    },
+    {
+      "name": "failing_sources.zip",
+      "size": 24998,
+      "type": "application/octet-stream",
+      "hash": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/failing_sources.zip",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/failing_sources.zip",
+        "crcVerified": true
+      },
+      "blob": "9018e85b5d6e2d29ba930c1d0ce6d26fba675590",
+      "path": "files/archives/failing_sources.zip"
+    },
+    {
+      "name": "regression.stderr.log",
+      "size": 3997,
+      "type": "application/octet-stream",
+      "hash": "fa0b8a02c1298e8085d898bd9dce0cf71508a8bd9aaefdc3ca0ba82580917195",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stderr.log",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stderr.log",
+        "crcVerified": true
+      },
+      "blob": "c4d894a0fb89a9223c29586f685079f696fd4627",
+      "path": "files/other/regression.stderr.log"
+    },
+    {
+      "name": "regression.stdout.log",
+      "size": 0,
+      "type": "application/octet-stream",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stdout.log",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_002/regression.stdout.log",
+        "crcVerified": true
+      },
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "files/other/regression.stdout.log"
+    },
+    {
+      "name": "1704a210-1-preflight.stdout.log",
+      "size": 3466,
+      "type": "application/octet-stream",
+      "hash": "1704a210a058bd40b9d07bc0b3774fba6fedc3d7372134119c0370449ed90354",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/preflight.stdout.log",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/preflight.stdout.log",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "preflight.stdout.log",
+      "blob": "a5120dcd7ea5e141431ad601ce81ea6d00640023",
+      "path": "files/other/1704a210-1-preflight.stdout.log"
+    },
+    {
+      "name": "P11-REPLAY-001.json",
+      "size": 13576,
+      "type": "application/json",
+      "hash": "682e9acdad90a80cf24bef3967549788b58535fcf8cf304602fccc61010ab982",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-001.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-001.json",
+        "crcVerified": true
+      },
+      "blob": "b102c4fa1c5a59b8af1765de30fd31901e9df498",
+      "path": "files/data/P11-REPLAY-001.json"
+    },
+    {
+      "name": "P11-REPLAY-002.json",
+      "size": 13563,
+      "type": "application/json",
+      "hash": "6d8a3d8f1f985b174d89b002e5a5ef85cad5f0b89fdcba984379d1821570d80a",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-002.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-002.json",
+        "crcVerified": true
+      },
+      "blob": "aba0f70661c773c27c10c1fc28d1339735f361d2",
+      "path": "files/data/P11-REPLAY-002.json"
+    },
+    {
+      "name": "P11-REPLAY-003.json",
+      "size": 13563,
+      "type": "application/json",
+      "hash": "f41ce1a14e92fdfffe63873e9ddf665ee700c934f4bda65fbe2a6d206dfeac6f",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-003.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-003.json",
+        "crcVerified": true
+      },
+      "blob": "bb5906dab8a63343fe773b7e3c02d53b787331ec",
+      "path": "files/data/P11-REPLAY-003.json"
+    },
+    {
+      "name": "P11-REPLAY-004.json",
+      "size": 13563,
+      "type": "application/json",
+      "hash": "e887a7a1ab75de84970aff9f8bb645cc8edbbcdc26a790a61a447bcfa03109bc",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-004.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-004.json",
+        "crcVerified": true
+      },
+      "blob": "871f5f3e11a966d3a3ed2abba6d312cf9677a871",
+      "path": "files/data/P11-REPLAY-004.json"
+    },
+    {
+      "name": "P11-REPLAY-005.json",
+      "size": 13562,
+      "type": "application/json",
+      "hash": "6ad91e80444ca87f19f75908445bff672d5542f27436768a7b4a6e9a8e046628",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-005.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-005.json",
+        "crcVerified": true
+      },
+      "blob": "4a37ca7d1c9406d542ef6829ec21158e522a53d8",
+      "path": "files/data/P11-REPLAY-005.json"
+    },
+    {
+      "name": "P11-REPLAY-006.json",
+      "size": 21224,
+      "type": "application/json",
+      "hash": "02b961d4326b50a58f3ba4f54d74cd04bb77dcbe41b80d2eba6eba74758ae359",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-006.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-006.json",
+        "crcVerified": true
+      },
+      "blob": "990ad287f8f6c631ad11753a0e744ef66cac2b30",
+      "path": "files/data/P11-REPLAY-006.json"
+    },
+    {
+      "name": "P11-REPLAY-007.json",
+      "size": 26360,
+      "type": "application/json",
+      "hash": "5538501ef2a729511213746c5c5adc45c89c47d7828157d2c8edecc26b7f4982",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-007.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-007.json",
+        "crcVerified": true
+      },
+      "blob": "16ec4202c51af1cbc419b43c574086e03cf1c228",
+      "path": "files/data/P11-REPLAY-007.json"
+    },
+    {
+      "name": "P11-REPLAY-008.json",
+      "size": 14990,
+      "type": "application/json",
+      "hash": "ccd3cbf26d10bc6d13dc75e7e7fbd6e980ebbad196732e7e8569b6826a8a612e",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-008.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-008.json",
+        "crcVerified": true
+      },
+      "blob": "36e913438bb66e8cf5fdfdeefa7c823934a3c4d3",
+      "path": "files/data/P11-REPLAY-008.json"
+    },
+    {
+      "name": "P11-REPLAY-009.json",
+      "size": 16985,
+      "type": "application/json",
+      "hash": "381483a4c5f183c7592601119734fa3120a3969234925bb13f6668746748d860",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-009.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-009.json",
+        "crcVerified": true
+      },
+      "blob": "e3cb7970bc6c8e597a2d81ff947e30812512ff46",
+      "path": "files/data/P11-REPLAY-009.json"
+    },
+    {
+      "name": "P11-REPLAY-010.json",
+      "size": 26094,
+      "type": "application/json",
+      "hash": "66b91ae7ce08b12e1b3cd8454d397ad0eada3ec70e1f0fe29883dcfc78543a4e",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-010.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-010.json",
+        "crcVerified": true
+      },
+      "blob": "d6497da0d19e83b9623ffee4085849ef25ff8b71",
+      "path": "files/data/P11-REPLAY-010.json"
+    },
+    {
+      "name": "P11-REPLAY-011.json",
+      "size": 33547,
+      "type": "application/json",
+      "hash": "ed126fb6a26793afabfca0d2a9134c49bb72936ae12c46744af2da51a70c1465",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-011.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-011.json",
+        "crcVerified": true
+      },
+      "blob": "4a39349ddc7433d73a32694a05d9fdde6ad1e1f7",
+      "path": "files/data/P11-REPLAY-011.json"
+    },
+    {
+      "name": "P11-REPLAY-012.json",
+      "size": 45496,
+      "type": "application/json",
+      "hash": "6cbcde67964d03dbe89d1683f1a8672adcb041b12160821e515dfa9f92a5ce48",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-012.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-012.json",
+        "crcVerified": true
+      },
+      "blob": "adcaa04d3aeb47b214b19fd8be88252144dfd7b6",
+      "path": "files/data/P11-REPLAY-012.json"
+    },
+    {
+      "name": "P11-REPLAY-013.json",
+      "size": 33992,
+      "type": "application/json",
+      "hash": "0cba1ff3195151bb63b4549d6b0a577c101d64ab6c3b3e056722f17c57c8d242",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-013.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-013.json",
+        "crcVerified": true
+      },
+      "blob": "a930cc6b25b7325dbfff273d93a0847d0fcc4bb3",
+      "path": "files/data/P11-REPLAY-013.json"
+    },
+    {
+      "name": "P11-REPLAY-014.json",
+      "size": 24245,
+      "type": "application/json",
+      "hash": "039de258c99fdd7eb4efa6fc6b997a85f8d005413b4fe717a999313c696474dc",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-014.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-014.json",
+        "crcVerified": true
+      },
+      "blob": "13a49ea8329c6f05235509ffc29c3051912606da",
+      "path": "files/data/P11-REPLAY-014.json"
+    },
+    {
+      "name": "P11-REPLAY-015.json",
+      "size": 22016,
+      "type": "application/json",
+      "hash": "6239308c77073222ce5deb524bb4dddc43be0fa3da3f61791c8f64cb32454441",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-015.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-015.json",
+        "crcVerified": true
+      },
+      "blob": "37da61c4c8198220d2c26294c7828f06db13a070",
+      "path": "files/data/P11-REPLAY-015.json"
+    },
+    {
+      "name": "P11-REPLAY-016.json",
+      "size": 19145,
+      "type": "application/json",
+      "hash": "85652eefd156f7e386a2a210b6f4db0611b53405c47b533222bfc089fe57b755",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-016.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-016.json",
+        "crcVerified": true
+      },
+      "blob": "80d82f2a52d7f5aeb44168b9653ebc7896c3d37a",
+      "path": "files/data/P11-REPLAY-016.json"
+    },
+    {
+      "name": "P11-REPLAY-017.json",
+      "size": 8682,
+      "type": "application/json",
+      "hash": "de89cdc5227fd2ebd48a00ac181a7cd9387aa13ad93409a6f6f18dbe35385026",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-017.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-017.json",
+        "crcVerified": true
+      },
+      "blob": "7cc4364774fa4e12f5ba981ce598461fdae75622",
+      "path": "files/data/P11-REPLAY-017.json"
+    },
+    {
+      "name": "P11-REPLAY-018.json",
+      "size": 13539,
+      "type": "application/json",
+      "hash": "ea93fa6a4cbd33ace4a883ce9fbfd41337ae41bd20f4e4050579671c0450f49d",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-018.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-018.json",
+        "crcVerified": true
+      },
+      "blob": "42a30a0744f4a4afe44fe723ab288c95ac6533c8",
+      "path": "files/data/P11-REPLAY-018.json"
+    },
+    {
+      "name": "P11-REPLAY-019.json",
+      "size": 37371,
+      "type": "application/json",
+      "hash": "9aeb7bbafe0c54ceca0ec1416bb83f9ba0e82d2c7808f89a9ef9b4dc476a5264",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-019.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-019.json",
+        "crcVerified": true
+      },
+      "blob": "e94c9fa0767c0a7a9f6f2551bff0b089371d49dd",
+      "path": "files/data/P11-REPLAY-019.json"
+    },
+    {
+      "name": "P11-REPLAY-020.json",
+      "size": 24087,
+      "type": "application/json",
+      "hash": "91eb6f2db83aa746dc28fcec9d01751c524ba23c3f5e2180674fe76004e18d0c",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-020.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-020.json",
+        "crcVerified": true
+      },
+      "blob": "5f15dcab25d1d7c29bf910a8055ef1b75ec28f46",
+      "path": "files/data/P11-REPLAY-020.json"
+    },
+    {
+      "name": "P11-REPLAY-021.json",
+      "size": 6708,
+      "type": "application/json",
+      "hash": "4e13b0a2dbf1c0024c0bef16dac7a31d9f8719bb986aa708c7c3660bc15e6ce3",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-021.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-021.json",
+        "crcVerified": true
+      },
+      "blob": "2e72c06c26a0a51b09800be54c2de6b2d34544b1",
+      "path": "files/data/P11-REPLAY-021.json"
+    },
+    {
+      "name": "P11-REPLAY-022.json",
+      "size": 6753,
+      "type": "application/json",
+      "hash": "314168349530d0442eae2cf19ae9deb6c66b5f01651e1235733ae14307d4a798",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-022.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-022.json",
+        "crcVerified": true
+      },
+      "blob": "c9e89fdcd23bd5a40db6657b36db21644c0f1176",
+      "path": "files/data/P11-REPLAY-022.json"
+    },
+    {
+      "name": "P11-REPLAY-023.json",
+      "size": 14650,
+      "type": "application/json",
+      "hash": "d9dd419273f77cdf9d74163cae60e42d3315a01fbc9050ee994e100ebe78baa9",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-023.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-023.json",
+        "crcVerified": true
+      },
+      "blob": "fec793e6494dd4c51e7b7ef517907913ce88144f",
+      "path": "files/data/P11-REPLAY-023.json"
+    },
+    {
+      "name": "P11-REPLAY-024.json",
+      "size": 18434,
+      "type": "application/json",
+      "hash": "2a0608d5268e121fa778921b9835cd71a0a570e28625d9c8d7ce9f6aebe1e05d",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-024.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-024.json",
+        "crcVerified": true
+      },
+      "blob": "ae555b04946a92b5cf569b5bc7af0f8edea29d8e",
+      "path": "files/data/P11-REPLAY-024.json"
+    },
+    {
+      "name": "P11-REPLAY-025.json",
+      "size": 23777,
+      "type": "application/json",
+      "hash": "31dba735418a0d3450b2d345a5f1872adf26c439b111b2e45e23c464b8bd405e",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-025.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-025.json",
+        "crcVerified": true
+      },
+      "blob": "68b4e6e964661828a5459df7c894e869f3fbaf8b",
+      "path": "files/data/P11-REPLAY-025.json"
+    },
+    {
+      "name": "P11-REPLAY-026.json",
+      "size": 25641,
+      "type": "application/json",
+      "hash": "a17b819df9a9e99cd073fd87685c672b9d69785131cb2f8bc33ca2e8c2585a36",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-026.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/P11-REPLAY-026.json",
+        "crcVerified": true
+      },
+      "blob": "d095f8ad41a47d149f162174a5a5632213cac05e",
+      "path": "files/data/P11-REPLAY-026.json"
+    },
+    {
+      "name": "summary.json",
+      "size": 7210,
+      "type": "application/json",
+      "hash": "b367ccecd8b151d0011859d875af688b63f6ef5202b7a1b36b0cac7758fbbc08",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/summary.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay/summary.json",
+        "crcVerified": true
+      },
+      "blob": "e0a2a7df75e271283e8f0b3ad50deb5a28d1272c",
+      "path": "files/data/summary.json"
+    },
+    {
+      "name": "replay.stderr.log",
+      "size": 0,
+      "type": "application/octet-stream",
+      "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stderr.log",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stderr.log",
+        "crcVerified": true
+      },
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "files/other/replay.stderr.log"
+    },
+    {
+      "name": "replay.stdout.log",
+      "size": 116,
+      "type": "application/octet-stream",
+      "hash": "ee766ffba195ee6ddc37e153b6739b775342ba6b4e2b6bdafb0bde689b1490ae",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stdout.log",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/author_run_004/replay.stdout.log",
+        "crcVerified": true
+      },
+      "blob": "e6fc00b3578824b209c9b82973ad638bf63eeefc",
+      "path": "files/other/replay.stdout.log"
+    },
+    {
+      "name": "delivery_consistency.json",
+      "size": 434,
+      "type": "application/json",
+      "hash": "67f1e03e1c9fc4009659918c8b66258649292e850d4e79964671c5209b9e32e9",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/delivery_consistency.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/delivery_consistency.json",
+        "crcVerified": true
+      },
+      "blob": "a1bb43ad811f0cd03ff64ff208f5cee71c44f73d",
+      "path": "files/data/delivery_consistency.json"
+    },
+    {
+      "name": "findings.json",
+      "size": 1136,
+      "type": "application/json",
+      "hash": "1163542b067389232fd01422cac3dbe833e2bf49cc27174ad027eb920345cf42",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/findings.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/findings.json",
+        "crcVerified": true
+      },
+      "blob": "e39c67279d076df6586232ba4c82df48575c173d",
+      "path": "files/data/findings.json"
+    },
+    {
+      "name": "github_p10_tree.json",
+      "size": 434173,
+      "type": "application/json",
+      "hash": "efbbbed1f502cd5bb35848e6145cf375e5437feb54213f5c25561624c09d6185",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/github_p10_tree.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/github_p10_tree.json",
+        "crcVerified": true
+      },
+      "blob": "ec093c08beef45edffdd60e7f4c0995dd3efe651",
+      "path": "files/data/github_p10_tree.json"
+    },
+    {
+      "name": "github_v6_tree.json",
+      "size": 99095,
+      "type": "application/json",
+      "hash": "85a6a3b00d3e841b6cec8e36e54b2862385158f8a6158d1ed12bf1b46e8909fa",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/github_v6_tree.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/github_v6_tree.json",
+        "crcVerified": true
+      },
+      "blob": "8f8ca23c5e0b98b0d4551efe6e0958aad1585b55",
+      "path": "files/data/github_v6_tree.json"
+    },
+    {
+      "name": "intake_archives.py",
+      "size": 3136,
+      "type": "application/octet-stream",
+      "hash": "0a0b898174a05732b5e6eecd8da4684a4f8bccd51102423e5c0a8d6882f65b63",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_archives.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_archives.py",
+        "crcVerified": true
+      },
+      "blob": "4ff68e83217cf598fdacb7458d67aca9885635e8",
+      "path": "files/code/intake_archives.py"
+    },
+    {
+      "name": "0b7f2182-1-intake_report.json",
+      "size": 386860,
+      "type": "application/json",
+      "hash": "0b7f2182ddef148168daae6b5e61cdf91e06bbba987cf065c15b1674909ec0a1",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_report.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/intake_report.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "intake_report.json",
+      "blob": "5711806033abc24c3fdfdc277bc999c077efbd9e",
+      "path": "files/data/0b7f2182-1-intake_report.json"
+    },
+    {
+      "name": "16d34503-1-upstream_manifest_checks.json",
+      "size": 25127,
+      "type": "application/json",
+      "hash": "16d3450375dd3786db552466abd4024423cf1d9d71521c4599a752e7fddf23c9",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/evidence/intake/upstream_manifest_checks.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/evidence/intake/upstream_manifest_checks.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "upstream_manifest_checks.json",
+      "blob": "6336834f7cd746849b8a2e1866e7138b3d99b880",
+      "path": "files/data/16d34503-1-upstream_manifest_checks.json"
+    },
+    {
+      "name": "ledger_invariants.json",
+      "size": 10500,
+      "type": "application/json",
+      "hash": "c4310207d826724475d7901d5d0116741b9f223ae46a839860f14db1075a2438",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_invariants.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_invariants.json",
+        "crcVerified": true
+      },
+      "blob": "17b0d24473a18a945d4c76e532078d4d9a3eca47",
+      "path": "files/data/ledger_invariants.json"
+    },
+    {
+      "name": "__main__.py",
+      "size": 2208,
+      "type": "application/octet-stream",
+      "hash": "de5ec9437a760f9e342a3a1578ec59703d48d3f075e14540092ed1c72318e88c",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/__main__.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/__main__.py",
+        "crcVerified": true
+      },
+      "blob": "b762ac61bc3b0fcc5fa1a81caf845da4f46a208b",
+      "path": "files/code/__main__.py"
+    },
+    {
+      "name": "audit.py",
+      "size": 5670,
+      "type": "application/octet-stream",
+      "hash": "e47ae26b1324da05ab514973dcbff4feab90881de34a020c653a84da96254fc0",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/audit.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/audit.py",
+        "crcVerified": true
+      },
+      "blob": "617d9a889eff0816fa826cd71d7458d4f210838c",
+      "path": "files/code/audit.py"
+    },
+    {
+      "name": "ports.py",
+      "size": 1847,
+      "type": "application/octet-stream",
+      "hash": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/ports.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/ports.py",
+        "crcVerified": true
+      },
+      "blob": "7ad5fba5aceb5fa122d9767e5d7542ddb32d55c6",
+      "path": "files/code/ports.py"
+    },
+    {
+      "name": "service.py",
+      "size": 24128,
+      "type": "application/octet-stream",
+      "hash": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/service.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/service.py",
+        "crcVerified": true
+      },
+      "blob": "6020abf1f76f2eefafba46be6fa69680fbbc9ac6",
+      "path": "files/code/service.py"
+    },
+    {
+      "name": "types.py",
+      "size": 7051,
+      "type": "application/octet-stream",
+      "hash": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/ledger_runtime/types.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/ledger_runtime/types.py",
+        "crcVerified": true
+      },
+      "blob": "beb567c3ebdf0ff1798912035be722d2c1e3a415",
+      "path": "files/code/types.py"
+    },
+    {
+      "name": "5060fd81-1-path_mapping_request.json",
+      "size": 1278,
+      "type": "application/json",
+      "hash": "5060fd816146192f36083d7ab3206df337d142ff63f19c0d3787385174557874",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/path_mapping_request.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/path_mapping_request.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "path_mapping_request.json",
+      "blob": "1796d3a73b1d26d6ab4a774ed34bcdfc5af990da",
+      "path": "files/data/5060fd81-1-path_mapping_request.json"
+    },
+    {
+      "name": "reconciliation_and_recovery.md",
+      "size": 4971,
+      "type": "text/markdown",
+      "hash": "ac27457241ec3666744f4a2cba3bb85ea8340e907015704820e33fdae0c80d79",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/reconciliation_and_recovery.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/reconciliation_and_recovery.md",
+        "crcVerified": true
+      },
+      "blob": "1f7732b829d1d548191b4d90be5b9c2f92998c62",
+      "path": "files/documents/reconciliation_and_recovery.md"
+    },
+    {
+      "name": "ba7a6b13-1-source_input_receipt.json",
+      "size": 39756,
+      "type": "application/json",
+      "hash": "ba7a6b13d0891c64cdd0995bd118c4d25b9a0246f0da2c1202c240124ddb4c86",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/source_input_receipt.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/source_input_receipt.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "source_input_receipt.json",
+      "blob": "817f79ae2a667e8750785a2408a5ffd8d6c2dcff",
+      "path": "files/data/ba7a6b13-1-source_input_receipt.json"
+    },
+    {
+      "name": "compensation_arithmetic_cases.json",
+      "size": 7297,
+      "type": "application/json",
+      "hash": "110e0c9e29ffd940ba13a0ef5d53d0649a87b2ad5da81f3b89eab973a18eb1ea",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/compensation_arithmetic_cases.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/sources/P08/compensation_arithmetic_cases.json",
+        "crcVerified": true
+      },
+      "blob": "a0a66008930ac4dfa2df04e50b8994e2c55f0eb5",
+      "path": "files/data/compensation_arithmetic_cases.json"
+    },
+    {
+      "name": "policy_cases.json",
+      "size": 40755,
+      "type": "application/json",
+      "hash": "3c34dae65d5cb91a1a656cb572d5ffda78a823daa1fae96062a08db1c2f9a1b4",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/policy_cases.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/sources/P08/policy_cases.json",
+        "crcVerified": true
+      },
+      "blob": "568c5e8473c463b24badfa522d59be952a0a97ad",
+      "path": "files/data/policy_cases.json"
+    },
+    {
+      "name": "policy_record.proposal.json",
+      "size": 2259,
+      "type": "application/json",
+      "hash": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/sources/P08/policy_record.proposal.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/sources/P08/policy_record.proposal.json",
+        "crcVerified": true
+      },
+      "blob": "f08a9927a3d1918536ce47b86156a85d79e9392e",
+      "path": "files/data/policy_record.proposal.json"
+    },
+    {
+      "name": "study_ledger_state_machine.md",
+      "size": 13833,
+      "type": "text/markdown",
+      "hash": "1a9941910b04afc3fb4480a01ed5588be5c05b0a63e281c277bcc2d18c71334f",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+        "crcVerified": true
+      },
+      "blob": "953337600c146dc9707038db6ef6fd8b202217e3",
+      "path": "files/documents/study_ledger_state_machine.md"
+    },
+    {
+      "name": "task_receipt.json",
+      "size": 1405,
+      "type": "application/json",
+      "hash": "b7e3b9c36f1e5e4585b85eec71474b55b74f01d52eba6708bb7fe0f2840be7da",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/task_receipt.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/task_receipt.json",
+        "crcVerified": true
+      },
+      "blob": "a9eb3ca70e5ba38a4f8ee9002e0249af6f6a18e7",
+      "path": "files/data/task_receipt.json"
+    },
+    {
+      "name": "crash_worker.py",
+      "size": 882,
+      "type": "application/octet-stream",
+      "hash": "fb084af225818f0a2b5337f665527685244e7eaeda0206761f1198f1099a5701",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/tests/crash_worker.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/tests/crash_worker.py",
+        "crcVerified": true
+      },
+      "blob": "a81871c1bb322b06adc40e2b3931c7bde7fc58ee",
+      "path": "files/code/crash_worker.py"
+    },
+    {
+      "name": "simulated_ports.py",
+      "size": 7541,
+      "type": "application/octet-stream",
+      "hash": "8062f11a0ff60f2bd9c48b145aefa1757634a5b0659adaccb8ad27c2354a4102",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/tests/support/simulated_ports.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/tests/support/simulated_ports.py",
+        "crcVerified": true
+      },
+      "blob": "ddf181a8674a6b463ed0d825e0dda74d4359a6a4",
+      "path": "files/code/simulated_ports.py"
+    },
+    {
+      "name": "sqlite_atomic_model.py",
+      "size": 10504,
+      "type": "application/octet-stream",
+      "hash": "e307630cdb2d0fd13340a4a3d1d8807d55f9188bfb59a57a457d69c9ce443093",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/tests/support/sqlite_atomic_model.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/tests/support/sqlite_atomic_model.py",
+        "crcVerified": true
+      },
+      "blob": "ce6198f5d37ed9a5535a7decf4b713dd58470b4c",
+      "path": "files/code/sqlite_atomic_model.py"
+    },
+    {
+      "name": "test_ledger.py",
+      "size": 25995,
+      "type": "application/octet-stream",
+      "hash": "daf46e9053c87ac375d047f31ae6ed03fd5ef91d27b5463322284dfa67ae46bc",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/tests/test_ledger.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/tests/test_ledger.py",
+        "crcVerified": true
+      },
+      "blob": "1fad430448d588f90701a86b745deb4f6cf841ce",
+      "path": "files/code/test_ledger.py"
+    },
+    {
+      "name": "replay.py",
+      "size": 7668,
+      "type": "application/octet-stream",
+      "hash": "193a77c046212a3444d5bd25c7ec6628fdeaa3bff4c56096d3f598ad5ff10aaf",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/verification/replay.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/verification/replay.py",
+        "crcVerified": true
+      },
+      "blob": "476be9b9e74637a0bd8856ffb4b21b017cc4c763",
+      "path": "files/code/replay.py"
+    },
+    {
+      "name": "a407b72c-1-run_author_checks.py",
+      "size": 2679,
+      "type": "application/octet-stream",
+      "hash": "a407b72c977a2d40adbb30f2c0551546ceeb2a1437791f7ae469e792a0b0d6d8",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/verification/run_author_checks.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/verification/run_author_checks.py",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "run_author_checks.py",
+      "blob": "ab24a0e96fb7205f0ddfd0c7b9e1a5a9becb2367",
+      "path": "files/code/a407b72c-1-run_author_checks.py"
+    },
+    {
+      "name": "04da9e7a-1-verify_delivery.py",
+      "size": 2351,
+      "type": "application/octet-stream",
+      "hash": "04da9e7a62dccd2ff16fe738e37b01f2857750c633f935b4e98b6deba3023f78",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/verification/verify_delivery.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/verification/verify_delivery.py",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "verify_delivery.py",
+      "blob": "544c72d06a200ee0319f2ed8c49ac0a0956537d6",
+      "path": "files/code/04da9e7a-1-verify_delivery.py"
+    },
+    {
+      "name": "491ec078-1-verification_status.json",
+      "size": 2151,
+      "type": "application/json",
+      "hash": "491ec07894e835218482e2e969db4b79d6f253af68987137c160297e4b917af6",
+      "kind": "file",
+      "zipEntryPath": "P11_StudyLedger_V0.1/verification_status.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P11_StudyLedger_V0.1.zip",
+        "hash": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+        "entryPath": "P11_StudyLedger_V0.1/verification_status.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "verification_status.json",
+      "blob": "017c568abeafaa0847a3f7604308037234ec47e6",
+      "path": "files/data/491ec078-1-verification_status.json"
+    },
+    {
+      "hash": "06a51e39979adaa3379f8eab1ff8205a7e36abea64f08e37db83bb18f1908b95",
+      "name": "P11_delivery_receipt.json",
+      "kind": "file",
+      "size": 5286,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/f0461205-65e6-4ef6-a4d3-5bb28f945b88",
+        "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_delivery_receipt.json"
+      ],
+      "blob": "40f5a42182b0c5d8f4d14f104eeaedf72c67bf04",
+      "path": "files/data/P11_delivery_receipt.json"
+    },
+    {
+      "hash": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063",
+      "name": "interface_rfc.md",
+      "kind": "file",
+      "size": 6099,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/a8ed241e-27d9-4093-a922-cb4fb44f2e9b",
+        "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1%2Finterface_rfc.md"
+      ],
+      "blob": "2da7c6a06000ba6b9a304f48e71ca6e7585f12a9",
+      "path": "files/documents/interface_rfc.md"
+    },
+    {
+      "hash": "41e652c47f1c9d76d2af166ed32b0da8509d445dd5612e46949ba8b681ae1ead",
+      "name": "compensation_log.jsonl",
+      "kind": "file",
+      "size": 31450,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/52975886-a2f5-45ed-b124-6caa43f3c255",
+        "https://chatgpt.com/backend-api/conversation/6ae1feaf-7a88-83e9-9bc4-15963c884171/executor/file?message_id=68190e02-b0d2-5b62-b2f8-8caa4a4b6d66&sandbox_path=%2Fworkspace%2Fscratch%2Fdd942a6e5221%2FP11_StudyLedger_V0.1%2Fcompensation_log.jsonl"
+      ],
+      "blob": "96200328997abbd1bdd51ab004564b3cb97692f8",
+      "path": "files/other/compensation_log.jsonl"
+    },
+    {
+      "name": "relay-materials-1-a9385ef43d.zip",
+      "size": 16362831,
+      "hash": "a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "f9f030b8abe1fb0f7d859b03f3cc6edbc68118ff",
+      "path": "files/archives/relay-materials-1-a9385ef43d.zip"
+    },
+    {
+      "name": "relay-materials-2-c668973fc2.zip",
+      "size": 15139774,
+      "hash": "c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "e634471164bcd15c07cc65002ba0f5a083eee546",
+      "path": "files/archives/relay-materials-2-c668973fc2.zip"
+    }
+  ],
+  "createdAt": "2026-10-28T14:47:37.938Z",
+  "sourceUrl": "https://chatgpt.com/c/6ae1feaf-7a88-83e9-9bc4-15963c884171"
+}

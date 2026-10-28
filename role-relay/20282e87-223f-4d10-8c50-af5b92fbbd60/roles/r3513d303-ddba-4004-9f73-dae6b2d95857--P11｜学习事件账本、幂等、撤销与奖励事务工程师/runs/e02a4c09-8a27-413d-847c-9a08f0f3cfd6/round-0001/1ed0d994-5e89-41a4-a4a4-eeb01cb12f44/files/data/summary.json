@@ -1,0 +1,219 @@
+{
+  "schema_version": "P11-REPLAY-RESULTS/0.1.0",
+  "status": "PASS",
+  "fixture_sha256": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76",
+  "case_count": 26,
+  "cases": [
+    {
+      "case_id": "P11-REPLAY-001",
+      "title": "Again 合成单次资格",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-001.json",
+      "sha256": "e76eb3e00d27d61a6c490ec6b5da460e2169cb5d8574bc32da8a49c8dc0fc514",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-002",
+      "title": "Hard 合成单次资格",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-002.json",
+      "sha256": "9e8afcfb9be0168de30bc9dca2b8e31cb278ba1d827a5f1af2fb3e56ff0dabd9",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-003",
+      "title": "Good 合成单次资格",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-003.json",
+      "sha256": "c9d3fe85260a29bcea5b590dceb596c51b980055b6fd2484a3546a75ab91f440",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-004",
+      "title": "Easy 合成单次资格",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-004.json",
+      "sha256": "99eee7c151d91ae0977a8b9e862a6c0f84a99fab58f76f44e56945491b78c65d",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-005",
+      "title": "同一身份1000次重投",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-005.json",
+      "sha256": "10a692234450c68e6d9e74003ea12623f4bd3c9daa43f8a692be1844d3d1ceb5",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-006",
+      "title": "同身份改评分隔离",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-006.json",
+      "sha256": "892fbe83268bfb4ff1715f01e2c2a7a14c4b223d012939a3c521a32e4d6921c5",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-007",
+      "title": "同卡自然下一次复习",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-007.json",
+      "sha256": "29db7050e8953c8bed731295fa2827852994ec85356e607cfe0bd58b8eed984c",
+      "steps": 2
+    },
+    {
+      "case_id": "P11-REPLAY-008",
+      "title": "仅接收不授奖",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-008.json",
+      "sha256": "d528415f25730884a906675511e0134dc101118307791de82b37f76b3a8e7f23",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-009",
+      "title": "Undo先到、重启、迟到原事件",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-009.json",
+      "sha256": "7b63fc158297d1c3d05db54f3439de183e899e003c6468ede3f0026cfa6c6cca",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-010",
+      "title": "全未消费撤销及旧完成重投",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-010.json",
+      "sha256": "4f13b6588cb8d7e10600b00f5f7075d3291596ea06852dd94b712cff3634698e",
+      "steps": 4
+    },
+    {
+      "case_id": "P11-REPLAY-011",
+      "title": "撤销后恢复一次",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-011.json",
+      "sha256": "e11b585eb15fe517fd3834aa3a70a8fede86afb318c1f003c17135cafe5ac22c",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-012",
+      "title": "花7回收3恢复3再撤销",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-012.json",
+      "sha256": "71e4eed4d4d8e3df81eb6cbafc27ca3fab3d45d39bf0c4e1173ace736e86c4bd",
+      "steps": 6
+    },
+    {
+      "case_id": "P11-REPLAY-013",
+      "title": "未批准回收保留全部权益差额",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-013.json",
+      "sha256": "3652e0785378c93b23bf8c293628ad7d3918381b9ff48a6f8f16ab17caa8efa7",
+      "steps": 4
+    },
+    {
+      "case_id": "P11-REPLAY-014",
+      "title": "不扣其他来源余额",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-014.json",
+      "sha256": "1c9eef3f317c8a938289e18ce1416d22a1257cbae653a20b4b9ad45fca6eb08d",
+      "steps": 4
+    },
+    {
+      "case_id": "P11-REPLAY-015",
+      "title": "来源消费归属不明",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-015.json",
+      "sha256": "c51de18111acf08f1167cb2ee15b8e2520eb1f44abceaa0e36bd184aa6c42a8f",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-016",
+      "title": "政策补齐不自动释放，绑定新证据后恢复",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-016.json",
+      "sha256": "86f2b4d2b1992ca9dbea71b94edda1d5a96fd90a3349a555e85c8e120131b93f",
+      "steps": 5
+    },
+    {
+      "case_id": "P11-REPLAY-017",
+      "title": "映射缺失不能变UNKNOWN",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-017.json",
+      "sha256": "5c8ca249f93c6ae74cb3e5df6312f5a8ccef66c5e940c587032e46b578f8c474",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-018",
+      "title": "获准合成映射返回UNKNOWN",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-018.json",
+      "sha256": "2231306bab5b1bf2d4eab445f82ddd0d1d16c7fe36be1b62fc2472f92b426f56",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-019",
+      "title": "恢复乱序先等因果再处理",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-019.json",
+      "sha256": "1d8e56193d999b21ccfe12857e54baddda60bdfa7b799810c67e75fe2d750373",
+      "steps": 4
+    },
+    {
+      "case_id": "P11-REPLAY-020",
+      "title": "跨epoch先隔离，证据链接仅查原权益",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-020.json",
+      "sha256": "37a10e16d028eb0442c7dff23bd05fdb11d2b2e896cfafa0ecd2b7b1b55d2154",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-021",
+      "title": "身份不足隔离",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-021.json",
+      "sha256": "b3c2e3922df874f633d6809d7b6880e0301b8b5119b47a55f9c13b44384a78b9",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-022",
+      "title": "真实来源不能使用合成证明",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-022.json",
+      "sha256": "5f7546969b819fa582e934ada75f3a41478bb175e383f4bf507d049c6fd636e2",
+      "steps": 1
+    },
+    {
+      "case_id": "P11-REPLAY-023",
+      "title": "提交成功但回复丢失",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-023.json",
+      "sha256": "8ace381d2239e7450a1fa430de050313b5004d3dbc1b1617b2e0863a7c252895",
+      "steps": 4
+    },
+    {
+      "case_id": "P11-REPLAY-024",
+      "title": "旧备份栅栏及权威恢复",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-024.json",
+      "sha256": "bd67485c1968c8894a158e0f2e26cfc9c94006e66cb3f4c90fe87925049b7062",
+      "steps": 9
+    },
+    {
+      "case_id": "P11-REPLAY-025",
+      "title": "新授奖停用仍处理既有Undo",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-025.json",
+      "sha256": "f46cb233db1b182754f2746133f6979791e8ee3862b2529f3d7a889a96c89b39",
+      "steps": 3
+    },
+    {
+      "case_id": "P11-REPLAY-026",
+      "title": "有证据拒绝后不靠新控制事件重开",
+      "status": "PASS",
+      "result_path": "P11-REPLAY-026.json",
+      "sha256": "963a7ab86bc85f280794f097c7e434813c4e67b4902a61412ffda0a92ce67ea1",
+      "steps": 5
+    }
+  ],
+  "real_anki_execution": "NOT_RUN",
+  "production_awards": 0,
+  "independent_execution": "NOT_RUN"
+}

@@ -1,0 +1,138 @@
+{
+  "schema_version": "P11-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P11-S05-LEDGER-001",
+  "delivery_version": "P11-STUDY-LEDGER/0.1.0-isolated",
+  "created_at_utc": "2026-10-28T14:21:32.082144+00:00",
+  "created_at_utc_plus_8": "2026-10-28T22:21:32.082166+08:00",
+  "status": "ISOLATED_SOURCE_AND_AUTHOR_EVIDENCE_DELIVERED",
+  "production_status": "BLOCKED",
+  "independent_acceptance": "NOT_RUN",
+  "package": {
+    "relative_path": "P11_StudyLedger_V0.1.zip",
+    "size_bytes": 435064,
+    "sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9"
+  },
+  "package_file_count": 106,
+  "manifest": {
+    "relative_path": "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "size_bytes": 251979,
+    "sha256": "54e96c2aaab995728b1937388f87cf81ed2dd5c82e4b4d65c6a7465bba07159c"
+  },
+  "source_input_receipt": {
+    "relative_path": "P11_StudyLedger_V0.1/source_input_receipt.json",
+    "size_bytes": 39756,
+    "sha256": "ba7a6b13d0891c64cdd0995bd118c4d25b9a0246f0da2c1202c240124ddb4c86"
+  },
+  "primary_files": [
+    {
+      "relative_path": "P11_StudyLedger_V0.1/README.md",
+      "size_bytes": 6108,
+      "sha256": "eb9febc0c075efb36110924af6b530d1787c87a25323dcaed9cf69a4e0228897"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+      "size_bytes": 13833,
+      "sha256": "1a9941910b04afc3fb4480a01ed5588be5c05b0a63e281c277bcc2d18c71334f"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/ledger_runtime/service.py",
+      "size_bytes": 24128,
+      "sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/ledger_runtime/ports.py",
+      "size_bytes": 1847,
+      "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/ledger_invariants.json",
+      "size_bytes": 10500,
+      "sha256": "c4310207d826724475d7901d5d0116741b9f223ae46a839860f14db1075a2438"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/event_replay_fixtures.json",
+      "size_bytes": 26512,
+      "sha256": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/compensation_log.jsonl",
+      "size_bytes": 31450,
+      "sha256": "41e652c47f1c9d76d2af166ed32b0da8509d445dd5612e46949ba8b681ae1ead"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/reconciliation_and_recovery.md",
+      "size_bytes": 4971,
+      "sha256": "ac27457241ec3666744f4a2cba3bb85ea8340e907015704820e33fdae0c80d79"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/downstream_handoff.json",
+      "size_bytes": 12579,
+      "sha256": "15bc6522f4cb86c6422c0c86f20e23ed34c4363e2b759cac66a8470746852698"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/verification_status.json",
+      "size_bytes": 2151,
+      "sha256": "491ec07894e835218482e2e969db4b79d6f253af68987137c160297e4b917af6"
+    },
+    {
+      "relative_path": "P11_StudyLedger_V0.1/defect_log.json",
+      "size_bytes": 4265,
+      "sha256": "92d671410a98a33c01f075ee86c2854068cd9397faddf48c156654e0d0031cee"
+    }
+  ],
+  "validation": {
+    "zip_crc": "PASS",
+    "reextracted_file_hashes": "PASS",
+    "manifest_verifier": {
+      "status": "PASS",
+      "scope": "DELIVERY_BYTES_ONLY",
+      "files_verified": 105,
+      "source_snapshots_verified": 21,
+      "errors": [],
+      "manifest_self_hash": "See external P11_delivery_receipt.json; self-reference deliberately excluded.",
+      "independent_functional_acceptance": "NOT_RUN"
+    },
+    "author_tests": {
+      "status": "PASS",
+      "count": 51,
+      "actual_subprocess_crash_cases_included": 6
+    },
+    "synthetic_replays": {
+      "status": "PASS",
+      "count": 26
+    },
+    "formal_preflight": {
+      "status": "BLOCKED",
+      "exit_code": 3
+    },
+    "real_anki": "NOT_RUN",
+    "p32_independent": "NOT_RUN",
+    "p33_manual": "NOT_RUN",
+    "p35_independent": "NOT_RUN"
+  },
+  "real_samples_received": 0,
+  "actual_production_awards": 0,
+  "source_engine_files_modified": 0,
+  "github_mutations": 0,
+  "modify_whitelist": "P11 independent package only; actual runtime mapping not granted",
+  "receipt_self_hash_note": "Receipt itself is outside ZIP to avoid circular hashing; supplied separately in the chat.",
+  "persistent_save": {
+    "status": "BLOCKED",
+    "confirmed_saved_files": 0,
+    "first_attempt": "Failed before transfer: hosted apps tools/list network failure",
+    "automatic_approval_review": "REJECTED",
+    "reason_summary": "Uploading the identified ZIP containing private project source, reports, manifests and receipt plus related files to the hosted ChatGPT file destination needs explicit user-authored authorization; assistant wording or escalation justification does not supply it.",
+    "workaround_attempted": false,
+    "required_user_authorization": {
+      "destination": "用户自己的当前账户ChatGPT文件区",
+      "files": [
+        "P11_StudyLedger_V0.1.zip",
+        "P11_StudyLedger_V0.1/study_ledger_state_machine.md",
+        "P11_StudyLedger_V0.1/README.md",
+        "P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+        "P11_delivery_receipt.json"
+      ]
+    },
+    "local_downloads_available": true
+  }
+}

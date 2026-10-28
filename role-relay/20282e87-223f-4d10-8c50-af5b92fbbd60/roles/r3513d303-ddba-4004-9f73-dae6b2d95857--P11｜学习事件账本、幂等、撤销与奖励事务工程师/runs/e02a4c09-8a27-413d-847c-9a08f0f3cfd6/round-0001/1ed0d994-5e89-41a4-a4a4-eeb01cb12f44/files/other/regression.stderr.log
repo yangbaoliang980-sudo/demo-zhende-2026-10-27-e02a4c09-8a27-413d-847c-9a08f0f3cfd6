@@ -1,0 +1,53 @@
+test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict (tests.test_ledger.LedgerTests.test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict) ... FAIL
+test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim (tests.test_ledger.LedgerTests.test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim) ... FAIL
+test_duplicate_link_cannot_cross_beneficiary_scope (tests.test_ledger.LedgerTests.test_duplicate_link_cannot_cross_beneficiary_scope) ... FAIL
+test_reject_case_is_observable_and_not_reopened_by_restore (tests.test_ledger.LedgerTests.test_reject_case_is_observable_and_not_reopened_by_restore) ... FAIL
+test_missing_identity_reason_does_not_claim_sufficient_evidence (tests.test_ledger.LedgerTests.test_missing_identity_reason_does_not_claim_sufficient_evidence) ... FAIL
+
+======================================================================
+FAIL: test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict (tests.test_ledger.LedgerTests.test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd942a6e5221/P11_StudyLedger_V0.1/tests/test_ledger.py", line 459, in test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict
+    self.assertEqual(self.balance(), 0)
+AssertionError: 999 != 0
+
+======================================================================
+FAIL: test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim (tests.test_ledger.LedgerTests.test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd942a6e5221/P11_StudyLedger_V0.1/tests/test_ledger.py", line 471, in test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim
+    self.assertEqual(result.state, S.PENDING_RECONCILIATION)
+AssertionError: 'APPLIED' != <LedgerStatus.PENDING_RECONCILIATION: 'PENDING_RECONCILIATION'>
+
+======================================================================
+FAIL: test_duplicate_link_cannot_cross_beneficiary_scope (tests.test_ledger.LedgerTests.test_duplicate_link_cannot_cross_beneficiary_scope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd942a6e5221/P11_StudyLedger_V0.1/tests/test_ledger.py", line 479, in test_duplicate_link_cannot_cross_beneficiary_scope
+    self.assertIsNone(result.ack)
+AssertionError: 'ACK_APPLIED' is not None
+
+======================================================================
+FAIL: test_reject_case_is_observable_and_not_reopened_by_restore (tests.test_ledger.LedgerTests.test_reject_case_is_observable_and_not_reopened_by_restore)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd942a6e5221/P11_StudyLedger_V0.1/tests/test_ledger.py", line 486, in test_reject_case_is_observable_and_not_reopened_by_restore
+    self.assertEqual(rejected.state,S.REJECTED)
+AssertionError: 'QUARANTINED' != <LedgerStatus.REJECTED: 'REJECTED'>
+
+======================================================================
+FAIL: test_missing_identity_reason_does_not_claim_sufficient_evidence (tests.test_ledger.LedgerTests.test_missing_identity_reason_does_not_claim_sufficient_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/dd942a6e5221/P11_StudyLedger_V0.1/tests/test_ledger.py", line 494, in test_missing_identity_reason_does_not_claim_sufficient_evidence
+    self.assertEqual(held.reason,'MISSING_PROVEN_IDENTITY_FIELDS')
+AssertionError: 'SYNTHETIC_EVIDENCE_ONLY' != 'MISSING_PROVEN_IDENTITY_FIELDS'
+- SYNTHETIC_EVIDENCE_ONLY
++ MISSING_PROVEN_IDENTITY_FIELDS
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.383s
+
+FAILED (failures=5)

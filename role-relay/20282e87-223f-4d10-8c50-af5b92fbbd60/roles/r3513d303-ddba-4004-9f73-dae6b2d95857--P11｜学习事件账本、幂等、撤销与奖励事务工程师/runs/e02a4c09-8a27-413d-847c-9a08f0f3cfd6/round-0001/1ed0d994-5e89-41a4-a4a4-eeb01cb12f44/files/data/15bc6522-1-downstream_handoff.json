@@ -1,0 +1,329 @@
+{
+  "schema_version": "P11-HANDOFF/0.1.0",
+  "task_id": "P11-S05-LEDGER-001",
+  "version": "P11-STUDY-LEDGER/0.1.0-isolated",
+  "global_status": "PREPARED_NOT_ACKNOWLEDGED",
+  "actual_messages_sent": false,
+  "receivers": [
+    {
+      "receiver": "P12",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "ledger_runtime/ports.py",
+          "size_bytes": 1847,
+          "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+        },
+        {
+          "relative_path": "ledger_runtime/types.py",
+          "size_bytes": 7051,
+          "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+        },
+        {
+          "relative_path": "study_ledger_state_machine.md",
+          "size_bytes": 13833,
+          "sha256": "1a9941910b04afc3fb4480a01ed5588be5c05b0a63e281c277bcc2d18c71334f"
+        },
+        {
+          "relative_path": "event_replay_fixtures.json",
+          "size_bytes": 26512,
+          "sha256": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76"
+        },
+        {
+          "relative_path": "formal_prerequisites.json",
+          "size_bytes": 2451,
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "ledger_runtime/ports.py",
+          "size_bytes": 1847,
+          "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+        },
+        {
+          "relative_path": "ledger_runtime/audit.py",
+          "size_bytes": 5670,
+          "sha256": "e47ae26b1324da05ab514973dcbff4feab90881de34a020c653a84da96254fc0"
+        },
+        {
+          "relative_path": "ledger_invariants.json",
+          "size_bytes": 10500,
+          "sha256": "c4310207d826724475d7901d5d0116741b9f223ae46a839860f14db1075a2438"
+        },
+        {
+          "relative_path": "compensation_log.jsonl",
+          "size_bytes": 31450,
+          "sha256": "41e652c47f1c9d76d2af166ed32b0da8509d445dd5612e46949ba8b681ae1ead"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "ledger_runtime/service.py",
+          "size_bytes": 24128,
+          "sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        },
+        {
+          "relative_path": "ledger_runtime/ports.py",
+          "size_bytes": 1847,
+          "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+        },
+        {
+          "relative_path": "reconciliation_and_recovery.md",
+          "size_bytes": 4971,
+          "sha256": "ac27457241ec3666744f4a2cba3bb85ea8340e907015704820e33fdae0c80d79"
+        },
+        {
+          "relative_path": "tests/support/sqlite_atomic_model.py",
+          "size_bytes": 10504,
+          "sha256": "e307630cdb2d0fd13340a4a3d1d8807d55f9188bfb59a57a457d69c9ce443093"
+        },
+        {
+          "relative_path": "evidence/author_run_003/unit.stdout.log",
+          "size_bytes": 1276,
+          "sha256": "1ad9940ad03e0ab1a9f8088e67df02ac3efdcbff7bdbae2b112fca5752c2af28"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "path_mapping_request.json",
+          "size_bytes": 1278,
+          "sha256": "5060fd816146192f36083d7ab3206df337d142ff63f19c0d3787385174557874"
+        },
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "ledger_runtime/types.py",
+          "size_bytes": 7051,
+          "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+        },
+        {
+          "relative_path": "task_receipt.json",
+          "size_bytes": 1405,
+          "sha256": "b7e3b9c36f1e5e4585b85eec71474b55b74f01d52eba6708bb7fe0f2840be7da"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "README.md",
+          "size_bytes": 6108,
+          "sha256": "eb9febc0c075efb36110924af6b530d1787c87a25323dcaed9cf69a4e0228897"
+        },
+        {
+          "relative_path": "ledger_invariants.json",
+          "size_bytes": 10500,
+          "sha256": "c4310207d826724475d7901d5d0116741b9f223ae46a839860f14db1075a2438"
+        },
+        {
+          "relative_path": "event_replay_fixtures.json",
+          "size_bytes": 26512,
+          "sha256": "6310afd985464657cdc8e1162e2dc17cda711787f0b812bab59ec2f00fb03d76"
+        },
+        {
+          "relative_path": "tests/test_ledger.py",
+          "size_bytes": 25995,
+          "sha256": "daf46e9053c87ac375d047f31ae6ed03fd5ef91d27b5463322284dfa67ae46bc"
+        },
+        {
+          "relative_path": "tests/crash_worker.py",
+          "size_bytes": 882,
+          "sha256": "fb084af225818f0a2b5337f665527685244e7eaeda0206761f1198f1099a5701"
+        },
+        {
+          "relative_path": "verification/run_author_checks.py",
+          "size_bytes": 2679,
+          "sha256": "a407b72c977a2d40adbb30f2c0551546ceeb2a1437791f7ae469e792a0b0d6d8"
+        },
+        {
+          "relative_path": "verification/replay.py",
+          "size_bytes": 7668,
+          "sha256": "193a77c046212a3444d5bd25c7ec6628fdeaa3bff4c56096d3f598ad5ff10aaf"
+        },
+        {
+          "relative_path": "verification/verify_delivery.py",
+          "size_bytes": 2351,
+          "sha256": "04da9e7a62dccd2ff16fe738e37b01f2857750c633f935b4e98b6deba3023f78"
+        },
+        {
+          "relative_path": "defect_log.json",
+          "size_bytes": 4265,
+          "sha256": "92d671410a98a33c01f075ee86c2854068cd9397faddf48c156654e0d0031cee"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "reconciliation_and_recovery.md",
+          "size_bytes": 4971,
+          "sha256": "ac27457241ec3666744f4a2cba3bb85ea8340e907015704820e33fdae0c80d79"
+        },
+        {
+          "relative_path": "formal_prerequisites.json",
+          "size_bytes": 2451,
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 2151,
+          "sha256": "491ec07894e835218482e2e969db4b79d6f253af68987137c160297e4b917af6"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "source_input_receipt.json",
+          "size_bytes": 39756,
+          "sha256": "ba7a6b13d0891c64cdd0995bd118c4d25b9a0246f0da2c1202c240124ddb4c86"
+        },
+        {
+          "relative_path": "task_receipt.json",
+          "size_bytes": 1405,
+          "sha256": "b7e3b9c36f1e5e4585b85eec71474b55b74f01d52eba6708bb7fe0f2840be7da"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 2151,
+          "sha256": "491ec07894e835218482e2e969db4b79d6f253af68987137c160297e4b917af6"
+        },
+        {
+          "relative_path": "defect_log.json",
+          "size_bytes": 4265,
+          "sha256": "92d671410a98a33c01f075ee86c2854068cd9397faddf48c156654e0d0031cee"
+        },
+        {
+          "relative_path": "evidence/author_run_002/run_receipt.json",
+          "size_bytes": 831,
+          "sha256": "4eed6821d3e3a1e79e5574a6969dbb6163e548c0ec15288bfaeb26c4f78fe40b"
+        },
+        {
+          "relative_path": "evidence/author_run_003/run_receipt.json",
+          "size_bytes": 506,
+          "sha256": "a12334fb5f68f3aa8310ed116e5667e2be0ece2296fb3233c70536480424c822"
+        },
+        {
+          "relative_path": "evidence/author_run_004/run_receipt.json",
+          "size_bytes": 1015,
+          "sha256": "a7468f1f4e58cccda72ccbf0b577fcba5a91fc9ed829432e2d7fdb6155a1a9cf"
+        },
+        {
+          "relative_path": "evidence/delivery_consistency.json",
+          "size_bytes": 434,
+          "sha256": "67f1e03e1c9fc4009659918c8b66258649292e850d4e79964671c5209b9e32e9"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P08",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "study_ledger_state_machine.md",
+          "size_bytes": 13833,
+          "sha256": "1a9941910b04afc3fb4480a01ed5588be5c05b0a63e281c277bcc2d18c71334f"
+        },
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "compensation_log.jsonl",
+          "size_bytes": 31450,
+          "sha256": "41e652c47f1c9d76d2af166ed32b0da8509d445dd5612e46949ba8b681ae1ead"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P10",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "formal_prerequisites.json",
+          "size_bytes": 2451,
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    },
+    {
+      "receiver": "P09",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acceptance_receipt": null,
+      "files": [
+        {
+          "relative_path": "interface_rfc.md",
+          "size_bytes": 6099,
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        },
+        {
+          "relative_path": "formal_prerequisites.json",
+          "size_bytes": 2451,
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        }
+      ],
+      "modify_whitelist": "P11 may revise this isolated package; receiver may review/test. Cross-owner runtime edits require P13 mapping and authorized integrator."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "P09-RELEASE-REGISTRY/0.1.0-proposal",
+  "releases": [
+    {
+      "version": "P09-POS-MAP/0.1.0-proposal",
+      "rules_path": "content/linguistic/pos_mapping_rules.json",
+      "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+      "status": "PROPOSAL_NOT_APPROVED"
+    }
+  ],
+  "active_production_version": null,
+  "previous_approved_version": null,
+  "production_rollback_status": "NOT_RUN_NO_PRIOR_APPROVED_VERSION"
+}
