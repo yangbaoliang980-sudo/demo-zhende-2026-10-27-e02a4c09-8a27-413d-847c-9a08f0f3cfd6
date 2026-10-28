@@ -1,0 +1,32 @@
+stateDiagram-v2
+    [*] --> CREATED
+    CREATED --> PLAYER_READY: SYSTEM_START / enter turn, terminal guard
+    CREATED --> TERMINAL: entry death terminal
+    PLAYER_READY --> PLAYER_READY: PLAY_CARD / commit nonterminal
+    PLAYER_READY --> TERMINAL: PLAY_CARD / drain reactions then finish
+    PLAYER_READY --> ENEMY_READY: END_TURN / 1 commit
+    ENEMY_READY --> PLAYER_TURN_PENDING: SYSTEM_ENEMY_ACTION / nonterminal
+    ENEMY_READY --> TERMINAL: SYSTEM_ENEMY_ACTION / terminal
+    PLAYER_TURN_PENDING --> PLAYER_READY: SYSTEM_ENTER_PLAYER_TURN / DOT then refresh+draw
+    PLAYER_TURN_PENDING --> TERMINAL: OWNER_TURN_ENTER DOT terminal
+    CREATED --> ABORTED: ABORT
+    PLAYER_READY --> ABORTED: ABORT
+    ENEMY_READY --> ABORTED: ABORT
+    PLAYER_TURN_PENDING --> ABORTED: ABORT
+    CREATED --> FAULTED: internal invariant failure
+    PLAYER_READY --> FAULTED: internal invariant failure
+    ENEMY_READY --> FAULTED: internal invariant failure
+    PLAYER_TURN_PENDING --> FAULTED: internal invariant failure
+    TERMINAL --> [*]
+    ABORTED --> [*]
+    FAULTED --> [*]
+    note right of PLAYER_READY
+      P14 is the only BattleState writer
+      RESOLVING is internal and never published
+      invalid and duplicate requests are no-ops
+    end note
+    note right of TERMINAL
+      WIN / LOSS / DRAW mutually exclusive
+      BATTLE_FINISHED exactly once
+      no new gameplay commands
+    end note

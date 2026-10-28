@@ -1,0 +1,3 @@
+# Optional author JSON Schema algorithm cross-check only.
+# Runtime, replay, demo, and unit tests use Python standard library exclusively.
+jsonschema==4.25.1

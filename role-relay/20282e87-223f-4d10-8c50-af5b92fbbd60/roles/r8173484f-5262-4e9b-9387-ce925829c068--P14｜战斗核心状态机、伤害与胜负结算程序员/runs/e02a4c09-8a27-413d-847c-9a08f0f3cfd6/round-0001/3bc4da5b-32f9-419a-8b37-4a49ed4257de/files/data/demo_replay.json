@@ -1,0 +1,770 @@
+{
+  "format": "P14-REPLAY/0.1.0-isolated",
+  "header": {
+    "initial_state": {
+      "accepted_commands": [],
+      "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "dto_type": "BattleState",
+      "snapshot": {
+        "battle_id": "fixture:demo",
+        "boss_states": [],
+        "card_instances": [
+          {
+            "card_id": "MOCK_P03_CARD_STRIKE",
+            "instance_id": "strike1",
+            "owner_unit_id": "hero1"
+          },
+          {
+            "card_id": "MOCK_P03_CARD_BARRIER",
+            "instance_id": "barrier1",
+            "owner_unit_id": "hero1"
+          },
+          {
+            "card_id": "MOCK_P03_CARD_RECOVER",
+            "instance_id": "heal1",
+            "owner_unit_id": "hero1"
+          },
+          {
+            "card_id": "MOCK_P03_CARD_EMBER",
+            "instance_id": "ember1",
+            "owner_unit_id": "hero1"
+          },
+          {
+            "card_id": "MOCK_P03_CARD_STRIKE",
+            "instance_id": "strike2",
+            "owner_unit_id": "hero1"
+          }
+        ],
+        "content_version": "fixture:P03-demo-v1",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleSnapshot",
+        "energy": 0,
+        "last_event_seq": 0,
+        "outcome": "ONGOING",
+        "phase": "CREATED",
+        "revision": 0,
+        "rng": {
+          "algorithm": "xorshift32-v1",
+          "draw_count": 0,
+          "initial_seed": 1,
+          "state": 1
+        },
+        "rules_version": "P02-BATTLE-0.1.0-draft",
+        "turn_number": 0,
+        "units": [
+          {
+            "definition_id": "fixture:hero1",
+            "hp": 8,
+            "max_hp": 10,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 0,
+            "statuses": [],
+            "unit_id": "hero1"
+          },
+          {
+            "definition_id": "fixture:hero2",
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 1,
+            "statuses": [],
+            "unit_id": "hero2"
+          },
+          {
+            "definition_id": "fixture:hero3",
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 2,
+            "statuses": [],
+            "unit_id": "hero3"
+          },
+          {
+            "definition_id": "fixture:enemy",
+            "hp": 4,
+            "max_hp": 4,
+            "shield": 2,
+            "side": "ENEMY",
+            "slot": 0,
+            "statuses": [],
+            "unit_id": "enemy1"
+          }
+        ],
+        "zones": {
+          "discard": [],
+          "draw": [
+            "strike1",
+            "barrier1",
+            "heal1",
+            "ember1",
+            "strike2"
+          ],
+          "exhaust": [],
+          "hand": []
+        }
+      }
+    },
+    "profile_scope": "fixture:profile",
+    "rules": {
+      "boss_edges": [],
+      "cards": [
+        {
+          "action_id": "MOCK_P03_CARD_STRIKE",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 4,
+              "effect_index": 0,
+              "kind": "DAMAGE",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": null,
+          "playable": true,
+          "target_count": 1,
+          "target_side": "ENEMY"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_BARRIER",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 4,
+              "effect_index": 0,
+              "kind": "SHIELD",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": null,
+          "playable": true,
+          "target_count": 1,
+          "target_side": "PLAYER"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_RECOVER",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 5,
+              "effect_index": 0,
+              "kind": "HEAL",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": null,
+          "playable": true,
+          "target_count": 1,
+          "target_side": "PLAYER"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_EMBER",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 0,
+              "effect_index": 0,
+              "kind": "STATUS",
+              "status_id": "MOCK_P03_STATUS_BURN"
+            }
+          ],
+          "owner_definition_id": null,
+          "playable": true,
+          "target_count": 1,
+          "target_side": "ENEMY"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_A_EDGE",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 6,
+              "effect_index": 0,
+              "kind": "DAMAGE",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": "MOCK_P03_CHAR_A",
+          "playable": true,
+          "target_count": 1,
+          "target_side": "ENEMY"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_B_WALL",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 6,
+              "effect_index": 0,
+              "kind": "SHIELD",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": "MOCK_P03_CHAR_B",
+          "playable": true,
+          "target_count": 1,
+          "target_side": "PLAYER"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_C_MEND",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 7,
+              "effect_index": 0,
+              "kind": "HEAL",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": "MOCK_P03_CHAR_C",
+          "playable": true,
+          "target_count": 1,
+          "target_side": "PLAYER"
+        },
+        {
+          "action_id": "MOCK_P03_CARD_D_BRAND",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 0,
+              "effect_index": 0,
+              "kind": "STATUS",
+              "status_id": "MOCK_P03_STATUS_BURN_STRONG"
+            }
+          ],
+          "owner_definition_id": "MOCK_P03_CHAR_D",
+          "playable": true,
+          "target_count": 1,
+          "target_side": "ENEMY"
+        }
+      ],
+      "content_version": "fixture:P03-demo-v1",
+      "deck_policy_version": "fixture:demo-deck-script-v1",
+      "entry_draw_requested": 3,
+      "reactions": [],
+      "rules_version": "P02-BATTLE-0.1.0-draft",
+      "shield_cap": null,
+      "shield_overflow": "UNCAPPED_TEST_ONLY",
+      "skills": [
+        {
+          "action_id": "fixture:enemy-strike",
+          "after_play_zone": "discard",
+          "effects": [
+            {
+              "amount": 3,
+              "effect_index": 0,
+              "kind": "DAMAGE",
+              "status_id": null
+            }
+          ],
+          "owner_definition_id": null,
+          "playable": true,
+          "target_count": 1,
+          "target_side": "PLAYER"
+        }
+      ],
+      "source_bindings": [
+        {
+          "label": "P03-catalog",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft"
+        }
+      ],
+      "statuses": [
+        {
+          "amount": 2,
+          "duration": 1,
+          "status_id": "MOCK_P03_STATUS_BURN"
+        },
+        {
+          "amount": 3,
+          "duration": 1,
+          "status_id": "MOCK_P03_STATUS_BURN_STRONG"
+        }
+      ],
+      "turn_increment_at": "ENEMY_EXIT"
+    },
+    "stage_id": "fixture:stage1",
+    "version": "P14-REPLAY-HEADER/0.1.0-isolated"
+  },
+  "entries": [
+    {
+      "channel": "SYSTEM",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:start",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 0,
+        "kind": "SYSTEM_START",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "e87ff00e501c84a39c54e7f2d70773a16466028ea7fa0b1691e4004b7eba26b3",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:start",
+            "command_sha256": "77eae74e5b9f3628de23cd22eef60b0f25a9dca7c2eb64b2cc2c3592710faf86",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": 3,
+            "expected_revision": 0,
+            "moves": [
+              {
+                "from_zone": "draw",
+                "instance_id": "strike1",
+                "to_index": 0,
+                "to_zone": "hand"
+              },
+              {
+                "from_zone": "draw",
+                "instance_id": "barrier1",
+                "to_index": 1,
+                "to_zone": "hand"
+              },
+              {
+                "from_zone": "draw",
+                "instance_id": "heal1",
+                "to_index": 2,
+                "to_zone": "hand"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "e87ff00e501c84a39c54e7f2d70773a16466028ea7fa0b1691e4004b7eba26b3"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:strike",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 1,
+        "kind": "PLAY_CARD",
+        "payload": {
+          "actor_id": "hero1",
+          "card_instance_id": "strike1",
+          "target_ids": [
+            "enemy1"
+          ]
+        }
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "3cd50d87501dad737526a0b870cf80d448b8c81eda4bf1dfc15fd749c9cb9689",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:strike",
+            "command_sha256": "7d1c7283a705b515a24892ec987cd41f9b2a6d6dd2f782be752317745badf10f",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": -1,
+            "expected_revision": 1,
+            "moves": [
+              {
+                "from_zone": "hand",
+                "instance_id": "strike1",
+                "to_index": 0,
+                "to_zone": "discard"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "3cd50d87501dad737526a0b870cf80d448b8c81eda4bf1dfc15fd749c9cb9689"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:shield",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 2,
+        "kind": "PLAY_CARD",
+        "payload": {
+          "actor_id": "hero1",
+          "card_instance_id": "barrier1",
+          "target_ids": [
+            "hero1"
+          ]
+        }
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "d3f459db04954a8e1caa9a25d4e27cddf565afe873d1a9d5d94ed1e3388db4ec",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:shield",
+            "command_sha256": "3e7f352c9065d707a9ac1e2769f62a7cee02d30168b4cbd9ae5789f230dd08ec",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": -1,
+            "expected_revision": 2,
+            "moves": [
+              {
+                "from_zone": "hand",
+                "instance_id": "barrier1",
+                "to_index": 1,
+                "to_zone": "discard"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "d3f459db04954a8e1caa9a25d4e27cddf565afe873d1a9d5d94ed1e3388db4ec"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:heal",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 3,
+        "kind": "PLAY_CARD",
+        "payload": {
+          "actor_id": "hero1",
+          "card_instance_id": "heal1",
+          "target_ids": [
+            "hero1"
+          ]
+        }
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "8efc3ea4a2b29f21c8375e9d244962199bf27ca31f909260d2220f3c79a50a8c",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:heal",
+            "command_sha256": "2e3450022c5c4302c8680cb2f298b8ce485e271b2ad89d0b272a41dba3352d5d",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": -1,
+            "expected_revision": 3,
+            "moves": [
+              {
+                "from_zone": "hand",
+                "instance_id": "heal1",
+                "to_index": 2,
+                "to_zone": "discard"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "8efc3ea4a2b29f21c8375e9d244962199bf27ca31f909260d2220f3c79a50a8c"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:end1",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 4,
+        "kind": "END_TURN",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "a3f1340759edfa1576127bfbac80ffdfdb0ea2558199a3ca1226adf11b05694b",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:end1",
+            "command_sha256": "03145d77ca0ddd36b51ca32698577b6c1b8ad625e0088a438050151ceff61a0c",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": 0,
+            "expected_revision": 4,
+            "moves": [],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "a3f1340759edfa1576127bfbac80ffdfdb0ea2558199a3ca1226adf11b05694b"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "SYSTEM",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:enemy1",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 5,
+        "kind": "SYSTEM_ENEMY_ACTION",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "74aefba0181cfaf6c23a7deb5037718a081658dea77285cd19fafff01546dbaf",
+          "candidate": {
+            "actor_id": "enemy1",
+            "battle_id": "fixture:demo",
+            "content_version": "fixture:P03-demo-v1",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "EnemyIntent",
+            "expected_revision": 5,
+            "intent_id": "fixture:shown-intent",
+            "no_valid_target": "REJECT",
+            "skill_id": "fixture:enemy-strike",
+            "target_ids": [
+              "hero1"
+            ]
+          },
+          "port": "P16"
+        }
+      ]
+    },
+    {
+      "channel": "SYSTEM",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:enter",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 6,
+        "kind": "SYSTEM_ENTER_PLAYER_TURN",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "a79a768b7d259fd652aa20db0b2b4b60f156e63804e83667a07b9b075780d2e6",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:enter",
+            "command_sha256": "4226acd470f524954bfd2065f94114ad888d396911f95c3daa5c377b6baa8e4d",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": 3,
+            "expected_revision": 6,
+            "moves": [
+              {
+                "from_zone": "draw",
+                "instance_id": "ember1",
+                "to_index": 0,
+                "to_zone": "hand"
+              },
+              {
+                "from_zone": "draw",
+                "instance_id": "strike2",
+                "to_index": 1,
+                "to_zone": "hand"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "a79a768b7d259fd652aa20db0b2b4b60f156e63804e83667a07b9b075780d2e6"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:dot",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 7,
+        "kind": "PLAY_CARD",
+        "payload": {
+          "actor_id": "hero1",
+          "card_instance_id": "ember1",
+          "target_ids": [
+            "enemy1"
+          ]
+        }
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "16e00b289cd676dde6af595a5f8e03ca5e1deac4d2fb944255f116dee18b07f4",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:dot",
+            "command_sha256": "67d4aed557f7068729af7600207906d8177d764947c84273d908604ec36e5cab",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": -1,
+            "expected_revision": 7,
+            "moves": [
+              {
+                "from_zone": "hand",
+                "instance_id": "ember1",
+                "to_index": 3,
+                "to_zone": "discard"
+              }
+            ],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "16e00b289cd676dde6af595a5f8e03ca5e1deac4d2fb944255f116dee18b07f4"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "USER",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:end2",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 8,
+        "kind": "END_TURN",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": [
+        {
+          "basis_sha256": "95ba09aa87a92687641e1a58d16c61daf92785f03d62350da900b933d874908f",
+          "candidate": {
+            "battle_id": "fixture:demo",
+            "command_id": "demo:end2",
+            "command_sha256": "167ff560ec076329dc073d8d8bde64d763ee12c1b6723bfbebcde27b4577d42b",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "DeckPatchCandidate",
+            "energy_delta": 0,
+            "expected_revision": 8,
+            "moves": [],
+            "policy_version": "fixture:demo-deck-script-v1",
+            "rng_after": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rng_before": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "snapshot_sha256": "95ba09aa87a92687641e1a58d16c61daf92785f03d62350da900b933d874908f"
+          },
+          "port": "P15"
+        }
+      ]
+    },
+    {
+      "channel": "SYSTEM",
+      "command": {
+        "battle_id": "fixture:demo",
+        "command_id": "demo:enemy2",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "expected_revision": 9,
+        "kind": "SYSTEM_ENEMY_ACTION",
+        "payload": {}
+      },
+      "fault_code": null,
+      "inputs": []
+    }
+  ],
+  "sha256": "4fba245436f689b0912ec79772bf350f040f987ae94ad94aeaa5d576e4b2ff08"
+}

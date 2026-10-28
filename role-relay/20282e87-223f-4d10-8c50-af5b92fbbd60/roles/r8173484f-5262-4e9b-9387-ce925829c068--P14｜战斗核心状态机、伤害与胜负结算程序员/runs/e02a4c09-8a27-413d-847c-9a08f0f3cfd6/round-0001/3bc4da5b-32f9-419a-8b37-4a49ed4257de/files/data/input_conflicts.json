@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "conflict_id": "P14-INPUT-CR-001",
+      "owner": "P02/P13",
+      "status": "PRESERVED_BOTH_USING_FULL_P02_ARCHIVE_MEMBER",
+      "base_a": {
+        "path": "upstream/conflicts/effect_priority_11byte.tsv",
+        "size_bytes": 11,
+        "sha256": "68c9a1609b1f46aec7a99c0259d7c1de6efd191dbbe86e16edd22887274df763"
+      },
+      "base_b": {
+        "path": "upstream/P02/spec/battle/resolution/effect_priority.tsv",
+        "size_bytes": 5253,
+        "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5"
+      },
+      "decision": "Use the complete 5253-byte file from the verified P02 original ZIP; no overwrite of the 11-byte relay artifact.",
+      "formal_change_request": "Preserved evidence only, not a change to either source."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+priority_id	phase	priority	operation	precondition	deterministic_tie_break	canonical_event	state_writer	policy_dependency
+PR-001	COMMAND_GATE	010	Dedup command_id plus canonical fingerprint	battle_id known	Check before expected_revision	NONE	P14	P13 DTO canonical serialization version
+PR-002	COMMAND_GATE	020	Reject terminal/aborted/faulted, phase and revision mismatch	Not dedup	phase enum then revision	NONE	P14	P13 DTO
+PR-003	COMMAND_GATE	030	Validate command type actor card identity target quantity team and alive	Correct phase	All designated targets validated together	NONE	P14	P03/P06 content target policies
+PR-004	COMMAND_GATE	040	Validate costs nonnegative integers and available resource	Card in hand	cost from versioned catalogue, not UI	NONE	P14	P03/P05 cost owner
+PR-005	COMMAND_ACCEPT	050	Buffer accepted command	All validation passed	Source queue serialized by battle_id	COMMAND_ACCEPTED	P14	None
+PR-006	PAYMENT	060	Consume energy at most once in BattleState	PLAY_CARD valid	Single atomic reduction	ENERGY_SPENT	P14	P15 DeckPatch candidate must not write fee
+PR-007	PAYMENT	070	Move exact played card instance from hand to approved zone	PLAY_CARD valid	instance_id exact	CARD_MOVED	P14	P03/P15 card zone rules
+PR-008	RESOLUTION	080	Expand root effect list by effect_index	After payment	Integer effect_index ascending	EFFECT_STARTED	P14	P03 effects schema
+PR-009	RESOLUTION	090	Resolve explicit target order, otherwise stable formation sort	Target set prevalidated	side_rank, slot/spawn_index, unit_id UTF8	NONE	P14	P13 unit slot DTO
+PR-010	DAMAGE	100	Compute approved integer modifiers before mitigation	DAMAGE intent valid	modifier_index ascending	NONE	P14	P05 modifiers not decided here
+PR-011	DAMAGE	110	Absorb shield up to incoming nonnegative amount	Damage is nonnegative	min(shield, damage)	DAMAGE_APPLIED	P14	Integer overflow safety P13
+PR-012	DAMAGE	120	Subtract only remaining amount from HP up to current HP	After shield absorption	min(current HP, remainder)	DAMAGE_APPLIED	P14	No negative HP
+PR-013	HEAL	130	Heal only alive targets capped at maxHP	HEAL intent valid	By target order	HEAL_APPLIED	P14	P03/P05 healing values
+PR-014	SHIELD	140	Grant shield per external cap if supplied	SHIELD intent valid	By target order	SHIELD_GRANTED	P14	P05 cap; fixture no cap applied
+PR-015	STATUS	150	Apply refresh or stack under content-defined versioned policy	STATUS intent valid	By effect_index and insertion sequence	STATUS_APPLIED	P14	P03/P06 status contents
+PR-016	DEATH	160	Mark HP=0 newly dead exactly once	After each damaging unit step	By target stable order	UNIT_DIED	P14	No in-combat revive MVP
+PR-017	TRIGGER	170	Enqueue eligible on-hit/on-death reaction intents	After atomic effect	reaction_tier,parent_seq,slot,effect_index,trigger_id	TRIGGER_QUEUED	P14	P03/P06 trigger version
+PR-018	TRIGGER	180	Drain root effects then breadth-first reaction queue	Current root effect list completed	FIFO after priority sort for same tier	TRIGGER_STARTED	P14	1024 transaction safety limit
+PR-019	CHECKPOINT	190	Evaluate both live counts only after reaction queue drained	No pending reactions	Win Loss Draw exclusive	BATTLE_FINISHED	P14	P01 reward policy unrelated
+PR-020	BOSS	200	Propose phase for eligible living BOSS at nonterminal checkpoint	Boss HP>0 and crossing and proposal not seen	P06 graph reachable order	BOSS_PHASE_PROPOSED	P14	P06 phase graph and thresholds
+PR-021	TURN	210	Commit end of player turn	Nonterminal END_TURN	Stable actor ownership	TURN_ENDED	P14	Turn length user pending
+PR-022	OWNER_ENTRY	220	At each side owner entry process statuses DOT before enemy intent or player resources	Turn entry	Slot then status insertion order	STATUS_TICKED;DAMAGE_APPLIED	P14	P03/P06 DOT content
+PR-023	OWNER_ENTRY	230	Drain triggered effects and run terminal check immediately after DOT	DOT processed	Same stable FIFO	BATTLE_FINISHED?	P14	No extra enemy action or draw after terminal
+PR-024	OWNER_ENTRY	240	Advance status remaining owner-turn count exactly once when still alive	Nonterminal after DOT	Status insertion order	STATUS_DURATION_UPDATED?	P14	P03/P06 status policy
+PR-025	ENEMY	250	Select deterministic P06 intent and legal target fallback or skip after enemy owner entry	ENEMY_READY and nonterminal	Enemy spawn_index then intent index	ENEMY_ACTION_STARTED/ENEMY_ACTION_SKIPPED	P14	P06 intention and skip contract
+PR-026	RESOURCE_ENTRY	260	Refresh resource with only externally approved policy	Still nonterminal	Single refresh per entering turn	ENERGY_REFRESHED?	P14	DEC-003/P05/P15
+PR-027	DRAW	270	Draw leftmost of drawPile; recycle discard if authorized	P15 valid DeckPatch	Fisher-Yates descending i and RNG draws deterministic	DECK_SHUFFLED;CARD_DRAWN;DRAW_SHORTFALL?	P14	P15 shuffle policy P13 RNG contract
+PR-028	TURN	280	Set player turn ready after all owner entry work	Nonterminal	Turn counter increment once	PLAYER_TURN_STARTED	P14	P03/P15 hand limits
+PR-029	COMMIT	290	Validate state invariant and append logical events then atomic commit	All processed without fault	Revision +1 once	COMMAND_COMMITTED	P14	P13 concurrency CAS
+PR-030	FAULT	999	Rollback command effects and safely record fault without reward	Invariant/chain overflow	Single controlled FAULTED record	BATTLE_FAULTED	P14	P13 transaction/fault policy

@@ -1,0 +1,64 @@
+{
+  "version": "P14-DEFECT-LOG/0.1.0",
+  "items": [
+    {
+      "id": "P14-DEF-001",
+      "owner": "P14",
+      "first_status": "FAIL",
+      "run": "author_001",
+      "cases": [
+        "F013",
+        "F014",
+        "F022",
+        "F033"
+      ],
+      "root_cause": "P14 first implementation incorrectly added a turn at player entry; source initial snapshots already carry turn 2.",
+      "fix": "Increment at enemy exit only; player entry preserves current turn. No P02 rule or fixture changed.",
+      "status": "FIXED_AUTHOR_RETESTED",
+      "verification": [
+        "author_002",
+        "author_004"
+      ],
+      "production_or_independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "P14-DEF-002",
+      "owner": "P14",
+      "first_status": "FAIL",
+      "run": "author_001",
+      "cases": [
+        "F025"
+      ],
+      "root_cause": "Legacy terminal_outcome comparison did not map P13 ABORTED to legacy null; abort phase already correct.",
+      "fix": "Explicit test-only mapping: only WIN/LOSS/DRAW map to legacy terminal_outcome.",
+      "status": "FIXED_AUTHOR_RETESTED",
+      "verification": [
+        "author_002",
+        "author_004"
+      ]
+    },
+    {
+      "id": "P14-DEF-003",
+      "owner": "P14-test",
+      "first_status": "FAIL",
+      "run": "author_003",
+      "root_cause": "Test expected P14 RNG error although original P13 validator rejected draw_count regression first.",
+      "fix": "Keep both boundaries: malformed regression expects CANDIDATE_SCHEMA_INVALID; additional schema-valid wrong RNG basis expects DECK_RNG_INVALID.",
+      "status": "FIXED_AUTHOR_RETESTED",
+      "verification": [
+        "author_004"
+      ]
+    },
+    {
+      "id": "P14-ENV-001",
+      "owner": "P34-test-environment",
+      "first_status": "FAIL",
+      "run": "contracts_001",
+      "cause": "ModuleNotFoundError: jsonschema",
+      "current_status": "BLOCKED",
+      "verification": "contracts_002 exit 3; no independent algorithm comparison executed"
+    }
+  ],
+  "repeated_same_issue_without_new_evidence_rounds": 0,
+  "failure_source_snapshots": "Every recorded run includes executed_sources.zip and executed file SHA256 list."
+}

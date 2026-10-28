@@ -1,0 +1,82 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "BattleState",
+  "snapshot": {
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "BattleSnapshot",
+    "battle_id": "fixture:battle",
+    "revision": 0,
+    "rules_version": "P02-BATTLE-0.1.0-draft",
+    "content_version": "fixture:content-v1",
+    "phase": "PLAYER_READY",
+    "turn_number": 1,
+    "energy": 3,
+    "units": [
+      {
+        "unit_id": "hero1",
+        "definition_id": "fixture:hero1",
+        "side": "PLAYER",
+        "slot": 0,
+        "hp": 10,
+        "max_hp": 10,
+        "shield": 0,
+        "statuses": []
+      },
+      {
+        "unit_id": "hero2",
+        "definition_id": "fixture:hero2",
+        "side": "PLAYER",
+        "slot": 1,
+        "hp": 10,
+        "max_hp": 10,
+        "shield": 0,
+        "statuses": []
+      },
+      {
+        "unit_id": "hero3",
+        "definition_id": "fixture:hero3",
+        "side": "PLAYER",
+        "slot": 2,
+        "hp": 10,
+        "max_hp": 10,
+        "shield": 0,
+        "statuses": []
+      },
+      {
+        "unit_id": "enemy1",
+        "definition_id": "fixture:enemy1",
+        "side": "ENEMY",
+        "slot": 0,
+        "hp": 10,
+        "max_hp": 10,
+        "shield": 0,
+        "statuses": []
+      }
+    ],
+    "card_instances": [
+      {
+        "instance_id": "cardinst1",
+        "card_id": "fixture:card1",
+        "owner_unit_id": "hero1"
+      }
+    ],
+    "zones": {
+      "draw": [],
+      "hand": [
+        "cardinst1"
+      ],
+      "discard": [],
+      "exhaust": []
+    },
+    "rng": {
+      "algorithm": "xorshift32-v1",
+      "initial_seed": 1,
+      "state": 1,
+      "draw_count": 0
+    },
+    "last_event_seq": 0,
+    "outcome": "ONGOING",
+    "boss_states": []
+  },
+  "accepted_commands": []
+}

@@ -1,0 +1,11 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "StageProgressView",
+  "profile_id": "fixture:profile",
+  "revision": 0,
+  "content_version": "fixture:content-v1",
+  "unlocked_stage_ids": [
+    "fixture:stage1"
+  ],
+  "first_clear_stage_ids": []
+}

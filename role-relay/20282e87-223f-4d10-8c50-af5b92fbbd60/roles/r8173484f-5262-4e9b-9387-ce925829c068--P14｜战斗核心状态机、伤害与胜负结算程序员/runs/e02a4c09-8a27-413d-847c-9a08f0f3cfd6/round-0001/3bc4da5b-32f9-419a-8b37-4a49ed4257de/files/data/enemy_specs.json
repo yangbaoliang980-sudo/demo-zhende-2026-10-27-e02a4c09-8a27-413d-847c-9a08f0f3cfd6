@@ -1,0 +1,643 @@
+{
+  "format_version": "P06-ENEMY-0.1.0-proposal",
+  "schema_kind": "P06_LOCAL_CONTENT_NOT_P22_SCHEMA",
+  "task_id": "P06-S03-ENEMY-001",
+  "producer": "P06",
+  "requirements": [
+    "REQ-009",
+    "REQ-019",
+    "REQ-023",
+    "REQ-024",
+    "REQ-038"
+  ],
+  "source_hashes": {
+    "SRC-V6": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "SRC-P01-REQ": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+    "SRC-P01-TRACE": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+    "SRC-P01-DEC": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+    "SRC-P02-RULE": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+    "SRC-P02-PRIORITY": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+    "SRC-P02-TRUTH": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e",
+    "SRC-P02-RFC": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+    "SRC-P03-CARDS": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+    "SRC-P05-PARAM": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487",
+    "SRC-P05-REPORT": "7cd480be755a78f446fa2cddb59daa62854a62652b1a8c3c4ba72838e8c931db",
+    "SRC-P05-BUDGET": "d4849f7f8237eec1d359ae06d7a0689b3500552ed17dbd1bb67213b5f4f225d9",
+    "SRC-P05-RFC": "6ba91ea29b4adef4da2e59dfb2f8d52ea3feaddc7b697eff7c4a4d3ed554358a"
+  },
+  "input_versions": {
+    "P02": "P02-BATTLE-0.1.0-draft",
+    "P05": "P05-BALANCE-0.1.0-provisional",
+    "P07": null,
+    "P13_DTO": null,
+    "P22_registry": null
+  },
+  "authorization": {
+    "local_task": "CURRENT_USER_P06_REQUEST",
+    "real_engine_write": false,
+    "actual_path_mapping": null,
+    "repository_base_sha": null,
+    "p01_enemy_count_approval": false,
+    "s07_runtime_activated": false
+  },
+  "production_enabled": false,
+  "runtime_test_status": "NOT_RUN",
+  "formal_integration_status": "BLOCKED",
+  "skills": [
+    {
+      "skill_id": "MOCK_P06_SKILL_N_STRIKE",
+      "display_name": "散字冲撞",
+      "intent_id": "MOCK_P06_INTENT_N_STRIKE",
+      "action_kind": "STRIKE",
+      "target_policy": "ROTATE_ALIVE_SINGLE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 8,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "完整玩家窗口内用护盾抵挡，或先击败目标",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_E_STRIKE",
+      "display_name": "封页敲击",
+      "intent_id": "MOCK_P06_INTENT_E_STRIKE",
+      "action_kind": "STRIKE",
+      "target_policy": "ROTATE_ALIVE_SINGLE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 12,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "预告锁定后可给该角色护盾",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_E_CHARGE",
+      "display_name": "折页蓄势",
+      "intent_id": "MOCK_P06_INTENT_E_CHARGE",
+      "action_kind": "CHARGE",
+      "target_policy": "ROTATE_ALIVE_SINGLE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 24,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": "HEAVY",
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": "CREATE_IF_HEAVY_CD_ZERO",
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "本次0伤害；下一次敌方行动前有一个完整玩家窗口",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_E_RELEASE",
+      "display_name": "重页落槌",
+      "intent_id": "MOCK_P06_INTENT_E_RELEASE",
+      "action_kind": "RELEASE",
+      "target_policy": "LOCKED_CHARGE_SINGLE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 24,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": "HEAVY",
+      "cooldown_on_success_slots": 2,
+      "charge_requirement": "REQUIRE_COMMITTED_READY_CHARGE",
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "用护盾削减已预告的24基础伤害；死亡/目标失效会取消",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_E_RECOVER",
+      "display_name": "整页",
+      "intent_id": "MOCK_P06_INTENT_E_RECOVER",
+      "action_kind": "RECOVER",
+      "target_policy": "NONE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "0伤害窗口，可安排治疗或攻击",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_B_STRIKE",
+      "display_name": "校勘击",
+      "intent_id": "MOCK_P06_INTENT_B_STRIKE",
+      "action_kind": "STRIKE",
+      "target_policy": "ROTATE_ALIVE_SINGLE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 18,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "预告目标固定；可给目标护盾",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_B_SWEEP",
+      "display_name": "散文震荡",
+      "intent_id": "MOCK_P06_INTENT_B_SWEEP",
+      "action_kind": "SWEEP",
+      "target_policy": "LOCK_ALL_ALIVE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 6,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "每名目标独立扣盾；最多三名，每名6基础伤害",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_B_CHARGE",
+      "display_name": "终句蓄势",
+      "intent_id": "MOCK_P06_INTENT_B_CHARGE",
+      "action_kind": "CHARGE",
+      "target_policy": "ROTATE_ALIVE_SINGLE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 36,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": "HEAVY",
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": "CREATE_IF_HEAVY_CD_ZERO",
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "蓄力后有完整玩家窗口；存活跨阈值切阶段可取消重击",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_B_RELEASE",
+      "display_name": "终句压落",
+      "intent_id": "MOCK_P06_INTENT_B_RELEASE",
+      "action_kind": "RELEASE",
+      "target_policy": "LOCKED_CHARGE_SINGLE",
+      "effect_code": "DAMAGE",
+      "base_amount_per_hit": 36,
+      "hit_count": 1,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": "HEAVY",
+      "cooldown_on_success_slots": 2,
+      "charge_requirement": "REQUIRE_COMMITTED_READY_CHARGE",
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "护盾减伤，或在释放前完成有效阶段切换/击杀",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_B_RECOVER",
+      "display_name": "重整句序",
+      "intent_id": "MOCK_P06_INTENT_B_RECOVER",
+      "action_kind": "RECOVER",
+      "target_policy": "NONE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "0伤害窗口",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_ENTRY_WAIT",
+      "display_name": "阶段调整",
+      "intent_id": "MOCK_P06_INTENT_ENTRY_WAIT",
+      "action_kind": "ENTRY_WAIT",
+      "target_policy": "NONE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "阶段切换后下一敌方行动固定0伤害，之后才进入新循环",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_SAFE_SKIP",
+      "display_name": "明确跳过",
+      "intent_id": "MOCK_P06_INTENT_SAFE_SKIP",
+      "action_kind": "SKIP",
+      "target_policy": "NONE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "显示跳过原因，消费本次行动槽且不自动改招",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    },
+    {
+      "skill_id": "MOCK_P06_SKILL_DEGRADED_WAIT",
+      "display_name": "机制降级提示",
+      "intent_id": "MOCK_P06_INTENT_DEGRADED_WAIT",
+      "action_kind": "DEGRADED_WAIT",
+      "target_policy": "NONE",
+      "effect_code": "NONE",
+      "base_amount_per_hit": 0,
+      "hit_count": 0,
+      "future_release_base_amount": 0,
+      "damage_semantics": "RAW_BEFORE_SHIELD_NOT_GUARANTEED_HP_LOSS",
+      "cooldown_group": null,
+      "cooldown_on_success_slots": 0,
+      "charge_requirement": null,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "requires_actor_alive": true,
+      "counter_window": "图缺失时先给0伤害提示窗口，再进入已定义基础攻击",
+      "status_applications": [],
+      "grants_extra_action": false,
+      "parameter_origin": "P06_TEST_ONLY_PATTERN_OVER_P05_SYNTHETIC_BUDGET",
+      "production_enabled": false
+    }
+  ],
+  "enemies": [
+    {
+      "enemy_id": "MOCK_P06_ENEMY_001",
+      "display_name": "游离字屑",
+      "tier": "NORMAL",
+      "max_hp": 24,
+      "initial_shield": 0,
+      "baseline_attack": 8,
+      "shield_cap_fixture": 40,
+      "states": [
+        {
+          "state_id": "N_STRIKE",
+          "skill_id": "MOCK_P06_SKILL_N_STRIKE",
+          "next_state_id": "N_STRIKE"
+        }
+      ],
+      "initial_state_id": "N_STRIKE",
+      "production_enabled": false,
+      "scope_status": "S03_ISOLATED_SAMPLE",
+      "eligible_stage": "S03",
+      "numeric_approval": "P05_SYNTHETIC_TEST_ONLY_NOT_BALANCED",
+      "source_parameter_ids": [
+        "MODEL/normal_enemy_hp",
+        "MODEL/normal_enemy_atk"
+      ],
+      "immunity": {
+        "DAMAGE": false,
+        "DOT": false,
+        "PHASE_TRANSITION_INVULNERABILITY": false,
+        "unknown_status": "REJECT_UNSUPPORTED_CONTENT_NOT_SILENT_IMMUNITY"
+      },
+      "on_death_reaction_ids": [],
+      "allowed_new_status_ids": [],
+      "asset_registry_id": null
+    },
+    {
+      "enemy_id": "MOCK_P06_ENEMY_002",
+      "display_name": "锁页卫士",
+      "tier": "ELITE",
+      "max_hp": 55,
+      "initial_shield": 4,
+      "baseline_attack": 12,
+      "shield_cap_fixture": 40,
+      "states": [
+        {
+          "state_id": "E_STRIKE",
+          "skill_id": "MOCK_P06_SKILL_E_STRIKE",
+          "next_state_id": "E_CHARGE"
+        },
+        {
+          "state_id": "E_CHARGE",
+          "skill_id": "MOCK_P06_SKILL_E_CHARGE",
+          "next_state_id": "E_RELEASE"
+        },
+        {
+          "state_id": "E_RELEASE",
+          "skill_id": "MOCK_P06_SKILL_E_RELEASE",
+          "next_state_id": "E_RECOVER"
+        },
+        {
+          "state_id": "E_RECOVER",
+          "skill_id": "MOCK_P06_SKILL_E_RECOVER",
+          "next_state_id": "E_STRIKE"
+        }
+      ],
+      "initial_state_id": "E_STRIKE",
+      "production_enabled": false,
+      "scope_status": "FUTURE_MECHANISM_SAMPLE_NOT_STAGE_ACTIVATION",
+      "eligible_stage": "S07_CANDIDATE",
+      "numeric_approval": "P05_SYNTHETIC_TEST_ONLY_NOT_BALANCED",
+      "source_parameter_ids": [
+        "MODEL/elite_enemy_hp",
+        "MODEL/elite_enemy_atk"
+      ],
+      "immunity": {
+        "DAMAGE": false,
+        "DOT": false,
+        "PHASE_TRANSITION_INVULNERABILITY": false,
+        "unknown_status": "REJECT_UNSUPPORTED_CONTENT_NOT_SILENT_IMMUNITY"
+      },
+      "on_death_reaction_ids": [],
+      "allowed_new_status_ids": [],
+      "asset_registry_id": null
+    },
+    {
+      "enemy_id": "MOCK_P06_ENEMY_003",
+      "display_name": "失序校勘者",
+      "tier": "BOSS",
+      "max_hp": 125,
+      "initial_shield": 0,
+      "baseline_attack": 18,
+      "shield_cap_fixture": 40,
+      "states": [
+        {
+          "state_id": "MOCK_P06_PHASE_1:0",
+          "phase_id": "MOCK_P06_PHASE_1",
+          "skill_id": "MOCK_P06_SKILL_B_STRIKE",
+          "next_state_id": "MOCK_P06_PHASE_1:1"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_1:1",
+          "phase_id": "MOCK_P06_PHASE_1",
+          "skill_id": "MOCK_P06_SKILL_B_CHARGE",
+          "next_state_id": "MOCK_P06_PHASE_1:2"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_1:2",
+          "phase_id": "MOCK_P06_PHASE_1",
+          "skill_id": "MOCK_P06_SKILL_B_RELEASE",
+          "next_state_id": "MOCK_P06_PHASE_1:3"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_1:3",
+          "phase_id": "MOCK_P06_PHASE_1",
+          "skill_id": "MOCK_P06_SKILL_B_RECOVER",
+          "next_state_id": "MOCK_P06_PHASE_1:0"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_2:0",
+          "phase_id": "MOCK_P06_PHASE_2",
+          "skill_id": "MOCK_P06_SKILL_B_SWEEP",
+          "next_state_id": "MOCK_P06_PHASE_2:1"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_2:1",
+          "phase_id": "MOCK_P06_PHASE_2",
+          "skill_id": "MOCK_P06_SKILL_B_CHARGE",
+          "next_state_id": "MOCK_P06_PHASE_2:2"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_2:2",
+          "phase_id": "MOCK_P06_PHASE_2",
+          "skill_id": "MOCK_P06_SKILL_B_RELEASE",
+          "next_state_id": "MOCK_P06_PHASE_2:3"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_2:3",
+          "phase_id": "MOCK_P06_PHASE_2",
+          "skill_id": "MOCK_P06_SKILL_B_RECOVER",
+          "next_state_id": "MOCK_P06_PHASE_2:0"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_3:0",
+          "phase_id": "MOCK_P06_PHASE_3",
+          "skill_id": "MOCK_P06_SKILL_B_STRIKE",
+          "next_state_id": "MOCK_P06_PHASE_3:1"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_3:1",
+          "phase_id": "MOCK_P06_PHASE_3",
+          "skill_id": "MOCK_P06_SKILL_B_SWEEP",
+          "next_state_id": "MOCK_P06_PHASE_3:2"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_3:2",
+          "phase_id": "MOCK_P06_PHASE_3",
+          "skill_id": "MOCK_P06_SKILL_B_CHARGE",
+          "next_state_id": "MOCK_P06_PHASE_3:3"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_3:3",
+          "phase_id": "MOCK_P06_PHASE_3",
+          "skill_id": "MOCK_P06_SKILL_B_RELEASE",
+          "next_state_id": "MOCK_P06_PHASE_3:4"
+        },
+        {
+          "state_id": "MOCK_P06_PHASE_3:4",
+          "phase_id": "MOCK_P06_PHASE_3",
+          "skill_id": "MOCK_P06_SKILL_B_RECOVER",
+          "next_state_id": "MOCK_P06_PHASE_3:0"
+        }
+      ],
+      "initial_state_id": "MOCK_P06_PHASE_1:0",
+      "production_enabled": false,
+      "scope_status": "FUTURE_MECHANISM_SAMPLE_NOT_STAGE_ACTIVATION",
+      "eligible_stage": "S07",
+      "numeric_approval": "P05_SYNTHETIC_TEST_ONLY_NOT_BALANCED",
+      "source_parameter_ids": [
+        "MODEL/boss_enemy_hp",
+        "MODEL/boss_enemy_atk"
+      ],
+      "immunity": {
+        "DAMAGE": false,
+        "DOT": false,
+        "PHASE_TRANSITION_INVULNERABILITY": false,
+        "unknown_status": "REJECT_UNSUPPORTED_CONTENT_NOT_SILENT_IMMUNITY"
+      },
+      "on_death_reaction_ids": [],
+      "allowed_new_status_ids": [],
+      "asset_registry_id": null,
+      "phase_graph_id": "MOCK_P06_GRAPH_001",
+      "phase_initial_state_ids": {
+        "MOCK_P06_PHASE_1": "MOCK_P06_PHASE_1:0",
+        "MOCK_P06_PHASE_2": "MOCK_P06_PHASE_2:0",
+        "MOCK_P06_PHASE_3": "MOCK_P06_PHASE_3:0"
+      },
+      "degraded_basic_skill_id": "MOCK_P06_SKILL_B_STRIKE"
+    }
+  ],
+  "policies": {
+    "state_writer": "P14_ONLY",
+    "decision_implementation_owner": "P16",
+    "rng": {
+      "algorithm_reference": "P02 xorshift32-v1 proposal",
+      "seed_min": 1,
+      "seed_max": 4294967295,
+      "draws_per_enemy_decision": 0,
+      "reason": "Fixed cycles and stable rotation; seed is preserved, no random target or branch in V0.1."
+    },
+    "targeting": {
+      "side": "PLAYER",
+      "valid": "hp>0 AND targetable=true",
+      "sort_keys": [
+        "formation_slot ASC",
+        "unit_id UTF8 ASC"
+      ],
+      "rotation": "Choose the first valid slot greater than last_successful_single_target_slot, else wrap to first valid slot. Initial cursor=-1.",
+      "cursor_update": "P14 updates only after a successful single-target DAMAGE action; CHARGE, SWEEP, skips and phase transitions do not advance it.",
+      "release": "Use the committed charge target; never choose a new target.",
+      "execution_revalidation": "Validate locked targets after DOT and terminal check. Single invalid -> SKIP; all-target filters invalid IDs in frozen order, never adds new IDs.",
+      "all_players_dead": "TERMINAL_LOSS_OR_DRAW_BEFORE_ACTION_NOT_SKIP",
+      "max_party_size": 3,
+      "no_valid_target": "SKIP_NO_VALID_TARGET",
+      "auto_retarget": false
+    },
+    "intent": {
+      "freeze": [
+        "skill_id",
+        "base_amount_per_hit",
+        "hit_count",
+        "ordered_target_ids",
+        "phase_epoch",
+        "content_version",
+        "intent_token"
+      ],
+      "window": "Publish before player decisions; CHARGE slot deals 0 and release follows one complete player decision window.",
+      "damage_label": "Base damage, not predicted HP loss. Actual raw/absorbed/hp_loss/overkill come only from P14.",
+      "reuse": "Reuse committed intent_token for reads/retries. Display-only preview never mutates cursor/cooldown/RNG.",
+      "unexpected_change": "No hidden reselect; cancel with reason and use explicit no-damage action or rollback fault.",
+      "runtime_contract": "PROPOSED; P13 DTO base SHA missing; P14 IC-07 and P16 IC-12 acceptance missing."
+    },
+    "cooldown": {
+      "unit": "ACTOR_ENEMY_ACTION_SLOT",
+      "group": "HEAVY",
+      "blocked_slots_after_release": 2,
+      "tick": "At committed slot end, decrement each cooldown that was positive at slot start once; assignments made in this slot override the decrement.",
+      "skips_tick": true,
+      "entry_wait_ticks": true,
+      "charge_can_start_only_at_zero": true,
+      "release_failure": "Clear charge; if charge existed and was consumed/cancelled set HEAVY=2; never start a fallback attack.",
+      "phase_cancel": "A phase transition cancels existing charge once and sets HEAVY=2, without a turn tick; otherwise preserve cooldown.",
+      "duplicate_commands": "P02 dedup: no new slot, no decrement, no new events.",
+      "terminal_or_dead_actor": "No cooldown/cycle update.",
+      "bad_cooldown_at_charge": "SKIP_COOLDOWN and advance exactly one cycle state."
+    },
+    "charge": {
+      "kind": "BEHAVIOR_MARKER_NOT_P03_STATUS",
+      "create_at": "P14 committed CHARGE action only",
+      "fields": [
+        "release_skill_id",
+        "locked_target_ids",
+        "phase_epoch",
+        "ready_slot",
+        "created_intent_token"
+      ],
+      "ready_slot": "charging slot+1",
+      "release_only_at_ready_slot": true,
+      "valid_marker_invariant": "Registered release skill for this enemy; same phase_epoch; HEAVY cooldown=0. Conflicting marker/CD or unknown release skill is rejected before start or FAULTED with rollback in runtime.",
+      "cancel_reasons": [
+        "ACTOR_DEAD",
+        "TERMINAL",
+        "PHASE_REPLACED",
+        "LOCKED_TARGET_INVALID",
+        "GRAPH_DEGRADED",
+        "CHARGE_EXPIRED"
+      ],
+      "non_interrupts": [
+        "ORDINARY_DAMAGE",
+        "APPROVED_DOT_NONLETHAL_WITHOUT_PHASE_CHANGE",
+        "MISSING_ART",
+        "ANIMATION_DISABLED"
+      ],
+      "missing_or_early_or_expired": "SKIP_CHARGE_INVALID; clear marker; advance cycle once; no alternative attack."
+    },
+    "statuses": {
+      "incoming_burn": "Use single already-defined MOCK_P03_STATUS_BURN or BURN_STRONG application at owner entry under P02; no phase immunity, no cleanse.",
+      "burn_reapplication": "BLOCKED_BY_P03_UNRESOLVED_STACK_POLICY; no P06 replacement rule.",
+      "buff_debuff_control": "No FOCUS/FEEBLE/STUN added or enabled; unknown status causes content rejection, runtime fault if already corrupted.",
+      "phase_transition": "Preserve approved DOT and shield; no healing, resurrection, shield grants, damage caps or invulnerability."
+    },
+    "precedence": [
+      "P02_COMMAND_DEDUP_AND_ALREADY_CLOSED_GATE",
+      "VALIDATE_CONTENT_AND_SNAPSHOT",
+      "P02_DOT_DAMAGE_DEATH_REACTIONS",
+      "P02_TERMINAL_CHECK",
+      "SKIP_DEAD_ACTOR_IF_BATTLE_ONGOING",
+      "P14_ACCEPT_ORDERED_PHASE_PROPOSALS",
+      "PHASE_ENTRY_WAIT_OR_GRAPH_DEGRADED_WAIT",
+      "VALIDATE_FROZEN_INTENT_AND_CHARGE_AND_CD",
+      "REVALIDATE_LOCKED_TARGETS",
+      "EXECUTE_OR_EXPLICIT_SKIP",
+      "P14_SLOT_END_AND_COMMIT"
+    ],
+    "phase_change": "Proposal does not itself change phase. P14 accepts ordered proposals under IC-07; final phase entered atomically with one pending ENTRY_WAIT and no extra action. No published half-committed phase.",
+    "graph_failure": "If graph missing/invalid but baseline B_STRIKE and content valid: cancel charge, enter irreversible DEGRADED_BASIC for this battle, consume one DEGRADED_WAIT then cycle B_STRIKE. Future graph restoration requires new battle/content version. If baseline invalid, FAULTED, not endless skips.",
+    "assets": "Missing phase art changes only presentation fallback; logic, phase, charge, cooldown and RNG unchanged. Reuse approved same-enemy base/previous art if available; otherwise labelled text-only diagnostic view, never formal art approval.",
+    "no_legal_skill": "Known action temporarily blocked -> explicit skip + cycle advance. Unknown skill/config -> reject before battle or fault with rollback; never invent an attack.",
+    "external_contract_version": "P06-EnemyContent/0.1.0-proposal_NOT_ACCEPTED"
+  }
+}

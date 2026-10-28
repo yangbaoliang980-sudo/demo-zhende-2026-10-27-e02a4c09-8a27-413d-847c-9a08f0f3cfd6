@@ -1,0 +1,11 @@
+{
+  "scope": "Optional author JSON Schema algorithm cross-check",
+  "command": ["python", "-m", "pip", "install", "--disable-pip-version-check", "--target", "/workspace/scratch/e30ed18294dc/work/qa_deps", "jsonschema==4.25.1"],
+  "observed_output_excerpt": "Failed to establish a new connection: [Errno 1] Operation not permitted",
+  "excerpt_scope": "Actual first tool output; excerpt only, not reconstructed full stdout/stderr",
+  "status": "BLOCKED_NETWORK_PERMISSION",
+  "final_exit_code": null,
+  "completion_evidence": "Follow-up process handle was unavailable; final pip exit code was not observed. No successful installation is claimed.",
+  "runtime_dependency_required": false,
+  "system_environment_modified": false
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "P13-TARGET-EVIDENCE-REQUEST/0.1.0",
+  "responsible_owner": "P34",
+  "status": "BLOCKED",
+  "target": {
+    "os_name": null,
+    "os_version": null,
+    "architecture": null,
+    "cpu": null,
+    "gpu": null,
+    "driver_version": null,
+    "ram_bytes": null,
+    "engine_name": null,
+    "engine_full_version": null,
+    "engine_executable_path": null,
+    "engine_sha256": null,
+    "anki_full_version": null,
+    "anki_install_origin": null
+  },
+  "source": {
+    "repository_or_archive": null,
+    "fixed_commit": null,
+    "archive_sha256": null,
+    "project_relative_root": null,
+    "entry_configuration_path": null,
+    "entry_configuration_sha256": null,
+    "read_only_probe_authorization": null
+  },
+  "required_probe_evidence": [
+    "exact argv",
+    "cwd",
+    "start/end time",
+    "observed host fingerprint",
+    "process exit code",
+    "unmodified stdout/stderr",
+    "project input file hashes",
+    "engine binary hash",
+    "expected import/scene output",
+    "P32/P35 receipts at the same version"
+  ],
+  "not_inferred_from": "User profile, browser OS, repository dates or current container OS"
+}

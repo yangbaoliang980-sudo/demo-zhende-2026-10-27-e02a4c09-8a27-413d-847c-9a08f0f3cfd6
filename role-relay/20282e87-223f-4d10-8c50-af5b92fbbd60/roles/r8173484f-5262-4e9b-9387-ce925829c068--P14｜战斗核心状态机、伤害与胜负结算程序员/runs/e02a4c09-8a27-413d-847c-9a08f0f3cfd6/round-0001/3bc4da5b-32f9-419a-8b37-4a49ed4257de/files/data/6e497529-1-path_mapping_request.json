@@ -1,0 +1,43 @@
+{
+  "version": "P14-PATH-REQUEST/0.1.0",
+  "owner": "P14",
+  "receiver": "P13",
+  "status": "REQUEST_PREPARED_NOT_ACKNOWLEDGED",
+  "base_p13_mapping": "upstream/P13/architecture/actual_path_mapping.json",
+  "base_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+  "production_write_authorized": false,
+  "actual_production_root": null,
+  "actual_production_commit": null,
+  "isolated_artifact_root_observed": "/workspace/scratch/e30ed18294dc/P14_BattleCore_V0.1",
+  "portable_artifact_root": ".",
+  "isolated_authorization": "Current user allows new isolated deliverables; this is not a P13-issued actual_path_mapping.",
+  "requests": [
+    {
+      "planned_owner_path": "runtime/battle/core/**",
+      "isolated_artifact_path": "battle_core/**",
+      "actual_production_path": null
+    },
+    {
+      "planned_owner_path": "tests/battle_core_unit/**",
+      "isolated_artifact_path": "resolution_replay_tests/**",
+      "actual_production_path": null
+    }
+  ],
+  "package_metadata_allowlist": [
+    "README.md",
+    "integration_handoff.md",
+    "battle_result_schema.md",
+    "battle_event_samples.json",
+    "battle_snapshot.json",
+    "battle_state.json",
+    "battle_result.json",
+    "verification_status.json",
+    "requirements-dev.txt",
+    "delivery_manifest.sha256.tsv",
+    "examples/**",
+    "tools/**",
+    "handoff/**",
+    "evidence/**"
+  ],
+  "upstream_copy_policy": "upstream/** are hash-bound original copies, never edit; change requests carry old SHA."
+}

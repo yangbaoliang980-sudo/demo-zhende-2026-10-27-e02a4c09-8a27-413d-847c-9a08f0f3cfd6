@@ -1,0 +1,228 @@
+{
+  "producer": "P03",
+  "task_id": "TASK-P03-S01-S02-LOCAL-001",
+  "format_version": "P03-CARDS-0.1.0-draft",
+  "release_status": "ISOLATED_TEST_ONLY_NOT_APPROVED_FOR_RUNTIME",
+  "mapping_status": "P13_ACTUAL_PATH_MAPPING_BLOCKED",
+  "contract_status": "P13_DTO_P22_SCHEMA_P04_ROSTER_P05_NUMBERS_P08_REWARD_PENDING",
+  "source_p01_zip_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+  "source_p02_zip_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+  "source_git_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "format": "P03-CHOICE-SCENARIOS",
+  "status": "TEST_ONLY_NO_P14_RUNTIME",
+  "scenarios": [
+    {
+      "scenario_id": "S-A",
+      "stage": "S02",
+      "battle_phase": "PLAYER_READY",
+      "energy": 2,
+      "party": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C"
+      ],
+      "units": [
+        {
+          "unit_id": "MOCK_P03_CHAR_A",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_B",
+          "side": "PLAYER",
+          "hp": 4,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_C",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_ENEMY_1",
+          "side": "ENEMY",
+          "hp": 12,
+          "max_hp": 12,
+          "shield": 2,
+          "alive": true
+        }
+      ],
+      "hand": {
+        "I_A_STRIKE": "MOCK_P03_CARD_STRIKE",
+        "I_A_BARRIER": "MOCK_P03_CARD_BARRIER",
+        "I_A_RECOVER": "MOCK_P03_CARD_RECOVER",
+        "I_A_EMBER": "MOCK_P03_CARD_EMBER",
+        "I_A_FOCUS": "MOCK_P03_CARD_FOCUS_DRAFT"
+      },
+      "summary": "同一初始快照可选择伤害或治疗、防御、DOT；游戏未执行"
+    },
+    {
+      "scenario_id": "S-B",
+      "stage": "S02",
+      "battle_phase": "PLAYER_READY",
+      "energy": 2,
+      "party": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C"
+      ],
+      "units": [
+        {
+          "unit_id": "MOCK_P03_CHAR_A",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_B",
+          "side": "PLAYER",
+          "hp": 3,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_C",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_ENEMY_1",
+          "side": "ENEMY",
+          "hp": 30,
+          "max_hp": 30,
+          "shield": 0,
+          "alive": true
+        }
+      ],
+      "hand": {
+        "I_B_EDGE": "MOCK_P03_CARD_A_EDGE",
+        "I_B_WALL": "MOCK_P03_CARD_B_WALL",
+        "I_B_MEND": "MOCK_P03_CARD_C_MEND"
+      },
+      "summary": "三种角色专属牌区分：强攻/守护/补血"
+    },
+    {
+      "scenario_id": "S-C",
+      "stage": "S02",
+      "battle_phase": "PLAYER_READY",
+      "energy": 0,
+      "party": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D"
+      ],
+      "units": [
+        {
+          "unit_id": "MOCK_P03_CHAR_A",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_B",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_D",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_ENEMY_1",
+          "side": "ENEMY",
+          "hp": 20,
+          "max_hp": 20,
+          "shield": 0,
+          "alive": true
+        }
+      ],
+      "hand": {
+        "I_C_STRIKE": "MOCK_P03_CARD_STRIKE",
+        "I_C_BARRIER": "MOCK_P03_CARD_BARRIER"
+      },
+      "summary": "无能量和非法目标时拒绝不写状态；仅P03静态预期"
+    },
+    {
+      "scenario_id": "S-D",
+      "stage": "S02",
+      "battle_phase": "PLAYER_READY",
+      "energy": 1,
+      "party": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D"
+      ],
+      "units": [
+        {
+          "unit_id": "MOCK_P03_CHAR_A",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_B",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_P03_CHAR_D",
+          "side": "PLAYER",
+          "hp": 10,
+          "max_hp": 10,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_ENEMY_1",
+          "side": "ENEMY",
+          "hp": 14,
+          "max_hp": 14,
+          "shield": 0,
+          "alive": true
+        },
+        {
+          "unit_id": "MOCK_ENEMY_DEAD",
+          "side": "ENEMY",
+          "hp": 0,
+          "max_hp": 14,
+          "shield": 0,
+          "alive": false
+        }
+      ],
+      "hand": {
+        "I_D_STRIKE": "MOCK_P03_CARD_STRIKE",
+        "I_D_EMBER": "MOCK_P03_CARD_EMBER",
+        "I_D_BRAND": "MOCK_P03_CARD_D_BRAND"
+      },
+      "summary": "测试非己方专属卡、已死亡目标、无手牌以及另一合法DOT"
+    }
+  ]
+}

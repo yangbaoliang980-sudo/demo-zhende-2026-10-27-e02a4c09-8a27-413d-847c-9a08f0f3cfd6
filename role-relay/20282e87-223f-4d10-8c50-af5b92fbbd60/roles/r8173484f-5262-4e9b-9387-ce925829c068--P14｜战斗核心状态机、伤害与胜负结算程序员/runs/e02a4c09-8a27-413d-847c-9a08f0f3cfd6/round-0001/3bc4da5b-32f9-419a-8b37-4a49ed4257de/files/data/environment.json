@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "implementation": "CPython",
+  "target_game_environment_status": "BLOCKED_NOT_SUPPLIED",
+  "engine_process": "NOT_RUN",
+  "executables": {
+    "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "godot": null,
+    "godot4": null,
+    "Unity": null,
+    "unity": null,
+    "dotnet": null,
+    "anki": null
+  }
+}

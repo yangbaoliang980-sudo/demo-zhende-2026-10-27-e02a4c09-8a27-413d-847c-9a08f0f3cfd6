@@ -1,0 +1,10 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "StudyStatusQuery",
+  "scope": {
+    "source_id": "fixture-source",
+    "collection_lineage": "fixture-lineage",
+    "beneficiary_id": "fixture-beneficiary"
+  },
+  "inbox_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}

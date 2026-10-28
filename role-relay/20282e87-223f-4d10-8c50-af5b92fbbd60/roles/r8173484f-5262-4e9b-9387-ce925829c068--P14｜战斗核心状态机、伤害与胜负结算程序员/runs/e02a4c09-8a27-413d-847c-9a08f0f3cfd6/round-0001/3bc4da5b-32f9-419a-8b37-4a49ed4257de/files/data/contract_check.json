@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED",
+  "execution": "NOT_RUN",
+  "layer": "OPTIONAL_AUTHOR_SCHEMA_ALGORITHM_CROSSCHECK",
+  "reason": "jsonschema==4.25.1 not installed; dependency download encountered network permission denial",
+  "required_dependency": "jsonschema==4.25.1",
+  "P13_frozen_validator_author_tests": "PASS",
+  "evidence_of_original_failed_attempt": "evidence/runs/contracts_001",
+  "P32_independent_contract_test": "NOT_RUN"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "TASK-01-02",
+  "role": "P14",
+  "title": "无渲染战斗状态单次提交核心",
+  "source_task_register": "upstream/P01/planning/handoffs/task_register.tsv",
+  "source_sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+  "delivery_version": "P14-BATTLE-CORE/0.1.0-isolated",
+  "stage_scope": "S01 + isolated S02 transaction seam; S07 boundary preflight only",
+  "status": "ISOLATED_IMPLEMENTED_AUTHOR_VERIFIED_PRODUCTION_BLOCKED",
+  "production_write_paths": [],
+  "source_directories": [
+    "battle_core",
+    "resolution_replay_tests"
+  ],
+  "receivers": [
+    "P15",
+    "P16",
+    "P19",
+    "P29",
+    "P32",
+    "P33",
+    "P35",
+    "P13",
+    "P02"
+  ],
+  "receiver_acknowledgements": "PREPARED_NOT_ACKNOWLEDGED",
+  "user_selected_integrator": "NOT_APPOINTED_IN_RECEIVED_INPUT"
+}

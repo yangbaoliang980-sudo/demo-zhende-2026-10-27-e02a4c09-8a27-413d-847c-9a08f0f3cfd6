@@ -1,0 +1,85 @@
+{
+  "version": "P14-BLOCKERS/0.1.0",
+  "items": [
+    {
+      "id": "P14-BLK-001",
+      "owner": "P13/P01",
+      "stage": "S00-production",
+      "missing": "真实游戏源码固定提交/ZIP、入口、P14 actual_path_mapping 与授权；当前 P13 映射给 P14 write_allowed=false。",
+      "status": "BLOCKED",
+      "isolated_work": "已完成新目录隔离源码与测试"
+    },
+    {
+      "id": "P14-BLK-002",
+      "owner": "P15",
+      "stage": "S02-real-provider",
+      "missing": "真实 DeckPlanner 源码固定版本/SHA、候选/拒绝/抽牌报告合同及接收回执。",
+      "status": "BLOCKED",
+      "isolated_work": "脚本候选下原子扣费/牌区/RNG 及非法候选回滚已实测"
+    },
+    {
+      "id": "P14-BLK-003",
+      "owner": "P16/P13",
+      "stage": "S03-real-provider",
+      "missing": "真实 EnemyPlanner 源码固定版本/SHA、实际内容和锁定意图证据；多敌批次扩展。",
+      "status": "BLOCKED",
+      "isolated_work": "P13 单 EnemyIntent 合成输入的执行/跳过/致死短路已实测"
+    },
+    {
+      "id": "P14-BLK-004",
+      "owner": "P02/P03/P05/P22",
+      "stage": "S01-S02-production-content",
+      "missing": "正式 content ID/Schema/费用与效果数值冻结；BUFF/DEBUFF、DOT 重复叠层与护盾 cap/溢出批准。",
+      "status": "BLOCKED",
+      "isolated_work": "P02/P03 TEST_ONLY 原值执行；禁用未定内容，未改 P05 候选"
+    },
+    {
+      "id": "P14-BLK-005",
+      "owner": "P13/P02",
+      "stage": "S01-exact-legacy-contract",
+      "missing": "P02 到 P13 的完整事件/指纹/历史回执迁移版本；F010/F011/F021/F028 完整历史。",
+      "status": "BLOCKED",
+      "isolated_work": "29 例显式语义投影 PASS；4 例保留 BLOCKED，原字节不改"
+    },
+    {
+      "id": "P14-BLK-006",
+      "owner": "P13/P16/P02/P01",
+      "stage": "S07-phase-commit",
+      "missing": "正式 S07 激活、PhaseProposal 受控提交/阶段 epoch/等待槽合同；P06 提案还不是实现。",
+      "status": "BLOCKED",
+      "isolated_work": "只做预检：跨阈提案、致死抑制、反击 LOSS/DRAW 先于阶段"
+    },
+    {
+      "id": "P14-BLK-007",
+      "owner": "P34",
+      "stage": "target-runtime",
+      "missing": "目标 OS/架构/驱动、引擎完整版本/可执行哈希、真实工程入口及目标 Anki 版本证据。",
+      "status": "BLOCKED",
+      "isolated_work": "当前 Linux x86_64 Python 3.12.14 作者测试已运行"
+    },
+    {
+      "id": "P14-BLK-008",
+      "owner": "P32/P33/P35",
+      "stage": "independent-acceptance",
+      "missing": "对固定本包哈希的独立测试、人工运行和审查回执。",
+      "status": "NOT_RUN",
+      "isolated_work": "P14 作者证据随包，未代签"
+    },
+    {
+      "id": "P14-BLK-009",
+      "owner": "P34-test-environment",
+      "stage": "optional-author-crosscheck",
+      "missing": "当前环境 jsonschema==4.25.1 不存在；网络安装遭权限拒绝。",
+      "status": "BLOCKED",
+      "isolated_work": "标准库测试和 P13 原校验器测试 PASS；可选交叉算法未执行"
+    },
+    {
+      "id": "P14-BLK-010",
+      "owner": "USER-appointed-EXT-INTEGRATOR",
+      "stage": "cross-module-integration",
+      "missing": "用户对独立整合人员的指定及跨模块整合授权。",
+      "status": "BLOCKED",
+      "isolated_work": "提供相对路径、依赖原件、API 和逐件哈希，未进行工程合并"
+    }
+  ]
+}

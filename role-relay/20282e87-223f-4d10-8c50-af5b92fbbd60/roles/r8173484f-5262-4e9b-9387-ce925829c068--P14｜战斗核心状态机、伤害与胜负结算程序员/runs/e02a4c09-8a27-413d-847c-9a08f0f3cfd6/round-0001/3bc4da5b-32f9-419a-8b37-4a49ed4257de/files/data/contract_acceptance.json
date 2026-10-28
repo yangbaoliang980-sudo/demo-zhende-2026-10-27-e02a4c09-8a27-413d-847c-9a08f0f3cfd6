@@ -1,0 +1,38 @@
+{
+  "version": "P14-CONTRACT-RECEIPT/0.1.0",
+  "owner": "P14",
+  "responds_to": "P13-RFC-001",
+  "contract_id": "IC-05",
+  "shape_owner": "P13",
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "status": "ACCEPTED_FOR_P14_ISOLATED_IMPLEMENTATION_ONLY",
+  "base_schema_sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+  "registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+  "accepted": [
+    "Exact BattleCommand/BattleState/BattleSnapshot/BattleEvent/BattleCommitBatch/BattleReply/BattleResult shapes",
+    "Command SHA binds complete frozen BattleCommand; duplicates before revision/domain gates",
+    "P14 only aggregate commit; P15 candidate fees never directly write state",
+    "Safe integers, xorshift32-v1 state, immutable copy boundary, monotonically committed revision/seq"
+  ],
+  "frozen_wire_modified": false,
+  "production_acceptance": "BLOCKED",
+  "P32_independent_tests": "NOT_RUN",
+  "P35_review": "NOT_RUN",
+  "other_ICs": [
+    {
+      "id": "IC-07",
+      "owner": "P14",
+      "status": "PARTIAL_ISOLATED_CHECKPOINT_IMPLEMENTED_PHASE_COMMIT_BLOCKED"
+    },
+    {
+      "id": "IC-08",
+      "owner": "P13",
+      "status": "CONSUME_ORIGINAL_SHAPE_NO_OWNER_OVERRIDE"
+    },
+    {
+      "id": "IC-12",
+      "owner": "P16",
+      "status": "NOT_ACKNOWLEDGED_NO_AI_IMPLEMENTATION_RECEIVED"
+    }
+  ]
+}

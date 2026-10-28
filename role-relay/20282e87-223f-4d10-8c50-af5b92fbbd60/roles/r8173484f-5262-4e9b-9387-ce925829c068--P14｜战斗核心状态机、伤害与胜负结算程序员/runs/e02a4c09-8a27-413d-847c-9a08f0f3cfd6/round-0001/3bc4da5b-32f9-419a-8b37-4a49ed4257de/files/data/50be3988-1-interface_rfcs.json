@@ -1,0 +1,150 @@
+{
+  "version": "P14-RFC/0.1.0",
+  "delivery_state": "PREPARED_WITH_FILES_NOT_SENT_TO_PEOPLE",
+  "items": [
+    {
+      "rfc_id": "P14-RFC-001",
+      "contract_owner_or_required_coowners": "P13",
+      "interface": "IC-02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "为真实工程出具 P14 actual_path_mapping、固定 base commit、路径写入白名单和目标环境证据。",
+      "base_files": [
+        {
+          "path": "upstream/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "current_behavior": "不把隔离目录改名视为正式映射；当前生产写入列表为空。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-002",
+      "contract_owner_or_required_coowners": "P13/P02",
+      "interface": "IC-08",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "核对 P02 事件与当前 P13 数据形状差异；决定 ENERGY_REFRESHED、STATUS_TICKED、TRIGGER_QUEUED/STARTED、ENEMY_ACTION_STARTED、ROUND_ADVANCED、DECK_RECYCLED/SHUFFLED 的版本化表达。",
+      "base_files": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+          "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d"
+        },
+        {
+          "path": "upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+          "sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+        }
+      ],
+      "current_behavior": "保持 P13 原 Schema；P14 私有 trace 记录部分过程信息，P02 仅做显式语义投影，不能签全字节兼容。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-003",
+      "contract_owner_or_required_coowners": "P13/P15",
+      "interface": "IC-05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "补充 DeckPlanner 的负向业务答复、entry draw_requested/report 和私有 post-DOT candidate basis 的正式语义；DeckPatch 仍由 P14 单次提交。",
+      "base_files": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P02/spec/battle/resolution/effect_priority.tsv",
+          "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5"
+        },
+        {
+          "path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e"
+        }
+      ],
+      "current_behavior": "当前 Python CandidateRejected 与 fixture entry_draw_requested 只是隔离适配；不把请求抽牌数猜成已抽牌数。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-004",
+      "contract_owner_or_required_coowners": "P13/P16",
+      "interface": "IC-07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "补充多敌有序行动批次/槽位、预告 token、phase epoch 和行为状态字段；P14 不选 AI。",
+      "base_files": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P06/design/enemies/interface_rfc_and_blockers.md",
+          "sha256": "c6467953c7857c3ed49f4f4fa02236ad6e2095c751d486f2b58dbce0652b66e4"
+        }
+      ],
+      "current_behavior": "当前 P13 单 EnemyIntent 运行口限定存活单敌；多敌返回 ENEMY_BATCH_CONTRACT_UNBOUND 并完整回滚。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-005",
+      "contract_owner_or_required_coowners": "P13/P16/P02",
+      "interface": "IC-07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "定义 PhaseProposal 对应的受控命令、同一根事务关联、phase epoch、单次 ENTRY_WAIT、当前阶段与历史提案的恢复证明。",
+      "base_files": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        }
+      ],
+      "current_behavior": "实现存活跨阈提案与致死终局优先；inspect_phase_proposal 明确拒绝未绑定提交；有待提交阶段时停止后续敌行动。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-006",
+      "contract_owner_or_required_coowners": "P02/P13",
+      "interface": "IC-05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "补交 F010/F011/F021/F028 已处理旧命令的完整内容及 committed_revision、first_event_seq、last_event_seq，或由 owner 出具新版本向量。",
+      "base_files": [
+        {
+          "path": "upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+          "sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+        },
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "current_behavior": "旧 command SHA 无法直接等同新 BattleCommand SHA；四例 BLOCKED，不伪造历史；当前合同的防重用真实新历史验证。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    },
+    {
+      "rfc_id": "P14-RFC-007",
+      "contract_owner_or_required_coowners": "P02/P13",
+      "interface": "IC-05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "审阅隔离版回滚后安全故障提交和回放摘要语义：丢弃全部游戏写入，以触发请求身份提交 COMMAND_ACCEPTED/BATTLE_FAULTED/COMMAND_COMMITTED，返回 COMMITTED+故障码。",
+      "base_files": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+          "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d"
+        }
+      ],
+      "current_behavior": "没有 BattleResult/奖励。三个提交前中断点全回滚。真正进程崩溃、持久恢复、外部异常回放须 P21/目标环境补证。",
+      "proposed_new_production_version": null,
+      "upstream_bytes_modified": false
+    }
+  ]
+}

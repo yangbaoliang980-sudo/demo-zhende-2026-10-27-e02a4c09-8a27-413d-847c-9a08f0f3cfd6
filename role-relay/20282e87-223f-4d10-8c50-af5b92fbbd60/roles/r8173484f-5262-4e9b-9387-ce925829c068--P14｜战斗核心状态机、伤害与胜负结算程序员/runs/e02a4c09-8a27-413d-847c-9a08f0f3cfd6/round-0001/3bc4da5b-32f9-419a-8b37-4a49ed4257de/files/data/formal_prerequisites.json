@@ -1,0 +1,89 @@
+{
+  "schema_version": "P12-PREREQUISITES/0.1.0",
+  "task_id": "P12-S04-S05-TRANSPORT-001",
+  "release_mode": "ISOLATED_ONLY",
+  "production_authorized": false,
+  "checks": [
+    {
+      "id": "P12-B01",
+      "owner": "P13",
+      "artifact": "真实工程固定提交、引擎及P12实际路径/内部DTO/修改白名单",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B02",
+      "owner": "P10",
+      "artifact": "目标Anki完整版本及真实完成/Undo/恢复/自然重复/旧备份的字段与身份关联证据",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B03",
+      "owner": "P11/P21",
+      "artifact": "正式IC-18结果映射、原子提交/查询凭证、实例/水位/连续性与备份恢复栅栏",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B04",
+      "owner": "P13/P34",
+      "artifact": "目标OS/架构、IPC候选实测与端点发现/权限配置",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B05",
+      "owner": "P38",
+      "artifact": "本机绑定、字段最小化、授权用途/留存/删除及Windows DACL审核",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B06",
+      "owner": "P08/P01",
+      "artifact": "已批准PolicyRecord及适用范围；P12不制定四键正式奖值",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B07",
+      "owner": "P09/P22",
+      "artifact": "正式分类映射和资源ID；真实语义接入不得采用合成字段",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B08",
+      "owner": "P17",
+      "artifact": "真实WalletDelta与来源归属接口，由P11/P21接收",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P12-B09",
+      "owner": "P32/P33/P35",
+      "artifact": "固定正式版本的独立自动化、人工及分层证据门禁",
+      "required_version": null,
+      "sha256": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P12-B10",
+      "owner": "P01/用户指定EXT-INTEGRATOR",
+      "artifact": "跨模块实际整合授权和集成固定提交",
+      "required_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    }
+  ],
+  "note": "Changing booleans or statuses in this file cannot create a production bootstrap or approvals."
+}

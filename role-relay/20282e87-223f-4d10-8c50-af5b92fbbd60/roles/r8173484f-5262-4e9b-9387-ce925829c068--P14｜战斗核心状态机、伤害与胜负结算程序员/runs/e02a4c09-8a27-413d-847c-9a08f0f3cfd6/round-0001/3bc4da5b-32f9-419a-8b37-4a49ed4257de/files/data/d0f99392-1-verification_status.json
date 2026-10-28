@@ -1,0 +1,275 @@
+{
+  "schema_version": "P13-VERIFICATION/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "delivery_version": "P13-CLIENT-ARCH/0.1.0-isolated",
+  "author_design_review": "AUTHOR_REVIEW_COMPLETE_WITH_LIMITATIONS",
+  "author_review_file": "architecture/author_review.md",
+  "target_runtime_gate": "BLOCKED",
+  "engine_choice": "UNDECIDED",
+  "real_anki_events": 0,
+  "entries": [
+    {
+      "id": "P13-V01",
+      "layer": "AUTHOR_UNIT_CONTRACT",
+      "status": "PASS",
+      "scope": "54 unittest methods; subtests are not counted as separate tests. No P14 business or P19/P29 rendering implementation.",
+      "run_receipt": "architecture/evidence/runs/author_tests_final/run_receipt.json",
+      "run_receipt_sha256": "61f0fd28c4ffbe5afa02baa196bdd8eda5785f1ebf4303b24e632126e567b47f",
+      "command_argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "runtime/framework/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "count": 54,
+      "independent": false
+    },
+    {
+      "id": "P13-V02",
+      "layer": "AUTHOR_SCHEMA_ORACLE",
+      "status": "PASS",
+      "scope": "Structural JSON Schema comparison with jsonschema 4.25.1; semantic/profile constraints are reported separately.",
+      "run_receipt": "architecture/evidence/runs/schema_oracle_final/run_receipt.json",
+      "run_receipt_sha256": "7e4496dd65e5c4447d7b23aa8cb8d01799dd5ab7b8f40969a5964d9d627b25d5",
+      "command_argv": [
+        "env",
+        "PYTHONPATH=/workspace/scratch/710511e1c679/work/devdeps",
+        "python",
+        "-B",
+        "architecture/tools/schema_oracle.py"
+      ],
+      "exit_code": 0,
+      "count": 4540,
+      "independent": false
+    },
+    {
+      "id": "P13-V03",
+      "layer": "AUTHOR_CROSS_LANGUAGE_CODEC",
+      "status": "PASS",
+      "scope": "25 Python-generated expected canonical bytes/SHA vectors verified independently by JavaScript.",
+      "run_receipt": "architecture/evidence/runs/canonical_oracle_final/run_receipt.json",
+      "run_receipt_sha256": "2e0f1920a083ed4cc97b93a26c434acb96a29cfcdc6636f8d934cfa8086cf1d1",
+      "command_argv": [
+        "node",
+        "architecture/tools/canonical_oracle.js"
+      ],
+      "exit_code": 0,
+      "count": 25,
+      "independent": false
+    },
+    {
+      "id": "P13-V04",
+      "layer": "AUTHOR_STATIC_ARCHITECTURE",
+      "status": "PASS",
+      "scope": "Five IC owners, nine actual framework module dependency graph, 28 retained upstream byte hashes; no cycles or forbidden imports.",
+      "run_receipt": "architecture/evidence/runs/architecture_check_001/run_receipt.json",
+      "run_receipt_sha256": "bb03b864e23477359c3654a2a16e2702fcfa050e842125f4f42c173b10299852",
+      "command_argv": [
+        "python",
+        "-B",
+        "architecture/tools/check_architecture.py"
+      ],
+      "exit_code": 0,
+      "count": 9,
+      "independent": false
+    },
+    {
+      "id": "P13-V05",
+      "layer": "AUTHOR_ISOLATED_MOCK_WIRING",
+      "status": "PASS",
+      "scope": "Canned fixture routing only. No battle logic, wallet business, UI or Anki execution.",
+      "run_receipt": "architecture/evidence/runs/framework_demo_final/run_receipt.json",
+      "run_receipt_sha256": "9ff0c4bda01302e1318dd6d197a752b04c7b672c3f39e8239fcd859847267cce",
+      "command_argv": [
+        "python",
+        "-B",
+        "-m",
+        "runtime.framework.yltt_framework.demo"
+      ],
+      "exit_code": 0,
+      "count": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V06",
+      "layer": "UPSTREAM_UNCHANGED_AUTHOR_SMOKE",
+      "status": "PASS",
+      "scope": "Original P12 parser and ACK/ledger tests in original isolated package; not a P13-P12 real integration.",
+      "run_receipt": "architecture/evidence/runs/p12_unchanged_smoke_001/run_receipt.json",
+      "run_receipt_sha256": "ed5515f2d385d5711d1a1c856d0bffaff2706b514f73f6a0238cbd9b5ee67df7",
+      "command_argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "mocks.anki_transport.parser_contract_tests",
+        "mocks.anki_transport.ack_replay_tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "count": 46,
+      "independent": false
+    },
+    {
+      "id": "P13-V07",
+      "layer": "TARGET_ENVIRONMENT_PREFLIGHT",
+      "status": "BLOCKED",
+      "scope": "Current-host discovery ran; engine launch itself NOT_RUN. No engine executable on PATH or target game project received.",
+      "run_receipt": "architecture/evidence/runs/environment_probe_001/run_receipt.json",
+      "run_receipt_sha256": "509dc8b50760237303f623b5b271887422b5ca6477681a7b2733e3a2089a0b8e",
+      "command_argv": [
+        "python",
+        "-B",
+        "runtime/framework/probes/probe_environment.py",
+        "--scan-root",
+        "/workspace/scratch/710511e1c679/work/input_audit/extracted"
+      ],
+      "exit_code": 3,
+      "count": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V08",
+      "layer": "FORMAL_PRODUCTION_GATE",
+      "status": "BLOCKED",
+      "scope": "No production bootstrap or joint owner/target/independent acceptance supplied.",
+      "run_receipt": "architecture/evidence/runs/formal_preflight_001/run_receipt.json",
+      "run_receipt_sha256": "8d21aeeeda3a4faaedc993342f9ce3e26a02aa61f42652f56cfdd95c424980ed",
+      "command_argv": [
+        "python",
+        "-B",
+        "architecture/tools/preflight.py"
+      ],
+      "exit_code": 3,
+      "count": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V09",
+      "layer": "P35_INDEPENDENT_SPEC",
+      "status": "NOT_RUN",
+      "scope": "No P35 design signoff.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": true
+    },
+    {
+      "id": "P13-V10",
+      "layer": "FORMAL_JOINT_CONTRACT_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "IC-05/IC-19 and other external owner acceptance not supplied.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V11",
+      "layer": "P32_INDEPENDENT_UNIT_CONTRACT",
+      "status": "NOT_RUN",
+      "scope": "No independently executed P32 result.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": true
+    },
+    {
+      "id": "P13-V12",
+      "layer": "TARGET_ENGINE_START",
+      "status": "NOT_RUN",
+      "scope": "No verified target engine/source; no engine process started.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V13",
+      "layer": "P14_REAL_BATTLE_RUNTIME",
+      "status": "NOT_RUN",
+      "scope": "P13 did not implement or run P14 battle resolution.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V14",
+      "layer": "P19_P29_REAL_UI_ANIMATION",
+      "status": "NOT_RUN",
+      "scope": "P13 interface/spy tests are not real UI or animation tests.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V15",
+      "layer": "P21_PRODUCTION_TRANSACTIONS",
+      "status": "NOT_RUN",
+      "scope": "Original P12 smoke uses P21 simulation only.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V16",
+      "layer": "REAL_ANKI_TARGET",
+      "status": "NOT_RUN",
+      "scope": "No Anki instance, hooks or true review events executed.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V17",
+      "layer": "WINDOWS_MACOS_TARGET",
+      "status": "NOT_RUN",
+      "scope": "Only current Linux host was observed.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    },
+    {
+      "id": "P13-V18",
+      "layer": "P33_MANUAL_TARGET",
+      "status": "NOT_RUN",
+      "scope": "No manual target-machine test.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": true
+    },
+    {
+      "id": "P13-V19",
+      "layer": "P35_INDEPENDENT_GATE",
+      "status": "NOT_RUN",
+      "scope": "No independent release or integration verdict.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": true
+    },
+    {
+      "id": "P13-V20",
+      "layer": "GAME_ANKI_E2E",
+      "status": "NOT_RUN",
+      "scope": "No integrated client or appointed integrator commit.",
+      "run_receipt": null,
+      "exit_code": null,
+      "independent": false
+    }
+  ],
+  "schema_oracle_detail": {
+    "status": "PASS",
+    "scope": "STRUCTURAL_SCHEMA_ORACLE_AUTHOR_CHECK_ONLY",
+    "cases_compared": 4540,
+    "valid_by_schema": 435,
+    "invalid_by_schema": 4105,
+    "excluded_by_wire_profile": 432,
+    "semantic_cross_field_rules": "Covered separately by author contract tests; not expressible by this JSON Schema subset",
+    "jsonschema_version": "4.25.1",
+    "failures": []
+  },
+  "evidence_layer_rule": "A PASS only applies to the named actually executed author check. It never signs independent SPEC/UNIT/CONTRACT/RUNTIME/E2E acceptance. Historical P12 full-suite/process evidence remains upstream evidence, not a new P13 result."
+}

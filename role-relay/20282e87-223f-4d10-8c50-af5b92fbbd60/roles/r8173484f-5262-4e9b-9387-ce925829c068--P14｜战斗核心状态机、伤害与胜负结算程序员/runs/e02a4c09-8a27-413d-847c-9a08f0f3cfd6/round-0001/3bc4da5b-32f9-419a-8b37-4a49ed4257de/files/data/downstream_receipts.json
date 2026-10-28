@@ -1,0 +1,978 @@
+{
+  "version": "P14-DOWNSTREAM-RECEIPTS/0.1.0",
+  "delivery_version": "P14-BATTLE-CORE/0.1.0-isolated",
+  "receiver_count": 15,
+  "file_receiver_records": 81,
+  "sent_messages": false,
+  "independent_acceptance": "NOT_RUN",
+  "records": [
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/core.py",
+      "size_bytes": 14017,
+      "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/fixture_ports.py",
+      "size_bytes": 1772,
+      "sha256": "bbb97f90d9c6559f5180db0077d06ab9e06d0611f8bb5f9fe80cfc0e671f759f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P15",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P16",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P16",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P16",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P16",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P16",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_event_samples.json",
+      "size_bytes": 96203,
+      "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_snapshot.json",
+      "size_bytes": 1616,
+      "sha256": "845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_event_samples.json",
+      "size_bytes": 96203,
+      "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_result_schema.md",
+      "size_bytes": 5464,
+      "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "upstream/P13/contracts/internal/presentation_adapter_spec.md",
+      "size_bytes": 3306,
+      "sha256": "f081d3d2b2153c87045a0b007b5c8621147955a3c49eb42ed593785b48421c27",
+      "owner": "P13",
+      "modification_whitelist": [],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P29",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P29",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_snapshot.json",
+      "size_bytes": 1616,
+      "sha256": "845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P29",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_event_samples.json",
+      "size_bytes": 96203,
+      "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P29",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "upstream/P13/contracts/internal/presentation_adapter_spec.md",
+      "size_bytes": 3306,
+      "sha256": "f081d3d2b2153c87045a0b007b5c8621147955a3c49eb42ed593785b48421c27",
+      "owner": "P13",
+      "modification_whitelist": [],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 3278,
+      "sha256": "1ee66e506cc7603e7425b7b5eebd7084a448909c0d30748eb2f9dcf1ddab1e38",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/test_core.py",
+      "size_bytes": 27059,
+      "sha256": "c6035ae7f05bd16d3c4d2654c5ad35186c2799e5f0d84c3dbbd48ff9a4ba6784",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/test_content_replay.py",
+      "size_bytes": 9296,
+      "sha256": "ea72072e143cbfb664b86d86f4367e47eac650cca0ee803875a137486ec15818",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/test_p02_vectors.py",
+      "size_bytes": 2522,
+      "sha256": "fcb54b1dac8cc77bedf6370d73abaa79687e0d5e1584cf2643b2ece04ba353f9",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/p02_adapter.py",
+      "size_bytes": 10237,
+      "sha256": "35c1b2ebc53264484491d40cdfdb2d6a1eb6841476088d9375fad73b946beb5c",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/runs/author_004/run.json",
+      "size_bytes": 18617,
+      "sha256": "2b7092e0d2c61b4f5286c20ca2d78653303aee7703bdd44e1268f8fb02d0b501",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/final_source_binding.json",
+      "size_bytes": 9291,
+      "sha256": "df3011ecd84274af7b13952b63c4eb8a5990f6a0503a53227a581228a482df39",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/p02_projection_contract.md",
+      "size_bytes": 5010,
+      "sha256": "04c9359cff00feb1d5532f810f330a1ab5eb71fa4ffd1b6d716b47f0a847c1ba",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "requirements-dev.txt",
+      "size_bytes": 158,
+      "sha256": "94495628b07ade7bd06c3b169f472168e1c70901784a9232ee2d73f43539f48e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 3278,
+      "sha256": "1ee66e506cc7603e7425b7b5eebd7084a448909c0d30748eb2f9dcf1ddab1e38",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/demo_execution.json",
+      "size_bytes": 140446,
+      "sha256": "d2a86aacd1050b7a04ba0ce53ffc0ac39e5285b3e7dac7195a43fa08aad73b09",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/environment.json",
+      "size_bytes": 674,
+      "sha256": "ae95cb3bfb78f52ca53b715bc2ca9a0d7cb80d96a599a6f5892cc24ee5209934",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 3278,
+      "sha256": "1ee66e506cc7603e7425b7b5eebd7084a448909c0d30748eb2f9dcf1ddab1e38",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/author_review.md",
+      "size_bytes": 2855,
+      "sha256": "952a86d4bec19d6b1e32ec0ac47e2b9bc680e372d84fe81d53b071ce3896e6bc",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/source_input_receipt.json",
+      "size_bytes": 419283,
+      "sha256": "c5568985b159dff76179a6aca42e4dc88831aa43defbf38cf8b74ec3f7d58cd6",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/defect_log.json",
+      "size_bytes": 2170,
+      "sha256": "a5049759af3f7f9cc93f45ae15453f7006d2127e69ab02c780fe020f5990fc95",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/authorization_basis.json",
+      "size_bytes": 1019,
+      "sha256": "4f6dba69522b567382c9f419e55b48e01b650f533d0f644cb84b918f91414665",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/path_mapping_request.json",
+      "size_bytes": 1505,
+      "sha256": "6e49752960c1d4178f4a359038f7f74ff80a8f51ba7f33a53e890bd17bd2dfc5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/contract_acceptance.json",
+      "size_bytes": 1387,
+      "sha256": "708ba19c48428cd6efaf22255289be24830279104bcbc7ba491074093b045243",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/input_immutability_check.json",
+      "size_bytes": 855,
+      "sha256": "a906df345eb93d0c7bbbf9c026195dd295188af4180587cd1d276b756d8d558e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/contract_acceptance.json",
+      "size_bytes": 1387,
+      "sha256": "708ba19c48428cd6efaf22255289be24830279104bcbc7ba491074093b045243",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/path_mapping_request.json",
+      "size_bytes": 1505,
+      "sha256": "6e49752960c1d4178f4a359038f7f74ff80a8f51ba7f33a53e890bd17bd2dfc5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_result_schema.md",
+      "size_bytes": 5464,
+      "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5748,
+      "sha256": "7be2f893d7f3a13b79ebe6bf8acfb092e8383a43f7c9b49802504313d38f58b8",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/p02_projection_contract.md",
+      "size_bytes": 5010,
+      "sha256": "04c9359cff00feb1d5532f810f330a1ab5eb71fa4ffd1b6d716b47f0a847c1ba",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/p02_projection_results.json",
+      "size_bytes": 172893,
+      "sha256": "742d3f6bb5ea8811fbf8854f1fa77f6909be27a3cace1029f1fcefc59ca64146",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P02",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P03",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/test_content_replay.py",
+      "size_bytes": 9296,
+      "sha256": "ea72072e143cbfb664b86d86f4367e47eac650cca0ee803875a137486ec15818",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P03",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/demo.py",
+      "size_bytes": 5395,
+      "sha256": "c26bf04e887a5d103b06d36d5f42f7709439e165ef9fbe01c9cececaa940c1bb",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P03",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P03",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_event_samples.json",
+      "size_bytes": 96203,
+      "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "resolution_replay_tests/test_core.py",
+      "size_bytes": 27059,
+      "sha256": "c6035ae7f05bd16d3c4d2654c5ad35186c2799e5f0d84c3dbbd48ff9a4ba6784",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/source_input_receipt.json",
+      "size_bytes": 419283,
+      "sha256": "c5568985b159dff76179a6aca42e4dc88831aa43defbf38cf8b74ec3f7d58cd6",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/task_completion.json",
+      "size_bytes": 835,
+      "sha256": "c106382d0ec5b9cbd6cca944bc0be44a02d6159c6b9746ee44e63adc95287f2e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/requirements_traceability.tsv",
+      "size_bytes": 2301,
+      "sha256": "3a86fc441aca60fba8fd4fe0b87954c111e6b097a1cf7b0b2f22ed795dd963b5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 3278,
+      "sha256": "1ee66e506cc7603e7425b7b5eebd7084a448909c0d30748eb2f9dcf1ddab1e38",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5748,
+      "sha256": "7be2f893d7f3a13b79ebe6bf8acfb092e8383a43f7c9b49802504313d38f58b8",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/environment.json",
+      "size_bytes": 674,
+      "sha256": "ae95cb3bfb78f52ca53b715bc2ca9a0d7cb80d96a599a6f5892cc24ee5209934",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/dependency_install_attempt.json",
+      "size_bytes": 728,
+      "sha256": "340708be11b9164750cdbac04c812aa88f76041de59a58168154ef4f3890c47b",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "requirements-dev.txt",
+      "size_bytes": 158,
+      "sha256": "94495628b07ade7bd06c3b169f472168e1c70901784a9232ee2d73f43539f48e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5748,
+      "sha256": "7be2f893d7f3a13b79ebe6bf8acfb092e8383a43f7c9b49802504313d38f58b8",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/path_mapping_request.json",
+      "size_bytes": 1505,
+      "sha256": "6e49752960c1d4178f4a359038f7f74ff80a8f51ba7f33a53e890bd17bd2dfc5",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/do_not_touch.txt",
+      "size_bytes": 1144,
+      "sha256": "7297b5c2914e644913a7c8ee20cf28932f244e9646f5dec33476f8370bb7a3f1",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "battle_result_schema.md",
+      "size_bytes": 5464,
+      "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0",
+      "owner": "P14",
+      "modification_whitelist": [
+        "P14 isolated original; receiver runs a fresh read-only input copy"
+      ],
+      "production_write_authorized": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+flowchart TD
+    Demo["隔离接线演示"] --> Host["线程邮箱"]
+    Demo --> Sequence["只读序列守卫"]
+    Demo --> Ports["端口与唯一 owner"]
+    Host --> Contracts["DTO 校验"]
+    Host --> Codec["不可变 JSON 与指纹"]
+    Sequence --> Contracts
+    Contracts --> Codec
+    Contracts --> Version["精确契约版本"]
+    Ports --> Codec
+    Testing["脚本化测试桩"] --> Codec

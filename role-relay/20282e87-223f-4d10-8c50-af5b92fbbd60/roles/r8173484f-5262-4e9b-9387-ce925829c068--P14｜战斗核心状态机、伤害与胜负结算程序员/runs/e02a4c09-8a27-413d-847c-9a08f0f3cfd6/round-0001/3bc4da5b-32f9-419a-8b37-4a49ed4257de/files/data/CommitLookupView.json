@@ -1,0 +1,10 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "CommitLookupView",
+  "transaction_id": "fixture:tx",
+  "status": "UNKNOWN",
+  "proof": null,
+  "observed_store_instance": null,
+  "observed_high_watermark": null,
+  "continuity_ref": null
+}

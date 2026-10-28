@@ -1,0 +1,168 @@
+{
+  "producer": "P03",
+  "task_id": "TASK-P03-S01-S02-LOCAL-001",
+  "format_version": "P03-CARDS-0.1.0-draft",
+  "release_status": "ISOLATED_TEST_ONLY_NOT_APPROVED_FOR_RUNTIME",
+  "mapping_status": "P13_ACTUAL_PATH_MAPPING_BLOCKED",
+  "contract_status": "P13_DTO_P22_SCHEMA_P04_ROSTER_P05_NUMBERS_P08_REWARD_PENDING",
+  "source_p01_zip_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+  "source_p02_zip_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+  "source_git_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "format": "P03-CARD-EFFECT-EXAMPLES",
+  "status": "P03_STATIC_CALCULATION_FIXTURES_NOT_P14_REPLAY",
+  "examples": [
+    {
+      "example_id": "X01",
+      "card_id": "MOCK_P03_CARD_STRIKE",
+      "effect_id": "MOCK_P03_EF_STRIKE",
+      "input_context": {
+        "enemy_hp": 12,
+        "enemy_shield": 2,
+        "damage": 4
+      },
+      "static_expected": {
+        "shield_absorbed": 2,
+        "hp_loss": 2,
+        "enemy_hp_after": 10,
+        "enemy_shield_after": 0
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X02",
+      "card_id": "MOCK_P03_CARD_BARRIER",
+      "effect_id": "MOCK_P03_EF_BARRIER",
+      "input_context": {
+        "ally_shield": 0,
+        "grant": 4,
+        "cap_policy": "ASSUME_NO_CAP_FOR_EXAMPLE"
+      },
+      "static_expected": {
+        "ally_shield_after": 4
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X03",
+      "card_id": "MOCK_P03_CARD_RECOVER",
+      "effect_id": "MOCK_P03_EF_RECOVER",
+      "input_context": {
+        "ally_hp": 8,
+        "ally_max_hp": 10,
+        "heal": 5
+      },
+      "static_expected": {
+        "heal_applied": 2,
+        "ally_hp_after": 10
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X04",
+      "card_id": "MOCK_P03_CARD_EMBER",
+      "effect_id": "MOCK_P03_EF_EMBER",
+      "input_context": {
+        "enemy_hp": 12,
+        "status_present": false,
+        "apply_status": "MOCK_P03_STATUS_BURN"
+      },
+      "static_expected": {
+        "enemy_hp_immediately_after": 12,
+        "status_added": "MOCK_P03_STATUS_BURN",
+        "tick_damage_TEST_ONLY": 2,
+        "owner_turns": 1
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X05",
+      "card_id": "MOCK_P03_CARD_A_EDGE",
+      "effect_id": "MOCK_P03_EF_A_EDGE",
+      "input_context": {
+        "enemy_hp": 9,
+        "enemy_shield": 1,
+        "damage": 6
+      },
+      "static_expected": {
+        "shield_absorbed": 1,
+        "hp_loss": 5,
+        "enemy_hp_after": 4
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X06",
+      "card_id": "MOCK_P03_CARD_B_WALL",
+      "effect_id": "MOCK_P03_EF_B_WALL",
+      "input_context": {
+        "ally_shield": 0,
+        "grant": 6,
+        "cap_policy": "ASSUME_NO_CAP_FOR_EXAMPLE"
+      },
+      "static_expected": {
+        "ally_shield_after": 6
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X07",
+      "card_id": "MOCK_P03_CARD_C_MEND",
+      "effect_id": "MOCK_P03_EF_C_MEND",
+      "input_context": {
+        "ally_hp": 3,
+        "ally_max_hp": 10,
+        "heal": 7
+      },
+      "static_expected": {
+        "heal_applied": 7,
+        "ally_hp_after": 10
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X08",
+      "card_id": "MOCK_P03_CARD_D_BRAND",
+      "effect_id": "MOCK_P03_EF_D_BRAND",
+      "input_context": {
+        "enemy_hp": 15,
+        "status_present": false,
+        "apply_status": "MOCK_P03_STATUS_BURN_STRONG"
+      },
+      "static_expected": {
+        "enemy_hp_immediately_after": 15,
+        "status_added": "MOCK_P03_STATUS_BURN_STRONG",
+        "tick_damage_TEST_ONLY": 3,
+        "owner_turns": 1
+      },
+      "verification_layer": "P03_STATIC_EXAMPLE_NOT_P14_EXECUTION"
+    },
+    {
+      "example_id": "X09",
+      "card_id": "MOCK_P03_CARD_FOCUS_DRAFT",
+      "effect_id": "MOCK_P03_EF_FOCUS",
+      "input_context": {
+        "proposed_modifier": "NEXT_OWN_DAMAGE_PLUS_FLAT",
+        "magnitude": 2
+      },
+      "static_expected": {
+        "expected_runtime_effect": "NOT_DEFINED",
+        "approval": "BLOCKED"
+      },
+      "verification_layer": "NOT_RUN_NEEDS_P02_P05_P13_RFC"
+    },
+    {
+      "example_id": "X10",
+      "card_id": "MOCK_P03_CARD_FEEBLE_DRAFT",
+      "effect_id": "MOCK_P03_EF_FEEBLE",
+      "input_context": {
+        "proposed_modifier": "NEXT_OWN_DAMAGE_MINUS_FLAT",
+        "magnitude": 2
+      },
+      "static_expected": {
+        "expected_runtime_effect": "NOT_DEFINED",
+        "approval": "BLOCKED"
+      },
+      "verification_layer": "NOT_RUN_NEEDS_P02_P05_P13_RFC"
+    }
+  ]
+}

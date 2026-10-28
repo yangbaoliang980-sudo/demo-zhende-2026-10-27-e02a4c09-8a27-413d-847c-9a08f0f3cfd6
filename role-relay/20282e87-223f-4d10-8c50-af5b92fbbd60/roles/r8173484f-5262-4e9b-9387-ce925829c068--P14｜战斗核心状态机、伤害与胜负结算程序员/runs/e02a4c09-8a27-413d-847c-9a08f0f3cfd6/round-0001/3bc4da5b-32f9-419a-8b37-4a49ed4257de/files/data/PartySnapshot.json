@@ -1,0 +1,33 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "PartySnapshot",
+  "party_id": "fixture:party",
+  "revision": 0,
+  "content_version": "fixture:content-v1",
+  "members": [
+    {
+      "unit_id": "hero1",
+      "character_id": "fixture:hero1",
+      "slot": 0,
+      "max_hp": 10,
+      "attack": 1,
+      "defense": 0
+    },
+    {
+      "unit_id": "hero2",
+      "character_id": "fixture:hero2",
+      "slot": 1,
+      "max_hp": 10,
+      "attack": 1,
+      "defense": 0
+    },
+    {
+      "unit_id": "hero3",
+      "character_id": "fixture:hero3",
+      "slot": 2,
+      "max_hp": 10,
+      "attack": 1,
+      "defense": 0
+    }
+  ]
+}

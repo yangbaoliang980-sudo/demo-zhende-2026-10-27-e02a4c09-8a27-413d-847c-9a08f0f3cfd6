@@ -1,0 +1,5 @@
+producer_version	consumer_version	result	scope
+YLTT-INTERNAL/0.1.0-isolated	YLTT-INTERNAL/0.1.0-isolated	ACCEPT_AFTER_SCHEMA_AND_SEMANTICS	P13 isolated DTO only
+YLTT-INTERNAL/0.1.0-isolated	any-other-version	REJECT	Explicit adapter requires versioned RFC
+unknown	YLTT-INTERNAL/0.1.0-isolated	REJECT	No fallback
+YLTT-ANKI-TRANSPORT/0.1.0-isolated	YLTT-INTERNAL/0.1.0-isolated	NO_IMPLICIT_CONVERSION	P12 wire stays separate; owner adapter required

@@ -1,0 +1,14 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "WalletSnapshot",
+  "wallet_id": "fixture:wallet",
+  "beneficiary_id": "fixture-beneficiary",
+  "revision": 0,
+  "balances": [
+    {
+      "resource_id": "fixture:resource",
+      "available": 0,
+      "reserved": 0
+    }
+  ]
+}

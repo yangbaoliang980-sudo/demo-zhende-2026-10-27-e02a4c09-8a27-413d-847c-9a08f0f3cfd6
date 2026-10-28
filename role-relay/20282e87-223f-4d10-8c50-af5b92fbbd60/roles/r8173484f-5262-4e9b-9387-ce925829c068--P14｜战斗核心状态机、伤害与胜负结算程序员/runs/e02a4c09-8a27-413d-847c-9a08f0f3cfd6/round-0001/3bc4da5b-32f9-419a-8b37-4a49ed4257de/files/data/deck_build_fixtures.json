@@ -1,0 +1,1273 @@
+{
+  "producer": "P03",
+  "task_id": "TASK-P03-S01-S02-LOCAL-001",
+  "format_version": "P03-CARDS-0.1.0-draft",
+  "release_status": "ISOLATED_TEST_ONLY_NOT_APPROVED_FOR_RUNTIME",
+  "mapping_status": "P13_ACTUAL_PATH_MAPPING_BLOCKED",
+  "contract_status": "P13_DTO_P22_SCHEMA_P04_ROSTER_P05_NUMBERS_P08_REWARD_PENDING",
+  "source_p01_zip_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+  "source_p02_zip_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+  "source_git_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "format": "P03-DECK-FIXTURES",
+  "rules_version": "P03-DECK-0.1.0-MOCK",
+  "mock_roster_count": 4,
+  "party_size": 3,
+  "all_fixture_ordered_parties_covered": 24,
+  "common_card_copies": {
+    "MOCK_P03_CARD_STRIKE": 2,
+    "MOCK_P03_CARD_BARRIER": 2,
+    "MOCK_P03_CARD_RECOVER": 1,
+    "MOCK_P03_CARD_EMBER": 1
+  },
+  "unapproved_deck_size": 9,
+  "fixtures": [
+    {
+      "fixture_id": "MOCK_DECK_01",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_02",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_03",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_04",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_05",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_06",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_07",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_08",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_09",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_10",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_11",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_12",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_13",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_14",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_15",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_16",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_D"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_D_BRAND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_17",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_18",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_19",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_20",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_A",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_A_EDGE",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_21",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_22",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_B",
+        "MOCK_P03_CHAR_C"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_B_WALL",
+        "MOCK_P03_CARD_C_MEND"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_23",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_A"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_A_EDGE"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_A_EDGE"
+      ]
+    },
+    {
+      "fixture_id": "MOCK_DECK_24",
+      "ordered_party_character_ids": [
+        "MOCK_P03_CHAR_D",
+        "MOCK_P03_CHAR_C",
+        "MOCK_P03_CHAR_B"
+      ],
+      "catalog_card_instances": [
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_01",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_02",
+          "card_id": "MOCK_P03_CARD_STRIKE"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_03",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_04",
+          "card_id": "MOCK_P03_CARD_BARRIER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_05",
+          "card_id": "MOCK_P03_CARD_RECOVER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_06",
+          "card_id": "MOCK_P03_CARD_EMBER"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_07",
+          "card_id": "MOCK_P03_CARD_D_BRAND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_08",
+          "card_id": "MOCK_P03_CARD_C_MEND"
+        },
+        {
+          "card_instance_id": "MOCK_P03_INSTANCE_09",
+          "card_id": "MOCK_P03_CARD_B_WALL"
+        }
+      ],
+      "total_cards": 9,
+      "signature_card_ids": [
+        "MOCK_P03_CARD_D_BRAND",
+        "MOCK_P03_CARD_C_MEND",
+        "MOCK_P03_CARD_B_WALL"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+effect_or_context	authoritative_logic_event_type	suggested_presentation_consumption	evidence_base	contract_status
+DAMAGE	EFFECT_STARTED	卡面朝明确目标移动（表现提议）	P02;P14 emits	P13/P19/P29 NOT_SIGNED
+DAMAGE	DAMAGE_APPLIED	血条/盾量变化+伤害数字+敌卡震动/闪白；数字只取权威事件	P02;P14 emits	P13/P19/P29 NOT_SIGNED
+DAMAGE	UNIT_DIED	死亡后将目标置灰/退场，不由动画触发终局	P02;P14 emits	P13/P19/P29 NOT_SIGNED
+SHIELD	EFFECT_STARTED	防护牌轻移动或短缩放（表现提议）	P02;P14 emits	P13/P19/P29 NOT_SIGNED
+SHIELD	SHIELD_GRANTED	显示盾变化，仅以事件实际数值为准	P02 F002;P14 emits	P13/P19/P29 NOT_SIGNED
+HEAL	HEAL_APPLIED	绿色/中性色恢复数值及血条更新，以applied而非requested显示	P02 F003;P14 emits	P13/P19/P29 NOT_SIGNED
+STATUS:DOT	STATUS_APPLIED	敌卡旁出现状态图标；不能立即显示扣血	P02 F024;P14 emits	P13/P19/P29 NOT_SIGNED
+STATUS:DOT	STATUS_TICKED + DAMAGE_APPLIED	仅所有者回合入口真实tick后播伤害数字	P02 F031/F033;P14 emits	P13/P19/P29 NOT_SIGNED
+STATUS:BUFF	NONE_SIGNED	只提供配置示例，不渲染为已生效	PROPOSAL_ONLY	BLOCKED_NEEDS_RULE_AND_DTO
+STATUS:DEBUFF	NONE_SIGNED	只提供配置示例，不渲染为已生效	PROPOSAL_ONLY	BLOCKED_NEEDS_RULE_AND_DTO
+ALL	COMMAND_COMMITTED	只说明已权威提交；动画状态不得影响重放	P02;P14 emits	P13/P29 NOT_SIGNED
+ALL	BATTLE_FINISHED	胜负界面由终局逻辑事件驱动	P02;P14 emits	P13/P19 NOT_SIGNED

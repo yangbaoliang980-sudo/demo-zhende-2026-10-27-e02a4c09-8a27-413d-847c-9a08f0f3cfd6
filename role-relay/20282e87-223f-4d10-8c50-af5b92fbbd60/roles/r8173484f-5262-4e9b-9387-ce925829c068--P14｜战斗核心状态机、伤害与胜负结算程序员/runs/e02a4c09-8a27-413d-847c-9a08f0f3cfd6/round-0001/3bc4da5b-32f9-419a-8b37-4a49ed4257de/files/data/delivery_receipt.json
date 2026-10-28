@@ -1,0 +1,331 @@
+{
+  "version": "P14-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "TASK-01-02",
+  "role": "P14",
+  "delivery_version": "P14-BATTLE-CORE/0.1.0-isolated",
+  "created_utc": "2026-10-28T18:21:52.181230+00:00",
+  "archive": {
+    "filename": "P14_BattleCore_V0.1.zip",
+    "size_bytes": 3393475,
+    "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+    "local_path": "/workspace/scratch/e30ed18294dc/P14_BattleCore_V0.1.zip",
+    "format": "ZIP/deflate",
+    "package_root": "P14_BattleCore_V0.1",
+    "file_count": 180,
+    "crc_check": "PASS"
+  },
+  "manifest": {
+    "package_relative_path": "delivery_manifest.sha256.tsv",
+    "size_bytes": 428430,
+    "sha256": "8aa5855fddeba5c7f433075dd447ae124225f89d325b5e08b224fad758aba0b4",
+    "entries": 179,
+    "excludes_itself": true
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/README.md",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "integration_handoff.md",
+      "package_relative_path": "integration_handoff.md",
+      "size_bytes": 5748,
+      "sha256": "7be2f893d7f3a13b79ebe6bf8acfb092e8383a43f7c9b49802504313d38f58b8",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/integration_handoff.md",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "battle_result_schema.md",
+      "package_relative_path": "battle_result_schema.md",
+      "size_bytes": 5464,
+      "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/battle_result_schema.md",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "battle_event_samples.json",
+      "package_relative_path": "battle_event_samples.json",
+      "size_bytes": 96203,
+      "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/battle_event_samples.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "battle_snapshot.json",
+      "package_relative_path": "battle_snapshot.json",
+      "size_bytes": 1616,
+      "sha256": "845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/battle_snapshot.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "battle_state.json",
+      "package_relative_path": "battle_state.json",
+      "size_bytes": 3483,
+      "sha256": "7e0982ca9ec88eca9bc94b702c8c14497abd2cb6faa4df89961b1c4d7058455e",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/battle_state.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "battle_result.json",
+      "package_relative_path": "battle_result.json",
+      "size_bytes": 576,
+      "sha256": "b881e89980c3aaac5b53c6dc33307e23310e2fe12b0869372c8a3ffe367cb761",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/battle_result.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "size_bytes": 3278,
+      "sha256": "1ee66e506cc7603e7425b7b5eebd7084a448909c0d30748eb2f9dcf1ddab1e38",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/verification_status.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "IC05_API.md",
+      "package_relative_path": "handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/IC05_API.md",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "p02_projection_contract.md",
+      "package_relative_path": "handoff/p02_projection_contract.md",
+      "size_bytes": 5010,
+      "sha256": "04c9359cff00feb1d5532f810f330a1ab5eb71fa4ffd1b6d716b47f0a847c1ba",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/p02_projection_contract.md",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "contract_acceptance.json",
+      "package_relative_path": "handoff/contract_acceptance.json",
+      "size_bytes": 1387,
+      "sha256": "708ba19c48428cd6efaf22255289be24830279104bcbc7ba491074093b045243",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/contract_acceptance.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/interface_rfcs.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "blockers.json",
+      "package_relative_path": "handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/blockers.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "downstream_receipts.json",
+      "package_relative_path": "handoff/downstream_receipts.json",
+      "size_bytes": 35029,
+      "sha256": "6174fa532a2e062b83fbda081856639625b478c272b7c742393763cd9da0e323",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/downstream_receipts.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "evidence/source_input_receipt.json",
+      "size_bytes": 419283,
+      "sha256": "c5568985b159dff76179a6aca42e4dc88831aa43defbf38cf8b74ec3f7d58cd6",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/source_input_receipt.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "defect_log.json",
+      "package_relative_path": "evidence/defect_log.json",
+      "size_bytes": 2170,
+      "sha256": "a5049759af3f7f9cc93f45ae15453f7006d2127e69ab02c780fe020f5990fc95",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/defect_log.json",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "size_bytes": 428430,
+      "sha256": "8aa5855fddeba5c7f433075dd447ae124225f89d325b5e08b224fad758aba0b4",
+      "local_path": "/workspace/scratch/e30ed18294dc/P14_exports/delivery_manifest.sha256.tsv",
+      "same_filename_as_archive_member": true,
+      "same_bytes_as_archive_member": true
+    }
+  ],
+  "same_name_and_original_bytes_check": "PASS",
+  "fresh_extract_verification": {
+    "status": "PASS",
+    "files_compared": 180,
+    "checks": [
+      {
+        "name": "fresh_integrity_before",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "tools/verify_delivery.py"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:44.240914+00:00",
+        "elapsed_seconds": 0.115938,
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"manifest_entries\": 179,\n  \"package_files_including_manifest\": 180,\n  \"listed_size_bytes\": 7180194,\n  \"preserved_original_sources\": 78,\n  \"manifest_sha256\": \"8aa5855fddeba5c7f433075dd447ae124225f89d325b5e08b224fad758aba0b4\",\n  \"scope\": \"BYTE_INTEGRITY_ONLY_NOT_INDEPENDENT_GAME_ACCEPTANCE\",\n  \"ignored_generated_directories\": [\n    \"__pycache__\"\n  ]\n}\n",
+        "stderr": "",
+        "stdout_sha256": "db78563b87f36b3be9cb3c92dc190239e688eceb45568d2c8e3bfc857081cae2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "PASS",
+        "independent_P32_P35": false
+      },
+      {
+        "name": "fresh_author_units",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "resolution_replay_tests",
+          "-t",
+          ".",
+          "-p",
+          "test_*.py",
+          "-v"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:44.357243+00:00",
+        "elapsed_seconds": 6.384259,
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "stdout": "",
+        "stderr": "test_eight_enabled_p03_examples_execute_real_core (resolution_replay_tests.test_content_replay.P03EffectExamplesTests.test_eight_enabled_p03_examples_execute_real_core) ... ok\ntest_two_unapproved_p03_modifiers_are_not_executable_content (resolution_replay_tests.test_content_replay.P03EffectExamplesTests.test_two_unapproved_p03_modifiers_are_not_executable_content) ... ok\ntest_config_and_initial_state_are_copied (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_config_and_initial_state_are_copied) ... ok\ntest_each_committed_dto_uses_original_p13_validator (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_each_committed_dto_uses_original_p13_validator) ... ok\ntest_full_demo_replays_state_events_result_exactly (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_full_demo_replays_state_events_result_exactly) ... ok\ntest_invalid_initial_rng_seed_state_relation_is_rejected (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_invalid_initial_rng_seed_state_relation_is_rejected) ... ok\ntest_kernel_has_no_renderer_clock_storage_or_expectation_dependency (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_kernel_has_no_renderer_clock_storage_or_expectation_dependency) ... ok\ntest_p02_xorshift_known_vector_and_nonzero_seed_guard (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_p02_xorshift_known_vector_and_nonzero_seed_guard) ... ok\ntest_p13_duplicate_json_keys_rejected (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_p13_duplicate_json_keys_rejected) ... ok\ntest_replay_rejects_modified_bytes (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_replay_rejects_modified_bytes) ... ok\ntest_replay_rejects_wrong_candidate_basis_even_with_new_outer_hash (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_replay_rejects_wrong_candidate_basis_even_with_new_outer_hash) ... ok\ntest_rng_jump_full_period_preserves_state_without_losing_count (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_rng_jump_full_period_preserves_state_without_losing_count) ... ok\ntest_rng_jump_matches_sequential_generator_and_composes (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_rng_jump_matches_sequential_generator_and_composes) ... ok\ntest_skip_cancel_and_reorder_consumer_reads_cannot_change_logic (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_skip_cancel_and_reorder_consumer_reads_cannot_change_logic) ... ok\ntest_three_process_hash_seeds_produce_identical_bytes (resolution_replay_tests.test_content_replay.ReplayAndBoundaryTests.test_three_process_hash_seeds_produce_identical_bytes) ... ok\ntest_lethal_crossing_emits_no_phase_and_no_extra_action (resolution_replay_tests.test_core.BossBoundaryTests.test_lethal_crossing_emits_no_phase_and_no_extra_action) ... ok\ntest_living_crossing_is_proposed_once_without_phase_commit (resolution_replay_tests.test_core.BossBoundaryTests.test_living_crossing_is_proposed_once_without_phase_commit) ... ok\ntest_multiple_thresholds_preserve_graph_order (resolution_replay_tests.test_core.BossBoundaryTests.test_multiple_thresholds_preserve_graph_order) ... ok\ntest_pending_phase_blocks_uncontracted_enemy_transition (resolution_replay_tests.test_core.BossBoundaryTests.test_pending_phase_blocks_uncontracted_enemy_transition) ... ok\ntest_phase_proposal_cannot_write_state_via_self_reported_dto (resolution_replay_tests.test_core.BossBoundaryTests.test_phase_proposal_cannot_write_state_via_self_reported_dto) ... ok\ntest_reaction_loss_suppresses_boss_proposal (resolution_replay_tests.test_core.BossBoundaryTests.test_reaction_loss_suppresses_boss_proposal) ... ok\ntest_abort_is_closed_without_battle_result (resolution_replay_tests.test_core.CoreAcceptanceTests.test_abort_is_closed_without_battle_result) ... ok\ntest_bad_deck_move_cannot_leave_a_half_fee (resolution_replay_tests.test_core.CoreAcceptanceTests.test_bad_deck_move_cannot_leave_a_half_fee) ... ok\ntest_candidate_binding_and_rng_rejections (resolution_replay_tests.test_core.CoreAcceptanceTests.test_candidate_binding_and_rng_rejections) ... ok\ntest_concurrent_identical_requests_commit_once (resolution_replay_tests.test_core.CoreAcceptanceTests.test_concurrent_identical_requests_commit_once) ... ok\ntest_damage_cost_card_and_revision_are_one_commit (resolution_replay_tests.test_core.CoreAcceptanceTests.test_damage_cost_card_and_revision_are_one_commit) ... ok\ntest_dead_target_receives_no_second_hit (resolution_replay_tests.test_core.CoreAcceptanceTests.test_dead_target_receives_no_second_hit) ... ok\ntest_death_retaliation_finishes_as_single_draw (resolution_replay_tests.test_core.CoreAcceptanceTests.test_death_retaliation_finishes_as_single_draw) ... ok\ntest_dot_does_not_damage_immediately (resolution_replay_tests.test_core.CoreAcceptanceTests.test_dot_does_not_damage_immediately) ... ok\ntest_dot_expiry_then_resources_uses_post_dot_basis (resolution_replay_tests.test_core.CoreAcceptanceTests.test_dot_expiry_then_resources_uses_post_dot_basis) ... ok\ntest_dot_reapplication_remains_blocked (resolution_replay_tests.test_core.CoreAcceptanceTests.test_dot_reapplication_remains_blocked) ... ok\ntest_dot_units_and_statuses_use_slot_and_insert_order (resolution_replay_tests.test_core.CoreAcceptanceTests.test_dot_units_and_statuses_use_slot_and_insert_order) ... ok\ntest_duplicate_before_stale_revision_and_closed_guard (resolution_replay_tests.test_core.CoreAcceptanceTests.test_duplicate_before_stale_revision_and_closed_guard) ... ok\ntest_enemy_dot_terminal_precedes_ai_and_second_action (resolution_replay_tests.test_core.CoreAcceptanceTests.test_enemy_dot_terminal_precedes_ai_and_second_action) ... ok\ntest_enemy_skip_preserves_locked_target_and_does_not_retarget (resolution_replay_tests.test_core.CoreAcceptanceTests.test_enemy_skip_preserves_locked_target_and_does_not_retarget) ... ok\ntest_explicit_shield_cap_and_overflow_policy (resolution_replay_tests.test_core.CoreAcceptanceTests.test_explicit_shield_cap_and_overflow_policy) ... ok\ntest_heal_clamps_and_cannot_revive (resolution_replay_tests.test_core.CoreAcceptanceTests.test_heal_clamps_and_cannot_revive) ... ok\ntest_insufficient_energy_rolls_back_everything (resolution_replay_tests.test_core.CoreAcceptanceTests.test_insufficient_energy_rolls_back_everything) ... ok\ntest_interruptions_at_all_precommit_points_leave_no_result_or_event (resolution_replay_tests.test_core.CoreAcceptanceTests.test_interruptions_at_all_precommit_points_leave_no_result_or_event) ... ok\ntest_invalid_wire_data_raises_without_state_change (resolution_replay_tests.test_core.CoreAcceptanceTests.test_invalid_wire_data_raises_without_state_change) ... ok\ntest_multi_hit_resolves_shield_per_hit (resolution_replay_tests.test_core.CoreAcceptanceTests.test_multi_hit_resolves_shield_per_hit) ... ok\ntest_negative_deck_verdict_preserves_receipts (resolution_replay_tests.test_core.CoreAcceptanceTests.test_negative_deck_verdict_preserves_receipts) ... ok\ntest_new_id_for_discarded_card_is_rejected (resolution_replay_tests.test_core.CoreAcceptanceTests.test_new_id_for_discarded_card_is_rejected) ... ok\ntest_old_revision_changes_no_state_or_replay_or_seq (resolution_replay_tests.test_core.CoreAcceptanceTests.test_old_revision_changes_no_state_or_replay_or_seq) ... ok\ntest_one_turn_increment_across_a_complete_cycle (resolution_replay_tests.test_core.CoreAcceptanceTests.test_one_turn_increment_across_a_complete_cycle) ... ok\ntest_only_p15_candidate_sets_cost_no_second_deduction (resolution_replay_tests.test_core.CoreAcceptanceTests.test_only_p15_candidate_sets_cost_no_second_deduction) ... ok\ntest_p13_terminal_fixture_does_not_fabricate_a_result (resolution_replay_tests.test_core.CoreAcceptanceTests.test_p13_terminal_fixture_does_not_fabricate_a_result) ... ok\ntest_player_dot_terminal_precedes_resources_and_draw (resolution_replay_tests.test_core.CoreAcceptanceTests.test_player_dot_terminal_precedes_resources_and_draw) ... ok\ntest_production_mode_is_unavailable (resolution_replay_tests.test_core.CoreAcceptanceTests.test_production_mode_is_unavailable) ... ok\ntest_reaction_limit_rolls_back_gameplay_then_commits_only_fault (resolution_replay_tests.test_core.CoreAcceptanceTests.test_reaction_limit_rolls_back_gameplay_then_commits_only_fault) ... ok\ntest_reaction_queue_is_breadth_first_and_tier_stable (resolution_replay_tests.test_core.CoreAcceptanceTests.test_reaction_queue_is_breadth_first_and_tier_stable) ... ok\ntest_reentrant_provider_cannot_commit_nested_command (resolution_replay_tests.test_core.CoreAcceptanceTests.test_reentrant_provider_cannot_commit_nested_command) ... ok\ntest_rejected_id_is_reusable_with_corrected_payload (resolution_replay_tests.test_core.CoreAcceptanceTests.test_rejected_id_is_reusable_with_corrected_payload) ... ok\ntest_result_hash_binds_final_snapshot_and_replay (resolution_replay_tests.test_core.CoreAcceptanceTests.test_result_hash_binds_final_snapshot_and_replay) ... ok\ntest_root_effects_finish_before_reactions (resolution_replay_tests.test_core.CoreAcceptanceTests.test_root_effects_finish_before_reactions) ... ok\ntest_same_id_different_target_is_collision_before_target_checks (resolution_replay_tests.test_core.CoreAcceptanceTests.test_same_id_different_target_is_collision_before_target_checks) ... ok\ntest_same_id_with_changed_revision_is_collision (resolution_replay_tests.test_core.CoreAcceptanceTests.test_same_id_with_changed_revision_is_collision) ... ok\ntest_snapshot_and_result_cannot_be_mutated_through_return_values (resolution_replay_tests.test_core.CoreAcceptanceTests.test_snapshot_and_result_cannot_be_mutated_through_return_values) ... ok\ntest_source_card_owner_character_is_enforced (resolution_replay_tests.test_core.CoreAcceptanceTests.test_source_card_owner_character_is_enforced) ... ok\ntest_start_with_both_sides_dead_is_draw_before_resources (resolution_replay_tests.test_core.CoreAcceptanceTests.test_start_with_both_sides_dead_is_draw_before_resources) ... ok\ntest_system_start_is_one_commit (resolution_replay_tests.test_core.CoreAcceptanceTests.test_system_start_is_one_commit) ... ok\ntest_target_side_dead_and_actor_owner_checks_precede_payment (resolution_replay_tests.test_core.CoreAcceptanceTests.test_target_side_dead_and_actor_owner_checks_precede_payment) ... ok\ntest_unbound_deck_is_blocked_without_partial_accept (resolution_replay_tests.test_core.CoreAcceptanceTests.test_unbound_deck_is_blocked_without_partial_accept) ... ok\ntest_unbound_multi_enemy_schedule_fails_closed (resolution_replay_tests.test_core.CoreAcceptanceTests.test_unbound_multi_enemy_schedule_fails_closed) ... ok\ntest_unsupported_buff_content_stays_disabled (resolution_replay_tests.test_core.CoreAcceptanceTests.test_unsupported_buff_content_stays_disabled) ... ok\ntest_user_cannot_send_system_command_or_abort (resolution_replay_tests.test_core.CoreAcceptanceTests.test_user_cannot_send_system_command_or_abort) ... ok\ntest_wrong_battle_scope_cannot_reuse_command (resolution_replay_tests.test_core.CoreAcceptanceTests.test_wrong_battle_scope_cannot_reuse_command) ... ok\ntest_F001 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F001) ... ok\ntest_F002 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F002) ... ok\ntest_F003 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F003) ... ok\ntest_F004 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F004) ... ok\ntest_F005 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F005) ... ok\ntest_F006 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F006) ... ok\ntest_F007 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F007) ... ok\ntest_F008 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F008) ... ok\ntest_F009 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F009) ... ok\ntest_F010 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F010) ... skipped 'BLOCKED: legacy receipt only has old SHA; full command/range absent. Native equivalents tested separately.'\ntest_F011 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F011) ... skipped 'BLOCKED: legacy receipt only has old SHA; full command/range absent. Native equivalents tested separately.'\ntest_F012 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F012) ... ok\ntest_F013 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F013) ... ok\ntest_F014 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F014) ... ok\ntest_F015 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F015) ... ok\ntest_F016 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F016) ... ok\ntest_F017 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F017) ... ok\ntest_F018 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F018) ... ok\ntest_F019 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F019) ... ok\ntest_F020 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F020) ... ok\ntest_F021 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F021) ... skipped 'BLOCKED: legacy receipt only has old SHA; full command/range absent. Native equivalents tested separately.'\ntest_F022 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F022) ... ok\ntest_F023 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F023) ... ok\ntest_F024 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F024) ... ok\ntest_F025 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F025) ... ok\ntest_F026 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F026) ... ok\ntest_F027 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F027) ... ok\ntest_F028 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F028) ... skipped 'BLOCKED: legacy receipt only has old SHA; full command/range absent. Native equivalents tested separately.'\ntest_F029 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F029) ... ok\ntest_F030 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F030) ... ok\ntest_F031 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F031) ... ok\ntest_F032 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F032) ... ok\ntest_F033 (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_F033) ... ok\ntest_animation_flag_is_not_a_logic_input (resolution_replay_tests.test_p02_vectors.P02ProjectionTests.test_animation_flag_is_not_a_logic_input) ... ok\n\n----------------------------------------------------------------------\nRan 101 tests in 6.143s\n\nOK (skipped=4)\n",
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stderr_sha256": "dd35248c5cfbf1f79e49c7ac66f649b6c07f44f0304feb066fcdcc0128569d7f",
+        "status": "PASS",
+        "independent_P32_P35": false
+      },
+      {
+        "name": "fresh_no_render_demo",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "-m",
+          "battle_core"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:50.747891+00:00",
+        "elapsed_seconds": 0.876603,
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "stdout": "{\n  \"scope\": \"ISOLATED_REAL_P14_CORE_WITH_SCRIPTED_P15_P16_TEST_INPUTS\",\n  \"outcome\": \"WIN\",\n  \"revision\": 10,\n  \"last_event_seq\": 52,\n  \"enemy_action_candidates_consumed\": 1,\n  \"snapshot\": {\n    \"battle_id\": \"fixture:demo\",\n    \"boss_states\": [],\n    \"card_instances\": [\n      {\n        \"card_id\": \"MOCK_P03_CARD_STRIKE\",\n        \"instance_id\": \"strike1\",\n        \"owner_unit_id\": \"hero1\"\n      },\n      {\n        \"card_id\": \"MOCK_P03_CARD_BARRIER\",\n        \"instance_id\": \"barrier1\",\n        \"owner_unit_id\": \"hero1\"\n      },\n      {\n        \"card_id\": \"MOCK_P03_CARD_RECOVER\",\n        \"instance_id\": \"heal1\",\n        \"owner_unit_id\": \"hero1\"\n      },\n      {\n        \"card_id\": \"MOCK_P03_CARD_EMBER\",\n        \"instance_id\": \"ember1\",\n        \"owner_unit_id\": \"hero1\"\n      },\n      {\n        \"card_id\": \"MOCK_P03_CARD_STRIKE\",\n        \"instance_id\": \"strike2\",\n        \"owner_unit_id\": \"hero1\"\n      }\n    ],\n    \"content_version\": \"fixture:P03-demo-v1\",\n    \"contract_version\": \"YLTT-INTERNAL/0.1.0-isolated\",\n    \"dto_type\": \"BattleSnapshot\",\n    \"energy\": 2,\n    \"last_event_seq\": 52,\n    \"outcome\": \"WIN\",\n    \"phase\": \"TERMINAL\",\n    \"revision\": 10,\n    \"rng\": {\n      \"algorithm\": \"xorshift32-v1\",\n      \"draw_count\": 0,\n      \"initial_seed\": 1,\n      \"state\": 1\n    },\n    \"rules_version\": \"P02-BATTLE-0.1.0-draft\",\n    \"turn_number\": 2,\n    \"units\": [\n      {\n        \"definition_id\": \"fixture:hero1\",\n        \"hp\": 10,\n        \"max_hp\": 10,\n        \"shield\": 1,\n        \"side\": \"PLAYER\",\n        \"slot\": 0,\n        \"statuses\": [],\n        \"unit_id\": \"hero1\"\n      },\n      {\n        \"definition_id\": \"fixture:hero2\",\n        \"hp\": 10,\n        \"max_hp\": 10,\n        \"shield\": 0,\n        \"side\": \"PLAYER\",\n        \"slot\": 1,\n        \"statuses\": [],\n        \"unit_id\": \"hero2\"\n      },\n      {\n        \"definition_id\": \"fixture:hero3\",\n        \"hp\": 10,\n        \"max_hp\": 10,\n        \"shield\": 0,\n        \"side\": \"PLAYER\",\n        \"slot\": 2,\n        \"statuses\": [],\n        \"unit_id\": \"hero3\"\n      },\n      {\n        \"definition_id\": \"fixture:enemy\",\n        \"hp\": 0,\n        \"max_hp\": 4,\n        \"shield\": 0,\n        \"side\": \"ENEMY\",\n        \"slot\": 0,\n        \"statuses\": [\n          {\n            \"insert_order\": 0,\n            \"remaining_triggers\": 1,\n            \"source_unit_id\": \"hero1\",\n            \"stacks\": 1,\n            \"status_id\": \"MOCK_P03_STATUS_BURN\",\n            \"status_instance_id\": \"status:7ba512a62a71ad42192e89ab7470f8893c3da728c99e970e7a361d628b7d13d9\"\n          }\n        ],\n        \"unit_id\": \"enemy1\"\n      }\n    ],\n    \"zones\": {\n      \"discard\": [\n        \"strike1\",\n        \"barrier1\",\n        \"heal1\",\n        \"ember1\"\n      ],\n      \"draw\": [],\n      \"exhaust\": [],\n      \"hand\": [\n        \"strike2\"\n      ]\n    }\n  },\n  \"result\": {\n    \"battle_id\": \"fixture:demo\",\n    \"content_version\": \"fixture:P03-demo-v1\",\n    \"contract_version\": \"YLTT-INTERNAL/0.1.0-isolated\",\n    \"dto_type\": \"BattleResult\",\n    \"final_snapshot_sha256\": \"845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c\",\n    \"outcome\": \"WIN\",\n    \"profile_scope\": \"fixture:profile\",\n    \"replay_input_sha256\": \"4fba245436f689b0912ec79772bf350f040f987ae94ad94aeaa5d576e4b2ff08\",\n    \"result_id\": \"result:2013c18dd1e5dddaa7c0f466bc6ba1ab10aad9061c8616ad5a8f6a74d5a6757b\",\n    \"rules_version\": \"P02-BATTLE-0.1.0-draft\",\n    \"stage_id\": \"fixture:stage1\",\n    \"terminal_event_seq\": 51,\n    \"terminal_revision\": 10\n  },\n  \"replay_sha256\": \"4fba245436f689b0912ec79772bf350f040f987ae94ad94aeaa5d576e4b2ff08\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "29eb177f6f5e029ed3e5cd2fe878141c88e3686c3bd3f4226f375bf9a4770953",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "PASS",
+        "independent_P32_P35": false
+      },
+      {
+        "name": "fresh_exact_replay",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "tools/replay_file.py",
+          "examples/demo_replay.json",
+          "--expected-state",
+          "battle_state.json",
+          "--expected-snapshot",
+          "battle_snapshot.json",
+          "--expected-result",
+          "battle_result.json",
+          "--expected-execution",
+          "examples/demo_execution.json"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:51.630602+00:00",
+        "elapsed_seconds": 0.353498,
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"P14_AUTHOR_ISOLATED_REEXECUTION\",\n  \"input_file_sha256\": \"347fb06bba66b4485d0813e6886d148ac902dee45e4105b0a50910bddb8db316\",\n  \"replay_input_sha256\": \"4fba245436f689b0912ec79772bf350f040f987ae94ad94aeaa5d576e4b2ff08\",\n  \"commits\": 10,\n  \"events\": 52,\n  \"state_sha256\": \"7e0982ca9ec88eca9bc94b702c8c14497abd2cb6faa4df89961b1c4d7058455e\",\n  \"snapshot_sha256\": \"845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c\",\n  \"result_sha256\": \"b881e89980c3aaac5b53c6dc33307e23310e2fe12b0869372c8a3ffe367cb761\",\n  \"outcome\": \"WIN\",\n  \"comparisons\": [\n    {\n      \"output\": \"state\",\n      \"comparison\": \"EXACT_FILE_BYTES\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"output\": \"snapshot\",\n      \"comparison\": \"EXACT_FILE_BYTES\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"output\": \"result\",\n      \"comparison\": \"EXACT_FILE_BYTES\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"output\": \"all_batches\",\n      \"comparison\": \"EXACT_CANONICAL_BYTES\",\n      \"status\": \"PASS\"\n    }\n  ]\n}\n",
+        "stderr": "",
+        "stdout_sha256": "8a6e1e6130681fa496ff3e479d35417c8a496dc1a31b8a16b84f2ce28377b3de",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "PASS",
+        "independent_P32_P35": false
+      },
+      {
+        "name": "fresh_production_preflight",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "tools/preflight.py"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:51.984807+00:00",
+        "elapsed_seconds": 0.043887,
+        "exit_code": 3,
+        "expected_exit_code": 3,
+        "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"exit_code\": 3,\n  \"scope\": \"RECORDED_PRODUCTION_READINESS_ONLY\",\n  \"engine_process\": \"NOT_RUN\",\n  \"P32_P33_P35\": \"NOT_RUN\",\n  \"mapping_status\": \"REQUEST_PREPARED_NOT_ACKNOWLEDGED\",\n  \"production_write_authorized\": false,\n  \"actual_production_root\": null,\n  \"blockers\": [\n    {\n      \"id\": \"P14-BLK-001\",\n      \"owner\": \"P13/P01\",\n      \"stage\": \"S00-production\",\n      \"missing\": \"真实游戏源码固定提交/ZIP、入口、P14 actual_path_mapping 与授权；当前 P13 映射给 P14 write_allowed=false。\"\n    },\n    {\n      \"id\": \"P14-BLK-002\",\n      \"owner\": \"P15\",\n      \"stage\": \"S02-real-provider\",\n      \"missing\": \"真实 DeckPlanner 源码固定版本/SHA、候选/拒绝/抽牌报告合同及接收回执。\"\n    },\n    {\n      \"id\": \"P14-BLK-003\",\n      \"owner\": \"P16/P13\",\n      \"stage\": \"S03-real-provider\",\n      \"missing\": \"真实 EnemyPlanner 源码固定版本/SHA、实际内容和锁定意图证据；多敌批次扩展。\"\n    },\n    {\n      \"id\": \"P14-BLK-004\",\n      \"owner\": \"P02/P03/P05/P22\",\n      \"stage\": \"S01-S02-production-content\",\n      \"missing\": \"正式 content ID/Schema/费用与效果数值冻结；BUFF/DEBUFF、DOT 重复叠层与护盾 cap/溢出批准。\"\n    },\n    {\n      \"id\": \"P14-BLK-005\",\n      \"owner\": \"P13/P02\",\n      \"stage\": \"S01-exact-legacy-contract\",\n      \"missing\": \"P02 到 P13 的完整事件/指纹/历史回执迁移版本；F010/F011/F021/F028 完整历史。\"\n    },\n    {\n      \"id\": \"P14-BLK-006\",\n      \"owner\": \"P13/P16/P02/P01\",\n      \"stage\": \"S07-phase-commit\",\n      \"missing\": \"正式 S07 激活、PhaseProposal 受控提交/阶段 epoch/等待槽合同；P06 提案还不是实现。\"\n    },\n    {\n      \"id\": \"P14-BLK-007\",\n      \"owner\": \"P34\",\n      \"stage\": \"target-runtime\",\n      \"missing\": \"目标 OS/架构/驱动、引擎完整版本/可执行哈希、真实工程入口及目标 Anki 版本证据。\"\n    },\n    {\n      \"id\": \"P14-BLK-010\",\n      \"owner\": \"USER-appointed-EXT-INTEGRATOR\",\n      \"stage\": \"cross-module-integration\",\n      \"missing\": \"用户对独立整合人员的指定及跨模块整合授权。\"\n    }\n  ],\n  \"resolution\": \"Require new fixed upstream artifacts and approvals; this script does not grant them.\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "17dc64f64945fc4e7dc3d10059031a601ff72f86d6d1bae83939d5b3cd0c2b08",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "BLOCKED",
+        "independent_P32_P35": false
+      },
+      {
+        "name": "fresh_integrity_after",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "tools/verify_delivery.py"
+        ],
+        "cwd": "/workspace/scratch/e30ed18294dc/p14_release_verify_cyyr991x/P14_BattleCore_V0.1",
+        "started_utc": "2026-10-28T18:21:52.030237+00:00",
+        "elapsed_seconds": 0.111144,
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"manifest_entries\": 179,\n  \"package_files_including_manifest\": 180,\n  \"listed_size_bytes\": 7180194,\n  \"preserved_original_sources\": 78,\n  \"manifest_sha256\": \"8aa5855fddeba5c7f433075dd447ae124225f89d325b5e08b224fad758aba0b4\",\n  \"scope\": \"BYTE_INTEGRITY_ONLY_NOT_INDEPENDENT_GAME_ACCEPTANCE\",\n  \"ignored_generated_directories\": [\n    \"__pycache__\"\n  ]\n}\n",
+        "stderr": "",
+        "stdout_sha256": "db78563b87f36b3be9cb3c92dc190239e688eceb45568d2c8e3bfc857081cae2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": "PASS",
+        "independent_P32_P35": false
+      }
+    ]
+  },
+  "author_tests": {
+    "discovered": 101,
+    "passed": 97,
+    "blocked_skipped": 4,
+    "failed": 0
+  },
+  "isolated_implementation": "AUTHOR_VERIFIED",
+  "production_readiness": "BLOCKED",
+  "independent_P32_P33_P35": "NOT_RUN",
+  "engine_Anki_P21_E2E": "NOT_RUN",
+  "cross_module_merge_GitHub_write_publish": "NOT_PERFORMED",
+  "circular_hash_policy": "Manifest excludes itself; external receipt binds manifest and ZIP. Receipt is outside the ZIP and does not claim a self hash."
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "upload_checks": [
+    {
+      "path": "upload/relay-materials-1-a26a3da15f.zip",
+      "sha256": "a26a3da15fc4dd1fffd1b29dc77f90d01f1d2c3195a65d9f0e57dd400e33e327",
+      "size_bytes": 11247093,
+      "status": "PASS"
+    },
+    {
+      "path": "upload/relay-materials-2-d3f598c365.zip",
+      "sha256": "d3f598c365bd371f68c4d469175cf7feee1c43e312dfb8932fba3942af319644",
+      "size_bytes": 16364229,
+      "status": "PASS"
+    },
+    {
+      "path": "upload/relay-materials-3-13919fb215.zip",
+      "sha256": "13919fb215c83387a1d44a0b6e4f29b434e133d5084d4bf8b876a3e88bf80cc7",
+      "size_bytes": 16545922,
+      "status": "PASS"
+    }
+  ],
+  "unpacked_members_checked": 1788,
+  "unpacked_members_changed": [],
+  "transfer_manifest_records_in_scope": 586,
+  "missing_transfer_members": [],
+  "original_inputs_modified": false
+}

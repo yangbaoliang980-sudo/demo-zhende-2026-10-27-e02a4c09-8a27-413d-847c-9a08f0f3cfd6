@@ -1,0 +1,15 @@
+stage	scope_item	approval_level	deliverable_boundary	source	owners	acceptance_gate
+S00	需求与工程事实	IN_SCOPE_NOW	实际需求证据与追踪ID；P13工程与OS调查；P22最小ID；P32测试标准；P34环境;P35门禁	user TASK S00	P01/P13/P22/P32/P34/P35	G0文档可审，未证明可运行即BLOCKED_FOR_RUNTIME
+S01	战斗状态与无渲染确定性	IN_SCOPE_NEXT_AFTER_GATE	状态机、伤害、盾、结算、样例牌；允许隔离纯逻辑实现	user TASK S01-S02	P02/P14/P32	G1实测种子Replay
+S02	抽牌出牌费用与角色骨架	IN_SCOPE_NEXT_AFTER_GATE	P15牌堆候选；P14唯一状态提交；P04角色骨架	user TASK S01-S02	P04/P14/P15/P32	G2重复命令无重复扣费
+PRE-S03	画风基线	IN_SCOPE_NEXT_AFTER_GATE	至少一名角色可审质量样本、风格、图源许可	user TASK PRE-S03	P23/P25/P26/P37	P25风格源审+P37权利审
+S03	独立战斗竖切	IN_SCOPE_PRIORITY	HUD、出牌撞击、意图/伤害/血条、结束回合、敌行动、可跳动画	user TASK S03	P16/P19/P29/P32/P33/P35	G3A实际可复现的独立运行证据
+S04	真实Anki四键/Undo	APPROVED_DIRECTION_LATER	目标版环境确定即可与战斗并行；不能假装Anki证据	user TASK S04	P08/P10/P12/P34	G3B真机脱敏事件日志
+S05	学习账本和钱包事务	APPROVED_DIRECTION_LATER	IPC/隔离/幂等/撤销；奖励差异和负债政策待批准	user TASK S05	P08/P11/P12/P17/P21	G3C真实授奖须政策+事件身份可靠
+S06	编队养成存档	APPROVED_DIRECTION_LATER	完整三人编队+角色养成+恢复	user TASK S06	P04/P17/P21	G3D真实存档必须落盘/重启
+S07	章节/Boss/首通	APPROVED_DIRECTION_LATER	章节/Boss阶段/首通与重复奖励防护	user TASK S07	P06/P14/P18/P21	G3E幂等真实测试
+S08	内部桌面MVP RC	BLOCKED_EXT_INTEGRATOR	待用户任命独立整合者；双端固定RC、真实E2E、正式立绘	user TASK S08	P36/EXT-INTEGRATOR/P35	G4未任命+无合入产物直接BLOCKED
+S09	额外内容扩展	CONDITIONAL_USER_APPROVAL	不默认扩卡、角色剧情和音效	user TASK S09-S10	P01/P07	必须新批准范围
+S10	发布或受控私用	CONDITIONAL_USER_APPROVAL	商业化/平台/对外发放需单独决定	user TASK S09-S10	P01/P36/P37/P38	G5许可/隐私/双端证据/用户许可
+NUMERIC	3初始角色/3小怪/1Boss/20-30牌	PROPOSAL_NOT_FROZEN	仅候选；独立模块可用更少示例证明技术链路，但不是最终MVP数量	user TASK 数字建议	P01/USER	DEC-004签字后才升级已批数量
+DEFERRED	P31/P41/P42/P43	OUT_OF_SCOPE_NOW	音效/剧情/公开运营/移动移植	user TASK 三.岗位原则	P01/USER	无新范围批准不得启动

@@ -1,0 +1,252 @@
+[
+  {
+    "name": "relay-materials-1-a893298bc4(1).zip",
+    "sha256": "a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815",
+    "size_bytes": 2905966,
+    "members": 89,
+    "uncompressed_bytes": 2893614,
+    "crc_status": "PASS",
+    "source_local_path": "upload/relay-materials-1-a893298bc4(1).zip",
+    "extracted_root": "work/input_audit/extracted/a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815"
+  },
+  {
+    "name": "relay-materials-2-90d965dbc7(1).zip",
+    "sha256": "90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a",
+    "size_bytes": 16363530,
+    "members": 2,
+    "uncompressed_bytes": 16363246,
+    "crc_status": "PASS",
+    "source_local_path": "upload/relay-materials-2-90d965dbc7(1).zip",
+    "extracted_root": "work/input_audit/extracted/90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a"
+  },
+  {
+    "name": "relay-materials-3-1533e8c67e.zip",
+    "sha256": "1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2",
+    "size_bytes": 17808762,
+    "members": 83,
+    "uncompressed_bytes": 17797270,
+    "crc_status": "PASS",
+    "source_local_path": "upload/relay-materials-3-1533e8c67e.zip",
+    "extracted_root": "work/input_audit/extracted/1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2"
+  },
+  {
+    "name": "P11_StudyLedger_V0.1.zip",
+    "sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+    "size_bytes": 435064,
+    "members": 106,
+    "uncompressed_bytes": 2499527,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815/files/018/P11_StudyLedger_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9"
+  },
+  {
+    "name": "failing_sources.zip",
+    "sha256": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+    "size_bytes": 24998,
+    "members": 12,
+    "uncompressed_bytes": 89422,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815/files/024/failing_sources.zip",
+    "extracted_root": "work/input_audit/extracted/576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f"
+  },
+  {
+    "name": "relay-materials-1-a9385ef43d.zip",
+    "sha256": "a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d",
+    "size_bytes": 16362831,
+    "members": 93,
+    "uncompressed_bytes": 16349381,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a/files/001/relay-materials-1-a9385ef43d.zip",
+    "extracted_root": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d"
+  },
+  {
+    "name": "relay-materials-2-c668973fc2.zip",
+    "sha256": "c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e",
+    "size_bytes": 15139774,
+    "members": 69,
+    "uncompressed_bytes": 15129590,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2/files/001/relay-materials-2-c668973fc2.zip",
+    "extracted_root": "work/input_audit/extracted/c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e"
+  },
+  {
+    "name": "P12_AnkiTransport_V0.1.zip",
+    "sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+    "size_bytes": 1206963,
+    "members": 145,
+    "uncompressed_bytes": 2742020,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2/files/002/P12_AnkiTransport_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a"
+  },
+  {
+    "name": "P09_Linguistic_Mapping_V0.1.zip",
+    "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+    "size_bytes": 5041990,
+    "members": 86,
+    "uncompressed_bytes": 9157846,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/004/P09_Linguistic_Mapping_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a"
+  },
+  {
+    "name": "received_relay_materials.zip",
+    "sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+    "size_bytes": 7825496,
+    "members": 49,
+    "uncompressed_bytes": 7818134,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/026/received_relay_materials.zip",
+    "extracted_root": "work/input_audit/extracted/e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733"
+  },
+  {
+    "name": "P01_S00_V6_完整交接包.zip",
+    "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+    "size_bytes": 34628,
+    "members": 16,
+    "uncompressed_bytes": 78606,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/056/P01_S00_V6_完整交接包.zip",
+    "extracted_root": "work/input_audit/extracted/139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89"
+  },
+  {
+    "name": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+    "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+    "size_bytes": 47224,
+    "members": 15,
+    "uncompressed_bytes": 282343,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/063/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+    "extracted_root": "work/input_audit/extracted/969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501"
+  },
+  {
+    "name": "P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+    "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+    "size_bytes": 29930,
+    "members": 17,
+    "uncompressed_bytes": 113032,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/072/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+    "extracted_root": "work/input_audit/extracted/de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999"
+  },
+  {
+    "name": "P04_S02_Character_Progression_Delivery_V0.1.zip",
+    "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+    "size_bytes": 38736,
+    "members": 20,
+    "uncompressed_bytes": 138847,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/078/P04_S02_Character_Progression_Delivery_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc"
+  },
+  {
+    "name": "P05_S01_Balance_Delivery_V0.1.zip",
+    "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+    "size_bytes": 55092,
+    "members": 20,
+    "uncompressed_bytes": 193826,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/084/P05_S01_Balance_Delivery_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b"
+  },
+  {
+    "name": "relay-materials-1-3559b922b7.zip",
+    "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+    "size_bytes": 639564,
+    "members": 35,
+    "uncompressed_bytes": 634322,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/085/relay-materials-1-3559b922b7.zip",
+    "extracted_root": "work/input_audit/extracted/3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d"
+  },
+  {
+    "name": "relay-materials-1-1b174d40f0.zip",
+    "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+    "size_bytes": 1279557,
+    "members": 36,
+    "uncompressed_bytes": 1274155,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d/files/086/relay-materials-1-1b174d40f0.zip",
+    "extracted_root": "work/input_audit/extracted/1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882"
+  },
+  {
+    "name": "P08_Anki_Reward_Policy_V0.1.zip",
+    "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+    "size_bytes": 2523333,
+    "members": 62,
+    "uncompressed_bytes": 4514766,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e/files/001/P08_Anki_Reward_Policy_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f"
+  },
+  {
+    "name": "relay-materials-1-3c7e523083.zip",
+    "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+    "size_bytes": 2559544,
+    "members": 37,
+    "uncompressed_bytes": 2553982,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e/files/002/relay-materials-1-3c7e523083.zip",
+    "extracted_root": "work/input_audit/extracted/3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c"
+  },
+  {
+    "name": "P10_S04_Probe_Report_V0.1.zip",
+    "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+    "size_bytes": 271956,
+    "members": 57,
+    "uncompressed_bytes": 1473826,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e/files/004/P10_S04_Probe_Report_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2"
+  },
+  {
+    "name": "executed_sources.zip",
+    "sha256": "5d9eb6703c3641bdb6ef5cbe482b7b1e64cfa861845754120e3e7e6ac266dca8",
+    "size_bytes": 61151,
+    "members": 27,
+    "uncompressed_bytes": 209724,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a/P12_AnkiTransport_V0.1/evidence/author_run_001/executed_sources.zip",
+    "extracted_root": "work/input_audit/extracted/5d9eb6703c3641bdb6ef5cbe482b7b1e64cfa861845754120e3e7e6ac266dca8"
+  },
+  {
+    "name": "executed_sources.zip",
+    "sha256": "d8085f90ac6c49315d3dd34ed7055c871bac70008960037c305168ddec48b70d",
+    "size_bytes": 69366,
+    "members": 31,
+    "uncompressed_bytes": 232148,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a/P12_AnkiTransport_V0.1/evidence/author_run_002/executed_sources.zip",
+    "extracted_root": "work/input_audit/extracted/d8085f90ac6c49315d3dd34ed7055c871bac70008960037c305168ddec48b70d"
+  },
+  {
+    "name": "executed_sources.zip",
+    "sha256": "b7ecbda11a9dffc5221e9ee10d247b8acaca6c712e364442f36c15001ad7d6d1",
+    "size_bytes": 84385,
+    "members": 51,
+    "uncompressed_bytes": 257349,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a/P12_AnkiTransport_V0.1/evidence/author_run_005/executed_sources.zip",
+    "extracted_root": "work/input_audit/extracted/b7ecbda11a9dffc5221e9ee10d247b8acaca6c712e364442f36c15001ad7d6d1"
+  },
+  {
+    "name": "P07_Stage_Delivery_V0.1.zip",
+    "sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+    "size_bytes": 1214430,
+    "members": 67,
+    "uncompressed_bytes": 2633925,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6"
+  },
+  {
+    "name": "P06_Enemy_Delivery_V0.1.zip",
+    "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+    "size_bytes": 168593,
+    "members": 43,
+    "uncompressed_bytes": 750914,
+    "crc_status": "PASS",
+    "source_local_path": "work/input_audit/extracted/cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/P06_Enemy_Delivery_V0.1.zip",
+    "extracted_root": "work/input_audit/extracted/0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7"
+  }
+]

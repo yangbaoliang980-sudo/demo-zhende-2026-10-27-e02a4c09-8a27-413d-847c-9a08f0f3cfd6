@@ -1,0 +1,126 @@
+{
+  "schema_version": "P13-DEPENDENCIES/0.1.0",
+  "edge_meaning": "Source module imports/depends on stable contract/port, never direct mutual business imports",
+  "nodes": [
+    {
+      "id": "contracts.internal",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": []
+    },
+    {
+      "id": "framework.codec",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": []
+    },
+    {
+      "id": "framework.contracts",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.codec"
+      ]
+    },
+    {
+      "id": "framework.ports",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": [
+        "framework.codec"
+      ]
+    },
+    {
+      "id": "framework.host",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": [
+        "framework.contracts",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "framework.sequence",
+      "owner": "P13",
+      "existence": "EXISTS_ISOLATED",
+      "depends_on": [
+        "framework.contracts"
+      ]
+    },
+    {
+      "id": "battle.implementation",
+      "owner": "P14",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "deck.implementation",
+      "owner": "P15",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "enemy.implementation",
+      "owner": "P16",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "wallet.party.implementation",
+      "owner": "P17",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "progression.implementation",
+      "owner": "P18",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "persistence.implementation",
+      "owner": "P21",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "battle_ui.implementation",
+      "owner": "P19",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    },
+    {
+      "id": "animation.implementation",
+      "owner": "P29",
+      "existence": "PLANNED_NOT_RECEIVED",
+      "depends_on": [
+        "contracts.internal",
+        "framework.ports"
+      ]
+    }
+  ],
+  "runtime_call_flow_is_separate": "request/response/event flow can return data; that does not create source import or state ownership cycles",
+  "actual_ast_import_graph_evidence": "architecture/evidence/runs/architecture_check_001/stdout.log"
+}

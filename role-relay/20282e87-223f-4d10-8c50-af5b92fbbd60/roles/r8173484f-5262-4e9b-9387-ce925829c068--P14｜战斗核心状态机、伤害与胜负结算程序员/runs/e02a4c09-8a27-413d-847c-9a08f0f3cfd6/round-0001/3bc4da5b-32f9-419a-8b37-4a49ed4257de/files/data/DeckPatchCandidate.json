@@ -1,0 +1,24 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "DeckPatchCandidate",
+  "battle_id": "fixture:battle",
+  "command_id": "fixture:command1",
+  "expected_revision": 0,
+  "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5",
+  "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "policy_version": "fixture:deck-policy",
+  "moves": [],
+  "energy_delta": 0,
+  "rng_before": {
+    "algorithm": "xorshift32-v1",
+    "initial_seed": 1,
+    "state": 1,
+    "draw_count": 0
+  },
+  "rng_after": {
+    "algorithm": "xorshift32-v1",
+    "initial_seed": 1,
+    "state": 1,
+    "draw_count": 0
+  }
+}

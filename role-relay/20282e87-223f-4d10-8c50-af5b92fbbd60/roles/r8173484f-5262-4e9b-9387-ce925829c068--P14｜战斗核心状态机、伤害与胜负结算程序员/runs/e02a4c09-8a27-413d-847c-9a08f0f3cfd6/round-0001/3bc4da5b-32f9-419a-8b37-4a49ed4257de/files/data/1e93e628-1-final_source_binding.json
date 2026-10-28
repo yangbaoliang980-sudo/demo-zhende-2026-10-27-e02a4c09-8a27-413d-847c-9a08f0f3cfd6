@@ -1,0 +1,254 @@
+{
+  "schema_version": "P13-FINAL-SOURCE-BINDING/0.1.0",
+  "files": [
+    {
+      "relative_path": "contracts/internal/canonical_vectors.json",
+      "size_bytes": 39486,
+      "sha256": "8a1c838be0b3bcb2d11f43ef7ed8bf13b6c9bf06903482f1e00108c429a58dd9",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/AssetRef.json",
+      "size_bytes": 237,
+      "sha256": "e4015231fdc178fee5c32ea0a01f4150d0a345b88b33615c39d6c930987cd699",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/AtomicCommitProposal.json",
+      "size_bytes": 965,
+      "sha256": "c57cf1b2e1960ca4ea85dadc593942abf239268e178feb3745d298d7e133d325",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleCommand.json",
+      "size_bytes": 222,
+      "sha256": "d06e9cfdee8a4ac8d2ff887cc40a36d7bb52a3b91ebe0dfa20997ede57f1e752",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleCommitBatch.json",
+      "size_bytes": 2894,
+      "sha256": "3623948d7b6691f66642f4b8924157a5ab13026c101ce91d881827978121954d",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleEvent.json",
+      "size_bytes": 326,
+      "sha256": "d4b232132c32acba46d61aa44c8873a06bc477b530a066b150a48928f465f07d",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleReply.json",
+      "size_bytes": 3373,
+      "sha256": "6fbe5755c9775b14753607a7c391db8550e4aaaf2de8e1b8bafcbea5596b50e7",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleResult.json",
+      "size_bytes": 572,
+      "sha256": "f5364a92f3fe8c4f10f7379bd6f990282eb7aba015e5a64e1d77f11f1252b2bf",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleSnapshot.json",
+      "size_bytes": 1516,
+      "sha256": "2816a3ce5563f0785fd0286567b0d3d6e39ec31e4c6af5b8e30136d982a4aaf4",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/BattleState.json",
+      "size_bytes": 1796,
+      "sha256": "6c98563414a101b79d8af0bc12e811de5c2306bb3da5a9a255689a7be9783d07",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/CommitLookupView.json",
+      "size_bytes": 261,
+      "sha256": "a396ac5246fbeac7cb7b1b326fa5b0f675b9d53df625c0af40b2a2ea8b4e0172",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/CommitProofView.json",
+      "size_bytes": 508,
+      "sha256": "23559f1919038818547fbaed735d387e0342be6843bf1f3ca317db6070c05faf",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/DeckPatchCandidate.json",
+      "size_bytes": 675,
+      "sha256": "2a2b083d6aa67ecf45301e700ac4d387f56f11123f909875efae2dcda578f362",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/EnemyIntent.json",
+      "size_bytes": 346,
+      "sha256": "f32290c5782222dbd3ff3ce9399b1d7329ff4cc9de9ef7104256fb5688497835",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/PartySnapshot.json",
+      "size_bytes": 657,
+      "sha256": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/PhaseProposal.json",
+      "size_bytes": 359,
+      "sha256": "a02a60dd9cd73d48868c3d85cb4328d1be54653316e34788bc1a181611ce1b48",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/SaveStatusView.json",
+      "size_bytes": 230,
+      "sha256": "0297a57a41947d76d276d09cef2660183594fe06078bbd1ed18c4e44d4eb22f2",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/StageProgressView.json",
+      "size_bytes": 270,
+      "sha256": "11a177bee39e95764af513a97895ae22955245a75cfcec00784e3745d6bb69d8",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/StudyStatusQuery.json",
+      "size_bytes": 315,
+      "sha256": "26980569592da2b2461642bc16a4cb92d2c84d0ee24f7f7913abbf77e6162b51",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/StudyStatusView.json",
+      "size_bytes": 495,
+      "sha256": "2985d31fa37b28d4e69c2b466a5c5e67f7791c4aa8e42bd5e891ce441597dcba",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/WalletDeltaCandidate.json",
+      "size_bytes": 480,
+      "sha256": "109276aa8913eb010ff1430c9537352e02fa5b08f36fa113a500bc1df5444c27",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/examples/WalletSnapshot.json",
+      "size_bytes": 298,
+      "sha256": "d053f4af55428fa4e393883bc8d2e266cc3253513198b273de530f8c7476cfdf",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/tests/test_contracts.py",
+      "size_bytes": 8542,
+      "sha256": "9d5014f32755964f89d71883451414401a4f455190ab57b5257bc940f806e61a",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/tests/test_framework.py",
+      "size_bytes": 9960,
+      "sha256": "8b628afd0f80c81e3be1e7b4e0e4c3b6421354b787b4b2d0c09ff1f09ca8c28d",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/demo.py",
+      "size_bytes": 2073,
+      "sha256": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/host.py",
+      "size_bytes": 3979,
+      "sha256": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/path_guard.py",
+      "size_bytes": 1229,
+      "sha256": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/ports.py",
+      "size_bytes": 3699,
+      "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/sequence.py",
+      "size_bytes": 2594,
+      "sha256": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    },
+    {
+      "relative_path": "runtime/framework/yltt_framework/testing.py",
+      "size_bytes": 1333,
+      "sha256": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+      "binding_run": "author_tests_final",
+      "relationship": "BYTE_PRESENT_IN_EXECUTION_SNAPSHOT; not a claim that every code branch executed"
+    }
+  ],
+  "schema_oracle_run": "schema_oracle_final",
+  "canonical_oracle_run": "canonical_oracle_final",
+  "target_probe_code": "Delivered and syntax-checked; actual target engine run NOT_RUN",
+  "note": "Later explanatory docs/metadata/packaging tools are bound by delivery_manifest, not falsely labelled as executed game code."
+}

@@ -1,0 +1,25 @@
+P02 static-only validation execution evidence
+run_utc=2026-10-27T09:58:32.087914+00:00
+python=3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+platform=Linux-6.18.55-x86_64-with-glibc2.41
+cwd=/mnt/data/P02_S01_BattleSpec_V0.1
+argv=["/opt/pyvenv/bin/python", "/mnt/data/P02_S01_BattleSpec_V0.1/spec/battle/resolution/validate_spec_fixtures.py", "--upstream-zip", "/mnt/data/P01_S00_V6_完整交接包(1).zip"]
+exit_code=0
+stdout_begin
+PASS P02 static spec checks (NOT a game runtime/P32/P35 test)
+total_static_assertions=3917
+fixture_cases=33
+priority_rows=30
+truth_table_rows=24
+sequence_rows=26
+upstream_zip_checked=true
+design_static_audit=PASS
+P14_runtime_replay=NOT_RUN
+P13_DTO_contract=BLOCKED
+P32_independent_test=NOT_RUN
+P35_independent_review=NOT_RUN
+stdout_end
+stderr_begin
+stderr_end
+scope=static_spec_and_expected_fixtures_only
+P14_RUNTIME_NOT_RUN=true

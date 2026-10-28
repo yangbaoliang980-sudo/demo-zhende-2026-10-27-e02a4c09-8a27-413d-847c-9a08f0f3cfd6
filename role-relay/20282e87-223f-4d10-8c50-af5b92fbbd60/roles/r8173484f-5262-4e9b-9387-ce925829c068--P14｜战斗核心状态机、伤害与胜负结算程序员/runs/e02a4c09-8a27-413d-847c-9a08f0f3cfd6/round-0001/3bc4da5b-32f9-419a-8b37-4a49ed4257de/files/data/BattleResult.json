@@ -1,0 +1,15 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "BattleResult",
+  "result_id": "fixture:result",
+  "battle_id": "fixture:battle",
+  "terminal_revision": 1,
+  "terminal_event_seq": 3,
+  "outcome": "WIN",
+  "stage_id": "fixture:stage1",
+  "profile_scope": "fixture:profile",
+  "rules_version": "P02-BATTLE-0.1.0-draft",
+  "content_version": "fixture:content-v1",
+  "final_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "replay_input_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}

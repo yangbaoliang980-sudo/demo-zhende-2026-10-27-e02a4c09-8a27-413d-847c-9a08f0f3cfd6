@@ -1,0 +1,12 @@
+{
+  "installed_in": "isolated task directory work/devdeps",
+  "versions": {
+    "typing_extensions": "4.16.0",
+    "attrs": "26.1.0",
+    "rpds-py": "2026.9.1",
+    "jsonschema": "4.25.1",
+    "referencing": "0.37.0",
+    "jsonschema-specifications": "2025.9.1"
+  },
+  "installation_result": "Succeeded after network-enabled public dependency download; no project sources uploaded"
+}

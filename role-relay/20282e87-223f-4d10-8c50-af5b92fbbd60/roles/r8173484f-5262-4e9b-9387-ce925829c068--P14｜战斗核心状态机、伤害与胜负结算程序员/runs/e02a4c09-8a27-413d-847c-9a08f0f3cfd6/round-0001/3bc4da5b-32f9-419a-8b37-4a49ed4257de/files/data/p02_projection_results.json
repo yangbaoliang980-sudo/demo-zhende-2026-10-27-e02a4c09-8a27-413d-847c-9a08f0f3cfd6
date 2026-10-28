@@ -1,0 +1,5063 @@
+{
+  "format": "P14-P02-PROJECTION-RESULTS/0.1.0",
+  "pass_count": 29,
+  "blocked_count": 4,
+  "cases": [
+    {
+      "fixture_id": "F001",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "c0f637d4546b01964abaa995b43809fa7091710f16366f4e0cff4db9d85b9728",
+      "snapshot_sha256": "6f9ee8bf555336a3395a821f9c9bab98c6ddae2d2a8c2dfe8fa005e76eef9f3a",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "58daa72de4d8260214009d1b9e665de7c441860db2480ee69ab034ef7fb17bb3",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F001",
+          "code": "OK",
+          "command_id": "CMD-F001",
+          "commit": {
+            "battle_id": "BATTLE-F001",
+            "command_id": "CMD-F001",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "1a415b83b9179efb199d8fb84577b4685091d708baac57c36d279063816f37b1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK8",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 5,
+                  "hp_after": 9,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 8,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F001",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK8",
+                  "instance_id": "C_ATK8",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 9,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK8"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F002",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "d9458b06cbbfffdda99d1782fce8e18a3f7343337d98cc7586e127c78c12cdd5",
+      "snapshot_sha256": "01ee6d529eb8e69b558ab9ab6a3504e284b7b69880516787712187acb544ec4e",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "1624aec0ee8fc0f9f686dc916feeddadcadce448f2513297d3722a44daaa98c8",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F002",
+          "code": "OK",
+          "command_id": "CMD-F002",
+          "commit": {
+            "battle_id": "BATTLE-F002",
+            "command_id": "CMD-F002",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "589980574cd3d70f815f4e1371028d756764a89aa9137c2176b8baba9065a727"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_SHIELD4",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "P1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "delta": 4,
+                  "shield_after": 4,
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "SHIELD_CHANGED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F002",
+                "command_id": "CMD-F002",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F002",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_SHIELD4",
+                  "instance_id": "C_SHIELD4",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 4,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_SHIELD4"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F003",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "c32d911ae10f5dfa1f3472f1218ccd8fe814e8ad754b952c840acdfdbec576e0",
+      "snapshot_sha256": "2a93384e538f7a488417d98eac426adc4f343cf221c9b43e4c3d16bdde432bf3",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "bc748ccfef9822c6c6fcec595dc690567c84ad6dfee58ca663801935dfc6f47c",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F003",
+          "code": "OK",
+          "command_id": "CMD-F003",
+          "commit": {
+            "battle_id": "BATTLE-F003",
+            "command_id": "CMD-F003",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "07c869369c010625b8cc4d6728af989402a5efea664a66061adbad830165a805"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_HEAL5",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "P1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 2,
+                  "hp_after": 10,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "HEAL_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F003",
+                "command_id": "CMD-F003",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F003",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_HEAL5",
+                  "instance_id": "C_HEAL5",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_HEAL5"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F004",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "512b24d02817743469d2168e4c722559beff5a5540da822091df0c8194083ae4",
+      "snapshot_sha256": "f8ff44ba962504d5d633cdd8c359809e54479e073b92150f05d3789ac8398a32",
+      "event_count": 8,
+      "legacy_event_count": 8,
+      "replay_sha256": "1415de433734e4cd6faee07b5bf427310c1b1dace9f84db50ac33b089819c737",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F004",
+          "code": "OK",
+          "command_id": "CMD-F004",
+          "commit": {
+            "battle_id": "BATTLE-F004",
+            "command_id": "CMD-F004",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "77a2b23bb8cbf0c268c65cb310ae1d15caed8cdb37bafc814cf7b4f29a2d2504"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK4",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 4,
+                  "overkill": 0,
+                  "raw": 4,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "WIN"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F004",
+                "command_id": "CMD-F004",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 8
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F004",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK4",
+                  "instance_id": "C_ATK4",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 8,
+              "outcome": "WIN",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 0,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK4"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F005",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "acc8da2cb52ba65881f21e8e55477680f355d11ca4cdc8fc2634731c837178fb",
+      "snapshot_sha256": "10ec1d66bfedb703d3929963e41a9b60d1d028fc5b524bc49b5e0dd6d1585cc6",
+      "event_count": 6,
+      "legacy_event_count": 7,
+      "replay_sha256": "d784caeaa572e37dab3f90abc95c60114d34097666624c278d6bd70d55cc500b",
+      "p15_calls": 0,
+      "p16_calls": 1,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F005",
+          "code": "OK",
+          "command_id": "CMD-F005",
+          "commit": {
+            "battle_id": "BATTLE-F005",
+            "command_id": "CMD-F005",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "dccf38d660886088bba6d96209718e228ff337537ba5c38675fc1384819a59ad"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "E1",
+                  "target_unit_ids": [
+                    "P1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 3,
+                  "shield_after": 0,
+                  "source_unit_id": "E1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "LOSS"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F005",
+                "command_id": "CMD-F005",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F005",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 6,
+              "outcome": "LOSS",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F006",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "8cd759ed2b5745cbaccef47e2766871744e54121b7b6463c5f0f387b737fcfc0",
+      "snapshot_sha256": "ed4a4728406cca722cde81673db5f92ff8080b0713b6bed9893abfbc4cb6e16d",
+      "event_count": 11,
+      "legacy_event_count": 13,
+      "replay_sha256": "019a9435f6c9e2646e76bad4b0710e5d74a145eda736124b945a08b92b852333",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F006",
+          "code": "OK",
+          "command_id": "CMD-F006",
+          "commit": {
+            "battle_id": "BATTLE-F006",
+            "command_id": "CMD-F006",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "1d0d01b4cf2a1d8fc17457793c1202c0ab0360606f9325b511c76637ae4aa1f4"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK5",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 5,
+                  "overkill": 0,
+                  "raw": 5,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "E1",
+                  "target_unit_ids": [
+                    "P1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 4,
+                  "overkill": 0,
+                  "raw": 4,
+                  "shield_after": 0,
+                  "source_unit_id": "E1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 8
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 9
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "DRAW"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 10
+              },
+              {
+                "battle_id": "BATTLE-F006",
+                "command_id": "CMD-F006",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 11
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F006",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK5",
+                  "instance_id": "C_ATK5",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 11,
+              "outcome": "DRAW",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 0,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK5"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F007",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "138efec8290a6179f9377ed2bd70da896efb74b9de64a83585dd29e810c1d065",
+      "snapshot_sha256": "50a6ac550c67c989333f24e0ef19b7ff7acae06b1b3e86ad4662d3bc0728299a",
+      "event_count": 7,
+      "legacy_event_count": 7,
+      "replay_sha256": "eecbc45e966f9a6d374d4a1d512b6388f007f6d47c55ffdc15acb7dd385f9be8",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F007",
+          "code": "OK",
+          "command_id": "CMD-F007",
+          "commit": {
+            "battle_id": "BATTLE-F007",
+            "command_id": "CMD-F007",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "60ac4130864968524c28dd46cddde0def4bcbe980954543e77013fb08d68342e"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK4",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "B1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 8,
+                  "hp_loss": 4,
+                  "overkill": 0,
+                  "raw": 4,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "B1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_phase_id": "PHASE1",
+                  "proposal_id": "phase:5668e78c94894909c5912c1805b7b8c02500da54b06616c3b00948d0e6b8f1e5",
+                  "to_phase_id": "PHASE2",
+                  "unit_id": "B1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BOSS_PHASE_PROPOSED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F007",
+                "command_id": "CMD-F007",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 7
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F007",
+              "boss_states": [
+                {
+                  "current_phase_id": "PHASE1",
+                  "proposed_phase_ids": [
+                    "PHASE2"
+                  ],
+                  "unit_id": "B1"
+                }
+              ],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK4",
+                  "instance_id": "C_ATK4",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 7,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "B1",
+                  "hp": 8,
+                  "max_hp": 20,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "B1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK4"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F008",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "8424a8e3e665e4db802769e16ffd312f3146450df7c4318844e540e6b6e31bf6",
+      "snapshot_sha256": "ec2c7dad8d918e78f19797a393498e1dd14468eb5d57f4983b34a201be96b779",
+      "event_count": 8,
+      "legacy_event_count": 8,
+      "replay_sha256": "1bde3065feb7e50474b6cda2bc48ee9887ba6380aff3eea5822c25430550e958",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F008",
+          "code": "OK",
+          "command_id": "CMD-F008",
+          "commit": {
+            "battle_id": "BATTLE-F008",
+            "command_id": "CMD-F008",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "6006fc8354ff1de2d78e465f72e120688fbdddef7ffb62e074559b7b4b4475e3"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK12",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "B1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 12,
+                  "overkill": 0,
+                  "raw": 12,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "B1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "B1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "WIN"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F008",
+                "command_id": "CMD-F008",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 8
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F008",
+              "boss_states": [
+                {
+                  "current_phase_id": "PHASE1",
+                  "proposed_phase_ids": [],
+                  "unit_id": "B1"
+                }
+              ],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK12",
+                  "instance_id": "C_ATK12",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 8,
+              "outcome": "WIN",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "B1",
+                  "hp": 0,
+                  "max_hp": 20,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "B1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK12"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F009",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "5c29cc8641d0ba617e85e56ae48386387d43a6df8ce44e966ff455cea821ec3b",
+      "snapshot_sha256": "6120a4e86759e2e7bdf5694dc646d26e8af916c996d3cf53f4a51d03766c4187",
+      "event_count": 0,
+      "legacy_event_count": 0,
+      "replay_sha256": "e658c7b8b0efc8728af4e5c671985f63aca5d62f8567c6e6aae3dd6d0e316dc2",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F009",
+          "code": "TARGET_INVALID",
+          "command_id": "CMD-F009",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 0,
+          "result": "REJECTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F010",
+      "status": "BLOCKED",
+      "runtime_execution": "NOT_RUN",
+      "reason": "LEGACY_RECEIPT_FULL_COMMAND_AND_EVENT_RANGE_MISSING",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+    },
+    {
+      "fixture_id": "F011",
+      "status": "BLOCKED",
+      "runtime_execution": "NOT_RUN",
+      "reason": "LEGACY_RECEIPT_FULL_COMMAND_AND_EVENT_RANGE_MISSING",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+    },
+    {
+      "fixture_id": "F012",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "084caeb5bcd8e713cbcba1834f745708b632929dc010ab0a3e068815e615234f",
+      "snapshot_sha256": "c67ec75ed375a96ffa367d1d349f9fe7941d1468bd3c6357f33d21f9ca918deb",
+      "event_count": 0,
+      "legacy_event_count": 0,
+      "replay_sha256": "77a3892e846238f3cf862a80ab2433794e7b3efa1e4e4bfdabc8cc9f3651cf73",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F012",
+          "code": "REVISION_CONFLICT",
+          "command_id": "CMD-F012",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 2,
+          "result": "REJECTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F013",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "bdbd093f14348450446ca8adccd4d98a9118a7f1d780359e63d59f7089bf656b",
+      "snapshot_sha256": "e887a52cf57156593cc00490e459c1adc50c9e169862db107aef7dc2a8669e1e",
+      "event_count": 4,
+      "legacy_event_count": 5,
+      "replay_sha256": "16145700d05baaf214f7906e90c630c0d31a1201589fbbc4498d47248c2595bc",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F013",
+          "code": "OK",
+          "command_id": "CMD-F013",
+          "commit": {
+            "battle_id": "BATTLE-F013",
+            "command_id": "CMD-F013",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F013",
+                "command_id": "CMD-F013",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "bbecedffd29555b4fecff3bcc7caed76595a12e07931be9bfd7df76847b676f8"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F013",
+                "command_id": "CMD-F013",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "drawn": 0,
+                  "requested": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DRAW_SHORTFALL",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F013",
+                "command_id": "CMD-F013",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "turn_number": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "PLAYER_TURN_STARTED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F013",
+                "command_id": "CMD-F013",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 4
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F013",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 4,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F014",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "99fa2d970c37fdcd42f4f0dd16b75ab2b9385dc3c0707e8767056fd7ee82ad4b",
+      "snapshot_sha256": "fcee0bc5eaee129af9cec3e151853b0347a76e26cce20e9f4f51c7bcc08ed024",
+      "event_count": 7,
+      "legacy_event_count": 7,
+      "replay_sha256": "07fb8abda12d893c2bbf63d50a346128272559b2b22d6da474f878ba27cbeaf8",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F014",
+          "code": "OK",
+          "command_id": "CMD-F014",
+          "commit": {
+            "battle_id": "BATTLE-F014",
+            "command_id": "CMD-F014",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "3e86b465fa3cb70ea727d4087b971ad35588633f446e00754745e1a6f7efd3bb"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "discard",
+                  "instance_id": "C3",
+                  "to_index": 0,
+                  "to_zone": "draw"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "discard",
+                  "instance_id": "C2",
+                  "to_index": 1,
+                  "to_zone": "draw"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "discard",
+                  "instance_id": "C1",
+                  "to_index": 2,
+                  "to_zone": "draw"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "draw",
+                  "instance_id": "C3",
+                  "to_index": 0,
+                  "to_zone": "hand"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "turn_number": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "PLAYER_TURN_STARTED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F014",
+                "command_id": "CMD-F014",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 7
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F014",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C1",
+                  "instance_id": "C1",
+                  "owner_unit_id": "P1"
+                },
+                {
+                  "card_id": "C2",
+                  "instance_id": "C2",
+                  "owner_unit_id": "P1"
+                },
+                {
+                  "card_id": "C3",
+                  "instance_id": "C3",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 7,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 2,
+                "initial_seed": 1,
+                "state": 67634689
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [
+                  "C2",
+                  "C1"
+                ],
+                "exhaust": [],
+                "hand": [
+                  "C3"
+                ]
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F015",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "31719a7f19886dea730c0fbd347542dc2b8236a210e7065042c5529f1e2e89a5",
+      "snapshot_sha256": "a3b53e5163c55c657abd10eb4042be2a86c8c9af429b3a0431e6f005ddf9a1a7",
+      "event_count": 5,
+      "legacy_event_count": 6,
+      "replay_sha256": "72cf1dc455fb90e6bf5898ea3791fe656b2d2e72c4da488708a128ee9d7f9915",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F015",
+          "code": "OK",
+          "command_id": "CMD-F015",
+          "commit": {
+            "battle_id": "BATTLE-F015",
+            "command_id": "CMD-F015",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F015",
+                "command_id": "CMD-F015",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "33296de319a2d752fe15762a086b5b7b2f115f0a387579a97bd3a0cec672e4c0"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F015",
+                "command_id": "CMD-F015",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 3,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F015",
+                "command_id": "CMD-F015",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F015",
+                "command_id": "CMD-F015",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "LOSS"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F015",
+                "command_id": "CMD-F015",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 5
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F015",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C1",
+                  "instance_id": "C1",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 0,
+              "last_event_seq": 5,
+              "outcome": "LOSS",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [
+                    {
+                      "insert_order": 0,
+                      "remaining_triggers": 1,
+                      "source_unit_id": "P1",
+                      "stacks": 1,
+                      "status_id": "BURN",
+                      "status_instance_id": "legacy:P1:0"
+                    }
+                  ],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [
+                  "C1"
+                ],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F016",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "9dd1f2b400a10d36d8970fdab621337b92221a6459c29b80cff464735dde2971",
+      "snapshot_sha256": "173435e8765eb2e9e798b99f3072af4f1aa375463f18ddf85d9541244c44e59c",
+      "event_count": 0,
+      "legacy_event_count": 0,
+      "replay_sha256": "22002a6b8763d971bf811169c5aca5a3ed252589c1910bcf42fd0007332d91f9",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F016",
+          "code": "PHASE_INVALID",
+          "command_id": "CMD-F016",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "REJECTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F017",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "33bc62f0a4886d7978b03b512cb23ba43ad130076c651542e798e1bcb6c8f24c",
+      "snapshot_sha256": "aa7aa695b80fefe547842aba9c83f9a7a987a9031b7927eabbfa2e1e1f26622d",
+      "event_count": 3,
+      "legacy_event_count": 3,
+      "replay_sha256": "ed405c23039ffd9959e462f9b79fa56010256404d739a7b24624087d3a9b2cf6",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F017",
+          "code": "OK",
+          "command_id": "CMD-F017",
+          "commit": {
+            "battle_id": "BATTLE-F017",
+            "command_id": "CMD-F017",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F017",
+                "command_id": "CMD-F017",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "0f8d5a3b97f487ee6d2d1985a758742d98daa2ab54ad844b3d0743238119ad5a"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F017",
+                "command_id": "CMD-F017",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "side": "PLAYER",
+                  "turn_number": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "TURN_ENDED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F017",
+                "command_id": "CMD-F017",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 3
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F017",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C1",
+                  "instance_id": "C1",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 3,
+              "outcome": "ONGOING",
+              "phase": "ENEMY_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": [
+                  "C1"
+                ]
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F018",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "0eba1ab3ad4a639388cd24c03235ab5961051cc56628372ba37aa0a62235618c",
+      "snapshot_sha256": "484b09aba94dee199e565c2ba9ad5944306893879eb8803b47c9857913632616",
+      "event_count": 0,
+      "legacy_event_count": 0,
+      "replay_sha256": "d110f41dee1e0e4f4582e2fc75bb5a891301b37dfd89699f0c5bfd506ad5a2a0",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F018",
+          "code": "ALREADY_CLOSED",
+          "command_id": "CMD-F018",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 3,
+          "result": "REJECTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F019",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "c0f637d4546b01964abaa995b43809fa7091710f16366f4e0cff4db9d85b9728",
+      "snapshot_sha256": "6f9ee8bf555336a3395a821f9c9bab98c6ddae2d2a8c2dfe8fa005e76eef9f3a",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "58daa72de4d8260214009d1b9e665de7c441860db2480ee69ab034ef7fb17bb3",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F001",
+          "code": "OK",
+          "command_id": "CMD-F001",
+          "commit": {
+            "battle_id": "BATTLE-F001",
+            "command_id": "CMD-F001",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "1a415b83b9179efb199d8fb84577b4685091d708baac57c36d279063816f37b1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK8",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 5,
+                  "hp_after": 9,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 8,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F001",
+                "command_id": "CMD-F001",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F001",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK8",
+                  "instance_id": "C_ATK8",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 9,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK8"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F020",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "c1a25f2a7a2a1499f2a91abc138b955fcf6590b7deb1a4b94967fc0af3abcfad",
+      "snapshot_sha256": "8c17b93b90490ea52aa17dd85a00c09f3020fc043ea4b9f3ccd7422e74afe644",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "9a1a0bbf6c78e403b7939148df2c792b06a8c402d971a49b586a8a16fa66d123",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F020",
+          "code": "OK",
+          "command_id": "CMD-F020",
+          "commit": {
+            "battle_id": "BATTLE-F020",
+            "command_id": "CMD-F020",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "fab4338970fed774c889e5a7e088803cede816b990eb0fce73e5c4c7479c46bf"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK6",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 6,
+                  "hp_after": 12,
+                  "hp_loss": 0,
+                  "overkill": 0,
+                  "raw": 6,
+                  "shield_after": 4,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F020",
+                "command_id": "CMD-F020",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F020",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK6",
+                  "instance_id": "C_ATK6",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 4,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK6"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F021",
+      "status": "BLOCKED",
+      "runtime_execution": "NOT_RUN",
+      "reason": "LEGACY_RECEIPT_FULL_COMMAND_AND_EVENT_RANGE_MISSING",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+    },
+    {
+      "fixture_id": "F022",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "dddd242cc082a97c8fb01a2ec636113279f61624ed0097bd8e1f56d76f0cc6e0",
+      "snapshot_sha256": "bff402d2639821e35c351d0b1fe254abd0ccbb18cdab0c3eb4d6a16a002e9f4c",
+      "event_count": 4,
+      "legacy_event_count": 5,
+      "replay_sha256": "87eb03dbb939b625e0820c8245e13b40b0f5f1a1881387aa8b0fa159988a206f",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F022",
+          "code": "OK",
+          "command_id": "CMD-F022",
+          "commit": {
+            "battle_id": "BATTLE-F022",
+            "command_id": "CMD-F022",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F022",
+                "command_id": "CMD-F022",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "2a813a901dfb5d5ecbf2d71aa68e492fdcab9b3235a9b08c5a9a5d7878707cbc"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F022",
+                "command_id": "CMD-F022",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "draw",
+                  "instance_id": "C1",
+                  "to_index": 0,
+                  "to_zone": "hand"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F022",
+                "command_id": "CMD-F022",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "turn_number": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "PLAYER_TURN_STARTED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F022",
+                "command_id": "CMD-F022",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 4
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F022",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C1",
+                  "instance_id": "C1",
+                  "owner_unit_id": "P1"
+                },
+                {
+                  "card_id": "C2",
+                  "instance_id": "C2",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 4,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [
+                  "C2"
+                ],
+                "exhaust": [],
+                "hand": [
+                  "C1"
+                ]
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F023",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "e27948ca0fbfc26629000f15043b130fe88c9d7eb25f6ff4c359beebd4bf2167",
+      "snapshot_sha256": "ac86f092af1edcf4899ad977e538e53bb67ad43d651017e119c08fdebaacabd5",
+      "event_count": 4,
+      "legacy_event_count": 6,
+      "replay_sha256": "2890db38b1c802af864e54e5539adfce16aef0e466fff72ecd95093144a69b33",
+      "p15_calls": 0,
+      "p16_calls": 1,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F023",
+          "code": "OK",
+          "command_id": "CMD-F023",
+          "commit": {
+            "battle_id": "BATTLE-F023",
+            "command_id": "CMD-F023",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F023",
+                "command_id": "CMD-F023",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "4bff0893540c7198d0468b4085102a44a10f3a70b4d8cb4386b3a1a3c8970120"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F023",
+                "command_id": "CMD-F023",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "reason_code": "NO_VALID_TARGET",
+                  "unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENEMY_ACTION_SKIPPED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F023",
+                "command_id": "CMD-F023",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "side": "ENEMY",
+                  "turn_number": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "TURN_ENDED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F023",
+                "command_id": "CMD-F023",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 4
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F023",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 4,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_TURN_PENDING",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F024",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "fc4dd9d76141b452f58720ee86d4b5b0701d3a5b35c76b354e9e9ac392e63cc4",
+      "snapshot_sha256": "045145cedca58ef239e2c9d3933a7def79f5aeea6577346a81fc9d5276c4967e",
+      "event_count": 6,
+      "legacy_event_count": 6,
+      "replay_sha256": "423f473b515d45fb2e5475af2c99ffcaa67ab4bad80c6a901de444b322f48280",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F024",
+          "code": "OK",
+          "command_id": "CMD-F024",
+          "commit": {
+            "battle_id": "BATTLE-F024",
+            "command_id": "CMD-F024",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "3f4d8c181b1748a51f6be7d47193f0a5924b768d1183d652ba21f62c816d259e"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_DOT3",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "operation": "ADDED",
+                  "status_id": "BURN",
+                  "status_instance_id": "status:60617b0274483591e31ee52d619bd7fb95afcdf136a0623641eda818ea6b58f2",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "STATUS_CHANGED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F024",
+                "command_id": "CMD-F024",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F024",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_DOT3",
+                  "instance_id": "C_DOT3",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [
+                    {
+                      "insert_order": 0,
+                      "remaining_triggers": 1,
+                      "source_unit_id": "P1",
+                      "stacks": 1,
+                      "status_id": "BURN",
+                      "status_instance_id": "status:60617b0274483591e31ee52d619bd7fb95afcdf136a0623641eda818ea6b58f2"
+                    }
+                  ],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_DOT3"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F025",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "60f8c8be512a5721decd32c99d14254230a4569c2f89a1f1db3380a7cb2ba30f",
+      "snapshot_sha256": "8e8943749682d47d323a7c2280aa7bff001a73ad2b39a22d757fdd68d0ab167a",
+      "event_count": 3,
+      "legacy_event_count": 3,
+      "replay_sha256": "b68352407534ce206b54ade35e140dcc4ee181db487bb268ecc44cc1a7566a5c",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F025",
+          "code": "OK",
+          "command_id": "CMD-F025",
+          "commit": {
+            "battle_id": "BATTLE-F025",
+            "command_id": "CMD-F025",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F025",
+                "command_id": "CMD-F025",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "ae1f0b4c12b63a0c5a7bdb8778a3a5c0c5dff023143c72243480ad09c3fe4f00"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F025",
+                "command_id": "CMD-F025",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "reason_code": "USER_QUIT"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_ABORTED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F025",
+                "command_id": "CMD-F025",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 3
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F025",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 3,
+              "outcome": "ABORTED",
+              "phase": "ABORTED",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F026",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "6191fed2e15184b66d84077c22a1be097f4ea0c1d20b8743ef8d4097da455ce4",
+      "snapshot_sha256": "dbbc2eef4e078c81bdead780678326c1a1215a577a10e516826decd5026485fe",
+      "event_count": 0,
+      "legacy_event_count": 0,
+      "replay_sha256": "0d38291e7d581464c5c9e86b550d1ebaac16d1800123710195b5ec2d1f161896",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F026",
+          "code": "ENERGY_INSUFFICIENT",
+          "command_id": "CMD-F026",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 0,
+          "result": "REJECTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F027",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "bc90b61ab60ede66f1050f029459aa397cc3af49d3c3de2f422a1851d09c9810",
+      "snapshot_sha256": "805c9609d8042fb55161d865b0ecd015a8b0f90de179b10d17247dbe549ba43a",
+      "event_count": 8,
+      "legacy_event_count": 8,
+      "replay_sha256": "605bb108751b687650ed2a2c419f9e411e19c8221bc81d17892fda27a6cb2b0e",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F027",
+          "code": "OK",
+          "command_id": "CMD-F027",
+          "commit": {
+            "battle_id": "BATTLE-F027",
+            "command_id": "CMD-F027",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "cef3d1d6d5e013d7ab0e27fac7b4fe3abe59526d20e005718fd67452420cb612"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK8",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 2,
+                  "overkill": 6,
+                  "raw": 8,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "WIN"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F027",
+                "command_id": "CMD-F027",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 8
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F027",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK8",
+                  "instance_id": "C_ATK8",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 8,
+              "outcome": "WIN",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 0,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK8"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F028",
+      "status": "BLOCKED",
+      "runtime_execution": "NOT_RUN",
+      "reason": "LEGACY_RECEIPT_FULL_COMMAND_AND_EVENT_RANGE_MISSING",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1"
+    },
+    {
+      "fixture_id": "F029",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "461cb82a60b3c4ef2653d7636ea44200bfed5e275070ca78e737e3ac304ad8f9",
+      "snapshot_sha256": "cecb9b13537717952b5ebdad49f60de8ccb3bc5aa78e1032f2f3ecdd8fe07243",
+      "event_count": 9,
+      "legacy_event_count": 9,
+      "replay_sha256": "1a8187321dc18d5cd6e593bf3efabf2855fd9e3132bad24cc649ef33148f38ff",
+      "p15_calls": 2,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F029",
+          "code": "OK",
+          "command_id": "CMD-F029-1",
+          "commit": {
+            "battle_id": "BATTLE-F029",
+            "command_id": "CMD-F029-1",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "d61f8cd3bcc8dca708e93de552a00c8b8266e5267817e20267143a46dc12831a"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK8",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 5,
+                  "hp_after": 9,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 8,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 6
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F029",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK8",
+                  "instance_id": "C_ATK8",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 6,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 9,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK8"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        },
+        {
+          "battle_id": "BATTLE-F029",
+          "code": "DUPLICATE_NO_OP",
+          "command_id": "CMD-F029-1",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "DUPLICATE_NO_OP"
+        },
+        {
+          "battle_id": "BATTLE-F029",
+          "code": "CARD_NOT_IN_HAND",
+          "command_id": "CMD-F029-2",
+          "commit": null,
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "REJECTED"
+        },
+        {
+          "battle_id": "BATTLE-F029",
+          "code": "OK",
+          "command_id": "CMD-F029-3",
+          "commit": {
+            "battle_id": "BATTLE-F029",
+            "command_id": "CMD-F029-3",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-3",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "59d9ab03ffa60cc0550edf1f00edcc3152319960223e1e9be13b047e0729c759"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 2,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-3",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "side": "PLAYER",
+                  "turn_number": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "TURN_ENDED",
+                "revision": 2,
+                "seq": 8
+              },
+              {
+                "battle_id": "BATTLE-F029",
+                "command_id": "CMD-F029-3",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 2,
+                "seq": 9
+              }
+            ],
+            "previous_revision": 1,
+            "snapshot": {
+              "battle_id": "BATTLE-F029",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK8",
+                  "instance_id": "C_ATK8",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 9,
+              "outcome": "ONGOING",
+              "phase": "ENEMY_READY",
+              "revision": 2,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 9,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK8"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 2,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F030",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "172fcb8fddb4768bd2b83e317a043499b378db38874c098035f97ba8e936b958",
+      "snapshot_sha256": "a76cc0b79132993443b82a54e51fb018b1a2ec532e179e082625858e6f0dd119",
+      "event_count": 10,
+      "legacy_event_count": 12,
+      "replay_sha256": "d886c903ffc141bd5998ca957e14c5fea192683fce0f4c215cae795996496629",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F030",
+          "code": "OK",
+          "command_id": "CMD-F030",
+          "commit": {
+            "battle_id": "BATTLE-F030",
+            "command_id": "CMD-F030",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "8b6d6067d3fb92b0bc05259edb1acb803cf4754ac9be531732c2574082a16364"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_ATK4",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "B1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 8,
+                  "hp_loss": 4,
+                  "overkill": 0,
+                  "raw": 4,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "B1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "B1",
+                  "target_unit_ids": [
+                    "P1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 4,
+                  "overkill": 0,
+                  "raw": 4,
+                  "shield_after": 0,
+                  "source_unit_id": "B1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 8
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "LOSS"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 9
+              },
+              {
+                "battle_id": "BATTLE-F030",
+                "command_id": "CMD-F030",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 10
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F030",
+              "boss_states": [
+                {
+                  "current_phase_id": "PHASE1",
+                  "proposed_phase_ids": [],
+                  "unit_id": "B1"
+                }
+              ],
+              "card_instances": [
+                {
+                  "card_id": "C_ATK4",
+                  "instance_id": "C_ATK4",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 10,
+              "outcome": "LOSS",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 0,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "B1",
+                  "hp": 8,
+                  "max_hp": 20,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "B1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_ATK4"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F031",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "99f23cd22b0a463195813928823304a10b40d71d8f1fcb210d390cff48171a96",
+      "snapshot_sha256": "96d30f54c9c41fd82a3f3c38f94e2cbe42887e46463907e6805195bfe5cf4361",
+      "event_count": 5,
+      "legacy_event_count": 6,
+      "replay_sha256": "16aa63ab4738068081a4a5f47abcd5c40bd74aa0e063f413d826f1974bc4a6ab",
+      "p15_calls": 0,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F031",
+          "code": "OK",
+          "command_id": "CMD-F031",
+          "commit": {
+            "battle_id": "BATTLE-F031",
+            "command_id": "CMD-F031",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F031",
+                "command_id": "CMD-F031",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "3f9f779968560cfdd83700b3f23d23e55ea983faf13621ebf5d782121086f524"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F031",
+                "command_id": "CMD-F031",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 0,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 3,
+                  "shield_after": 0,
+                  "source_unit_id": "E1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F031",
+                "command_id": "CMD-F031",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "UNIT_DIED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F031",
+                "command_id": "CMD-F031",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "outcome": "WIN"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "BATTLE_FINISHED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F031",
+                "command_id": "CMD-F031",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 5
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F031",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 5,
+              "outcome": "WIN",
+              "phase": "TERMINAL",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 0,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [
+                    {
+                      "insert_order": 0,
+                      "remaining_triggers": 1,
+                      "source_unit_id": "E1",
+                      "stacks": 1,
+                      "status_id": "BURN",
+                      "status_instance_id": "legacy:E1:0"
+                    }
+                  ],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F032",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "6f1b68eb54b24f24007c68f1fb26bce01075b045c6e9376951e378b7fa40ee11",
+      "snapshot_sha256": "8af298d144c1da60c04a5b81915bf72c736a7585822b29a0691993e53c926f43",
+      "event_count": 8,
+      "legacy_event_count": 8,
+      "replay_sha256": "d8612a59489a7379fffd1d964b6824fe6a9e995f5b3505119569b47e6d0f9078",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F032",
+          "code": "OK",
+          "command_id": "CMD-F032",
+          "commit": {
+            "battle_id": "BATTLE-F032",
+            "command_id": "CMD-F032",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "99f2038bbf5842c24c0004d0c0c53a2dde9d74b156c4cdaa24883a99b4c6b47e"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "amount": 1,
+                  "energy_after": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "ENERGY_SPENT",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "from_zone": "hand",
+                  "instance_id": "C_DOUBLE",
+                  "to_index": 0,
+                  "to_zone": "discard"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "CARD_MOVED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 3,
+                  "hp_after": 12,
+                  "hp_loss": 0,
+                  "overkill": 0,
+                  "raw": 3,
+                  "shield_after": 2,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 5
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "effect_index": 1,
+                  "source_unit_id": "P1",
+                  "target_unit_ids": [
+                    "E1"
+                  ]
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "EFFECT_STARTED",
+                "revision": 1,
+                "seq": 6
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 2,
+                  "hp_after": 9,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 5,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "E1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 7
+              },
+              {
+                "battle_id": "BATTLE-F032",
+                "command_id": "CMD-F032",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 8
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F032",
+              "boss_states": [],
+              "card_instances": [
+                {
+                  "card_id": "C_DOUBLE",
+                  "instance_id": "C_DOUBLE",
+                  "owner_unit_id": "P1"
+                }
+              ],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 2,
+              "last_event_seq": 8,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 1,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 9,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [
+                  "C_DOUBLE"
+                ],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    },
+    {
+      "fixture_id": "F033",
+      "status": "PASS",
+      "layer": "AUTHOR_P02_SEMANTIC_PROJECTION",
+      "original_wire_byte_compatibility": "BLOCKED_PENDING_P02_P13_MAPPING_ACCEPTANCE",
+      "source_fixture_sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "state_sha256": "4229b4f1efa36e012676b1000a1c79f4d5f9e3b29af83ec6d183d455bc59d2ca",
+      "snapshot_sha256": "dabf9beb94d16e33e75799e3fbe1107d37331dee0f259e46f57b4909e0d6ff1f",
+      "event_count": 5,
+      "legacy_event_count": 7,
+      "replay_sha256": "7794758cfeb08d255189153825c4fcb0bb226e19ff7249104ab42a63ea1ad8d7",
+      "p15_calls": 1,
+      "p16_calls": 0,
+      "replies": [
+        {
+          "battle_id": "BATTLE-F033",
+          "code": "OK",
+          "command_id": "CMD-F033",
+          "commit": {
+            "battle_id": "BATTLE-F033",
+            "command_id": "CMD-F033",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleCommitBatch",
+            "events": [
+              {
+                "battle_id": "BATTLE-F033",
+                "command_id": "CMD-F033",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "command_sha256": "b9cc05593b11a8ecb405e1e29388e9edd632c999825a539b34588a7fa2bc7820"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_ACCEPTED",
+                "revision": 1,
+                "seq": 1
+              },
+              {
+                "battle_id": "BATTLE-F033",
+                "command_id": "CMD-F033",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "absorbed": 0,
+                  "hp_after": 7,
+                  "hp_loss": 3,
+                  "overkill": 0,
+                  "raw": 3,
+                  "shield_after": 0,
+                  "source_unit_id": "P1",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "DAMAGE_APPLIED",
+                "revision": 1,
+                "seq": 2
+              },
+              {
+                "battle_id": "BATTLE-F033",
+                "command_id": "CMD-F033",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "operation": "REMOVED",
+                  "status_id": "BURN",
+                  "status_instance_id": "legacy:P1:0",
+                  "target_unit_id": "P1"
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "STATUS_CHANGED",
+                "revision": 1,
+                "seq": 3
+              },
+              {
+                "battle_id": "BATTLE-F033",
+                "command_id": "CMD-F033",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "turn_number": 2
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "PLAYER_TURN_STARTED",
+                "revision": 1,
+                "seq": 4
+              },
+              {
+                "battle_id": "BATTLE-F033",
+                "command_id": "CMD-F033",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "data": {
+                  "revision": 1
+                },
+                "dto_type": "BattleEvent",
+                "event_type": "COMMAND_COMMITTED",
+                "revision": 1,
+                "seq": 5
+              }
+            ],
+            "previous_revision": 0,
+            "snapshot": {
+              "battle_id": "BATTLE-F033",
+              "boss_states": [],
+              "card_instances": [],
+              "content_version": "fixture:P02-0.1.0",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleSnapshot",
+              "energy": 3,
+              "last_event_seq": 5,
+              "outcome": "ONGOING",
+              "phase": "PLAYER_READY",
+              "revision": 1,
+              "rng": {
+                "algorithm": "xorshift32-v1",
+                "draw_count": 0,
+                "initial_seed": 1,
+                "state": 1
+              },
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "turn_number": 2,
+              "units": [
+                {
+                  "definition_id": "P1",
+                  "hp": 7,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "P1"
+                },
+                {
+                  "definition_id": "P2",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 1,
+                  "statuses": [],
+                  "unit_id": "P2"
+                },
+                {
+                  "definition_id": "P3",
+                  "hp": 10,
+                  "max_hp": 10,
+                  "shield": 0,
+                  "side": "PLAYER",
+                  "slot": 2,
+                  "statuses": [],
+                  "unit_id": "P3"
+                },
+                {
+                  "definition_id": "E1",
+                  "hp": 12,
+                  "max_hp": 12,
+                  "shield": 0,
+                  "side": "ENEMY",
+                  "slot": 0,
+                  "statuses": [],
+                  "unit_id": "E1"
+                }
+              ],
+              "zones": {
+                "discard": [],
+                "draw": [],
+                "exhaust": [],
+                "hand": []
+              }
+            }
+          },
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleReply",
+          "observed_revision": 1,
+          "result": "COMMITTED"
+        }
+      ]
+    }
+  ]
+}

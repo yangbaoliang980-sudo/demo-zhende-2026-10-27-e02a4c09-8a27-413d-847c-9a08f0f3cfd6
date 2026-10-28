@@ -1,0 +1,13 @@
+{
+  "scope": "ISOLATED_REAL_P14_CORE_WITH_SCRIPTED_P15_P16_TEST_INPUTS",
+  "commands_committed": 10,
+  "events_committed": 52,
+  "outcome": "WIN",
+  "player_turn_number": 2,
+  "p15_candidate_calls": 8,
+  "p16_candidate_calls": 1,
+  "terminal_event_seq": 51,
+  "snapshot_file_sha256": "845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c",
+  "result_file_sha256": "b881e89980c3aaac5b53c6dc33307e23310e2fe12b0869372c8a3ffe367cb761",
+  "replay_input_sha256": "4fba245436f689b0912ec79772bf350f040f987ae94ad94aeaa5d576e4b2ff08"
+}

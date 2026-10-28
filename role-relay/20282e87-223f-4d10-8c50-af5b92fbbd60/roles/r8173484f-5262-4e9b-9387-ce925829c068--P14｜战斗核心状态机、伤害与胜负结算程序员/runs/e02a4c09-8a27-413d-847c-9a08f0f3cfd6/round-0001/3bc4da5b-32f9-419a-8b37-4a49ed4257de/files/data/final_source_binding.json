@@ -1,0 +1,236 @@
+{
+  "status": "PASS",
+  "scope": "Final runtime, tests, demo and original P13 contracts match actually executed author_004 bytes",
+  "reference_run": "evidence/runs/author_004/run.json",
+  "reference_run_sha256": "2b7092e0d2c61b4f5286c20ca2d78653303aee7703bdd44e1268f8fb02d0b501",
+  "files": [
+    {
+      "relative_path": "battle_core/__init__.py",
+      "size_bytes": 672,
+      "sha256": "5c5da680c4c472b213ac75b2a2c5fabe53b1d9d560d537c09f0eca302da8e42b",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/__main__.py",
+      "size_bytes": 964,
+      "sha256": "d0fcb463bed855bef20d015b7d6b5c5443c6f248789ecf78e0350b81d0faa15f",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/core.py",
+      "size_bytes": 14017,
+      "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/replay.py",
+      "size_bytes": 2424,
+      "sha256": "6a5d5eef5b2f357289c447035a6673142e8a79f9a2a197c9a4f41a7bf90445d5",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/rng.py",
+      "size_bytes": 1510,
+      "sha256": "63582486ea35ae90272b8146a2dcfa1c3c7b084029da8349b6da59edd0a738ed",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "battle_core/wire.py",
+      "size_bytes": 730,
+      "sha256": "f5720daa1a54a1ab88c90b81530559fa23e3384e8fc3a9701453b73903dad741",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/__init__.py",
+      "size_bytes": 81,
+      "sha256": "63cffe3c5678e9ee87fdff0f48ea6c711f7dd81c9e4fc664d7e949e18854a2c0",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/helpers.py",
+      "size_bytes": 4151,
+      "sha256": "98c2f926490a15af0f572754539b507aa5fba9020dad6004259d71afb0cc058a",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/p02_adapter.py",
+      "size_bytes": 10237,
+      "sha256": "35c1b2ebc53264484491d40cdfdb2d6a1eb6841476088d9375fad73b946beb5c",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/test_content_replay.py",
+      "size_bytes": 9296,
+      "sha256": "ea72072e143cbfb664b86d86f4367e47eac650cca0ee803875a137486ec15818",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/test_core.py",
+      "size_bytes": 27059,
+      "sha256": "c6035ae7f05bd16d3c4d2654c5ad35186c2799e5f0d84c3dbbd48ff9a4ba6784",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "resolution_replay_tests/test_p02_vectors.py",
+      "size_bytes": 2522,
+      "sha256": "fcb54b1dac8cc77bedf6370d73abaa79687e0d5e1584cf2643b2ece04ba353f9",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "examples/demo.py",
+      "size_bytes": 5395,
+      "sha256": "c26bf04e887a5d103b06d36d5f42f7709439e165ef9fbe01c9cececaa940c1bb",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "examples/fixture_ports.py",
+      "size_bytes": 1772,
+      "sha256": "bbb97f90d9c6559f5180db0077d06ab9e06d0611f8bb5f9fe80cfc0e671f759f",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/canonical_vectors.json",
+      "size_bytes": 39486,
+      "sha256": "8a1c838be0b3bcb2d11f43ef7ed8bf13b6c9bf06903482f1e00108c429a58dd9",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/contract_semantics.md",
+      "size_bytes": 8986,
+      "sha256": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleCommand.json",
+      "size_bytes": 222,
+      "sha256": "d06e9cfdee8a4ac8d2ff887cc40a36d7bb52a3b91ebe0dfa20997ede57f1e752",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleCommitBatch.json",
+      "size_bytes": 2894,
+      "sha256": "3623948d7b6691f66642f4b8924157a5ab13026c101ce91d881827978121954d",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleEvent.json",
+      "size_bytes": 326,
+      "sha256": "d4b232132c32acba46d61aa44c8873a06bc477b530a066b150a48928f465f07d",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleReply.json",
+      "size_bytes": 3373,
+      "sha256": "6fbe5755c9775b14753607a7c391db8550e4aaaf2de8e1b8bafcbea5596b50e7",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleResult.json",
+      "size_bytes": 572,
+      "sha256": "f5364a92f3fe8c4f10f7379bd6f990282eb7aba015e5a64e1d77f11f1252b2bf",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleSnapshot.json",
+      "size_bytes": 1516,
+      "sha256": "2816a3ce5563f0785fd0286567b0d3d6e39ec31e4c6af5b8e30136d982a4aaf4",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/BattleState.json",
+      "size_bytes": 1796,
+      "sha256": "6c98563414a101b79d8af0bc12e811de5c2306bb3da5a9a255689a7be9783d07",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/DeckPatchCandidate.json",
+      "size_bytes": 675,
+      "sha256": "2a2b083d6aa67ecf45301e700ac4d387f56f11123f909875efae2dcda578f362",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/EnemyIntent.json",
+      "size_bytes": 346,
+      "sha256": "f32290c5782222dbd3ff3ce9399b1d7329ff4cc9de9ef7104256fb5688497835",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/examples/PhaseProposal.json",
+      "size_bytes": 359,
+      "sha256": "a02a60dd9cd73d48868c3d85cb4328d1be54653316e34788bc1a181611ce1b48",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/interface_rfcs.json",
+      "size_bytes": 4828,
+      "sha256": "1e9ec5bf53a4d47844a5fe57f2505798ef27e01f975c36a0c7f5b53cfbed8bed",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/contracts/internal/presentation_adapter_spec.md",
+      "size_bytes": 3306,
+      "sha256": "f081d3d2b2153c87045a0b007b5c8621147955a3c49eb42ed593785b48421c27",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/ports.py",
+      "size_bytes": 3699,
+      "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    },
+    {
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/sequence.py",
+      "size_bytes": 2594,
+      "sha256": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "status": "SAME_BYTES_AS_AUTHOR_004"
+    }
+  ]
+}
