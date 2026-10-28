@@ -1,0 +1,131 @@
+# P03｜卡牌、牌组与角色专属技能策划
+
+执行阶段：S01—S02｜版本：P03-CARDS-0.1.0-draft
+
+## 一、上游核验结果
+
+已读取本次附件，并通过 GitHub 连接核对 V6.0 固定提交中的岗位职责和接口所有权。
+
+| 核验对象 | 结果 |
+| --- | --- |
+| V6.0 岗位职责 | 已核对，固定提交 `8c370d7` |
+| P01 完整交接 ZIP | SHA-256 一致，16 项文件，CRC 通过 |
+| P02 完整交付 ZIP | SHA-256 一致，15 项文件，CRC 通过 |
+| P02 战斗规则 | 已取得 `P02-BATTLE-0.1.0-draft` |
+| P02 回放测试向量 | 33 项已取得 |
+| P13 正式 Schema 与路径映射 | BLOCKED |
+| P04 角色定位正式配置 | BLOCKED |
+| P05 正式数值预算 | BLOCKED |
+| P08 学习资源政策 | BLOCKED |
+
+核验发现：单独上传的 `decisions_pending(2).tsv` 和 `effect_priority(1).tsv` 均只有 11 字节，不能作为完整输入。我采用已通过哈希核对的 P01、P02 ZIP 内对应文件，不修改上游原件。
+
+本岗继续采用隔离研发方式。可以真实制作和校验卡牌内容、牌池及构筑测试数据，但角色占位 ID、数值和未批准关键词均不得作为正式工程配置发布。
+
+## 二、本岗实际交付
+
+P03 S01—S02 完整交付包
+
+本地静态校验通过
+
+17 份实体文件，包含卡牌配置、构筑样例、测试脚本、执行日志、接口阻塞记录与 SHA-256 清单。
+
+下载 P03 完整交付 ZIP
+ZIP SHA-256：`de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999`
+
+四份岗位强制成果均已生成：
+
+| 实体文件 | 下载 |
+| --- | --- |
+| `card_catalog.json` | 卡牌定义和关联数据 |
+| `party_deck_rules.md` | 三人卡组与牌区规则 |
+| `card_effect_examples.json` | 效果数据与计算样例 |
+| `card_choice_cases.tsv` | 合法及非法出牌案例 |
+
+其余内容包括角色与牌池关联表、24 种构筑 fixture、关键词规范、战斗事件与表现映射以及接口 RFC，全部包含在 ZIP 中。
+
+## 三、完成的内容
+
+# 10
+
+卡牌配置记录
+
+# 24
+
+测试编队构筑
+
+# 17
+
+出牌选择案例
+
+卡牌内容包括 S01 的攻击、护盾、治疗三张基础牌，S02 的持续伤害样例以及四个测试角色槽的专属牌。另有增益和减益两张提议牌，因效果时序和数值规则未批准，保持禁用状态。
+
+构筑测试使用四个临时角色槽枚举 24 种有序三人组合。它们仅用于验证关联关系与卡池差异，不代表正式批准新增四名角色。
+
+同一战斗状态下提供了攻击、治疗、防御及持续伤害等不同选择，且保留费用不足、目标错误、非手牌及专属技能归属错误的反例。
+
+## 四、实际验证结果
+
+P03 本岗静态检查：PASS
+
+实际检查断言
+
+# 1,747
+
+错误数据反例检查
+
+# 6/6
+
+已在重新解压的独立目录再次执行校验脚本，退出码为 0；ZIP 的 17 项文件均可读取，16 项清单哈希全部匹配。
+
+下载原始静态测试日志
+下载 SHA-256 文件清单
+
+以上 PASS 仅限本岗静态数据与交付完整性，不等于已经通过真实游戏的单元、契约或端到端测试。
+
+## 五、下游交接与待解除阻塞
+
+| 后续负责人 | 必须继续处理的事项 | 状态 |
+| --- | --- | --- |
+| P22 | 全局 ID、正式 Schema、悬空引用独立验证 | BLOCKED |
+| P04 / P05 | 正式角色配置、卡牌数值预算 | BLOCKED |
+| P08 / P01 | 学习资源与零复习日政策 | BLOCKED |
+| P13 | 正式 DTO、工程路径映射 | BLOCKED |
+| P15 | 将卡牌数据接入真实牌堆候选模块并测试 | NOT_RUN |
+| P32 / P35 | 独立测试及验收 | NOT_RUN |
+| EXT-INTEGRATOR | 跨模块实际集成，等待用户指定 | NOT_RUN |
+
+完整的阻塞证据和接口申请见 P03 接口 RFC 与阻塞说明。
+
+本岗最终状态：`LOCAL_CONTENT_DELIVERED / IMPLEMENTATION_BLOCKED`。
+
+P03 已交付可机读的卡牌内容、构筑数据及可复现的本地校验成果。没有修改 GitHub 仓库，没有代写 P14/P15 的运行时代码，也没有宣称完成正式工程集成。后续岗位可以直接接收完整 ZIP，以实际文件和测试证据继续研发。
+
+---
+
+## 本次归档的原始文件
+
+- [requirements_baseline_v6.txt](files/documents/requirements_baseline_v6.txt)
+- [decisions_pending.tsv](files/data/decisions_pending.tsv)
+- [task_register.tsv](files/data/task_register.tsv)
+- [handoff_receipts.tsv](files/data/handoff_receipts.tsv)
+- [gate_issues.tsv](files/data/gate_issues.tsv)
+- [P01_S00_V6_完整交接包.zip](files/archives/P01_S00_V6_%E5%AE%8C%E6%95%B4%E4%BA%A4%E6%8E%A5%E5%8C%85.zip)
+- [battle_state_machine.md](files/documents/battle_state_machine.md)
+- [effect_priority.tsv](files/data/effect_priority.tsv)
+- [terminal_phase_truth_table.tsv](files/data/terminal_phase_truth_table.tsv)
+- [battle_replay_fixtures.json](files/data/battle_replay_fixtures.json)
+- [interface_rfc_and_blockers.md](files/documents/interface_rfc_and_blockers.md)
+- [P02_DELIVERY_README.md](files/documents/P02_DELIVERY_README.md)
+- [P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip](files/archives/P02_S01_%E6%88%98%E6%96%97%E7%8A%B6%E6%80%81%E6%9C%BA%E4%B8%8E%E7%A1%AE%E5%AE%9A%E6%80%A7%E7%BB%93%E7%AE%97%E8%A7%84%E5%88%99_V0.1_%E5%AE%8C%E6%95%B4%E4%BA%A4%E4%BB%98%E5%8C%85.zip)
+- [9c42e18d-card_choice_cases.tsv](files/data/9c42e18d-card_choice_cases.tsv)
+- [9c42e18d-1-card_choice_cases.tsv](files/data/9c42e18d-1-card_choice_cases.tsv)
+- [card_catalog.json](files/data/card_catalog.json)
+- [card_choice_cases.tsv](files/data/card_choice_cases.tsv)
+- [interface_rfc_blockers.md](files/documents/interface_rfc_blockers.md)
+- [manifest.sha256.tsv](files/data/manifest.sha256.tsv)
+- [P03_static_validation.log](files/other/P03_static_validation.log)
+- [card_effect_examples.json](files/data/card_effect_examples.json)
+- [P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip](files/archives/P03_S01_S02_%E5%8D%A1%E7%89%8C%E7%89%8C%E7%BB%84%E4%B8%8E%E4%B8%93%E5%B1%9E%E6%8A%80%E8%83%BD_V0.1_%E5%AE%8C%E6%95%B4%E4%BA%A4%E4%BB%98%E5%8C%85.zip)
+- [party_deck_rules.md](files/documents/party_deck_rules.md)
+
