@@ -1,0 +1,233 @@
+{
+  "producer": "P04",
+  "task_id": "TASK-P04-S02-LOCAL-001",
+  "format": "P04-CHARACTER-SKELETON",
+  "format_version": "P04-SKELETON-0.1.0-draft",
+  "release_status": "ISOLATED_TEST_ONLY_NOT_APPROVED_FOR_RUNTIME",
+  "scope_stage": "S02_CHARACTER_SKELETON;S06_CONTRACT_FIXTURE_ONLY",
+  "decision_refs": [
+    "DEC-004",
+    "DEC-009",
+    "DEC-003"
+  ],
+  "requirement_ids": [
+    "REQ-005",
+    "REQ-027",
+    "REQ-033"
+  ],
+  "upstream_sha256": {
+    "P01_complete_zip": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+    "P02_complete_zip": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+    "P03_complete_zip": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+    "P03_card_catalog": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+    "P03_character_card_pool": "284199ae93a484e808d1546975b16cec4d14071d01f84c0b52865bf76d2db3e6"
+  },
+  "source_v6_git_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "contract_state": {
+    "P13_actual_path_mapping": "BLOCKED",
+    "P13_internal_DTO": "BLOCKED",
+    "P22_content_id_registry_and_schema": "BLOCKED",
+    "P05_economic_balance": "BLOCKED",
+    "P08_learning_reward_policy": "BLOCKED",
+    "P17_P21_real_transaction_persistence": "NOT_RUN"
+  },
+  "character_count": 3,
+  "character_count_is_approved_mvp": false,
+  "party_constraints": {
+    "required_active_slots": 3,
+    "slot_indices": [
+      0,
+      1,
+      2
+    ],
+    "ordered": true,
+    "duplicate_character_ids_allowed": false,
+    "requires_owned": true,
+    "requires_content_definition": true,
+    "role_uniqueness_required": false,
+    "official_constraint_status": "three_active_confirmed; prototype roster unapproved"
+  },
+  "stat_schema": {
+    "max_hp": "nonnegative integer (suggest positive)",
+    "attack": "nonnegative integer",
+    "defense": "nonnegative integer",
+    "support": "nonnegative integer",
+    "scaling_boundary": "fields do not affect P03 card damage/cost/target or P02 battle state unless P13/P05/P14 approve versioned adapter"
+  },
+  "economy_fixture": {
+    "xp_kind": "MOCK_P04_XP_TOTAL_PER_CHARACTER",
+    "cost_resource": "MOCK_P04_TRAINING_TOKEN",
+    "xp_is_spent": false,
+    "wallet_owner": "P17",
+    "atomic_commit_owner": "P21 via P17 submitted wallet delta",
+    "balance_origin": "FIXTURE_STAGE_CLEAR_GRANT_ONLY",
+    "anki_rewards": "NOT_IMPLEMENTED_NOT_REFERENCED"
+  },
+  "optional_features": {
+    "equipment": "PENDING_DEC-009_DISABLED",
+    "rarity": "PENDING_DEC-009_DISABLED",
+    "affection": "PENDING_DEC-009_DISABLED",
+    "star_up": "PENDING_DEC-009_DISABLED"
+  },
+  "characters": [
+    {
+      "character_id": "MOCK_P04_CHAR_001",
+      "display_name": "璃火",
+      "official_name_approved": false,
+      "role_code": "ATTACK",
+      "position_hint": "前列攻击位",
+      "combat_role_summary": "对单体攻击专属牌贡献；原始牌伤害不随属性自动放大",
+      "max_level_fixture": 5,
+      "base_stats": {
+        "max_hp": 96,
+        "attack": 17,
+        "defense": 5,
+        "support": 3
+      },
+      "per_level_growth": {
+        "max_hp": 12,
+        "attack": 4,
+        "defense": 1,
+        "support": 1
+      },
+      "derived_stat_formula": "base_stats[field] + (level - 1) * per_level_growth[field] (integer; fixture only)",
+      "skill": {
+        "local_skill_id": "MOCK_P04_SKILL_001",
+        "p03_fixture_skill_id": "MOCK_P03_SKILL_A",
+        "skill_rank_initial": 1,
+        "skill_rank_max_fixture": 3,
+        "skill_rank_effect_on_p03_card": "NONE_PENDING_P03_P05_P13_P14_CONTRACT"
+      },
+      "p03_fixture_compatibility": {
+        "p03_slot_character_id": "MOCK_P03_CHAR_A",
+        "signature_card_id": "MOCK_P03_CARD_A_EDGE",
+        "copies_per_selected_character_fixture": 1
+      },
+      "acquisition_design": {
+        "proposed_source_kind": "FIXTURE_STAGE_CLEAR_CHARACTER_GRANT",
+        "proposed_consumer": "P17 character ownership",
+        "official_drop_table": "BLOCKED_P18_P05",
+        "deduplication_hint": "event_identity_by_P17_P21"
+      },
+      "art": {
+        "asset_id": null,
+        "asset_path": null,
+        "status": "MISSING_NOT_CLAIMED",
+        "owner": "P26"
+      },
+      "unapproved_extensions": {
+        "rarity": false,
+        "equipment": false,
+        "affection": false,
+        "star_up": false
+      },
+      "record_status": "ISOLATED_CONTENT_SAMPLE_NOT_P22_REGISTERED"
+    },
+    {
+      "character_id": "MOCK_P04_CHAR_002",
+      "display_name": "千澄",
+      "official_name_approved": false,
+      "role_code": "DEFENSE",
+      "position_hint": "前列守护位",
+      "combat_role_summary": "为队伍提供护盾专属牌；防御属性不自动改写P03护盾量",
+      "max_level_fixture": 5,
+      "base_stats": {
+        "max_hp": 132,
+        "attack": 8,
+        "defense": 15,
+        "support": 4
+      },
+      "per_level_growth": {
+        "max_hp": 18,
+        "attack": 1,
+        "defense": 4,
+        "support": 1
+      },
+      "derived_stat_formula": "base_stats[field] + (level - 1) * per_level_growth[field] (integer; fixture only)",
+      "skill": {
+        "local_skill_id": "MOCK_P04_SKILL_002",
+        "p03_fixture_skill_id": "MOCK_P03_SKILL_B",
+        "skill_rank_initial": 1,
+        "skill_rank_max_fixture": 3,
+        "skill_rank_effect_on_p03_card": "NONE_PENDING_P03_P05_P13_P14_CONTRACT"
+      },
+      "p03_fixture_compatibility": {
+        "p03_slot_character_id": "MOCK_P03_CHAR_B",
+        "signature_card_id": "MOCK_P03_CARD_B_WALL",
+        "copies_per_selected_character_fixture": 1
+      },
+      "acquisition_design": {
+        "proposed_source_kind": "FIXTURE_STAGE_CLEAR_CHARACTER_GRANT",
+        "proposed_consumer": "P17 character ownership",
+        "official_drop_table": "BLOCKED_P18_P05",
+        "deduplication_hint": "event_identity_by_P17_P21"
+      },
+      "art": {
+        "asset_id": null,
+        "asset_path": null,
+        "status": "MISSING_NOT_CLAIMED",
+        "owner": "P26"
+      },
+      "unapproved_extensions": {
+        "rarity": false,
+        "equipment": false,
+        "affection": false,
+        "star_up": false
+      },
+      "record_status": "ISOLATED_CONTENT_SAMPLE_NOT_P22_REGISTERED"
+    },
+    {
+      "character_id": "MOCK_P04_CHAR_003",
+      "display_name": "羽铃",
+      "official_name_approved": false,
+      "role_code": "HEAL",
+      "position_hint": "后列支援位",
+      "combat_role_summary": "为队伍提供治疗专属牌；支援属性不自动改写P03治疗量",
+      "max_level_fixture": 5,
+      "base_stats": {
+        "max_hp": 108,
+        "attack": 7,
+        "defense": 7,
+        "support": 17
+      },
+      "per_level_growth": {
+        "max_hp": 13,
+        "attack": 1,
+        "defense": 1,
+        "support": 4
+      },
+      "derived_stat_formula": "base_stats[field] + (level - 1) * per_level_growth[field] (integer; fixture only)",
+      "skill": {
+        "local_skill_id": "MOCK_P04_SKILL_003",
+        "p03_fixture_skill_id": "MOCK_P03_SKILL_C",
+        "skill_rank_initial": 1,
+        "skill_rank_max_fixture": 3,
+        "skill_rank_effect_on_p03_card": "NONE_PENDING_P03_P05_P13_P14_CONTRACT"
+      },
+      "p03_fixture_compatibility": {
+        "p03_slot_character_id": "MOCK_P03_CHAR_C",
+        "signature_card_id": "MOCK_P03_CARD_C_MEND",
+        "copies_per_selected_character_fixture": 1
+      },
+      "acquisition_design": {
+        "proposed_source_kind": "FIXTURE_STAGE_CLEAR_CHARACTER_GRANT",
+        "proposed_consumer": "P17 character ownership",
+        "official_drop_table": "BLOCKED_P18_P05",
+        "deduplication_hint": "event_identity_by_P17_P21"
+      },
+      "art": {
+        "asset_id": null,
+        "asset_path": null,
+        "status": "MISSING_NOT_CLAIMED",
+        "owner": "P26"
+      },
+      "unapproved_extensions": {
+        "rarity": false,
+        "equipment": false,
+        "affection": false,
+        "star_up": false
+      },
+      "record_status": "ISOLATED_CONTENT_SAMPLE_NOT_P22_REGISTERED"
+    }
+  ]
+}
