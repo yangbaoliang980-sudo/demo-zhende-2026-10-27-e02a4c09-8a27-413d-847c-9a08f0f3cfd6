@@ -1,0 +1,58 @@
+{
+  "schema_version": "P10-DELIVERABLE-STATUS/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "items": [
+    {
+      "requested": "anki_hook_probe.py",
+      "delivered_path": "anki_hook_probe.py",
+      "status": "DELIVERED_REPORT_APPENDIX_ONLY",
+      "limit": "环境前置/静态源码复核；真实Hook执行NOT_RUN"
+    },
+    {
+      "requested": "probe_log_redacted.txt",
+      "delivered_path": "probe_log_redacted.txt",
+      "status": "DELIVERED_PREFLIGHT_RECORD_ONLY",
+      "limit": "实际环境/输入检查输出；不是四键/Undo原始样例"
+    },
+    {
+      "requested": "addon_source/**",
+      "delivered_path": null,
+      "status": "BLOCKED",
+      "reason": "缺真实来源世代/Undo、目标版、字段授权、实际路径及P12合同；执行仅交报告例外"
+    },
+    {
+      "requested": "plugin_outbox_tests.py",
+      "delivered_path": null,
+      "status": "NOT_RUN",
+      "reason": "未实现插件outbox；没有将报告检查器测试替充队列测试"
+    },
+    {
+      "requested": "addon_manifest.json",
+      "delivered_path": "addon_manifest.json",
+      "status": "DELIVERED_NONINSTALLABLE_DESCRIPTOR",
+      "limit": "不具有Anki可安装包语义"
+    },
+    {
+      "requested": "plugin_installation_draft.ankiaddon",
+      "delivered_path": null,
+      "status": "BLOCKED",
+      "reason": "不生成可以误安装的空壳插件"
+    },
+    {
+      "requested": "real_rating_undo_samples",
+      "delivered_path": null,
+      "status": "NOT_RUN",
+      "reason": "真实样本0；详见sample_inventory.json"
+    },
+    {
+      "requested": "hook_probe_report",
+      "delivered_path": "hook_probe_report.md",
+      "status": "DELIVERED"
+    },
+    {
+      "requested": "configuration_disable_uninstall_guide",
+      "delivered_path": "configuration_disable_uninstall.md",
+      "status": "DELIVERED_WITH_NO_INSTALLABLE_PLUGIN_LIMIT"
+    }
+  ]
+}

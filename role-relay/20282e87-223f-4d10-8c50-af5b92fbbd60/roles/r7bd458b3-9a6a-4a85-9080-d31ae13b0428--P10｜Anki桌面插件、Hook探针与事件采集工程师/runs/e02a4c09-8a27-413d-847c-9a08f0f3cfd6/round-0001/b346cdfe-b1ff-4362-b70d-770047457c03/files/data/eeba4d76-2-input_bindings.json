@@ -1,0 +1,137 @@
+[
+  {
+    "path": "anki_hook_probe.py",
+    "size_bytes": 9544,
+    "sha256": "da1ce77460f32556247ccc7e02d77d3c2b31d3108c1db30af00e99d58db18914"
+  },
+  {
+    "path": "prerequisites.json",
+    "size_bytes": 2843,
+    "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39"
+  },
+  {
+    "path": "reference_inputs.json",
+    "size_bytes": 6352,
+    "sha256": "0585c509925440a9d9ba68f4d0a3467c2a670392a659d0565ff1289f27a4a8dc"
+  },
+  {
+    "path": "sample_inventory.json",
+    "size_bytes": 4578,
+    "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9"
+  },
+  {
+    "path": "source_input_receipt.json",
+    "size_bytes": 8652,
+    "sha256": "fe6262c87d8104e44d843c047f6f962f49d170e49ddc0b523e5200b9a130e972"
+  },
+  {
+    "path": "sources/anki_reference/LICENSE",
+    "size_bytes": 1930,
+    "sha256": "bde7d05790a05f1d1776b77a93ac32765310c8e6e578136183c2560475c500ef"
+  },
+  {
+    "path": "sources/anki_reference/proto/anki/collection.proto",
+    "size_bytes": 4677,
+    "sha256": "d062f9a100bc0cd716bb965ac0fea33e3bb2cabe6d72852d2397f1437047c98f"
+  },
+  {
+    "path": "sources/anki_reference/pylib/anki/collection.py",
+    "size_bytes": 47895,
+    "sha256": "c0948e5e0c5bb3fa7ec47adb3e2b190ec65e4cc12ba198945c7b87bd90c53035"
+  },
+  {
+    "path": "sources/anki_reference/qt/aqt/main.py",
+    "size_bytes": 66141,
+    "sha256": "0d73f9766856a3ad0a83b037d7128ba77a61b3e85cbee6d54e771be5a5e309a6"
+  },
+  {
+    "path": "sources/anki_reference/qt/aqt/operations/__init__.py",
+    "size_bytes": 9164,
+    "sha256": "09f2190bf47d981241da20be5d62881c657a1d5fc5f7a5a6c495585bf11304ac"
+  },
+  {
+    "path": "sources/anki_reference/qt/aqt/operations/collection.py",
+    "size_bytes": 1420,
+    "sha256": "08c7304ea415ae393792aaa955eb5a3801b37107fee4051043a7a1b73ba1aa69"
+  },
+  {
+    "path": "sources/anki_reference/qt/aqt/reviewer.py",
+    "size_bytes": 44022,
+    "sha256": "8a050453d9107cb4bd0b010e875fd912979bab3bf2f1213e80930e09ef885e16"
+  },
+  {
+    "path": "sources/anki_reference/qt/aqt/undo.py",
+    "size_bytes": 1018,
+    "sha256": "1806975eb5e8e99c33b41c9b5c77b5c152c250e3699b911f67961ec8212466fe"
+  },
+  {
+    "path": "sources/anki_reference/qt/tools/genhooks_gui.py",
+    "size_bytes": 50534,
+    "sha256": "0bd01d59c569342a7e1adc1951b3c436e0515b43b09e4e4018eca6ca3adaaff4"
+  },
+  {
+    "path": "sources/anki_reference/source-version.txt",
+    "size_bytes": 7,
+    "sha256": "aaf88aae4554ab52b958fb09299c50bafb9685bd9d67a8baa15997546f405583"
+  },
+  {
+    "path": "sources/upstream/p01_requirements_baseline_v6.txt",
+    "size_bytes": 6715,
+    "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1"
+  },
+  {
+    "path": "sources/upstream/p01_requirements_traceability.tsv",
+    "size_bytes": 17235,
+    "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+  },
+  {
+    "path": "sources/upstream/p08_interface_rfc.md",
+    "size_bytes": 3756,
+    "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e"
+  },
+  {
+    "path": "sources/upstream/p08_quarantine_resolution_policy.md",
+    "size_bytes": 7026,
+    "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d"
+  },
+  {
+    "path": "sources/upstream/p08_study_policy_draft.md",
+    "size_bytes": 18083,
+    "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e"
+  },
+  {
+    "path": "sources/upstream/p09_anki_field_observations.md",
+    "size_bytes": 3396,
+    "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4"
+  },
+  {
+    "path": "sources/upstream/p09_field_protocol_proposal.md",
+    "size_bytes": 3987,
+    "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19"
+  },
+  {
+    "path": "sources/upstream/p09_formal_prerequisites.json",
+    "size_bytes": 3498,
+    "sha256": "30368c8678af30e43f1db8a86ab16523c062cab3ff9cef855e380331edb05b16"
+  },
+  {
+    "path": "sources/upstream/p09_source_input_receipt.json",
+    "size_bytes": 6747,
+    "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e"
+  },
+  {
+    "path": "sources/upstream/v6_freeze.txt",
+    "size_bytes": 226868,
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d"
+  },
+  {
+    "path": "verification/run_author_checks.py",
+    "size_bytes": 3159,
+    "sha256": "0ac056df637f14542795b4dd15189447f3f7b53cf092aff5c0d63a60746c7f79"
+  },
+  {
+    "path": "verification/test_report_guards.py",
+    "size_bytes": 6329,
+    "sha256": "f0b2dae2607d0ba7975065736c648972b2dbf348a11404839f6d1a9bdb38aa40"
+  }
+]

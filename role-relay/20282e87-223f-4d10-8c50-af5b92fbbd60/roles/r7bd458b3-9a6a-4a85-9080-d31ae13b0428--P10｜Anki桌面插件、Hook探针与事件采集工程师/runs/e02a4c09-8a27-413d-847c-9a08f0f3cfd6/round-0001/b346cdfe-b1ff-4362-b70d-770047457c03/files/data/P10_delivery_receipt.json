@@ -1,0 +1,102 @@
+{
+  "schema_version": "P10-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "created_at_utc": "2026-10-28T09:37:39.572595+00:00",
+  "user_timezone": "Etc/GMT-8",
+  "status": "PROBE_REPORT_DELIVERED_S04_TARGET_BLOCKED_QUARANTINED",
+  "archive": {
+    "filename": "P10_S04_Probe_Report_V0.1.zip",
+    "size_bytes": 271956,
+    "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+    "file_count": 57,
+    "crc": "PASS"
+  },
+  "manifest": {
+    "relative_path": "delivery_manifest.sha256.tsv",
+    "size_bytes": 54076,
+    "sha256": "faeeea498573264e9bf52d1fb0aeb26d85adc3ab8469e1600de64adac8960994",
+    "entries": 56,
+    "self_hash_excluded": true
+  },
+  "key_files": [
+    {
+      "relative_path": "README.md",
+      "size_bytes": 3552,
+      "sha256": "d04b2eb2143200af5db1b29ee559ae3f8f0f5cbc1aa612600eec8859fa42052c"
+    },
+    {
+      "relative_path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d"
+    },
+    {
+      "relative_path": "anki_hook_probe.py",
+      "size_bytes": 9544,
+      "sha256": "da1ce77460f32556247ccc7e02d77d3c2b31d3108c1db30af00e99d58db18914"
+    },
+    {
+      "relative_path": "probe_log_redacted.txt",
+      "size_bytes": 6425,
+      "sha256": "0cc0461053496e2705e0dcb17377a84a03608e4a2c269bf964ac1571ad2e626b"
+    },
+    {
+      "relative_path": "QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013"
+    },
+    {
+      "relative_path": "addon_manifest.json",
+      "size_bytes": 725,
+      "sha256": "cf8062085e22a599527e8bb2d2ed89cb8d853522da03675bb18918cc69450ce2"
+    },
+    {
+      "relative_path": "downstream_handoff.json",
+      "size_bytes": 16302,
+      "sha256": "662cf5d12aed70f2a5cfa053713cc85d8797ce8a9b4b9f04f42847f0c31e421d"
+    }
+  ],
+  "author_fixed_inputs": {
+    "count": 27,
+    "final_drift_check": "PASS"
+  },
+  "verification": {
+    "original_manifest": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS_DELIVERY_BYTES_ONLY\",\n  \"manifest_entries\": 56,\n  \"manifest_sha256\": \"faeeea498573264e9bf52d1fb0aeb26d85adc3ab8469e1600de64adac8960994\",\n  \"runtime\": \"NOT_RUN\",\n  \"production_award_authorized\": false\n}\n",
+      "stderr": ""
+    },
+    "reextracted_manifest": {
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS_DELIVERY_BYTES_ONLY\",\n  \"manifest_entries\": 56,\n  \"manifest_sha256\": \"faeeea498573264e9bf52d1fb0aeb26d85adc3ab8469e1600de64adac8960994\",\n  \"runtime\": \"NOT_RUN\",\n  \"production_award_authorized\": false\n}\n",
+      "stderr": ""
+    },
+    "report_checker_unit": "PASS_18_OF_18",
+    "target_preflight": "BLOCKED_EXIT_3",
+    "anki_runtime": "NOT_RUN",
+    "plugin_outbox_tests": "NOT_RUN",
+    "independent_review": "NOT_RUN"
+  },
+  "supported_anki_versions": [],
+  "real_review_samples": 0,
+  "production_award_authorized": false,
+  "production_path_write_authorized": false,
+  "github_push_performed": false,
+  "cross_module_integration_performed": false,
+  "outer_receipt_self_hash_note": "This receipt is outside the archive; its own hash is not embedded recursively.",
+  "persistent_save": {
+    "status": "BLOCKED_AUTO_REVIEW",
+    "saved": false,
+    "items": [
+      "P10_S04_Probe_Report_V0.1.zip",
+      "hook_probe_report.md",
+      "delivery_manifest.sha256.tsv",
+      "P10_delivery_receipt.json",
+      "QUARANTINED.json"
+    ],
+    "first_attempt": "FAILED_BEFORE_UPLOAD_NETWORK_DISCOVERY",
+    "second_attempt": "REJECTED_BEFORE_PROCESS_EXECUTION",
+    "reason_summary": "Automatic approval review rejected transfer of these five project artifacts to the ChatGPT file service because explicit authorization for this payload/destination and destination ownership/trust were not established.",
+    "retry_or_workaround_after_rejection": false,
+    "authorization_needed": "Allow these five named P10 deliverables to be saved to the user own ChatGPT file area."
+  }
+}

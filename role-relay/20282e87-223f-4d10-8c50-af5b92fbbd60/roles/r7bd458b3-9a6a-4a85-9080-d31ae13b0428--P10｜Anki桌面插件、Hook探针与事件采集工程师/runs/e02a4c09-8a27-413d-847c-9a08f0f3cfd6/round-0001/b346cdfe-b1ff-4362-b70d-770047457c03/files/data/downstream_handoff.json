@@ -1,0 +1,495 @@
+{
+  "schema_version": "P09-HANDOFF/0.1.0",
+  "task_id": "P09-S04-S05-MAP-001",
+  "mapping_version": "P09-POS-MAP/0.1.0-proposal",
+  "activation_scope": "ISOLATED_SYNTHETIC_DELIVERY",
+  "handovers": [
+    {
+      "receiver": "P08",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "content/linguistic/pos_mapping_rules.json",
+          "actual_bytes": 7559,
+          "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/unknown_fallback_cases.tsv",
+          "actual_bytes": 7365,
+          "sha256": "2efd2074893243d0d0b63dda458e75c56fcd45df2434359a4498d7ae667aecd4",
+          "format": "tsv",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/anki_field_observations.md",
+          "actual_bytes": 3396,
+          "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/resource_affinity_candidates.tsv",
+          "actual_bytes": 725,
+          "sha256": "657c33b528207e3f6f8beb230d5086bfb16df441b4df8b93af292e68855208f1",
+          "format": "tsv",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/rfc_ic15_ic16.md",
+          "actual_bytes": 2389,
+          "sha256": "0542912a97fd92c3b35e8edca3266b7d2f44cb0dce73d2710b84d7ea83a8effb",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/override_and_rollback.md",
+          "actual_bytes": 3296,
+          "sha256": "e5afb1a36e50cd7684646f085020d4419675f6566a97625a428b3f630138878b",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P10",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/anki_field_observations.md",
+          "actual_bytes": 3396,
+          "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/field_protocol_proposal.md",
+          "actual_bytes": 3987,
+          "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/field_profile.synthetic.json",
+          "actual_bytes": 616,
+          "sha256": "7d73465b1a2361391fc098690c007f25489f9755491430159484a49157ccdee8",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_input.schema.json",
+          "actual_bytes": 2060,
+          "sha256": "045f133ec14a06396b9d01998b050bf2b5942be5ee1ec1b7f0be472d8b1c49b4",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P11",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "content/linguistic/pos_mapping_rules.json",
+          "actual_bytes": 7559,
+          "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_output.schema.json",
+          "actual_bytes": 4107,
+          "sha256": "b4529469d917271ad41f0abd69a2cc5eb54db3f69c7f73419f86c0805623e9ce",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/override_and_rollback.md",
+          "actual_bytes": 3296,
+          "sha256": "e5afb1a36e50cd7684646f085020d4419675f6566a97625a428b3f630138878b",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/classification_spec.md",
+          "actual_bytes": 5591,
+          "sha256": "f1bc56097935f8165005c7768af4aa4c46956adada4496ea8f483d825f61f3dd",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P12",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/field_protocol_proposal.md",
+          "actual_bytes": 3987,
+          "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/rfc_ic15_ic16.md",
+          "actual_bytes": 2389,
+          "sha256": "0542912a97fd92c3b35e8edca3266b7d2f44cb0dce73d2710b84d7ea83a8effb",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_input.schema.json",
+          "actual_bytes": 2060,
+          "sha256": "045f133ec14a06396b9d01998b050bf2b5942be5ee1ec1b7f0be472d8b1c49b4",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_output.schema.json",
+          "actual_bytes": 4107,
+          "sha256": "b4529469d917271ad41f0abd69a2cc5eb54db3f69c7f73419f86c0805623e9ce",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/path_mapping_request.json",
+          "actual_bytes": 764,
+          "sha256": "a24e0599c471b1dd1cc23bc43cfcd5451c8a8419d4c276da51d42fa468ab9221",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/field_protocol_proposal.md",
+          "actual_bytes": 3987,
+          "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/rfc_ic15_ic16.md",
+          "actual_bytes": 2389,
+          "sha256": "0542912a97fd92c3b35e8edca3266b7d2f44cb0dce73d2710b84d7ea83a8effb",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "content/linguistic/pos_mapping_rules.json",
+          "actual_bytes": 7559,
+          "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/category_dictionary.json",
+          "actual_bytes": 3545,
+          "sha256": "877bfa21f32d6db822dae200dd8cbcf901d2acb9acbb8321f39e1e09d28aaf31",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/resource_affinity_candidates.tsv",
+          "actual_bytes": 725,
+          "sha256": "657c33b528207e3f6f8beb230d5086bfb16df441b4df8b93af292e68855208f1",
+          "format": "tsv",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_input.schema.json",
+          "actual_bytes": 2060,
+          "sha256": "045f133ec14a06396b9d01998b050bf2b5942be5ee1ec1b7f0be472d8b1c49b4",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/mapping_output.schema.json",
+          "actual_bytes": 4107,
+          "sha256": "b4529469d917271ad41f0abd69a2cc5eb54db3f69c7f73419f86c0805623e9ce",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/schema/override_event.schema.json",
+          "actual_bytes": 3224,
+          "sha256": "3bee4b352a1cf38e8656056eec7011f27916b9dc56093aa2c7c45cee8dd4823d",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/classification_cases.jsonl",
+          "actual_bytes": 49971,
+          "sha256": "a9e8e2df7a2b4faa8cb84f255979691edc08445ff345533e3b028f87a493f03d",
+          "format": "jsonl",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/verification/run_checks.py",
+          "actual_bytes": 3165,
+          "sha256": "b88e6b8bcddb6acf52840c87ef452daeba3a6dd02ff2b8dcd1213a82d58a3e72",
+          "format": "py",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/verification/reproduction_notes.md",
+          "actual_bytes": 1999,
+          "sha256": "ed4d11a7095095c137d7a7ac4c57ab4e15247bd31e58289f7c924c796fbdab1e",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/classification_cases.jsonl",
+          "actual_bytes": 49971,
+          "sha256": "a9e8e2df7a2b4faa8cb84f255979691edc08445ff345533e3b028f87a493f03d",
+          "format": "jsonl",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/override_log.synthetic.jsonl",
+          "actual_bytes": 5297,
+          "sha256": "dbc67c0679093d09ed8093b6dc037a07dd4e5ba000f0a05035ad30b4dc781611",
+          "format": "jsonl",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/reference/pos_mapper.py",
+          "actual_bytes": 20592,
+          "sha256": "5d603a4076636a00fb56672dacade42063b189f08731a42a239290d8d93a4dbf",
+          "format": "py",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/evidence/author_run_003/run_results.json",
+          "actual_bytes": 2678,
+          "sha256": "05bc1eaa43fd7afe7ee21f9dfd791815c1d3655d95f4eab6bb43745e2b1c9d9e",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/evidence/author_run_003/input_bindings.json",
+          "actual_bytes": 7425,
+          "sha256": "939ea37334ace650f4820ff39aa4fb64e6d3f731a4ef3a5b258290f7f45f73b1",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/anki_field_observations.md",
+          "actual_bytes": 3396,
+          "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/override_and_rollback.md",
+          "actual_bytes": 3296,
+          "sha256": "e5afb1a36e50cd7684646f085020d4419675f6566a97625a428b3f630138878b",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "content/linguistic/example_entries.synthetic.jsonl",
+          "actual_bytes": 16389,
+          "sha256": "ef0bbff0d6c738cfe907e5067015fba12969e6bf41b21a45301a624878e781ad",
+          "format": "jsonl",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/formal_prerequisites.json",
+          "actual_bytes": 3498,
+          "sha256": "30368c8678af30e43f1db8a86ab16523c062cab3ff9cef855e380331edb05b16",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/source_input_receipt.json",
+          "actual_bytes": 6747,
+          "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/known_issues_and_history.md",
+          "actual_bytes": 1119,
+          "sha256": "6a8e1cac4f99801e4e89a38ec222f290b806c97ed2a9e8b4ba96a71fff55a206",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/verification_status.json",
+          "actual_bytes": 1089,
+          "sha256": "dbf51375daf65b9ce065be5996c87721ff8eab804c58574f7c0403a0a45d2d8e",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/evidence/author_run_003/run_results.json",
+          "actual_bytes": 2678,
+          "sha256": "05bc1eaa43fd7afe7ee21f9dfd791815c1d3655d95f4eab6bb43745e2b1c9d9e",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/evidence/author_run_003/input_bindings.json",
+          "actual_bytes": 7425,
+          "sha256": "939ea37334ace650f4820ff39aa4fb64e6d3f731a4ef3a5b258290f7f45f73b1",
+          "format": "json",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    },
+    {
+      "receiver": "P38",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "acknowledgement": null,
+      "files": [
+        {
+          "relative_path": "design/linguistic/anki_field_observations.md",
+          "actual_bytes": 3396,
+          "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        },
+        {
+          "relative_path": "design/linguistic/field_protocol_proposal.md",
+          "actual_bytes": 3987,
+          "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+          "format": "md",
+          "version": "P09-POS-MAP/0.1.0-proposal",
+          "source_receipt_sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+          "modify_whitelist": "P09 isolated package only; production paths blocked"
+        }
+      ]
+    }
+  ],
+  "production_path_authorization": false,
+  "integration_owner": "EXT-INTEGRATOR_USER_APPOINTMENT_PENDING",
+  "manifest_binding": "Package manifest and archive are fixed by external P09_delivery_receipt.json."
+}

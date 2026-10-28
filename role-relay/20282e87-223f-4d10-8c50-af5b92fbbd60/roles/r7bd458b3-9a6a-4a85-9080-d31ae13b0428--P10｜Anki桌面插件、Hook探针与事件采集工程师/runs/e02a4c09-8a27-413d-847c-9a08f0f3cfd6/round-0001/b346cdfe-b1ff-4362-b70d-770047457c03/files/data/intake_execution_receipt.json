@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "work/intake_archives.py"
+  ],
+  "cwd": "/workspace/scratch/d19fbccf8e77",
+  "actual_exit": 0,
+  "stream": "combined stdout/stderr returned by exec_command",
+  "wall_time_seconds": 0.764460306,
+  "timestamp": null,
+  "timestamp_note": "Exact command start time was not returned by the execution tool; no timestamp fabricated.",
+  "method_copy": "evidence/intake/intake_archives_method.py",
+  "scope": "archive extraction and relay manifest integrity only"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "P09-PATH-REQUEST/0.1.0-proposal",
+  "status": "BLOCKED_PENDING_P13",
+  "this_is_actual_path_mapping": false,
+  "actual_engine_repository": null,
+  "actual_engine_commit": null,
+  "target_paths": null,
+  "requested_owner": "P09",
+  "planned_namespaces": [
+    "design/linguistic/**",
+    "content/linguistic/**"
+  ],
+  "current_isolation_root": "P09_Linguistic_Mapping_V0.1",
+  "current_write_scope": "New isolated P09 package only; README and manifest are package metadata.",
+  "do_not_touch": [
+    "all_existing_project_files",
+    "all_other_role_namespaces",
+    "all_upstream_readonly_snapshots",
+    "Anki_database_and_addons"
+  ],
+  "integration_owner": "EXT-INTEGRATOR_USER_APPOINTMENT_PENDING",
+  "formal_write_authorized": false
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "P09-SOURCE-RECEIPT/0.1.0",
+  "task_id": "P09-S04-S05-MAP-001",
+  "primary_archive": {
+    "package_path": "design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+    "actual_bytes": 7825496,
+    "sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+    "origin": "CURRENT_USER_UPLOAD",
+    "original_filename": "relay-materials-1-e9818b1abe.zip"
+  },
+  "consumed_sources": [
+    {
+      "source_id": "SRC-V6",
+      "package_path": "design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+      "actual_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "version": "V6.0",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+        "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_sources/v6_freeze.txt"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P01-TRACE",
+      "package_path": "design/linguistic/evidence/readonly_sources/p01_requirements_traceability.tsv",
+      "actual_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "version": "P01-REQ-V0.1",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/006/P01_S00_V6_完整交接包.zip",
+        "spec/product/requirements_traceability.tsv"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P01-BASELINE",
+      "package_path": "design/linguistic/evidence/readonly_sources/p01_requirements_baseline_v6.txt",
+      "actual_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "version": "P01-S00-V0.1",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/006/P01_S00_V6_完整交接包.zip",
+        "spec/product/requirements_baseline_v6.txt"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P08-POLICY",
+      "package_path": "design/linguistic/evidence/readonly_sources/p08_study_policy_draft.md",
+      "actual_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+        "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/study_policy_draft.md"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P08-RESOURCES",
+      "package_path": "design/linguistic/evidence/readonly_sources/p08_resource_mapping_candidates.tsv",
+      "actual_bytes": 1675,
+      "sha256": "6b0bd706bb6bffcea14d1e85d0f9862cac515b840e0ae704b3cb9295619fe8a6",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+        "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/resource_mapping_candidates.tsv"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P08-RFC",
+      "package_path": "design/linguistic/evidence/readonly_sources/p08_interface_rfc.md",
+      "actual_bytes": 3756,
+      "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+        "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/interface_rfc.md"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P08-RECEIPT",
+      "package_path": "design/linguistic/evidence/readonly_sources/p08_delivery_receipt.json",
+      "actual_bytes": 14175,
+      "sha256": "e9673a528e697a51cdc55d683621cc08b53b9626834547e2ae5a966463459c24",
+      "version": "P08-DELIVERY-RECEIPT",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/037/P08_delivery_receipt.json"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "SRC-P08-SOURCE",
+      "package_path": "design/linguistic/evidence/readonly_sources/p08_source_input_receipt.json",
+      "actual_bytes": 17591,
+      "sha256": "06878cf96ef332619de530c1231d87c7b045016d7a21f2fca2d29cdffff643f1",
+      "version": "P08-SOURCE-RECEIPT/0.1.0",
+      "origin_archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "member_chain": [
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip",
+        "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/source_input_receipt.json"
+      ],
+      "inspection": "RELEVANT_CONTENT_READ_AND_BYTES_VERIFIED",
+      "modify_whitelist": []
+    }
+  ],
+  "git_binding_evidence": "design/linguistic/evidence/intake/git_blob_bindings.json",
+  "current_activation": "Current user explicitly activates P09 isolated delivery; does not grant actual Anki field reads or production writes.",
+  "missing_inputs": [
+    "real_anki_field_samples",
+    "field_read_authorization",
+    "actual_path_mapping.json",
+    "target_environment_fingerprint",
+    "accepted_transport_dto",
+    "P22_registered_ids",
+    "approved_reward_policy"
+  ],
+  "public_references": [
+    {
+      "source_id": "REF-NINJAL-UNIDIC",
+      "url": "https://clrd.ninjal.ac.jp/unidic/glossary.html",
+      "retrieved_date": "2026-10-28",
+      "document_version": "WEB_DOCUMENT_NOT_FIXED_RELEASE",
+      "content_sha256": null
+    },
+    {
+      "source_id": "REF-ANKI-FIELDS",
+      "url": "https://docs.ankiweb.net/manual/editing",
+      "retrieved_date": "2026-10-28",
+      "document_version": "WEB_DOCUMENT_NOT_TARGET_ANKI_VERSION",
+      "content_sha256": null
+    }
+  ],
+  "public_reference_limit": "Only public documentation was read. No user note text was sent to a classifier. No full-page byte hash is claimed."
+}

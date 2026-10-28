@@ -1,0 +1,129 @@
+{
+  "schema_version": "P10-REFERENCE-INPUTS/0.1.0",
+  "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+  "source_declared_version": "26.09.3",
+  "target_version": null,
+  "is_approved_target": false,
+  "files": [
+    {
+      "package_path": "sources/anki_reference/LICENSE",
+      "upstream_path": "LICENSE",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/LICENSE",
+      "size_bytes": 1930,
+      "sha256": "bde7d05790a05f1d1776b77a93ac32765310c8e6e578136183c2560475c500ef",
+      "git_blob_sha1": "6aa37a76547f179fec9893a6f4b6064b2681bacb",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/proto/anki/collection.proto",
+      "upstream_path": "proto/anki/collection.proto",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/proto/anki/collection.proto",
+      "size_bytes": 4677,
+      "sha256": "d062f9a100bc0cd716bb965ac0fea33e3bb2cabe6d72852d2397f1437047c98f",
+      "git_blob_sha1": "00ea8c44e4bae79a78ee3b2768ffa5c7b6c937c5",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/pylib/anki/collection.py",
+      "upstream_path": "pylib/anki/collection.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/pylib/anki/collection.py",
+      "size_bytes": 47895,
+      "sha256": "c0948e5e0c5bb3fa7ec47adb3e2b190ec65e4cc12ba198945c7b87bd90c53035",
+      "git_blob_sha1": "7245c4d87a5e46865fc06389d47f35c4a6eec87f",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/aqt/main.py",
+      "upstream_path": "qt/aqt/main.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/aqt/main.py",
+      "size_bytes": 66141,
+      "sha256": "0d73f9766856a3ad0a83b037d7128ba77a61b3e85cbee6d54e771be5a5e309a6",
+      "git_blob_sha1": "cfe83b2529b811b25f0dbf3f3caa9df1aae59aec",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/aqt/operations/__init__.py",
+      "upstream_path": "qt/aqt/operations/__init__.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/aqt/operations/__init__.py",
+      "size_bytes": 9164,
+      "sha256": "09f2190bf47d981241da20be5d62881c657a1d5fc5f7a5a6c495585bf11304ac",
+      "git_blob_sha1": "b37515d026f3cd040770b075d996a9ec857c4928",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/aqt/operations/collection.py",
+      "upstream_path": "qt/aqt/operations/collection.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/aqt/operations/collection.py",
+      "size_bytes": 1420,
+      "sha256": "08c7304ea415ae393792aaa955eb5a3801b37107fee4051043a7a1b73ba1aa69",
+      "git_blob_sha1": "d369841638634f9132731ef458872988a139b5f7",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/aqt/reviewer.py",
+      "upstream_path": "qt/aqt/reviewer.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/aqt/reviewer.py",
+      "size_bytes": 44022,
+      "sha256": "8a050453d9107cb4bd0b010e875fd912979bab3bf2f1213e80930e09ef885e16",
+      "git_blob_sha1": "bcdf412c8556bede5717041528c47793b3f6d288",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/aqt/undo.py",
+      "upstream_path": "qt/aqt/undo.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/aqt/undo.py",
+      "size_bytes": 1018,
+      "sha256": "1806975eb5e8e99c33b41c9b5c77b5c152c250e3699b911f67961ec8212466fe",
+      "git_blob_sha1": "8fc4f167ca77cfcbf93406ca521413ff5c17ee0f",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/qt/tools/genhooks_gui.py",
+      "upstream_path": "qt/tools/genhooks_gui.py",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/qt/tools/genhooks_gui.py",
+      "size_bytes": 50534,
+      "sha256": "0bd01d59c569342a7e1adc1951b3c436e0515b43b09e4e4018eca6ca3adaaff4",
+      "git_blob_sha1": "3bfa58ee3f2715f6f78f04cd13d63779336de2f0",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    },
+    {
+      "package_path": "sources/anki_reference/source-version.txt",
+      "upstream_path": ".version",
+      "repository": "ankitects/anki",
+      "commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "url": "https://github.com/ankitects/anki/blob/d87cb22bf337c52257376f3abcec09c03a255ed4/.version",
+      "size_bytes": 7,
+      "sha256": "aaf88aae4554ab52b958fb09299c50bafb9685bd9d67a8baa15997546f405583",
+      "git_blob_sha1": "bceaafed72352b62ca9756c76fffb1829d5a1053",
+      "role": "READ_ONLY_STATIC_REFERENCE_NOT_TARGET_RUNTIME",
+      "modify_whitelist": []
+    }
+  ]
+}

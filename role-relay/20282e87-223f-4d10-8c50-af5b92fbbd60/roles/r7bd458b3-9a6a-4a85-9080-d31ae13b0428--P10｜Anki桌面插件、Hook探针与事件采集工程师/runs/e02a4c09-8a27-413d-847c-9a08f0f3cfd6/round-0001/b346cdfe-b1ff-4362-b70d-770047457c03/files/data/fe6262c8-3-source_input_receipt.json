@@ -1,0 +1,193 @@
+{
+  "schema_version": "P10-SOURCE-RECEIPT/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "outer_archives": [
+    {
+      "path": "relay-materials-1-f92b299dcb.zip",
+      "size_bytes": 16672725,
+      "sha256": "f92b299dcb511cc3be26f1425cf4357f374e217f5de1d49ddad23c7bbf59378c"
+    },
+    {
+      "path": "relay-materials-2-aca6486c98.zip",
+      "size_bytes": 12929072,
+      "sha256": "aca6486c98f3ced97622af922afe5c44079a17d243d0ed70c8d40f65d3d7d260"
+    }
+  ],
+  "consumed_sources": [
+    {
+      "source_id": "V6_FREEZE",
+      "package_path": "sources/upstream/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "version": "V6.0",
+      "owner": "V6",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P01_REQUIREMENTS",
+      "package_path": "sources/upstream/p01_requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "version": "P01-S00-V0.1",
+      "owner": "P01",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/p01_requirements_baseline_v6.txt",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P01_TRACE",
+      "package_path": "sources/upstream/p01_requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "version": "P01-S00-V0.1",
+      "owner": "P01",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/p01_requirements_traceability.tsv",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P08_POLICY",
+      "package_path": "sources/upstream/p08_study_policy_draft.md",
+      "size_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "owner": "P08",
+      "origin_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/study_policy_draft.md",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip",
+        "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P08_RFC",
+      "package_path": "sources/upstream/p08_interface_rfc.md",
+      "size_bytes": 3756,
+      "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "owner": "P08",
+      "origin_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/interface_rfc.md",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip",
+        "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P08_QUARANTINE",
+      "package_path": "sources/upstream/p08_quarantine_resolution_policy.md",
+      "size_bytes": 7026,
+      "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "owner": "P08",
+      "origin_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/quarantine_resolution_policy.md",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip",
+        "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+        "files/046/P08_Anki_Reward_Policy_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P09_OBSERVATIONS",
+      "package_path": "sources/upstream/p09_anki_field_observations.md",
+      "size_bytes": 3396,
+      "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+      "version": "P09-FIELD-OBSERVATIONS/0.1.0",
+      "owner": "P09",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/anki_field_observations.md",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P09_FIELD_PROPOSAL",
+      "package_path": "sources/upstream/p09_field_protocol_proposal.md",
+      "size_bytes": 3987,
+      "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19",
+      "version": "P09-FIELD-OBS/0.1.0-proposal",
+      "owner": "P09",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/field_protocol_proposal.md",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P09_PREREQUISITES",
+      "package_path": "sources/upstream/p09_formal_prerequisites.json",
+      "size_bytes": 3498,
+      "sha256": "30368c8678af30e43f1db8a86ab16523c062cab3ff9cef855e380331edb05b16",
+      "version": "P09-PREFLIGHT/0.1.0",
+      "owner": "P09",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/formal_prerequisites.json",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    },
+    {
+      "source_id": "P09_SOURCE_RECEIPT",
+      "package_path": "sources/upstream/p09_source_input_receipt.json",
+      "size_bytes": 6747,
+      "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e",
+      "version": "P09-SOURCE-RECEIPT/0.1.0",
+      "owner": "P09",
+      "origin_archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "archive_member": "P09_Linguistic_Mapping_V0.1/design/linguistic/source_input_receipt.json",
+      "archive_chain": [
+        "relay-materials-1-f92b299dcb.zip",
+        "files/006/P09_Linguistic_Mapping_V0.1.zip"
+      ],
+      "status": "BYTES_VERIFIED_CONTENT_READ",
+      "modify_whitelist": []
+    }
+  ],
+  "reference_manifest": "reference_inputs.json",
+  "git_binding_evidence": "evidence/intake/git_blob_bindings.json",
+  "scope_limit": "Received archives and two pinned project trees only; absence does not assert anything about other repositories or user machines.",
+  "production_path_mapping": null,
+  "target_anki_version": null,
+  "target_os": null,
+  "field_authorization": null,
+  "p12_schema_version": null,
+  "current_user_activation": "P10 evidence inspection and isolated probe-report delivery only; no authorization to invent missing target, fields or actual paths."
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "P10-REPORT-PROBE/0.1.0",
+  "evidence_kind": "STATIC_SOURCE_REVIEW",
+  "status": "PASS_STATIC_EXTRACTION_ONLY",
+  "reference_commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+  "source_declared_version": "26.09.3",
+  "is_approved_target": false,
+  "target_version": null,
+  "files_checked": [
+    {
+      "path": "sources/anki_reference/LICENSE",
+      "sha256": "bde7d05790a05f1d1776b77a93ac32765310c8e6e578136183c2560475c500ef",
+      "size_bytes": 1930,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/proto/anki/collection.proto",
+      "sha256": "d062f9a100bc0cd716bb965ac0fea33e3bb2cabe6d72852d2397f1437047c98f",
+      "size_bytes": 4677,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/pylib/anki/collection.py",
+      "sha256": "c0948e5e0c5bb3fa7ec47adb3e2b190ec65e4cc12ba198945c7b87bd90c53035",
+      "size_bytes": 47895,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/aqt/main.py",
+      "sha256": "0d73f9766856a3ad0a83b037d7128ba77a61b3e85cbee6d54e771be5a5e309a6",
+      "size_bytes": 66141,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/aqt/operations/__init__.py",
+      "sha256": "09f2190bf47d981241da20be5d62881c657a1d5fc5f7a5a6c495585bf11304ac",
+      "size_bytes": 9164,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/aqt/operations/collection.py",
+      "sha256": "08c7304ea415ae393792aaa955eb5a3801b37107fee4051043a7a1b73ba1aa69",
+      "size_bytes": 1420,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/aqt/reviewer.py",
+      "sha256": "8a050453d9107cb4bd0b010e875fd912979bab3bf2f1213e80930e09ef885e16",
+      "size_bytes": 44022,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/aqt/undo.py",
+      "sha256": "1806975eb5e8e99c33b41c9b5c77b5c152c250e3699b911f67961ec8212466fe",
+      "size_bytes": 1018,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/qt/tools/genhooks_gui.py",
+      "sha256": "0bd01d59c569342a7e1adc1951b3c436e0515b43b09e4e4018eca6ca3adaaff4",
+      "size_bytes": 50534,
+      "status": "PASS_BYTES_ONLY"
+    },
+    {
+      "path": "sources/anki_reference/source-version.txt",
+      "sha256": "aaf88aae4554ab52b958fb09299c50bafb9685bd9d67a8baa15997546f405583",
+      "size_bytes": 7,
+      "status": "PASS_BYTES_ONLY"
+    }
+  ],
+  "hooks": {
+    "reviewer_will_answer_card": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 171,
+      "args": [
+        "ease_tuple: tuple[bool, Literal[1, 2, 3, 4]]",
+        "reviewer: aqt.reviewer.Reviewer",
+        "card: Card"
+      ],
+      "return_type": "tuple[bool, Literal[1, 2, 3, 4]]"
+    },
+    "reviewer_did_answer_card": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 189,
+      "args": [
+        "reviewer: aqt.reviewer.Reviewer",
+        "card: Card",
+        "ease: Literal[1, 2, 3, 4]"
+      ]
+    },
+    "state_did_undo": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 653,
+      "args": [
+        "changes: OpChangesAfterUndo"
+      ]
+    },
+    "state_did_redo": {
+      "status": "NOT_DECLARED_IN_THIS_REFERENCE"
+    },
+    "state_did_revert": {
+      "status": "NOT_DECLARED_IN_THIS_REFERENCE"
+    },
+    "operation_did_execute": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 666,
+      "args": [
+        "changes: anki.collection.OpChanges",
+        "handler: object | None"
+      ]
+    },
+    "undo_state_did_change": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 867,
+      "args": [
+        "info: UndoActionsInfo"
+      ]
+    },
+    "collection_did_load": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 862,
+      "args": [
+        "col: anki.collection.Collection"
+      ],
+      "legacy_hook": "colLoading"
+    },
+    "profile_did_open": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 841,
+      "legacy_hook": "profileLoaded",
+      "args": []
+    },
+    "profile_will_close": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 851,
+      "legacy_hook": "unloadProfile",
+      "args": []
+    },
+    "backup_did_complete": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 840,
+      "args": []
+    },
+    "collection_will_temporarily_close": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 852,
+      "args": [
+        "col: anki.collection.Collection"
+      ]
+    },
+    "collection_did_temporarily_close": {
+      "status": "DECLARED_IN_REFERENCE",
+      "line": 857,
+      "args": [
+        "col: anki.collection.Collection"
+      ]
+    }
+  },
+  "source_generation": "UNVERIFIED",
+  "review_event_identity": "UNVERIFIED",
+  "undo_target_association": "UNVERIFIED",
+  "real_review_sample_count": 0,
+  "supported_runtime_events": [],
+  "runtime_hook_execution": "NOT_RUN",
+  "collection_opened": false,
+  "anki_database_modified": false,
+  "hook_registered": false,
+  "ipc_enabled": false,
+  "outbox_implemented": false,
+  "production_award_authorized": false,
+  "installable": false,
+  "disposition": "QUARANTINED"
+}

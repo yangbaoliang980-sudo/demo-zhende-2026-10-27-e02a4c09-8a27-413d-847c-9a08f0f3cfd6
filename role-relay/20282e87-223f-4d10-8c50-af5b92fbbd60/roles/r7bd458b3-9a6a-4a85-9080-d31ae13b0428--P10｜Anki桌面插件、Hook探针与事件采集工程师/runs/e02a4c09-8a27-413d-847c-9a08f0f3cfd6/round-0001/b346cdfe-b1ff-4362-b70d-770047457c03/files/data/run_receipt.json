@@ -1,0 +1,63 @@
+{
+  "task_id": "P10-S04-PROBE-001",
+  "runs": [
+    {
+      "check": "preflight",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "anki_hook_probe.py",
+        "preflight"
+      ],
+      "cwd": "/workspace/scratch/d19fbccf8e77/deliverables/P10_S04_Probe_Report_V0.1",
+      "started_at_utc": "2026-10-28T09:36:47.274733+00:00",
+      "finished_at_utc": "2026-10-28T09:36:47.546157+00:00",
+      "expected_exit": 3,
+      "actual_exit": 3,
+      "result": "EXPECTED_BLOCKED",
+      "scope": "AUTHOR_REPORT_CHECK_ONLY_NOT_PLUGIN_OR_INDEPENDENT_TEST"
+    },
+    {
+      "check": "static_reference",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "anki_hook_probe.py",
+        "scan-reference"
+      ],
+      "cwd": "/workspace/scratch/d19fbccf8e77/deliverables/P10_S04_Probe_Report_V0.1",
+      "started_at_utc": "2026-10-28T09:36:47.546182+00:00",
+      "finished_at_utc": "2026-10-28T09:36:47.618987+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "PASS",
+      "scope": "AUTHOR_REPORT_CHECK_ONLY_NOT_PLUGIN_OR_INDEPENDENT_TEST"
+    },
+    {
+      "check": "report_guard_unit",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "verification",
+        "-p",
+        "test_report_guards.py",
+        "-v"
+      ],
+      "cwd": "/workspace/scratch/d19fbccf8e77/deliverables/P10_S04_Probe_Report_V0.1",
+      "started_at_utc": "2026-10-28T09:36:47.619008+00:00",
+      "finished_at_utc": "2026-10-28T09:36:47.955348+00:00",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "PASS",
+      "scope": "AUTHOR_REPORT_CHECK_ONLY_NOT_PLUGIN_OR_INDEPENDENT_TEST"
+    }
+  ],
+  "input_drift": [],
+  "status": "PASS_AUTHOR_REPORT_CHECKS",
+  "real_anki_runtime": "NOT_RUN",
+  "independent_review": "NOT_RUN"
+}

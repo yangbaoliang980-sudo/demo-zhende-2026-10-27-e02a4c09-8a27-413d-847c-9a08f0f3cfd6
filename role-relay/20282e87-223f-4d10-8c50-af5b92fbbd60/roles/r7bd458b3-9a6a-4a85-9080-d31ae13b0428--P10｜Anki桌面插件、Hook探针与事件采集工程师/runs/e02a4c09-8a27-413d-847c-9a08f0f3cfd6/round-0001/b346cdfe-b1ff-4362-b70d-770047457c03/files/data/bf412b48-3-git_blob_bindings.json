@@ -1,0 +1,36 @@
+[
+  {
+    "source_id": "P09_ARCHIVE",
+    "local_path": "work/intake/zip_f92b299dcb511cc3/files/006/P09_Linguistic_Mapping_V0.1.zip",
+    "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+    "size_bytes": 5041990,
+    "computed_git_blob_sha1": "1c7afd51845d68be0c786234fbc88e8944501e04",
+    "tree_blob": {
+      "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/archives/P09_Linguistic_Mapping_V0.1.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c7afd51845d68be0c786234fbc88e8944501e04",
+      "size": 5041990,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6/git/blobs/1c7afd51845d68be0c786234fbc88e8944501e04"
+    },
+    "commit": "6b826ac5c04b96fb84c05a469782d1658b5fc6a0",
+    "status": "PASS"
+  },
+  {
+    "source_id": "V6",
+    "local_path": "work/intake/zip_d2418d564772963d/P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "size_bytes": 226868,
+    "computed_git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "tree_blob": {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/682a18f0c33ae24637e67cf19fec33df8142a0f7"
+    },
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "status": "PASS"
+  }
+]

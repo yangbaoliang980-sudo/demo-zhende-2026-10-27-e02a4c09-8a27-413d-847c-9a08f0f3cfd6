@@ -1,0 +1,1305 @@
+{
+  "sha": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/8c370d731c323f86ff19642f4cc73f818498f641",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d1633f7927153e4203e973611293e080c0b7492",
+      "size": 113,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/4d1633f7927153e4203e973611293e080c0b7492"
+    },
+    {
+      "path": "role-relay",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "09e3af01def796d1f8194a41cfb839da0bab8ecd",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/09e3af01def796d1f8194a41cfb839da0bab8ecd"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "714c1cada8c3d72a80c562d32fffdd187c4d3169",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/714c1cada8c3d72a80c562d32fffdd187c4d3169"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee8502e1eede1aaeec0cd807112cd3d65a6583ac",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/ee8502e1eede1aaeec0cd807112cd3d65a6583ac"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e0ed405baadc4148b6020172cc67262e64635b4",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/0e0ed405baadc4148b6020172cc67262e64635b4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e67bddb7825f7006ba7c8ad5fe93bd0523334bba",
+      "size": 402,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/e67bddb7825f7006ba7c8ad5fe93bd0523334bba"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d66858a0cab3552d93cd37d111ff9dc61778007d",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/d66858a0cab3552d93cd37d111ff9dc61778007d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aad30435b173a9d61e07869becd229ea6ea9f599",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/aad30435b173a9d61e07869becd229ea6ea9f599"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee757c3cfb44057315b09175bd6e7f3a6c220552",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/ee757c3cfb44057315b09175bd6e7f3a6c220552"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7901aefe91cdcc430de52fb7b690dbe6c2578ae1",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/7901aefe91cdcc430de52fb7b690dbe6c2578ae1"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f977a2f815602252f87da448822b8270e6508c44",
+      "size": 4001,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f977a2f815602252f87da448822b8270e6508c44"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28894a01255db797b1c1a6bd5ab283efc7f3b1d5",
+      "size": 5721,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/28894a01255db797b1c1a6bd5ab283efc7f3b1d5"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070fa18cecad6c04bff34ecefc4cb56a8b429be5",
+      "size": 2906,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/070fa18cecad6c04bff34ecefc4cb56a8b429be5"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19d6d6c0356fb7c00d71bdd7ae516279863f5b08",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/19d6d6c0356fb7c00d71bdd7ae516279863f5b08"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/archives",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bd1b4d2fa2ef1252ae0376054824802f37ec99e",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/3bd1b4d2fa2ef1252ae0376054824802f37ec99e"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bdc8b4e51c82030901286f42a72864382049c83",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/3bdc8b4e51c82030901286f42a72864382049c83"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/63a1a933eb71484dd65e07cd08ab7efbb3c2deb4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f265bab804965ab6ed6bf1e5e9875bab1773b7d4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/b333ae1fc044fc9174112454cd3c300f122335a2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/74685754fdc459b17737dff202f9ef1967f44a6b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/02e8077345b623ba946f6ec40c7913137b445418"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32f90dbe606ded8367eeb393bae4079de65d6f01",
+      "size": 13906,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/32f90dbe606ded8367eeb393bae4079de65d6f01"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54915f1450bf898d5cde92a9816ead18ec552cf4",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/54915f1450bf898d5cde92a9816ead18ec552cf4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5edbf4e471697b039166e745fcb6452e2f47f15",
+      "size": 396,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/c5edbf4e471697b039166e745fcb6452e2f47f15"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62bedbe51815d575f98cb246e136696a26a8fbe5",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/62bedbe51815d575f98cb246e136696a26a8fbe5"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95d18a2244bce79137c96a6dc0c37388f404d012",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/95d18a2244bce79137c96a6dc0c37388f404d012"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60d61cff4fa76a0fd6fe55250310e1d400f5b494",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/60d61cff4fa76a0fd6fe55250310e1d400f5b494"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75a80f182f8b56df68c500da4ff9c59c3b8386d2",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/75a80f182f8b56df68c500da4ff9c59c3b8386d2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d01e4d4bb552dd3b95e92dcfa4718bb722017c4",
+      "size": 5620,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/0d01e4d4bb552dd3b95e92dcfa4718bb722017c4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e7e2d3cf7d7e40350e819c362fb139acfad663c",
+      "size": 8111,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/7e7e2d3cf7d7e40350e819c362fb139acfad663c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f0bde8f19c9157d6adab4b87067c0cd48ef702",
+      "size": 3406,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f3f0bde8f19c9157d6adab4b87067c0cd48ef702"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9989c95718c97886226d0eccc7e73d3cf9874958",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/9989c95718c97886226d0eccc7e73d3cf9874958"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/archives",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0bfd778b1ce887dcad1fd9273de0957cd0038731",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/0bfd778b1ce887dcad1fd9273de0957cd0038731"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2454fb32bff094a4d34812aa25698bc04e7f49aa"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a0d37b5eb12a7b88fc375289f50f100ba32d62c",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/6a0d37b5eb12a7b88fc375289f50f100ba32d62c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/7f18ec64ff61fe5f66fef7c588a3a297c12fab16"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bd631372dc458fd4b182939a3fa5969705437835",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/bd631372dc458fd4b182939a3fa5969705437835"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/63a1a933eb71484dd65e07cd08ab7efbb3c2deb4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f265bab804965ab6ed6bf1e5e9875bab1773b7d4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/b333ae1fc044fc9174112454cd3c300f122335a2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/74685754fdc459b17737dff202f9ef1967f44a6b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/02e8077345b623ba946f6ec40c7913137b445418"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/432074f4baf792e6e07b371392d4b2dfdbb7e3cd"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "437ef3b166cab532f353911585d27371076918ce",
+      "size": 17435,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/437ef3b166cab532f353911585d27371076918ce"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c60219f4a426d25e01cbbcbc5b3cb801c68a18d",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/2c60219f4a426d25e01cbbcbc5b3cb801c68a18d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cada4e967bec2582fbec02a1ef8df922995aaa6",
+      "size": 390,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2cada4e967bec2582fbec02a1ef8df922995aaa6"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f2bf2594412925109c58ce807e2d78c4dbce314",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/3f2bf2594412925109c58ce807e2d78c4dbce314"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c62ed172742cb0eb5a4fe7bd83e2a8a04b4530a9",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/c62ed172742cb0eb5a4fe7bd83e2a8a04b4530a9"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75c8b6c88feb62b63de44f23402ded833bad1d6a",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/75c8b6c88feb62b63de44f23402ded833bad1d6a"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "111e51e2c31530b48bc67bd2c6c4507f7a49459c",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/111e51e2c31530b48bc67bd2c6c4507f7a49459c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67ed9e6519c492317b037c924eedd73ed63e7072",
+      "size": 2156,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/67ed9e6519c492317b037c924eedd73ed63e7072"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58874f1892c338756128ed3b8e479bf7cf992f0b",
+      "size": 3843,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/58874f1892c338756128ed3b8e479bf7cf992f0b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f1550be5cee116b0d077b5cd9605efe8e041f7e",
+      "size": 1170,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/8f1550be5cee116b0d077b5cd9605efe8e041f7e"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14d3dfddb055f7ed3c5a26a12008b94a0a1d60d2",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/14d3dfddb055f7ed3c5a26a12008b94a0a1d60d2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d9d4527a71c47c5c11baf4b660ef0573e187411",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/2d9d4527a71c47c5c11baf4b660ef0573e187411"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cefb07b40073cda8c7c1b68d7118ac6ab41e772",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/7cefb07b40073cda8c7c1b68d7118ac6ab41e772"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd/第一轮_角色职责_可复制版V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/abe52432cb38f000d37dcd4545725cf9e8086d72"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78cb18022cabaa74df4c8ebb6f5e31f8c402b852",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/78cb18022cabaa74df4c8ebb6f5e31f8c402b852"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/29305c836ac973dcf5216f80c283f52e39c97359"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/29305c836ac973dcf5216f80c283f52e39c97359"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/第一轮_角色职责_可复制版V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/abe52432cb38f000d37dcd4545725cf9e8086d72"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55614c6dcde153987c0d3689536dc6bdad46d5cf",
+      "size": 8693,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/55614c6dcde153987c0d3689536dc6bdad46d5cf"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83f65624eff39d59720c6e96e6291746c9fca62a",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/83f65624eff39d59720c6e96e6291746c9fca62a"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fd20ff754ae1ccfb3d2d08198378f0dea30bc12",
+      "size": 396,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/3fd20ff754ae1ccfb3d2d08198378f0dea30bc12"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "309b91a9159eaa1679a42f6c2dd11a13410725ba",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/309b91a9159eaa1679a42f6c2dd11a13410725ba"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f538b1433262029189257cd054641f417dc50e0f",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/f538b1433262029189257cd054641f417dc50e0f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6de9840d0f88f0037e1a124755116ae5375882d",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/a6de9840d0f88f0037e1a124755116ae5375882d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5979861273535cb2c5cacb034986c823a84a427",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/a5979861273535cb2c5cacb034986c823a84a427"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29fde2874b2dc1f14b83695c48b274ec098727a0",
+      "size": 4816,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/29fde2874b2dc1f14b83695c48b274ec098727a0"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bec3b097ed120718641d3c21c53648994c054051",
+      "size": 6517,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/bec3b097ed120718641d3c21c53648994c054051"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d992a65d688452dbca3954657548acc1d6938f1c",
+      "size": 3273,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/d992a65d688452dbca3954657548acc1d6938f1c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "445278f29fb0ebfa02ccd386b377e67562a37f4d",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/445278f29fb0ebfa02ccd386b377e67562a37f4d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "488f44a9abf0297256b5b6ee4c1bf2028ba829be",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/488f44a9abf0297256b5b6ee4c1bf2028ba829be"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7cefb07b40073cda8c7c1b68d7118ac6ab41e772",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/7cefb07b40073cda8c7c1b68d7118ac6ab41e772"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd/第一轮_角色职责_可复制版V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/abe52432cb38f000d37dcd4545725cf9e8086d72"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78cb18022cabaa74df4c8ebb6f5e31f8c402b852",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/78cb18022cabaa74df4c8ebb6f5e31f8c402b852"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/29305c836ac973dcf5216f80c283f52e39c97359"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/29305c836ac973dcf5216f80c283f52e39c97359"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第一轮_角色职责_可复制版V1.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/abe52432cb38f000d37dcd4545725cf9e8086d72"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_研发岗位架构与职责细化V2.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1792a1ff7b2746277bd7ad34dab59cd38632175c",
+      "size": 87876,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/1792a1ff7b2746277bd7ad34dab59cd38632175c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_研发职责覆盖矩阵V2.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bcf8a20cfe12062cc5c2bad92672ebcfa41b554",
+      "size": 6781,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5bcf8a20cfe12062cc5c2bad92672ebcfa41b554"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_角色职责_可复制版V2.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be889bed5654be944bb0339baa3e7365eeb2d473",
+      "size": 50351,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/be889bed5654be944bb0339baa3e7365eeb2d473"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5718ec3e59cfa62249ab057e4e7e850d0175c4f8",
+      "size": 11447,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5718ec3e59cfa62249ab057e4e7e850d0175c4f8"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d691407bf01075b8f945e42c42efa8410f54457",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/0d691407bf01075b8f945e42c42efa8410f54457"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "370444217a9adfdb30d084e195b429da5a225681",
+      "size": 420,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/370444217a9adfdb30d084e195b429da5a225681"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1865aefe0f4cc340e2e9f2fe0e91d48ba7f79e3",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/b1865aefe0f4cc340e2e9f2fe0e91d48ba7f79e3"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "836700ce44e51686dc45b78ad3c1745ae0c0b1f8",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/836700ce44e51686dc45b78ad3c1745ae0c0b1f8"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "182896b82e3f64b16a2ea16a500d3ef512f15d0a",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/182896b82e3f64b16a2ea16a500d3ef512f15d0a"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37011fc84538c9b1b080dfd30a81838bb9d41ba2",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/37011fc84538c9b1b080dfd30a81838bb9d41ba2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "677d4f1dea4eec2c9e0947dc3d090f3a87da7b48",
+      "size": 8107,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/677d4f1dea4eec2c9e0947dc3d090f3a87da7b48"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47a699300326a053a814a4a182127946d958503f",
+      "size": 10598,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/47a699300326a053a814a4a182127946d958503f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e160adc595a2f8602555586eeaea1753ee2e0a",
+      "size": 2748,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/c8e160adc595a2f8602555586eeaea1753ee2e0a"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4137659d97747035d333f90c84ce87d7cf0bd83",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/a4137659d97747035d333f90c84ce87d7cf0bd83"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ee010656d381c0477d7f535a3a76a8ca73c286b",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/2ee010656d381c0477d7f535a3a76a8ca73c286b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第五轮_研发岗位体系审查完整交付包V5.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a4c8839a67e6d3fc481ae1c4a284b06adbf1733",
+      "size": 96419,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/3a4c8839a67e6d3fc481ae1c4a284b06adbf1733"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第六轮_游戏研发岗位体系最终冻结版V6.0_完整交付包.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5019ca0c83021bd0ea78b4e3de517991b67de531",
+      "size": 174352,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5019ca0c83021bd0ea78b4e3de517991b67de531"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2454fb32bff094a4d34812aa25698bc04e7f49aa"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b490419171eb76ce914e496195b94eb1d980825",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/4b490419171eb76ce914e496195b94eb1d980825"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_压力测试与故障恢复场景V5.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7b47a8c0729d29dc0329b38cbb3af639060e7d",
+      "size": 4672,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2b7b47a8c0729d29dc0329b38cbb3af639060e7d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_审查机器可读结果V5.0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52263607dd325e11bb9aa2b192f7a364819df1b",
+      "size": 97831,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/e52263607dd325e11bb9aa2b192f7a364819df1b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_缺陷与责任追踪清单V5.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "075923ca6ab6e11f5102104e913e21635c147f49",
+      "size": 11692,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/075923ca6ab6e11f5102104e913e21635c147f49"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/985540d3d80d4dcbb17340d44e02233940a1cf0f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/7f18ec64ff61fe5f66fef7c588a3a297c12fab16"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "770b5c1e7dec773a4ba8d096287ce87a4fee7516",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/770b5c1e7dec773a4ba8d096287ce87a4fee7516"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "05c2d6a9cbcd41aaab6b06b2400229147b849349",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/05c2d6a9cbcd41aaab6b06b2400229147b849349"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8/第六轮_首批岗位启动任务单V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "208198caa480e2a679eb1c0bb55d2bf316cd3200",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/208198caa480e2a679eb1c0bb55d2bf316cd3200"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/682a18f0c33ae24637e67cf19fec33df8142a0f7"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6958ea1190252a9ae80dfc6ad98777ed696a45ea",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/6958ea1190252a9ae80dfc6ad98777ed696a45ea"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/63a1a933eb71484dd65e07cd08ab7efbb3c2deb4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f265bab804965ab6ed6bf1e5e9875bab1773b7d4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/b333ae1fc044fc9174112454cd3c300f122335a2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/74685754fdc459b17737dff202f9ef1967f44a6b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/02e8077345b623ba946f6ec40c7913137b445418"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/ef19205404808c6457ee1b49a7e2a4614aff612d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第五轮_角色职责_可复制版V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/682a18f0c33ae24637e67cf19fec33df8142a0f7"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_首批岗位启动任务单V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/432074f4baf792e6e07b371392d4b2dfdbb7e3cd"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "316f3700af673fa77b555ae249aa4d509b457477",
+      "size": 37716,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/316f3700af673fa77b555ae249aa4d509b457477"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b57efdc41452455b7387a7b9479b439e4d2f0c82",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/b57efdc41452455b7387a7b9479b439e4d2f0c82"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/latest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebcade05ecd868438b3b4bbfa73acdd70fce6bee",
+      "size": 420,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/ebcade05ecd868438b3b4bbfa73acdd70fce6bee"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4769f00d4482084ac3dbb1f2f8fa25d1fab3d80f",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/4769f00d4482084ac3dbb1f2f8fa25d1fab3d80f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ae83d07cbcc9129d37743821068524c77612603",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/2ae83d07cbcc9129d37743821068524c77612603"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5bd4734f801c1f5a79213f863ef188bfcce2b1f",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/f5bd4734f801c1f5a79213f863ef188bfcce2b1f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65c103337e6987013c734c7992fed5b8169dad7f",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/65c103337e6987013c734c7992fed5b8169dad7f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d20eff0e577d69c1fd2c4c5b4b34a7af1f86d73",
+      "size": 9318,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/7d20eff0e577d69c1fd2c4c5b4b34a7af1f86d73"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/answer.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e3275983335d8600ac13b973ba63064c9e6415d",
+      "size": 11816,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/8e3275983335d8600ac13b973ba63064c9e6415d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/answer.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a2b075ad0d54b200d4fd41ab2d774ce2def4e31",
+      "size": 4851,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5a2b075ad0d54b200d4fd41ab2d774ce2def4e31"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4a3379a3b0c4259263bf6c2cbbcdb9f27d688f26",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/4a3379a3b0c4259263bf6c2cbbcdb9f27d688f26"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89a12a464f914cd64bdc807557cc8bbc5db8637f",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/89a12a464f914cd64bdc807557cc8bbc5db8637f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第五轮_研发岗位体系审查完整交付包V5.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a4c8839a67e6d3fc481ae1c4a284b06adbf1733",
+      "size": 96419,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/3a4c8839a67e6d3fc481ae1c4a284b06adbf1733"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2454fb32bff094a4d34812aa25698bc04e7f49aa"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a369a39fbc6b5ff9595a8fda9ca3d61e791dd2cc",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/a369a39fbc6b5ff9595a8fda9ca3d61e791dd2cc"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/3520ecca706f5fffad792f136233f1df9da8bb68f7313ea4c9dd5e67e3e4e4dc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ed80ee72a78792653a6f1864fb8ff4f6902cd42",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/0ed80ee72a78792653a6f1864fb8ff4f6902cd42"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/3520ecca706f5fffad792f136233f1df9da8bb68f7313ea4c9dd5e67e3e4e4dc/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/985540d3d80d4dcbb17340d44e02233940a1cf0f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_压力测试与故障恢复场景V5.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7b47a8c0729d29dc0329b38cbb3af639060e7d",
+      "size": 4672,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/2b7b47a8c0729d29dc0329b38cbb3af639060e7d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_审查机器可读结果V5.0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52263607dd325e11bb9aa2b192f7a364819df1b",
+      "size": 97831,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/e52263607dd325e11bb9aa2b192f7a364819df1b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_缺陷与责任追踪清单V5.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "075923ca6ab6e11f5102104e913e21635c147f49",
+      "size": 11692,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/075923ca6ab6e11f5102104e913e21635c147f49"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/985540d3d80d4dcbb17340d44e02233940a1cf0f"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/7f18ec64ff61fe5f66fef7c588a3a297c12fab16"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a36d8736ae94187656c68a1dec0e0306745ff05a",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/a36d8736ae94187656c68a1dec0e0306745ff05a"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/277daf598e0c5ec89c9544f3933b6932e22954e71a19965ff2d5bd88058526bb",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9874c5356b20a8ac1ab9791fcfdfc6f9340fff7c",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/9874c5356b20a8ac1ab9791fcfdfc6f9340fff7c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/277daf598e0c5ec89c9544f3933b6932e22954e71a19965ff2d5bd88058526bb/第五轮_角色职责_可复制版V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/aa0b7cdfcb5d655061c9b8fd9686d8915155a125ec1f25f0ee1734a275184184",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7cb2dcfa6c8c26f838b7a3aad2efa73c143ff89",
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/c7cb2dcfa6c8c26f838b7a3aad2efa73c143ff89"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/aa0b7cdfcb5d655061c9b8fd9686d8915155a125ec1f25f0ee1734a275184184/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/ef19205404808c6457ee1b49a7e2a4614aff612d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/63a1a933eb71484dd65e07cd08ab7efbb3c2deb4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f265bab804965ab6ed6bf1e5e9875bab1773b7d4"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/b333ae1fc044fc9174112454cd3c300f122335a2"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/74685754fdc459b17737dff202f9ef1967f44a6b"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/02e8077345b623ba946f6ec40c7913137b445418"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/ef19205404808c6457ee1b49a7e2a4614aff612d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第五轮_角色职责_可复制版V5.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/432074f4baf792e6e07b371392d4b2dfdbb7e3cd"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ba5cdebd31cc1b6ece42a1285dbb7ac355abacb",
+      "size": 32115,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/1ba5cdebd31cc1b6ece42a1285dbb7ac355abacb"
+    }
+  ],
+  "truncated": false
+}

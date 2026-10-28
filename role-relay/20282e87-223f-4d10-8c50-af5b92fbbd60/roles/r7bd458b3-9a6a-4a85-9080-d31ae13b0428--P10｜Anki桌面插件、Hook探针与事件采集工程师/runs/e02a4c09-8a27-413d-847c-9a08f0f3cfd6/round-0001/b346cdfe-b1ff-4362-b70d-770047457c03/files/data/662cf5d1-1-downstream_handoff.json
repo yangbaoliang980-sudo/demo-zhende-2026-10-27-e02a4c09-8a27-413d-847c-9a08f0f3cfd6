@@ -1,0 +1,494 @@
+{
+  "schema_version": "P10-HANDOFF/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "production_write_whitelist": [],
+  "integrator_authorized": false,
+  "records": [
+    {
+      "receiver": "P11",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P11",
+      "path": "QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P11",
+      "path": "sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P11",
+      "path": "rfc_ic14_ic15.md",
+      "size_bytes": 2374,
+      "sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P11",
+      "path": "verification_status.json",
+      "size_bytes": 2096,
+      "sha256": "9e5209a711579f2667dd1910e3ee4e09a3f3252f1febd7a0db3b979f3dd6d426",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P12",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P12",
+      "path": "QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P12",
+      "path": "rfc_ic14_ic15.md",
+      "size_bytes": 2374,
+      "sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P12",
+      "path": "reference_inputs.json",
+      "size_bytes": 6352,
+      "sha256": "0585c509925440a9d9ba68f4d0a3467c2a670392a659d0565ff1289f27a4a8dc",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P12",
+      "path": "evidence/author_run_002/static_reference.stdout.log",
+      "size_bytes": 5156,
+      "sha256": "885e4cdc6a6546390be1c55c85a5a21041f3d39b281cab03f3072816ea638667",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "README.md",
+      "size_bytes": 3552,
+      "sha256": "d04b2eb2143200af5db1b29ee559ae3f8f0f5cbc1aa612600eec8859fa42052c",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "anki_hook_probe.py",
+      "size_bytes": 9544,
+      "sha256": "da1ce77460f32556247ccc7e02d77d3c2b31d3108c1db30af00e99d58db18914",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "verification/test_report_guards.py",
+      "size_bytes": 6329,
+      "sha256": "f0b2dae2607d0ba7975065736c648972b2dbf348a11404839f6d1a9bdb38aa40",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "verification/run_author_checks.py",
+      "size_bytes": 3159,
+      "sha256": "0ac056df637f14542795b4dd15189447f3f7b53cf092aff5c0d63a60746c7f79",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "verification/verify_delivery.py",
+      "size_bytes": 2159,
+      "sha256": "ae91ab3223804016c7c698ed0e8e2d2712ac7bd05f949817c56d68c16d7222c2",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "verification_status.json",
+      "size_bytes": 2096,
+      "sha256": "9e5209a711579f2667dd1910e3ee4e09a3f3252f1febd7a0db3b979f3dd6d426",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "evidence/author_run_002/run_receipt.json",
+      "size_bytes": 2034,
+      "sha256": "0bfd6d5444d0e9583e1cdfdeb7321858b4b6dfeceb1886ae477b25901d4a16ae",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P32",
+      "path": "evidence/author_run_002/input_bindings.json",
+      "size_bytes": 4570,
+      "sha256": "eeba4d76f3b4ef71ce0f4577f0b0f2b1b3cd870d380d80314dd03ce7927f78b8",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P34",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P34",
+      "path": "prerequisites.json",
+      "size_bytes": 2843,
+      "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P34",
+      "path": "sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P34",
+      "path": "probe_log_redacted.txt",
+      "size_bytes": 6425,
+      "sha256": "0cc0461053496e2705e0dcb17377a84a03608e4a2c269bf964ac1571ad2e626b",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P34",
+      "path": "configuration_disable_uninstall.md",
+      "size_bytes": 3071,
+      "sha256": "c201c7ef181cc1fdea9383f03bc6bddc93c1aa3896d4deef86080d26b8e463da",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P36",
+      "path": "README.md",
+      "size_bytes": 3552,
+      "sha256": "d04b2eb2143200af5db1b29ee559ae3f8f0f5cbc1aa612600eec8859fa42052c",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P36",
+      "path": "addon_manifest.json",
+      "size_bytes": 725,
+      "sha256": "cf8062085e22a599527e8bb2d2ed89cb8d853522da03675bb18918cc69450ce2",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P36",
+      "path": "deliverable_status.json",
+      "size_bytes": 1907,
+      "sha256": "f8ccee3538b8362e98d67a8202e41a2d5e13f23854615adb4fdb01dc91b53854",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P36",
+      "path": "configuration_disable_uninstall.md",
+      "size_bytes": 3071,
+      "sha256": "c201c7ef181cc1fdea9383f03bc6bddc93c1aa3896d4deef86080d26b8e463da",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P36",
+      "path": "QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "source_input_receipt.json",
+      "size_bytes": 8652,
+      "sha256": "fe6262c87d8104e44d843c047f6f962f49d170e49ddc0b523e5200b9a130e972",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "verification_status.json",
+      "size_bytes": 2096,
+      "sha256": "9e5209a711579f2667dd1910e3ee4e09a3f3252f1febd7a0db3b979f3dd6d426",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "evidence/intake/git_blob_bindings.json",
+      "size_bytes": 2122,
+      "sha256": "bf412b48ab5929c639d101feb6ad939f2e6099bee2391d1e97a0b1040fc77ae8",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "evidence/intake/intake_report.json",
+      "size_bytes": 306013,
+      "sha256": "fbfce6f38dc349fc6f24fe028e704d65e0b0ea4794ebfa70b037bdae618cdde9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "evidence/intake/upstream_manifest_checks.json",
+      "size_bytes": 35110,
+      "sha256": "0d694619c008681a240a55e035668ed250552435cd1bbb9593ca7a937c76d637",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P35",
+      "path": "evidence/author_run_002/run_receipt.json",
+      "size_bytes": 2034,
+      "sha256": "0bfd6d5444d0e9583e1cdfdeb7321858b4b6dfeceb1886ae477b25901d4a16ae",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P09",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P09",
+      "path": "sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P09",
+      "path": "rfc_ic14_ic15.md",
+      "size_bytes": 2374,
+      "sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P09",
+      "path": "sources/upstream/p09_anki_field_observations.md",
+      "size_bytes": 3396,
+      "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P13",
+      "path": "prerequisites.json",
+      "size_bytes": 2843,
+      "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P13",
+      "path": "addon_manifest.json",
+      "size_bytes": 725,
+      "sha256": "cf8062085e22a599527e8bb2d2ed89cb8d853522da03675bb18918cc69450ce2",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P13",
+      "path": "deliverable_status.json",
+      "size_bytes": 1907,
+      "sha256": "f8ccee3538b8362e98d67a8202e41a2d5e13f23854615adb4fdb01dc91b53854",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P38",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P38",
+      "path": "prerequisites.json",
+      "size_bytes": 2843,
+      "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P38",
+      "path": "sample_inventory.json",
+      "size_bytes": 4578,
+      "sha256": "bda64f5188b7ac9297b59b8875819a7cc47bfb52c1211d7b2c937634cb447dd9",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P38",
+      "path": "rfc_ic14_ic15.md",
+      "size_bytes": 2374,
+      "sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P08",
+      "path": "hook_probe_report.md",
+      "size_bytes": 15187,
+      "sha256": "29fa95d6c9292790fc751b3cc025596c66ef82922f2aceff4ac5335aaf22c20d",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P08",
+      "path": "QUARANTINED.json",
+      "size_bytes": 834,
+      "sha256": "68e2f8c0a55acac675d49a8f0af7cf6a4b1cae62b493f80ee9196ef5749a7013",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P08",
+      "path": "rfc_ic14_ic15.md",
+      "size_bytes": 2374,
+      "sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P01",
+      "path": "README.md",
+      "size_bytes": 3552,
+      "sha256": "d04b2eb2143200af5db1b29ee559ae3f8f0f5cbc1aa612600eec8859fa42052c",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P01",
+      "path": "prerequisites.json",
+      "size_bytes": 2843,
+      "sha256": "1bd1c0cd3a00447edaf36b271f1bc29dd5c22d199bfa971c755f042f9e90fc39",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P01",
+      "path": "deliverable_status.json",
+      "size_bytes": 1907,
+      "sha256": "f8ccee3538b8362e98d67a8202e41a2d5e13f23854615adb4fdb01dc91b53854",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    },
+    {
+      "receiver": "P01",
+      "path": "verification_status.json",
+      "size_bytes": 2096,
+      "sha256": "9e5209a711579f2667dd1910e3ee4e09a3f3252f1febd7a0db3b979f3dd6d426",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receiver_acceptance": null,
+      "modify_whitelist": []
+    }
+  ]
+}

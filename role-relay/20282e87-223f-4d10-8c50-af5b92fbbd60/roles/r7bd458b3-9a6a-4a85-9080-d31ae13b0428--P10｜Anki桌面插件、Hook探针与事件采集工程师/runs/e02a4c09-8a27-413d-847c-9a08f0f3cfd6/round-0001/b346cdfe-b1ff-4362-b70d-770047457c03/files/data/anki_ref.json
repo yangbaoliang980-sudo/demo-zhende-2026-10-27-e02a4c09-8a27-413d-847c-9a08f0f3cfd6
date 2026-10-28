@@ -1,0 +1,13 @@
+{
+  "sha": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+  "html_url": "https://github.com/ankitects/anki/commit/d87cb22bf337c52257376f3abcec09c03a255ed4",
+  "commit": {
+    "tree": {
+      "sha": "969aaf70044be74b0539c449019019296e229945",
+      "url": "https://api.github.com/repos/ankitects/anki/git/trees/969aaf70044be74b0539c449019019296e229945"
+    },
+    "committer": {
+      "date": "2026-10-27T16:55:17Z"
+    }
+  }
+}

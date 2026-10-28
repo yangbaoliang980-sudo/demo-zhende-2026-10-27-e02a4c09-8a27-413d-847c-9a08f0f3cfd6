@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 append-only manual correction fixture schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "P09-OVERRIDE/0.1.0-proposal"
+    },
+    "source_kind": {
+      "const": "SYNTHETIC"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^syn:"
+    },
+    "previous_event_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "event_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "binding": {
+      "type": "object",
+      "properties": {
+        "scope_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "observation_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "mapping_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mapping_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "scope_ref",
+        "subject_ref",
+        "profile_id",
+        "profile_sha256",
+        "observation_sha256",
+        "mapping_version",
+        "mapping_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "action": {
+      "enum": [
+        "SET",
+        "CLEAR",
+        "ROLLBACK"
+      ]
+    },
+    "expected_head": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "before_category": {
+      "enum": [
+        "NOUN",
+        "VERB",
+        "I_ADJECTIVE",
+        "NA_ADJECTIVE",
+        "ADVERB",
+        "GRAMMAR",
+        "SENTENCE",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "after_category": {
+      "enum": [
+        "NOUN",
+        "VERB",
+        "I_ADJECTIVE",
+        "NA_ADJECTIVE",
+        "ADVERB",
+        "GRAMMAR",
+        "SENTENCE",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "target_event_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actor_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_ref": {
+      "const": "SYNTHETIC_MANUAL_ACTION_NO_REAL_GRANT"
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source_kind",
+    "sequence",
+    "event_id",
+    "previous_event_sha256",
+    "event_sha256",
+    "binding",
+    "action",
+    "expected_head",
+    "before_category",
+    "after_category",
+    "target_event_id",
+    "actor_ref",
+    "authorization_ref",
+    "reason_code",
+    "recorded_at"
+  ],
+  "additionalProperties": false,
+  "$comment": "Hash chain, same-binding rollback and optimistic concurrency checked by replay_overrides; this is not P21 durable storage or actor authentication."
+}

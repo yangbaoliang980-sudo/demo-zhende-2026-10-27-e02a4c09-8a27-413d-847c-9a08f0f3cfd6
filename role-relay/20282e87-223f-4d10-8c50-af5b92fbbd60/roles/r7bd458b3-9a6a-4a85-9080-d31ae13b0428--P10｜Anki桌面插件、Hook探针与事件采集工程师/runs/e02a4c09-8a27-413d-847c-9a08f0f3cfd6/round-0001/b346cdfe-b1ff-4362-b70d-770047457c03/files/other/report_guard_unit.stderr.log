@@ -1,0 +1,23 @@
+test_byte_tamper_rejected (test_report_guards.ReportGuardTests.test_byte_tamper_rejected) ... ok
+test_discovered_module_not_runtime_evidence (test_report_guards.ReportGuardTests.test_discovered_module_not_runtime_evidence) ... ok
+test_duplicate_bindings_rejected (test_report_guards.ReportGuardTests.test_duplicate_bindings_rejected) ... ok
+test_duplicate_hook_declaration_rejected (test_report_guards.ReportGuardTests.test_duplicate_hook_declaration_rejected) ... ok
+test_duplicate_json_keys_rejected (test_report_guards.ReportGuardTests.test_duplicate_json_keys_rejected) ... ok
+test_empty_bindings_rejected (test_report_guards.ReportGuardTests.test_empty_bindings_rejected) ... ok
+test_missing_hook_not_claimed_supported (test_report_guards.ReportGuardTests.test_missing_hook_not_claimed_supported) ... ok
+test_missing_prerequisites_block (test_report_guards.ReportGuardTests.test_missing_prerequisites_block) ... ok
+test_nonfinite_json_rejected (test_report_guards.ReportGuardTests.test_nonfinite_json_rejected) ... ok
+test_nonliteral_metadata_rejected (test_report_guards.ReportGuardTests.test_nonliteral_metadata_rejected) ... ok
+test_parser_never_executes_source (test_report_guards.ReportGuardTests.test_parser_never_executes_source) ... ok
+test_real_reference_signature (test_report_guards.ReportGuardTests.test_real_reference_signature) ... ok
+test_reference_not_promoted_to_target (test_report_guards.ReportGuardTests.test_reference_not_promoted_to_target) ... ok
+test_sample_inventory_does_not_fabricate_events (test_report_guards.ReportGuardTests.test_sample_inventory_does_not_fabricate_events) ... ok
+test_size_mismatch_rejected (test_report_guards.ReportGuardTests.test_size_mismatch_rejected) ... ok
+test_symlink_rejected (test_report_guards.ReportGuardTests.test_symlink_rejected) ... ok
+test_toggling_boolean_cannot_authorize (test_report_guards.ReportGuardTests.test_toggling_boolean_cannot_authorize) ... ok
+test_unsafe_paths_rejected (test_report_guards.ReportGuardTests.test_unsafe_paths_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.024s
+
+OK

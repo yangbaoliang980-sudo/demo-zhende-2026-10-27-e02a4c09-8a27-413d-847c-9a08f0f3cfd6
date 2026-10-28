@@ -1,0 +1,12 @@
+id	unique_followup_owner	missing_evidence	status	affects
+P09-BLK-01	P10	真实最小字段样本、note type/template字段表、字段可观察报告、脱敏原始证据	BLOCKED	真实字段分类
+P09-BLK-02	P38	用户授权字段白名单、用途/范围/留存约束、授权原文与SHA；必要时经P01取得用户批准	BLOCKED	真实字段读取
+P09-BLK-03	P13	actual_path_mapping.json、真实工程固定commit、do_not_touch.txt、写入白名单和内部DTO版本/SHA	BLOCKED	实际工程写入和DTO接入
+P09-BLK-04	P34	目标OS、引擎和Anki精确版本及环境指纹	BLOCKED	目标机复现
+P09-BLK-05	P12	已接收字段观察/分类封装的跨进程合同、版本兼容表、接收回执	BLOCKED	正式契约
+P09-BLK-06	P22	八类语义键与资源候选的正式内容ID/Schema注册、映射表独立校验回执	BLOCKED	正式内容引用
+P09-BLK-07	P08	P01转交的用户批准政策、选定经济资源模型及P05预算；映射接收回执	BLOCKED	实际收益
+P09-BLK-08	P32	本包固定哈希的独立自动化及正式契约执行原始记录	NOT_RUN	独立测试
+P09-BLK-09	P33	目标版字段配置、人工改错及撤销旅程记录	NOT_RUN	人工验证
+P09-BLK-10	P35	SPEC/UNIT/CONTRACT/RUNTIME/E2E分级独立门禁回执	NOT_RUN	独立验收
+P09-BLK-11	P01	用户指定EXT-INTEGRATOR及整合范围授权	BLOCKED	跨模块整合

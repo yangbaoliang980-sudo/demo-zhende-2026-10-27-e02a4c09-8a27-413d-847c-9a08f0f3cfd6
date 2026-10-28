@@ -1,0 +1,89 @@
+{
+  "schema_version": "P10-VERIFICATION-STATUS/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "checks": [
+    {
+      "layer": "ARCHIVE_CRC_AND_RELAY_MANIFEST",
+      "status": "PASS",
+      "counts": {
+        "unique_zips": 15,
+        "archive_members": 612,
+        "relay_entries": 260
+      },
+      "evidence": "evidence/intake/intake_report.json"
+    },
+    {
+      "layer": "P08_P09_INTERNAL_MANIFEST",
+      "status": "PASS",
+      "count": 146,
+      "evidence": "evidence/intake/upstream_manifest_checks.json"
+    },
+    {
+      "layer": "FIXED_GIT_BLOB_BINDING",
+      "status": "PASS",
+      "count": 2,
+      "evidence": "evidence/intake/git_blob_bindings.json"
+    },
+    {
+      "layer": "STATIC_SOURCE_EXTRACTION",
+      "status": "PASS",
+      "reference_commit": "d87cb22bf337c52257376f3abcec09c03a255ed4",
+      "target_runtime": false,
+      "evidence": "evidence/author_run_002/static_reference.stdout.log"
+    },
+    {
+      "layer": "AUTHOR_REPORT_CHECKER_UNIT",
+      "status": "PASS",
+      "tests": 18,
+      "evidence": "evidence/author_run_002/report_guard_unit.stderr.log"
+    },
+    {
+      "layer": "TARGET_PROBE_PREFLIGHT",
+      "status": "BLOCKED",
+      "exit_code": 3,
+      "evidence": "probe_log_redacted.txt"
+    },
+    {
+      "layer": "PLUGIN_OUTBOX_UNIT",
+      "status": "NOT_RUN",
+      "implementation": "BLOCKED"
+    },
+    {
+      "layer": "DESIGN_INDEPENDENT_REVIEW",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P12_FORMAL_CONTRACT",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "ANKI_TARGET_RUNTIME",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "E2E",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P32_INDEPENDENT_AUTOMATION",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P33_MANUAL",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P34_TARGET_COMPATIBILITY",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P35_INDEPENDENT_GATE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P38_PRIVACY_REVIEW",
+      "status": "NOT_RUN"
+    }
+  ],
+  "production_award_authorized": false
+}

@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P09 mapping result proposal",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "P09-MAPPING-RESULT/0.1.0-proposal"
+    },
+    "mapping_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "mapping_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "mapping_status": {
+      "enum": [
+        "BLOCKED",
+        "UNKNOWN",
+        "CLASSIFIED"
+      ]
+    },
+    "category": {
+      "enum": [
+        "NOUN",
+        "VERB",
+        "I_ADJECTIVE",
+        "NA_ADJECTIVE",
+        "ADVERB",
+        "GRAMMAR",
+        "SENTENCE",
+        "UNKNOWN",
+        null
+      ]
+    },
+    "reason_code": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selected_tier": {
+      "enum": [
+        "BOUND_MANUAL_OVERRIDE",
+        "CATEGORY_LABEL",
+        "UNIT_KIND",
+        "POS_LABEL",
+        null
+      ]
+    },
+    "candidates": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "NOUN",
+          "VERB",
+          "I_ADJECTIVE",
+          "NA_ADJECTIVE",
+          "ADVERB",
+          "GRAMMAR",
+          "SENTENCE",
+          "UNKNOWN"
+        ]
+      }
+    },
+    "observation_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "override_event_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "resource_role_proposal": {
+      "enum": [
+        "GUARD_MATERIAL",
+        "ATTACK_MATERIAL",
+        "SUPPORT_MATERIAL",
+        "TACTIC_MATERIAL",
+        "GENERAL_MATERIAL",
+        null
+      ]
+    },
+    "formal_resource_id": {
+      "type": "null"
+    },
+    "quantity": {
+      "type": "null"
+    },
+    "production_award_authorized": {
+      "const": false
+    },
+    "reward_effect": {
+      "const": "NONE_PREVIEW_ONLY"
+    },
+    "profile_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "profile_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "scope_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "subject_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "mapping_version",
+    "mapping_sha256",
+    "mapping_status",
+    "category",
+    "reason_code",
+    "selected_tier",
+    "candidates",
+    "observation_sha256",
+    "override_event_id",
+    "warnings",
+    "resource_role_proposal",
+    "formal_resource_id",
+    "quantity",
+    "production_award_authorized",
+    "reward_effect",
+    "profile_id",
+    "profile_sha256",
+    "scope_ref",
+    "subject_ref"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mapping_status": {
+            "const": "BLOCKED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "category": {
+            "type": "null"
+          },
+          "resource_role_proposal": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mapping_status": {
+            "const": "UNKNOWN"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "category": {
+            "const": "UNKNOWN"
+          },
+          "resource_role_proposal": {
+            "const": "GENERAL_MATERIAL"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mapping_status": {
+            "const": "CLASSIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "category": {
+            "enum": [
+              "NOUN",
+              "VERB",
+              "I_ADJECTIVE",
+              "NA_ADJECTIVE",
+              "ADVERB",
+              "GRAMMAR",
+              "SENTENCE"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

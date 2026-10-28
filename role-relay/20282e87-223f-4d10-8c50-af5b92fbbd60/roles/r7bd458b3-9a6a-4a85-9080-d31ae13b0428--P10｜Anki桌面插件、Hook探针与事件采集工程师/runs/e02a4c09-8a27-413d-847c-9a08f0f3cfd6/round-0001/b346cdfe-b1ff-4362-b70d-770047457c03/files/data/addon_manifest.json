@@ -1,0 +1,28 @@
+{
+  "schema_version": "P10-DELIVERY-DESCRIPTOR/0.1.0",
+  "artifact_type": "QUARANTINED_REPORT_DESCRIPTOR_NOT_ANKI_INSTALL_MANIFEST",
+  "installable": false,
+  "addon_package_id": null,
+  "addon_source_delivered": false,
+  "ankiaddon_package_delivered": false,
+  "supported_anki_versions": [],
+  "target_anki_version": null,
+  "minimum_anki_version": null,
+  "ipc_contract_version": null,
+  "actual_path_mapping": null,
+  "field_collection_enabled": false,
+  "outbox_implemented": false,
+  "auto_award_authorized": false,
+  "state": "QUARANTINED",
+  "entrypoint": "anki_hook_probe.py (offline report utility only)",
+  "receivers": [
+    "P11",
+    "P12",
+    "P32",
+    "P34",
+    "P36",
+    "P35",
+    "P38",
+    "P09"
+  ]
+}
