@@ -1,0 +1,90 @@
+{
+  "format_version": "P08-POLICY-RECORD-DRAFT/0.1.0",
+  "task_id": "P08-S04-S05-POLICY-001",
+  "policy_version": "P08-REWARD-POLICY/0.1.0-proposal",
+  "policy_status": "PROPOSAL",
+  "production_authorized": false,
+  "requirement_ids": [
+    "REQ-011",
+    "REQ-012",
+    "REQ-025",
+    "REQ-026",
+    "REQ-029",
+    "REQ-030",
+    "REQ-039"
+  ],
+  "decision_refs": [
+    "DEC-001",
+    "DEC-002",
+    "DEC-003",
+    "DEC-011",
+    "P08-DEC-CAP",
+    "P08-DEC-DAY",
+    "P08-DEC-MAP",
+    "P08-DEC-RETENTION",
+    "P08-DEC-EPISODE"
+  ],
+  "rating_semantics": [
+    "Again",
+    "Hard",
+    "Good",
+    "Easy"
+  ],
+  "formal_rating_amounts": {
+    "Again": null,
+    "Hard": null,
+    "Good": null,
+    "Easy": null
+  },
+  "rating_button_encoding": null,
+  "selected_reward_profile": null,
+  "formal_resource_ids": null,
+  "category_mapping_version": null,
+  "cap_policy": {
+    "selected": null,
+    "daily_limit": null,
+    "storage_limit": null,
+    "rounding": null,
+    "overflow": null,
+    "retrospective_award_rule": null
+  },
+  "reward_day_policy": {
+    "timezone": null,
+    "boundary": null,
+    "version": null,
+    "clock_evidence": null
+  },
+  "undo_spent_policy": null,
+  "source_spend_attribution_contract": null,
+  "zero_study_day_policy": null,
+  "scope": {
+    "source": null,
+    "collection_lineage": null,
+    "beneficiary": null,
+    "game_save_restore_rule": null
+  },
+  "effective_from": null,
+  "retroactive_scope": null,
+  "user_approval": null,
+  "p01_receipt": null,
+  "p09_mapping_receipt": null,
+  "p10_capability_receipt": null,
+  "p05_budget_receipt": null,
+  "p13_path_mapping_receipt": null,
+  "p12_transport_receipt": null,
+  "p17_wallet_receipt": null,
+  "p21_transaction_receipt": null,
+  "p22_id_receipt": null,
+  "p34_environment_receipt": null,
+  "p32_test_receipt": null,
+  "p35_gate_receipt": null,
+  "inherited_constraints": {
+    "real_anki_only": true,
+    "again_not_automatically_invalid": true,
+    "no_negative_balance_by_default": true,
+    "no_irreversible_item_delete_by_default": true,
+    "no_scheduler_change": true,
+    "no_production_award_without_approval": true
+  },
+  "deployment_note": "这是未签署设计记录，不可作为可运行奖励配置；单独改true不能满足正式门禁。"
+}

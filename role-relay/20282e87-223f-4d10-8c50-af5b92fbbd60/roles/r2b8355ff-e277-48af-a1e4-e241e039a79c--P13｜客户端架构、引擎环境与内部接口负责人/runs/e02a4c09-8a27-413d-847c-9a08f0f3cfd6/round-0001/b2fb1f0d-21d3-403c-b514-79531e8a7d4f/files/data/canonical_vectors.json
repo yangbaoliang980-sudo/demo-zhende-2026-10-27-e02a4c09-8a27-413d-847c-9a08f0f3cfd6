@@ -1,0 +1,809 @@
+{
+  "schema_version": "P13-CANONICAL-VECTORS/0.1.0",
+  "cases": [
+    {
+      "id": "ascii-order",
+      "value": {
+        "z": 0,
+        "a": 1
+      },
+      "canonical_utf8": "{\"a\":1,\"z\":0}",
+      "sha256": "b55af27c4bd5f02ebeca8f901b84d2940b22e7bea7230e4d06f275d903bfdd72"
+    },
+    {
+      "id": "unicode-values",
+      "value": {
+        "label": "言灵旅团／カナ ☃",
+        "ok": true
+      },
+      "canonical_utf8": "{\"label\":\"言灵旅团／カナ ☃\",\"ok\":true}",
+      "sha256": "c07e7f06b79232bd5704cd979341501182d728f34306f72dc0c634fd533a2e7c"
+    },
+    {
+      "id": "integer-limits",
+      "value": {
+        "low": -9007199254740991,
+        "high": 9007199254740991
+      },
+      "canonical_utf8": "{\"high\":9007199254740991,\"low\":-9007199254740991}",
+      "sha256": "8274cf69c1f4a1d2039d6104a42d06445b3f19759805ae085cf2d175d4f70bd7"
+    },
+    {
+      "id": "array-order",
+      "value": {
+        "array": [
+          3,
+          1,
+          2,
+          null,
+          false
+        ]
+      },
+      "canonical_utf8": "{\"array\":[3,1,2,null,false]}",
+      "sha256": "f1d2c86b768c318fab019cb037687c8aa2956fa77687ad07b79de12ab51da749"
+    },
+    {
+      "id": "AssetRef",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "AssetRef",
+        "asset_id": "fixture:asset",
+        "content_version": "fixture:content-v1",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "canonical_utf8": "{\"asset_id\":\"fixture:asset\",\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"AssetRef\",\"sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"}",
+      "sha256": "2dabd839f803c4df7b21eda3fb7c773e5a6b70af2caf0520b0b730446d2d14db"
+    },
+    {
+      "id": "AtomicCommitProposal",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "AtomicCommitProposal",
+        "transaction_id": "fixture:tx",
+        "request_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "transaction_kind": "STUDY_LEDGER_WALLET",
+        "domain_candidate_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "wallet_candidate": {
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "WalletDeltaCandidate",
+          "wallet_id": "fixture:wallet",
+          "beneficiary_id": "fixture-beneficiary",
+          "intent_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "expected_wallet_revision": 0,
+          "wallet_before_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "changes": [],
+          "allocations": [],
+          "unresolved": true,
+          "reason_code": "POLICY_UNBOUND"
+        },
+        "expected_domain_revision": 0,
+        "expected_store_instance": "fixture:store"
+      },
+      "canonical_utf8": "{\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"domain_candidate_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"dto_type\":\"AtomicCommitProposal\",\"expected_domain_revision\":0,\"expected_store_instance\":\"fixture:store\",\"request_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"transaction_id\":\"fixture:tx\",\"transaction_kind\":\"STUDY_LEDGER_WALLET\",\"wallet_candidate\":{\"allocations\":[],\"beneficiary_id\":\"fixture-beneficiary\",\"changes\":[],\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"WalletDeltaCandidate\",\"expected_wallet_revision\":0,\"intent_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"reason_code\":\"POLICY_UNBOUND\",\"unresolved\":true,\"wallet_before_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"wallet_id\":\"fixture:wallet\"}}",
+      "sha256": "072ccd3769a1be071bb538b5a4ff611f29c22175b91dc963067685a631014941"
+    },
+    {
+      "id": "BattleCommand",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommand",
+        "battle_id": "fixture:battle",
+        "command_id": "fixture:command1",
+        "expected_revision": 0,
+        "kind": "END_TURN",
+        "payload": {}
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleCommand\",\"expected_revision\":0,\"kind\":\"END_TURN\",\"payload\":{}}",
+      "sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5"
+    },
+    {
+      "id": "BattleCommitBatch",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleCommitBatch",
+        "battle_id": "fixture:battle",
+        "command_id": "fixture:command1",
+        "previous_revision": 0,
+        "snapshot": {
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleSnapshot",
+          "battle_id": "fixture:battle",
+          "revision": 1,
+          "rules_version": "P02-BATTLE-0.1.0-draft",
+          "content_version": "fixture:content-v1",
+          "phase": "ENEMY_READY",
+          "turn_number": 1,
+          "energy": 3,
+          "units": [
+            {
+              "unit_id": "hero1",
+              "definition_id": "fixture:hero1",
+              "side": "PLAYER",
+              "slot": 0,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "hero2",
+              "definition_id": "fixture:hero2",
+              "side": "PLAYER",
+              "slot": 1,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "hero3",
+              "definition_id": "fixture:hero3",
+              "side": "PLAYER",
+              "slot": 2,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "enemy1",
+              "definition_id": "fixture:enemy1",
+              "side": "ENEMY",
+              "slot": 0,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            }
+          ],
+          "card_instances": [
+            {
+              "instance_id": "cardinst1",
+              "card_id": "fixture:card1",
+              "owner_unit_id": "hero1"
+            }
+          ],
+          "zones": {
+            "draw": [],
+            "hand": [
+              "cardinst1"
+            ],
+            "discard": [],
+            "exhaust": []
+          },
+          "rng": {
+            "algorithm": "xorshift32-v1",
+            "initial_seed": 1,
+            "state": 1,
+            "draw_count": 0
+          },
+          "last_event_seq": 3,
+          "outcome": "ONGOING",
+          "boss_states": []
+        },
+        "events": [
+          {
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleEvent",
+            "battle_id": "fixture:battle",
+            "command_id": "fixture:command1",
+            "revision": 1,
+            "seq": 1,
+            "event_type": "COMMAND_ACCEPTED",
+            "data": {
+              "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5"
+            }
+          },
+          {
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleEvent",
+            "battle_id": "fixture:battle",
+            "command_id": "fixture:command1",
+            "revision": 1,
+            "seq": 2,
+            "event_type": "TURN_ENDED",
+            "data": {
+              "turn_number": 1,
+              "side": "PLAYER"
+            }
+          },
+          {
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleEvent",
+            "battle_id": "fixture:battle",
+            "command_id": "fixture:command1",
+            "revision": 1,
+            "seq": 3,
+            "event_type": "COMMAND_COMMITTED",
+            "data": {
+              "revision": 1
+            }
+          }
+        ]
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleCommitBatch\",\"events\":[{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"command_sha256\":\"163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5\"},\"dto_type\":\"BattleEvent\",\"event_type\":\"COMMAND_ACCEPTED\",\"revision\":1,\"seq\":1},{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"side\":\"PLAYER\",\"turn_number\":1},\"dto_type\":\"BattleEvent\",\"event_type\":\"TURN_ENDED\",\"revision\":1,\"seq\":2},{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"revision\":1},\"dto_type\":\"BattleEvent\",\"event_type\":\"COMMAND_COMMITTED\",\"revision\":1,\"seq\":3}],\"previous_revision\":0,\"snapshot\":{\"battle_id\":\"fixture:battle\",\"boss_states\":[],\"card_instances\":[{\"card_id\":\"fixture:card1\",\"instance_id\":\"cardinst1\",\"owner_unit_id\":\"hero1\"}],\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleSnapshot\",\"energy\":3,\"last_event_seq\":3,\"outcome\":\"ONGOING\",\"phase\":\"ENEMY_READY\",\"revision\":1,\"rng\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"rules_version\":\"P02-BATTLE-0.1.0-draft\",\"turn_number\":1,\"units\":[{\"definition_id\":\"fixture:hero1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":0,\"statuses\":[],\"unit_id\":\"hero1\"},{\"definition_id\":\"fixture:hero2\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":1,\"statuses\":[],\"unit_id\":\"hero2\"},{\"definition_id\":\"fixture:hero3\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":2,\"statuses\":[],\"unit_id\":\"hero3\"},{\"definition_id\":\"fixture:enemy1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"ENEMY\",\"slot\":0,\"statuses\":[],\"unit_id\":\"enemy1\"}],\"zones\":{\"discard\":[],\"draw\":[],\"exhaust\":[],\"hand\":[\"cardinst1\"]}}}",
+      "sha256": "0485a2bad61d6e2758e2eb6cb7343f51ab20d1587afcc818070e3a5799fd44f6"
+    },
+    {
+      "id": "BattleEvent",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleEvent",
+        "battle_id": "fixture:battle",
+        "command_id": "fixture:command1",
+        "revision": 1,
+        "seq": 1,
+        "event_type": "COMMAND_ACCEPTED",
+        "data": {
+          "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5"
+        }
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"command_sha256\":\"163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5\"},\"dto_type\":\"BattleEvent\",\"event_type\":\"COMMAND_ACCEPTED\",\"revision\":1,\"seq\":1}",
+      "sha256": "3fdfcee6b78cf258a4d10843e83f89f9289b4f0ed943237fab56f93190bfeb2f"
+    },
+    {
+      "id": "BattleReply",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleReply",
+        "battle_id": "fixture:battle",
+        "command_id": "fixture:command1",
+        "result": "COMMITTED",
+        "code": "OK",
+        "observed_revision": 1,
+        "commit": {
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleCommitBatch",
+          "battle_id": "fixture:battle",
+          "command_id": "fixture:command1",
+          "previous_revision": 0,
+          "snapshot": {
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleSnapshot",
+            "battle_id": "fixture:battle",
+            "revision": 1,
+            "rules_version": "P02-BATTLE-0.1.0-draft",
+            "content_version": "fixture:content-v1",
+            "phase": "ENEMY_READY",
+            "turn_number": 1,
+            "energy": 3,
+            "units": [
+              {
+                "unit_id": "hero1",
+                "definition_id": "fixture:hero1",
+                "side": "PLAYER",
+                "slot": 0,
+                "hp": 10,
+                "max_hp": 10,
+                "shield": 0,
+                "statuses": []
+              },
+              {
+                "unit_id": "hero2",
+                "definition_id": "fixture:hero2",
+                "side": "PLAYER",
+                "slot": 1,
+                "hp": 10,
+                "max_hp": 10,
+                "shield": 0,
+                "statuses": []
+              },
+              {
+                "unit_id": "hero3",
+                "definition_id": "fixture:hero3",
+                "side": "PLAYER",
+                "slot": 2,
+                "hp": 10,
+                "max_hp": 10,
+                "shield": 0,
+                "statuses": []
+              },
+              {
+                "unit_id": "enemy1",
+                "definition_id": "fixture:enemy1",
+                "side": "ENEMY",
+                "slot": 0,
+                "hp": 10,
+                "max_hp": 10,
+                "shield": 0,
+                "statuses": []
+              }
+            ],
+            "card_instances": [
+              {
+                "instance_id": "cardinst1",
+                "card_id": "fixture:card1",
+                "owner_unit_id": "hero1"
+              }
+            ],
+            "zones": {
+              "draw": [],
+              "hand": [
+                "cardinst1"
+              ],
+              "discard": [],
+              "exhaust": []
+            },
+            "rng": {
+              "algorithm": "xorshift32-v1",
+              "initial_seed": 1,
+              "state": 1,
+              "draw_count": 0
+            },
+            "last_event_seq": 3,
+            "outcome": "ONGOING",
+            "boss_states": []
+          },
+          "events": [
+            {
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleEvent",
+              "battle_id": "fixture:battle",
+              "command_id": "fixture:command1",
+              "revision": 1,
+              "seq": 1,
+              "event_type": "COMMAND_ACCEPTED",
+              "data": {
+                "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5"
+              }
+            },
+            {
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleEvent",
+              "battle_id": "fixture:battle",
+              "command_id": "fixture:command1",
+              "revision": 1,
+              "seq": 2,
+              "event_type": "TURN_ENDED",
+              "data": {
+                "turn_number": 1,
+                "side": "PLAYER"
+              }
+            },
+            {
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleEvent",
+              "battle_id": "fixture:battle",
+              "command_id": "fixture:command1",
+              "revision": 1,
+              "seq": 3,
+              "event_type": "COMMAND_COMMITTED",
+              "data": {
+                "revision": 1
+              }
+            }
+          ]
+        }
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"code\":\"OK\",\"command_id\":\"fixture:command1\",\"commit\":{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleCommitBatch\",\"events\":[{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"command_sha256\":\"163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5\"},\"dto_type\":\"BattleEvent\",\"event_type\":\"COMMAND_ACCEPTED\",\"revision\":1,\"seq\":1},{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"side\":\"PLAYER\",\"turn_number\":1},\"dto_type\":\"BattleEvent\",\"event_type\":\"TURN_ENDED\",\"revision\":1,\"seq\":2},{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"data\":{\"revision\":1},\"dto_type\":\"BattleEvent\",\"event_type\":\"COMMAND_COMMITTED\",\"revision\":1,\"seq\":3}],\"previous_revision\":0,\"snapshot\":{\"battle_id\":\"fixture:battle\",\"boss_states\":[],\"card_instances\":[{\"card_id\":\"fixture:card1\",\"instance_id\":\"cardinst1\",\"owner_unit_id\":\"hero1\"}],\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleSnapshot\",\"energy\":3,\"last_event_seq\":3,\"outcome\":\"ONGOING\",\"phase\":\"ENEMY_READY\",\"revision\":1,\"rng\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"rules_version\":\"P02-BATTLE-0.1.0-draft\",\"turn_number\":1,\"units\":[{\"definition_id\":\"fixture:hero1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":0,\"statuses\":[],\"unit_id\":\"hero1\"},{\"definition_id\":\"fixture:hero2\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":1,\"statuses\":[],\"unit_id\":\"hero2\"},{\"definition_id\":\"fixture:hero3\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":2,\"statuses\":[],\"unit_id\":\"hero3\"},{\"definition_id\":\"fixture:enemy1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"ENEMY\",\"slot\":0,\"statuses\":[],\"unit_id\":\"enemy1\"}],\"zones\":{\"discard\":[],\"draw\":[],\"exhaust\":[],\"hand\":[\"cardinst1\"]}}},\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleReply\",\"observed_revision\":1,\"result\":\"COMMITTED\"}",
+      "sha256": "01e747e83273d67a85c07a51f2b69aedb3fca9199e807906790c1c7c3c87a0ba"
+    },
+    {
+      "id": "BattleResult",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleResult",
+        "result_id": "fixture:result",
+        "battle_id": "fixture:battle",
+        "terminal_revision": 1,
+        "terminal_event_seq": 3,
+        "outcome": "WIN",
+        "stage_id": "fixture:stage1",
+        "profile_scope": "fixture:profile",
+        "rules_version": "P02-BATTLE-0.1.0-draft",
+        "content_version": "fixture:content-v1",
+        "final_snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "replay_input_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleResult\",\"final_snapshot_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"outcome\":\"WIN\",\"profile_scope\":\"fixture:profile\",\"replay_input_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"result_id\":\"fixture:result\",\"rules_version\":\"P02-BATTLE-0.1.0-draft\",\"stage_id\":\"fixture:stage1\",\"terminal_event_seq\":3,\"terminal_revision\":1}",
+      "sha256": "f072a4cd6c122de1fb6ba5248c218d226b65a6bcf25783385277e7c2ea0255c3"
+    },
+    {
+      "id": "BattleSnapshot",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleSnapshot",
+        "battle_id": "fixture:battle",
+        "revision": 0,
+        "rules_version": "P02-BATTLE-0.1.0-draft",
+        "content_version": "fixture:content-v1",
+        "phase": "PLAYER_READY",
+        "turn_number": 1,
+        "energy": 3,
+        "units": [
+          {
+            "unit_id": "hero1",
+            "definition_id": "fixture:hero1",
+            "side": "PLAYER",
+            "slot": 0,
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "statuses": []
+          },
+          {
+            "unit_id": "hero2",
+            "definition_id": "fixture:hero2",
+            "side": "PLAYER",
+            "slot": 1,
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "statuses": []
+          },
+          {
+            "unit_id": "hero3",
+            "definition_id": "fixture:hero3",
+            "side": "PLAYER",
+            "slot": 2,
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "statuses": []
+          },
+          {
+            "unit_id": "enemy1",
+            "definition_id": "fixture:enemy1",
+            "side": "ENEMY",
+            "slot": 0,
+            "hp": 10,
+            "max_hp": 10,
+            "shield": 0,
+            "statuses": []
+          }
+        ],
+        "card_instances": [
+          {
+            "instance_id": "cardinst1",
+            "card_id": "fixture:card1",
+            "owner_unit_id": "hero1"
+          }
+        ],
+        "zones": {
+          "draw": [],
+          "hand": [
+            "cardinst1"
+          ],
+          "discard": [],
+          "exhaust": []
+        },
+        "rng": {
+          "algorithm": "xorshift32-v1",
+          "initial_seed": 1,
+          "state": 1,
+          "draw_count": 0
+        },
+        "last_event_seq": 0,
+        "outcome": "ONGOING",
+        "boss_states": []
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"boss_states\":[],\"card_instances\":[{\"card_id\":\"fixture:card1\",\"instance_id\":\"cardinst1\",\"owner_unit_id\":\"hero1\"}],\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleSnapshot\",\"energy\":3,\"last_event_seq\":0,\"outcome\":\"ONGOING\",\"phase\":\"PLAYER_READY\",\"revision\":0,\"rng\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"rules_version\":\"P02-BATTLE-0.1.0-draft\",\"turn_number\":1,\"units\":[{\"definition_id\":\"fixture:hero1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":0,\"statuses\":[],\"unit_id\":\"hero1\"},{\"definition_id\":\"fixture:hero2\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":1,\"statuses\":[],\"unit_id\":\"hero2\"},{\"definition_id\":\"fixture:hero3\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":2,\"statuses\":[],\"unit_id\":\"hero3\"},{\"definition_id\":\"fixture:enemy1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"ENEMY\",\"slot\":0,\"statuses\":[],\"unit_id\":\"enemy1\"}],\"zones\":{\"discard\":[],\"draw\":[],\"exhaust\":[],\"hand\":[\"cardinst1\"]}}",
+      "sha256": "d490d3831e777ec6f76f29fb68fa6ad657807f0d38c92ffae286a7c236f7afb7"
+    },
+    {
+      "id": "BattleState",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleState",
+        "snapshot": {
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleSnapshot",
+          "battle_id": "fixture:battle",
+          "revision": 0,
+          "rules_version": "P02-BATTLE-0.1.0-draft",
+          "content_version": "fixture:content-v1",
+          "phase": "PLAYER_READY",
+          "turn_number": 1,
+          "energy": 3,
+          "units": [
+            {
+              "unit_id": "hero1",
+              "definition_id": "fixture:hero1",
+              "side": "PLAYER",
+              "slot": 0,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "hero2",
+              "definition_id": "fixture:hero2",
+              "side": "PLAYER",
+              "slot": 1,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "hero3",
+              "definition_id": "fixture:hero3",
+              "side": "PLAYER",
+              "slot": 2,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            },
+            {
+              "unit_id": "enemy1",
+              "definition_id": "fixture:enemy1",
+              "side": "ENEMY",
+              "slot": 0,
+              "hp": 10,
+              "max_hp": 10,
+              "shield": 0,
+              "statuses": []
+            }
+          ],
+          "card_instances": [
+            {
+              "instance_id": "cardinst1",
+              "card_id": "fixture:card1",
+              "owner_unit_id": "hero1"
+            }
+          ],
+          "zones": {
+            "draw": [],
+            "hand": [
+              "cardinst1"
+            ],
+            "discard": [],
+            "exhaust": []
+          },
+          "rng": {
+            "algorithm": "xorshift32-v1",
+            "initial_seed": 1,
+            "state": 1,
+            "draw_count": 0
+          },
+          "last_event_seq": 0,
+          "outcome": "ONGOING",
+          "boss_states": []
+        },
+        "accepted_commands": []
+      },
+      "canonical_utf8": "{\"accepted_commands\":[],\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleState\",\"snapshot\":{\"battle_id\":\"fixture:battle\",\"boss_states\":[],\"card_instances\":[{\"card_id\":\"fixture:card1\",\"instance_id\":\"cardinst1\",\"owner_unit_id\":\"hero1\"}],\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"BattleSnapshot\",\"energy\":3,\"last_event_seq\":0,\"outcome\":\"ONGOING\",\"phase\":\"PLAYER_READY\",\"revision\":0,\"rng\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"rules_version\":\"P02-BATTLE-0.1.0-draft\",\"turn_number\":1,\"units\":[{\"definition_id\":\"fixture:hero1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":0,\"statuses\":[],\"unit_id\":\"hero1\"},{\"definition_id\":\"fixture:hero2\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":1,\"statuses\":[],\"unit_id\":\"hero2\"},{\"definition_id\":\"fixture:hero3\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"PLAYER\",\"slot\":2,\"statuses\":[],\"unit_id\":\"hero3\"},{\"definition_id\":\"fixture:enemy1\",\"hp\":10,\"max_hp\":10,\"shield\":0,\"side\":\"ENEMY\",\"slot\":0,\"statuses\":[],\"unit_id\":\"enemy1\"}],\"zones\":{\"discard\":[],\"draw\":[],\"exhaust\":[],\"hand\":[\"cardinst1\"]}}}",
+      "sha256": "5b7f6ca5e791148ada35b4898a116cfef427a6fee7f371dc6f026dc5e3e77c87"
+    },
+    {
+      "id": "CommitLookupView",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "CommitLookupView",
+        "transaction_id": "fixture:tx",
+        "status": "UNKNOWN",
+        "proof": null,
+        "observed_store_instance": null,
+        "observed_high_watermark": null,
+        "continuity_ref": null
+      },
+      "canonical_utf8": "{\"continuity_ref\":null,\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"CommitLookupView\",\"observed_high_watermark\":null,\"observed_store_instance\":null,\"proof\":null,\"status\":\"UNKNOWN\",\"transaction_id\":\"fixture:tx\"}",
+      "sha256": "89e38a3ace43253801de4e781af9ec2f7d2bd7e1f6cf53d96e8b6e10bd1cdd2e"
+    },
+    {
+      "id": "CommitProofView",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "CommitProofView",
+        "transaction_id": "fixture:tx",
+        "request_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "store_instance": "fixture:store",
+        "sequence": 1,
+        "receipt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "high_watermark": 1,
+        "continuity_ref": "fixture:continuity"
+      },
+      "canonical_utf8": "{\"continuity_ref\":\"fixture:continuity\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"CommitProofView\",\"high_watermark\":1,\"receipt_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"request_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"sequence\":1,\"snapshot_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"store_instance\":\"fixture:store\",\"transaction_id\":\"fixture:tx\"}",
+      "sha256": "0c9fb209c376ac58e66f66d72b3dbdcc538bdf4e73f32f4c93b6c521f89ac18a"
+    },
+    {
+      "id": "DeckPatchCandidate",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "DeckPatchCandidate",
+        "battle_id": "fixture:battle",
+        "command_id": "fixture:command1",
+        "expected_revision": 0,
+        "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5",
+        "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "policy_version": "fixture:deck-policy",
+        "moves": [],
+        "energy_delta": 0,
+        "rng_before": {
+          "algorithm": "xorshift32-v1",
+          "initial_seed": 1,
+          "state": 1,
+          "draw_count": 0
+        },
+        "rng_after": {
+          "algorithm": "xorshift32-v1",
+          "initial_seed": 1,
+          "state": 1,
+          "draw_count": 0
+        }
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"command_id\":\"fixture:command1\",\"command_sha256\":\"163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"DeckPatchCandidate\",\"energy_delta\":0,\"expected_revision\":0,\"moves\":[],\"policy_version\":\"fixture:deck-policy\",\"rng_after\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"rng_before\":{\"algorithm\":\"xorshift32-v1\",\"draw_count\":0,\"initial_seed\":1,\"state\":1},\"snapshot_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"}",
+      "sha256": "4d3f3f62ad3e7fe5276c02b37d8f40f482ebec0b946a743194053312d2380f98"
+    },
+    {
+      "id": "EnemyIntent",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "EnemyIntent",
+        "battle_id": "fixture:battle",
+        "expected_revision": 0,
+        "intent_id": "fixture:intent",
+        "actor_id": "enemy1",
+        "skill_id": "fixture:enemy-skill",
+        "target_ids": [
+          "hero1"
+        ],
+        "content_version": "fixture:content-v1",
+        "no_valid_target": "SKIP"
+      },
+      "canonical_utf8": "{\"actor_id\":\"enemy1\",\"battle_id\":\"fixture:battle\",\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"EnemyIntent\",\"expected_revision\":0,\"intent_id\":\"fixture:intent\",\"no_valid_target\":\"SKIP\",\"skill_id\":\"fixture:enemy-skill\",\"target_ids\":[\"hero1\"]}",
+      "sha256": "d3a2bfa01d64b8966e35d838d808c4d4e8c3cd7a95c622457e070783af3bff52"
+    },
+    {
+      "id": "PartySnapshot",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "PartySnapshot",
+        "party_id": "fixture:party",
+        "revision": 0,
+        "content_version": "fixture:content-v1",
+        "members": [
+          {
+            "unit_id": "hero1",
+            "character_id": "fixture:hero1",
+            "slot": 0,
+            "max_hp": 10,
+            "attack": 1,
+            "defense": 0
+          },
+          {
+            "unit_id": "hero2",
+            "character_id": "fixture:hero2",
+            "slot": 1,
+            "max_hp": 10,
+            "attack": 1,
+            "defense": 0
+          },
+          {
+            "unit_id": "hero3",
+            "character_id": "fixture:hero3",
+            "slot": 2,
+            "max_hp": 10,
+            "attack": 1,
+            "defense": 0
+          }
+        ]
+      },
+      "canonical_utf8": "{\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"PartySnapshot\",\"members\":[{\"attack\":1,\"character_id\":\"fixture:hero1\",\"defense\":0,\"max_hp\":10,\"slot\":0,\"unit_id\":\"hero1\"},{\"attack\":1,\"character_id\":\"fixture:hero2\",\"defense\":0,\"max_hp\":10,\"slot\":1,\"unit_id\":\"hero2\"},{\"attack\":1,\"character_id\":\"fixture:hero3\",\"defense\":0,\"max_hp\":10,\"slot\":2,\"unit_id\":\"hero3\"}],\"party_id\":\"fixture:party\",\"revision\":0}",
+      "sha256": "9cef123184613158f4dc765441ab76a21675213bb1eb131a86aceb1c13dcf535"
+    },
+    {
+      "id": "PhaseProposal",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "PhaseProposal",
+        "battle_id": "fixture:battle",
+        "expected_revision": 0,
+        "proposal_id": "fixture:phase-proposal",
+        "boss_unit_id": "enemy1",
+        "from_phase_id": "fixture:phase1",
+        "to_phase_id": "fixture:phase2",
+        "trigger_event_seq": 1,
+        "content_version": "fixture:content-v1"
+      },
+      "canonical_utf8": "{\"battle_id\":\"fixture:battle\",\"boss_unit_id\":\"enemy1\",\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"PhaseProposal\",\"expected_revision\":0,\"from_phase_id\":\"fixture:phase1\",\"proposal_id\":\"fixture:phase-proposal\",\"to_phase_id\":\"fixture:phase2\",\"trigger_event_seq\":1}",
+      "sha256": "9754ec360af391a66e08abbde7dc4f455665ef758ee931803aabc21ed583567b"
+    },
+    {
+      "id": "SaveStatusView",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "SaveStatusView",
+        "store_instance": null,
+        "state": "UNAVAILABLE",
+        "save_format_version": null,
+        "high_watermark": null,
+        "reason_code": "P21_UNBOUND"
+      },
+      "canonical_utf8": "{\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"SaveStatusView\",\"high_watermark\":null,\"reason_code\":\"P21_UNBOUND\",\"save_format_version\":null,\"state\":\"UNAVAILABLE\",\"store_instance\":null}",
+      "sha256": "64926af4bf7a021ae70cacf998796ec23a10e4699da43ef09abf6f7eedb4c8cf"
+    },
+    {
+      "id": "StageProgressView",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "StageProgressView",
+        "profile_id": "fixture:profile",
+        "revision": 0,
+        "content_version": "fixture:content-v1",
+        "unlocked_stage_ids": [
+          "fixture:stage1"
+        ],
+        "first_clear_stage_ids": []
+      },
+      "canonical_utf8": "{\"content_version\":\"fixture:content-v1\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"StageProgressView\",\"first_clear_stage_ids\":[],\"profile_id\":\"fixture:profile\",\"revision\":0,\"unlocked_stage_ids\":[\"fixture:stage1\"]}",
+      "sha256": "f998b2cda84d8ff229b7a2c3527410bb01ccced2d6aaf08df4d853b28b268b93"
+    },
+    {
+      "id": "StudyStatusQuery",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "StudyStatusQuery",
+        "scope": {
+          "source_id": "fixture-source",
+          "collection_lineage": "fixture-lineage",
+          "beneficiary_id": "fixture-beneficiary"
+        },
+        "inbox_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "canonical_utf8": "{\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"StudyStatusQuery\",\"inbox_id\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"scope\":{\"beneficiary_id\":\"fixture-beneficiary\",\"collection_lineage\":\"fixture-lineage\",\"source_id\":\"fixture-source\"}}",
+      "sha256": "923e0b1f33f7636e11d6330455e6e5e69ed243bddc7c3767c4cc7057b7bd60b0"
+    },
+    {
+      "id": "StudyStatusView",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "StudyStatusView",
+        "scope": {
+          "source_id": "fixture-source",
+          "collection_lineage": "fixture-lineage",
+          "beneficiary_id": "fixture-beneficiary"
+        },
+        "inbox_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "state": "UNKNOWN",
+        "reason_code": "PRODUCTION_UNBOUND",
+        "commit_proof": null,
+        "observed_store_instance": null,
+        "observed_high_watermark": null,
+        "continuity_ref": null
+      },
+      "canonical_utf8": "{\"commit_proof\":null,\"continuity_ref\":null,\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"StudyStatusView\",\"inbox_id\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"observed_high_watermark\":null,\"observed_store_instance\":null,\"reason_code\":\"PRODUCTION_UNBOUND\",\"scope\":{\"beneficiary_id\":\"fixture-beneficiary\",\"collection_lineage\":\"fixture-lineage\",\"source_id\":\"fixture-source\"},\"state\":\"UNKNOWN\"}",
+      "sha256": "b5fdd6074a74e4679594162faeb18f00abe379362bfaaaed06bd4eedbdbb3d33"
+    },
+    {
+      "id": "WalletDeltaCandidate",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "WalletDeltaCandidate",
+        "wallet_id": "fixture:wallet",
+        "beneficiary_id": "fixture-beneficiary",
+        "intent_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "expected_wallet_revision": 0,
+        "wallet_before_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "changes": [],
+        "allocations": [],
+        "unresolved": true,
+        "reason_code": "POLICY_UNBOUND"
+      },
+      "canonical_utf8": "{\"allocations\":[],\"beneficiary_id\":\"fixture-beneficiary\",\"changes\":[],\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"WalletDeltaCandidate\",\"expected_wallet_revision\":0,\"intent_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"reason_code\":\"POLICY_UNBOUND\",\"unresolved\":true,\"wallet_before_sha256\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"wallet_id\":\"fixture:wallet\"}",
+      "sha256": "c328896c6503256c885be85f6523366f39337c9e2fa1a3c03995c4f92103a6bd"
+    },
+    {
+      "id": "WalletSnapshot",
+      "value": {
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "WalletSnapshot",
+        "wallet_id": "fixture:wallet",
+        "beneficiary_id": "fixture-beneficiary",
+        "revision": 0,
+        "balances": [
+          {
+            "resource_id": "fixture:resource",
+            "available": 0,
+            "reserved": 0
+          }
+        ]
+      },
+      "canonical_utf8": "{\"balances\":[{\"available\":0,\"reserved\":0,\"resource_id\":\"fixture:resource\"}],\"beneficiary_id\":\"fixture-beneficiary\",\"contract_version\":\"YLTT-INTERNAL/0.1.0-isolated\",\"dto_type\":\"WalletSnapshot\",\"revision\":0,\"wallet_id\":\"fixture:wallet\"}",
+      "sha256": "0f7eaf0de259939b155a99c3226129f1e916915833f35c990f118f7d07505d74"
+    }
+  ]
+}

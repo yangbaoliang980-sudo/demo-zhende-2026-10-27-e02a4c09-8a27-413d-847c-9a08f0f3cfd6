@@ -1,0 +1,23 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "AtomicCommitProposal",
+  "transaction_id": "fixture:tx",
+  "request_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "transaction_kind": "STUDY_LEDGER_WALLET",
+  "domain_candidate_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "wallet_candidate": {
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "WalletDeltaCandidate",
+    "wallet_id": "fixture:wallet",
+    "beneficiary_id": "fixture-beneficiary",
+    "intent_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "expected_wallet_revision": 0,
+    "wallet_before_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "changes": [],
+    "allocations": [],
+    "unresolved": true,
+    "reason_code": "POLICY_UNBOUND"
+  },
+  "expected_domain_revision": 0,
+  "expected_store_instance": "fixture:store"
+}

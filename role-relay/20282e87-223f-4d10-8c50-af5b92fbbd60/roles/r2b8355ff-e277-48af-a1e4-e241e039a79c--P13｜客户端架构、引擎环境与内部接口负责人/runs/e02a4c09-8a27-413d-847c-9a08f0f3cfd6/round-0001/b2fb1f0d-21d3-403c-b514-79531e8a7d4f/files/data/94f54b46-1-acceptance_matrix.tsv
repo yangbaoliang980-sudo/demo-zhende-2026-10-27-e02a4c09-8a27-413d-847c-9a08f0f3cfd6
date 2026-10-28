@@ -1,0 +1,21 @@
+id	layer	status	scope	run_receipt	exit_code	count	independent
+P13-V01	AUTHOR_UNIT_CONTRACT	PASS	54 unittest methods; subtests are not counted as separate tests. No P14 business or P19/P29 rendering implementation.	architecture/evidence/runs/author_tests_final/run_receipt.json	0	54	False
+P13-V02	AUTHOR_SCHEMA_ORACLE	PASS	Structural JSON Schema comparison with jsonschema 4.25.1; semantic/profile constraints are reported separately.	architecture/evidence/runs/schema_oracle_final/run_receipt.json	0	4540	False
+P13-V03	AUTHOR_CROSS_LANGUAGE_CODEC	PASS	25 Python-generated expected canonical bytes/SHA vectors verified independently by JavaScript.	architecture/evidence/runs/canonical_oracle_final/run_receipt.json	0	25	False
+P13-V04	AUTHOR_STATIC_ARCHITECTURE	PASS	Five IC owners, nine actual framework module dependency graph, 28 retained upstream byte hashes; no cycles or forbidden imports.	architecture/evidence/runs/architecture_check_001/run_receipt.json	0	9	False
+P13-V05	AUTHOR_ISOLATED_MOCK_WIRING	PASS	Canned fixture routing only. No battle logic, wallet business, UI or Anki execution.	architecture/evidence/runs/framework_demo_final/run_receipt.json	0		False
+P13-V06	UPSTREAM_UNCHANGED_AUTHOR_SMOKE	PASS	Original P12 parser and ACK/ledger tests in original isolated package; not a P13-P12 real integration.	architecture/evidence/runs/p12_unchanged_smoke_001/run_receipt.json	0	46	False
+P13-V07	TARGET_ENVIRONMENT_PREFLIGHT	BLOCKED	Current-host discovery ran; engine launch itself NOT_RUN. No engine executable on PATH or target game project received.	architecture/evidence/runs/environment_probe_001/run_receipt.json	3		False
+P13-V08	FORMAL_PRODUCTION_GATE	BLOCKED	No production bootstrap or joint owner/target/independent acceptance supplied.	architecture/evidence/runs/formal_preflight_001/run_receipt.json	3		False
+P13-V09	P35_INDEPENDENT_SPEC	NOT_RUN	No P35 design signoff.				True
+P13-V10	FORMAL_JOINT_CONTRACT_REVIEW	NOT_RUN	IC-05/IC-19 and other external owner acceptance not supplied.				False
+P13-V11	P32_INDEPENDENT_UNIT_CONTRACT	NOT_RUN	No independently executed P32 result.				True
+P13-V12	TARGET_ENGINE_START	NOT_RUN	No verified target engine/source; no engine process started.				False
+P13-V13	P14_REAL_BATTLE_RUNTIME	NOT_RUN	P13 did not implement or run P14 battle resolution.				False
+P13-V14	P19_P29_REAL_UI_ANIMATION	NOT_RUN	P13 interface/spy tests are not real UI or animation tests.				False
+P13-V15	P21_PRODUCTION_TRANSACTIONS	NOT_RUN	Original P12 smoke uses P21 simulation only.				False
+P13-V16	REAL_ANKI_TARGET	NOT_RUN	No Anki instance, hooks or true review events executed.				False
+P13-V17	WINDOWS_MACOS_TARGET	NOT_RUN	Only current Linux host was observed.				False
+P13-V18	P33_MANUAL_TARGET	NOT_RUN	No manual target-machine test.				True
+P13-V19	P35_INDEPENDENT_GATE	NOT_RUN	No independent release or integration verdict.				True
+P13-V20	GAME_ANKI_E2E	NOT_RUN	No integrated client or appointed integrator commit.				False

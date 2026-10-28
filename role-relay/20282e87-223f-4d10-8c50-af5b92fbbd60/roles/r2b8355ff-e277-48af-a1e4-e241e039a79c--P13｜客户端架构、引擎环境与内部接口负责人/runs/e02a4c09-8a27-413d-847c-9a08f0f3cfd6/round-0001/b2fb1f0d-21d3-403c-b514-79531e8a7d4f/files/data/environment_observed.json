@@ -1,0 +1,221 @@
+{
+  "schema_version": "P13-ENVIRONMENT-PROBE/0.1.0",
+  "timestamp_utc": "2026-10-28T17:22:37.901868+00:00",
+  "scope": "Current execution host and explicitly passed source roots only",
+  "environment": {
+    "system": "Linux",
+    "release": "6.18.55",
+    "machine": "x86_64",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "display_available": false
+  },
+  "availability": {
+    "godot": null,
+    "godot4": null,
+    "Godot": null,
+    "Unity": null,
+    "unity": null,
+    "dotnet": null,
+    "anki": null,
+    "python": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "npm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm",
+    "git": "/usr/local/bin/git"
+  },
+  "discovery_commands": [
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "godot"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.101357+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "godot4"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.141529+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "Godot"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.181647+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "Unity"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.233988+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "unity"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.263166+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "dotnet"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.295560+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "anki"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.329082+00:00",
+      "exit_code": 1,
+      "stdout": "NOT_FOUND_ON_PATH\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "python"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.370154+00:00",
+      "exit_code": 0,
+      "stdout": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "node"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.408006+00:00",
+      "exit_code": 0,
+      "stdout": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "npm"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.437357+00:00",
+      "exit_code": 0,
+      "stdout": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "-c",
+        "import shutil,sys; p=shutil.which(sys.argv[1]); print(p if p else \"NOT_FOUND_ON_PATH\"); sys.exit(0 if p else 1)",
+        "git"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.473912+00:00",
+      "exit_code": 0,
+      "stdout": "/usr/local/bin/git\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "--version"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.503315+00:00",
+      "exit_code": 0,
+      "stdout": "Python 3.12.14\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--version"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.505919+00:00",
+      "exit_code": 0,
+      "stdout": "v24.22.1\n",
+      "stderr": ""
+    },
+    {
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm",
+        "--version"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.516546+00:00",
+      "exit_code": 0,
+      "stdout": "11.9.0\n",
+      "stderr": "npm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\n"
+    },
+    {
+      "command_argv": [
+        "/usr/local/bin/git",
+        "--version"
+      ],
+      "started_at_utc": "2026-10-28T17:22:37.816106+00:00",
+      "exit_code": 0,
+      "stdout": "git version 2.51.1\n",
+      "stderr": ""
+    }
+  ],
+  "source_file_counts": {
+    "/workspace/scratch/710511e1c679/work/input_audit/extracted": 1268
+  },
+  "project_markers": [],
+  "actual_game_source_commit": null,
+  "user_target_os": null,
+  "user_target_hardware": null,
+  "engine_launch_status": "NOT_RUN",
+  "target_runtime_gate": "BLOCKED",
+  "reason": "No verified target engine project or P34 device receipt was supplied. Discovery exit 1 means unavailable on current PATH; no engine process was attempted."
+}

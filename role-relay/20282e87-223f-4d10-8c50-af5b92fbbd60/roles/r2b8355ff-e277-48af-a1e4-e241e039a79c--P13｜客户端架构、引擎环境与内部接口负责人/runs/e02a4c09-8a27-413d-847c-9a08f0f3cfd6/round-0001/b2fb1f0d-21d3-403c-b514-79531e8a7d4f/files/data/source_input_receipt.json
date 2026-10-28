@@ -1,0 +1,1000 @@
+{
+  "schema_version": "P13-SOURCE-RECEIPT/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "source_scope": "Three supplied attachments, all nested ZIPs, and the two explicitly supplied repository commits. No other user disk/repository scanned.",
+  "top_uploads": [
+    {
+      "name": "relay-materials-1-a893298bc4(1).zip",
+      "sha256": "a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815",
+      "size_bytes": 2905966,
+      "members": 89,
+      "uncompressed_bytes": 2893614,
+      "crc_status": "PASS",
+      "source_local_path": "upload/relay-materials-1-a893298bc4(1).zip",
+      "extracted_root": "work/input_audit/extracted/a893298bc4245d772c660d72960ed14f1c31c17f64f825b9fc7fb875ac8d0815"
+    },
+    {
+      "name": "relay-materials-2-90d965dbc7(1).zip",
+      "sha256": "90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a",
+      "size_bytes": 16363530,
+      "members": 2,
+      "uncompressed_bytes": 16363246,
+      "crc_status": "PASS",
+      "source_local_path": "upload/relay-materials-2-90d965dbc7(1).zip",
+      "extracted_root": "work/input_audit/extracted/90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a"
+    },
+    {
+      "name": "relay-materials-3-1533e8c67e.zip",
+      "sha256": "1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2",
+      "size_bytes": 17808762,
+      "members": 83,
+      "uncompressed_bytes": 17797270,
+      "crc_status": "PASS",
+      "source_local_path": "upload/relay-materials-3-1533e8c67e.zip",
+      "extracted_root": "work/input_audit/extracted/1533e8c67e6e892cca96e2b9011cbb475c89e0d7879411f2830d6446ba8dd9e2"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "P01-spec/product/requirements_baseline_v6.txt",
+      "owner": "P01",
+      "archive_filename": "P01_S00_V6_完整交接包.zip",
+      "archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_relative_path": "spec/product/requirements_baseline_v6.txt",
+      "retained_relative_path": "architecture/evidence/upstream/P01/spec/product/requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p01_requirements_baseline_v6.txt",
+          "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P01-spec/product/requirements_traceability.tsv",
+      "owner": "P01",
+      "archive_filename": "P01_S00_V6_完整交接包.zip",
+      "archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_relative_path": "spec/product/requirements_traceability.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P01/spec/product/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/p01_requirements_traceability.tsv",
+          "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P01-spec/product/prd_scope_v0.md",
+      "owner": "P01",
+      "archive_filename": "P01_S00_V6_完整交接包.zip",
+      "archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_relative_path": "spec/product/prd_scope_v0.md",
+      "retained_relative_path": "architecture/evidence/upstream/P01/spec/product/prd_scope_v0.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P01-planning/decisions/decisions_pending.tsv",
+      "owner": "P01",
+      "archive_filename": "P01_S00_V6_完整交接包.zip",
+      "archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_relative_path": "planning/decisions/decisions_pending.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P01/planning/decisions/decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P01-planning/handoffs/task_register.tsv",
+      "owner": "P01",
+      "archive_filename": "P01_S00_V6_完整交接包.zip",
+      "archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_relative_path": "planning/handoffs/task_register.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P01/planning/handoffs/task_register.tsv",
+      "size_bytes": 3484,
+      "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6c316c05-559d-4998-9d2f-cee78a23e60e--P02｜核心战斗状态机与结算规则设计师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/7ab3bae0-9f65-475e-9958-61a75d9e94b5/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07｜章节推关、关卡配置与掉落策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra140e765-e473-41a2-a449-939e7af4d6fe--P05｜战斗数值与学习资源经济平衡师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/064c0f00-afa0-4951-ad07-dc25c20fa9b2/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rbc0501fe-4e6e-4b2b-9595-cd606a7f2382--P03｜卡牌、牌组与角色专属技能策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/ee39de3a-3629-43d3-b025-d1881dc525cb/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/red5514bd-a2d5-4ff2-a9bd-b1ab13069619--P06｜敌方怪物、BOSS机制与行为策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/97c78eb2-5d76-4f27-86a8-9b1dafca012f/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf7f45f31-5fd9-4a96-a116-2890844feeee--P01｜产品需求、范围与交接基线官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/eb1d948b-39eb-4e6d-a583-eb749b77de16/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/data/task_register.tsv",
+          "git_blob_sha1": "0bf22e4fd3d55a65bbaecca360c3155394140d7a"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P02-spec/battle/state_machine/battle_state_machine.md",
+      "owner": "P02",
+      "archive_filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_relative_path": "spec/battle/state_machine/battle_state_machine.md",
+      "retained_relative_path": "architecture/evidence/upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+      "size_bytes": 15376,
+      "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6c316c05-559d-4998-9d2f-cee78a23e60e--P02｜核心战斗状态机与结算规则设计师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/7ab3bae0-9f65-475e-9958-61a75d9e94b5/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07｜章节推关、关卡配置与掉落策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra140e765-e473-41a2-a449-939e7af4d6fe--P05｜战斗数值与学习资源经济平衡师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/064c0f00-afa0-4951-ad07-dc25c20fa9b2/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rbc0501fe-4e6e-4b2b-9595-cd606a7f2382--P03｜卡牌、牌组与角色专属技能策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/ee39de3a-3629-43d3-b025-d1881dc525cb/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/red5514bd-a2d5-4ff2-a9bd-b1ab13069619--P06｜敌方怪物、BOSS机制与行为策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/97c78eb2-5d76-4f27-86a8-9b1dafca012f/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/battle_state_machine.md",
+          "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P02-spec/battle/resolution/interface_rfc_and_blockers.md",
+      "owner": "P02",
+      "archive_filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_relative_path": "spec/battle/resolution/interface_rfc_and_blockers.md",
+      "retained_relative_path": "architecture/evidence/upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+      "size_bytes": 4666,
+      "sha256": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6c316c05-559d-4998-9d2f-cee78a23e60e--P02｜核心战斗状态机与结算规则设计师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/7ab3bae0-9f65-475e-9958-61a75d9e94b5/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07｜章节推关、关卡配置与掉落策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra140e765-e473-41a2-a449-939e7af4d6fe--P05｜战斗数值与学习资源经济平衡师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/064c0f00-afa0-4951-ad07-dc25c20fa9b2/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rbc0501fe-4e6e-4b2b-9595-cd606a7f2382--P03｜卡牌、牌组与角色专属技能策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/ee39de3a-3629-43d3-b025-d1881dc525cb/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/red5514bd-a2d5-4ff2-a9bd-b1ab13069619--P06｜敌方怪物、BOSS机制与行为策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/97c78eb2-5d76-4f27-86a8-9b1dafca012f/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/interface_rfc_and_blockers.md",
+          "git_blob_sha1": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P02-spec/battle/resolution/battle_replay_fixtures.json",
+      "owner": "P02",
+      "archive_filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_relative_path": "spec/battle/resolution/battle_replay_fixtures.json",
+      "retained_relative_path": "architecture/evidence/upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+      "size_bytes": 200474,
+      "sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6c316c05-559d-4998-9d2f-cee78a23e60e--P02｜核心战斗状态机与结算规则设计师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/7ab3bae0-9f65-475e-9958-61a75d9e94b5/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07｜章节推关、关卡配置与掉落策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra140e765-e473-41a2-a449-939e7af4d6fe--P05｜战斗数值与学习资源经济平衡师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/064c0f00-afa0-4951-ad07-dc25c20fa9b2/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rbc0501fe-4e6e-4b2b-9595-cd606a7f2382--P03｜卡牌、牌组与角色专属技能策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/ee39de3a-3629-43d3-b025-d1881dc525cb/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/red5514bd-a2d5-4ff2-a9bd-b1ab13069619--P06｜敌方怪物、BOSS机制与行为策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/97c78eb2-5d76-4f27-86a8-9b1dafca012f/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/data/battle_replay_fixtures.json",
+          "git_blob_sha1": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P02-spec/battle/resolution/effect_priority.tsv",
+      "owner": "P02",
+      "archive_filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_relative_path": "spec/battle/resolution/effect_priority.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P02/spec/battle/resolution/effect_priority.tsv",
+      "size_bytes": 5253,
+      "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P02-spec/battle/state_machine/turn_sequence.tsv",
+      "owner": "P02",
+      "archive_filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_relative_path": "spec/battle/state_machine/turn_sequence.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+      "size_bytes": 4734,
+      "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P04-design/characters/party_constraints.md",
+      "owner": "P04",
+      "archive_filename": "P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "archive_sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "archive_relative_path": "design/characters/party_constraints.md",
+      "retained_relative_path": "architecture/evidence/upstream/P04/design/characters/party_constraints.md",
+      "size_bytes": 8056,
+      "sha256": "17ecdadf9758fa0e0001872df60e122194d650c7c4ece0bb3f741d16ae8ccf31",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r6fbe183d-e4a6-47f8-905f-392dc0902b4d--P07｜章节推关、关卡配置与掉落策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d722a435-9a4d-4fe4-96cc-c2f382b98eb6/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra140e765-e473-41a2-a449-939e7af4d6fe--P05｜战斗数值与学习资源经济平衡师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/064c0f00-afa0-4951-ad07-dc25c20fa9b2/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/documents/17ecdadf9758fa0e0001872df60e122194d650c7c4ece0bb3f741d16ae8ccf31/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra3d75c3b-36c5-4058-b6c6-02c3f8427926--P04｜角色数据、三人编队与养成系统策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/f0fef489-d2ac-40d0-a20c-49e63506cc21/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/red5514bd-a2d5-4ff2-a9bd-b1ab13069619--P06｜敌方怪物、BOSS机制与行为策划/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/97c78eb2-5d76-4f27-86a8-9b1dafca012f/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/P04_party_constraints.md",
+          "git_blob_sha1": "76276570a098d13c5c9e6b7185f09311e0241cf7"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P08-spec/anki/reward_semantics/study_policy_draft.md",
+      "owner": "P08",
+      "archive_filename": "P08_Anki_Reward_Policy_V0.1.zip",
+      "archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_relative_path": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/study_policy_draft.md",
+      "retained_relative_path": "architecture/evidence/upstream/P08/spec/anki/reward_semantics/study_policy_draft.md",
+      "size_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p08_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p08_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/documents/study_policy_draft.md",
+          "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P08-design/anki_rewards/interface_rfc.md",
+      "owner": "P08",
+      "archive_filename": "P08_Anki_Reward_Policy_V0.1.zip",
+      "archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_relative_path": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/interface_rfc.md",
+      "retained_relative_path": "architecture/evidence/upstream/P08/design/anki_rewards/interface_rfc.md",
+      "size_bytes": 3756,
+      "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/p08_interface_rfc.md",
+          "git_blob_sha1": "d178791e74ee631cd1a4299edab36907d8e35615"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/p08_interface_rfc.md",
+          "git_blob_sha1": "d178791e74ee631cd1a4299edab36907d8e35615"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P08-spec/anki/reward_semantics/policy_record.proposal.json",
+      "owner": "P08",
+      "archive_filename": "P08_Anki_Reward_Policy_V0.1.zip",
+      "archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_relative_path": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/policy_record.proposal.json",
+      "retained_relative_path": "architecture/evidence/upstream/P08/spec/anki/reward_semantics/policy_record.proposal.json",
+      "size_bytes": 2259,
+      "sha256": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/data/policy_record.proposal.json",
+          "git_blob_sha1": "f08a9927a3d1918536ce47b86156a85d79e9392e"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/policy_record.proposal.json",
+          "git_blob_sha1": "f08a9927a3d1918536ce47b86156a85d79e9392e"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-README.md",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/README.md",
+      "retained_relative_path": "architecture/evidence/upstream/P12/README.md",
+      "size_bytes": 8541,
+      "sha256": "6979b89489f955e39bc134d672d47ae52bf6ffb04584f416e862a615c9406829",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/P12_README.md",
+          "git_blob_sha1": "36d1ade60f03490cc7294b4024c426655046a3f6"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/README.md",
+          "git_blob_sha1": "36d1ade60f03490cc7294b4024c426655046a3f6"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-INTEGRATION.md",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/INTEGRATION.md",
+      "retained_relative_path": "architecture/evidence/upstream/P12/INTEGRATION.md",
+      "size_bytes": 5110,
+      "sha256": "0a09798e14acf0f8d73193cdc191c6da4d023755856a50bad427ce2ed5eede7c",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/INTEGRATION.md",
+          "git_blob_sha1": "aef3593e215c94e972eb457ec8a850a3c2bfec80"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-path_mapping_request.json",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/path_mapping_request.json",
+      "retained_relative_path": "architecture/evidence/upstream/P12/path_mapping_request.json",
+      "size_bytes": 888,
+      "sha256": "94c2850065d111e0e4ecdced99e30d6dd3ddc9b1d9610780f8b0f0d0a70420a6",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/path_mapping_request.json",
+          "git_blob_sha1": "cbb52683b948d9a329a183d6b366f78bba559424"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/interface_rfc.md",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/interface_rfc.md",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/interface_rfc.md",
+      "size_bytes": 3741,
+      "sha256": "d0f8eaec678597fea72631bb8190abc968f29f0c2716a04071b61ae78a485726",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/protocol_spec.md",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/protocol_spec.md",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/protocol_spec.md",
+      "size_bytes": 11380,
+      "sha256": "508801ab7e2d9e43054fe6390339de7e7e44890eaf2d5eebc7da9860918a3df8",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/protocol_spec.md",
+          "git_blob_sha1": "37293cc67635c97d06d2d33d075c9475d539d8cf"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/transport_comparison.md",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/transport_comparison.md",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/transport_comparison.md",
+      "size_bytes": 3335,
+      "sha256": "651edb44c6dc72e2adab1b2037d37cf4fe463632c0f1e859cbafc0e6b7f969b9",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/transport_comparison.md",
+          "git_blob_sha1": "e2fd25adb93b6b040ae79fcbbb1e971191a9ea1e"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/ipc_schema.json",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/ipc_schema.json",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/ipc_schema.json",
+      "size_bytes": 21136,
+      "sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/P12_ipc_schema.json",
+          "git_blob_sha1": "ccbf407c03425d348d435e9e3622cd472c837878"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/ipc_schema.json",
+          "git_blob_sha1": "ccbf407c03425d348d435e9e3622cd472c837878"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/protocol_version_matrix.tsv",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/protocol_version_matrix.tsv",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/protocol_version_matrix.tsv",
+      "size_bytes": 1055,
+      "sha256": "cbe9ad2b4e10f6832ff3a83d99b8300f3e79e7ea102074f8481d58669500eeed",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/P12_protocol_version_matrix.tsv",
+          "git_blob_sha1": "6bebf1dd02d6d1038165eab1f1be6c16ed6edc39"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/data/protocol_version_matrix.tsv",
+          "git_blob_sha1": "6bebf1dd02d6d1038165eab1f1be6c16ed6edc39"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-contracts/anki_transport/formal_prerequisites.json",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/contracts/anki_transport/formal_prerequisites.json",
+      "retained_relative_path": "architecture/evidence/upstream/P12/contracts/anki_transport/formal_prerequisites.json",
+      "size_bytes": 2669,
+      "sha256": "dc94ad9dae4c171d3ef3915f56b5bc62060ecb881deb45f5b447fcc33ddae9e4",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-runtime/anki/transport/ipc_server_client/ports.py",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/runtime/anki/transport/ipc_server_client/ports.py",
+      "retained_relative_path": "architecture/evidence/upstream/P12/runtime/anki/transport/ipc_server_client/ports.py",
+      "size_bytes": 565,
+      "sha256": "97dbe1624f5a8b7bf3074b00e680f0c3b02325a090d07ccb5a83cd396d00dd1f",
+      "git_bindings": [],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-runtime/anki/transport/ipc_server_client/bridge.py",
+      "owner": "P12",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/runtime/anki/transport/ipc_server_client/bridge.py",
+      "retained_relative_path": "architecture/evidence/upstream/P12/runtime/anki/transport/ipc_server_client/bridge.py",
+      "size_bytes": 10632,
+      "sha256": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/code/bridge.py",
+          "git_blob_sha1": "82c2e69d46b229b65cc63521826cd6289ee60131"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true
+    },
+    {
+      "source_id": "P12-sources/P11/ledger_runtime/ports.py",
+      "owner": "P11",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/sources/P11/ledger_runtime/ports.py",
+      "retained_relative_path": "architecture/evidence/upstream/P12/sources/P11/ledger_runtime/ports.py",
+      "size_bytes": 1847,
+      "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/code/ports.py",
+          "git_blob_sha1": "7ad5fba5aceb5fa122d9767e5d7542ddb32d55c6"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/code/ports.py",
+          "git_blob_sha1": "7ad5fba5aceb5fa122d9767e5d7542ddb32d55c6"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true,
+      "archive_packager": "P12"
+    },
+    {
+      "source_id": "P12-sources/P11/ledger_runtime/types.py",
+      "owner": "P11",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/sources/P11/ledger_runtime/types.py",
+      "retained_relative_path": "architecture/evidence/upstream/P12/sources/P11/ledger_runtime/types.py",
+      "size_bytes": 7051,
+      "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/code/types.py",
+          "git_blob_sha1": "beb567c3ebdf0ff1798912035be722d2c1e3a415"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/code/types.py",
+          "git_blob_sha1": "beb567c3ebdf0ff1798912035be722d2c1e3a415"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true,
+      "archive_packager": "P12"
+    },
+    {
+      "source_id": "P12-sources/baseline/v6_freeze.txt",
+      "owner": "V6_FREEZE",
+      "archive_filename": "P12_AnkiTransport_V0.1.zip",
+      "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "archive_relative_path": "P12_AnkiTransport_V0.1/sources/baseline/v6_freeze.txt",
+      "retained_relative_path": "architecture/evidence/upstream/P12/sources/baseline/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "git_bindings": [
+        {
+          "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+          "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+          "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+          "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+          "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/ra282b630-56fc-4d24-9646-bc0084c6ed09--P12｜Anki—游戏本地通信与版本协议工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2d82b5b8-c0bb-4ac9-a9ca-da701c1a3b0c/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        },
+        {
+          "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+          "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt",
+          "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+        }
+      ],
+      "status": "BYTES_VERIFIED_ACCEPTED_FOR_P13_ISOLATED_REVIEW",
+      "original_unchanged": true,
+      "archive_packager": "P12"
+    }
+  ],
+  "upstream_manifest_summary": {
+    "records": 642,
+    "pass": 642,
+    "fail": 0
+  },
+  "authority_rule": "Package-specific manifest-verified bytes selected; differing standalone attachments remain preserved and not overwritten. ACCEPTED_FOR_REVIEW is not production or independent acceptance.",
+  "p12_zip_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+  "upstream_task_id": "TASK-00-02",
+  "baseline_version": "P01-S00-V0.1 / V6.0",
+  "requirement_ids": [
+    "REQ-003",
+    "REQ-005",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-019",
+    "REQ-020",
+    "REQ-021",
+    "REQ-024",
+    "REQ-026",
+    "REQ-027",
+    "REQ-029",
+    "REQ-030",
+    "REQ-032",
+    "REQ-038",
+    "REQ-039"
+  ]
+}

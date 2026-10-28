@@ -1,0 +1,3545 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:internal:0.1.0-isolated",
+  "title": "P13 isolated internal DTOs; external-owner contracts remain RFC proposals",
+  "description": "Closed DTOs with explicit contract version; no production authorization. All IDs in fixtures are synthetic. Additional semantic constraints are normative in contract_semantics.md and enforced by contracts.py.",
+  "$defs": {
+    "Rng": {
+      "type": "object",
+      "properties": {
+        "algorithm": {
+          "const": "xorshift32-v1"
+        },
+        "initial_seed": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "state": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "draw_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "algorithm",
+        "initial_seed",
+        "state",
+        "draw_count"
+      ],
+      "additionalProperties": false
+    },
+    "Status": {
+      "type": "object",
+      "properties": {
+        "status_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "status_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "source_unit_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stacks": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "remaining_triggers": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "insert_order": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "status_instance_id",
+        "status_id",
+        "source_unit_id",
+        "stacks",
+        "remaining_triggers",
+        "insert_order"
+      ],
+      "additionalProperties": false
+    },
+    "Unit": {
+      "type": "object",
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "definition_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "side": {
+          "enum": [
+            "PLAYER",
+            "ENEMY"
+          ]
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4095
+        },
+        "hp": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "shield": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "statuses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Status"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "unit_id",
+        "definition_id",
+        "side",
+        "slot",
+        "hp",
+        "max_hp",
+        "shield",
+        "statuses"
+      ],
+      "additionalProperties": false
+    },
+    "CardInstance": {
+      "type": "object",
+      "properties": {
+        "instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "card_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "owner_unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        }
+      },
+      "required": [
+        "instance_id",
+        "card_id",
+        "owner_unit_id"
+      ],
+      "additionalProperties": false
+    },
+    "Zones": {
+      "type": "object",
+      "properties": {
+        "draw": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "hand": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "discard": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "exhaust": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "draw",
+        "hand",
+        "discard",
+        "exhaust"
+      ],
+      "additionalProperties": false
+    },
+    "BossState": {
+      "type": "object",
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "current_phase_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "proposed_phase_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "unit_id",
+        "current_phase_id",
+        "proposed_phase_ids"
+      ],
+      "additionalProperties": false
+    },
+    "Scope": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "collection_lineage": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "beneficiary_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "source_id",
+        "collection_lineage",
+        "beneficiary_id"
+      ],
+      "additionalProperties": false
+    },
+    "SourceRef": {
+      "type": "object",
+      "properties": {
+        "source_kind": {
+          "enum": [
+            "STUDY",
+            "STAGE_FIRST_CLEAR",
+            "STAGE_REPEAT",
+            "APPROVED_COMPENSATION",
+            "CHARACTER_SPEND"
+          ]
+        },
+        "source_key": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "policy_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "source_kind",
+        "source_key",
+        "policy_version",
+        "policy_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "Balance": {
+      "type": "object",
+      "properties": {
+        "resource_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "available": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "reserved": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "resource_id",
+        "available",
+        "reserved"
+      ],
+      "additionalProperties": false
+    },
+    "WalletChange": {
+      "type": "object",
+      "properties": {
+        "resource_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "available_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "reserved_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "resource_id",
+        "available_delta",
+        "reserved_delta"
+      ],
+      "additionalProperties": false
+    },
+    "SourceAllocation": {
+      "type": "object",
+      "properties": {
+        "resource_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "source": {
+          "$ref": "#/$defs/SourceRef"
+        },
+        "available_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "reserved_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "resource_id",
+        "source",
+        "available_delta",
+        "reserved_delta"
+      ],
+      "additionalProperties": false
+    },
+    "CommandReceipt": {
+      "type": "object",
+      "properties": {
+        "command_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "command_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "committed_revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "first_event_seq": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "last_event_seq": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "command_id",
+        "command_sha256",
+        "committed_revision",
+        "first_event_seq",
+        "last_event_seq"
+      ],
+      "additionalProperties": false
+    },
+    "Move": {
+      "type": "object",
+      "properties": {
+        "instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "from_zone": {
+          "enum": [
+            "draw",
+            "hand",
+            "discard",
+            "exhaust"
+          ]
+        },
+        "to_zone": {
+          "enum": [
+            "draw",
+            "hand",
+            "discard",
+            "exhaust"
+          ]
+        },
+        "to_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4095
+        }
+      },
+      "required": [
+        "instance_id",
+        "from_zone",
+        "to_zone",
+        "to_index"
+      ],
+      "additionalProperties": false
+    },
+    "EntityStats": {
+      "type": "object",
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "character_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "max_hp": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "attack": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "defense": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "unit_id",
+        "character_id",
+        "slot",
+        "max_hp",
+        "attack",
+        "defense"
+      ],
+      "additionalProperties": false
+    },
+    "BattleCommand": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "PLAY_CARD"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "actor_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "card_instance_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "target_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                  },
+                  "minItems": 1,
+                  "maxItems": 4096
+                }
+              },
+              "required": [
+                "actor_id",
+                "card_instance_id",
+                "target_ids"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "END_TURN"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "SYSTEM_START"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "SYSTEM_ENEMY_ACTION"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "SYSTEM_ENTER_PLAYER_TURN"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {},
+              "required": [],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleCommand"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "expected_revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "kind": {
+              "const": "ABORT"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "reason_code": {
+                  "type": "string",
+                  "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+                  "maxLength": 96
+                }
+              },
+              "required": [
+                "reason_code"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "expected_revision",
+            "kind",
+            "payload"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "BattleSnapshot": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "BattleSnapshot"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "rules_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "phase": {
+          "enum": [
+            "CREATED",
+            "PLAYER_READY",
+            "ENEMY_READY",
+            "PLAYER_TURN_PENDING",
+            "TERMINAL",
+            "ABORTED",
+            "FAULTED"
+          ]
+        },
+        "turn_number": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "energy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Unit"
+          },
+          "minItems": 1,
+          "maxItems": 4096
+        },
+        "card_instances": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CardInstance"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "zones": {
+          "$ref": "#/$defs/Zones"
+        },
+        "rng": {
+          "$ref": "#/$defs/Rng"
+        },
+        "last_event_seq": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "outcome": {
+          "enum": [
+            "ONGOING",
+            "WIN",
+            "LOSS",
+            "DRAW",
+            "ABORTED",
+            "FAULTED"
+          ]
+        },
+        "boss_states": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/BossState"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "revision",
+        "rules_version",
+        "content_version",
+        "phase",
+        "turn_number",
+        "energy",
+        "units",
+        "card_instances",
+        "zones",
+        "rng",
+        "last_event_seq",
+        "outcome",
+        "boss_states"
+      ],
+      "additionalProperties": false
+    },
+    "BattleState": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "BattleState"
+        },
+        "snapshot": {
+          "$ref": "#/$defs/BattleSnapshot"
+        },
+        "accepted_commands": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/CommandReceipt"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "snapshot",
+        "accepted_commands"
+      ],
+      "additionalProperties": false
+    },
+    "BattleEvent": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "COMMAND_ACCEPTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "command_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$",
+                  "minLength": 64,
+                  "maxLength": 64
+                }
+              },
+              "required": [
+                "command_sha256"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "ENERGY_SPENT"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "energy_after": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "amount",
+                "energy_after"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "CARD_MOVED"
+            },
+            "data": {
+              "$ref": "#/$defs/Move"
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "EFFECT_STARTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "source_unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "effect_index": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "target_unit_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128,
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                  },
+                  "minItems": 0,
+                  "maxItems": 4096
+                }
+              },
+              "required": [
+                "source_unit_id",
+                "effect_index",
+                "target_unit_ids"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "DAMAGE_APPLIED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "source_unit_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "target_unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "raw": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "absorbed": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "hp_loss": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "overkill": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "hp_after": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "shield_after": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "source_unit_id",
+                "target_unit_id",
+                "raw",
+                "absorbed",
+                "hp_loss",
+                "overkill",
+                "hp_after",
+                "shield_after"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "HEAL_APPLIED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "source_unit_id": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 128,
+                      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "target_unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "amount": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "hp_after": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "source_unit_id",
+                "target_unit_id",
+                "amount",
+                "hp_after"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "SHIELD_CHANGED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "target_unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "delta": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                "shield_after": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "target_unit_id",
+                "delta",
+                "shield_after"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "STATUS_CHANGED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "target_unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "status_instance_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "status_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "operation": {
+                  "enum": [
+                    "ADDED",
+                    "UPDATED",
+                    "REMOVED"
+                  ]
+                }
+              },
+              "required": [
+                "target_unit_id",
+                "status_instance_id",
+                "status_id",
+                "operation"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "UNIT_DIED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                }
+              },
+              "required": [
+                "unit_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "BATTLE_FINISHED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "outcome": {
+                  "enum": [
+                    "WIN",
+                    "LOSS",
+                    "DRAW"
+                  ]
+                }
+              },
+              "required": [
+                "outcome"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "BOSS_PHASE_PROPOSED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "proposal_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "from_phase_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "to_phase_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                }
+              },
+              "required": [
+                "unit_id",
+                "proposal_id",
+                "from_phase_id",
+                "to_phase_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "BOSS_PHASE_COMMITTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "proposal_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "to_phase_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                }
+              },
+              "required": [
+                "unit_id",
+                "proposal_id",
+                "to_phase_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "PLAYER_TURN_STARTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "turn_number": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "turn_number"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "TURN_ENDED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "turn_number": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "side": {
+                  "enum": [
+                    "PLAYER",
+                    "ENEMY"
+                  ]
+                }
+              },
+              "required": [
+                "turn_number",
+                "side"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "DRAW_SHORTFALL"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "requested": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "drawn": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "requested",
+                "drawn"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "ENEMY_ACTION_SKIPPED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "unit_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 128,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+                },
+                "reason_code": {
+                  "type": "string",
+                  "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+                  "maxLength": 96
+                }
+              },
+              "required": [
+                "unit_id",
+                "reason_code"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "BATTLE_ABORTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "reason_code": {
+                  "type": "string",
+                  "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+                  "maxLength": 96
+                }
+              },
+              "required": [
+                "reason_code"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "BATTLE_FAULTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "reason_code": {
+                  "type": "string",
+                  "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+                  "maxLength": 96
+                }
+              },
+              "required": [
+                "reason_code"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "contract_version": {
+              "const": "YLTT-INTERNAL/0.1.0-isolated"
+            },
+            "dto_type": {
+              "const": "BattleEvent"
+            },
+            "battle_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "command_id": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "seq": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "event_type": {
+              "const": "COMMAND_COMMITTED"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "revision": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "revision"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "contract_version",
+            "dto_type",
+            "battle_id",
+            "command_id",
+            "revision",
+            "seq",
+            "event_type",
+            "data"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "BattleCommitBatch": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "BattleCommitBatch"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "command_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "previous_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "snapshot": {
+          "$ref": "#/$defs/BattleSnapshot"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/BattleEvent"
+          },
+          "minItems": 2,
+          "maxItems": 16384
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "command_id",
+        "previous_revision",
+        "snapshot",
+        "events"
+      ],
+      "additionalProperties": false
+    },
+    "BattleReply": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "BattleReply"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "command_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "result": {
+          "enum": [
+            "COMMITTED",
+            "DUPLICATE_NO_OP",
+            "REJECTED"
+          ]
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+          "maxLength": 96
+        },
+        "observed_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "commit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/BattleCommitBatch"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "command_id",
+        "result",
+        "code",
+        "observed_revision",
+        "commit"
+      ],
+      "additionalProperties": false
+    },
+    "BattleResult": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "BattleResult"
+        },
+        "result_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "terminal_revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "terminal_event_seq": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "outcome": {
+          "enum": [
+            "WIN",
+            "LOSS",
+            "DRAW"
+          ]
+        },
+        "stage_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "profile_scope": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "rules_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "final_snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "replay_input_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "result_id",
+        "battle_id",
+        "terminal_revision",
+        "terminal_event_seq",
+        "outcome",
+        "stage_id",
+        "profile_scope",
+        "rules_version",
+        "content_version",
+        "final_snapshot_sha256",
+        "replay_input_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "DeckPatchCandidate": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "DeckPatchCandidate"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "command_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "command_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Move"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "energy_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "rng_before": {
+          "$ref": "#/$defs/Rng"
+        },
+        "rng_after": {
+          "$ref": "#/$defs/Rng"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "command_id",
+        "expected_revision",
+        "command_sha256",
+        "snapshot_sha256",
+        "policy_version",
+        "moves",
+        "energy_delta",
+        "rng_before",
+        "rng_after"
+      ],
+      "additionalProperties": false
+    },
+    "EnemyIntent": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "EnemyIntent"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "intent_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "actor_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "skill_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "no_valid_target": {
+          "enum": [
+            "REJECT",
+            "SKIP"
+          ]
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "expected_revision",
+        "intent_id",
+        "actor_id",
+        "skill_id",
+        "target_ids",
+        "content_version",
+        "no_valid_target"
+      ],
+      "additionalProperties": false
+    },
+    "PhaseProposal": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "PhaseProposal"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "proposal_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "boss_unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "from_phase_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "to_phase_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "trigger_event_seq": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "expected_revision",
+        "proposal_id",
+        "boss_unit_id",
+        "from_phase_id",
+        "to_phase_id",
+        "trigger_event_seq",
+        "content_version"
+      ],
+      "additionalProperties": false
+    },
+    "PartySnapshot": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "PartySnapshot"
+        },
+        "party_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "members": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EntityStats"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "party_id",
+        "revision",
+        "content_version",
+        "members"
+      ],
+      "additionalProperties": false
+    },
+    "WalletSnapshot": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "WalletSnapshot"
+        },
+        "wallet_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "beneficiary_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "balances": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Balance"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "wallet_id",
+        "beneficiary_id",
+        "revision",
+        "balances"
+      ],
+      "additionalProperties": false
+    },
+    "WalletDeltaCandidate": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "WalletDeltaCandidate"
+        },
+        "wallet_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "beneficiary_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "intent_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "expected_wallet_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "wallet_before_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/WalletChange"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "allocations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SourceAllocation"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "unresolved": {
+          "type": "boolean"
+        },
+        "reason_code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+          "maxLength": 96
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "wallet_id",
+        "beneficiary_id",
+        "intent_sha256",
+        "expected_wallet_revision",
+        "wallet_before_sha256",
+        "changes",
+        "allocations",
+        "unresolved",
+        "reason_code"
+      ],
+      "additionalProperties": false
+    },
+    "StudyStatusQuery": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "StudyStatusQuery"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "inbox_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "scope",
+        "inbox_id"
+      ],
+      "additionalProperties": false
+    },
+    "CommitProofView": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "CommitProofView"
+        },
+        "transaction_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "request_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "store_instance": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "receipt_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "high_watermark": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "continuity_ref": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "transaction_id",
+        "request_sha256",
+        "store_instance",
+        "sequence",
+        "receipt_sha256",
+        "snapshot_sha256",
+        "high_watermark",
+        "continuity_ref"
+      ],
+      "additionalProperties": false
+    },
+    "StudyStatusView": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "StudyStatusView"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "inbox_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "state": {
+          "enum": [
+            "APPLIED",
+            "REVERTED",
+            "QUARANTINED",
+            "PENDING_RECONCILIATION",
+            "REJECTED",
+            "NOT_FOUND",
+            "UNKNOWN"
+          ]
+        },
+        "reason_code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+          "maxLength": 96
+        },
+        "commit_proof": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CommitProofView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_store_instance": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_high_watermark": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "continuity_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "scope",
+        "inbox_id",
+        "state",
+        "reason_code",
+        "commit_proof",
+        "observed_store_instance",
+        "observed_high_watermark",
+        "continuity_ref"
+      ],
+      "additionalProperties": false
+    },
+    "AtomicCommitProposal": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "AtomicCommitProposal"
+        },
+        "transaction_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "request_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "transaction_kind": {
+          "enum": [
+            "STUDY_LEDGER_WALLET",
+            "STAGE_PROGRESS_WALLET",
+            "CHARACTER_WALLET"
+          ]
+        },
+        "domain_candidate_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "wallet_candidate": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/WalletDeltaCandidate"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "expected_domain_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "expected_store_instance": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "transaction_id",
+        "request_sha256",
+        "transaction_kind",
+        "domain_candidate_sha256",
+        "wallet_candidate",
+        "expected_domain_revision",
+        "expected_store_instance"
+      ],
+      "additionalProperties": false
+    },
+    "CommitLookupView": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "CommitLookupView"
+        },
+        "transaction_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "status": {
+          "enum": [
+            "COMMITTED",
+            "ABSENT",
+            "UNKNOWN"
+          ]
+        },
+        "proof": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CommitProofView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_store_instance": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_high_watermark": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "continuity_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "transaction_id",
+        "status",
+        "proof",
+        "observed_store_instance",
+        "observed_high_watermark",
+        "continuity_ref"
+      ],
+      "additionalProperties": false
+    },
+    "StageProgressView": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "StageProgressView"
+        },
+        "profile_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "unlocked_stage_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "first_clear_stage_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "profile_id",
+        "revision",
+        "content_version",
+        "unlocked_stage_ids",
+        "first_clear_stage_ids"
+      ],
+      "additionalProperties": false
+    },
+    "SaveStatusView": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "SaveStatusView"
+        },
+        "store_instance": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "state": {
+          "enum": [
+            "READY",
+            "READ_ONLY",
+            "MIGRATING",
+            "RECOVERY_REQUIRED",
+            "UNAVAILABLE"
+          ]
+        },
+        "save_format_version": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "high_watermark": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reason_code": {
+          "type": "string",
+          "pattern": "^[A-Z][A-Z0-9_]{0,95}$",
+          "maxLength": 96
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "store_instance",
+        "state",
+        "save_format_version",
+        "high_watermark",
+        "reason_code"
+      ],
+      "additionalProperties": false
+    },
+    "AssetRef": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "AssetRef"
+        },
+        "asset_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "asset_id",
+        "content_version",
+        "sha256"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/BattleCommand"
+    },
+    {
+      "$ref": "#/$defs/BattleSnapshot"
+    },
+    {
+      "$ref": "#/$defs/BattleState"
+    },
+    {
+      "$ref": "#/$defs/BattleEvent"
+    },
+    {
+      "$ref": "#/$defs/BattleCommitBatch"
+    },
+    {
+      "$ref": "#/$defs/BattleReply"
+    },
+    {
+      "$ref": "#/$defs/BattleResult"
+    },
+    {
+      "$ref": "#/$defs/DeckPatchCandidate"
+    },
+    {
+      "$ref": "#/$defs/EnemyIntent"
+    },
+    {
+      "$ref": "#/$defs/PhaseProposal"
+    },
+    {
+      "$ref": "#/$defs/PartySnapshot"
+    },
+    {
+      "$ref": "#/$defs/WalletSnapshot"
+    },
+    {
+      "$ref": "#/$defs/WalletDeltaCandidate"
+    },
+    {
+      "$ref": "#/$defs/StudyStatusQuery"
+    },
+    {
+      "$ref": "#/$defs/CommitProofView"
+    },
+    {
+      "$ref": "#/$defs/StudyStatusView"
+    },
+    {
+      "$ref": "#/$defs/AtomicCommitProposal"
+    },
+    {
+      "$ref": "#/$defs/CommitLookupView"
+    },
+    {
+      "$ref": "#/$defs/StageProgressView"
+    },
+    {
+      "$ref": "#/$defs/SaveStatusView"
+    },
+    {
+      "$ref": "#/$defs/AssetRef"
+    }
+  ]
+}

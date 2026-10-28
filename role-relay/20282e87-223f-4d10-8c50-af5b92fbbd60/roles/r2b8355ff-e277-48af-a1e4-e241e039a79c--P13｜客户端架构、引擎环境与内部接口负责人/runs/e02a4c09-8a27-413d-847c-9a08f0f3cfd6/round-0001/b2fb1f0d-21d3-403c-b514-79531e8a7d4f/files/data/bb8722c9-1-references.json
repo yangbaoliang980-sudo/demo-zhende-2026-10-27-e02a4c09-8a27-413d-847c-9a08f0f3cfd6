@@ -1,0 +1,30 @@
+{
+  "schema_version": "P13-REFERENCES/0.1.0",
+  "access_calendar_date_user_timezone": "2026-10-29",
+  "references": [
+    {
+      "id": "REF-GODOT-CLI",
+      "url": "https://docs.godotengine.org/en/stable/tutorials/editor/command_line_tutorial.html",
+      "use": "--headless, --path requiring project.godot, --editor, --quit; candidate command syntax only",
+      "exact_engine_version_selected": null
+    },
+    {
+      "id": "REF-GODOT-THREAD",
+      "url": "https://docs.godotengine.org/en/stable/tutorials/performance/thread_safe_apis.html",
+      "use": "Scene tree is not thread safe; defer engine scene operations to engine owner thread"
+    },
+    {
+      "id": "REF-UNITY-CLI",
+      "url": "https://docs.unity3d.com/6000.0/Documentation/Manual/EditorCommandLineArguments.html",
+      "resolved_url": "https://docs.unity.com/en-us/engine/6000.0/manual/unity-editor/command-line-arguments/editor",
+      "use": "-batchmode, -nographics, -projectPath, -quit, -logFile candidate probe options",
+      "exact_engine_version_selected": null
+    },
+    {
+      "id": "REF-PY312-QUEUE",
+      "url": "https://docs.python.org/3.12/library/queue.html",
+      "use": "Bounded Queue get_nowait/put_nowait, Full/Empty; no use of Python 3.13 shutdown API"
+    }
+  ],
+  "note": "Official docs used for candidate syntax and API constraints. No target performance numbers, licensing conclusions, or installed engine versions inferred from documentation."
+}

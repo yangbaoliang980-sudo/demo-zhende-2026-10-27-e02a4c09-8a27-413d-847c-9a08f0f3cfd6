@@ -1,0 +1,102 @@
+{
+  "schema_version": "P13-BLOCKERS/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "items": [
+    {
+      "id": "P13-B01",
+      "followup_owner": "P01",
+      "gate": "S00",
+      "status": "BLOCKED",
+      "missing_artifact": "真实游戏工程仓库URL+固定commit或源码ZIP+SHA-256；工程根目录、入口配置、现有依赖/资源、允许只读探针的路径与所有权授权",
+      "allowed_independent_work_or_limit": "P13收到真实文件后只读盘点，先拷贝探针；本轮仅能冻结隔离路径"
+    },
+    {
+      "id": "P13-B02",
+      "followup_owner": "P34",
+      "gate": "S00/S04",
+      "status": "BLOCKED",
+      "missing_artifact": "目标OS完整版本、CPU架构、CPU/GPU/RAM、图形驱动、引擎完整版本与可执行路径/哈希、目标Anki完整版本和机器指纹",
+      "allowed_independent_work_or_limit": "当前Linux容器不等于用户目标机"
+    },
+    {
+      "id": "P13-B03",
+      "followup_owner": "P14",
+      "gate": "S01",
+      "status": "BLOCKED",
+      "missing_artifact": "IC-05/IC-07接受回执、实际BattleState原子提交实现、重复command_id及revision/seq测试",
+      "allowed_independent_work_or_limit": "本包只冻结P13内部形状及IC-02/08隔离语义，P14仍是IC-05 owner"
+    },
+    {
+      "id": "P13-B04",
+      "followup_owner": "P21",
+      "gate": "S05",
+      "status": "BLOCKED",
+      "missing_artifact": "IC-19正式事务/查询合同、生产回执、实例/恢复水位/连续性、未知提交处理、跨域原子性",
+      "allowed_independent_work_or_limit": "P13没有实现物理存档；AtomicCommitProposal为RFC"
+    },
+    {
+      "id": "P13-B05",
+      "followup_owner": "P11",
+      "gate": "S05",
+      "status": "BLOCKED",
+      "missing_artifact": "StudyResultReader作用域只读投影与P21一致快照绑定的接收或修订版本",
+      "allowed_independent_work_or_limit": "P12当前私有账本结构耦合由原owner修订"
+    },
+    {
+      "id": "P13-B06",
+      "followup_owner": "P12",
+      "gate": "S04/S05",
+      "status": "BLOCKED",
+      "missing_artifact": "P12适配新内部投影的版本、真实宿主接入与目标OS端点发现/权限策略",
+      "allowed_independent_work_or_limit": "原YLTT-ANKI-TRANSPORT/0.1.0-isolated线协议保持原字节；未改bridge"
+    },
+    {
+      "id": "P13-B07",
+      "followup_owner": "P22",
+      "gate": "S00/S01",
+      "status": "BLOCKED",
+      "missing_artifact": "正式content_id_registry、content schema、内容版本与跨引用linter",
+      "allowed_independent_work_or_limit": "fixture:*仅合成ID，不代替P22注册"
+    },
+    {
+      "id": "P13-B08",
+      "followup_owner": "P08",
+      "gate": "S05",
+      "status": "BLOCKED",
+      "missing_artifact": "经P01转交的用户PolicyRecord、获批奖值/Undo消费补偿与资源映射",
+      "allowed_independent_work_or_limit": "本包无真实发奖路径"
+    },
+    {
+      "id": "P13-B09",
+      "followup_owner": "P10",
+      "gate": "S04",
+      "status": "BLOCKED",
+      "missing_artifact": "目标Anki四键完成/Undo/恢复/自然重复/旧备份真实样本和稳定身份关联",
+      "allowed_independent_work_or_limit": "本轮未安装Anki、未执行真实Hook"
+    },
+    {
+      "id": "P13-B10",
+      "followup_owner": "P32",
+      "gate": "S00/S01",
+      "status": "NOT_RUN",
+      "missing_artifact": "固定本包哈希的独立自动化复测与原始日志",
+      "allowed_independent_work_or_limit": "作者检查不代签P32"
+    },
+    {
+      "id": "P13-B11",
+      "followup_owner": "P35",
+      "gate": "S00",
+      "status": "NOT_RUN",
+      "missing_artifact": "独立SPEC/CONTRACT/UNIT/RUNTIME/E2E分层审查回执",
+      "allowed_independent_work_or_limit": "本轮不能宣布G0通过"
+    },
+    {
+      "id": "P13-B12",
+      "followup_owner": "P01",
+      "gate": "S08",
+      "status": "BLOCKED",
+      "missing_artifact": "用户任命EXT-INTEGRATOR及明确整合权限、集成固定commit",
+      "allowed_independent_work_or_limit": "P13不代行整合；S00隔离交付不以任命完成为前置"
+    }
+  ]
+}

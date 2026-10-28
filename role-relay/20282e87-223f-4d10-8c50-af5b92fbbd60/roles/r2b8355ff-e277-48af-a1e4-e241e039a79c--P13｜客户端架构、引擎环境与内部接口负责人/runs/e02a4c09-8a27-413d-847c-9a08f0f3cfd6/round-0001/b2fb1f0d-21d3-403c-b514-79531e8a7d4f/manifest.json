@@ -1,0 +1,3512 @@
+{
+  "version": 1,
+  "presetId": "20282e87-223f-4d10-8c50-af5b92fbbd60",
+  "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "roleKey": "r2b8355ff-e277-48af-a1e4-e241e039a79c",
+  "roleName": "P13｜客户端架构、引擎环境与内部接口负责人",
+  "round": 1,
+  "handoffToken": "b2fb1f0d-21d3-403c-b514-79531e8a7d4f",
+  "materials": {
+    "assets": [
+      {
+        "hash": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+        "name": "v6_freeze.txt",
+        "kind": "file",
+        "size": 226868,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+        "name": "study_policy_draft.md",
+        "kind": "file",
+        "size": 18083,
+        "type": "text/markdown",
+        "sourceUrls": [
+          "https://sdmntprwestus2.oaiusercontent.com/files/00000000-8198-81f8-a948-cc3f645f4830/raw?se=2026-10-28T05%3A58%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=a73e3bdd-c9d5-4e14-92c6-989175490cb4&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T14%3A05%3A38Z&ske=2026-10-28T14%3A05%3A38Z&sks=b&skv=2026-02-06&sig=s46QC14E1a8QxpwfugNSGPu6DyySyzfw%2BH/Pr1dYUIA%3D"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "name": "types.py",
+        "kind": "file",
+        "size": 7051,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+        "name": "policy_record.proposal.json",
+        "kind": "file",
+        "size": 2259,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+        "name": "P12_AnkiTransport_V0.1.zip",
+        "kind": "file",
+        "size": 1206963,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/3d2b3049-e386-490c-ade1-a1d9d152b852"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "0a09798e14acf0f8d73193cdc191c6da4d023755856a50bad427ce2ed5eede7c",
+        "name": "INTEGRATION.md",
+        "kind": "file",
+        "size": 5110,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+        "name": "ipc_schema.json",
+        "kind": "file",
+        "size": 21136,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "508801ab7e2d9e43054fe6390339de7e7e44890eaf2d5eebc7da9860918a3df8",
+        "name": "protocol_spec.md",
+        "kind": "file",
+        "size": 11380,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "cbe9ad2b4e10f6832ff3a83d99b8300f3e79e7ea102074f8481d58669500eeed",
+        "name": "protocol_version_matrix.tsv",
+        "kind": "file",
+        "size": 1055,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "651edb44c6dc72e2adab1b2037d37cf4fe463632c0f1e859cbafc0e6b7f969b9",
+        "name": "transport_comparison.md",
+        "kind": "file",
+        "size": 3335,
+        "type": "text/markdown",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "94c2850065d111e0e4ecdced99e30d6dd3ddc9b1d9610780f8b0f0d0a70420a6",
+        "name": "path_mapping_request.json",
+        "kind": "file",
+        "size": 888,
+        "type": "application/json",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+        "name": "bridge.py",
+        "kind": "file",
+        "size": 10632,
+        "type": "application/octet-stream",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "0d0187739d739858c3000f4b50d1002d6bcbe70b3b5f4a538557d96094761be4",
+        "name": "delivery_receipt.json",
+        "kind": "file",
+        "size": 11292,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/0c582aeb-27c6-4412-8248-d89193cf3df2",
+          "https://chatgpt.com/backend-api/conversation/6ae22c57-b088-83ea-9027-7351f8f2a699/executor/file?message_id=f9e547bd-3a83-58c5-82dc-d59adf333a9d&sandbox_path=%2Fworkspace%2Fscratch%2F710511e1c679%2Fexports%2Fdelivery_receipt.json"
+        ]
+      },
+      {
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "kind": "file",
+        "size": 2635479,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/adfd8b49-d511-43d4-aaae-396412cdc553"
+        ]
+      },
+      {
+        "name": "94f54b46-1-acceptance_matrix.tsv",
+        "size": 2961,
+        "type": "application/octet-stream",
+        "hash": "94f54b4679db676ea31fda6405fd600251b00b95ff747c9eb8ade981b896c052",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/acceptance_matrix.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/acceptance_matrix.tsv",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "acceptance_matrix.tsv"
+      },
+      {
+        "name": "actual_path_mapping.json",
+        "size": 16790,
+        "type": "application/json",
+        "hash": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "architecture_adr.md",
+        "size": 10739,
+        "type": "text/markdown",
+        "hash": "17dd05171f736dd4926577ead9bda601c1eef6463e979c80e5c37a16b0cc1c06",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/architecture_adr.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/architecture_adr.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "author_review.md",
+        "size": 1701,
+        "type": "text/markdown",
+        "hash": "0e9621f18e811eaa51634c1d8e0d8405e854fe2768193038899f4abb361c445e",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/author_review.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/author_review.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "authorization_basis.json",
+        "size": 845,
+        "type": "application/json",
+        "hash": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "blockers.json",
+        "size": 4138,
+        "type": "application/json",
+        "hash": "38520d6e57b3ccccef499c5702b36b2135985edce5aa020340366bb219b3b3d4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/blockers.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/blockers.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "code_layout.md",
+        "size": 3249,
+        "type": "text/markdown",
+        "hash": "d41c13f1183676cf3da00b2eb163c24f70bb136d717da9e601564f1a6018281f",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/code_layout.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/code_layout.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "66d6180a-1-defect_log.json",
+        "size": 2349,
+        "type": "application/json",
+        "hash": "66d6180a1ae33fe4cf42c592921b31f1df3b9e6ff4a12918a15e9910c129d4b4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/defect_log.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/defect_log.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "defect_log.json"
+      },
+      {
+        "name": "dependency_diagram.mmd",
+        "size": 404,
+        "type": "application/octet-stream",
+        "hash": "fbeb1e709699cddd54dc6ae9777f280ef71d2d22dcceefffca1eb38bed396a55",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/dependency_diagram.mmd",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/dependency_diagram.mmd",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "do_not_touch.txt",
+        "size": 962,
+        "type": "application/octet-stream",
+        "hash": "dc77710b4b37366294fa79433d44d264233b0022672e16c4d28d9eb14851c8de",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "ee1dd400-1-downstream_handoff.json",
+        "size": 27464,
+        "type": "application/json",
+        "hash": "ee1dd400407954d0e22bc8e303c7534b701b7f13f4aff46ea55fa7b597185c07",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/downstream_handoff.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/downstream_handoff.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "downstream_handoff.json"
+      },
+      {
+        "name": "engine_runtime_comparison.md",
+        "size": 5334,
+        "type": "text/markdown",
+        "hash": "d530104cfde91d6c23567a0d13f1396e956091b7f1ceefada3dcea32b1853f45",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engine_runtime_comparison.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/engine_runtime_comparison.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "a35cdae5-1-engineering_findings.json",
+        "size": 1998,
+        "type": "application/json",
+        "hash": "a35cdae5d14c5c8eb55d5035d7016fb49f9a284bb9e12da339aefc464e4e0f7f",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_findings.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_findings.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "engineering_findings.json"
+      },
+      {
+        "name": "engineering_inventory.tsv",
+        "size": 1426020,
+        "type": "application/octet-stream",
+        "hash": "06be291e315031c98c6e175eed76b9668eced0b2867415ad1200f633a24df70e",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_inventory.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_inventory.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "environment_observed.json",
+        "size": 7589,
+        "type": "application/json",
+        "hash": "3d5edec21d749831724f354f0b8e5d5cb75dcf4cd20d8fe42ece2b6ab2717aa9",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/environment_observed.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/environment_observed.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "pip_attempt_001.json",
+        "size": 2225,
+        "type": "application/json",
+        "hash": "e84b823974393f8579d539a2fc8519ab1f93a3837ec2fbf9ce4d66c9ee66cc20",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/pip_attempt_001.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/pip_attempt_001.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "schema_oracle_environment.json",
+        "size": 384,
+        "type": "application/json",
+        "hash": "eabaaa3d6aa05ee79e58f390cf5e5e453e1475680618d745f235764fc5e03b9a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/schema_oracle_environment.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/schema_oracle_environment.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "1e93e628-1-final_source_binding.json",
+        "size": 12366,
+        "type": "application/json",
+        "hash": "1e93e6280c27eaf3cb38e54a3b48bd2e89c0293c84f25cdd3fafdbf7cd95c83a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/final_source_binding.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/final_source_binding.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "final_source_binding.json"
+      },
+      {
+        "name": "archive_links.json",
+        "size": 18481,
+        "type": "application/json",
+        "hash": "0a0b5a75f500b72d9ff990a4da19f5b47b29ce2870eb3d69b0cea4d7e97d120a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archive_links.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archive_links.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "archives.json",
+        "size": 13068,
+        "type": "application/json",
+        "hash": "fdf3efdbd176ad0c7f3a2363a55d4a61de510ac35f8bbe73b1f06434578fa70a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archives.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archives.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "audit_archives.py",
+        "size": 3247,
+        "type": "application/octet-stream",
+        "hash": "bd66f656eeb7b642823a04cd18a8821ffa8b2de83aa47c20b896ac29256fc8cf",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/audit_archives.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/audit_archives.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "final_immutability_check.json",
+        "size": 785,
+        "type": "application/json",
+        "hash": "fe69647a6cd94250b0d1b227442e3cdb7ecb4f44fa7b86c00d2e001e27082283",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/final_immutability_check.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/final_immutability_check.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "members.json",
+        "size": 711312,
+        "type": "application/json",
+        "hash": "79d7ee489cfd819f866fb65cbbe7de11de4a473a3a29fe76602327a6f5db4157",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/members.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/members.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "p12_repo_tree.json",
+        "size": 551414,
+        "type": "application/json",
+        "hash": "e23dc238b93dc23f58cfce9f471795ffc18e035b8d54b52e1fc0f3b3156160f5",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/p12_repo_tree.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/p12_repo_tree.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "relay_manifest_checks.json",
+        "size": 139755,
+        "type": "application/json",
+        "hash": "e00c22cc2690245ae067880e65f98a502a1b206a1344d143f0448bfea6620441",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/relay_manifest_checks.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/relay_manifest_checks.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "roles_repo_tree.json",
+        "size": 89711,
+        "type": "application/json",
+        "hash": "d0b27c993915daed5419f91bda0fd8e5a068b3a9796df49c8e8fa9abd0c66593",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/roles_repo_tree.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/roles_repo_tree.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "2f93a2ad-1-summary.json",
+        "size": 293,
+        "type": "application/json",
+        "hash": "2f93a2ade409a255a07808c10054e1e134b2161801cedd825ec156808fce1597",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/summary.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/summary.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "summary.json"
+      },
+      {
+        "name": "efba321c-1-upstream_manifest_checks.json",
+        "size": 343337,
+        "type": "application/json",
+        "hash": "efba321c1851f8fe41870af6d4022e37d0178d0009fe6c007327263a3c8eb947",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/upstream_manifest_checks.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/upstream_manifest_checks.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "upstream_manifest_checks.json"
+      },
+      {
+        "name": "decisions_pending.tsv",
+        "size": 3021,
+        "type": "application/octet-stream",
+        "hash": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/decisions/decisions_pending.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/decisions/decisions_pending.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "task_register.tsv",
+        "size": 3484,
+        "type": "application/octet-stream",
+        "hash": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/handoffs/task_register.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/handoffs/task_register.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "prd_scope_v0.md",
+        "size": 2828,
+        "type": "text/markdown",
+        "hash": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/prd_scope_v0.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/prd_scope_v0.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "requirements_baseline_v6.txt",
+        "size": 6715,
+        "type": "application/octet-stream",
+        "hash": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_baseline_v6.txt",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_baseline_v6.txt",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "requirements_traceability.tsv",
+        "size": 17235,
+        "type": "application/octet-stream",
+        "hash": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_traceability.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_traceability.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "battle_replay_fixtures.json",
+        "size": 200474,
+        "type": "application/json",
+        "hash": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "effect_priority.tsv",
+        "size": 5253,
+        "type": "application/octet-stream",
+        "hash": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/effect_priority.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/effect_priority.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "interface_rfc_and_blockers.md",
+        "size": 4666,
+        "type": "text/markdown",
+        "hash": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "battle_state_machine.md",
+        "size": 15376,
+        "type": "text/markdown",
+        "hash": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "turn_sequence.tsv",
+        "size": 4734,
+        "type": "application/octet-stream",
+        "hash": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "party_constraints.md",
+        "size": 8056,
+        "type": "text/markdown",
+        "hash": "17ecdadf9758fa0e0001872df60e122194d650c7c4ece0bb3f741d16ae8ccf31",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P04/design/characters/party_constraints.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P04/design/characters/party_constraints.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "formal_prerequisites.json",
+        "size": 2669,
+        "type": "application/json",
+        "hash": "dc94ad9dae4c171d3ef3915f56b5bc62060ecb881deb45f5b447fcc33ddae9e4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P12/contracts/anki_transport/formal_prerequisites.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P12/contracts/anki_transport/formal_prerequisites.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "integration_handoff.md",
+        "size": 5473,
+        "type": "text/markdown",
+        "hash": "97ffda4bf8e62651978407afc74f2ac1cdb2ad5c66bcea8238a2b98492c45639",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/integration_handoff.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/integration_handoff.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "module_graph.json",
+        "size": 3020,
+        "type": "application/json",
+        "hash": "531d34b29c574a8961e46fa04daffd3263bf28e2607eeb4ddc2c9f1234851ce0",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/module_graph.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/module_graph.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "bb8722c9-1-references.json",
+        "size": 1452,
+        "type": "application/json",
+        "hash": "bb8722c9a70b27b80c7f5c5093ab9481266039405c8d746be87c76e9b53a5ebe",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/references.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/references.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "references.json"
+      },
+      {
+        "name": "5f455d94-1-requirements-dev.txt",
+        "size": 206,
+        "type": "application/octet-stream",
+        "hash": "5f455d94f9c6497e28744bb9b6bfa91f91d632e6c4cc09563f99a348a6d467e4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/requirements-dev.txt",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/requirements-dev.txt",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "requirements-dev.txt"
+      },
+      {
+        "name": "source_input_receipt.json",
+        "size": 73165,
+        "type": "application/json",
+        "hash": "a31f9222c27e701136a17f9bab7dfd6b8baeac01658c287b1bb642206880673e",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/source_input_receipt.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/source_input_receipt.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "target_environment_requirements.json",
+        "size": 1143,
+        "type": "application/json",
+        "hash": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "abdde9dd-1-task_receipt.json",
+        "size": 1154,
+        "type": "application/json",
+        "hash": "abdde9ddbd7f7057af6afec90a0a3cf93236379500c6bc793054291bfc40dcd1",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/task_receipt.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/task_receipt.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "task_receipt.json"
+      },
+      {
+        "name": "canonical_oracle.js",
+        "size": 1361,
+        "type": "application/octet-stream",
+        "hash": "fdb6a8b387b8b4dfd80c90946e86f1c8df32a6fc6473430584edf205e3620db8",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/canonical_oracle.js",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/canonical_oracle.js",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "check_architecture.py",
+        "size": 3464,
+        "type": "application/octet-stream",
+        "hash": "8de4644a66fa6cca26e618453e06e60cec2c56e839a200b9ebd2102e882d106a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/check_architecture.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/check_architecture.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "cfe0e6b2-1-preflight.py",
+        "size": 907,
+        "type": "application/octet-stream",
+        "hash": "cfe0e6b24c8b47ffa701cabd9ad179a15bfdde03ba6df50c067e51c263ca0003",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/preflight.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/preflight.py",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "preflight.py"
+      },
+      {
+        "name": "record_run.py",
+        "size": 3177,
+        "type": "application/octet-stream",
+        "hash": "803513385e28022e39e0f1bff9faf66e374f6803a636d63b13c16eb0a19a3003",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/record_run.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/record_run.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "80cd2763-1-schema_oracle.py",
+        "size": 2527,
+        "type": "application/octet-stream",
+        "hash": "80cd276351bab68a2a185e10437db3cb93fe450f67b14a5870c011803b2d9d92",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/schema_oracle.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/schema_oracle.py",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "schema_oracle.py"
+      },
+      {
+        "name": "bbc99e55-1-verify_delivery.py",
+        "size": 3864,
+        "type": "application/octet-stream",
+        "hash": "bbc99e551c2e968cf2844c476e50ae1f3aa3fcf538d5f332ebeee51cbda972b9",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/verify_delivery.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/verify_delivery.py",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "verify_delivery.py"
+      },
+      {
+        "name": "d0f99392-1-verification_status.json",
+        "size": 9162,
+        "type": "application/json",
+        "hash": "d0f993925d7dc8012225f74b5ca100ffc25bcbd2e27054f8de480329a5412ddc",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/verification_status.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/architecture/verification_status.json",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "verification_status.json"
+      },
+      {
+        "name": "api_version_matrix.tsv",
+        "size": 446,
+        "type": "application/octet-stream",
+        "hash": "2465b3769f9562822c6251ad277c6b426a562462f687c16b0efe425ff63c8a83",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/api_version_matrix.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/api_version_matrix.tsv",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "canonical_vectors.json",
+        "size": 39486,
+        "type": "application/json",
+        "hash": "8a1c838be0b3bcb2d11f43ef7ed8bf13b6c9bf06903482f1e00108c429a58dd9",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/canonical_vectors.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/canonical_vectors.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "contract_semantics.md",
+        "size": 8986,
+        "type": "text/markdown",
+        "hash": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "AssetRef.json",
+        "size": 237,
+        "type": "application/json",
+        "hash": "e4015231fdc178fee5c32ea0a01f4150d0a345b88b33615c39d6c930987cd699",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AssetRef.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AssetRef.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "AtomicCommitProposal.json",
+        "size": 965,
+        "type": "application/json",
+        "hash": "c57cf1b2e1960ca4ea85dadc593942abf239268e178feb3745d298d7e133d325",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AtomicCommitProposal.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AtomicCommitProposal.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleCommand.json",
+        "size": 222,
+        "type": "application/json",
+        "hash": "d06e9cfdee8a4ac8d2ff887cc40a36d7bb52a3b91ebe0dfa20997ede57f1e752",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommand.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommand.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleCommitBatch.json",
+        "size": 2894,
+        "type": "application/json",
+        "hash": "3623948d7b6691f66642f4b8924157a5ab13026c101ce91d881827978121954d",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommitBatch.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommitBatch.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleEvent.json",
+        "size": 326,
+        "type": "application/json",
+        "hash": "d4b232132c32acba46d61aa44c8873a06bc477b530a066b150a48928f465f07d",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleEvent.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleEvent.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleReply.json",
+        "size": 3373,
+        "type": "application/json",
+        "hash": "6fbe5755c9775b14753607a7c391db8550e4aaaf2de8e1b8bafcbea5596b50e7",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleReply.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleReply.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleResult.json",
+        "size": 572,
+        "type": "application/json",
+        "hash": "f5364a92f3fe8c4f10f7379bd6f990282eb7aba015e5a64e1d77f11f1252b2bf",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleResult.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleResult.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleSnapshot.json",
+        "size": 1516,
+        "type": "application/json",
+        "hash": "2816a3ce5563f0785fd0286567b0d3d6e39ec31e4c6af5b8e30136d982a4aaf4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleSnapshot.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleSnapshot.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "BattleState.json",
+        "size": 1796,
+        "type": "application/json",
+        "hash": "6c98563414a101b79d8af0bc12e811de5c2306bb3da5a9a255689a7be9783d07",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleState.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleState.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "CommitLookupView.json",
+        "size": 261,
+        "type": "application/json",
+        "hash": "a396ac5246fbeac7cb7b1b326fa5b0f675b9d53df625c0af40b2a2ea8b4e0172",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitLookupView.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitLookupView.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "CommitProofView.json",
+        "size": 508,
+        "type": "application/json",
+        "hash": "23559f1919038818547fbaed735d387e0342be6843bf1f3ca317db6070c05faf",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitProofView.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitProofView.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "DeckPatchCandidate.json",
+        "size": 675,
+        "type": "application/json",
+        "hash": "2a2b083d6aa67ecf45301e700ac4d387f56f11123f909875efae2dcda578f362",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/DeckPatchCandidate.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/DeckPatchCandidate.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "EnemyIntent.json",
+        "size": 346,
+        "type": "application/json",
+        "hash": "f32290c5782222dbd3ff3ce9399b1d7329ff4cc9de9ef7104256fb5688497835",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/EnemyIntent.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/EnemyIntent.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "PartySnapshot.json",
+        "size": 657,
+        "type": "application/json",
+        "hash": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PartySnapshot.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PartySnapshot.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "PhaseProposal.json",
+        "size": 359,
+        "type": "application/json",
+        "hash": "a02a60dd9cd73d48868c3d85cb4328d1be54653316e34788bc1a181611ce1b48",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PhaseProposal.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PhaseProposal.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "SaveStatusView.json",
+        "size": 230,
+        "type": "application/json",
+        "hash": "0297a57a41947d76d276d09cef2660183594fe06078bbd1ed18c4e44d4eb22f2",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/SaveStatusView.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/SaveStatusView.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "StageProgressView.json",
+        "size": 270,
+        "type": "application/json",
+        "hash": "11a177bee39e95764af513a97895ae22955245a75cfcec00784e3745d6bb69d8",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StageProgressView.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StageProgressView.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "StudyStatusQuery.json",
+        "size": 315,
+        "type": "application/json",
+        "hash": "26980569592da2b2461642bc16a4cb92d2c84d0ee24f7f7913abbf77e6162b51",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusQuery.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusQuery.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "StudyStatusView.json",
+        "size": 495,
+        "type": "application/json",
+        "hash": "2985d31fa37b28d4e69c2b466a5c5e67f7791c4aa8e42bd5e891ce441597dcba",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusView.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusView.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "WalletDeltaCandidate.json",
+        "size": 480,
+        "type": "application/json",
+        "hash": "109276aa8913eb010ff1430c9537352e02fa5b08f36fa113a500bc1df5444c27",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletDeltaCandidate.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletDeltaCandidate.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "WalletSnapshot.json",
+        "size": 298,
+        "type": "application/json",
+        "hash": "d053f4af55428fa4e393883bc8d2e266cc3253513198b273de530f8c7476cfdf",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletSnapshot.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletSnapshot.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "fixture_notice.json",
+        "size": 334,
+        "type": "application/json",
+        "hash": "5302907b1c07d52947f113e72a76c9a8fab45a624daa24c3ecb726b68df67bb4",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/fixture_notice.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/fixture_notice.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "interface_rfcs.json",
+        "size": 4828,
+        "type": "application/json",
+        "hash": "1e9ec5bf53a4d47844a5fe57f2505798ef27e01f975c36a0c7f5b53cfbed8bed",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/interface_rfcs.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/interface_rfcs.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "internal_api_contracts.json",
+        "size": 5900,
+        "type": "application/json",
+        "hash": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "internal_dto.schema.json",
+        "size": 93217,
+        "type": "application/json",
+        "hash": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "presentation_adapter_spec.md",
+        "size": 3306,
+        "type": "text/markdown",
+        "hash": "f081d3d2b2153c87045a0b007b5c8621147955a3c49eb42ed593785b48421c27",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/presentation_adapter_spec.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/presentation_adapter_spec.md",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "3930eab2-1-delivery_manifest.sha256.tsv",
+        "size": 381966,
+        "type": "application/octet-stream",
+        "hash": "3930eab2a9a13dd56f83ee6d7ae975994e3ce4995ab2f375f797f66cf7b6923e",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/delivery_manifest.sha256.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/delivery_manifest.sha256.tsv",
+          "crcVerified": true
+        },
+        "mergeOriginalName": "delivery_manifest.sha256.tsv"
+      },
+      {
+        "name": "fingerprint_tree.py",
+        "size": 936,
+        "type": "application/octet-stream",
+        "hash": "16471537b0dd0718f8a9463dd5c9cde100afa7edafd73ea0b819f6d94242920e",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/fingerprint_tree.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/fingerprint_tree.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "probe_environment.py",
+        "size": 3352,
+        "type": "application/octet-stream",
+        "hash": "81469ddd5f4dba8f4be405c6e6318720b86d04e88fad5f2ffc08ad0d598647b6",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/probe_environment.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/probe_environment.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "run_engine_probe.py",
+        "size": 3973,
+        "type": "application/octet-stream",
+        "hash": "8798824d4bec169cc588d61a6e717e5c84d0b1fd4e2fae7d3ccd5fe72b2a5fa0",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/run_engine_probe.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/run_engine_probe.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "test_contracts.py",
+        "size": 8542,
+        "type": "application/octet-stream",
+        "hash": "9d5014f32755964f89d71883451414401a4f455190ab57b5257bc940f806e61a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_contracts.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_contracts.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "test_framework.py",
+        "size": 9960,
+        "type": "application/octet-stream",
+        "hash": "8b628afd0f80c81e3be1e7b4e0e4c3b6421354b787b4b2d0c09ff1f09ca8c28d",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_framework.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_framework.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "__init__.py",
+        "size": 133,
+        "type": "application/octet-stream",
+        "hash": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "codec.py",
+        "size": 3173,
+        "type": "application/octet-stream",
+        "hash": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "contracts.py",
+        "size": 10957,
+        "type": "application/octet-stream",
+        "hash": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "demo.py",
+        "size": 2073,
+        "type": "application/octet-stream",
+        "hash": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "host.py",
+        "size": 3979,
+        "type": "application/octet-stream",
+        "hash": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "path_guard.py",
+        "size": 1229,
+        "type": "application/octet-stream",
+        "hash": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "sequence.py",
+        "size": 2594,
+        "type": "application/octet-stream",
+        "hash": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "testing.py",
+        "size": 1333,
+        "type": "application/octet-stream",
+        "hash": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+        "kind": "file",
+        "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P13_ClientArchitecture_V0.1.zip",
+          "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+          "crcVerified": true
+        }
+      },
+      {
+        "name": "relay-materials-1-0e6d465d5f.zip",
+        "size": 2650213,
+        "hash": "0e6d465d5f92b5955b04dd8a501aed224cadc7ef493bb85bc40f7dfbf20749dc",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-2-90d965dbc7.zip",
+        "size": 16363530,
+        "hash": "90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-3-3b4d4286cc.zip",
+        "size": 16545223,
+        "hash": "3b4d4286cc6068c1274111aac7cc1215ad36d5e5293aa2165be02ff54e2abf2f",
+        "type": "application/zip",
+        "kind": "file"
+      }
+    ],
+    "complete": true,
+    "issues": [],
+    "issueDetails": []
+  },
+  "coverage": {
+    "kind": "readable-dom",
+    "complete": false,
+    "message": "按本次交接编号取回原会话回答，未重新发送。"
+  },
+  "completion": "recovered-ui-controls-and-stable-text",
+  "snapshotHash": "1de4dab1c78d65193a11f2e7dd54a403d2078849a015a04db3212235adcc49d1",
+  "answerBlob": "6728ad3cb7395c8f037dcfda834769a47d888bca",
+  "answerHash": "0ade8930a6ced9cac8d13ccd355c62a0375af4f199bc1586ea1fc4c1459324b5",
+  "presentation": {
+    "name": "answer-r2b8355ff-e277-48af-a1e4-b2fb1f0d-21d3-403c-b514-79531e8a7d4f.md",
+    "readmeBlob": "68222597f49c4c871a56cf6f95748f981aadd5c3",
+    "readmeHash": "86e8003f1e81017f4c60c4d9385a50a348eaa67d9a4e3b47ad187bf5719cdb8f",
+    "htmlBlob": "d8c8c42db4d5221a6e4150e317aca15ffc1e287a",
+    "htmlHash": "7fd18432fe6a552ad0b8401da2ae43d0403f03e951ed6e155d6f2bb5ff2cb2b3"
+  },
+  "files": [
+    {
+      "hash": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "name": "v6_freeze.txt",
+      "kind": "file",
+      "size": 226868,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "path": "files/documents/v6_freeze.txt"
+    },
+    {
+      "hash": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "name": "study_policy_draft.md",
+      "kind": "file",
+      "size": 18083,
+      "type": "text/markdown",
+      "sourceUrls": [
+        "https://sdmntprwestus2.oaiusercontent.com/files/00000000-8198-81f8-a948-cc3f645f4830/raw?se=2026-10-28T05%3A58%3A29Z&sp=r&sv=2026-02-06&sr=b&scid=a73e3bdd-c9d5-4e14-92c6-989175490cb4&skoid=456594af-533f-44ef-9bdc-35ea2f9daee5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T14%3A05%3A38Z&ske=2026-10-28T14%3A05%3A38Z&sks=b&skv=2026-02-06&sig=s46QC14E1a8QxpwfugNSGPu6DyySyzfw%2BH/Pr1dYUIA%3D"
+      ],
+      "presentation": false,
+      "blob": "442b9a8e89ca980417624da9a4d93d96af9a4eba",
+      "path": "files/documents/study_policy_draft.md"
+    },
+    {
+      "hash": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+      "name": "types.py",
+      "kind": "file",
+      "size": 7051,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "beb567c3ebdf0ff1798912035be722d2c1e3a415",
+      "path": "files/code/types.py"
+    },
+    {
+      "hash": "4a542def68680155ea6beb855dd310c93664c7ee1c2c7dea4fde89f26957b6cf",
+      "name": "policy_record.proposal.json",
+      "kind": "file",
+      "size": 2259,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "f08a9927a3d1918536ce47b86156a85d79e9392e",
+      "path": "files/data/policy_record.proposal.json"
+    },
+    {
+      "hash": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "name": "P12_AnkiTransport_V0.1.zip",
+      "kind": "file",
+      "size": 1206963,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/3d2b3049-e386-490c-ade1-a1d9d152b852"
+      ],
+      "presentation": false,
+      "blob": "bb512b429f7f54dd755ce7fc7bd3394fbcb22953",
+      "path": "files/archives/P12_AnkiTransport_V0.1.zip"
+    },
+    {
+      "hash": "0a09798e14acf0f8d73193cdc191c6da4d023755856a50bad427ce2ed5eede7c",
+      "name": "INTEGRATION.md",
+      "kind": "file",
+      "size": 5110,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "aef3593e215c94e972eb457ec8a850a3c2bfec80",
+      "path": "files/documents/INTEGRATION.md"
+    },
+    {
+      "hash": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+      "name": "ipc_schema.json",
+      "kind": "file",
+      "size": 21136,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "ccbf407c03425d348d435e9e3622cd472c837878",
+      "path": "files/data/ipc_schema.json"
+    },
+    {
+      "hash": "508801ab7e2d9e43054fe6390339de7e7e44890eaf2d5eebc7da9860918a3df8",
+      "name": "protocol_spec.md",
+      "kind": "file",
+      "size": 11380,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "37293cc67635c97d06d2d33d075c9475d539d8cf",
+      "path": "files/documents/protocol_spec.md"
+    },
+    {
+      "hash": "cbe9ad2b4e10f6832ff3a83d99b8300f3e79e7ea102074f8481d58669500eeed",
+      "name": "protocol_version_matrix.tsv",
+      "kind": "file",
+      "size": 1055,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "6bebf1dd02d6d1038165eab1f1be6c16ed6edc39",
+      "path": "files/data/protocol_version_matrix.tsv"
+    },
+    {
+      "hash": "651edb44c6dc72e2adab1b2037d37cf4fe463632c0f1e859cbafc0e6b7f969b9",
+      "name": "transport_comparison.md",
+      "kind": "file",
+      "size": 3335,
+      "type": "text/markdown",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "e2fd25adb93b6b040ae79fcbbb1e971191a9ea1e",
+      "path": "files/documents/transport_comparison.md"
+    },
+    {
+      "hash": "94c2850065d111e0e4ecdced99e30d6dd3ddc9b1d9610780f8b0f0d0a70420a6",
+      "name": "path_mapping_request.json",
+      "kind": "file",
+      "size": 888,
+      "type": "application/json",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "cbb52683b948d9a329a183d6b366f78bba559424",
+      "path": "files/data/path_mapping_request.json"
+    },
+    {
+      "hash": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+      "name": "bridge.py",
+      "kind": "file",
+      "size": 10632,
+      "type": "application/octet-stream",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "82c2e69d46b229b65cc63521826cd6289ee60131",
+      "path": "files/code/bridge.py"
+    },
+    {
+      "hash": "0d0187739d739858c3000f4b50d1002d6bcbe70b3b5f4a538557d96094761be4",
+      "name": "delivery_receipt.json",
+      "kind": "file",
+      "size": 11292,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/0c582aeb-27c6-4412-8248-d89193cf3df2",
+        "https://chatgpt.com/backend-api/conversation/6ae22c57-b088-83ea-9027-7351f8f2a699/executor/file?message_id=f9e547bd-3a83-58c5-82dc-d59adf333a9d&sandbox_path=%2Fworkspace%2Fscratch%2F710511e1c679%2Fexports%2Fdelivery_receipt.json"
+      ],
+      "blob": "28e2beb47bc399fe9dd0a86cf55a0a76ac30e01b",
+      "path": "files/data/delivery_receipt.json"
+    },
+    {
+      "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "name": "P13_ClientArchitecture_V0.1.zip",
+      "kind": "file",
+      "size": 2635479,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/adfd8b49-d511-43d4-aaae-396412cdc553"
+      ],
+      "blob": "b31ae22b26388106049087ec9db66bd41a914c68",
+      "path": "files/archives/P13_ClientArchitecture_V0.1.zip"
+    },
+    {
+      "name": "94f54b46-1-acceptance_matrix.tsv",
+      "size": 2961,
+      "type": "application/octet-stream",
+      "hash": "94f54b4679db676ea31fda6405fd600251b00b95ff747c9eb8ade981b896c052",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/acceptance_matrix.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/acceptance_matrix.tsv",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "acceptance_matrix.tsv",
+      "blob": "186db1b9a6cee285f1d67e0b21bca630c17f4535",
+      "path": "files/data/94f54b46-1-acceptance_matrix.tsv"
+    },
+    {
+      "name": "actual_path_mapping.json",
+      "size": 16790,
+      "type": "application/json",
+      "hash": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+        "crcVerified": true
+      },
+      "blob": "83daa6f72b0970cba9db8fecfc3c98679608dee0",
+      "path": "files/data/actual_path_mapping.json"
+    },
+    {
+      "name": "architecture_adr.md",
+      "size": 10739,
+      "type": "text/markdown",
+      "hash": "17dd05171f736dd4926577ead9bda601c1eef6463e979c80e5c37a16b0cc1c06",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/architecture_adr.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/architecture_adr.md",
+        "crcVerified": true
+      },
+      "blob": "27630d3fb5fb7e9e2ae1eff7e939395b63ae5bff",
+      "path": "files/documents/architecture_adr.md"
+    },
+    {
+      "name": "author_review.md",
+      "size": 1701,
+      "type": "text/markdown",
+      "hash": "0e9621f18e811eaa51634c1d8e0d8405e854fe2768193038899f4abb361c445e",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/author_review.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/author_review.md",
+        "crcVerified": true
+      },
+      "blob": "f3309f5fd22cc095a034cbb6ff1eac95d371f031",
+      "path": "files/documents/author_review.md"
+    },
+    {
+      "name": "authorization_basis.json",
+      "size": 845,
+      "type": "application/json",
+      "hash": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+        "crcVerified": true
+      },
+      "blob": "9ce7d5e2de66bed6b6382ea3e7a3b69fd02eafac",
+      "path": "files/data/authorization_basis.json"
+    },
+    {
+      "name": "blockers.json",
+      "size": 4138,
+      "type": "application/json",
+      "hash": "38520d6e57b3ccccef499c5702b36b2135985edce5aa020340366bb219b3b3d4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/blockers.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/blockers.json",
+        "crcVerified": true
+      },
+      "blob": "341bacdf4ac7c9192e92ffeee6a947ae6cd7cd81",
+      "path": "files/data/blockers.json"
+    },
+    {
+      "name": "code_layout.md",
+      "size": 3249,
+      "type": "text/markdown",
+      "hash": "d41c13f1183676cf3da00b2eb163c24f70bb136d717da9e601564f1a6018281f",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/code_layout.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/code_layout.md",
+        "crcVerified": true
+      },
+      "blob": "d4960538f1db2b22c1cb1434b2e0ae7c4615874b",
+      "path": "files/documents/code_layout.md"
+    },
+    {
+      "name": "66d6180a-1-defect_log.json",
+      "size": 2349,
+      "type": "application/json",
+      "hash": "66d6180a1ae33fe4cf42c592921b31f1df3b9e6ff4a12918a15e9910c129d4b4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/defect_log.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/defect_log.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "defect_log.json",
+      "blob": "ff1704b1ac313f25033c10057ad5f8e493ecf99c",
+      "path": "files/data/66d6180a-1-defect_log.json"
+    },
+    {
+      "name": "dependency_diagram.mmd",
+      "size": 404,
+      "type": "application/octet-stream",
+      "hash": "fbeb1e709699cddd54dc6ae9777f280ef71d2d22dcceefffca1eb38bed396a55",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/dependency_diagram.mmd",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/dependency_diagram.mmd",
+        "crcVerified": true
+      },
+      "blob": "65380ffefa935105044f7a79b855fbba89982a10",
+      "path": "files/other/dependency_diagram.mmd"
+    },
+    {
+      "name": "do_not_touch.txt",
+      "size": 962,
+      "type": "application/octet-stream",
+      "hash": "dc77710b4b37366294fa79433d44d264233b0022672e16c4d28d9eb14851c8de",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+        "crcVerified": true
+      },
+      "blob": "ca46109b64ab563aea4f34b4d7dca772b03cb4ee",
+      "path": "files/documents/do_not_touch.txt"
+    },
+    {
+      "name": "ee1dd400-1-downstream_handoff.json",
+      "size": 27464,
+      "type": "application/json",
+      "hash": "ee1dd400407954d0e22bc8e303c7534b701b7f13f4aff46ea55fa7b597185c07",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/downstream_handoff.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/downstream_handoff.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "downstream_handoff.json",
+      "blob": "8b9df18c19c889d5d8c82dacb22a5096bac36ec4",
+      "path": "files/data/ee1dd400-1-downstream_handoff.json"
+    },
+    {
+      "name": "engine_runtime_comparison.md",
+      "size": 5334,
+      "type": "text/markdown",
+      "hash": "d530104cfde91d6c23567a0d13f1396e956091b7f1ceefada3dcea32b1853f45",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engine_runtime_comparison.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/engine_runtime_comparison.md",
+        "crcVerified": true
+      },
+      "blob": "98ef64cf56a01fc936a5e4cd9041c99ebefd915c",
+      "path": "files/documents/engine_runtime_comparison.md"
+    },
+    {
+      "name": "a35cdae5-1-engineering_findings.json",
+      "size": 1998,
+      "type": "application/json",
+      "hash": "a35cdae5d14c5c8eb55d5035d7016fb49f9a284bb9e12da339aefc464e4e0f7f",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_findings.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_findings.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "engineering_findings.json",
+      "blob": "eb14ca3227721c6624076d49697fd3dded56a69f",
+      "path": "files/data/a35cdae5-1-engineering_findings.json"
+    },
+    {
+      "name": "engineering_inventory.tsv",
+      "size": 1426020,
+      "type": "application/octet-stream",
+      "hash": "06be291e315031c98c6e175eed76b9668eced0b2867415ad1200f633a24df70e",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_inventory.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/engineering_inventory.tsv",
+        "crcVerified": true
+      },
+      "blob": "ad535b5b450cfeb36a471e67431650622a8d69b8",
+      "path": "files/data/engineering_inventory.tsv"
+    },
+    {
+      "name": "environment_observed.json",
+      "size": 7589,
+      "type": "application/json",
+      "hash": "3d5edec21d749831724f354f0b8e5d5cb75dcf4cd20d8fe42ece2b6ab2717aa9",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/environment_observed.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/environment_observed.json",
+        "crcVerified": true
+      },
+      "blob": "5a46d2ff43f4aecaee0a7c6ef204ffe59134c4ca",
+      "path": "files/data/environment_observed.json"
+    },
+    {
+      "name": "pip_attempt_001.json",
+      "size": 2225,
+      "type": "application/json",
+      "hash": "e84b823974393f8579d539a2fc8519ab1f93a3837ec2fbf9ce4d66c9ee66cc20",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/pip_attempt_001.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/pip_attempt_001.json",
+        "crcVerified": true
+      },
+      "blob": "c11988c53f4f711ab8113d77730eb9dcbaf142b0",
+      "path": "files/data/pip_attempt_001.json"
+    },
+    {
+      "name": "schema_oracle_environment.json",
+      "size": 384,
+      "type": "application/json",
+      "hash": "eabaaa3d6aa05ee79e58f390cf5e5e453e1475680618d745f235764fc5e03b9a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/schema_oracle_environment.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/development/schema_oracle_environment.json",
+        "crcVerified": true
+      },
+      "blob": "e79d0c79363171495297216dec1157b92037e61d",
+      "path": "files/data/schema_oracle_environment.json"
+    },
+    {
+      "name": "1e93e628-1-final_source_binding.json",
+      "size": 12366,
+      "type": "application/json",
+      "hash": "1e93e6280c27eaf3cb38e54a3b48bd2e89c0293c84f25cdd3fafdbf7cd95c83a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/final_source_binding.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/final_source_binding.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "final_source_binding.json",
+      "blob": "725d4d3f5b875c98f4c3694d219a26bd536773ab",
+      "path": "files/data/1e93e628-1-final_source_binding.json"
+    },
+    {
+      "name": "archive_links.json",
+      "size": 18481,
+      "type": "application/json",
+      "hash": "0a0b5a75f500b72d9ff990a4da19f5b47b29ce2870eb3d69b0cea4d7e97d120a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archive_links.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archive_links.json",
+        "crcVerified": true
+      },
+      "blob": "489a296d4fb8e6fbb14849329cba76393a5d5dae",
+      "path": "files/data/archive_links.json"
+    },
+    {
+      "name": "archives.json",
+      "size": 13068,
+      "type": "application/json",
+      "hash": "fdf3efdbd176ad0c7f3a2363a55d4a61de510ac35f8bbe73b1f06434578fa70a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archives.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/archives.json",
+        "crcVerified": true
+      },
+      "blob": "d8edb088be53e743f2327d583a5b8c836e3fee33",
+      "path": "files/data/archives.json"
+    },
+    {
+      "name": "audit_archives.py",
+      "size": 3247,
+      "type": "application/octet-stream",
+      "hash": "bd66f656eeb7b642823a04cd18a8821ffa8b2de83aa47c20b896ac29256fc8cf",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/audit_archives.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/audit_archives.py",
+        "crcVerified": true
+      },
+      "blob": "4cf080337165e1e59c34162efd11736aacb3a6aa",
+      "path": "files/code/audit_archives.py"
+    },
+    {
+      "name": "final_immutability_check.json",
+      "size": 785,
+      "type": "application/json",
+      "hash": "fe69647a6cd94250b0d1b227442e3cdb7ecb4f44fa7b86c00d2e001e27082283",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/final_immutability_check.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/final_immutability_check.json",
+        "crcVerified": true
+      },
+      "blob": "ea73a343ab76d590843941e2b6ab517fa1a8f52d",
+      "path": "files/data/final_immutability_check.json"
+    },
+    {
+      "name": "members.json",
+      "size": 711312,
+      "type": "application/json",
+      "hash": "79d7ee489cfd819f866fb65cbbe7de11de4a473a3a29fe76602327a6f5db4157",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/members.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/members.json",
+        "crcVerified": true
+      },
+      "blob": "1543873ad1a2660c85f02e84b9b6f953f2f1fee2",
+      "path": "files/data/members.json"
+    },
+    {
+      "name": "p12_repo_tree.json",
+      "size": 551414,
+      "type": "application/json",
+      "hash": "e23dc238b93dc23f58cfce9f471795ffc18e035b8d54b52e1fc0f3b3156160f5",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/p12_repo_tree.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/p12_repo_tree.json",
+        "crcVerified": true
+      },
+      "blob": "f5d4e12c4dad7789d96eefbc1ff16a6753f307d7",
+      "path": "files/data/p12_repo_tree.json"
+    },
+    {
+      "name": "relay_manifest_checks.json",
+      "size": 139755,
+      "type": "application/json",
+      "hash": "e00c22cc2690245ae067880e65f98a502a1b206a1344d143f0448bfea6620441",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/relay_manifest_checks.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/relay_manifest_checks.json",
+        "crcVerified": true
+      },
+      "blob": "21c033bffadc1c0a50e1adcd6b94a63259ac9435",
+      "path": "files/data/relay_manifest_checks.json"
+    },
+    {
+      "name": "roles_repo_tree.json",
+      "size": 89711,
+      "type": "application/json",
+      "hash": "d0b27c993915daed5419f91bda0fd8e5a068b3a9796df49c8e8fa9abd0c66593",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/roles_repo_tree.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/roles_repo_tree.json",
+        "crcVerified": true
+      },
+      "blob": "2048b86e751c747c851ef7bcead20b9056215188",
+      "path": "files/data/roles_repo_tree.json"
+    },
+    {
+      "name": "2f93a2ad-1-summary.json",
+      "size": 293,
+      "type": "application/json",
+      "hash": "2f93a2ade409a255a07808c10054e1e134b2161801cedd825ec156808fce1597",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/summary.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/summary.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "summary.json",
+      "blob": "61eedbb3570bb160568641b3ff6c70fd6ae9b6c0",
+      "path": "files/data/2f93a2ad-1-summary.json"
+    },
+    {
+      "name": "efba321c-1-upstream_manifest_checks.json",
+      "size": 343337,
+      "type": "application/json",
+      "hash": "efba321c1851f8fe41870af6d4022e37d0178d0009fe6c007327263a3c8eb947",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/upstream_manifest_checks.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/intake/upstream_manifest_checks.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "upstream_manifest_checks.json",
+      "blob": "7224923f5307ab86a10dab1b26d4d6a545794c21",
+      "path": "files/data/efba321c-1-upstream_manifest_checks.json"
+    },
+    {
+      "name": "decisions_pending.tsv",
+      "size": 3021,
+      "type": "application/octet-stream",
+      "hash": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/decisions/decisions_pending.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/decisions/decisions_pending.tsv",
+        "crcVerified": true
+      },
+      "blob": "dafa596d5342ba5d69e0c9c93defda0c65fec0f2",
+      "path": "files/data/decisions_pending.tsv"
+    },
+    {
+      "name": "task_register.tsv",
+      "size": 3484,
+      "type": "application/octet-stream",
+      "hash": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/handoffs/task_register.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/planning/handoffs/task_register.tsv",
+        "crcVerified": true
+      },
+      "blob": "0bf22e4fd3d55a65bbaecca360c3155394140d7a",
+      "path": "files/data/task_register.tsv"
+    },
+    {
+      "name": "prd_scope_v0.md",
+      "size": 2828,
+      "type": "text/markdown",
+      "hash": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/prd_scope_v0.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/prd_scope_v0.md",
+        "crcVerified": true
+      },
+      "blob": "28a9e453647478ef63fa51a8b4cdd0a258aa6047",
+      "path": "files/documents/prd_scope_v0.md"
+    },
+    {
+      "name": "requirements_baseline_v6.txt",
+      "size": 6715,
+      "type": "application/octet-stream",
+      "hash": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_baseline_v6.txt",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_baseline_v6.txt",
+        "crcVerified": true
+      },
+      "blob": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31",
+      "path": "files/documents/requirements_baseline_v6.txt"
+    },
+    {
+      "name": "requirements_traceability.tsv",
+      "size": 17235,
+      "type": "application/octet-stream",
+      "hash": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_traceability.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P01/spec/product/requirements_traceability.tsv",
+        "crcVerified": true
+      },
+      "blob": "e2a396b1892eabb3fd1fa837e4cb073b90492055",
+      "path": "files/data/requirements_traceability.tsv"
+    },
+    {
+      "name": "battle_replay_fixtures.json",
+      "size": 200474,
+      "type": "application/json",
+      "hash": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+        "crcVerified": true
+      },
+      "blob": "b9a7b35f1c4bc1a7b2042fddaf634a229bb927a7",
+      "path": "files/data/battle_replay_fixtures.json"
+    },
+    {
+      "name": "effect_priority.tsv",
+      "size": 5253,
+      "type": "application/octet-stream",
+      "hash": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/effect_priority.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/effect_priority.tsv",
+        "crcVerified": true
+      },
+      "blob": "77c0a03c8b2ecf1d067a34da61597358a00d8a1f",
+      "path": "files/data/effect_priority.tsv"
+    },
+    {
+      "name": "interface_rfc_and_blockers.md",
+      "size": 4666,
+      "type": "text/markdown",
+      "hash": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+        "crcVerified": true
+      },
+      "blob": "b76f136e03d51ae0c02a24ba4ef2f352b7ce2f87",
+      "path": "files/documents/interface_rfc_and_blockers.md"
+    },
+    {
+      "name": "battle_state_machine.md",
+      "size": 15376,
+      "type": "text/markdown",
+      "hash": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+        "crcVerified": true
+      },
+      "blob": "97ca65e509f4cc34642d2386de1bb70aac86d89e",
+      "path": "files/documents/battle_state_machine.md"
+    },
+    {
+      "name": "turn_sequence.tsv",
+      "size": 4734,
+      "type": "application/octet-stream",
+      "hash": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+        "crcVerified": true
+      },
+      "blob": "80ef6386110444e4052b976a38d5a8f9b5f94768",
+      "path": "files/data/turn_sequence.tsv"
+    },
+    {
+      "name": "party_constraints.md",
+      "size": 8056,
+      "type": "text/markdown",
+      "hash": "17ecdadf9758fa0e0001872df60e122194d650c7c4ece0bb3f741d16ae8ccf31",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P04/design/characters/party_constraints.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P04/design/characters/party_constraints.md",
+        "crcVerified": true
+      },
+      "blob": "76276570a098d13c5c9e6b7185f09311e0241cf7",
+      "path": "files/documents/party_constraints.md"
+    },
+    {
+      "name": "formal_prerequisites.json",
+      "size": 2669,
+      "type": "application/json",
+      "hash": "dc94ad9dae4c171d3ef3915f56b5bc62060ecb881deb45f5b447fcc33ddae9e4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P12/contracts/anki_transport/formal_prerequisites.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P12/contracts/anki_transport/formal_prerequisites.json",
+        "crcVerified": true
+      },
+      "blob": "5713a8ecaceadf2324db24d887a324676eb044eb",
+      "path": "files/data/formal_prerequisites.json"
+    },
+    {
+      "name": "integration_handoff.md",
+      "size": 5473,
+      "type": "text/markdown",
+      "hash": "97ffda4bf8e62651978407afc74f2ac1cdb2ad5c66bcea8238a2b98492c45639",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/integration_handoff.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/integration_handoff.md",
+        "crcVerified": true
+      },
+      "blob": "acf04ede723bd33cd68d53cb25e403915ebac088",
+      "path": "files/documents/integration_handoff.md"
+    },
+    {
+      "name": "module_graph.json",
+      "size": 3020,
+      "type": "application/json",
+      "hash": "531d34b29c574a8961e46fa04daffd3263bf28e2607eeb4ddc2c9f1234851ce0",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/module_graph.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/module_graph.json",
+        "crcVerified": true
+      },
+      "blob": "bc8e3aab7bc9aa95f634afe758f26d0f8b072076",
+      "path": "files/data/module_graph.json"
+    },
+    {
+      "name": "bb8722c9-1-references.json",
+      "size": 1452,
+      "type": "application/json",
+      "hash": "bb8722c9a70b27b80c7f5c5093ab9481266039405c8d746be87c76e9b53a5ebe",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/references.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/references.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "references.json",
+      "blob": "5b1f82d2c63c3902c1799f14b7a67d588472fa52",
+      "path": "files/data/bb8722c9-1-references.json"
+    },
+    {
+      "name": "5f455d94-1-requirements-dev.txt",
+      "size": 206,
+      "type": "application/octet-stream",
+      "hash": "5f455d94f9c6497e28744bb9b6bfa91f91d632e6c4cc09563f99a348a6d467e4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/requirements-dev.txt",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/requirements-dev.txt",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "requirements-dev.txt",
+      "blob": "d2760217991f8f524191c1490db97d9ab0c0c9de",
+      "path": "files/documents/5f455d94-1-requirements-dev.txt"
+    },
+    {
+      "name": "source_input_receipt.json",
+      "size": 73165,
+      "type": "application/json",
+      "hash": "a31f9222c27e701136a17f9bab7dfd6b8baeac01658c287b1bb642206880673e",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/source_input_receipt.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/source_input_receipt.json",
+        "crcVerified": true
+      },
+      "blob": "27fdc2d43f459dfa548acf128da9eae34b0ac3f5",
+      "path": "files/data/source_input_receipt.json"
+    },
+    {
+      "name": "target_environment_requirements.json",
+      "size": 1143,
+      "type": "application/json",
+      "hash": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+        "crcVerified": true
+      },
+      "blob": "9e4e490f2152b3f1b40209a9fe9d922a05b2b0d4",
+      "path": "files/data/target_environment_requirements.json"
+    },
+    {
+      "name": "abdde9dd-1-task_receipt.json",
+      "size": 1154,
+      "type": "application/json",
+      "hash": "abdde9ddbd7f7057af6afec90a0a3cf93236379500c6bc793054291bfc40dcd1",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/task_receipt.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/task_receipt.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "task_receipt.json",
+      "blob": "ab3c1b274ce5c99a905209b45f21cd3dba27a0c9",
+      "path": "files/data/abdde9dd-1-task_receipt.json"
+    },
+    {
+      "name": "canonical_oracle.js",
+      "size": 1361,
+      "type": "application/octet-stream",
+      "hash": "fdb6a8b387b8b4dfd80c90946e86f1c8df32a6fc6473430584edf205e3620db8",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/canonical_oracle.js",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/canonical_oracle.js",
+        "crcVerified": true
+      },
+      "blob": "d72b6e80f3ccbf9e2a8852c3fc24c8f89028eaa2",
+      "path": "files/code/canonical_oracle.js"
+    },
+    {
+      "name": "check_architecture.py",
+      "size": 3464,
+      "type": "application/octet-stream",
+      "hash": "8de4644a66fa6cca26e618453e06e60cec2c56e839a200b9ebd2102e882d106a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/check_architecture.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/check_architecture.py",
+        "crcVerified": true
+      },
+      "blob": "f11aa39bce22b1d12144c447e47b734bb05fa7e5",
+      "path": "files/code/check_architecture.py"
+    },
+    {
+      "name": "cfe0e6b2-1-preflight.py",
+      "size": 907,
+      "type": "application/octet-stream",
+      "hash": "cfe0e6b24c8b47ffa701cabd9ad179a15bfdde03ba6df50c067e51c263ca0003",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/preflight.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/preflight.py",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "preflight.py",
+      "blob": "f2b46de8970e37d3a49f3e18d110426e273da5f2",
+      "path": "files/code/cfe0e6b2-1-preflight.py"
+    },
+    {
+      "name": "record_run.py",
+      "size": 3177,
+      "type": "application/octet-stream",
+      "hash": "803513385e28022e39e0f1bff9faf66e374f6803a636d63b13c16eb0a19a3003",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/record_run.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/record_run.py",
+        "crcVerified": true
+      },
+      "blob": "c8ae1a0bb6f4d99f99f06a99b94a0871ea077038",
+      "path": "files/code/record_run.py"
+    },
+    {
+      "name": "80cd2763-1-schema_oracle.py",
+      "size": 2527,
+      "type": "application/octet-stream",
+      "hash": "80cd276351bab68a2a185e10437db3cb93fe450f67b14a5870c011803b2d9d92",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/schema_oracle.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/schema_oracle.py",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "schema_oracle.py",
+      "blob": "3e39d092382d32b504b4758571caea69738d3a20",
+      "path": "files/code/80cd2763-1-schema_oracle.py"
+    },
+    {
+      "name": "bbc99e55-1-verify_delivery.py",
+      "size": 3864,
+      "type": "application/octet-stream",
+      "hash": "bbc99e551c2e968cf2844c476e50ae1f3aa3fcf538d5f332ebeee51cbda972b9",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/tools/verify_delivery.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/tools/verify_delivery.py",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "verify_delivery.py",
+      "blob": "7eb771e19540398174ee2a3cf684b65a1708ee05",
+      "path": "files/code/bbc99e55-1-verify_delivery.py"
+    },
+    {
+      "name": "d0f99392-1-verification_status.json",
+      "size": 9162,
+      "type": "application/json",
+      "hash": "d0f993925d7dc8012225f74b5ca100ffc25bcbd2e27054f8de480329a5412ddc",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/architecture/verification_status.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/architecture/verification_status.json",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "verification_status.json",
+      "blob": "647a6a81f9d4c090690895f49e873222bd290da2",
+      "path": "files/data/d0f99392-1-verification_status.json"
+    },
+    {
+      "name": "api_version_matrix.tsv",
+      "size": 446,
+      "type": "application/octet-stream",
+      "hash": "2465b3769f9562822c6251ad277c6b426a562462f687c16b0efe425ff63c8a83",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/api_version_matrix.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/api_version_matrix.tsv",
+        "crcVerified": true
+      },
+      "blob": "35391057bc28305a74e0eaeafc00fbb18e7a581f",
+      "path": "files/data/api_version_matrix.tsv"
+    },
+    {
+      "name": "canonical_vectors.json",
+      "size": 39486,
+      "type": "application/json",
+      "hash": "8a1c838be0b3bcb2d11f43ef7ed8bf13b6c9bf06903482f1e00108c429a58dd9",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/canonical_vectors.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/canonical_vectors.json",
+        "crcVerified": true
+      },
+      "blob": "5bcf3f20bee1b4f2555a293245a6978a38207aab",
+      "path": "files/data/canonical_vectors.json"
+    },
+    {
+      "name": "contract_semantics.md",
+      "size": 8986,
+      "type": "text/markdown",
+      "hash": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+        "crcVerified": true
+      },
+      "blob": "7091dedc10598b88b2f56f07fd7cd28d168350bc",
+      "path": "files/documents/contract_semantics.md"
+    },
+    {
+      "name": "AssetRef.json",
+      "size": 237,
+      "type": "application/json",
+      "hash": "e4015231fdc178fee5c32ea0a01f4150d0a345b88b33615c39d6c930987cd699",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AssetRef.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AssetRef.json",
+        "crcVerified": true
+      },
+      "blob": "551a53203d2d4e4599580e441bba9ab3f3e0cfdf",
+      "path": "files/data/AssetRef.json"
+    },
+    {
+      "name": "AtomicCommitProposal.json",
+      "size": 965,
+      "type": "application/json",
+      "hash": "c57cf1b2e1960ca4ea85dadc593942abf239268e178feb3745d298d7e133d325",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AtomicCommitProposal.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/AtomicCommitProposal.json",
+        "crcVerified": true
+      },
+      "blob": "3d219838748c549aa949b899b9be5ac8927a4cad",
+      "path": "files/data/AtomicCommitProposal.json"
+    },
+    {
+      "name": "BattleCommand.json",
+      "size": 222,
+      "type": "application/json",
+      "hash": "d06e9cfdee8a4ac8d2ff887cc40a36d7bb52a3b91ebe0dfa20997ede57f1e752",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommand.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommand.json",
+        "crcVerified": true
+      },
+      "blob": "6bbf42ee140bb960c72a3ba7d8b57f71df8c67bc",
+      "path": "files/data/BattleCommand.json"
+    },
+    {
+      "name": "BattleCommitBatch.json",
+      "size": 2894,
+      "type": "application/json",
+      "hash": "3623948d7b6691f66642f4b8924157a5ab13026c101ce91d881827978121954d",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommitBatch.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleCommitBatch.json",
+        "crcVerified": true
+      },
+      "blob": "e8062c72156b2577ff959d48f1eb7472e8c9197d",
+      "path": "files/data/BattleCommitBatch.json"
+    },
+    {
+      "name": "BattleEvent.json",
+      "size": 326,
+      "type": "application/json",
+      "hash": "d4b232132c32acba46d61aa44c8873a06bc477b530a066b150a48928f465f07d",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleEvent.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleEvent.json",
+        "crcVerified": true
+      },
+      "blob": "beb9fbb48d952741d9efdf24be310f5d30e1f715",
+      "path": "files/data/BattleEvent.json"
+    },
+    {
+      "name": "BattleReply.json",
+      "size": 3373,
+      "type": "application/json",
+      "hash": "6fbe5755c9775b14753607a7c391db8550e4aaaf2de8e1b8bafcbea5596b50e7",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleReply.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleReply.json",
+        "crcVerified": true
+      },
+      "blob": "48e5c34544efac99ae0b98efa71b76023efdc9f8",
+      "path": "files/data/BattleReply.json"
+    },
+    {
+      "name": "BattleResult.json",
+      "size": 572,
+      "type": "application/json",
+      "hash": "f5364a92f3fe8c4f10f7379bd6f990282eb7aba015e5a64e1d77f11f1252b2bf",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleResult.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleResult.json",
+        "crcVerified": true
+      },
+      "blob": "73a90f2f8a382923f68ffa7b1e10247735925258",
+      "path": "files/data/BattleResult.json"
+    },
+    {
+      "name": "BattleSnapshot.json",
+      "size": 1516,
+      "type": "application/json",
+      "hash": "2816a3ce5563f0785fd0286567b0d3d6e39ec31e4c6af5b8e30136d982a4aaf4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleSnapshot.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleSnapshot.json",
+        "crcVerified": true
+      },
+      "blob": "a9257dd06cf78a7a4a499958746209b555e42953",
+      "path": "files/data/BattleSnapshot.json"
+    },
+    {
+      "name": "BattleState.json",
+      "size": 1796,
+      "type": "application/json",
+      "hash": "6c98563414a101b79d8af0bc12e811de5c2306bb3da5a9a255689a7be9783d07",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleState.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/BattleState.json",
+        "crcVerified": true
+      },
+      "blob": "6a2c943c98dc9bf1ca8ff92659fd99affaaac9de",
+      "path": "files/data/BattleState.json"
+    },
+    {
+      "name": "CommitLookupView.json",
+      "size": 261,
+      "type": "application/json",
+      "hash": "a396ac5246fbeac7cb7b1b326fa5b0f675b9d53df625c0af40b2a2ea8b4e0172",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitLookupView.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitLookupView.json",
+        "crcVerified": true
+      },
+      "blob": "1ac2967dd47b6be6baa59ec42ecfb33c9e89729c",
+      "path": "files/data/CommitLookupView.json"
+    },
+    {
+      "name": "CommitProofView.json",
+      "size": 508,
+      "type": "application/json",
+      "hash": "23559f1919038818547fbaed735d387e0342be6843bf1f3ca317db6070c05faf",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitProofView.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/CommitProofView.json",
+        "crcVerified": true
+      },
+      "blob": "4493977df38a7390e065127bdb9d97541b294439",
+      "path": "files/data/CommitProofView.json"
+    },
+    {
+      "name": "DeckPatchCandidate.json",
+      "size": 675,
+      "type": "application/json",
+      "hash": "2a2b083d6aa67ecf45301e700ac4d387f56f11123f909875efae2dcda578f362",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/DeckPatchCandidate.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/DeckPatchCandidate.json",
+        "crcVerified": true
+      },
+      "blob": "e56efefd4ec41b2e60fb42727652985db39705fa",
+      "path": "files/data/DeckPatchCandidate.json"
+    },
+    {
+      "name": "EnemyIntent.json",
+      "size": 346,
+      "type": "application/json",
+      "hash": "f32290c5782222dbd3ff3ce9399b1d7329ff4cc9de9ef7104256fb5688497835",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/EnemyIntent.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/EnemyIntent.json",
+        "crcVerified": true
+      },
+      "blob": "acae1ef0f0b849286489d86fc8b5d83ade523f0c",
+      "path": "files/data/EnemyIntent.json"
+    },
+    {
+      "name": "PartySnapshot.json",
+      "size": 657,
+      "type": "application/json",
+      "hash": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PartySnapshot.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PartySnapshot.json",
+        "crcVerified": true
+      },
+      "blob": "74694532afde8984aa0c5e3b9a8e38284b310727",
+      "path": "files/data/PartySnapshot.json"
+    },
+    {
+      "name": "PhaseProposal.json",
+      "size": 359,
+      "type": "application/json",
+      "hash": "a02a60dd9cd73d48868c3d85cb4328d1be54653316e34788bc1a181611ce1b48",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PhaseProposal.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/PhaseProposal.json",
+        "crcVerified": true
+      },
+      "blob": "2249d6212eb1c2aa5c9c2ee4b9d690afbae72211",
+      "path": "files/data/PhaseProposal.json"
+    },
+    {
+      "name": "SaveStatusView.json",
+      "size": 230,
+      "type": "application/json",
+      "hash": "0297a57a41947d76d276d09cef2660183594fe06078bbd1ed18c4e44d4eb22f2",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/SaveStatusView.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/SaveStatusView.json",
+        "crcVerified": true
+      },
+      "blob": "8168c53837e7359bcb51964be4752f922ee2336a",
+      "path": "files/data/SaveStatusView.json"
+    },
+    {
+      "name": "StageProgressView.json",
+      "size": 270,
+      "type": "application/json",
+      "hash": "11a177bee39e95764af513a97895ae22955245a75cfcec00784e3745d6bb69d8",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StageProgressView.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StageProgressView.json",
+        "crcVerified": true
+      },
+      "blob": "2430f294a9fb27787342150397d39afb1cd58da0",
+      "path": "files/data/StageProgressView.json"
+    },
+    {
+      "name": "StudyStatusQuery.json",
+      "size": 315,
+      "type": "application/json",
+      "hash": "26980569592da2b2461642bc16a4cb92d2c84d0ee24f7f7913abbf77e6162b51",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusQuery.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusQuery.json",
+        "crcVerified": true
+      },
+      "blob": "cb1ecf433c02c2b77afe3374422ae5ee6c17ab95",
+      "path": "files/data/StudyStatusQuery.json"
+    },
+    {
+      "name": "StudyStatusView.json",
+      "size": 495,
+      "type": "application/json",
+      "hash": "2985d31fa37b28d4e69c2b466a5c5e67f7791c4aa8e42bd5e891ce441597dcba",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusView.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/StudyStatusView.json",
+        "crcVerified": true
+      },
+      "blob": "2cdafe26b3b828dacef1a6f2369f3369bb6b3f11",
+      "path": "files/data/StudyStatusView.json"
+    },
+    {
+      "name": "WalletDeltaCandidate.json",
+      "size": 480,
+      "type": "application/json",
+      "hash": "109276aa8913eb010ff1430c9537352e02fa5b08f36fa113a500bc1df5444c27",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletDeltaCandidate.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletDeltaCandidate.json",
+        "crcVerified": true
+      },
+      "blob": "a010c9d76ef2da1159d87aa15fcd79e5716163d8",
+      "path": "files/data/WalletDeltaCandidate.json"
+    },
+    {
+      "name": "WalletSnapshot.json",
+      "size": 298,
+      "type": "application/json",
+      "hash": "d053f4af55428fa4e393883bc8d2e266cc3253513198b273de530f8c7476cfdf",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletSnapshot.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/examples/WalletSnapshot.json",
+        "crcVerified": true
+      },
+      "blob": "d1976eca3c327a424b7a9588228b900500a77488",
+      "path": "files/data/WalletSnapshot.json"
+    },
+    {
+      "name": "fixture_notice.json",
+      "size": 334,
+      "type": "application/json",
+      "hash": "5302907b1c07d52947f113e72a76c9a8fab45a624daa24c3ecb726b68df67bb4",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/fixture_notice.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/fixture_notice.json",
+        "crcVerified": true
+      },
+      "blob": "3e20f72956448b8d747ac552f6b3a79c09e25842",
+      "path": "files/data/fixture_notice.json"
+    },
+    {
+      "name": "interface_rfcs.json",
+      "size": 4828,
+      "type": "application/json",
+      "hash": "1e9ec5bf53a4d47844a5fe57f2505798ef27e01f975c36a0c7f5b53cfbed8bed",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/interface_rfcs.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/interface_rfcs.json",
+        "crcVerified": true
+      },
+      "blob": "6485cc32588366042f096b8cd901a9eebe32a2b4",
+      "path": "files/data/interface_rfcs.json"
+    },
+    {
+      "name": "internal_api_contracts.json",
+      "size": 5900,
+      "type": "application/json",
+      "hash": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+        "crcVerified": true
+      },
+      "blob": "f1d85d8e1060163a9ca5c325132d2dd8e6277b25",
+      "path": "files/data/internal_api_contracts.json"
+    },
+    {
+      "name": "internal_dto.schema.json",
+      "size": 93217,
+      "type": "application/json",
+      "hash": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+        "crcVerified": true
+      },
+      "blob": "75eabe45da6d169f2e09a7dadf7236666c4ed14d",
+      "path": "files/data/internal_dto.schema.json"
+    },
+    {
+      "name": "presentation_adapter_spec.md",
+      "size": 3306,
+      "type": "text/markdown",
+      "hash": "f081d3d2b2153c87045a0b007b5c8621147955a3c49eb42ed593785b48421c27",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/contracts/internal/presentation_adapter_spec.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/contracts/internal/presentation_adapter_spec.md",
+        "crcVerified": true
+      },
+      "blob": "e6b787f9795592af615619dc12755e5ffca64855",
+      "path": "files/documents/presentation_adapter_spec.md"
+    },
+    {
+      "name": "3930eab2-1-delivery_manifest.sha256.tsv",
+      "size": 381966,
+      "type": "application/octet-stream",
+      "hash": "3930eab2a9a13dd56f83ee6d7ae975994e3ce4995ab2f375f797f66cf7b6923e",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/delivery_manifest.sha256.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/delivery_manifest.sha256.tsv",
+        "crcVerified": true
+      },
+      "mergeOriginalName": "delivery_manifest.sha256.tsv",
+      "blob": "adbcec39bff08746b41779e92b29e4ea57212e5f",
+      "path": "files/data/3930eab2-1-delivery_manifest.sha256.tsv"
+    },
+    {
+      "name": "fingerprint_tree.py",
+      "size": 936,
+      "type": "application/octet-stream",
+      "hash": "16471537b0dd0718f8a9463dd5c9cde100afa7edafd73ea0b819f6d94242920e",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/fingerprint_tree.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/fingerprint_tree.py",
+        "crcVerified": true
+      },
+      "blob": "50653a923369aa4fd2110097febdf4b8ded38a54",
+      "path": "files/code/fingerprint_tree.py"
+    },
+    {
+      "name": "probe_environment.py",
+      "size": 3352,
+      "type": "application/octet-stream",
+      "hash": "81469ddd5f4dba8f4be405c6e6318720b86d04e88fad5f2ffc08ad0d598647b6",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/probe_environment.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/probe_environment.py",
+        "crcVerified": true
+      },
+      "blob": "3c16cb5236da7d9013d18ca5d251ea3432019ec1",
+      "path": "files/code/probe_environment.py"
+    },
+    {
+      "name": "run_engine_probe.py",
+      "size": 3973,
+      "type": "application/octet-stream",
+      "hash": "8798824d4bec169cc588d61a6e717e5c84d0b1fd4e2fae7d3ccd5fe72b2a5fa0",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/run_engine_probe.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/probes/run_engine_probe.py",
+        "crcVerified": true
+      },
+      "blob": "a67279951e149b14f5996314cf1c4505d89f5a38",
+      "path": "files/code/run_engine_probe.py"
+    },
+    {
+      "name": "test_contracts.py",
+      "size": 8542,
+      "type": "application/octet-stream",
+      "hash": "9d5014f32755964f89d71883451414401a4f455190ab57b5257bc940f806e61a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_contracts.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_contracts.py",
+        "crcVerified": true
+      },
+      "blob": "e8a423bfd888a7fb9c6861aa2167f2144de040df",
+      "path": "files/code/test_contracts.py"
+    },
+    {
+      "name": "test_framework.py",
+      "size": 9960,
+      "type": "application/octet-stream",
+      "hash": "8b628afd0f80c81e3be1e7b4e0e4c3b6421354b787b4b2d0c09ff1f09ca8c28d",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_framework.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/tests/test_framework.py",
+        "crcVerified": true
+      },
+      "blob": "62c44c5e5e0e2c3accb6e9dc307937db4a029a8d",
+      "path": "files/code/test_framework.py"
+    },
+    {
+      "name": "__init__.py",
+      "size": 133,
+      "type": "application/octet-stream",
+      "hash": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+        "crcVerified": true
+      },
+      "blob": "beb7ea2eecf557eaa369f804637a1a142a0a9ea0",
+      "path": "files/code/__init__.py"
+    },
+    {
+      "name": "codec.py",
+      "size": 3173,
+      "type": "application/octet-stream",
+      "hash": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+        "crcVerified": true
+      },
+      "blob": "a1bcfdc97e604a4e20081a4b5a0acadb382c78e3",
+      "path": "files/code/codec.py"
+    },
+    {
+      "name": "contracts.py",
+      "size": 10957,
+      "type": "application/octet-stream",
+      "hash": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+        "crcVerified": true
+      },
+      "blob": "8afb43989f4a81533815e218d0b667e69dfd914d",
+      "path": "files/code/contracts.py"
+    },
+    {
+      "name": "demo.py",
+      "size": 2073,
+      "type": "application/octet-stream",
+      "hash": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+        "crcVerified": true
+      },
+      "blob": "8c94030f07069c21b22bc5b2b46fc540c939c5d7",
+      "path": "files/code/demo.py"
+    },
+    {
+      "name": "host.py",
+      "size": 3979,
+      "type": "application/octet-stream",
+      "hash": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+        "crcVerified": true
+      },
+      "blob": "021a7a7ba7fb27251e50d5f09b70cd5a315f222a",
+      "path": "files/code/host.py"
+    },
+    {
+      "name": "path_guard.py",
+      "size": 1229,
+      "type": "application/octet-stream",
+      "hash": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+        "crcVerified": true
+      },
+      "blob": "a5aa8b046086db244b3f8a3918a4e5c58f40a49f",
+      "path": "files/code/path_guard.py"
+    },
+    {
+      "name": "sequence.py",
+      "size": 2594,
+      "type": "application/octet-stream",
+      "hash": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+        "crcVerified": true
+      },
+      "blob": "17a36bf7137ab0d3a810afa181db3d4ebfe5b2b2",
+      "path": "files/code/sequence.py"
+    },
+    {
+      "name": "testing.py",
+      "size": 1333,
+      "type": "application/octet-stream",
+      "hash": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+      "kind": "file",
+      "zipEntryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P13_ClientArchitecture_V0.1.zip",
+        "hash": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+        "entryPath": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+        "crcVerified": true
+      },
+      "blob": "aa66ce147986d93e9b3122225567d7bcad2379ec",
+      "path": "files/code/testing.py"
+    },
+    {
+      "name": "relay-materials-1-0e6d465d5f.zip",
+      "size": 2650213,
+      "hash": "0e6d465d5f92b5955b04dd8a501aed224cadc7ef493bb85bc40f7dfbf20749dc",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "ccfdd7e7c8cf5807be4469b3300ee8e8827a5d29",
+      "path": "files/archives/relay-materials-1-0e6d465d5f.zip"
+    },
+    {
+      "name": "relay-materials-2-90d965dbc7.zip",
+      "size": 16363530,
+      "hash": "90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "a8bb6078ebca35935f2247f68cbc7047f3cb51ee",
+      "path": "files/archives/relay-materials-2-90d965dbc7.zip"
+    },
+    {
+      "name": "relay-materials-3-3b4d4286cc.zip",
+      "size": 16545223,
+      "hash": "3b4d4286cc6068c1274111aac7cc1215ad36d5e5293aa2165be02ff54e2abf2f",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "7d2f1bc973c732aa7ee5dc0083a6917547703b09",
+      "path": "files/archives/relay-materials-3-3b4d4286cc.zip"
+    }
+  ],
+  "createdAt": "2026-10-28T17:46:17.156Z",
+  "sourceUrl": "https://chatgpt.com/c/6ae22c57-b088-83ea-9027-7351f8f2a699"
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "P13-RFC-REGISTER/0.1.0",
+  "items": [
+    {
+      "id": "P13-RFC-001",
+      "contract_id": "IC-05",
+      "contract_owner": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_owner_contract_sha256": null,
+      "upstream_request_sha256": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "接受BattleCommand/DeckPatchCandidate/BattleReply及单次提交批次形状；重复command_id先于revision检查、无二次费用；P14提交不可变BattleResult。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-RFC-002",
+      "contract_id": "IC-18",
+      "contract_owner": "P12",
+      "implementation_owner": "P11",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_owner_contract_sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+      "base_p12_adapter_sha256": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+      "base_p11_types_sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "P11提供作用域内稳定StudyStatusView；P21提供一致快照证明；P12随后改自己的adapter以移除snapshot.ledger内部结构访问，保持现有wire版本直至原owner明确版本变更。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-RFC-003",
+      "contract_id": "IC-19",
+      "contract_owner": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_owner_contract_sha256": null,
+      "base_p11_ports_sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "审阅AtomicCommitProposal/CommitProofView/CommitLookupView；保留P11现有callback方案，不声称本提案能无损替换生产事务。明确candidate resolver与完整来源分摊、实例/水位/恢复连续性。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-RFC-004",
+      "contract_id": "IC-10",
+      "contract_owner": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_owner_contract_sha256": null,
+      "base_p04_constraints_sha256": "17ecdadf9758fa0e0001872df60e122194d650c7c4ece0bb3f741d16ae8ccf31",
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "审阅PartySnapshot/WalletSnapshot/WalletDeltaCandidate；P17唯一业务计算，P21唯一物理提交；现有P11 WalletDelta.source_after不可在未定义迁移映射时丢弃。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-RFC-005",
+      "contract_id": "IC-03",
+      "contract_owner": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_owner_contract_sha256": null,
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "为运行时引用提供正式ID/内容版本和Fixture ID→正式ID显式映射；本包ID语法仅传输字符边界，不构成全局注册规则。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-RFC-006",
+      "contract_id": "IC-08",
+      "contract_owner": "P13",
+      "receivers": [
+        "P19",
+        "P29"
+      ],
+      "status": "FROZEN_ISOLATED_RECEIVER_REVIEW_PENDING",
+      "base_owner_contract_sha256": null,
+      "proposed_p13_registry_sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "request": "P19实现PresentationAdapter的显示锚点和快照归位；P29消费提交批次，缺口/冲突/取消/后台恢复取最新快照；动画不得驱动任何业务提交。",
+      "unilateral_change": false
+    },
+    {
+      "id": "P13-CR-001",
+      "contract_id": "IC-27",
+      "contract_owner": "P01",
+      "original_owner": "P29",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "base_sha256_a": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "base_sha256_b": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "anchor_a": "P29 二、规划独占路径 ui/battle_animation/**",
+      "anchor_b": "P29 五、具体交付 runtime/animation/**",
+      "request": "同一V6文档的规划名称不一致；以二的namespace作布局建议，全部实际生产路径保持null；请P01/P29说明alias或原owner修订，不覆盖式合并。",
+      "unilateral_change": false
+    }
+  ],
+  "delivery_state": "PREPARED_WITH_PACKAGE_NOT_SENT_TO_PEOPLE",
+  "missing_base_rule": "null means formal owner contract not received; never fabricate an old hash"
+}

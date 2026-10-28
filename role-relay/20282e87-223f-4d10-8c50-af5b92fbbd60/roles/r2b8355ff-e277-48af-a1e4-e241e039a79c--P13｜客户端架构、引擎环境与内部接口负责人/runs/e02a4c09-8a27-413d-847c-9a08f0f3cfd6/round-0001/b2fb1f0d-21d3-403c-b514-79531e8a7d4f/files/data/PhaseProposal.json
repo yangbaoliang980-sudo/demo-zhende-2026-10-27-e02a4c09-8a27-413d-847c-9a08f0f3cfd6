@@ -1,0 +1,12 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "PhaseProposal",
+  "battle_id": "fixture:battle",
+  "expected_revision": 0,
+  "proposal_id": "fixture:phase-proposal",
+  "boss_unit_id": "enemy1",
+  "from_phase_id": "fixture:phase1",
+  "to_phase_id": "fixture:phase2",
+  "trigger_event_seq": 1,
+  "content_version": "fixture:content-v1"
+}

@@ -1,0 +1,11 @@
+P13-DNT/0.1.0
+DEFAULT DENY outside this new isolated package.
+ALLOW only P13: architecture/**; contracts/internal/**; runtime/framework/** plus packaging README.md and delivery_manifest.sha256.tsv.
+READONLY architecture/evidence/upstream/**; never modify retained upstream bytes.
+READONLY upload/** and work/input_audit/extracted/**.
+DENY all real repositories, actual game paths, branches and commits: no write mapping has been supplied.
+DENY P14 BattleState/fees implementation; P15 deck rules; P16 AI; P17 Wallet/Party/Character business; P18 progression; P19/P20 UI; P21 persistence; P22 content IDs; P29 animation; P30 import outputs.
+P12 transport files are retained READONLY; this is not an approved production write whitelist.
+DENY treating proposed paths as discovered directories.
+DENY rewriting source variants to match a chosen baseline. Preserve both base hashes in ChangeRequest.
+EXT-INTEGRATOR is UNASSIGNED; no integration commits or deployment.

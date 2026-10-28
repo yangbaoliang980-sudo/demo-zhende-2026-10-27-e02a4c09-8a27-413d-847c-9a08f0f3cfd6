@@ -1,0 +1,13 @@
+decision_id	question	priority	preparation_owner	approver	unapproved_proposal	due_gate	linked_issue	close_evidence	status
+DEC-001	四键奖励是否各有相同基础收益与是否差额奖励	P0	P08	P01→USER	四键基础奖励均有效；不设置额外分差为初提	S05 true award gate	D12	用户批复PolicyRecord + P05/P39反诱导测试方案	PENDING_USER_DECISION
+DEC-002	Undo时已消费权益如何处理	P0	P08	P01→USER	冻结/未来抵扣/隔离/保留权益等均需比较，不默许负余额	S05 true award gate	D11	用户指定一种可测试政策且写入版本	PENDING_USER_DECISION
+DEC-003	零学习日游戏是否允许基础牌/最低行动资源	P1	P03	P01→USER	学习应提供收益且不完全锁死玩法，为方案而非批准	S03策略评估前；S08放行前	D13	P03/P05/P39提供0复习可玩性反例及政策选项	PENDING_USER_DECISION
+DEC-004	初始角色/怪物/Boss/卡牌硬指标	P1	P01	USER	参考3/3/1/20-30，尚非批准值；三人同时上阵是已确定规则	S08资产规模锁定前	D04/D21	用户明确四项数量及允许精简的里程碑	PENDING_USER_DECISION
+DEC-005	实际游戏引擎及允许复用/新建工程	P0	P13	P01→USER	Unity/Godot/其他均不得未经核验冻结	S00 engine baseline	BLK-01	P13实际路径映射+已有工程只读探针+用户批准引擎变更	PENDING_USER_DECISION_AFTER_PROBE
+DEC-006	目标操作系统及Anki准确版本	P0	P34	P01→USER	桌面目标已确认；Windows/发行系统具体版本待实际目标机核实	S00环境基线/S04 probe	BLK-01/BLK-02	用户目标机信息和P34指纹	PENDING_TARGET_ENV
+DEC-007	个人自用/封闭分享/公开商业发行	P1	P01	USER	发布方式及许可范围未批准；默认不公开发布	S08内部RC/S10发布前	BLK-09	用户书面明确发行范围，P37审核许可	PENDING_USER_DECISION
+DEC-008	外部整合者身份及仓库权限	P0	P01	USER	EXT-INTEGRATOR仅登记UNASSIGNED；不能由P13/P36代任	S08 G4前	D26	用户书面指派角色+授权范围/提交协议	PENDING_USER_APPOINTMENT
+DEC-009	装备/稀有度/好感度等最小养成扩展	P2	P04	P01→USER	首期仅角色养成必需能力；扩展系统不擅加	S06范围门禁	BLK-04	P04给最小养成例+成本与用户签认	PENDING_USER_DECISION
+DEC-010	实际目标设备最低性能预算	P2	P34	P01→USER	无机器与指标证据，不冻结帧率/GPU/内存下限	S08兼容性测试前	D25	P34实测采样+用户定义兼容目标	PENDING_TARGET_ENV
+DEC-011	Anki跨集合世代身份/重答/旧备份退化政策	P0	P10	P08→P01→USER（涉及权益时）	能力先真机探针；不可靠事件只能QUARANTINE	S04 probe/S05 award gate	D08/D10	脱敏事件/撤销/旧备份证据，用户确认退化产品体验	PENDING_CAPABILITY
+DEC-012	独立战斗竖切的接受形式与交付机器	P1	P13	P01→USER	允许隔离程序实测，但不能当整合游戏；目标引擎/机器待P13判断	S00技术基线/S03 G3A	BLK-01	P13确认可执行样例运行入口和差异说明	PENDING_ENV_PROBE

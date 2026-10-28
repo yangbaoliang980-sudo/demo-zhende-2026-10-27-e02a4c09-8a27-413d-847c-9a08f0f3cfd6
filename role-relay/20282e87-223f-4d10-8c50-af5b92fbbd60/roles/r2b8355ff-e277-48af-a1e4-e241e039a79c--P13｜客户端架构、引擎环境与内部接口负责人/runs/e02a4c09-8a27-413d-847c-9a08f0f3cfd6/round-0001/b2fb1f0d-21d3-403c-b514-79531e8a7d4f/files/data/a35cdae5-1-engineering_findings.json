@@ -1,0 +1,50 @@
+{
+  "schema_version": "P13-INVENTORY-FINDINGS/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "upstream_task_id": "TASK-00-02",
+  "date_user_timezone": "2026-10-29",
+  "date_note": "User-facing calendar date only; exact execution times are in UTC run receipts.",
+  "inventory_rows": 2272,
+  "archives": {
+    "unique_archives": 25,
+    "archive_occurrences": 61,
+    "file_members": 1268,
+    "relay_manifest_records": 484,
+    "relay_manifest_pass": 484,
+    "total_expanded_bytes": 106181815,
+    "scope": "Three supplied uploads and their recursive ZIP members; content hashes deduplicate archives only."
+  },
+  "upstream_manifest_records": {
+    "records": 642,
+    "pass": 642,
+    "fail": 0
+  },
+  "github_trees": [
+    {
+      "source": "roles_repo",
+      "requested_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+      "entries": 170,
+      "blob_entries": 108,
+      "truncated": false
+    },
+    {
+      "source": "p12_repo",
+      "requested_fixed_commit": "c371925947ce6bbd97c1f5b6b4d0f0bc8cd8382c",
+      "entries": 1029,
+      "blob_entries": 885,
+      "truncated": false
+    }
+  ],
+  "engine_markers_found": [],
+  "reusable": {
+    "P11": "Actual Python isolated ledger source retained unchanged within original P12 package; business remains P11-owned",
+    "P12": "Actual isolated Python transport/bridge/outbox code; retain original, do not reimplement in P13",
+    "P01_P02_P04_P08": "Verified product, rule, party, reward semantics; not an approved game engine project"
+  },
+  "conclusion": "No identifiable target game-engine project was received within the inspected scope. Existing executable artifacts are isolated modules, probes, validators and mocks. This does not prove that a different user disk or repository has no project.",
+  "engine_launch": "NOT_RUN",
+  "target_runtime_gate": "BLOCKED",
+  "p13_isolated_runtime": "PYTHON_3_12_STDLIB",
+  "game_engine_choice": "UNDECIDED_PENDING_ACTUAL_PROBE_AND_P01_DEC005",
+  "target_os": "UNKNOWN_PENDING_P34_DEC006"
+}

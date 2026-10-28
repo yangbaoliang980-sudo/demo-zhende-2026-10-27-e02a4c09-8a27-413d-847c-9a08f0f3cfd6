@@ -1,0 +1,9 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "SaveStatusView",
+  "store_instance": null,
+  "state": "UNAVAILABLE",
+  "save_format_version": null,
+  "high_watermark": null,
+  "reason_code": "P21_UNBOUND"
+}

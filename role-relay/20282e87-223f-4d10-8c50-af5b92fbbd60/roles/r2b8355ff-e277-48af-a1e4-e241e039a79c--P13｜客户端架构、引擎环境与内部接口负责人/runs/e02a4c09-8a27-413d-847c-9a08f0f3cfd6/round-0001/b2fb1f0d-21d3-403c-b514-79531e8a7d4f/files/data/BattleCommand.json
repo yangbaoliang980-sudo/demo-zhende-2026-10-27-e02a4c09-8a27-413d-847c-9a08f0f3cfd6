@@ -1,0 +1,9 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "BattleCommand",
+  "battle_id": "fixture:battle",
+  "command_id": "fixture:command1",
+  "expected_revision": 0,
+  "kind": "END_TURN",
+  "payload": {}
+}

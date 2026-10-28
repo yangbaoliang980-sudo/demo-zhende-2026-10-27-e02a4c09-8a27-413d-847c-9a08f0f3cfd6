@@ -1,0 +1,27 @@
+sequence_id	state_before	command_or_internal	logic_operation	logical_event	state_after_or_next	owner	acceptance_invariant
+T001	CREATED	SYSTEM_START	Validate battle snapshot IDs seed party and enemy lists	COMMAND_ACCEPTED	INIT_INTERNAL	P13/P14	No current source engine assumed
+T002	INIT_INTERNAL	SYSTEM_START	Evaluate pre-existing deaths then terminal	UNIT_DIED?;BATTLE_FINISHED?	TERMINAL or PLAYER_ENTRY_INTERNAL	P14	Initial player entry internal to the same SYSTEM_START transaction
+T003	PLAYER_TURN_PENDING or PLAYER_ENTRY_INTERNAL	SYSTEM_ENTER_PLAYER_TURN or SYSTEM_START	Tick player-owner DOT in unit slot and status insertion order	STATUS_TICKED;DAMAGE_APPLIED;UNIT_DIED?	CHECKPOINT	P14	DOT before draw/energy refresh
+T004	CHECKPOINT	internal	Run queued legal reactions tier then FIFO	TRIGGER_STARTED;EFFECT_STARTED;DAMAGE_APPLIED?;UNIT_DIED?	CHECKPOINT	P14/P02	No nested callback may mutate directly
+T005	CHECKPOINT	internal	Check player and enemy live counts	BATTLE_FINISHED?	TERMINAL or CONTINUE	P14	One of WIN LOSS DRAW ONGOING
+T006	CONTINUE	internal	Decrement or remove ticked statuses once at owner entry	STATUS_DURATION_UPDATED?	RESOURCE_ENTRY	P14/P13	Status duration policy is count of owner entries
+T007	RESOURCE_ENTRY	internal	Refresh energy using externally approved policy	ENERGY_REFRESHED?	DRAW_ENTRY	P14/P05	Never infer zero-study-day free energy
+T008	DRAW_ENTRY	internal	Request P15 DeckPatch and deterministic reshuffle if configured	DECK_RECYCLED?;DECK_SHUFFLED?;CARD_DRAWN?;DRAW_SHORTFALL?	PLAYER_READY	P15 candidate P14 commit	No duplicate cards and same seed same order
+T009	PLAYER_READY	PLAY_CARD	Check dedup fingerprint before revision and phase	NONE_ON_DUPLICATE_OR_REJECT	PLAYER_READY	P14	Duplicate never writes event/revision
+T010	PLAYER_READY	PLAY_CARD	Validate actor target card cost remaining energy and all effects	NONE_ON_REJECT	PLAYER_READY	P14/P15 proposal	Reject cannot pay fee
+T011	PLAYER_READY	PLAY_CARD	Buffer COMMAND_ACCEPTED then unique fee and card zone move	COMMAND_ACCEPTED;ENERGY_SPENT;CARD_MOVED	RESOLVE_INTERNAL	P14	Exactly one cost and card instance removal
+T012	RESOLVE_INTERNAL	per_effect	Select validated targets in stable order	EFFECT_STARTED	RESOLVE_INTERNAL	P02/P14	No UI target iteration order
+T013	RESOLVE_INTERNAL	DAMAGE	Shield absorb then remaining HP decrease	DAMAGE_APPLIED	DEATH_CHECK	P14	Integer nonnegative maxHP bounded
+T014	RESOLVE_INTERNAL	SHIELD/HEAL/STATUS	Apply clamp and status insertion order	SHIELD_GRANTED/HEAL_APPLIED/STATUS_APPLIED	DEATH_CHECK	P14	No heal dead without authorized revive content
+T015	DEATH_CHECK	internal	Mark newly dead once and enqueue death hooks	UNIT_DIED?;TRIGGER_QUEUED?	NEXT_EFFECT_OR_REACTION	P14	No same command revive after death
+T016	NEXT_EFFECT_OR_REACTION	internal	Drain finite stable reaction FIFO including death hooks	TRIGGER_STARTED;EFFECT_STARTED;DAMAGE_APPLIED?;UNIT_DIED?	CHECKPOINT	P14	Trigger dedup and max 1024
+T017	CHECKPOINT	internal	Evaluate exclusive outcome after reaction drain	BATTLE_FINISHED?	TERMINAL or PHASE_SCAN	P14	Do not emit WIN before death retaliate
+T018	PHASE_SCAN	internal	Only living boss threshold crossing and unproposed phase	BOSS_PHASE_PROPOSED?	PLAYER_READY	P06 proposal P14 record	Lethal crossing suppresses phase proposal
+T019	PLAYER_READY or TERMINAL	internal	Commit atomic new revision plus command hash	COMMAND_COMMITTED	New stable phase	P14	No partial published events
+T020	PLAYER_READY	END_TURN	Check duplicate phase/revision	NONE_ON_REJECT	PLAYER_READY	P14	New-id repeated END_TURN rejected after first
+T021	PLAYER_READY	END_TURN	Commit closed player turn	COMMAND_ACCEPTED;TURN_ENDED;COMMAND_COMMITTED	ENEMY_READY	P14	No enemy action yet in same external command
+T022	ENEMY_READY	SYSTEM_ENEMY_ACTION	Buffer accepted command then process enemy owner-entry DOT, reactions, terminal, duration; only if alive select P06 intent	COMMAND_ACCEPTED;STATUS_TICKED?;DAMAGE_APPLIED?;UNIT_DIED?;BATTLE_FINISHED?;ENEMY_ACTION_STARTED?	TERMINAL or RESOLVE_INTERNAL	P14/P06 candidate	Enemy-owner DOT may win before AI action
+T023	ENEMY_READY	SYSTEM_ENEMY_ACTION	Resolve effect and terminal then end enemy action	DAMAGE_APPLIED?;ENEMY_ACTION_SKIPPED?;BATTLE_FINISHED?;COMMAND_COMMITTED	TERMINAL or PLAYER_TURN_PENDING	P14	No new player turn when terminal
+T024	Any nonterminal	ABORT	Abort only at safe sequential commit boundary	COMMAND_ACCEPTED;BATTLE_ABORTED;COMMAND_COMMITTED	ABORTED	P14	Abort never WIN LOSS DRAW
+T025	Any nonterminal	INTERNAL_FAULT	Rollback failing operation; safely commit FAULTED record	BATTLE_FAULTED	FAULTED	P14	No partial gold HP fee or win event
+T026	TERMINAL/ABORTED/FAULTED	Any non-duplicate gameplay input	Reject permanently	NO_CANONICAL_EVENT	Unchanged	P14	ALREADY_CLOSED

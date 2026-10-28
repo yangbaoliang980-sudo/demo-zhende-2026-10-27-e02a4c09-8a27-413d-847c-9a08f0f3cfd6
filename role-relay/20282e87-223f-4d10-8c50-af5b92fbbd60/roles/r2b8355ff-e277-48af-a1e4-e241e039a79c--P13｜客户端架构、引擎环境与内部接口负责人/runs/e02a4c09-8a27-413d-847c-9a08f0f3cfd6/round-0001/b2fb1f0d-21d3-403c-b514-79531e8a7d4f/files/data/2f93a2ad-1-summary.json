@@ -1,0 +1,9 @@
+{
+  "unique_archives": 25,
+  "archive_occurrences": 61,
+  "file_members": 1268,
+  "relay_manifest_records": 484,
+  "relay_manifest_pass": 484,
+  "total_expanded_bytes": 106181815,
+  "scope": "Three supplied uploads and their recursive ZIP members; content hashes deduplicate archives only."
+}

@@ -1,0 +1,14 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "EnemyIntent",
+  "battle_id": "fixture:battle",
+  "expected_revision": 0,
+  "intent_id": "fixture:intent",
+  "actor_id": "enemy1",
+  "skill_id": "fixture:enemy-skill",
+  "target_ids": [
+    "hero1"
+  ],
+  "content_version": "fixture:content-v1",
+  "no_valid_target": "SKIP"
+}

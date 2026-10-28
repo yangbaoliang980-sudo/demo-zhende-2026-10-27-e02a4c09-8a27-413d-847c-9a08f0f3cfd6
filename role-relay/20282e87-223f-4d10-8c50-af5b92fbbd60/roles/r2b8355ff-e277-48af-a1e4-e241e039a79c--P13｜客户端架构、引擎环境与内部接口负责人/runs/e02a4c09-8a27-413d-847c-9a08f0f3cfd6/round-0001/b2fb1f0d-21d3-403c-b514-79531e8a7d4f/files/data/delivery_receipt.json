@@ -1,0 +1,225 @@
+{
+  "schema_version": "P13-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "upstream_task_id": "TASK-00-02",
+  "delivery_version": "P13-CLIENT-ARCH/0.1.0-isolated",
+  "created_at_utc": "2026-10-28T17:42:26.507384+00:00",
+  "archive": {
+    "filename": "P13_ClientArchitecture_V0.1.zip",
+    "size_bytes": 2635479,
+    "sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+    "package_root": "P13_ClientArchitecture_V0.1",
+    "file_count": 176,
+    "timestamp_policy": "Normalized to ZIP epoch 1980-01-01 solely for deterministic packaging; actual execution times are in run receipts"
+  },
+  "manifest": {
+    "filename": "delivery_manifest.sha256.tsv",
+    "size_bytes": 381966,
+    "sha256": "3930eab2a9a13dd56f83ee6d7ae975994e3ce4995ab2f375f797f66cf7b6923e",
+    "package_relative_path": "delivery_manifest.sha256.tsv",
+    "record_count": 175,
+    "self_hash_rule": "Manifest excludes itself; this external receipt binds it and the ZIP. Receipt is outside ZIP and does not include its own hash."
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "size_bytes": 7574,
+      "sha256": "94afbe8df5dcf7bcb1aece128044daa67ce80824f86d1688fd31a4b7e42e0b04",
+      "package_relative_path": "README.md",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "engineering_inventory.tsv",
+      "size_bytes": 1426020,
+      "sha256": "06be291e315031c98c6e175eed76b9668eced0b2867415ad1200f633a24df70e",
+      "package_relative_path": "architecture/engineering_inventory.tsv",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "package_relative_path": "architecture/actual_path_mapping.json",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "do_not_touch.txt",
+      "size_bytes": 962,
+      "sha256": "dc77710b4b37366294fa79433d44d264233b0022672e16c4d28d9eb14851c8de",
+      "package_relative_path": "architecture/do_not_touch.txt",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "architecture_adr.md",
+      "size_bytes": 10739,
+      "sha256": "17dd05171f736dd4926577ead9bda601c1eef6463e979c80e5c37a16b0cc1c06",
+      "package_relative_path": "architecture/architecture_adr.md",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "package_relative_path": "contracts/internal/internal_api_contracts.json",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "package_relative_path": "contracts/internal/internal_dto.schema.json",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "verification_status.json",
+      "size_bytes": 9162,
+      "sha256": "d0f993925d7dc8012225f74b5ca100ffc25bcbd2e27054f8de480329a5412ddc",
+      "package_relative_path": "architecture/verification_status.json",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "size_bytes": 5473,
+      "sha256": "97ffda4bf8e62651978407afc74f2ac1cdb2ad5c66bcea8238a2b98492c45639",
+      "package_relative_path": "architecture/integration_handoff.md",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "size_bytes": 381966,
+      "sha256": "3930eab2a9a13dd56f83ee6d7ae975994e3ce4995ab2f375f797f66cf7b6923e",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "comparison": "BYTE_IDENTICAL_TO_PACKAGE_AND_REEXTRACTED_FILE"
+    }
+  ],
+  "checks": {
+    "zip_crc": "PASS",
+    "duplicate_or_unsafe_member_paths": "NONE",
+    "export_same_basename_and_bytes": "PASS",
+    "original_package": {
+      "command_argv": [
+        "python",
+        "-B",
+        "architecture/tools/verify_delivery.py"
+      ],
+      "cwd": "/workspace/scratch/710511e1c679/P13_ClientArchitecture_V0.1",
+      "started_at_utc": "2026-10-28T17:42:25.802865+00:00",
+      "completed_at_utc": "2026-10-28T17:42:25.934884+00:00",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"EXACT_PACKAGE_BYTES_AND_PYTHON_SYNTAX_ONLY\",\n  \"manifest_records\": 175,\n  \"upstream_files_verified\": 28,\n  \"executed_source_files_bound\": 35,\n  \"python_files_parsed\": 19,\n  \"optional_sibling_exports\": {},\n  \"errors\": [],\n  \"game_engine_runtime\": \"NOT_RUN\",\n  \"independent_acceptance\": \"NOT_RUN\",\n  \"manifest_self_hash\": \"Excluded from own rows; bound by outer delivery_receipt.json\"\n}\n",
+      "stderr": "",
+      "stdout_sha256": "50b3d8a5699cda540cdcbca25b37fd971c4c6458e015e8fdbf335fa29c5e1b38",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reextracted_package": {
+      "command_argv": [
+        "python",
+        "-B",
+        "architecture/tools/verify_delivery.py"
+      ],
+      "cwd": "/workspace/scratch/710511e1c679/work/release_verification/reextracted/P13_ClientArchitecture_V0.1",
+      "started_at_utc": "2026-10-28T17:42:26.252633+00:00",
+      "completed_at_utc": "2026-10-28T17:42:26.372837+00:00",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"EXACT_PACKAGE_BYTES_AND_PYTHON_SYNTAX_ONLY\",\n  \"manifest_records\": 175,\n  \"upstream_files_verified\": 28,\n  \"executed_source_files_bound\": 35,\n  \"python_files_parsed\": 19,\n  \"optional_sibling_exports\": {},\n  \"errors\": [],\n  \"game_engine_runtime\": \"NOT_RUN\",\n  \"independent_acceptance\": \"NOT_RUN\",\n  \"manifest_self_hash\": \"Excluded from own rows; bound by outer delivery_receipt.json\"\n}\n",
+      "stderr": "",
+      "stdout_sha256": "50b3d8a5699cda540cdcbca25b37fd971c4c6458e015e8fdbf335fa29c5e1b38",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reextracted_isolated_demo": {
+      "command_argv": [
+        "python",
+        "-B",
+        "-m",
+        "runtime.framework.yltt_framework.demo"
+      ],
+      "cwd": "/workspace/scratch/710511e1c679/work/release_verification/reextracted/P13_ClientArchitecture_V0.1",
+      "started_at_utc": "2026-10-28T17:42:26.373037+00:00",
+      "completed_at_utc": "2026-10-28T17:42:26.493995+00:00",
+      "exit_code": 0,
+      "stdout": "{\n  \"mode\": \"ISOLATED_CANNED_DTO_ONLY\",\n  \"queued\": \"QUEUED_NOT_COMMITTED\",\n  \"delivery\": \"PORT_RETURNED_UNVERIFIED\",\n  \"stream\": \"ACCEPT\",\n  \"replay\": \"DUPLICATE\",\n  \"input_snapshot_unchanged\": true,\n  \"battle_logic_executed\": false,\n  \"wallet_business_executed\": false,\n  \"rendering_executed\": false,\n  \"real_anki_events\": 0,\n  \"production_integration\": \"NOT_RUN\"\n}\n",
+      "stderr": "",
+      "stdout_sha256": "a3e2a0d7a50a55aeec6fa5072ae994f8b3b2ed0a5734a4d280157579d340896f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "original_input_immutability": {
+      "schema_version": "P13-INPUT-IMMUTABILITY/0.1.0",
+      "task_id": "P13-S00-ARCH-001",
+      "command_argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/710511e1c679/work/package_p13.py"
+      ],
+      "started_at_utc": "2026-10-28T17:42:25.318507+00:00",
+      "completed_at_utc": "2026-10-28T17:42:25.757493+00:00",
+      "status": "PASS",
+      "scope": "Re-read every originally extracted file and all three original uploads; no write to originals",
+      "upload_count": 3,
+      "extracted_file_count": 1268,
+      "reference_members_sha256": "79d7ee489cfd819f866fb65cbbe7de11de4a473a3a29fe76602327a6f5db4157",
+      "source_receipt_sha256": "a31f9222c27e701136a17f9bab7dfd6b8baeac01658c287b1bb642206880673e",
+      "exit_code": 0,
+      "failures": []
+    },
+    "receipt_export_verification": {
+      "command_argv": [
+        "python",
+        "-B",
+        "architecture/tools/verify_delivery.py",
+        "--receipt",
+        "/workspace/scratch/710511e1c679/exports/delivery_receipt.json"
+      ],
+      "cwd": "/workspace/scratch/710511e1c679/work/release_verification/reextracted/P13_ClientArchitecture_V0.1",
+      "started_at_utc": "2026-10-28T17:42:26.511136+00:00",
+      "completed_at_utc": "2026-10-28T17:42:26.661842+00:00",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"EXACT_PACKAGE_BYTES_AND_PYTHON_SYNTAX_ONLY\",\n  \"manifest_records\": 175,\n  \"upstream_files_verified\": 28,\n  \"executed_source_files_bound\": 35,\n  \"python_files_parsed\": 19,\n  \"optional_sibling_exports\": {\n    \"README.md\": \"CHECKED\",\n    \"engineering_inventory.tsv\": \"CHECKED\",\n    \"actual_path_mapping.json\": \"CHECKED\",\n    \"do_not_touch.txt\": \"CHECKED\",\n    \"architecture_adr.md\": \"CHECKED\",\n    \"internal_api_contracts.json\": \"CHECKED\",\n    \"internal_dto.schema.json\": \"CHECKED\",\n    \"verification_status.json\": \"CHECKED\",\n    \"integration_handoff.md\": \"CHECKED\",\n    \"delivery_manifest.sha256.tsv\": \"CHECKED\"\n  },\n  \"errors\": [],\n  \"game_engine_runtime\": \"NOT_RUN\",\n  \"independent_acceptance\": \"NOT_RUN\",\n  \"manifest_self_hash\": \"Excluded from own rows; bound by outer delivery_receipt.json\"\n}\n",
+      "stderr": "",
+      "stdout_sha256": "ce233cfe00d0726fc3165c706995f94b098dd7bcd95487a4f081061a5a7240a7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "layered_status": {
+    "author_unit_contract": {
+      "status": "PASS",
+      "count": 54
+    },
+    "author_schema_oracle": {
+      "status": "PASS",
+      "scope": "STRUCTURAL_SCHEMA_ORACLE_AUTHOR_CHECK_ONLY",
+      "cases_compared": 4540,
+      "valid_by_schema": 435,
+      "invalid_by_schema": 4105,
+      "excluded_by_wire_profile": 432,
+      "semantic_cross_field_rules": "Covered separately by author contract tests; not expressible by this JSON Schema subset",
+      "jsonschema_version": "4.25.1",
+      "failures": []
+    },
+    "cross_language_vectors": {
+      "status": "PASS",
+      "count": 25
+    },
+    "unchanged_p12_parser_ack_smoke": {
+      "status": "PASS",
+      "count": 46
+    },
+    "target_runtime_gate": "BLOCKED",
+    "actual_engine_start": "NOT_RUN",
+    "real_anki": "NOT_RUN",
+    "production_p21": "NOT_RUN",
+    "p32_independent": "NOT_RUN",
+    "p35_independent": "NOT_RUN",
+    "integration": "NOT_RUN"
+  },
+  "handoff": {
+    "receiver_count": 17,
+    "artifact_records": 65,
+    "status": "PREPARED_NOT_ACKNOWLEDGED"
+  },
+  "authorization": {
+    "production_write": false,
+    "cross_module_merge": false,
+    "github_write": false,
+    "storage": "Downloadable artifacts for user-configured relay archival; no additional persistence action"
+  }
+}

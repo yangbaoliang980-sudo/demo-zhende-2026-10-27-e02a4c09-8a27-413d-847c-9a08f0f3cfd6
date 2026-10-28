@@ -1,0 +1,10 @@
+{
+  "schema_version": "P13-AUTHORIZATION-BASIS/0.1.0",
+  "authority": "Current user task; explicit P13 scope and isolated-work allowance",
+  "exact_quote": "直接执行你的职责，不再创建子角色或拆分清单。处理属于自己职责的问题，交付下一位可以直接接手的完整成果。",
+  "quote_sha256": "b9635850924d3dd4e72aa2bcbb665556d9f07c44a35c9bad481243007d56557b",
+  "hash_scope": "UTF-8 bytes of this exact excerpt only; original full chat bytes unavailable",
+  "authorized": "Read supplied archives and specified fixed repositories; create new isolated P13-owned deliverables and framework stubs; run local author verification",
+  "not_granted": "Production project overwrite, cross-role changes, cross-module merge, GitHub push, publication, or appointment of EXT-INTEGRATOR",
+  "subagents_created": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "P13-DEFECTS/0.1.0",
+  "items": [
+    {
+      "id": "P13-D01",
+      "owner": "P13",
+      "kind": "ENVIRONMENT_SETUP_FAILURE",
+      "status": "RESOLVED_FOR_OPTIONAL_ORACLE",
+      "observed": "Default sandbox public dependency download failed with network Operation not permitted; actual pip exit 1.",
+      "evidence": "architecture/evidence/development/pip_attempt_001.json",
+      "resolution": "Network-enabled public dependency download succeeded into task-only devdeps. Final oracle ran with recorded dependency versions. No project content uploaded.",
+      "verification": "architecture/evidence/runs/schema_oracle_final/run_receipt.json"
+    },
+    {
+      "id": "P13-D02",
+      "owner": "P13",
+      "kind": "AUTHOR_STATIC_CODE_REVIEW",
+      "status": "FIXED_AUTHOR_RETEST_PASS",
+      "observed": "Unhashable dto_type could raise a Python TypeError rather than the declared ContractError.",
+      "before_fix_execution_status": "NOT_RUN; found by source review, no fabricated failing test log",
+      "resolution": "Require string dto_type before membership lookup; regression test covers list/dict/int/null.",
+      "verification": "architecture/evidence/runs/author_tests_final/stderr.log"
+    },
+    {
+      "id": "P13-D03",
+      "owner": "P13",
+      "kind": "AUTHOR_CONTRACT_REVIEW",
+      "status": "FIXED_AUTHOR_RETEST_PASS",
+      "observed": "Initial isolated CommitLookupView did not expose continuity evidence for ABSENT.",
+      "before_fix_execution_status": "Schema was valid structurally; semantic requirement identified in review, not an actual production failure.",
+      "resolution": "Bind store instance, high watermark and continuity ref for ABSENT; match these to COMMITTED proof. Preserve earlier execution snapshots.",
+      "verification": "architecture/evidence/runs/author_tests_final/stderr.log"
+    },
+    {
+      "id": "P13-D04",
+      "owner": "P01",
+      "original_owner": "P29",
+      "kind": "UPSTREAM_PLANNED_PATH_AMBIGUITY",
+      "status": "RFC_PREPARED_NOT_ACKNOWLEDGED",
+      "observed": "V6 P29 second and fifth sections name different planned animation namespaces.",
+      "evidence": "contracts/internal/interface_rfcs.json:P13-CR-001",
+      "resolution": "No production path selected or written; originals unchanged."
+    }
+  ],
+  "independent_retest": "NOT_RUN"
+}

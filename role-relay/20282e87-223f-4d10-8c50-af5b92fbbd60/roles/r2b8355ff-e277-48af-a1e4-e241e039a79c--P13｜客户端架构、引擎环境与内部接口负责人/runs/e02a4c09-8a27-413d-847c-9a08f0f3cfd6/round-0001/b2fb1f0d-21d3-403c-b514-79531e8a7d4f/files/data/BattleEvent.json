@@ -1,0 +1,12 @@
+{
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "dto_type": "BattleEvent",
+  "battle_id": "fixture:battle",
+  "command_id": "fixture:command1",
+  "revision": 1,
+  "seq": 1,
+  "event_type": "COMMAND_ACCEPTED",
+  "data": {
+    "command_sha256": "163a9bb3ef5b840f97d7c17f79ba3dad5ea2c9360634f8484f6fa6cba1512cd5"
+  }
+}

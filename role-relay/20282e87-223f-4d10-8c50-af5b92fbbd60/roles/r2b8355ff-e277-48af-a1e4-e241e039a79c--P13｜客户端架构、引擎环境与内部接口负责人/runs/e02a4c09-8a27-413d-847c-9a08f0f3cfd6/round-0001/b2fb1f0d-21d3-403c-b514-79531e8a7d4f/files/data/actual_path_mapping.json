@@ -1,0 +1,431 @@
+{
+  "schema_version": "P13-ACTUAL-PATH-MAPPING/0.1.0",
+  "task_id": "P13-S00-ARCH-001",
+  "status": "ISOLATED_MAPPING_VERIFIED_TARGET_BLOCKED",
+  "observed_package_root": "/workspace/scratch/710511e1c679/P13_ClientArchitecture_V0.1",
+  "portable_package_root": ".",
+  "actual_game_repository": null,
+  "actual_game_commit": null,
+  "actual_engine": null,
+  "target_os": null,
+  "target_architecture": null,
+  "production_write_authorized": false,
+  "authorization_basis": "architecture/authorization_basis.json",
+  "mappings": [
+    {
+      "owner": "P13",
+      "design_path": "architecture/**",
+      "isolated_relative_path": "architecture",
+      "isolated_absolute_path": "/workspace/scratch/710511e1c679/P13_ClientArchitecture_V0.1/architecture",
+      "actual_production_path": null,
+      "scope": "NEW_ISOLATED_PACKAGE_ONLY",
+      "status": "MAPPED_ISOLATED_AUTHORIZED",
+      "write_allowed": true,
+      "overwrite_existing": false
+    },
+    {
+      "owner": "P13",
+      "design_path": "contracts/internal/**",
+      "isolated_relative_path": "contracts/internal",
+      "isolated_absolute_path": "/workspace/scratch/710511e1c679/P13_ClientArchitecture_V0.1/contracts/internal",
+      "actual_production_path": null,
+      "scope": "NEW_ISOLATED_PACKAGE_ONLY",
+      "status": "MAPPED_ISOLATED_AUTHORIZED",
+      "write_allowed": true,
+      "overwrite_existing": false
+    },
+    {
+      "owner": "P13",
+      "design_path": "runtime/framework/**",
+      "isolated_relative_path": "runtime/framework",
+      "isolated_absolute_path": "/workspace/scratch/710511e1c679/P13_ClientArchitecture_V0.1/runtime/framework",
+      "actual_production_path": null,
+      "scope": "NEW_ISOLATED_PACKAGE_ONLY",
+      "status": "MAPPED_ISOLATED_AUTHORIZED",
+      "write_allowed": true,
+      "overwrite_existing": false
+    },
+    {
+      "owner": "P11",
+      "design_path": "runtime/anki/ledger/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P11",
+      "design_path": "runtime/anki/reward_transactions/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P12",
+      "design_path": "contracts/anki_transport/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P12",
+      "design_path": "runtime/anki/transport/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P12",
+      "design_path": "mocks/anki_transport/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P14",
+      "design_path": "runtime/battle/core/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P14",
+      "design_path": "tests/battle_core_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P15",
+      "design_path": "runtime/battle/deck/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P15",
+      "design_path": "runtime/battle/card_actions/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P15",
+      "design_path": "tests/deck_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P16",
+      "design_path": "runtime/battle/enemy_ai/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P16",
+      "design_path": "tests/enemy_ai_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P17",
+      "design_path": "runtime/meta/characters/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P17",
+      "design_path": "runtime/meta/party/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P17",
+      "design_path": "tests/character_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P17",
+      "design_path": "runtime/meta/wallet/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P18",
+      "design_path": "runtime/meta/stages/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P18",
+      "design_path": "runtime/meta/progression/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P18",
+      "design_path": "tests/stage_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P19",
+      "design_path": "ui/battle/screens/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P19",
+      "design_path": "ui/battle/widgets/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P19",
+      "design_path": "tests/battle_ui_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P20",
+      "design_path": "ui/meta/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P20",
+      "design_path": "tests/meta_ui_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P21",
+      "design_path": "runtime/persistence/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P21",
+      "design_path": "schema/save/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P21",
+      "design_path": "tests/save_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P22",
+      "design_path": "schema/content/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P22",
+      "design_path": "tools/content_validation/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P22",
+      "design_path": "content/manifest/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P29",
+      "design_path": "ui/battle_animation/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P29",
+      "design_path": "runtime/audio_playback/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P29",
+      "design_path": "tests/battle_animation_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P30",
+      "design_path": "tools/asset_import/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P30",
+      "design_path": "assets/imported/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P30",
+      "design_path": "assets/manifest/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "production_gate": "BLOCKED: no actual engine project, target-device evidence, or repository write ownership mapping received.",
+  "readonly_inputs": [
+    {
+      "path": "/workspace/scratch/710511e1c679/upload",
+      "owner": "UPSTREAM",
+      "write_allowed": false
+    },
+    {
+      "path": "/workspace/scratch/710511e1c679/work/input_audit/extracted",
+      "owner": "UPSTREAM",
+      "write_allowed": false
+    },
+    {
+      "path": "architecture/evidence/upstream/**",
+      "owner": "ORIGINAL_UPSTREAM_OWNERS",
+      "write_allowed": false
+    }
+  ],
+  "package_metadata_allowlist": [
+    "README.md",
+    "delivery_manifest.sha256.tsv"
+  ]
+}
