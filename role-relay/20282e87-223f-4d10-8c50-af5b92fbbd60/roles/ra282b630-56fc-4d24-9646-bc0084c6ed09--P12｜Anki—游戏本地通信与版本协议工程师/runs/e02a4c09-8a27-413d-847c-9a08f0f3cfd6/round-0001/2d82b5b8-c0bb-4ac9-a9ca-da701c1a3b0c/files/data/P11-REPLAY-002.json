@@ -1,0 +1,311 @@
+{
+  "case_id": "P11-REPLAY-002",
+  "status": "PASS",
+  "evidence_scope": "ISOLATED_SIMULATION",
+  "steps": [
+    {
+      "step": 1,
+      "input": {
+        "action": "deliver",
+        "event": "Hard",
+        "expect": {
+          "balance": 10,
+          "state": "APPLIED"
+        }
+      },
+      "observed": {
+        "inbox_id": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "state": "APPLIED",
+        "reason": "SIMULATED_NET_TARGET_COMMITTED",
+        "ack": "ACK_APPLIED",
+        "receipt": {
+          "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+          "request_sha256": "edc9e83db4005a35c39daff45506a5c3f02c4d26c2d27954684f62b91f80c8a2",
+          "store_instance": "P21_SIMULATOR:16f3cf056f43ece2e44a6c83989345da3595af5d72ee5534e5f5b50cbb73b144",
+          "sequence": 2,
+          "ledger_sha256": "6b41e26d60765b608d6cae513bead2254b51633731870fee757908614e21525c",
+          "wallet_sha256": "663d8f9c0f1ffceed248521ea947b4f5adc0363a3e2c162554bde85cd08dafa6",
+          "origin": "P21_SIMULATOR",
+          "durable": true
+        },
+        "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+        "duplicate": false,
+        "evidence_scope": "P21_SIMULATOR",
+        "wallet_balance_in_synthetic_unit": 10
+      },
+      "status": "PASS"
+    }
+  ],
+  "final_ledger": {
+    "audit": [
+      {
+        "action": "DURABLE_RECEIVE",
+        "details": {
+          "raw_sha256": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+          "reason": "DURABLE_RECEIVED_NOT_AWARDED",
+          "state": "PENDING_RECONCILIATION"
+        },
+        "inbox_id": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "sequence": 1,
+        "sha256": "ce908a9a50b1c5cb94851bd83f6fd248ebaf8203f907f0318e641b34149cb9ec",
+        "transaction_id": "receive:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+      },
+      {
+        "action": "LEDGER_DECISION",
+        "details": {
+          "compensation_pending": false,
+          "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+          "from": "PENDING_RECONCILIATION",
+          "reason": "SIMULATED_NET_TARGET_COMMITTED",
+          "reward_intent": {
+            "desired_active": true,
+            "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+            "kind": "REVIEW",
+            "operation_key": "7707e2d34d33b6bf08a325e94496efb3a3e4721567af9a05dce27ad3b838336a",
+            "policy_snapshot": {
+              "approval_ref": "fixture:NOT_USER_APPROVAL",
+              "budget_ref": "fixture:budget",
+              "category": "UNKNOWN",
+              "entitlement": {
+                "SYNTHETIC_SINGLE_UNIT": 10
+              },
+              "evidence_scope": "ISOLATED_SYNTHETIC_ARITHMETIC",
+              "mapping_sha256": "66556e7788824fa697fabc87c0d9fadb9fc46e62c8655837959ef12f061bd690",
+              "mapping_version": "fixture:mapping-v1",
+              "reclaim_unspent": true,
+              "restore_allowed": true,
+              "reward_day": "fixture:original-reward-day",
+              "reward_day_rule": "fixture:supplied-original-day",
+              "scope": [
+                "fixture:source",
+                "fixture:lineage",
+                "fixture:player"
+              ],
+              "source_sha256": "110e0c9e29ffd940ba13a0ef5d53d0649a87b2ad5da81f3b89eab973a18eb1ea",
+              "version": "P11-SYNTHETIC-MATH-POLICY/0.1.0"
+            },
+            "resolution_ref": null,
+            "source_evidence_ref": "fixture:admission:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+            "transaction_id": "reward:7707e2d34d33b6bf08a325e94496efb3a3e4721567af9a05dce27ad3b838336a"
+          },
+          "to": "APPLIED",
+          "wallet_delta": {
+            "changes": {
+              "SYNTHETIC_SINGLE_UNIT": 10
+            },
+            "expected_wallet_version": 0,
+            "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+            "intent_sha256": "a42e190425aa0bc383191d580594144a9af35141a778f584d89040b9c4cdce61",
+            "policy_sha256": "062a9f29a2349862eb3b12cfbbbbbf814eb18123aad6d727e35bb504c102c0a5",
+            "reason": "SIMULATED_NET_TARGET_COMMITTED",
+            "source_after": {
+              "attribution_known": true,
+              "policy_sha256": "062a9f29a2349862eb3b12cfbbbbbf814eb18123aad6d727e35bb504c102c0a5",
+              "units": {
+                "SYNTHETIC_SINGLE_UNIT": {
+                  "A": 10,
+                  "G": 10,
+                  "K": 0,
+                  "M": 0,
+                  "R": 0,
+                  "S": 0,
+                  "T": 10,
+                  "U": 0
+                }
+              }
+            },
+            "unresolved": false,
+            "wallet_before_sha256": "e9826616cf17c7f7e940dee6dce855727149372bc56cda7388e1d3f5936b45fe"
+          }
+        },
+        "inbox_id": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "previous_sha256": "ce908a9a50b1c5cb94851bd83f6fd248ebaf8203f907f0318e641b34149cb9ec",
+        "sequence": 2,
+        "sha256": "2fa367978adf9a728f8835f01943c3c6abd25ec7f3cc76759cf9db4d4fcdd089",
+        "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+      }
+    ],
+    "case_index": {
+      "APPLIED": [
+        "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+      ],
+      "PENDING_RECONCILIATION": [],
+      "QUARANTINED": [],
+      "REJECTED": [],
+      "REVERTED": []
+    },
+    "claims": {
+      "7707e2d34d33b6bf08a325e94496efb3a3e4721567af9a05dce27ad3b838336a": {
+        "fingerprint": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "inbox_id": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+      }
+    },
+    "families": {
+      "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7": {
+        "authorization_key": "entitlement:b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+        "base_event_id": "rating-Hard",
+        "desired_active": true,
+        "epoch": "fixture:epoch-1",
+        "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+        "head_event_id": "rating-Hard",
+        "head_revision": 0,
+        "last_commit": {
+          "request_sha256": "edc9e83db4005a35c39daff45506a5c3f02c4d26c2d27954684f62b91f80c8a2",
+          "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+        },
+        "original_review": {
+          "beneficiary_id": "fixture:player",
+          "card_reference": "fixture:card-1",
+          "collection_epoch": "fixture:epoch-1",
+          "collection_lineage": "fixture:lineage",
+          "event_id": "rating-Hard",
+          "family_id": "family-Hard",
+          "kind": "REVIEW",
+          "predecessor_event_id": null,
+          "rating": "Hard",
+          "revision": 0,
+          "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+          "source_evidence_sha256": "592f73e81f6afa3e54e95416f0d88024298f7e461ef2a58c5a5888b09580506e",
+          "source_id": "fixture:source"
+        },
+        "policy_snapshot": {
+          "approval_ref": "fixture:NOT_USER_APPROVAL",
+          "budget_ref": "fixture:budget",
+          "category": "UNKNOWN",
+          "entitlement": {
+            "SYNTHETIC_SINGLE_UNIT": 10
+          },
+          "evidence_scope": "ISOLATED_SYNTHETIC_ARITHMETIC",
+          "mapping_sha256": "66556e7788824fa697fabc87c0d9fadb9fc46e62c8655837959ef12f061bd690",
+          "mapping_version": "fixture:mapping-v1",
+          "reclaim_unspent": true,
+          "restore_allowed": true,
+          "reward_day": "fixture:original-reward-day",
+          "reward_day_rule": "fixture:supplied-original-day",
+          "scope": [
+            "fixture:source",
+            "fixture:lineage",
+            "fixture:player"
+          ],
+          "source_sha256": "110e0c9e29ffd940ba13a0ef5d53d0649a87b2ad5da81f3b89eab973a18eb1ea",
+          "version": "P11-SYNTHETIC-MATH-POLICY/0.1.0"
+        },
+        "scope": [
+          "fixture:source",
+          "fixture:lineage",
+          "fixture:player"
+        ],
+        "state": "APPLIED"
+      }
+    },
+    "inbox": {
+      "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c": {
+        "case_version": 1,
+        "event": {
+          "beneficiary_id": "fixture:player",
+          "card_reference": "fixture:card-1",
+          "collection_epoch": "fixture:epoch-1",
+          "collection_lineage": "fixture:lineage",
+          "event_id": "rating-Hard",
+          "family_id": "family-Hard",
+          "kind": "REVIEW",
+          "predecessor_event_id": null,
+          "rating": "Hard",
+          "revision": 0,
+          "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+          "source_evidence_sha256": "592f73e81f6afa3e54e95416f0d88024298f7e461ef2a58c5a5888b09580506e",
+          "source_id": "fixture:source"
+        },
+        "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+        "first_raw_base64": "eyJiZW5lZmljaWFyeV9pZCI6ImZpeHR1cmU6cGxheWVyIiwiY2FyZF9yZWZlcmVuY2UiOiJmaXh0dXJlOmNhcmQtMSIsImNvbGxlY3Rpb25fZXBvY2giOiJmaXh0dXJlOmVwb2NoLTEiLCJjb2xsZWN0aW9uX2xpbmVhZ2UiOiJmaXh0dXJlOmxpbmVhZ2UiLCJldmVudF9pZCI6InJhdGluZy1IYXJkIiwiZmFtaWx5X2lkIjoiZmFtaWx5LUhhcmQiLCJraW5kIjoiUkVWSUVXIiwicHJlZGVjZXNzb3JfZXZlbnRfaWQiOm51bGwsInJhdGluZyI6IkhhcmQiLCJyZXZpc2lvbiI6MCwic2NoZW1hX3ZlcnNpb24iOiJQMTEtTE9DQUwtRVZFTlQvMC4xLjAtcHJvcG9zYWwiLCJzb3VyY2VfZXZpZGVuY2Vfc2hhMjU2IjoiNTkyZjczZTgxZjZhZmEzZTU0ZTk1NDE2ZjBkODgwMjQyOThmN2U0NjFlZjJhNThjNWE1ODg4YjA5NTgwNTA2ZSIsInNvdXJjZV9pZCI6ImZpeHR1cmU6c291cmNlIn0=",
+        "follow_family": true,
+        "history": [
+          {
+            "evidence_ref": null,
+            "from": "PENDING_RECONCILIATION",
+            "reason": "SIMULATED_NET_TARGET_COMMITTED",
+            "to": "APPLIED",
+            "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+            "version": 1
+          }
+        ],
+        "input_sha256": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "last_commit": {
+          "request_sha256": "edc9e83db4005a35c39daff45506a5c3f02c4d26c2d27954684f62b91f80c8a2",
+          "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+        },
+        "parse_error_type": null,
+        "processed": true,
+        "raw_sha256": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "reason": "SIMULATED_NET_TARGET_COMMITTED",
+        "state": "APPLIED"
+      }
+    },
+    "operations": {
+      "7707e2d34d33b6bf08a325e94496efb3a3e4721567af9a05dce27ad3b838336a": {
+        "atomic_commit": {
+          "request_sha256": "edc9e83db4005a35c39daff45506a5c3f02c4d26c2d27954684f62b91f80c8a2",
+          "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c"
+        },
+        "family_key": "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7",
+        "fingerprint": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "inbox_id": "c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+        "kind": "REVIEW",
+        "revision": 0,
+        "reward_transaction_id": "reward:7707e2d34d33b6bf08a325e94496efb3a3e4721567af9a05dce27ad3b838336a",
+        "wallet_changed": true
+      }
+    },
+    "schema_version": "P11-LEDGER/0.1.0"
+  },
+  "final_wallet": {
+    "balances": {
+      "SYNTHETIC_SINGLE_UNIT": 10
+    },
+    "sources": {
+      "b4cb2af64763ad8b1afa4b63f56d606f4b53ad188043a7bddd0a91c2f6db47d7": {
+        "attribution_known": true,
+        "policy_sha256": "062a9f29a2349862eb3b12cfbbbbbf814eb18123aad6d727e35bb504c102c0a5",
+        "units": {
+          "SYNTHETIC_SINGLE_UNIT": {
+            "A": 10,
+            "G": 10,
+            "K": 0,
+            "M": 0,
+            "R": 0,
+            "S": 0,
+            "T": 10,
+            "U": 0
+          }
+        }
+      }
+    },
+    "version": 1
+  },
+  "commit_receipts": [
+    {
+      "durable": true,
+      "ledger_sha256": "0bbfb0f01898c9983b9d3d069c9088254164ff1758298716a6bc0c1ac27d1470",
+      "origin": "P21_SIMULATOR",
+      "request_sha256": "b7bf130b083c79126a4f8a5ea606c5f1f25df4ba093f5845b716561cb44b62c5",
+      "sequence": 1,
+      "store_instance": "P21_SIMULATOR:16f3cf056f43ece2e44a6c83989345da3595af5d72ee5534e5f5b50cbb73b144",
+      "transaction_id": "receive:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+      "wallet_sha256": "e9826616cf17c7f7e940dee6dce855727149372bc56cda7388e1d3f5936b45fe"
+    },
+    {
+      "durable": true,
+      "ledger_sha256": "6b41e26d60765b608d6cae513bead2254b51633731870fee757908614e21525c",
+      "origin": "P21_SIMULATOR",
+      "request_sha256": "edc9e83db4005a35c39daff45506a5c3f02c4d26c2d27954684f62b91f80c8a2",
+      "sequence": 2,
+      "store_instance": "P21_SIMULATOR:16f3cf056f43ece2e44a6c83989345da3595af5d72ee5534e5f5b50cbb73b144",
+      "transaction_id": "process:c7b70059d828561151490edd54e373b2b72383c0c01c9f3fbebfd794443fe33c",
+      "wallet_sha256": "663d8f9c0f1ffceed248521ea947b4f5adc0363a3e2c162554bde85cd08dafa6"
+    }
+  ],
+  "wallet_calculation_calls": 1,
+  "policy_calls": 1,
+  "independent_execution": "NOT_RUN"
+}

@@ -1,0 +1,7 @@
+sender_version	receiver_version	decision	code	award_allowed	source_payload	approval	test_reference
+0.1.0-isolated	0.1.0-isolated	ACCEPT_CANDIDATE	OK	SIMULATION_ONLY	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_valid_event_roundtrip
+0.0.9	0.1.0-isolated	REJECTED	E_PROTOCOL_VERSION	NO	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_incompatible_versions_have_explicit_rejection
+0.1.1-isolated	0.1.0-isolated	REJECTED	E_PROTOCOL_VERSION	NO	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_incompatible_versions_have_explicit_rejection
+0.2.0-isolated	0.1.0-isolated	REJECTED	E_PROTOCOL_VERSION	NO	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_incompatible_versions_have_explicit_rejection
+1.0.0	0.1.0-isolated	REJECTED	E_PROTOCOL_VERSION	NO	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_incompatible_versions_have_explicit_rejection
+0.1.0	0.1.0-isolated	REJECTED	E_PROTOCOL_VERSION	NO	P11-LOCAL-EVENT/0.1.0-proposal	FORMAL_NOT_ACKNOWLEDGED	test_incompatible_versions_have_explicit_rejection

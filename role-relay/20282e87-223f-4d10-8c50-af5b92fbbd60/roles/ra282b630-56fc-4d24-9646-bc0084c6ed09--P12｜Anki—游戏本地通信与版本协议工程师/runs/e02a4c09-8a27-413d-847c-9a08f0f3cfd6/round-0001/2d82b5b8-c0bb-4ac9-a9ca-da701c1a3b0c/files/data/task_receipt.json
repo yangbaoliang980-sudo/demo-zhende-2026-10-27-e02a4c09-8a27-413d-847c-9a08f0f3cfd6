@@ -1,0 +1,52 @@
+{
+  "schema_version": "P11-TASK-RECEIPT/0.1.0",
+  "task_id": "P11-S05-LEDGER-001",
+  "role": "P11",
+  "version": "P11-STUDY-LEDGER/0.1.0-isolated",
+  "requirements_primary": [
+    "REQ-026"
+  ],
+  "requirements_related": [
+    "REQ-011",
+    "REQ-012",
+    "REQ-025",
+    "REQ-029",
+    "REQ-030",
+    "REQ-039"
+  ],
+  "activation": "User current task authorizes isolated work; does not approve production gates",
+  "subroles_created": 0,
+  "engine_files_modified": 0,
+  "original_anki_database_accesses": 0,
+  "github_mutations": 0,
+  "production_awards": 0,
+  "artifact_root": "P11_StudyLedger_V0.1",
+  "formal_status": "BLOCKED",
+  "independent_acceptance": "NOT_RUN",
+  "upstream_versions": {
+    "P08": "P08-REWARD-POLICY/0.1.0-proposal",
+    "P09": "P09-POS-MAP/0.1.0-proposal",
+    "P10": "P10-PROBE-REPORT/0.1.0",
+    "P12": null,
+    "P13_actual_path_mapping": null,
+    "P17_WalletDelta": null,
+    "P21_atomic_store": null
+  },
+  "complete_requested_entities": [
+    "study_ledger_state_machine.md",
+    "ledger_runtime/**",
+    "ledger_invariants.json",
+    "event_replay_fixtures.json",
+    "compensation_log.jsonl",
+    "reconciliation_and_recovery.md"
+  ],
+  "declined_unapproved_extensions": [
+    "negative_wallet",
+    "future_income_offset",
+    "waiver_reclassification",
+    "cross_currency_conversion",
+    "level_rollback",
+    "item_deletion",
+    "cross_module_integration"
+  ]
+}

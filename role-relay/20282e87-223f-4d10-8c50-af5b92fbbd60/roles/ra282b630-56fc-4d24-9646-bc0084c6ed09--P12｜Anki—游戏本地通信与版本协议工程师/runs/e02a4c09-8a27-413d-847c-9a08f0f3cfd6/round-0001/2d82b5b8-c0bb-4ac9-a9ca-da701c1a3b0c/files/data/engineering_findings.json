@@ -1,0 +1,27 @@
+{
+  "scope": "provided 3 archives recursively and the pinned GitHub trees only",
+  "repo_commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+  "git_tree_truncated": false,
+  "repo_blob_count": 709,
+  "searched_markers": [
+    "project.godot",
+    "projectversion.txt",
+    "actual_path_mapping",
+    "ipc_schema.json",
+    "anki_transport/"
+  ],
+  "matches": {
+    "project.godot": [],
+    "projectversion.txt": [],
+    "actual_path_mapping": [],
+    "ipc_schema.json": [],
+    "anki_transport/": []
+  },
+  "local_path_map_candidates": [],
+  "p10_real_samples": 0,
+  "existing_reused": [
+    "P11 StudyLedger, immutable source snapshot",
+    "P11 SQLiteAtomicModel and synthetic collaborators under mocks only"
+  ],
+  "not_claimed": "no conclusion about unprovided projects or repositories"
+}

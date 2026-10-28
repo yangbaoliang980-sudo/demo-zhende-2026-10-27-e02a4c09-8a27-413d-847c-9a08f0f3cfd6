@@ -1,0 +1,29 @@
+{
+  "schema_version": "P10-LOCAL-QUARANTINE/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "report_status": "PROBE_REPORT_DELIVERED",
+  "s04_target_probe": "BLOCKED",
+  "s05_plugin_implementation": "BLOCKED",
+  "scope": "ALL_UNVERIFIED_ANKI_SOURCES_IN_THIS_DELIVERY",
+  "reason_ids": [
+    "P10-B01",
+    "P10-B02",
+    "P10-B03",
+    "P10-B04",
+    "P10-B07"
+  ],
+  "source_generation": "UNVERIFIED",
+  "review_event_identity": "UNVERIFIED",
+  "undo_target_association": "UNVERIFIED",
+  "real_review_sample_count": 0,
+  "supported_runtime_events": [],
+  "runtime_hook_execution": "NOT_RUN",
+  "collection_opened": false,
+  "anki_database_modified": false,
+  "hook_registered": false,
+  "ipc_enabled": false,
+  "outbox_implemented": false,
+  "production_award_authorized": false,
+  "installable": false,
+  "disposition": "QUARANTINED"
+}

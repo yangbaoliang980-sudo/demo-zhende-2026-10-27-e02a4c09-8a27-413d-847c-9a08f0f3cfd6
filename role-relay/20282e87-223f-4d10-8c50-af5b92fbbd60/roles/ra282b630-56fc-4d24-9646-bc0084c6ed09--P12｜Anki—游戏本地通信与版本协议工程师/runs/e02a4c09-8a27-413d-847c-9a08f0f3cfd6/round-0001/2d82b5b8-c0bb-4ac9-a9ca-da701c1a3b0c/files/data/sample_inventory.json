@@ -1,0 +1,148 @@
+{
+  "schema_version": "P10-SAMPLE-INVENTORY/0.1.0",
+  "real_review_sample_count": 0,
+  "raw_samples": [],
+  "synthetic_review_samples": [],
+  "cases": [
+    {
+      "case_id": "P10-CASE-RATING_AGAIN",
+      "purpose": "四键Again真实完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-RATING_HARD",
+      "purpose": "四键Hard真实完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-RATING_GOOD",
+      "purpose": "四键Good真实完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-RATING_EASY",
+      "purpose": "四键Easy真实完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-UNDO_REVIEW",
+      "purpose": "撤销真实复习并关联原完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-UNDO_NON_REVIEW",
+      "purpose": "撤销非复习操作，不误判为复习撤销",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-REDO_REVIEW",
+      "purpose": "恢复原事实与原修正族关系",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-SAME_CARD_SCHEDULED",
+      "purpose": "正常调度的同卡下一次完成",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-REANSWER_AFTER_UNDO",
+      "purpose": "Undo后改评分重答，不凭同卡猜redo",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-RESTORE_BACKUP",
+      "purpose": "官方流程恢复旧备份与来源谱系",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-CRASH_COMMIT_TO_HOOK",
+      "purpose": "提交后回调/本地入队前异常退出缺口",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-OFFLINE_RESTART_RETRY",
+      "purpose": "插件outbox重启、离线重试与来源信息保留",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-DISABLE_NO_SCHEDULER_CHANGE",
+      "purpose": "禁用插件后Anki正常调度回归",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    },
+    {
+      "case_id": "P10-CASE-UNINSTALL",
+      "purpose": "卸载、数据保留与重装身份对账",
+      "target_anki_version": null,
+      "target_os": null,
+      "execution_status": "NOT_RUN",
+      "capability_status": "UNVERIFIED",
+      "raw_sample_ref": null,
+      "award_authorized": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "P12-CHANGE-REQUEST/0.1.0",
+  "official_p12_base_sha256": null,
+  "proposal_schema_path": "contracts/anki_transport/ipc_schema.json",
+  "proposal_schema_sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+  "changes": [
+    {
+      "change_id": "P12-RFC-IC14-001",
+      "contract_owner": "P12",
+      "upstream_proposal_base_path": "sources/P10/rfc_ic14_ic15.md",
+      "upstream_proposal_base_sha256": "5f20526cbb6e237bba2bab62b9b64cb2ddd0129f1754f16bfd9b4fb58c7089f3",
+      "formal_base_sha256": null,
+      "target_version": "0.1.0-isolated",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "See interface_rfc.md; do not overwrite upstream snapshots."
+    },
+    {
+      "change_id": "P12-RFC-IC18-001",
+      "contract_owner": "P12",
+      "upstream_proposal_base_path": "sources/P11/interface_rfc.md",
+      "upstream_proposal_base_sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063",
+      "formal_base_sha256": null,
+      "target_version": "0.1.0-isolated",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "request": "See interface_rfc.md; do not overwrite upstream snapshots."
+    }
+  ]
+}

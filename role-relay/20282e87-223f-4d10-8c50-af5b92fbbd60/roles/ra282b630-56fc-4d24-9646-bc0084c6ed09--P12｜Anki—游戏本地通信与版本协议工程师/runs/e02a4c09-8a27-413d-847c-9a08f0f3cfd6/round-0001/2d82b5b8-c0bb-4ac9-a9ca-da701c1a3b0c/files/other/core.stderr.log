@@ -1,0 +1,50 @@
+test_boolean_not_integer_revision (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_boolean_not_integer_revision) ... ok
+test_depth_limit_before_decoder (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_depth_limit_before_decoder) ... ok
+test_duplicate_nested_key (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_duplicate_nested_key) ... ok
+test_duplicate_top_level_key (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_duplicate_top_level_key) ... ok
+test_extra_fields_and_privacy_fields_are_closed (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_extra_fields_and_privacy_fields_are_closed) ... ok
+test_hello_without_supported_version_rejects (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_hello_without_supported_version_rejects) ... ok
+test_incompatible_versions_have_explicit_rejection (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_incompatible_versions_have_explicit_rejection) ... ok
+test_invalid_utf8_bom_surrogate_and_trailing_data (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_invalid_utf8_bom_surrogate_and_trailing_data) ... ok
+test_malformed_ack_missing_commit_rejected_by_client_schema (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_malformed_ack_missing_commit_rejected_by_client_schema) ... ok
+test_node_limit (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_node_limit) ... ok
+test_nonfinite_and_float_and_unsafe_integer (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_nonfinite_and_float_and_unsafe_integer) ... ok
+test_nonopaque_references_rejected (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_nonopaque_references_rejected) ... ok
+test_quarantine_cannot_be_terminal_or_awarded (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_quarantine_cannot_be_terminal_or_awarded) ... ok
+test_review_and_control_shapes (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_review_and_control_shapes) ... ok
+test_size_limit (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_size_limit) ... ok
+test_unknown_message_protocol_and_payload_version (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_unknown_message_protocol_and_payload_version) ... ok
+test_unproven_identity_not_generated_by_transport (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_unproven_identity_not_generated_by_transport) ... ok
+test_valid_event_roundtrip (mocks.anki_transport.parser_contract_tests.ParserContractTests.test_valid_event_roundtrip) ... ok
+test_apply_requires_durable_receipt (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_apply_requires_durable_receipt) ... ok
+test_bound_p11_resolution_is_observed_read_only (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_bound_p11_resolution_is_observed_read_only) ... ok
+test_bound_rejected_case_has_durable_rejection (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_bound_rejected_case_has_durable_rejection) ... ok
+test_commit_then_reply_loss_queries_existing_result (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_commit_then_reply_loss_queries_existing_result) ... ok
+test_default_closed_evidence_quarantines_without_award (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_default_closed_evidence_quarantines_without_award) ... ok
+test_exact_replay_and_new_delivery_id_do_not_reaward (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_exact_replay_and_new_delivery_id_do_not_reaward) ... ok
+test_failure_before_commit_safe_retry (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_failure_before_commit_safe_retry) ... ok
+test_foreign_or_unapproved_receipt_origin_fails_closed (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_foreign_or_unapproved_receipt_origin_fails_closed) ... ok
+test_identity_conflict_preserves_original_award (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_identity_conflict_preserves_original_award) ... ok
+test_not_found_is_read_only_not_award (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_not_found_is_read_only_not_award) ... ok
+test_out_of_order_restore_requires_p11_resolution (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_out_of_order_restore_requires_p11_resolution) ... ok
+test_pending_compensation_is_not_quarantine_no_award_claim (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_pending_compensation_is_not_quarantine_no_award_claim) ... ok
+test_policy_withheld_quarantines (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_policy_withheld_quarantines) ... ok
+test_production_bootstrap_is_unavailable (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_production_bootstrap_is_unavailable) ... ok
+test_quarantine_replay_does_not_release (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_quarantine_replay_does_not_release) ... ok
+test_queries_do_not_recompute_rewards_or_write (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_queries_do_not_recompute_rewards_or_write) ... ok
+test_query_cannot_expose_other_beneficiary (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_query_cannot_expose_other_beneficiary) ... ok
+test_receipt_for_different_transaction_rejected (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_receipt_for_different_transaction_rejected) ... ok
+test_received_only_query_requests_safe_resubmit (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_received_only_query_requests_safe_resubmit) ... ok
+test_restore_duplicate_never_double_awards (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_restore_duplicate_never_double_awards) ... ok
+test_restore_fence_blocks_even_existing_receipts (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_restore_fence_blocks_even_existing_receipts) ... ok
+test_scope_change_never_reaches_ledger (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_scope_change_never_reaches_ledger) ... ok
+test_tampered_receipt_never_success (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_tampered_receipt_never_success) ... ok
+test_undo_before_original_is_not_reward_ack (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_undo_before_original_is_not_reward_ack) ... ok
+test_undo_duplicate_and_original_replay_follow_current_state (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_undo_duplicate_and_original_replay_follow_current_state) ... ok
+test_unknown_authority_never_acks (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_unknown_authority_never_acks) ... ok
+test_unverified_epoch_quarantines (mocks.anki_transport.ack_replay_tests.AckReplayTests.test_unverified_epoch_quarantines) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 1.038s
+
+OK

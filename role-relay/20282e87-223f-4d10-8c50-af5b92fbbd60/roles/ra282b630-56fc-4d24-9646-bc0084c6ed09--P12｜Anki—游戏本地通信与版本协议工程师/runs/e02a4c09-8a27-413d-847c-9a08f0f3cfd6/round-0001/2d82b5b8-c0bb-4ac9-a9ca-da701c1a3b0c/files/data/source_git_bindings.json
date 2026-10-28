@@ -1,0 +1,186 @@
+[
+  {
+    "local_path": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/sources/upstream/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/sources/upstream/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/sources/P10/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/sources/P10/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/a893298bc4245d77/files/007/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/a893298bc4245d77/files/007/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/a893298bc4245d77/files/018/P11_StudyLedger_V0.1.zip",
+    "sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+    "bytes": 435064,
+    "git_blob_sha1": "234e1e2e510a7c08deaba3a8ac82dc7ebe328630",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/archives/P11_StudyLedger_V0.1.zip"
+    ]
+  },
+  {
+    "local_path": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/c668973fc2615724/files/001/P08_Anki_Reward_Policy_V0.1.zip",
+    "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+    "bytes": 2523333,
+    "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_P08_Anki_Reward_Policy_V0.1.zip.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/archives/P08_Anki_Reward_Policy_V0.1.zip"
+    ]
+  },
+  {
+    "local_path": "inputs/c668973fc2615724/files/004/P10_S04_Probe_Report_V0.1.zip",
+    "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+    "bytes": 271956,
+    "git_blob_sha1": "db455026bcd4ca717189b06228089ebcebb905ad",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P10_S04_Probe_Report_V0.1.zip"
+    ]
+  },
+  {
+    "local_path": "inputs/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_upstream/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_upstream/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3513d303-ddba-4004-9f73-dae6b2d95857--P11｜学习事件账本、幂等、撤销与奖励事务工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/1ed0d994-5e89-41a4-a4a4-eeb01cb12f44/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/documents/v6_freeze.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/documents/v6_freeze.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "bytes": 226868,
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+    "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "repository_paths": [
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt"
+    ]
+  },
+  {
+    "local_path": "inputs/e9818b1abe21a7e1/files/046/P08_Anki_Reward_Policy_V0.1.zip",
+    "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+    "bytes": 2523333,
+    "git_blob_sha1": "5cb7a5caf542cbbca16bf7ee936e0798c968c9ab",
+    "commit": "d6e09fe07d1c3674b242ea59dd05231a3cd8acdb",
+    "repository_paths": [
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r7bd458b3-9a6a-4a85-9080-d31ae13b0428--P10｜Anki桌面插件、Hook探针与事件采集工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/b346cdfe-b1ff-4362-b70d-770047457c03/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rf40e10bc-4595-4ddf-a965-d855537fac39--P09｜日语词性、语法与整句映射数据师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/04c55f4e-cb8b-456e-96bb-aa6aa08d5bcb/files/archives/P08_Anki_Reward_Policy_V0.1.zip",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/448474a6-c736-48d2-84d1-4b040511858a/files/documents/4755dc7e-1b3f-44bd-8989-804160769681_P08_Anki_Reward_Policy_V0.1.zip.txt",
+      "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rfd8ae66e-d165-4613-85f6-b2b9e14a7747--P08｜Anki有效复习与游戏奖励规则官/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/91153390-b429-4930-b349-f20fea9b5dbb/files/archives/P08_Anki_Reward_Policy_V0.1.zip"
+    ]
+  }
+]

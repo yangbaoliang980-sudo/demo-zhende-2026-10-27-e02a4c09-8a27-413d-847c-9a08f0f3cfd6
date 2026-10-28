@@ -1,0 +1,438 @@
+{
+  "schema_version": "P12-HANDOFF/0.1.0",
+  "task_id": "P12-S04-S05-TRANSPORT-001",
+  "handoffs": [
+    {
+      "receiver": "P10",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "contracts/anki_transport/ipc_schema.json",
+          "actual_bytes": 21136,
+          "sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/protocol_version_matrix.tsv",
+          "actual_bytes": 1055,
+          "sha256": "cbe9ad2b4e10f6832ff3a83d99b8300f3e79e7ea102074f8481d58669500eeed",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/protocol_spec.md",
+          "actual_bytes": 11380,
+          "sha256": "508801ab7e2d9e43054fe6390339de7e7e44890eaf2d5eebc7da9860918a3df8",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/error_codes.tsv",
+          "actual_bytes": 2869,
+          "sha256": "65f40d130750e67e0dfa2bae052a812f061448e48798c18f064a1fa2fd4b3ef5",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/interface_rfc.md",
+          "actual_bytes": 3741,
+          "sha256": "d0f8eaec678597fea72631bb8190abc968f29f0c2716a04071b61ae78a485726",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/outbox.py",
+          "actual_bytes": 10632,
+          "sha256": "e3df8a92c017944e962226aff9b386c9312ae08b3b0ed65c3d49aaca127629dc",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/wire.py",
+          "actual_bytes": 6232,
+          "sha256": "abc8621007d0f7f2a862bde667cf5e359ae6ba8d61451985b865d7712d74a0b4",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/process_peer.py",
+          "actual_bytes": 2101,
+          "sha256": "283b824ac93a22ab8e10f92b506a3826c112ecd732b3b54b91bb7c14bcba66bd",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/fixtures/vector_manifest.json",
+          "actual_bytes": 6479,
+          "sha256": "631aecdad0636311aaaa992858b9ea31ca5f805c59a38955e422e6bf7e7a5dcb",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P11",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "contracts/anki_transport/ack_retry_sequence.md",
+          "actual_bytes": 2796,
+          "sha256": "35de13921b63ceab1148e436fa5b2016e26c67e83d92377e328ab32493204a1d",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/interface_rfc.md",
+          "actual_bytes": 3741,
+          "sha256": "d0f8eaec678597fea72631bb8190abc968f29f0c2716a04071b61ae78a485726",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/bridge.py",
+          "actual_bytes": 10632,
+          "sha256": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/ports.py",
+          "actual_bytes": 565,
+          "sha256": "97dbe1624f5a8b7bf3074b00e680f0c3b02325a090d07ccb5a83cd396d00dd1f",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/ack_replay_tests.py",
+          "actual_bytes": 11509,
+          "sha256": "bf7ad5d950826009916779dba7828c21699ba4c1c06ce46b1674321a3fce95fd",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "path_mapping_request.json",
+          "actual_bytes": 888,
+          "sha256": "94c2850065d111e0e4ecdced99e30d6dd3ddc9b1d9610780f8b0f0d0a70420a6",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "INTEGRATION.md",
+          "actual_bytes": 5110,
+          "sha256": "0a09798e14acf0f8d73193cdc191c6da4d023755856a50bad427ce2ed5eede7c",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "task_receipt.json",
+          "actual_bytes": 1081,
+          "sha256": "43976083980c12f0cf9cd4633bcb97f4bf6b120d8c1b585e4935bb726affa009",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/transport_comparison.md",
+          "actual_bytes": 3335,
+          "sha256": "651edb44c6dc72e2adab1b2037d37cf4fe463632c0f1e859cbafc0e6b7f969b9",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/change_requests.json",
+          "actual_bytes": 1188,
+          "sha256": "bd66cb39fd2f2cc47d1d73b1bb0fd9bb0b404bedc30614d41c573654084bff56",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/bridge.py",
+          "actual_bytes": 10632,
+          "sha256": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "contracts/anki_transport/ack_retry_sequence.md",
+          "actual_bytes": 2796,
+          "sha256": "35de13921b63ceab1148e436fa5b2016e26c67e83d92377e328ab32493204a1d",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/protocol_spec.md",
+          "actual_bytes": 11380,
+          "sha256": "508801ab7e2d9e43054fe6390339de7e7e44890eaf2d5eebc7da9860918a3df8",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/bridge.py",
+          "actual_bytes": 10632,
+          "sha256": "ae43944ffb6503da4d773470219712ba921af03057ea0ddd7b69c7e82c2dba3e",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/process_replay.py",
+          "actual_bytes": 4290,
+          "sha256": "9badd9de2cd08efbfcd7b8c8e28fbb506ffbce6fc7c07465643a53228226dba0",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "verification_status.json",
+          "actual_bytes": 22223,
+          "sha256": "c7db748764edc567ada0e9b13f7f9fa2ba086c49a9977d572fca6dc601cb4f7d",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "acceptance_matrix.tsv",
+          "actual_bytes": 1611,
+          "sha256": "ab0acc74049f9cb3d98d04aff1f2a721e77d24ce6d598cdc6f64d54c72b09297",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/ack_replay_tests.py",
+          "actual_bytes": 11509,
+          "sha256": "bf7ad5d950826009916779dba7828c21699ba4c1c06ce46b1674321a3fce95fd",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/parser_contract_tests.py",
+          "actual_bytes": 5315,
+          "sha256": "c8eae43ce0298104cf816b802b951154a8b94d3d123782cb9af33ac012ceab5b",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/wire_outbox_tests.py",
+          "actual_bytes": 14163,
+          "sha256": "7a35328fa8d8421af7f96774a43d8577e114ef002218ed352bc7edb6a818e9ca",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/process_replay.py",
+          "actual_bytes": 4290,
+          "sha256": "9badd9de2cd08efbfcd7b8c8e28fbb506ffbce6fc7c07465643a53228226dba0",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/schema_oracle.py",
+          "actual_bytes": 2913,
+          "sha256": "4344257f8228d28f8fed86dc9e70d61121a0cbc5a9342307f651711737aa0939",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "verification/run_author_checks.py",
+          "actual_bytes": 3035,
+          "sha256": "4b536a96703ebdc1c6fa5169d65214849cbc6125789cb8ef4ffe036e568ab467",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "evidence/author_run_005/run_receipt.json",
+          "actual_bytes": 1568,
+          "sha256": "b17801bcbf0dc43c5cf8f26cceeda25baac81f3397d1af5b4d4545494f2dce14",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "evidence/author_run_006/run_receipt.json",
+          "actual_bytes": 1633,
+          "sha256": "de5950dda3afc35412ed3d146a34e7f4cda2031c5b6841a101f03053ced42b00",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "defect_log.json",
+          "actual_bytes": 1754,
+          "sha256": "659c19a92894a9fab2125755e331584d05999fb4c1552cbd35210369dd691df2",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "INTEGRATION.md",
+          "actual_bytes": 5110,
+          "sha256": "0a09798e14acf0f8d73193cdc191c6da4d023755856a50bad427ce2ed5eede7c",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/transport_comparison.md",
+          "actual_bytes": 3335,
+          "sha256": "651edb44c6dc72e2adab1b2037d37cf4fe463632c0f1e859cbafc0e6b7f969b9",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/local.py",
+          "actual_bytes": 1902,
+          "sha256": "120e2de2e6494ac44292dfe3ecf37103fe84115a8b631214636afddb5db1e685",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/wire.py",
+          "actual_bytes": 6232,
+          "sha256": "abc8621007d0f7f2a862bde667cf5e359ae6ba8d61451985b865d7712d74a0b4",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "evidence/author_run_006/process_replay/summary.json",
+          "actual_bytes": 465,
+          "sha256": "1c816a342a6b87a679b78a0acb005832799b16be5cbff465ff16df7bd4e745df",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "README.md",
+          "actual_bytes": 8541,
+          "sha256": "6979b89489f955e39bc134d672d47ae52bf6ffb04584f416e862a615c9406829",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "source_input_receipt.json",
+          "actual_bytes": 50913,
+          "sha256": "393004c0de6011e149fd4f0c5d5fd85406bd64f85b53b727b6c9495238f3dd79",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "verification_status.json",
+          "actual_bytes": 22223,
+          "sha256": "c7db748764edc567ada0e9b13f7f9fa2ba086c49a9977d572fca6dc601cb4f7d",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "acceptance_matrix.tsv",
+          "actual_bytes": 1611,
+          "sha256": "ab0acc74049f9cb3d98d04aff1f2a721e77d24ce6d598cdc6f64d54c72b09297",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "verification/verify_delivery.py",
+          "actual_bytes": 2331,
+          "sha256": "456a8bb8137f2225ac9bd409def7a2b8dabb78b4067b3bdcb8e02ab1276d82d2",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "evidence/final_source_binding.json",
+          "actual_bytes": 4147,
+          "sha256": "3bbade78e87b7b028b3b851015bb8ee051739df39a5b1a92033362b50e62905e",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "defect_log.json",
+          "actual_bytes": 1754,
+          "sha256": "659c19a92894a9fab2125755e331584d05999fb4c1552cbd35210369dd691df2",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    },
+    {
+      "receiver": "P38",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+      "artifacts": [
+        {
+          "relative_path": "contracts/anki_transport/security_review_p38.md",
+          "actual_bytes": 2905,
+          "sha256": "0d14a3d70561cbc7725a49c258b0488dc4f608d1c59da3f534fa6d02491313f8",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "contracts/anki_transport/ipc_schema.json",
+          "actual_bytes": 21136,
+          "sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/local.py",
+          "actual_bytes": 1902,
+          "sha256": "120e2de2e6494ac44292dfe3ecf37103fe84115a8b631214636afddb5db1e685",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/wire.py",
+          "actual_bytes": 6232,
+          "sha256": "abc8621007d0f7f2a862bde667cf5e359ae6ba8d61451985b865d7712d74a0b4",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "runtime/anki/transport/ipc_server_client/outbox.py",
+          "actual_bytes": 10632,
+          "sha256": "e3df8a92c017944e962226aff9b386c9312ae08b3b0ed65c3d49aaca127629dc",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        },
+        {
+          "relative_path": "mocks/anki_transport/wire_outbox_tests.py",
+          "actual_bytes": 14163,
+          "sha256": "7a35328fa8d8421af7f96774a43d8577e114ef002218ed352bc7edb6a818e9ca",
+          "receiving_action": "REVIEW_OR_REPRODUCE_ONLY",
+          "modify_whitelist": []
+        }
+      ]
+    }
+  ],
+  "full_inventory": "delivery_manifest.sha256.tsv",
+  "actual_path_mapping": "NOT_RECEIVED",
+  "cross_module_integrator": "USER_TO_DESIGNATE_EXT-INTEGRATOR",
+  "integration_performed": false,
+  "transport_rfc_formally_accepted": false
+}

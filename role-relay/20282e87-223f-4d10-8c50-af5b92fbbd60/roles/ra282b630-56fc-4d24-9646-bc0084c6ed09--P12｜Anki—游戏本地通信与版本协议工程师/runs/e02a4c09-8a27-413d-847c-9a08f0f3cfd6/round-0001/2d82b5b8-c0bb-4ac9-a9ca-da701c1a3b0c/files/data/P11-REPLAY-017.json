@@ -1,0 +1,198 @@
+{
+  "case_id": "P11-REPLAY-017",
+  "status": "PASS",
+  "evidence_scope": "ISOLATED_SIMULATION",
+  "steps": [
+    {
+      "step": 1,
+      "input": {
+        "action": "deliver",
+        "event": "review",
+        "expect": {
+          "balance": 0,
+          "state": "QUARANTINED"
+        }
+      },
+      "observed": {
+        "inbox_id": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "state": "QUARANTINED",
+        "reason": "MISSING_MAPPING_IS_NOT_UNKNOWN",
+        "ack": "ACK_QUARANTINED",
+        "receipt": {
+          "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+          "request_sha256": "79dfdf730c526b025de611da74e0190cd4ff18c7f0c391ea2a9074b8c7c80e28",
+          "store_instance": "P21_SIMULATOR:dc73bd50893c33c37ded8cc498a9ca64567ec32a98b01ded724a52367390eead",
+          "sequence": 2,
+          "ledger_sha256": "90c454422682612f829ef36c6fe50f3af7543bb0cddf823b4d4696c291ae5808",
+          "wallet_sha256": "e9826616cf17c7f7e940dee6dce855727149372bc56cda7388e1d3f5936b45fe",
+          "origin": "P21_SIMULATOR",
+          "durable": true
+        },
+        "family_key": "74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485",
+        "duplicate": false,
+        "evidence_scope": "P21_SIMULATOR",
+        "wallet_balance_in_synthetic_unit": 0
+      },
+      "status": "PASS"
+    }
+  ],
+  "final_ledger": {
+    "audit": [
+      {
+        "action": "DURABLE_RECEIVE",
+        "details": {
+          "raw_sha256": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+          "reason": "DURABLE_RECEIVED_NOT_AWARDED",
+          "state": "PENDING_RECONCILIATION"
+        },
+        "inbox_id": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "sequence": 1,
+        "sha256": "1623741bc4518febb4fd1020ab4fff215925857553a18636fc50969f2e4ad177",
+        "transaction_id": "receive:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+      },
+      {
+        "action": "LEDGER_DECISION",
+        "details": {
+          "family_key": "74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485",
+          "from": "PENDING_RECONCILIATION",
+          "reason": "MISSING_MAPPING_IS_NOT_UNKNOWN",
+          "to": "QUARANTINED",
+          "wallet_delta": null
+        },
+        "inbox_id": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "previous_sha256": "1623741bc4518febb4fd1020ab4fff215925857553a18636fc50969f2e4ad177",
+        "sequence": 2,
+        "sha256": "74fc79d99289bbf3761f879079f9d2a2831305f7c701ef12b05f6b147d8fc02a",
+        "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+      }
+    ],
+    "case_index": {
+      "APPLIED": [],
+      "PENDING_RECONCILIATION": [],
+      "QUARANTINED": [
+        "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+      ],
+      "REJECTED": [],
+      "REVERTED": []
+    },
+    "claims": {
+      "d2dad31751f2266d5c838c414af3348aa0a2d6f7ceb8e743291556614b59f390": {
+        "fingerprint": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "inbox_id": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+      }
+    },
+    "families": {
+      "74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485": {
+        "authorization_key": "entitlement:74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485",
+        "base_event_id": "review-1",
+        "desired_active": true,
+        "epoch": "fixture:epoch-1",
+        "family_key": "74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485",
+        "head_event_id": "review-1",
+        "head_revision": 0,
+        "last_commit": {
+          "request_sha256": "79dfdf730c526b025de611da74e0190cd4ff18c7f0c391ea2a9074b8c7c80e28",
+          "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+        },
+        "original_review": {
+          "beneficiary_id": "fixture:player",
+          "card_reference": "fixture:card-1",
+          "collection_epoch": "fixture:epoch-1",
+          "collection_lineage": "fixture:lineage",
+          "event_id": "review-1",
+          "family_id": "family-1",
+          "kind": "REVIEW",
+          "predecessor_event_id": null,
+          "rating": "Good",
+          "revision": 0,
+          "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+          "source_evidence_sha256": "857b1f49f39c110acbd5f358550e49e0d4ca028479f1df1fe572a6506ed7f658",
+          "source_id": "fixture:source"
+        },
+        "policy_snapshot": null,
+        "scope": [
+          "fixture:source",
+          "fixture:lineage",
+          "fixture:player"
+        ],
+        "state": "QUARANTINED"
+      }
+    },
+    "inbox": {
+      "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9": {
+        "case_version": 1,
+        "event": {
+          "beneficiary_id": "fixture:player",
+          "card_reference": "fixture:card-1",
+          "collection_epoch": "fixture:epoch-1",
+          "collection_lineage": "fixture:lineage",
+          "event_id": "review-1",
+          "family_id": "family-1",
+          "kind": "REVIEW",
+          "predecessor_event_id": null,
+          "rating": "Good",
+          "revision": 0,
+          "schema_version": "P11-LOCAL-EVENT/0.1.0-proposal",
+          "source_evidence_sha256": "857b1f49f39c110acbd5f358550e49e0d4ca028479f1df1fe572a6506ed7f658",
+          "source_id": "fixture:source"
+        },
+        "family_key": "74848dddc226375fb298bf3b3902400f1220fe1e0980dbbc453e67ca61e22485",
+        "first_raw_base64": "eyJiZW5lZmljaWFyeV9pZCI6ImZpeHR1cmU6cGxheWVyIiwiY2FyZF9yZWZlcmVuY2UiOiJmaXh0dXJlOmNhcmQtMSIsImNvbGxlY3Rpb25fZXBvY2giOiJmaXh0dXJlOmVwb2NoLTEiLCJjb2xsZWN0aW9uX2xpbmVhZ2UiOiJmaXh0dXJlOmxpbmVhZ2UiLCJldmVudF9pZCI6InJldmlldy0xIiwiZmFtaWx5X2lkIjoiZmFtaWx5LTEiLCJraW5kIjoiUkVWSUVXIiwicHJlZGVjZXNzb3JfZXZlbnRfaWQiOm51bGwsInJhdGluZyI6Ikdvb2QiLCJyZXZpc2lvbiI6MCwic2NoZW1hX3ZlcnNpb24iOiJQMTEtTE9DQUwtRVZFTlQvMC4xLjAtcHJvcG9zYWwiLCJzb3VyY2VfZXZpZGVuY2Vfc2hhMjU2IjoiODU3YjFmNDlmMzljMTEwYWNiZDVmMzU4NTUwZTQ5ZTBkNGNhMDI4NDc5ZjFkZjFmZTU3MmE2NTA2ZWQ3ZjY1OCIsInNvdXJjZV9pZCI6ImZpeHR1cmU6c291cmNlIn0=",
+        "follow_family": true,
+        "history": [
+          {
+            "evidence_ref": null,
+            "from": "PENDING_RECONCILIATION",
+            "reason": "MISSING_MAPPING_IS_NOT_UNKNOWN",
+            "to": "QUARANTINED",
+            "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+            "version": 1
+          }
+        ],
+        "input_sha256": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "last_commit": {
+          "request_sha256": "79dfdf730c526b025de611da74e0190cd4ff18c7f0c391ea2a9074b8c7c80e28",
+          "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"
+        },
+        "parse_error_type": null,
+        "processed": true,
+        "raw_sha256": "90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+        "reason": "MISSING_MAPPING_IS_NOT_UNKNOWN",
+        "state": "QUARANTINED"
+      }
+    },
+    "operations": {},
+    "schema_version": "P11-LEDGER/0.1.0"
+  },
+  "final_wallet": {
+    "balances": {},
+    "sources": {},
+    "version": 0
+  },
+  "commit_receipts": [
+    {
+      "durable": true,
+      "ledger_sha256": "c167f10ae5a76002bb19c58c6c24b7639a5ae72a099c0c04af794428c8d7d602",
+      "origin": "P21_SIMULATOR",
+      "request_sha256": "033a8c5ca057167f6209cb07334538c838592c9f7940d48b54ebeab2c17e8411",
+      "sequence": 1,
+      "store_instance": "P21_SIMULATOR:dc73bd50893c33c37ded8cc498a9ca64567ec32a98b01ded724a52367390eead",
+      "transaction_id": "receive:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+      "wallet_sha256": "e9826616cf17c7f7e940dee6dce855727149372bc56cda7388e1d3f5936b45fe"
+    },
+    {
+      "durable": true,
+      "ledger_sha256": "90c454422682612f829ef36c6fe50f3af7543bb0cddf823b4d4696c291ae5808",
+      "origin": "P21_SIMULATOR",
+      "request_sha256": "79dfdf730c526b025de611da74e0190cd4ff18c7f0c391ea2a9074b8c7c80e28",
+      "sequence": 2,
+      "store_instance": "P21_SIMULATOR:dc73bd50893c33c37ded8cc498a9ca64567ec32a98b01ded724a52367390eead",
+      "transaction_id": "process:90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9",
+      "wallet_sha256": "e9826616cf17c7f7e940dee6dce855727149372bc56cda7388e1d3f5936b45fe"
+    }
+  ],
+  "wallet_calculation_calls": 0,
+  "policy_calls": 1,
+  "independent_execution": "NOT_RUN"
+}

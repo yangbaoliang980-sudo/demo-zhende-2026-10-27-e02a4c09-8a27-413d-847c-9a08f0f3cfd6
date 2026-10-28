@@ -1,0 +1,1 @@
+{"message_id":"00000000000000000000000000000000","message_type":"HELLO","payload":{"supported_versions":["0.1.0-isolated"]},"producer_id":"fixture:plugin","protocol":"YLTT-ANKI-TRANSPORT","protocol_version":"0.1.0-isolated","scope":{"beneficiary_id":"fixture:player","collection_lineage":"fixture:lineage","source_id":"fixture:source"}}

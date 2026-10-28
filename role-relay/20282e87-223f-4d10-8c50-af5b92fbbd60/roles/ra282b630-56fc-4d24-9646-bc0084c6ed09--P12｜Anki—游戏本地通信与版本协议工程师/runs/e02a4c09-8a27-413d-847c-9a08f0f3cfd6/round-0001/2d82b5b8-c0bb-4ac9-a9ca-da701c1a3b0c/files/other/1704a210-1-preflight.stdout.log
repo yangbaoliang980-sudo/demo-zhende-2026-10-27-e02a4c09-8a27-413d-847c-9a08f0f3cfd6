@@ -1,0 +1,110 @@
+{
+  "schema_version": "P11-PREFLIGHT/0.1.0",
+  "status": "BLOCKED",
+  "production_adapters_implemented": false,
+  "production_enable_switch": false,
+  "real_review_samples_received": 0,
+  "p10_identity": "UNVERIFIED",
+  "p08_policy_status": "PROPOSAL",
+  "p09_active_production_version": null,
+  "actual_path_mapping": null,
+  "actual_production_awards": 0,
+  "missing_artifacts": [
+    {
+      "id": "P11-B01",
+      "owner": "P13",
+      "artifact": "真实游戏工程固定提交、引擎、actual_path_mapping.json、P11写入白名单与禁改清单",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B02",
+      "owner": "P08/P01",
+      "artifact": "已批准PolicyRecord，含四键权益、原日/额度/映射、撤销及恢复政策、批复哈希和生效范围",
+      "received_version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "required_approved_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B03",
+      "owner": "P09",
+      "artifact": "获批分类合同与固定映射版本，UNKNOWN通用分支及P22正式资源ID",
+      "received_version": "P09-POS-MAP/0.1.0-proposal",
+      "required_approved_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B04",
+      "owner": "P10",
+      "artifact": "目标版本原始完成/Undo/恢复/自然重复/旧备份样本、身份及collection_epoch关联证明",
+      "received_version": "P10-PROBE-REPORT/0.1.0",
+      "required_runtime_version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B05",
+      "owner": "P12",
+      "artifact": "正式IC-14/IC-18传输Schema、认证、重试、背压、查询和ACK合同及接收回执",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B06",
+      "owner": "P17",
+      "artifact": "WalletDelta接口、来源消费归属、权益快照、补偿及版本冲突合同",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B07",
+      "owner": "P21",
+      "artifact": "原子提交/查询凭证接口、收件箱持久化、钱包共事务、外部备份水位与恢复栅栏证据",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B08",
+      "owner": "P34",
+      "artifact": "目标OS/架构、Anki完整版本/build、可操作测试环境与环境指纹",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B09",
+      "owner": "P38",
+      "artifact": "真实学习字段及审计记录的采集、保留、脱敏和测试档案授权",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "id": "P11-B10",
+      "owner": "P32/P33/P35",
+      "artifact": "正式适配后同一固定版本的独立自动化、人工及SPEC/UNIT/CONTRACT/RUNTIME/E2E分级证据",
+      "version": null,
+      "sha256": null,
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P11-B11",
+      "owner": "P01/用户指定EXT-INTEGRATOR",
+      "artifact": "跨模块整合授权和固定集成提交",
+      "version": null,
+      "sha256": null,
+      "status": "BLOCKED"
+    }
+  ],
+  "formal_contract": "NOT_RUN",
+  "target_runtime": "NOT_RUN",
+  "real_anki_e2e": "NOT_RUN",
+  "p32_independent": "NOT_RUN",
+  "p35_independent": "NOT_RUN"
+}

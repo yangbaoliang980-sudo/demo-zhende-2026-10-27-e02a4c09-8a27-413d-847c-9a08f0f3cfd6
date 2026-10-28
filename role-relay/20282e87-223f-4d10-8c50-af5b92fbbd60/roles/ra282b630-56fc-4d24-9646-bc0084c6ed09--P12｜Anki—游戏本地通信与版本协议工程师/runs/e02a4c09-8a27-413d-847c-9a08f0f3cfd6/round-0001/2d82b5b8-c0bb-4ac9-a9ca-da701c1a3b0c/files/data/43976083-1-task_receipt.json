@@ -1,0 +1,36 @@
+{
+  "schema_version": "P12-TASK/0.1.0",
+  "task_id": "P12-S04-S05-TRANSPORT-001",
+  "role": "P12",
+  "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+  "interfaces": [
+    "IC-14",
+    "IC-18"
+  ],
+  "requirements": [
+    "REQ-003",
+    "REQ-011",
+    "REQ-025",
+    "REQ-026"
+  ],
+  "stage_status": {
+    "S04_message_candidate": "FROZEN_FOR_ISOLATED_TESTS",
+    "S05_isolated_transport": "IMPLEMENTED_AUTHOR_VERIFIED",
+    "S05_formal_integration": "BLOCKED",
+    "S08_real_anki_game_e2e": "NOT_RUN"
+  },
+  "delegation_used": false,
+  "cross_module_merge_performed": false,
+  "github_writes_performed": false,
+  "real_anki_collection_opened": false,
+  "actual_game_engine_modified": false,
+  "source_reuse": "P11 original immutable implementation and test simulators",
+  "write_whitelist": [
+    "isolated package contracts/anki_transport/**",
+    "isolated package runtime/anki/transport/**",
+    "isolated package mocks/anki_transport/**",
+    "package-local verification/evidence/metadata/docs"
+  ],
+  "sources_whitelist": [],
+  "production_paths_authorized": false
+}

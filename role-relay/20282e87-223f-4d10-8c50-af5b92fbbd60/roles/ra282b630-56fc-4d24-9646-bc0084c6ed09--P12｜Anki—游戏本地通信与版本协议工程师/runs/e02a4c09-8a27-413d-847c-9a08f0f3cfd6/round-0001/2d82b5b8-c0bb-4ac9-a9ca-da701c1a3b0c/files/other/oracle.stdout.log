@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "validator": "jsonschema",
+  "validator_version": "4.25.1",
+  "dialect": "2020-12",
+  "schema_valid": true,
+  "instances_compared": 2369,
+  "valid_instances": 91,
+  "invalid_instances": 2278,
+  "corpus_sha256": "9d5f8425d8473d9e7c718bbb1adbe14b3936cbe45eeaba3531ad0206c9dd5cc3",
+  "scope": "AUTHOR_SCHEMA_ALGORITHM_CROSSCHECK_NOT_P32_REVIEW"
+}

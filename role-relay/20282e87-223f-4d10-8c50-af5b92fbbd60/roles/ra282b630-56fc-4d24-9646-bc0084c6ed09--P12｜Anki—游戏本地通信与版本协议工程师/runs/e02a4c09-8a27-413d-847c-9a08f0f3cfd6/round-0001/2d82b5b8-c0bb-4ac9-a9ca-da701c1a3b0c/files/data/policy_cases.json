@@ -1,0 +1,1516 @@
+{
+  "format_version": "P08-POLICY-CASES/0.1.0",
+  "policy_version": "P08-REWARD-POLICY/0.1.0-proposal",
+  "runtime_adapter": null,
+  "runtime_execution_status": "NOT_RUN",
+  "scope": "LOGICAL_TEST_INPUTS_AND_EXPECTATIONS_NOT_P12_ENVELOPES",
+  "cases": [
+    {
+      "case_id": "P08-CASE-001",
+      "title": "真实完成 Again",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "all_required_gates_hypothetically_approved": true,
+        "rating": "Again",
+        "family": "F_NEW"
+      },
+      "operations": [
+        "完成并处理一次"
+      ],
+      "expected": {
+        "right_count_max": 1,
+        "amount": "B(category)",
+        "formal_amount": null,
+        "no_rating_bonus": true
+      },
+      "policy_refs": [
+        "P08-P04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-002",
+      "title": "真实完成 Hard",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "all_required_gates_hypothetically_approved": true,
+        "rating": "Hard",
+        "family": "F_NEW"
+      },
+      "operations": [
+        "完成并处理一次"
+      ],
+      "expected": {
+        "right_count_max": 1,
+        "amount": "B(category)",
+        "formal_amount": null,
+        "no_rating_bonus": true
+      },
+      "policy_refs": [
+        "P08-P04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-003",
+      "title": "真实完成 Good",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "all_required_gates_hypothetically_approved": true,
+        "rating": "Good",
+        "family": "F_NEW"
+      },
+      "operations": [
+        "完成并处理一次"
+      ],
+      "expected": {
+        "right_count_max": 1,
+        "amount": "B(category)",
+        "formal_amount": null,
+        "no_rating_bonus": true
+      },
+      "policy_refs": [
+        "P08-P04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-004",
+      "title": "真实完成 Easy",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "all_required_gates_hypothetically_approved": true,
+        "rating": "Easy",
+        "family": "F_NEW"
+      },
+      "operations": [
+        "完成并处理一次"
+      ],
+      "expected": {
+        "right_count_max": 1,
+        "amount": "B(category)",
+        "formal_amount": null,
+        "no_rating_bonus": true
+      },
+      "policy_refs": [
+        "P08-P04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-005",
+      "title": "Again不是无效",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "rating": "Again"
+      },
+      "operations": [
+        "来源/身份/完成可证"
+      ],
+      "expected": {
+        "cannot_reject_only_for_rating": true
+      },
+      "policy_refs": [
+        "P08-C01"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-006",
+      "title": "1000次完全重投",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "identity": "E1",
+        "fingerprint": "H1"
+      },
+      "operations": [
+        "同输入重复1000次"
+      ],
+      "expected": {
+        "additional_right_count_after_first": 0
+      },
+      "policy_refs": [
+        "P08-C01",
+        "P08-P03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-007",
+      "title": "同身份改Easy",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "accepted_rating": "Again",
+        "same_identity": true
+      },
+      "operations": [
+        "修改评分后投递"
+      ],
+      "expected": {
+        "incoming_conflict": "QUARANTINED",
+        "original_award_not_auto_revoked": true
+      },
+      "policy_refs": [
+        "P08-P03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-008",
+      "title": "自然同卡再次复习",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_card": true,
+        "distinct_proven_event": true,
+        "no_undo_relation": true
+      },
+      "operations": [
+        "再次真实完成"
+      ],
+      "expected": {
+        "not_deduplicated_by_card_id": true,
+        "new_right_subject_to_gates": true
+      },
+      "policy_refs": [
+        "P08-P02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-009",
+      "title": "重装插件身份不证明",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "plugin_reinstalled": true,
+        "lineage_proof": false
+      },
+      "operations": [
+        "重新上报历史"
+      ],
+      "expected": {
+        "new_auto_award": false,
+        "scope": "affected_source"
+      },
+      "policy_refs": [
+        "P08-P02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-010",
+      "title": "Undo不可观测",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "undo_capability": "UNVERIFIED"
+      },
+      "operations": [
+        "逐个投递四键"
+      ],
+      "expected": {
+        "auto_award_all_four": false
+      },
+      "policy_refs": [
+        "P08-C01"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-011",
+      "title": "缺PolicyRecord",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "approval": null
+      },
+      "operations": [
+        "输入可信真实事件"
+      ],
+      "expected": {
+        "classification": "HOLD_POLICY",
+        "amount": "UNSET_NOT_ZERO"
+      },
+      "policy_refs": [
+        "P08-C02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-012",
+      "title": "未知评分编码",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "raw_rating": "UNVERIFIED_CODE"
+      },
+      "operations": [
+        "解析完成消息"
+      ],
+      "expected": {
+        "do_not_map_to_easy": true,
+        "auto_award": false
+      },
+      "policy_refs": [
+        "P08-C02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-013",
+      "title": "仅展示答案",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "committed_completion": false
+      },
+      "operations": [
+        "展示答案/点击但提交失败"
+      ],
+      "expected": {
+        "new_right": 0
+      },
+      "policy_refs": [
+        "P08-P01"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-014",
+      "title": "Undo先于原完成",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "target": "E1"
+      },
+      "operations": [
+        "先Undo E1",
+        "迟到完成E1"
+      ],
+      "expected": {
+        "preserve_tombstone": true,
+        "new_credit": 0
+      },
+      "policy_refs": [
+        "P08-P03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-015",
+      "title": "原授奖提交前Undo",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "award_commit": "NOT_COMMITTED"
+      },
+      "operations": [
+        "Undo目标事件"
+      ],
+      "expected": {
+        "pending_right_cancelled": true,
+        "wallet_debit": 0
+      },
+      "policy_refs": [
+        "P08-U02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-016",
+      "title": "提交后全部未消费撤销",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "G": 10,
+        "S": 0,
+        "source_attribution": true
+      },
+      "operations": [
+        "按获批规则回收"
+      ],
+      "expected": {
+        "fixture_math_case": "P08-MATH-A02",
+        "no_other_source_debit": true
+      },
+      "policy_refs": [
+        "P08-U02",
+        "P08-U03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-017",
+      "title": "提交后已花7撤销",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "G": 10,
+        "S": 7,
+        "source_attribution": true
+      },
+      "operations": [
+        "回收原未消费3",
+        "记录差额"
+      ],
+      "expected": {
+        "fixture_math_case": "P08-MATH-A03",
+        "not_player_debt": true
+      },
+      "policy_refs": [
+        "P08-U03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-018",
+      "title": "重复Undo",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "previous_case": "P08-MATH-A03"
+      },
+      "operations": [
+        "重复同一Undo"
+      ],
+      "expected": {
+        "fixture_math_case": "P08-MATH-A04",
+        "additional_recovery": 0
+      },
+      "policy_refs": [
+        "P08-U02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-019",
+      "title": "已消费恢复差额",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "previous_case": "P08-MATH-A03"
+      },
+      "operations": [
+        "证明恢复原事实",
+        "按获批规则补差额"
+      ],
+      "expected": {
+        "fixture_math_case": "P08-MATH-A05",
+        "new_credit_fixture": 3,
+        "not_full_credit": 10
+      },
+      "policy_refs": [
+        "P08-U03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-020",
+      "title": "恢复后再次Undo",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "previous_case": "P08-MATH-A05"
+      },
+      "operations": [
+        "再次Undo"
+      ],
+      "expected": {
+        "fixture_math_case": "P08-MATH-A06",
+        "no_extra_item_deletion": true
+      },
+      "policy_refs": [
+        "P08-U03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-021",
+      "title": "同卡重答关系不明",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_card": true,
+        "undo_link_proven": false
+      },
+      "operations": [
+        "重答"
+      ],
+      "expected": {
+        "no_new_award": true,
+        "reason": "RELATION_UNVERIFIED"
+      },
+      "policy_refs": [
+        "P08-P08"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-022",
+      "title": "已证明替换重答",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_correction_family": true,
+        "original_undo_proven": true
+      },
+      "operations": [
+        "新技术ID关联原族"
+      ],
+      "expected": {
+        "active_target_right_count_max": 1,
+        "old_retained_value_must_count": true
+      },
+      "policy_refs": [
+        "P08-P02",
+        "P08-P08"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-023",
+      "title": "已豁免后恢复",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "K": 7,
+        "prior_recovery": 3
+      },
+      "operations": [
+        "恢复原事实"
+      ],
+      "expected": {
+        "reclassify_K_before_credit": true,
+        "no_double_compensation": true
+      },
+      "policy_refs": [
+        "P08-U03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-024",
+      "title": "已抵扣后恢复",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "future_offset_posted": true
+      },
+      "operations": [
+        "恢复原事实"
+      ],
+      "expected": {
+        "manual_linked_reconciliation": true,
+        "do_not_apply_simple_unspent_formula": true
+      },
+      "policy_refs": [
+        "P08-U06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-025",
+      "title": "共享来源余额",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "study_grant": 10,
+        "study_spent": 7,
+        "stage_grant": 3
+      },
+      "operations": [
+        "Undo学习事件"
+      ],
+      "expected": {
+        "stage_lot_not_auto_debited": true,
+        "requires_attribution": true
+      },
+      "policy_refs": [
+        "P08-U02",
+        "P08-P10"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-026",
+      "title": "消费归属不明",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "wallet_total_known": true,
+        "source_attribution": false
+      },
+      "operations": [
+        "Undo"
+      ],
+      "expected": {
+        "no_automatic_wallet_debit": true
+      },
+      "policy_refs": [
+        "P08-U02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-027",
+      "title": "Undo与消费竞争",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "concurrent_operations": [
+          "spend",
+          "undo"
+        ]
+      },
+      "operations": [
+        "检查两种提交顺序"
+      ],
+      "expected": {
+        "authoritative_result_required": true,
+        "no_negative_wallet": true,
+        "not_static_proof": true
+      },
+      "policy_refs": [
+        "P08-U02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-028",
+      "title": "晚到昨日完成",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "receipt_day": "D2",
+        "proven_occurred_day": "D1"
+      },
+      "operations": [
+        "补发"
+      ],
+      "expected": {
+        "reward_day": "D1",
+        "not_new_day_quota": true
+      },
+      "policy_refs": [
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-029",
+      "title": "跨日重发同事件",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "original_day": "D1",
+        "receipt_day": "D2"
+      },
+      "operations": [
+        "再次投递同E1"
+      ],
+      "expected": {
+        "additional_right": 0
+      },
+      "policy_refs": [
+        "P08-C01",
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-030",
+      "title": "跨日不同新事件",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_card": true,
+        "proven_new_identity": true,
+        "day": "D2"
+      },
+      "operations": [
+        "新完成"
+      ],
+      "expected": {
+        "new_event_eligible_subject_to_gates": true
+      },
+      "policy_refs": [
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-031",
+      "title": "跨日Undo/redo",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "original_day": "D1",
+        "current_day": "D2"
+      },
+      "operations": [
+        "Undo",
+        "恢复原事实"
+      ],
+      "expected": {
+        "uses_original_family_and_day": true,
+        "second_quota_slot": false
+      },
+      "policy_refs": [
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-032",
+      "title": "时钟/日界歧义",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "time_evidence": null,
+        "daily_cap_required": true
+      },
+      "operations": [
+        "处理事件"
+      ],
+      "expected": {
+        "hold_day_dependent_award": true,
+        "do_not_invalidate_study_fact": true
+      },
+      "policy_refs": [
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-033",
+      "title": "修改时区",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "event_day_already_pinned": true
+      },
+      "operations": [
+        "用户改时区"
+      ],
+      "expected": {
+        "no_rebucket_or_refill": true,
+        "migration_requires_approval": true
+      },
+      "policy_refs": [
+        "P08-P07"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-034",
+      "title": "缺上限选型",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "cap_policy": null
+      },
+      "operations": [
+        "准备发奖"
+      ],
+      "expected": {
+        "blocked": true,
+        "null_is_not_unlimited": true
+      },
+      "policy_refs": [
+        "P08-D02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-035",
+      "title": "额度恰好足够",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "approved_capacity_fixture": 10,
+        "package_size_fixture": 10
+      },
+      "operations": [
+        "完整包候选入账"
+      ],
+      "expected": {
+        "remaining_capacity_fixture": 0
+      },
+      "policy_refs": [
+        "P08-D02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-036",
+      "title": "额度不足整包",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "approved_capacity_fixture": 9,
+        "package_size_fixture": 10
+      },
+      "operations": [
+        "处理"
+      ],
+      "expected": {
+        "candidate": "HOLD_CAPACITY",
+        "no_silent_partial_or_invalid": true
+      },
+      "policy_refs": [
+        "P08-D02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-037",
+      "title": "切卡组/标签绕额度",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_beneficiary_day": true
+      },
+      "operations": [
+        "换卡组和分类"
+      ],
+      "expected": {
+        "same_aggregate_cap_scope": true
+      },
+      "policy_refs": [
+        "P08-D02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-038",
+      "title": "封顶后Undo反复恢复",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "cap_reservation_family": "F1"
+      },
+      "operations": [
+        "Undo",
+        "恢复",
+        "Undo",
+        "恢复"
+      ],
+      "expected": {
+        "reuse_original_reservation": true,
+        "no_extra_slot": true
+      },
+      "policy_refs": [
+        "P08-D02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-039",
+      "title": "真实映射UNKNOWN",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "mapping_contract_approved": true,
+        "category": "UNKNOWN"
+      },
+      "operations": [
+        "按适用规则处理"
+      ],
+      "expected": {
+        "general_fallback_candidate": true,
+        "not_invalid": true
+      },
+      "policy_refs": [
+        "P08-C03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-040",
+      "title": "完全缺映射",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "mapping_contract": null
+      },
+      "operations": [
+        "试图使用UNKNOWN默认"
+      ],
+      "expected": {
+        "blocked": true
+      },
+      "policy_refs": [
+        "P08-C03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-041",
+      "title": "多义纠错改标签",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "already_awarded": true
+      },
+      "operations": [
+        "分类更正"
+      ],
+      "expected": {
+        "no_second_full_award": true,
+        "versioned_difference_review": true
+      },
+      "policy_refs": [
+        "P08-P06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-042",
+      "title": "切政策版本重发",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "same_source_identity": true
+      },
+      "operations": [
+        "升级政策后重发"
+      ],
+      "expected": {
+        "no_new_entitlement_key": true
+      },
+      "policy_refs": [
+        "P08-P02",
+        "P08-P06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-043",
+      "title": "旧备份回退",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "restored_backup": true,
+        "transaction_watermark_unproven": true
+      },
+      "operations": [
+        "重播历史"
+      ],
+      "expected": {
+        "quarantine_affected_lineage": true
+      },
+      "policy_refs": [
+        "P08-P02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-044",
+      "title": "换游戏存档重领",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "source_event_already_consumed": true
+      },
+      "operations": [
+        "新存档提交原事件"
+      ],
+      "expected": {
+        "no_automatic_new_grant": true,
+        "beneficiary_migration_policy_required": true
+      },
+      "policy_refs": [
+        "P08-P02"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-045",
+      "title": "提交成功ACK丢失",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "p21_commit": "COMMITTED"
+      },
+      "operations": [
+        "ACK丢失",
+        "重发"
+      ],
+      "expected": {
+        "query_same_receipt": true,
+        "no_second_wallet_delta": true
+      },
+      "policy_refs": [
+        "P08-C02",
+        "P08-P06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-046",
+      "title": "提交结果未知",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "p21_commit": "UNKNOWN"
+      },
+      "operations": [
+        "网络中断",
+        "补发请求"
+      ],
+      "expected": {
+        "query_before_new_action": true,
+        "no_new_business_identity": true
+      },
+      "policy_refs": [
+        "P08-P06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-047",
+      "title": "隔离ACK",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "durable_quarantine": true
+      },
+      "operations": [
+        "返回ACK_QUARANTINED"
+      ],
+      "expected": {
+        "awarded": false,
+        "query_and_review_remain_available": true
+      },
+      "policy_refs": [
+        "P08-Q01"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-048",
+      "title": "隔离后补充充分证据",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "quarantine_case": "Q1",
+        "source_id": "E1"
+      },
+      "operations": [
+        "追加证据",
+        "重新判定"
+      ],
+      "expected": {
+        "same_source_identity": true,
+        "audit_append_only": true
+      },
+      "policy_refs": [
+        "P08-Q04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-049",
+      "title": "管理员无审批放行",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "user_approval": null,
+        "admin_clicked": true
+      },
+      "operations": [
+        "点击释放"
+      ],
+      "expected": {
+        "not_authorized": true
+      },
+      "policy_refs": [
+        "P08-Q03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-050",
+      "title": "纯善意补偿",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "review_fact_unproven": true,
+        "separate_user_compensation_approval": true
+      },
+      "operations": [
+        "按独立补偿合同处理"
+      ],
+      "expected": {
+        "not_marked_real_study": true,
+        "separate_domain_required": true
+      },
+      "policy_refs": [
+        "P08-Q04"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-051",
+      "title": "隔离超时",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "timeout": true,
+        "new_evidence": false
+      },
+      "operations": [
+        "定时处理"
+      ],
+      "expected": {
+        "no_auto_award_or_final_reject": true
+      },
+      "policy_refs": [
+        "P08-Q04",
+        "P08-D05"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-052",
+      "title": "学习Undo与关卡首通",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "stage_first_clear_valid": true
+      },
+      "operations": [
+        "Undo曾用于养成的学习事件"
+      ],
+      "expected": {
+        "do_not_remove_first_clear_key": true,
+        "do_not_revoke_battle_result": true
+      },
+      "policy_refs": [
+        "P08-P10"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-053",
+      "title": "无学习日基础资源",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "study_count": 0,
+        "DEC_003_approved": false
+      },
+      "operations": [
+        "游戏申请基础资源"
+      ],
+      "expected": {
+        "no_fabricated_study_event": true,
+        "product_policy_pending": true
+      },
+      "policy_refs": [
+        "P08-D03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-054",
+      "title": "四键长期激励评估",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "single_event_equal_reward": true
+      },
+      "operations": [
+        "比较正常学习与反复Again增加后续次数"
+      ],
+      "expected": {
+        "single_event_equality_not_full_behavior_proof": true,
+        "needs_P05_P39_evidence": true
+      },
+      "policy_refs": [
+        "P08-P04",
+        "P08-D01"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-055",
+      "title": "协议不兼容",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "protocol_supported": false
+      },
+      "operations": [
+        "投递"
+      ],
+      "expected": {
+        "no_silent_field_coercion": true,
+        "no_award": true
+      },
+      "policy_refs": [
+        "P08-P03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-056",
+      "title": "来源中断仍接收已知Undo",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "new_auto_awards_paused": true,
+        "authenticated_known_undo": true
+      },
+      "operations": [
+        "接收撤销控制事件"
+      ],
+      "expected": {
+        "do_not_drop_control_event": true,
+        "no_unapproved_wallet_mutation": true
+      },
+      "policy_refs": [
+        "P08-P03"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-057",
+      "title": "隔离记录清理",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "retention_policy_approved": false
+      },
+      "operations": [
+        "要求清理审计和墓碑"
+      ],
+      "expected": {
+        "no_delete_to_reopen_reward": true,
+        "requires_P38_P11_policy": true
+      },
+      "policy_refs": [
+        "P08-D05"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    },
+    {
+      "case_id": "P08-CASE-058",
+      "title": "分项向量不能双计",
+      "policy_status": "PROPOSAL",
+      "evidence_class": "SYNTHETIC_EXPECTED_BEHAVIOR",
+      "preconditions": {
+        "base_and_category_are_same_value": true
+      },
+      "operations": [
+        "生成权益包"
+      ],
+      "expected": {
+        "one_entitlement_vector": true,
+        "not_two_independent_full_grants": true
+      },
+      "policy_refs": [
+        "P08-P06"
+      ],
+      "implementation_owner": "P11",
+      "independent_executor": "P32",
+      "required_test_layer": "CONTRACT",
+      "execution_status": "NOT_RUN",
+      "actual_output": null,
+      "actual_log_sha256": null
+    }
+  ]
+}

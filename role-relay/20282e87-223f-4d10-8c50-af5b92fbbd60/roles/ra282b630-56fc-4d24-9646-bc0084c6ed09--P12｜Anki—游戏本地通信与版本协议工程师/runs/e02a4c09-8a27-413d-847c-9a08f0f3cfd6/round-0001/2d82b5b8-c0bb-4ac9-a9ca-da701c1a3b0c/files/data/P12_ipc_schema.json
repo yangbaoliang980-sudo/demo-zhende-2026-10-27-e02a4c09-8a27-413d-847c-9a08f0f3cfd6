@@ -1,0 +1,837 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:p12:anki-transport:0.1.0-isolated",
+  "title": "P12 isolated cross-process contract; not an approved Anki hook schema",
+  "description": "ASCII opaque references only. JSON byte/depth/number lexical limits and authentication are enforced outside JSON Schema. No production authority is granted.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/request"
+    },
+    {
+      "$ref": "#/$defs/response"
+    }
+  ],
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9:._-]*(?![\\s\\S])"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}(?![\\s\\S])"
+    },
+    "message_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}(?![\\s\\S])"
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "source_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "collection_lineage": {
+          "$ref": "#/$defs/identifier"
+        },
+        "beneficiary_id": {
+          "$ref": "#/$defs/identifier"
+        }
+      },
+      "required": [
+        "source_id",
+        "collection_lineage",
+        "beneficiary_id"
+      ],
+      "additionalProperties": false
+    },
+    "event": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "P11-LOCAL-EVENT/0.1.0-proposal"
+        },
+        "source_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "collection_lineage": {
+          "$ref": "#/$defs/identifier"
+        },
+        "collection_epoch": {
+          "$ref": "#/$defs/identifier"
+        },
+        "beneficiary_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "event_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/identifier"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "family_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/identifier"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "kind": {
+          "enum": [
+            "REVIEW",
+            "UNDO",
+            "RESTORE"
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "predecessor_event_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/identifier"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "rating": {
+          "oneOf": [
+            {
+              "enum": [
+                "Again",
+                "Hard",
+                "Good",
+                "Easy"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "card_reference": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/identifier"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "source_evidence_sha256": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "source_id",
+        "collection_lineage",
+        "collection_epoch",
+        "beneficiary_id",
+        "event_id",
+        "family_id",
+        "kind",
+        "revision",
+        "predecessor_event_id",
+        "rating",
+        "card_reference",
+        "source_evidence_sha256"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "kind": {
+                  "const": "REVIEW"
+                },
+                "revision": {
+                  "const": 0
+                },
+                "predecessor_event_id": {
+                  "const": null
+                },
+                "rating": {
+                  "enum": [
+                    "Again",
+                    "Hard",
+                    "Good",
+                    "Easy"
+                  ]
+                }
+              }
+            },
+            {
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "UNDO",
+                    "RESTORE"
+                  ]
+                },
+                "revision": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "predecessor_event_id": {
+                  "$ref": "#/$defs/identifier"
+                },
+                "rating": {
+                  "const": null
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "receipt": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "const": "P21_SIMULATOR"
+        },
+        "transaction_id": {
+          "type": "string",
+          "pattern": "^(receive|process|resolve):[0-9a-f]{64}(?![\\s\\S])"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "store_id_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "receipt_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "origin",
+        "transaction_id",
+        "sequence",
+        "store_id_sha256",
+        "receipt_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "result_payload": {
+      "type": "object",
+      "properties": {
+        "disposition": {
+          "enum": [
+            "ACK_APPLIED",
+            "ACK_QUARANTINED",
+            "RETRY_LATER",
+            "REJECTED",
+            "STATUS"
+          ]
+        },
+        "ledger_state": {
+          "oneOf": [
+            {
+              "enum": [
+                "APPLIED",
+                "REVERTED",
+                "QUARANTINED",
+                "PENDING_RECONCILIATION",
+                "REJECTED",
+                "NOT_FOUND",
+                "UNKNOWN"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "error_code": {
+          "enum": [
+            "OK",
+            "E_JSON_SYNTAX",
+            "E_JSON_DUPLICATE",
+            "E_JSON_NUMBER",
+            "E_JSON_DEPTH",
+            "E_JSON_COMPLEXITY",
+            "E_FRAME_LIMIT",
+            "E_PROTOCOL",
+            "E_PROTOCOL_VERSION",
+            "E_MESSAGE_TYPE",
+            "E_SCHEMA",
+            "E_PAYLOAD_VERSION",
+            "E_SCOPE",
+            "E_BACKEND_UNAVAILABLE",
+            "E_COMMIT_UNKNOWN",
+            "E_BACKEND_CONTRACT",
+            "E_CAUSAL_PENDING",
+            "E_QUARANTINED",
+            "E_LEDGER_REJECTED",
+            "E_NOT_FOUND",
+            "E_BACKPRESSURE"
+          ]
+        },
+        "detail_code": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96,
+          "pattern": "^[A-Z][A-Z0-9_]*(?![\\s\\S])"
+        },
+        "inbox_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/sha256"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "receipt": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/receipt"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "evidence_scope": {
+          "const": "ISOLATED_P11_P21_SIMULATION"
+        },
+        "award_status": {
+          "enum": [
+            "APPLIED",
+            "NOT_AWARDED",
+            "REVERTED",
+            "UNDETERMINED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "delivery_terminal": {
+          "type": "boolean"
+        },
+        "retry_after_ms": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 250,
+              "maximum": 60000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "next_action": {
+          "enum": [
+            "NONE",
+            "SUBMIT",
+            "QUERY"
+          ]
+        }
+      },
+      "required": [
+        "disposition",
+        "ledger_state",
+        "error_code",
+        "detail_code",
+        "inbox_id",
+        "receipt",
+        "evidence_scope",
+        "award_status",
+        "delivery_terminal",
+        "retry_after_ms",
+        "next_action"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "properties": {
+                "disposition": {
+                  "const": "ACK_APPLIED"
+                },
+                "ledger_state": {
+                  "const": "APPLIED"
+                },
+                "error_code": {
+                  "const": "OK"
+                },
+                "award_status": {
+                  "const": "APPLIED"
+                },
+                "receipt": {
+                  "$ref": "#/$defs/receipt"
+                },
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                },
+                "delivery_terminal": {
+                  "const": true
+                },
+                "retry_after_ms": {
+                  "const": null
+                },
+                "next_action": {
+                  "const": "NONE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "ACK_QUARANTINED"
+                },
+                "ledger_state": {
+                  "const": "QUARANTINED"
+                },
+                "error_code": {
+                  "const": "E_QUARANTINED"
+                },
+                "award_status": {
+                  "const": "NOT_AWARDED"
+                },
+                "receipt": {
+                  "$ref": "#/$defs/receipt"
+                },
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                },
+                "delivery_terminal": {
+                  "const": false
+                },
+                "retry_after_ms": {
+                  "const": 30000
+                },
+                "next_action": {
+                  "const": "QUERY"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "RETRY_LATER"
+                },
+                "ledger_state": {
+                  "enum": [
+                    "PENDING_RECONCILIATION",
+                    "UNKNOWN"
+                  ]
+                },
+                "error_code": {
+                  "enum": [
+                    "E_BACKEND_UNAVAILABLE",
+                    "E_COMMIT_UNKNOWN",
+                    "E_BACKEND_CONTRACT",
+                    "E_CAUSAL_PENDING",
+                    "E_BACKPRESSURE"
+                  ]
+                },
+                "award_status": {
+                  "const": "UNDETERMINED"
+                },
+                "delivery_terminal": {
+                  "const": false
+                },
+                "retry_after_ms": {
+                  "type": "integer",
+                  "minimum": 250,
+                  "maximum": 60000
+                },
+                "next_action": {
+                  "enum": [
+                    "SUBMIT",
+                    "QUERY"
+                  ]
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "REJECTED"
+                },
+                "ledger_state": {
+                  "const": null
+                },
+                "award_status": {
+                  "const": "UNDETERMINED"
+                },
+                "receipt": {
+                  "const": null
+                },
+                "delivery_terminal": {
+                  "const": true
+                },
+                "retry_after_ms": {
+                  "const": null
+                },
+                "error_code": {
+                  "enum": [
+                    "E_JSON_SYNTAX",
+                    "E_JSON_DUPLICATE",
+                    "E_JSON_NUMBER",
+                    "E_JSON_DEPTH",
+                    "E_JSON_COMPLEXITY",
+                    "E_FRAME_LIMIT",
+                    "E_PROTOCOL",
+                    "E_PROTOCOL_VERSION",
+                    "E_MESSAGE_TYPE",
+                    "E_SCHEMA",
+                    "E_PAYLOAD_VERSION",
+                    "E_SCOPE"
+                  ]
+                },
+                "next_action": {
+                  "const": "NONE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "REJECTED"
+                },
+                "ledger_state": {
+                  "const": "REJECTED"
+                },
+                "error_code": {
+                  "const": "E_LEDGER_REJECTED"
+                },
+                "award_status": {
+                  "const": "NOT_AWARDED"
+                },
+                "receipt": {
+                  "$ref": "#/$defs/receipt"
+                },
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                },
+                "delivery_terminal": {
+                  "const": true
+                },
+                "retry_after_ms": {
+                  "const": null
+                },
+                "next_action": {
+                  "const": "NONE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "STATUS"
+                },
+                "ledger_state": {
+                  "const": "REVERTED"
+                },
+                "error_code": {
+                  "const": "OK"
+                },
+                "award_status": {
+                  "const": "REVERTED"
+                },
+                "receipt": {
+                  "$ref": "#/$defs/receipt"
+                },
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                },
+                "delivery_terminal": {
+                  "const": true
+                },
+                "retry_after_ms": {
+                  "const": null
+                },
+                "next_action": {
+                  "const": "NONE"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "STATUS"
+                },
+                "ledger_state": {
+                  "const": "NOT_FOUND"
+                },
+                "error_code": {
+                  "const": "E_NOT_FOUND"
+                },
+                "award_status": {
+                  "const": "UNDETERMINED"
+                },
+                "receipt": {
+                  "const": null
+                },
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                },
+                "delivery_terminal": {
+                  "const": false
+                },
+                "retry_after_ms": {
+                  "const": 250
+                },
+                "next_action": {
+                  "const": "SUBMIT"
+                }
+              }
+            },
+            {
+              "properties": {
+                "disposition": {
+                  "const": "STATUS"
+                },
+                "ledger_state": {
+                  "const": null
+                },
+                "error_code": {
+                  "const": "OK"
+                },
+                "award_status": {
+                  "const": "NOT_APPLICABLE"
+                },
+                "receipt": {
+                  "const": null
+                },
+                "inbox_id": {
+                  "const": null
+                },
+                "delivery_terminal": {
+                  "const": true
+                },
+                "retry_after_ms": {
+                  "const": null
+                },
+                "next_action": {
+                  "const": "NONE"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "request": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "protocol": {
+              "const": "YLTT-ANKI-TRANSPORT"
+            },
+            "protocol_version": {
+              "const": "0.1.0-isolated"
+            },
+            "message_id": {
+              "$ref": "#/$defs/message_id"
+            },
+            "producer_id": {
+              "$ref": "#/$defs/identifier"
+            },
+            "scope": {
+              "$ref": "#/$defs/scope"
+            },
+            "message_type": {
+              "const": "HELLO"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "supported_versions": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 32
+                  },
+                  "minItems": 1,
+                  "maxItems": 8
+                }
+              },
+              "required": [
+                "supported_versions"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "protocol",
+            "protocol_version",
+            "message_id",
+            "producer_id",
+            "scope",
+            "message_type",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "protocol": {
+              "const": "YLTT-ANKI-TRANSPORT"
+            },
+            "protocol_version": {
+              "const": "0.1.0-isolated"
+            },
+            "message_id": {
+              "$ref": "#/$defs/message_id"
+            },
+            "producer_id": {
+              "$ref": "#/$defs/identifier"
+            },
+            "scope": {
+              "$ref": "#/$defs/scope"
+            },
+            "message_type": {
+              "const": "SUBMIT_EVENT"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "event": {
+                  "$ref": "#/$defs/event"
+                }
+              },
+              "required": [
+                "event"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "protocol",
+            "protocol_version",
+            "message_id",
+            "producer_id",
+            "scope",
+            "message_type",
+            "payload"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "protocol": {
+              "const": "YLTT-ANKI-TRANSPORT"
+            },
+            "protocol_version": {
+              "const": "0.1.0-isolated"
+            },
+            "message_id": {
+              "$ref": "#/$defs/message_id"
+            },
+            "producer_id": {
+              "$ref": "#/$defs/identifier"
+            },
+            "scope": {
+              "$ref": "#/$defs/scope"
+            },
+            "message_type": {
+              "const": "QUERY_STATUS"
+            },
+            "payload": {
+              "type": "object",
+              "properties": {
+                "inbox_id": {
+                  "$ref": "#/$defs/sha256"
+                }
+              },
+              "required": [
+                "inbox_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "protocol",
+            "protocol_version",
+            "message_id",
+            "producer_id",
+            "scope",
+            "message_type",
+            "payload"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "protocol": {
+          "const": "YLTT-ANKI-TRANSPORT"
+        },
+        "protocol_version": {
+          "const": "0.1.0-isolated"
+        },
+        "message_id": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/message_id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "producer_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "message_type": {
+          "const": "RESULT"
+        },
+        "request_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "payload": {
+          "$ref": "#/$defs/result_payload"
+        }
+      },
+      "required": [
+        "protocol",
+        "protocol_version",
+        "message_id",
+        "producer_id",
+        "scope",
+        "message_type",
+        "request_sha256",
+        "payload"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

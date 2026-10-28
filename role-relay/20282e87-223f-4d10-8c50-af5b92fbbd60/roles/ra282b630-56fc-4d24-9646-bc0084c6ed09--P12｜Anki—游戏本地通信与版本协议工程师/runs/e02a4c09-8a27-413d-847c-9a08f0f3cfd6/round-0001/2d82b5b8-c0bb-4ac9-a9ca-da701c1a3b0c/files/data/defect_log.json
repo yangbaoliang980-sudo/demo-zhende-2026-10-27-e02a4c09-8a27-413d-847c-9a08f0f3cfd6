@@ -1,0 +1,96 @@
+{
+  "schema_version": "P11-DEFECT-LOG/0.1.0",
+  "failed_run": "evidence/author_run_002/run_receipt.json",
+  "failed_snapshot": "evidence/author_run_002/failing_sources.zip",
+  "failed_snapshot_sha256": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+  "fixed_run": "evidence/author_run_003/run_receipt.json",
+  "defects": [
+    {
+      "id": "P11-DEF-001",
+      "problem": "钱包适配器可通过嵌套字典改写固定政策",
+      "repair_owner": "P11",
+      "status": "FIXED_AUTHOR_REGRESSION_PASS",
+      "independent_retest": "NOT_RUN",
+      "test": "test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict",
+      "change_request_id": "P11-LOCAL-CR-001",
+      "root_cause_and_fix": "传入深复制Intent，以P11保留的原快照校验候选",
+      "base_and_target_sha256": [
+        {
+          "relative_path": "ledger_runtime/service.py",
+          "base_sha256": "335421b16450a0ac02968568af85c31416faa5ee817ab4be9f555fd400e74e68",
+          "target_sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        }
+      ]
+    },
+    {
+      "id": "P11-DEF-002",
+      "problem": "G/R可同时虚增而净额抵消",
+      "repair_owner": "P11",
+      "status": "FIXED_AUTHOR_REGRESSION_PASS",
+      "independent_retest": "NOT_RUN",
+      "test": "test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim",
+      "change_request_id": "P11-LOCAL-CR-001",
+      "root_cause_and_fix": "校验每次G增量=max(delta,0)，R增量=max(-delta,0)",
+      "base_and_target_sha256": [
+        {
+          "relative_path": "ledger_runtime/audit.py",
+          "base_sha256": "ba3eda45ec11e01e339cf9b34e5f5a29aa3bbb6bbce2995f84f10665c67f2418",
+          "target_sha256": "e47ae26b1324da05ab514973dcbff4feab90881de34a020c653a84da96254fc0"
+        }
+      ]
+    },
+    {
+      "id": "P11-DEF-003",
+      "problem": "重复关联未核验权益归属作用域",
+      "repair_owner": "P11",
+      "status": "FIXED_AUTHOR_REGRESSION_PASS",
+      "independent_retest": "NOT_RUN",
+      "test": "test_duplicate_link_cannot_cross_beneficiary_scope",
+      "change_request_id": "P11-LOCAL-CR-001",
+      "root_cause_and_fix": "LINK_DUPLICATE强制相同来源/谱系/权益归属",
+      "base_and_target_sha256": [
+        {
+          "relative_path": "ledger_runtime/service.py",
+          "base_sha256": "335421b16450a0ac02968568af85c31416faa5ee817ab4be9f555fd400e74e68",
+          "target_sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        }
+      ]
+    },
+    {
+      "id": "P11-DEF-004",
+      "problem": "拒绝状态仍跟随旧族投影，控制事件可能重新打开原事实",
+      "repair_owner": "P11",
+      "status": "FIXED_AUTHOR_REGRESSION_PASS",
+      "independent_retest": "NOT_RUN",
+      "test": "test_reject_case_is_observable_and_not_reopened_by_restore",
+      "change_request_id": "P11-LOCAL-CR-001",
+      "root_cause_and_fix": "明确拒绝族标记、重置非关联投影、仅原案件绑定新证据可重审",
+      "base_and_target_sha256": [
+        {
+          "relative_path": "ledger_runtime/service.py",
+          "base_sha256": "335421b16450a0ac02968568af85c31416faa5ee817ab4be9f555fd400e74e68",
+          "target_sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        }
+      ]
+    },
+    {
+      "id": "P11-DEF-005",
+      "problem": "缺失身份的原因码未清楚表达证据不足",
+      "repair_owner": "P11",
+      "status": "FIXED_AUTHOR_REGRESSION_PASS",
+      "independent_retest": "NOT_RUN",
+      "test": "test_missing_identity_reason_does_not_claim_sufficient_evidence",
+      "change_request_id": "P11-LOCAL-CR-001",
+      "root_cause_and_fix": "单独返回MISSING_PROVEN_IDENTITY_FIELDS",
+      "base_and_target_sha256": [
+        {
+          "relative_path": "ledger_runtime/service.py",
+          "base_sha256": "335421b16450a0ac02968568af85c31416faa5ee817ab4be9f555fd400e74e68",
+          "target_sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        }
+      ]
+    }
+  ],
+  "p01_escalation_required_now": false,
+  "escalation_rule": "Same problem two failed rework rounds without new evidence => P01; this run added evidence, fixed once, and passed."
+}

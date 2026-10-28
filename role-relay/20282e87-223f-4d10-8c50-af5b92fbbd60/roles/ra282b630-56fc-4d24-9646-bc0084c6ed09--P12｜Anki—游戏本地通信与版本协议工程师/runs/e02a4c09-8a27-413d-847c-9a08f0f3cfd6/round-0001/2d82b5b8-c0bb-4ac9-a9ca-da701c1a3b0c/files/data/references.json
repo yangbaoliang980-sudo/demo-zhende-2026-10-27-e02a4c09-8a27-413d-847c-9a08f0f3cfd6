@@ -1,0 +1,30 @@
+{
+  "consulted_on_client_date": "2026-10-28",
+  "references": [
+    {
+      "id": "PY-SOCKET",
+      "url": "https://docs.python.org/3.12/library/socket.html",
+      "use": "platform-dependent socket API; literal localhost binding"
+    },
+    {
+      "id": "PY-OS",
+      "url": "https://docs.python.org/3.12/library/os.html#os.replace",
+      "use": "replace/fsync/permission semantics; no inferred power-loss proof"
+    },
+    {
+      "id": "MS-PIPE",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/ipc/named-pipe-security-and-access-rights",
+      "use": "DACL and session-specific restrictions"
+    },
+    {
+      "id": "JSON-SCHEMA",
+      "url": "https://json-schema.org/draft/2020-12/json-schema-core",
+      "use": "schema dialect and internal references"
+    },
+    {
+      "id": "JSON-RFC",
+      "url": "https://www.rfc-editor.org/rfc/rfc8259",
+      "use": "JSON interoperability; extra limits are P12 profile choices"
+    }
+  ]
+}

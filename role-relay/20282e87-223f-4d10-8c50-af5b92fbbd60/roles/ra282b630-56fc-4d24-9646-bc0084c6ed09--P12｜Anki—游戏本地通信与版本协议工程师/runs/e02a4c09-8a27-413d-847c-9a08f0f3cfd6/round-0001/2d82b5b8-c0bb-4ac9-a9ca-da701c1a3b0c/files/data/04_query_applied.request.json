@@ -1,0 +1,1 @@
+{"message_id":"22222222222222222222222222222222","message_type":"QUERY_STATUS","payload":{"inbox_id":"90ee8698ce9cebfaa2388e3659e6ff7658206fec036587b58503c427902b64f9"},"producer_id":"fixture:plugin","protocol":"YLTT-ANKI-TRANSPORT","protocol_version":"0.1.0-isolated","scope":{"beneficiary_id":"fixture:player","collection_lineage":"fixture:lineage","source_id":"fixture:source"}}

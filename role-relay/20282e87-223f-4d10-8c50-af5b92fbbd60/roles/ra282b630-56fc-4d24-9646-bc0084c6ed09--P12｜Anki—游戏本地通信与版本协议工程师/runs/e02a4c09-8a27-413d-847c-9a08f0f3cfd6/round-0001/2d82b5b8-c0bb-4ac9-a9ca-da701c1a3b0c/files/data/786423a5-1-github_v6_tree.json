@@ -1,0 +1,546 @@
+{
+  "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "truncated": false,
+  "files": [
+    {
+      "path": "README.md",
+      "sha": "4d1633f7927153e4203e973611293e080c0b7492",
+      "size": 113
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/latest.json",
+      "sha": "e67bddb7825f7006ba7c8ad5fe93bd0523334bba",
+      "size": 402
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/README.md",
+      "sha": "f977a2f815602252f87da448822b8270e6508c44",
+      "size": 4001
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/answer.html",
+      "sha": "28894a01255db797b1c1a6bd5ab283efc7f3b1d5",
+      "size": 5721
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/answer.md",
+      "sha": "070fa18cecad6c04bff34ecefc4cb56a8b429be5",
+      "size": 2906
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r02b369cd-3b7f-4f2e-bab9-a1a0b6cf9952--第三轮｜跨岗位协作与交付接口设计师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7043102f-61d7-44e0-84ed-84810a166505/manifest.json",
+      "sha": "32f90dbe606ded8367eeb393bae4079de65d6f01",
+      "size": 13906
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/latest.json",
+      "sha": "c5edbf4e471697b039166e745fcb6452e2f47f15",
+      "size": 396
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/README.md",
+      "sha": "0d01e4d4bb552dd3b95e92dcfa4718bb722017c4",
+      "size": 5620
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/answer.html",
+      "sha": "7e7e2d3cf7d7e40350e819c362fb139acfad663c",
+      "size": 8111
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/answer.md",
+      "sha": "f3f0bde8f19c9157d6adab4b87067c0cd48ef702",
+      "size": 3406
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r315cd0d7-acf1-46e0-b3f6-f7eb1f9910a8--第四轮｜研发落地与阶段任务规划师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/c24aba3e-d5ab-4707-a618-14b9ce83dabc/manifest.json",
+      "sha": "437ef3b166cab532f353911585d27371076918ce",
+      "size": 17435
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/latest.json",
+      "sha": "2cada4e967bec2582fbec02a1ef8df922995aaa6",
+      "size": 390
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/README.md",
+      "sha": "67ed9e6519c492317b037c924eedd73ed63e7072",
+      "size": 2156
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/answer.html",
+      "sha": "58874f1892c338756128ed3b8e479bf7cf992f0b",
+      "size": 3843
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/answer.md",
+      "sha": "8f1550be5cee116b0d077b5cd9605efe8e041f7e",
+      "size": 1170
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd/第一轮_角色职责_可复制版V1.0.txt",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/files/documents/第一轮_角色职责_可复制版V1.0.txt",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r49d73e4d-a705-4a03-8310-289bb0652d1e--第一轮｜游戏研发岗位需求分析师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/298fff88-5e08-4392-bb94-cac79819e777/manifest.json",
+      "sha": "55614c6dcde153987c0d3689536dc6bdad46d5cf",
+      "size": 8693
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/latest.json",
+      "sha": "3fd20ff754ae1ccfb3d2d08198378f0dea30bc12",
+      "size": 396
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/README.md",
+      "sha": "29fde2874b2dc1f14b83695c48b274ec098727a0",
+      "size": 4816
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/answer.html",
+      "sha": "bec3b097ed120718641d3c21c53648994c054051",
+      "size": 6517
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/answer.md",
+      "sha": "d992a65d688452dbca3954657548acc1d6938f1c",
+      "size": 3273
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/6fecc61ed4012f7277e6a043d1c96019410c38fc88a2c49afb8d3eb1afb05abd/第一轮_角色职责_可复制版V1.0.txt",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/c6e5730205dfd814323cef9796c1c377c3f92387add515e6a83c390b199b77cd/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第一轮_研发岗位需求分析与角色清单V1.0.txt",
+      "sha": "29305c836ac973dcf5216f80c283f52e39c97359",
+      "size": 54810
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第一轮_角色职责_可复制版V1.0.txt",
+      "sha": "abe52432cb38f000d37dcd4545725cf9e8086d72",
+      "size": 35495
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_研发岗位架构与职责细化V2.0.txt",
+      "sha": "1792a1ff7b2746277bd7ad34dab59cd38632175c",
+      "size": 87876
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_研发职责覆盖矩阵V2.0.txt",
+      "sha": "5bcf8a20cfe12062cc5c2bad92672ebcfa41b554",
+      "size": 6781
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/files/documents/第二轮_角色职责_可复制版V2.0.txt",
+      "sha": "be889bed5654be944bb0339baa3e7365eeb2d473",
+      "size": 50351
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6279670b-b5c8-48ee-a645-263beb396573--第二轮｜研发岗位架构与职责细化师/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/f3a70420-ad9f-419f-9707-c1fb6695538f/manifest.json",
+      "sha": "5718ec3e59cfa62249ab057e4e7e850d0175c4f8",
+      "size": 11447
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/latest.json",
+      "sha": "370444217a9adfdb30d084e195b429da5a225681",
+      "size": 420
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/README.md",
+      "sha": "677d4f1dea4eec2c9e0947dc3d090f3a87da7b48",
+      "size": 8107
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/answer.html",
+      "sha": "47a699300326a053a814a4a182127946d958503f",
+      "size": 10598
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/answer.md",
+      "sha": "c8e160adc595a2f8602555586eeaea1753ee2e0a",
+      "size": 2748
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第五轮_研发岗位体系审查完整交付包V5.0.zip",
+      "sha": "3a4c8839a67e6d3fc481ae1c4a284b06adbf1733",
+      "size": 96419
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第六轮_游戏研发岗位体系最终冻结版V6.0_完整交付包.zip",
+      "sha": "5019ca0c83021bd0ea78b4e3de517991b67de531",
+      "size": 174352
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_压力测试与故障恢复场景V5.0.tsv",
+      "sha": "2b7b47a8c0729d29dc0329b38cbb3af639060e7d",
+      "size": 4672
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_审查机器可读结果V5.0.json",
+      "sha": "e52263607dd325e11bb9aa2b192f7a364819df1b",
+      "size": 97831
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第五轮_缺陷与责任追踪清单V5.0.tsv",
+      "sha": "075923ca6ab6e11f5102104e913e21635c147f49",
+      "size": 11692
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8/第六轮_首批岗位启动任务单V6.0.txt",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第五轮_角色职责_可复制版V5.0.txt",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_首批岗位启动任务单V6.0.txt",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/manifest.json",
+      "sha": "316f3700af673fa77b555ae249aa4d509b457477",
+      "size": 37716
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/latest.json",
+      "sha": "ebcade05ecd868438b3b4bbfa73acdd70fce6bee",
+      "size": 420
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/README.md",
+      "sha": "7d20eff0e577d69c1fd2c4c5b4b34a7af1f86d73",
+      "size": 9318
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/answer.html",
+      "sha": "8e3275983335d8600ac13b973ba63064c9e6415d",
+      "size": 11816
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/answer.md",
+      "sha": "5a2b075ad0d54b200d4fd41ab2d774ce2def4e31",
+      "size": 4851
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第三轮_跨岗位协作完整交付包V3.0.zip",
+      "sha": "0c7eb7d3ffc5d4bd1e44a0cb7d2c6c75d5147032",
+      "size": 96214
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第五轮_研发岗位体系审查完整交付包V5.0.zip",
+      "sha": "3a4c8839a67e6d3fc481ae1c4a284b06adbf1733",
+      "size": 96419
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/archives/第四轮_研发落地完整交付包V4.0.zip",
+      "sha": "2454fb32bff094a4d34812aa25698bc04e7f49aa",
+      "size": 82851
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/3520ecca706f5fffad792f136233f1df9da8bb68f7313ea4c9dd5e67e3e4e4dc/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_压力测试与故障恢复场景V5.0.tsv",
+      "sha": "2b7b47a8c0729d29dc0329b38cbb3af639060e7d",
+      "size": 4672
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_审查机器可读结果V5.0.json",
+      "sha": "e52263607dd325e11bb9aa2b192f7a364819df1b",
+      "size": 97831
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第五轮_缺陷与责任追踪清单V5.0.tsv",
+      "sha": "075923ca6ab6e11f5102104e913e21635c147f49",
+      "size": 11692
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_92项职责阶段映射V4.0.tsv",
+      "sha": "85f9a0bdd0a9b8b7760d866f3cb364f84aaa1920",
+      "size": 16
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_92项职责阶段映射V4.0_原ZIP逐字节提取.tsv",
+      "sha": "985540d3d80d4dcbb17340d44e02233940a1cf0f",
+      "size": 8108
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/data/第四轮_阶段计划机器可读版V4.0.json",
+      "sha": "7f18ec64ff61fe5f66fef7c588a3a297c12fab16",
+      "size": 120547
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/277daf598e0c5ec89c9544f3933b6932e22954e71a19965ff2d5bd88058526bb/第五轮_角色职责_可复制版V5.0.txt",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/aa0b7cdfcb5d655061c9b8fd9686d8915155a125ec1f25f0ee1734a275184184/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_多AI交付模板V3.0.txt",
+      "sha": "63a1a933eb71484dd65e07cd08ab7efbb3c2deb4",
+      "size": 2768
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_研发职责覆盖矩阵V3.0.txt",
+      "sha": "f265bab804965ab6ed6bf1e5e9875bab1773b7d4",
+      "size": 8032
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_角色职责_可复制版V3.0.txt",
+      "sha": "b333ae1fc044fc9174112454cd3c300f122335a2",
+      "size": 81034
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_跨岗位协作与交付协议V3.0.txt",
+      "sha": "74685754fdc459b17737dff202f9ef1967f44a6b",
+      "size": 56644
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第三轮_跨岗位接口责任表V3.0.txt",
+      "sha": "02e8077345b623ba946f6ec40c7913137b445418",
+      "size": 17154
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第五轮_研发岗位体系独立审查报告V5.0.txt",
+      "sha": "ef19205404808c6457ee1b49a7e2a4614aff612d",
+      "size": 46689
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第五轮_角色职责_可复制版V5.0.txt",
+      "sha": "f071d9eeebe86bb44c31ad9ebe8c0a41f6d89095",
+      "size": 123298
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_研发岗位落地与阶段执行计划V4.0.txt",
+      "sha": "936aacfdf8da3116f6a2cfd0c1fd42fbc8d7101d",
+      "size": 68543
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_第一阶段启动任务单V4.0.txt",
+      "sha": "432074f4baf792e6e07b371392d4b2dfdbb7e3cd",
+      "size": 5743
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/files/documents/第四轮_角色职责_可复制版V4.0.txt",
+      "sha": "a437aa8f15304d3bbff2d2d69c5961ebbdf5a73c",
+      "size": 42439
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/ra14c47c5-b4ba-49ee-a1a2-6905b55d912a--第五轮｜独立研发体系缺陷审查与压力测试官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/e2ee7c28-ba46-4bbf-8f02-d03845669e55/manifest.json",
+      "sha": "1ba5cdebd31cc1b6ece42a1285dbb7ac355abacb",
+      "size": 32115
+    }
+  ]
+}

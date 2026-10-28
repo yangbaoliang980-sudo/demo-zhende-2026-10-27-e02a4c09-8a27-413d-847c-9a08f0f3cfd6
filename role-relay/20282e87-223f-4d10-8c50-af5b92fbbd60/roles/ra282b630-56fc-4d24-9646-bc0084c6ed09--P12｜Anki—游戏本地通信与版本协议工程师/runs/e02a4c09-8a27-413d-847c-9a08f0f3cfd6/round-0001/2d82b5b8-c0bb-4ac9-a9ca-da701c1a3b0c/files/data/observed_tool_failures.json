@@ -1,0 +1,21 @@
+{
+  "source": "observed tool response transcript; not fabricated runtime trace",
+  "records": [
+    {
+      "id": "P12-DEV-ENV-001",
+      "status": "FAIL",
+      "owner": "P12",
+      "command": "python socket.socket(); bind(('127.0.0.1',0)) in default sandbox",
+      "observed_error": "PermissionError: [Errno 1] Operation not permitted at socket.socket creation",
+      "resolution": "explicit loopback-only author tests ran through approved execution scope; evidence author_run_002/005/004/006"
+    },
+    {
+      "id": "P12-DEV-PATH-001",
+      "status": "FAIL",
+      "owner": "P12",
+      "command": "cat > P12_AnkiTransport_V0.1/mocks/anki_transport/export_vectors.py while cwd was already package root; python -B -m mocks.anki_transport.export_vectors",
+      "observed_stderr": "/bin/bash: line 1: P12_AnkiTransport_V0.1/mocks/anki_transport/export_vectors.py: No such file or directory\nNo module named mocks.anki_transport.export_vectors",
+      "resolution": "correct package-relative work directory; see evidence/vector_generation/receipt.json"
+    }
+  ]
+}

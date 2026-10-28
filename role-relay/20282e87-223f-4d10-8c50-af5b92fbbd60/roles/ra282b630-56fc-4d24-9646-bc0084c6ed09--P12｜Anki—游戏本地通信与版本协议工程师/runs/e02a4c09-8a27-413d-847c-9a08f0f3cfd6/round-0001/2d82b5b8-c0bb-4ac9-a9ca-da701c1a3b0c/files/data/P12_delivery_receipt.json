@@ -1,0 +1,100 @@
+{
+  "schema_version": "P12-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P12-S04-S05-TRANSPORT-001",
+  "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+  "created_at_utc_plus_8": "2026-10-29T00:10:19.306199+08:00",
+  "archive": {
+    "filename": "P12_AnkiTransport_V0.1.zip",
+    "size_bytes": 1206963,
+    "sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+    "members": 145,
+    "crc_status": "PASS"
+  },
+  "manifest": {
+    "package_relative_path": "delivery_manifest.sha256.tsv",
+    "filename": "P12_delivery_manifest.sha256.tsv",
+    "size_bytes": 107656,
+    "sha256": "0babd1502d2784a5ee79775c34033335db8212700ad387951eaf62901bd6ad38",
+    "listed_files": 144,
+    "self_hash_excluded": true
+  },
+  "source_input_receipt_sha256": "393004c0de6011e149fd4f0c5d5fd85406bd64f85b53b727b6c9495238f3dd79",
+  "source_snapshot_count": 27,
+  "handoff_entries_verified": 53,
+  "verification": {
+    "in_place": {
+      "status": "PASS",
+      "scope": "EXACT_DELIVERY_BYTES_ONLY",
+      "listed_files_verified": 144,
+      "source_files_verified": 27,
+      "errors": [],
+      "manifest_self_hash": "Bound by external P12_delivery_receipt.json and archive hash, excluded to avoid circular hashing.",
+      "independent_functional_review": "NOT_RUN"
+    },
+    "reextracted": {
+      "status": "PASS",
+      "scope": "EXACT_DELIVERY_BYTES_ONLY",
+      "listed_files_verified": 144,
+      "source_files_verified": 27,
+      "errors": [],
+      "manifest_self_hash": "Bound by external P12_delivery_receipt.json and archive hash, excluded to avoid circular hashing.",
+      "independent_functional_review": "NOT_RUN"
+    },
+    "raw_reextracted_stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"EXACT_DELIVERY_BYTES_ONLY\",\n  \"listed_files_verified\": 144,\n  \"source_files_verified\": 27,\n  \"errors\": [],\n  \"manifest_self_hash\": \"Bound by external P12_delivery_receipt.json and archive hash, excluded to avoid circular hashing.\",\n  \"independent_functional_review\": \"NOT_RUN\"\n}\n",
+    "raw_reextracted_stderr": "",
+    "reextracted_exit_code": 0,
+    "final_code_binding": "PASS",
+    "author_tests": {
+      "status": "PASS",
+      "count": 73,
+      "run": "author_run_005"
+    },
+    "actual_process_recovery": {
+      "status": "PASS",
+      "count": 3,
+      "run": "author_run_006"
+    },
+    "schema_oracle": {
+      "status": "PASS",
+      "instances": 2369,
+      "run": "author_run_003"
+    },
+    "formal_preflight": {
+      "status": "BLOCKED",
+      "exit_code": 3
+    },
+    "independent_acceptance": "NOT_RUN",
+    "real_anki_game_e2e": "NOT_RUN",
+    "production_integration": "BLOCKED"
+  },
+  "exports": [
+    {
+      "filename": "P12_README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 8541,
+      "sha256": "6979b89489f955e39bc134d672d47ae52bf6ffb04584f416e862a615c9406829"
+    },
+    {
+      "filename": "P12_delivery_manifest.sha256.tsv",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "size_bytes": 107656,
+      "sha256": "0babd1502d2784a5ee79775c34033335db8212700ad387951eaf62901bd6ad38"
+    },
+    {
+      "filename": "P12_ipc_schema.json",
+      "package_relative_path": "contracts/anki_transport/ipc_schema.json",
+      "size_bytes": 21136,
+      "sha256": "20621f3db386e51d7f99b1deb43b79f2813382753e6398ef26a916d5fc5b8705"
+    },
+    {
+      "filename": "P12_protocol_version_matrix.tsv",
+      "package_relative_path": "contracts/anki_transport/protocol_version_matrix.tsv",
+      "size_bytes": 1055,
+      "sha256": "cbe9ad2b4e10f6832ff3a83d99b8300f3e79e7ea102074f8481d58669500eeed"
+    }
+  ],
+  "no_circular_hash": "This external receipt binds archive and internal manifest; its own SHA-256 is reported separately.",
+  "actual_path_mapping": "NOT_RECEIVED",
+  "cross_module_merge_performed": false,
+  "real_personal_anki_data_collected": false
+}

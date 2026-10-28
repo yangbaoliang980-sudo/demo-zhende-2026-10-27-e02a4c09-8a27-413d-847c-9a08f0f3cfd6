@@ -1,0 +1,11 @@
+local_acceptance_id	upstream_requirement	acceptance	evidence_level	author_execution_status	evidence	independent_receiver	independent_status
+P12-AC-01	REQ-026 / V6 P12-4.1	文件交换与本机IPC比较	DOCUMENT_AUTHOR_REVIEW	COMPLETED	contracts/anki_transport/transport_comparison.md	P13/P34	NOT_RUN
+P12-AC-02	IC-14 / V6 P12-4.2	版本与三类请求/响应可无歧义解析	AUTHOR_CONTRACT	PASS	parser_contract_tests + schema_oracle	P32/P35	NOT_RUN
+P12-AC-03	IC-18 / V6 P12-6	成功ACK仅在提交证明后；隔离不授奖	AUTHOR_CONTRACT	PASS	ack_replay_tests + bridge.py	P32/P21/P35	NOT_RUN
+P12-AC-04	IC-18 / V6 P12-6	重放不二次授奖，ACK丢失先查询	AUTHOR_CONTRACT_AND_PROCESS	PASS	ack_replay_tests + author_run_006	P32/P35	NOT_RUN
+P12-AC-05	IC-14 / V6 P12-4.4	损坏包/断开/乱序/重复可保留处理	AUTHOR_SOCKET_AND_MOCK	PASS	wire_outbox_tests + ack_replay_tests	P32/P34	NOT_RUN
+P12-AC-06	IC-14 / V6 P12-6	仅本机绑定、配对作用域、最小字段	AUTHOR_BOUNDARY_TEST	PASS	wire_outbox_tests + parser_contract_tests	P38	NOT_RUN
+P12-AC-07	V6 P12-2	实际路径映射与工程覆盖授权	FORMAL_GATE	BLOCKED	path_mapping_request.json	P13	NOT_RUN
+P12-AC-08	REQ-011 / REQ-025	真实Anki源事实与采集前后边界	REAL_RUNTIME	NOT_RUN	sources/P10/sample_inventory.json	P10/P34	NOT_RUN
+P12-AC-09	REQ-026 / V6 P12-6	真实P21提交/查询/恢复连续性	PRODUCTION_CONTRACT	NOT_RUN	formal_prerequisites.json	P21/P32/P35	NOT_RUN
+P12-AC-10	REQ-003 / V6 P12-5	实体源码/样例/证据逐件可校验	DELIVERY_BYTES	PASS	delivery_manifest.sha256.tsv; external receipt	P35	NOT_RUN

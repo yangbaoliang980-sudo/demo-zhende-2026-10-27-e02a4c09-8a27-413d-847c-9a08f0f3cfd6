@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "status": "PASS",
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "mocks.anki_transport.export_vectors"
+  ]
+}

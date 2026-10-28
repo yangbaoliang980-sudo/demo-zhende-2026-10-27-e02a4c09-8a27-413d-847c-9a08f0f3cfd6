@@ -1,0 +1,574 @@
+{
+  "schema_version": "P12-VERIFICATION/0.1.0",
+  "delivery_version": "P12-ANKI-TRANSPORT/0.1.0-isolated",
+  "author_design_review": "COMPLETED_NOT_INDEPENDENT",
+  "formal_design_review": "NOT_RUN",
+  "input_integrity": {
+    "status": "PASS",
+    "unique_archives": 21,
+    "file_members": 933,
+    "relay_manifest_checks": 403,
+    "internal_manifest_checks": 307
+  },
+  "author_unit_contract": {
+    "status": "PASS",
+    "executed": 46,
+    "evidence": "evidence/author_run_005/all.stderr.log"
+  },
+  "author_socket_outbox": {
+    "status": "PASS",
+    "executed": 27,
+    "evidence": "evidence/author_run_005/all.stderr.log"
+  },
+  "author_combined": {
+    "status": "PASS",
+    "executed": 73,
+    "failed": 0,
+    "skipped": 0,
+    "evidence": "evidence/author_run_005/run_receipt.json"
+  },
+  "schema_oracle": {
+    "status": "PASS",
+    "compared": 2369,
+    "validator": "jsonschema 4.25.1",
+    "evidence": "evidence/author_run_003/oracle.json"
+  },
+  "author_process_recovery": {
+    "status": "PASS",
+    "executed": 3,
+    "evidence": "evidence/author_run_006/process_replay/summary.json",
+    "scope": "Linux sockets and real processes with synthetic P11/P21 dependencies"
+  },
+  "formal_prerequisite_check": {
+    "status": "BLOCKED",
+    "exit_code": 3,
+    "evidence": "evidence/preflight/run_receipt.json"
+  },
+  "formal_contract_acceptance": "NOT_RUN",
+  "windows_target": "NOT_RUN",
+  "macos_target": "NOT_RUN",
+  "physical_network_disconnect": "NOT_RUN",
+  "power_loss_or_disk_fault": "NOT_RUN",
+  "real_anki_hook": "NOT_RUN",
+  "real_game_engine": "NOT_RUN",
+  "p21_production_transaction": "NOT_RUN",
+  "real_anki_game_e2e": "NOT_RUN",
+  "P32_independent_automation": "NOT_RUN",
+  "P33_manual": "NOT_RUN",
+  "P35_evidence_gate": "NOT_RUN",
+  "P38_local_binding_and_minimization_review": "NOT_RUN",
+  "production_integration": "BLOCKED",
+  "test_cases": [
+    {
+      "name": "test_apply_requires_durable_receipt",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_apply_requires_durable_receipt",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_backend_backpressure_keeps_request_unconfirmed",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_backend_backpressure_keeps_request_unconfirmed",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_bound_p11_resolution_is_observed_read_only",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_bound_p11_resolution_is_observed_read_only",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_bound_rejected_case_has_durable_rejection",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_bound_rejected_case_has_durable_rejection",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_commit_then_reply_loss_queries_existing_result",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_commit_then_reply_loss_queries_existing_result",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_default_closed_evidence_quarantines_without_award",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_default_closed_evidence_quarantines_without_award",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_exact_replay_and_new_delivery_id_do_not_reaward",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_exact_replay_and_new_delivery_id_do_not_reaward",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_failure_before_commit_safe_retry",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_failure_before_commit_safe_retry",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_foreign_or_unapproved_receipt_origin_fails_closed",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_foreign_or_unapproved_receipt_origin_fails_closed",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_identity_conflict_preserves_original_award",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_identity_conflict_preserves_original_award",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_not_found_is_read_only_not_award",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_not_found_is_read_only_not_award",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_out_of_order_restore_requires_p11_resolution",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_out_of_order_restore_requires_p11_resolution",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_pending_compensation_is_not_quarantine_no_award_claim",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_pending_compensation_is_not_quarantine_no_award_claim",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_policy_withheld_quarantines",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_policy_withheld_quarantines",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_production_bootstrap_is_unavailable",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_production_bootstrap_is_unavailable",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_quarantine_replay_does_not_release",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_quarantine_replay_does_not_release",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_queries_do_not_recompute_rewards_or_write",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_queries_do_not_recompute_rewards_or_write",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_query_cannot_expose_other_beneficiary",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_query_cannot_expose_other_beneficiary",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_receipt_for_different_transaction_rejected",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_receipt_for_different_transaction_rejected",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_received_only_query_requests_safe_resubmit",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_received_only_query_requests_safe_resubmit",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_restore_duplicate_never_double_awards",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_restore_duplicate_never_double_awards",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_restore_fence_blocks_even_existing_receipts",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_restore_fence_blocks_even_existing_receipts",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_scope_change_never_reaches_ledger",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_scope_change_never_reaches_ledger",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_tampered_receipt_never_success",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_tampered_receipt_never_success",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_undo_before_original_is_not_reward_ack",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_undo_before_original_is_not_reward_ack",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_undo_duplicate_and_original_replay_follow_current_state",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_undo_duplicate_and_original_replay_follow_current_state",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_unknown_authority_never_acks",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_unknown_authority_never_acks",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_unverified_epoch_quarantines",
+      "qualified_name": "ack_replay_tests.AckReplayTests.test_unverified_epoch_quarantines",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_boolean_not_integer_revision",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_boolean_not_integer_revision",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_depth_limit_before_decoder",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_depth_limit_before_decoder",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_duplicate_nested_key",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_duplicate_nested_key",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_duplicate_top_level_key",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_duplicate_top_level_key",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_extra_fields_and_privacy_fields_are_closed",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_extra_fields_and_privacy_fields_are_closed",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_hello_without_supported_version_rejects",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_hello_without_supported_version_rejects",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_incompatible_versions_have_explicit_rejection",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_incompatible_versions_have_explicit_rejection",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_invalid_utf8_bom_surrogate_and_trailing_data",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_invalid_utf8_bom_surrogate_and_trailing_data",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_malformed_ack_missing_commit_rejected_by_client_schema",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_malformed_ack_missing_commit_rejected_by_client_schema",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_node_limit",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_node_limit",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_nonfinite_and_float_and_unsafe_integer",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_nonfinite_and_float_and_unsafe_integer",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_nonopaque_references_rejected",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_nonopaque_references_rejected",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_quarantine_cannot_be_terminal_or_awarded",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_quarantine_cannot_be_terminal_or_awarded",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_review_and_control_shapes",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_review_and_control_shapes",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_size_limit",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_size_limit",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_unknown_message_protocol_and_payload_version",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_unknown_message_protocol_and_payload_version",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_unproven_identity_not_generated_by_transport",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_unproven_identity_not_generated_by_transport",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_valid_event_roundtrip",
+      "qualified_name": "parser_contract_tests.ParserContractTests.test_valid_event_roundtrip",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_authenticated_malformed_json_gets_rejected_not_silently_dropped",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_authenticated_malformed_json_gets_rejected_not_silently_dropped",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_authenticated_socket_roundtrip_and_readonly_query",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_authenticated_socket_roundtrip_and_readonly_query",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_authority_change_cannot_clear_watched_outbox",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_authority_change_cannot_clear_watched_outbox",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_bad_key_closes_before_ledger",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_bad_key_closes_before_ledger",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_bad_response_leaves_unconfirmed_data",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_bad_response_leaves_unconfirmed_data",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_bounded_retry_budget_and_backoff_keep_data",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_bounded_retry_budget_and_backoff_keep_data",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_corrupt_mac_closes_before_parser",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_corrupt_mac_closes_before_parser",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_disconnect_before_send_reconnect_queries_then_submits",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_disconnect_before_send_reconnect_queries_then_submits",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_fragmented_receive_keeps_frame_boundaries",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_fragmented_receive_keeps_frame_boundaries",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_lease_prevents_simultaneous_sender_attempts",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_lease_prevents_simultaneous_sender_attempts",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_lost_ack_outbox_reopens_then_queries_without_reaward",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_lost_ack_outbox_reopens_then_queries_without_reaward",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_old_challenge_signature_rejected_on_new_connection",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_old_challenge_signature_rejected_on_new_connection",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_outbox_corruption_is_not_silently_resubmitted",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_outbox_corruption_is_not_silently_resubmitted",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_outbox_payload_conflict_preserves_first_bytes",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_outbox_payload_conflict_preserves_first_bytes",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_outbox_quota_does_not_evict_unconfirmed",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_outbox_quota_does_not_evict_unconfirmed",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_outbox_semantic_duplicate_reuses_original_delivery_id",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_outbox_semantic_duplicate_reuses_original_delivery_id",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_oversized_wire_header_closes_without_body_allocation",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_oversized_wire_header_closes_without_body_allocation",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_pairing_key_and_directory_permissions",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_pairing_key_and_directory_permissions",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_parallel_duplicate_clients_award_once",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_parallel_duplicate_clients_award_once",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_quarantine_is_retained_and_watched_after_reopen",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_quarantine_is_retained_and_watched_after_reopen",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_reject_all_nonliteral_loopback_bindings",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_reject_all_nonliteral_loopback_bindings",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_request_and_scope_binding_are_checked_before_settlement",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_request_and_scope_binding_are_checked_before_settlement",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_response_authentication_failure",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_response_authentication_failure",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_source_scope_change_cannot_reopen_existing_outbox",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_source_scope_change_cannot_reopen_existing_outbox",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_stale_attempt_cannot_overwrite_newer_result",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_stale_attempt_cannot_overwrite_newer_result",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_symlink_outbox_and_key_are_rejected",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_symlink_outbox_and_key_are_rejected",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "name": "test_truncated_frame_does_not_reach_ledger",
+      "qualified_name": "wire_outbox_tests.WireOutboxTests.test_truncated_frame_does_not_reach_ledger",
+      "status": "PASS",
+      "level": "AUTHOR_ISOLATED",
+      "independent_status": "NOT_RUN"
+    }
+  ]
+}

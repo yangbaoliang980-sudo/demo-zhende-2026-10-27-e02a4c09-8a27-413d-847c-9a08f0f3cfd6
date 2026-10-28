@@ -1,0 +1,151 @@
+{
+  "schema_version": "P12-WIRE-VECTORS/0.1.0",
+  "evidence_scope": "SYNTHETIC_P11_P21_ONLY",
+  "newline_note": "Files end in LF. Wire hashes exclude the final LF. HMAC/length use actual transmitted bytes.",
+  "records": [
+    {
+      "path": "mocks/anki_transport/fixtures/01_hello.request.json",
+      "wire_bytes": 336,
+      "wire_sha256": "e815526962fd6511cf6f81f34052fc1c8a166688eaf09a7c8f98356fe77cd70e",
+      "file_bytes": 337,
+      "file_sha256": "65fff0cb4a54bbf1c2f044d59932d525493e463b6a91847a07f83967eed34f16",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/01_hello.response.json",
+      "wire_bytes": 660,
+      "wire_sha256": "745d807031f42abe83d92a71fee80a3dc13904aba89ad94e5b08261ba1969d80",
+      "file_bytes": 661,
+      "file_sha256": "99603d587363c114e4f9ccf7bc2eed438dd92a9c0ea204d6de237c8a908fb926",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/02_review.request.json",
+      "wire_bytes": 746,
+      "wire_sha256": "c8e492d8a5729d6e07ce3a70852aee7ec813cc9f9c15a7a3fc9874aa760c4ec1",
+      "file_bytes": 747,
+      "file_sha256": "a24fe4bb7180aa51c730b21d73b4d86152c271b91e0c05ae6121270c86cbf602",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/02_review.response.json",
+      "wire_bytes": 1028,
+      "wire_sha256": "a6812413990e0b6bd5a1a98dcbe3c4c938d97d118d8cca5622d5f6b2cf5f0f55",
+      "file_bytes": 1029,
+      "file_sha256": "d2f2f42cba53c6d6a6635c2545d42173a3564a92f84745be6386b4083f9e5766",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/03_review_replay.request.json",
+      "wire_bytes": 746,
+      "wire_sha256": "c8e492d8a5729d6e07ce3a70852aee7ec813cc9f9c15a7a3fc9874aa760c4ec1",
+      "file_bytes": 747,
+      "file_sha256": "a24fe4bb7180aa51c730b21d73b4d86152c271b91e0c05ae6121270c86cbf602",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/03_review_replay.response.json",
+      "wire_bytes": 1028,
+      "wire_sha256": "a6812413990e0b6bd5a1a98dcbe3c4c938d97d118d8cca5622d5f6b2cf5f0f55",
+      "file_bytes": 1029,
+      "file_sha256": "d2f2f42cba53c6d6a6635c2545d42173a3564a92f84745be6386b4083f9e5766",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/04_query_applied.request.json",
+      "wire_bytes": 381,
+      "wire_sha256": "f952aaff1be3ad4e612a03bd85ca1df34e9acea40f7c50d7485427ca6c4573d4",
+      "file_bytes": 382,
+      "file_sha256": "695e1bb96cbe84ba85d5518885480bf0efa26ddbf85ae321533654ce65dcdcbe",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/04_query_applied.response.json",
+      "wire_bytes": 1028,
+      "wire_sha256": "46d8ce3cfa1eec39ee393074af61c5ad306c3083287e0cd223c0b4f84fb7af3e",
+      "file_bytes": 1029,
+      "file_sha256": "0f4495f2f612c078497349544fb7b77e9d3e07ba48f4f764369349b1590052ee",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/05_undo.request.json",
+      "wire_bytes": 746,
+      "wire_sha256": "357b7a7b0f0d964e5c4e87b8ad2220200ec023104d43c8990381279b82f3d6dc",
+      "file_bytes": 747,
+      "file_sha256": "b82350f79aaa44ee83dba76982ab32ea84ec0a113e183fc74f2c43407bc3837f",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/05_undo.response.json",
+      "wire_bytes": 1025,
+      "wire_sha256": "f6ebc5a4eeeb7afae0cfa1809e11936ffc73cb104a4b1673713be95b7f252732",
+      "file_bytes": 1026,
+      "file_sha256": "797c16d7432b439bc13f174875bb355257c85fadac841cb1cb2d18ac10bf1edd",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/06_restore.request.json",
+      "wire_bytes": 750,
+      "wire_sha256": "9f40e1833f43c00810402f1ec889edfa64b21e40e6105d2b9906bb13f14cd230",
+      "file_bytes": 751,
+      "file_sha256": "9114dfd90354c02126ba676422c59c922c0705f26fe96a0225580698c572599d",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/06_restore.response.json",
+      "wire_bytes": 1028,
+      "wire_sha256": "7c396f152ef15cc10c2eecce54ed5454f579e7582f2a180ad0836ad31bbb06d0",
+      "file_bytes": 1029,
+      "file_sha256": "eaa089ef0f860d28bb2af9aedf8ecd67c7453737829f2a198054adebe44388c6",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/07_wrong_version.request.json",
+      "wire_bytes": 737,
+      "wire_sha256": "2c1ed9d486eb99261b850677ec5cb5e9105f9d48ef7ff3d8f3dda3e9d4def4ac",
+      "file_bytes": 738,
+      "file_sha256": "5e4b197f74b2f7b798193654fa8c881f2ad2cffaa55bb22f70573c283b08e5c1",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/07_wrong_version.response.json",
+      "wire_bytes": 671,
+      "wire_sha256": "687a729273e872a14ce8001e8e4c76df86588b2a0363381170b19c3cb27a11a1",
+      "file_bytes": 672,
+      "file_sha256": "e2ce522016e0c637a30a2d2034db737d027c0f9c55347c7b4079e53fda64215c",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/08_quarantine.request.json",
+      "wire_bytes": 746,
+      "wire_sha256": "0d02f9f133b0940e1c8b1c685d2049fef5d5aa0c2472c183fd0f7e24198d426d",
+      "file_bytes": 747,
+      "file_sha256": "27792d4cb827edd50642c1f19adbe43e8379d6e7e6b98fb5cf3626cd31153753",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/08_quarantine.response.json",
+      "wire_bytes": 1062,
+      "wire_sha256": "8c8018ca1350a7ef3d2b72544e890cafc61b2b613f3efad6f01f4842877b4b4c",
+      "file_bytes": 1063,
+      "file_sha256": "17f8760ca005594c404afa8a5fcbe8faf392242ae359e101fb22529b6ab3a581",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/09_causal_gap.request.json",
+      "wire_bytes": 750,
+      "wire_sha256": "f2170a213e4a07dd442932747716e356cb9306801269b491979fda6b346291db",
+      "file_bytes": 751,
+      "file_sha256": "02186a6d28111cc6370e52be427519193ba89e534a44212237b6d5afb78cdbb4",
+      "scope": "SYNTHETIC_ONLY"
+    },
+    {
+      "path": "mocks/anki_transport/fixtures/09_causal_gap.response.json",
+      "wire_bytes": 1060,
+      "wire_sha256": "c42c9bed11fdfb405f3d278573d90dd453024e367f8930280e7e879bd467f246",
+      "file_bytes": 1061,
+      "file_sha256": "6418ad2c18b741d49d5e35fca837cb1e7a597ca1f09f1c9d43aa8bbeedceeb88",
+      "scope": "SYNTHETIC_ONLY"
+    }
+  ]
+}

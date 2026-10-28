@@ -1,0 +1,317 @@
+{
+  "schema_version": "P11-LEDGER-INVARIANTS/0.1.0",
+  "task_id": "P11-S05-LEDGER-001",
+  "business_owner": "P11",
+  "business_states": [
+    "APPLIED",
+    "REVERTED",
+    "QUARANTINED",
+    "PENDING_RECONCILIATION",
+    "REJECTED"
+  ],
+  "invariants": [
+    {
+      "id": "INV-001",
+      "statement": "持久接收不等于授奖",
+      "author_tests": [
+        "test_receive_is_durable_without_award"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-008"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-002",
+      "statement": "同一可信身份重投N次最多一份有效授权",
+      "author_tests": [
+        "test_one_thousand_duplicate_deliveries_authorize_once",
+        "test_serializable_concurrent_duplicates"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-005"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-003",
+      "statement": "同身份不同载荷只隔离冲突",
+      "author_tests": [
+        "test_same_identity_different_payload_quarantines_only_conflict"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-006"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-004",
+      "statement": "政策/映射/日期变化不重置唯一性",
+      "author_tests": [
+        "test_policy_mapping_day_change_cannot_reaward_duplicate",
+        "test_restore_uses_original_policy_and_only_missing_amount"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-011"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-005",
+      "statement": "正常同卡下一次复习保留独立事件",
+      "author_tests": [
+        "test_independent_event_on_same_card_is_not_deduplicated"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-007"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-006",
+      "statement": "身份或能力不足全部四键隔离",
+      "author_tests": [
+        "test_default_closed_gate_quarantines_all_four_buttons",
+        "test_missing_identity_is_quarantined",
+        "test_real_source_cannot_use_fixture_evidence"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-021",
+        "P11-REPLAY-022"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-007",
+      "statement": "仅凭权威持久提交凭证产生成功ACK",
+      "author_tests": [
+        "test_bad_receipt_cannot_emit_ack_applied",
+        "test_lost_commit_response_never_acknowledges_without_lookup"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-023"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-008",
+      "statement": "账本/来源权益/钱包/审计/提交凭证同事务",
+      "author_tests": [
+        "test_atomic_failure_rolls_back_both_wallet_and_ledger",
+        "test_crash_after_ledger_before_wallet",
+        "test_crash_after_wallet_before_commit",
+        "test_crash_before_commit"
+      ],
+      "replay_cases": [],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-009",
+      "statement": "Undo先到保存墓碑，迟到原完成不得授奖",
+      "author_tests": [
+        "test_undo_before_original_creates_durable_tombstone"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-009"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-010",
+      "statement": "撤销重投不二次回收，原完成重投不恢复",
+      "author_tests": [
+        "test_repeated_undo_cannot_double_debit",
+        "test_undo_unspent_and_replay_original_remain_reverted"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-010"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-011",
+      "statement": "恢复仅请求原族缺失差额",
+      "author_tests": [
+        "test_spent_seven_undo_three_restore_three_matches_p08_math"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-012"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-012",
+      "statement": "未决暴露U不是债务，不默认负余额",
+      "author_tests": [
+        "test_no_reclaim_policy_records_exposure_without_debit"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-013"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-013",
+      "statement": "来源不明不猜，总余额不等于原来源余额",
+      "author_tests": [
+        "test_unknown_attribution_does_not_use_total_balance",
+        "test_other_source_funds_are_never_reclaimed"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-014",
+        "P11-REPLAY-015"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-014",
+      "statement": "隔离持久保留，新增证据绑定案件及版本",
+      "author_tests": [
+        "test_persistent_quarantine_requires_new_bound_evidence",
+        "test_resolution_cannot_apply_to_another_input",
+        "test_case_index_and_append_only_audit_survive_restart"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-016"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-015",
+      "statement": "跨epoch先隔离，重复关联不可跨权益归属",
+      "author_tests": [
+        "test_cross_epoch_replay_is_quarantined_then_linked_without_award",
+        "test_duplicate_link_cannot_cross_beneficiary_scope"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-020"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-016",
+      "statement": "旧备份没有权威连续性则不授权",
+      "author_tests": [
+        "test_old_backup_requires_p21_reconciliation_before_replay",
+        "test_no_checkpoint_is_not_proof_of_fresh_store"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-024"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-017",
+      "statement": "映射缺失不冒充已有UNKNOWN合同",
+      "author_tests": [
+        "test_missing_mapping_is_not_unknown",
+        "test_approved_fixture_unknown_category_has_single_general_branch"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-017",
+        "P11-REPLAY-018"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-018",
+      "statement": "纯钱包计算不能修改固定政策或藏入双向流水",
+      "author_tests": [
+        "test_wallet_port_cannot_mutate_frozen_policy_through_nested_dict",
+        "test_wallet_delta_cannot_hide_offsetting_credit_and_reclaim",
+        "test_stale_wallet_delta_binding_is_rejected"
+      ],
+      "replay_cases": [],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-019",
+      "statement": "拒绝不删除已授权益，不靠普通控制事件重开",
+      "author_tests": [
+        "test_reject_case_is_observable_and_not_reopened_by_restore"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-026"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "id": "INV-020",
+      "statement": "因果缺失等待，新授奖暂停仍接收可信Undo",
+      "author_tests": [
+        "test_missing_predecessor_is_persistent_and_recoverable",
+        "test_control_is_processed_when_new_policy_unavailable"
+      ],
+      "replay_cases": [
+        "P11-REPLAY-019",
+        "P11-REPLAY-025"
+      ],
+      "scope": "ISOLATED_IMPLEMENTATION_WITH_VERSIONED_SIMULATED_PORTS",
+      "formal_contract_verification": "NOT_RUN",
+      "independent_acceptance": "NOT_RUN"
+    }
+  ],
+  "accounting": {
+    "per_resource": true,
+    "equalities": [
+      "A+S=G-R",
+      "G-R+M=T+U+K"
+    ],
+    "nonnegative": [
+      "G",
+      "R",
+      "S",
+      "A",
+      "T",
+      "U",
+      "K",
+      "M"
+    ],
+    "forbidden": "U>0 and M>0",
+    "U_is_player_debt": false
+  },
+  "limits": [
+    "P10 must prove stable source identity and causality.",
+    "P21 must enforce serializable atomic commit and authoritative durable lookup.",
+    "Full backup rollback of every witness cannot be detected without independent evidence.",
+    "Budget, daily boundaries, compensation policies and P17 attribution are not implemented by P11."
+  ]
+}

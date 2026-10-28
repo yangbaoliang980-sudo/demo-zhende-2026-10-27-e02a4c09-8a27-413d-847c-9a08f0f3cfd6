@@ -1,0 +1,1844 @@
+[
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "compensation_log.jsonl",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "defect_log.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "event_replay_fixtures.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_001/input_hashes.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_001/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_001/unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_001/unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_002/failing_sources.zip",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_002/input_hashes.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_002/regression.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_002/regression.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_002/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_003/input_hashes.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_003/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_003/unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_003/unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/input_hashes.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-001.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-002.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-003.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-004.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-005.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-006.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-007.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-008.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-009.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-010.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-011.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-012.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-013.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-014.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-015.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-016.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-017.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-018.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-019.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-020.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-021.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-022.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-023.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-024.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-025.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/P11-REPLAY-026.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/compensation_log.jsonl",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay/summary.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/replay.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/author_run_004/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/delivery_consistency.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/findings.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/github_p10_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/github_v6_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/intake_archives.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/intake_report.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "evidence/intake/upstream_manifest_checks.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_invariants.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/__main__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/audit.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/ports.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/service.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "ledger_runtime/types.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "path_mapping_request.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "reconciliation_and_recovery.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/compensation_arithmetic_cases.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/four_rating_policy_matrix.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/policy_cases.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/policy_record.proposal.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/quarantine_resolution_policy.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P08/undo_compensation_options.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P09/anki_field_observations.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P09/classification_spec.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P09/field_protocol_proposal.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P09/mapping_release_registry.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P09/pos_mapping_rules.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/QUARANTINED.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/hook_probe_report.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/p01_requirements_baseline_v6.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/sample_inventory.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "sources/P10/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "study_ledger_state_machine.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "task_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/crash_worker.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/support/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/support/simulated_ports.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/support/sqlite_atomic_model.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "tests/test_ledger.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "verification/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "verification/replay.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "verification/run_author_checks.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "verification/verify_delivery.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/54185f5093f1e7ce/P11_StudyLedger_V0.1",
+    "path": "verification_status.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "QUARANTINED.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "addon_manifest.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "anki_hook_probe.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "configuration_disable_uninstall.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "deliverable_status.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/input_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/report_guard_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/report_guard_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/static_reference.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/author_run_002/static_reference.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/anki_ref.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/git_blob_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/intake.exec_output.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/intake_archives_method.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/intake_execution_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/intake_report.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/p09_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/upstream_manifest_checks.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/intake/v6_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "evidence/reproduction_and_revision_notes.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "hook_probe_report.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "probe_log_redacted.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "reference_inputs.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "rfc_ic14_ic15.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sample_inventory.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/LICENSE",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/proto/anki/collection.proto",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/pylib/anki/collection.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/aqt/main.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/aqt/operations/__init__.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/aqt/operations/collection.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/aqt/reviewer.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/aqt/undo.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/qt/tools/genhooks_gui.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/anki_reference/source-version.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p01_requirements_baseline_v6.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p08_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p08_quarantine_resolution_policy.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p08_study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p09_anki_field_observations.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p09_field_protocol_proposal.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p09_formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/p09_source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "sources/upstream/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "verification/run_author_checks.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "verification/test_report_guards.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "verification/verify_delivery.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/214d2600c67a9b59/P10_S04_Probe_Report_V0.1",
+    "path": "verification_status.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/acceptance_matrix.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/decisions_pending.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_environment.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_review.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_revision_notes.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/policy_static.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/policy_static.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/run_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/validator_guards.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/author_run_001/validator_guards.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/github_read_evidence.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/intake_findings.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/intake_variants.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/packaging_failure_001/failed_script.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/packaging_failure_001/failure_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/packaging_failure_001/stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/packaging_failure_001/stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p01_decisions_pending.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p01_requirements.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p01_scope.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p05_balance_parameters.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p05_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p05_reward_abuse_cases.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p05_stage_resource_budget.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p07_first_clear_policy.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p07_github_answer.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p07_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p07_stage_graph.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/p07_stage_rewards.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/readonly_sources/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/evidence/table_authoring.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/format_and_usage.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/p07_boundary_response.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/path_mapping_request.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/quarantine_resolution_policy.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/undo_compensation_options.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/verification/run_author_checks.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/verification/test_policy_guards.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/verification/verify_manifest.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/verification/verify_policy_artifacts.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "design/anki_rewards/verification/verify_sources.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/compensation_arithmetic_cases.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/four_rating_policy_matrix.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/policy_cases.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/policy_record.proposal.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/policy_registry.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/rating_matrix_data.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/resource_mapping_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/delivery_manifest.sha256.tsv",
+    "base": "inputs/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1",
+    "path": "spec/anki/reward_semantics/study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "README.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/category_dictionary.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/classification_cases.jsonl",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/example_entries.synthetic.jsonl",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/field_profile.synthetic.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/fixtures/rollback_rules.synthetic.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/mapping_release_registry.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/override_log.synthetic.jsonl",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/pos_mapping_rules.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/resource_affinity_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/schema/mapping_input.schema.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/schema/mapping_output.schema.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/schema/override_event.schema.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "content/linguistic/unknown_fallback_cases.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/anki_field_observations.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/blockers.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/classification_spec.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/downstream_handoff.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/environment.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_001/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/environment.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_002/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/author_unit.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/author_unit.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/environment.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/formal_preflight.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/formal_preflight.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/input_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/mapping_cases.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/mapping_cases.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/run_results.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/sources.stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/author_run_003/sources.stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/cli_demo_001/run_result.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/cli_demo_001/stderr.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/cli_demo_001/stdout.log",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/intake/git_blob_bindings.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/intake/intake_report.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/intake/p08_github_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/intake/v6_github_tree.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_archives/received_relay_materials.zip",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p01_requirements_baseline_v6.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p01_requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p08_delivery_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p08_interface_rfc.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p08_resource_mapping_candidates.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p08_source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/p08_study_policy_draft.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/readonly_sources/v6_freeze.txt",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/evidence/setup_probe.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/field_protocol_proposal.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/formal_prerequisites.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/known_issues_and_history.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/override_and_rollback.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/path_mapping_request.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/reference/demo.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/reference/pos_mapper.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/requirements_traceability.tsv",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/rfc_ic15_ic16.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/source_input_receipt.json",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/source_notes.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/reproduction_notes.md",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/run_checks.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/test_override_replay.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/test_pos_mapper.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/verify_delivery.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/verify_manifest.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification/verify_source_inputs.py",
+    "status": "PASS"
+  },
+  {
+    "manifest": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1/delivery_manifest.sha256.tsv",
+    "base": "inputs/d2418d564772963d/P09_Linguistic_Mapping_V0.1",
+    "path": "design/linguistic/verification_status.json",
+    "status": "PASS"
+  }
+]

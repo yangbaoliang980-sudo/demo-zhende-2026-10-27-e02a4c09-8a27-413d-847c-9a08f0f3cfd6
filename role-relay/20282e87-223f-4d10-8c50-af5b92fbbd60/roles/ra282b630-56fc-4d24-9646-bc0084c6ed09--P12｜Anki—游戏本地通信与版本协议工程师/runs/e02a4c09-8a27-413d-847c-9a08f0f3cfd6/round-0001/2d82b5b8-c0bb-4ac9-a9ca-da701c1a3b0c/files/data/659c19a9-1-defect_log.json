@@ -1,0 +1,45 @@
+{
+  "schema_version": "P12-DEFECT-LOG/0.1.0",
+  "functional_test_failures_observed": 0,
+  "independent_retest": "NOT_RUN",
+  "records": [
+    {
+      "id": "P12-DEV-CHECKER-001",
+      "class": "AUTHOR_TOOLING",
+      "owner": "P12",
+      "initial_status": "FAIL",
+      "root_cause": "P08 manifest paths are rooted at package root, not manifest parent; initial local checker used wrong base",
+      "retained_failure": "evidence/intake/upstream_manifest_checks_attempt_001.json",
+      "fix": "use original P08 package root without editing any upstream file",
+      "verified_result": "307/307 PASS in upstream_manifest_checks.json",
+      "source_conflict": false
+    },
+    {
+      "id": "P12-DEV-DEP-001",
+      "class": "ENVIRONMENT",
+      "owner": "P12",
+      "initial_status": "FAIL",
+      "evidence": "evidence/development/dependency-install.log",
+      "fix": "public dependency download into isolated dev directory through approved execution scope",
+      "verified_result": "schema oracle PASS; no runtime dependency introduced"
+    },
+    {
+      "id": "P12-DEV-ENV-001",
+      "class": "ENVIRONMENT",
+      "owner": "P12",
+      "initial_status": "FAIL",
+      "evidence": "evidence/development/observed_tool_failures.json",
+      "verified_result": "final loopback socket and subprocess tests PASS"
+    },
+    {
+      "id": "P12-DEV-PATH-001",
+      "class": "AUTHOR_TOOLING",
+      "owner": "P12",
+      "initial_status": "FAIL",
+      "evidence": "evidence/development/observed_tool_failures.json",
+      "verified_result": "9 request/response pairs generated and validated"
+    }
+  ],
+  "two_rework_rounds_without_new_evidence": false,
+  "policy": "Do not erase failures, change upstream source owners, or claim independent PASS."
+}

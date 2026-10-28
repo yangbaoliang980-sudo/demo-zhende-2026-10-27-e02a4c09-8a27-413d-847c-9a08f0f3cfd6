@@ -1,0 +1,87 @@
+{
+  "schema_version": "P10-PREREQUISITE-RECORD/0.1.0",
+  "task_id": "P10-S04-PROBE-001",
+  "production_authorized": false,
+  "checks": [
+    {
+      "id": "P10-B01",
+      "owner": "P34",
+      "required_artifact": "目标Anki完整版本/build、目标OS/架构、环境指纹与可操作测试机",
+      "gate": "TARGET_PROBE",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "id": "P10-B02",
+      "owner": "P13",
+      "required_artifact": "真实工程固定提交、actual_path_mapping.json、写入白名单与禁改清单",
+      "gate": "PRODUCTION_WRITE",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "id": "P10-B03",
+      "owner": "P38",
+      "required_artifact": "获准字段、测试档案范围、用途、保留/脱敏与授权来源",
+      "gate": "TARGET_COLLECTION",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "id": "P10-B04",
+      "owner": "P12",
+      "required_artifact": "获准IC-14跨进程Schema、版本兼容表、身份/ACK合同及接收回执",
+      "gate": "S05_PLUGIN",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "id": "P10-B05",
+      "owner": "P08",
+      "required_artifact": "有效复习/Undo语义草案；本次收到proposal，不是批准的奖值",
+      "gate": "PROBE_SEMANTIC_INPUT",
+      "evidence_ref": "sources/upstream/p08_study_policy_draft.md",
+      "status": "PROPOSAL_RECEIVED",
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "size_bytes": 18083
+    },
+    {
+      "id": "P10-B06",
+      "owner": "P09",
+      "required_artifact": "字段观察格式建议；本次仅有零真实观察报告",
+      "gate": "FIELD_OBSERVATION_CONTEXT",
+      "evidence_ref": "sources/upstream/p09_anki_field_observations.md",
+      "status": "PROPOSAL_RECEIVED",
+      "sha256": "0785eb381f143fc7acce6c0e6804c8d80bacea000e04fe5989af07c9473824b4",
+      "size_bytes": 3396
+    },
+    {
+      "id": "P10-B07",
+      "owner": "P10",
+      "required_artifact": "目标版四键/连续同卡/Undo/redo/备份还原与来源世代原始证据",
+      "gate": "AUTOMATIC_AWARD",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    },
+    {
+      "id": "P10-B08",
+      "owner": "P01",
+      "required_artifact": "已批准的PolicyRecord、来源范围及政策接收回执",
+      "gate": "AUTOMATIC_AWARD",
+      "evidence_ref": null,
+      "status": "BLOCKED_NOT_RECEIVED",
+      "sha256": null,
+      "size_bytes": null
+    }
+  ]
+}

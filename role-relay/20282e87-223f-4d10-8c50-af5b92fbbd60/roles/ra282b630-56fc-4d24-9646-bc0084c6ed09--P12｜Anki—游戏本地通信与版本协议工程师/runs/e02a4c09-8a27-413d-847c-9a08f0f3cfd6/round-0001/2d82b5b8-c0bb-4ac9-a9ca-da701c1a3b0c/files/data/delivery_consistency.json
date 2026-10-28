@@ -1,0 +1,15 @@
+{
+  "schema_version": "P11-DELIVERY-CONSISTENCY/0.1.0",
+  "status": "PASS",
+  "checks": [
+    "Python source parses",
+    "JSON/JSONL parses",
+    "21 source snapshot hashes",
+    "invariant test/replay references exist",
+    "final unit-tested source hashes unchanged",
+    "runtime has no direct SQLite/Anki/IPC imports"
+  ],
+  "errors": [],
+  "scope": "AUTHOR_STATIC_DELIVERY_CONSISTENCY_ONLY",
+  "independent_review": "NOT_RUN"
+}

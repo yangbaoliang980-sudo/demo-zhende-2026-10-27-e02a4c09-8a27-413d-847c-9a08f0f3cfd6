@@ -1,0 +1,31 @@
+{
+  "schema_version": "P12-PATH-MAPPING-REQUEST/0.1.0",
+  "request_id": "P12-RFC-P13-001",
+  "owner": "P13",
+  "status": "PREPARED_NOT_ACKNOWLEDGED",
+  "base_actual_path_mapping_sha256": null,
+  "actual_repository_commit": null,
+  "actual_engine": null,
+  "mappings": [
+    {
+      "design_path": "contracts/anki_transport/**",
+      "actual_path": null,
+      "authorization_sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "design_path": "runtime/anki/transport/**",
+      "actual_path": null,
+      "authorization_sha256": null,
+      "status": "BLOCKED"
+    },
+    {
+      "design_path": "mocks/anki_transport/**",
+      "actual_path": null,
+      "authorization_sha256": null,
+      "status": "BLOCKED"
+    }
+  ],
+  "current_scope": "All output paths are relative to isolated P12_AnkiTransport_V0.1, not the actual engine project.",
+  "overwrite_existing_engine": false
+}

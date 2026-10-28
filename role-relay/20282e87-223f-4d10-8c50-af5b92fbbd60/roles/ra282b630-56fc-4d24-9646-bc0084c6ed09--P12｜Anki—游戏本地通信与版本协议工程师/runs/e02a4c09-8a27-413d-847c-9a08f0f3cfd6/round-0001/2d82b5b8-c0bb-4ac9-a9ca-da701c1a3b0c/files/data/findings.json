@@ -1,0 +1,34 @@
+{
+  "schema_version": "P11-INTAKE-FINDINGS/0.1.0",
+  "author_intake_status": "PASS",
+  "top_level_original_attachment_count": 177,
+  "distinct_archives": 16,
+  "file_members": 739,
+  "relay_manifest_checks": 330,
+  "upstream_internal_manifest_checks": 202,
+  "consumed_readonly_snapshots": 21,
+  "searched_fixed_repository_trees": [
+    {
+      "commit": "d141284bc31ce08e4723259a0fbfdcdddc3780e5",
+      "entries": 736,
+      "blobs": 614
+    },
+    {
+      "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+      "entries": 170,
+      "blobs": 108
+    }
+  ],
+  "matching_runtime_or_actual_path_files_in_fixed_trees": [],
+  "search_terms": [
+    "study_ledger",
+    "ledger_runtime",
+    "wallet_delta",
+    "actual_path_mapping",
+    "atomic_store"
+  ],
+  "reuse_decision": "No pre-existing StudyLedger implementation or actual mapping found in inspected scope. Reused P08 semantics/math and P10 evidence gates; did not reimplement P09 classification.",
+  "scope_limit": "Only supplied archives and these fixed repository trees; no claim about other repos/devices.",
+  "images_opened": 0,
+  "images_needed_for_p11_logic": false
+}

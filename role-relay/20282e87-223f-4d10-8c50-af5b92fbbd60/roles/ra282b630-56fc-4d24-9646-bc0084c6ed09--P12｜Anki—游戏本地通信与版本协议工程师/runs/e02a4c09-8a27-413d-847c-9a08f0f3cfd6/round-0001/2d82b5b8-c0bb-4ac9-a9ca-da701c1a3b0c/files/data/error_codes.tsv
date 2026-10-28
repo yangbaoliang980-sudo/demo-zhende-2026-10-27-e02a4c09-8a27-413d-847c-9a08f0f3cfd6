@@ -1,0 +1,30 @@
+code	wire_or_local_result	meaning	retry_boundary	fix_owner
+E_JSON_SYNTAX	REJECTED	非法UTF-8/BOM/JSON/surrogate/尾随内容	修正序列化后由owner审查；保留原包	P12
+E_JSON_DUPLICATE	REJECTED	任何层重复键	禁止猜测最后键含义	P12
+E_JSON_NUMBER	REJECTED	浮点/非有限/不安全整数	修正来源编码	P12
+E_JSON_DEPTH	REJECTED	超过12层	收缩已批准字段	P12
+E_JSON_COMPLEXITY	REJECTED	超过512个值/键节点	收缩报文	P12
+E_FRAME_LIMIT	CLOSE_OR_REJECTED	帧为空或超过32768字节	认证前帧错误直接关闭；原包保留	P12
+E_PROTOCOL	REJECTED	非本协议	使用正确显式协议	P12
+E_PROTOCOL_VERSION	REJECTED	不在精确版本交集	停止盲重试，版本化RFC；不自动降级	P12
+E_MESSAGE_TYPE	REJECTED	未知消息/管理命令	不执行命令	P12
+E_SCHEMA	REJECTED	类型/字段/白名单/因果形状不合法	owner修正后保持源事实身份	P12
+E_PAYLOAD_VERSION	REJECTED	未知来源DTO版本	P10/P13按RFC接收	P12
+E_SCOPE	REJECTED	配对或被查询事实作用域不同	修复配对授权；不改受益人重领	P12
+E_BACKEND_UNAVAILABLE	RETRY_LATER	适配器暂不可用	保留并查询原输入	P11/P21 adapter; P12 mapping
+E_COMMIT_UNKNOWN	RETRY_LATER	提交或恢复连续性未证明	只按权威查询解析未知态	P21; P12 mapping
+E_BACKEND_CONTRACT	RETRY_LATER	权威结果/凭证不一致或未知异常	保留原输入；原责任方诊断	P11/P21 adapter; P12 mapping
+E_CAUSAL_PENDING	RETRY_LATER	业务因果/补偿或未处理收件待处理	服从next_action，新增证据由P11处理	P11
+E_QUARANTINED	ACK_QUARANTINED	有持久隔离凭证，未授奖	保留并30秒起查询	P11
+E_LEDGER_REJECTED	REJECTED	P11持久业务拒绝	保留原输入和凭证供复核	P11
+E_NOT_FOUND	STATUS	连续快照中不存在该输入	允许原字节重投；无新身份	P11/P21
+E_BACKPRESSURE	RETRY_LATER	后端容量/负载不接收	保留并退避查询	P21 adapter; P12 mapping
+E_AUTHENTICATION	CLOSE	帧认证失败	本地配对修复；不记录密钥	P12
+E_LOCAL_OUTBOX_CAPACITY_NO_EVICTION	LOCAL_ERROR	outbox容量耗尽	不淘汰，不确认；由调用方展示并治理	P12; retention P10/P38
+OK	RESULT	受支持的成功状态或HELLO	按disposition和ledger_state判断，不能单看OK授奖	P12
+E_WIRE_DEADLINE	LOCAL_ERROR_OR_CLOSE	网络总deadline超时	保留，查询；事务可能已提交	P12
+E_WIRE_TRUNCATED	LOCAL_ERROR_OR_CLOSE	帧截断或连接提前结束	保留，查询	P12
+E_NONLOCAL_PEER	CLOSE	连接来源不在受支持本机范围	拒绝连接，不修改监听范围	P12
+E_HANDSHAKE	LOCAL_ERROR	挑战帧magic不正确	保留，不信任响应	P12
+E_RESPONSE_BINDING	LOCAL_ERROR	响应不对应原请求/配对作用域	保留并调查端点/版本	P12
+E_RESPONSE_INBOX_BINDING	LOCAL_ERROR	响应指向错误来源输入	保留，不确认outbox	P12
