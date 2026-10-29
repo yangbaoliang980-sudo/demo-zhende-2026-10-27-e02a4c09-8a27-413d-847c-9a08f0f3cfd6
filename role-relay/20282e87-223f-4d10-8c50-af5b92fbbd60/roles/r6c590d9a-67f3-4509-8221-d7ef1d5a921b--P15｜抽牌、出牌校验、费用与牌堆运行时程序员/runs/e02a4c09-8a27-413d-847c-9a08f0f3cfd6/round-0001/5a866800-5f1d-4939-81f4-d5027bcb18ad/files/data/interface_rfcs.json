@@ -1,0 +1,261 @@
+{
+  "version": "P15-RFC-SET/0.1.0",
+  "task_id": "TASK-02-01",
+  "status": "PREPARED_NOT_ACKNOWLEDGED",
+  "shared_files_modified": false,
+  "requests": [
+    {
+      "rfc_id": "P15-RFC-001",
+      "version": "0.1.0",
+      "owner": "P13",
+      "consulted_roles": [
+        "P14"
+      ],
+      "interface": "IC-05",
+      "topic": "Negative candidate and request identity",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "upstream_bases": [
+        {
+          "source_id": "SRC-035",
+          "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        },
+        {
+          "source_id": "SRC-050",
+          "package_path": "upstream/P14/battle_core/ports.py",
+          "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        },
+        {
+          "source_id": "SRC-056",
+          "package_path": "upstream/P14/handoff/IC05_API.md",
+          "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        }
+      ],
+      "p15_candidate_bases": [
+        {
+          "relative_path": "deck_runtime/commands.py",
+          "size_bytes": 1488,
+          "sha256": "f8fe73472c38befe2a54b4a07e215e0910448eb6ba6a2f720b5079a67f5afe89"
+        },
+        {
+          "relative_path": "deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        },
+        {
+          "relative_path": "deck_runtime/p14_adapter.py",
+          "size_bytes": 3461,
+          "sha256": "66306b0da1967a7eef163eaf146d23cb77d1b11d2906c92b894d662f522adf82"
+        }
+      ],
+      "requested_change": "Freeze a versioned rejection result with command fingerprint, basis/version/context binding and stable reason. Confirm request_id maps to command_id rather than adding an unknown wire field. Keep P14 successful receipts authoritative.",
+      "current_behavior": "Current isolated P15 Decision is local evidence; adapter raises the actual P14 CandidateRejected injected by the composition owner. No shared DTO change.",
+      "production_integration": "BLOCKED_PENDING_OWNER_DECISION"
+    },
+    {
+      "rfc_id": "P15-RFC-002",
+      "version": "0.1.0",
+      "owner": "P13",
+      "consulted_roles": [
+        "P03",
+        "P14",
+        "P17"
+      ],
+      "interface": "IC-04",
+      "topic": "Deck-build and common-card ownership",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "upstream_bases": [
+        {
+          "source_id": "SRC-018",
+          "package_path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        },
+        {
+          "source_id": "SRC-024",
+          "package_path": "upstream/P03/content/cards/deck_build_fixtures.json",
+          "sha256": "1b8fe32b8977db17d1254270b8cf0ded31534fa6a8ce3868af2de5bc18587820",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        },
+        {
+          "source_id": "SRC-035",
+          "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        },
+        {
+          "source_id": "SRC-041",
+          "package_path": "upstream/P13/contracts/internal/examples/PartySnapshot.json",
+          "sha256": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        }
+      ],
+      "p15_candidate_bases": [
+        {
+          "relative_path": "deck_runtime/builder.py",
+          "size_bytes": 5609,
+          "sha256": "b3a156c9b06a03860a1f79203937b5945509d4083b095a29970c3c54a96ff8aa"
+        },
+        {
+          "relative_path": "fixtures/deck_policy.fixture.json",
+          "size_bytes": 624,
+          "sha256": "f2244e39cfe5e977fcb73e359cd5b2f99f32e1875e6b4587ec0d5d86320cde4b"
+        }
+      ],
+      "requested_change": "Freeze a hash-bound deck recipe/build input with per-instance common-card ownership and party provenance; specify how P14 consumes the uncommitted initial deck projection.",
+      "current_behavior": "Require explicit fixture common_owner_slots; reject production mode and missing map. P15 never constructs a production BattleState.",
+      "production_integration": "BLOCKED_PENDING_OWNER_DECISION"
+    },
+    {
+      "rfc_id": "P15-RFC-003",
+      "version": "0.1.0",
+      "owner": "P13",
+      "consulted_roles": [
+        "P14",
+        "P19"
+      ],
+      "interface": "IC-08",
+      "topic": "ActionIntent reference evidence",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "upstream_bases": [
+        {
+          "source_id": "SRC-035",
+          "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        },
+        {
+          "source_id": "SRC-056",
+          "package_path": "upstream/P14/handoff/IC05_API.md",
+          "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        }
+      ],
+      "p15_candidate_bases": [
+        {
+          "relative_path": "deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        }
+      ],
+      "requested_change": "Decide whether a reference-only ActionIntent is a shared DTO and define card/effect/content hashes and authority. It must not authorize UI state changes or duplicate P14 effect amounts.",
+      "current_behavior": "Keep ActionIntent local and immutable; send only original DeckPatchCandidate to P14.",
+      "production_integration": "BLOCKED_PENDING_OWNER_DECISION"
+    },
+    {
+      "rfc_id": "P15-RFC-004",
+      "version": "0.1.0",
+      "owner": "P14",
+      "consulted_roles": [
+        "P13",
+        "P02"
+      ],
+      "interface": "IC-05",
+      "topic": "Per-command draw report",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "upstream_bases": [
+        {
+          "source_id": "SRC-049",
+          "package_path": "upstream/P14/battle_core/model.py",
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        },
+        {
+          "source_id": "SRC-048",
+          "package_path": "upstream/P14/battle_core/core.py",
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        },
+        {
+          "source_id": "SRC-056",
+          "package_path": "upstream/P14/handoff/IC05_API.md",
+          "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        }
+      ],
+      "p15_candidate_bases": [
+        {
+          "relative_path": "deck_runtime/p14_adapter.py",
+          "size_bytes": 3461,
+          "sha256": "66306b0da1967a7eef163eaf146d23cb77d1b11d2906c92b894d662f522adf82"
+        },
+        {
+          "relative_path": "deck_runtime/deck.py",
+          "size_bytes": 5581,
+          "sha256": "777279c646cb5083076b5e459d094973c98459b5646f609c0e78b8bec14ee04c"
+        }
+      ],
+      "requested_change": "Provide an owner-versioned command-specific requested/drawn/shortfall report or distinct initial/turn requested counts; define hand-cap shortfall semantics and no-fatigue policy.",
+      "current_behavior": "Require current P14 entry_draw_requested == P15 initial_draw == P15 turn_draw. Pure P15 reports remain local. Never modify original P14.",
+      "production_integration": "BLOCKED_PENDING_OWNER_DECISION"
+    },
+    {
+      "rfc_id": "P15-RFC-005",
+      "version": "0.1.0",
+      "owner": "P03",
+      "consulted_roles": [
+        "P02",
+        "P04",
+        "P05",
+        "P22"
+      ],
+      "interface": "IC-04",
+      "topic": "Production content/policy completion",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "upstream_bases": [
+        {
+          "source_id": "SRC-018",
+          "package_path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        },
+        {
+          "source_id": "SRC-029",
+          "package_path": "upstream/P03/design/cards/party_deck_rules.md",
+          "sha256": "a720f173654ad37b5d691559dd9206854ecf469d1c18883e53b8d7a78cd4bae6",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        },
+        {
+          "source_id": "SRC-015",
+          "package_path": "upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+          "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+          "version": "P02-BATTLE-0.1.0-draft",
+          "owner": "P02"
+        }
+      ],
+      "p15_candidate_bases": [
+        {
+          "relative_path": "deck_runtime/content.py",
+          "size_bytes": 7292,
+          "sha256": "805f443e5844c76f76b3bc20666e87497c19a7a37eff922df8fd901dec1d50d6"
+        },
+        {
+          "relative_path": "card_legality_table.tsv",
+          "size_bytes": 4432,
+          "sha256": "74d87344d24ce39ee0a882b1b22de000aa3d76817ad6c39a824b43c23edef5fa"
+        }
+      ],
+      "requested_change": "Supply approved costs, targets, death-owner handling, exhaust/end-turn/draw/hand policy, official IDs and any BUFF/DEBUFF or DOT reapplication semantics. Record source versions and approvals.",
+      "current_behavior": "Use explicit mock fixtures only; unsupported/disabled cards and unresolved DOT reapplication reject. No balance redesign.",
+      "production_integration": "BLOCKED_PENDING_OWNER_DECISION"
+    }
+  ],
+  "escalation": "On the same issue, after two unsuccessful rework rounds without new evidence, escalate to P01. No such two-round failure has occurred for P15-DEF-001."
+}

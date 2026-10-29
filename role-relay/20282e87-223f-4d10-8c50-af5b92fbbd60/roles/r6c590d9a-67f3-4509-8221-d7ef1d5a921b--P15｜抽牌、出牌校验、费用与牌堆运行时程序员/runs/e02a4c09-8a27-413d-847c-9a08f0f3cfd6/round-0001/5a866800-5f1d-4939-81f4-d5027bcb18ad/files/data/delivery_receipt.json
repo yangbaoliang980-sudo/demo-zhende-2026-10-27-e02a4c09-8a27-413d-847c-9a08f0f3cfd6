@@ -1,0 +1,1447 @@
+{
+  "version": "P15-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "TASK-02-01",
+  "producer": "P15",
+  "artifact_version": "P15-DECK-RUNTIME/0.1.0-isolated",
+  "generated_utc": "2026-10-28T19:22:52.267748+00:00",
+  "scope": "AUTHOR_ISOLATED_DELIVERY_AND_PACKAGE_VERIFICATION_NOT_P32_P33_P35_OR_EXT_INTEGRATOR_ACCEPTANCE",
+  "archive": {
+    "filename": "P15_DeckRuntime_V0.1.zip",
+    "size_bytes": 5549301,
+    "sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+    "package_root": "P15_DeckRuntime_V0.1",
+    "file_count": 190,
+    "uncompressed_size_bytes": 8410682
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "size_bytes": 8509,
+      "sha256": "6e725a00ab8e4d1cf2d3446a727c51a142e92b2b0584f297f80b11ea50e0c737",
+      "package_relative_path": "README.md"
+    },
+    {
+      "filename": "P15_API.md",
+      "size_bytes": 8358,
+      "sha256": "d1b514d82574597ec72a419745117f6403bcab260ee8222d7110ac4f4d6d6cb9",
+      "package_relative_path": "handoff/P15_API.md"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "size_bytes": 4360,
+      "sha256": "79cef9731aefba35003357c52bb6a0c69c0de2bd6fed80417f150a8c6c501c75",
+      "package_relative_path": "integration_handoff.md"
+    },
+    {
+      "filename": "deck_patch_schema.json",
+      "size_bytes": 3887,
+      "sha256": "8406bf56f9f08f0fc787630435c559d0f2758b214f69a7221e3a17d0e5d47fd3",
+      "package_relative_path": "deck_patch_schema.json"
+    },
+    {
+      "filename": "invalid_play_cases.json",
+      "size_bytes": 200907,
+      "sha256": "fd700bc1caae6011369cea9e91c0ae950720c48945ddf4ed340f2d6cfff27c83",
+      "package_relative_path": "invalid_play_cases.json"
+    },
+    {
+      "filename": "deck_determinism_tests.py",
+      "size_bytes": 3143,
+      "sha256": "055aece1496532f6a84baae4ff034e9fd712f3f5d1a3de96795b1880e85b64f5",
+      "package_relative_path": "deck_determinism_tests.py"
+    },
+    {
+      "filename": "card_legality_table.tsv",
+      "size_bytes": 4432,
+      "sha256": "74d87344d24ce39ee0a882b1b22de000aa3d76817ad6c39a824b43c23edef5fa",
+      "package_relative_path": "card_legality_table.tsv"
+    },
+    {
+      "filename": "example_requests.json",
+      "size_bytes": 313813,
+      "sha256": "347dabedaac3beb05d81d0dad5ffb4ba442ee4361b912263dbee8b9e9038e450",
+      "package_relative_path": "examples/example_requests.json"
+    },
+    {
+      "filename": "demo_summary.json",
+      "size_bytes": 539,
+      "sha256": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+      "package_relative_path": "examples/demo_summary.json"
+    },
+    {
+      "filename": "verification_status.json",
+      "size_bytes": 4522,
+      "sha256": "6f73ee664f40f132ac06bda4ad602598cb3333fb9f0caeb35481eddbc26a6598",
+      "package_relative_path": "verification_status.json"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "size_bytes": 430766,
+      "sha256": "e1e3c51dff26744e82520ae96f9f4425683c97a523563a06bcbb55ea8fafa0a8",
+      "package_relative_path": "evidence/source_input_receipt.json"
+    },
+    {
+      "filename": "defect_log.json",
+      "size_bytes": 2804,
+      "sha256": "3fc42b47b64f954bda14f7913b0cb37a3fa638cd35f8da2d57e06b6cd7ee18b0",
+      "package_relative_path": "evidence/defect_log.json"
+    },
+    {
+      "filename": "input_immutability_check.json",
+      "size_bytes": 793293,
+      "sha256": "06c45882acd56368531161924a5c67521d0febcd8e168b89fd069749a6abb8d1",
+      "package_relative_path": "evidence/input_immutability_check.json"
+    },
+    {
+      "filename": "blockers.json",
+      "size_bytes": 7768,
+      "sha256": "7aaf91ebcfeed1e3bc627e3ae9e6ee04400b440826b6b9646dea199182328a39",
+      "package_relative_path": "handoff/blockers.json"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "size_bytes": 10682,
+      "sha256": "5bf234b4006bb6c31cf21546c4551c89d35cf3916cd7d8ed10a9515b38aab30a",
+      "package_relative_path": "handoff/interface_rfcs.json"
+    },
+    {
+      "filename": "contract_acceptance.json",
+      "size_bytes": 4232,
+      "sha256": "b829da114353426c280fffa6cbcabebbce50a6c6804521ffc1096f4e1921b7df",
+      "package_relative_path": "handoff/contract_acceptance.json"
+    },
+    {
+      "filename": "path_mapping_request.json",
+      "size_bytes": 2906,
+      "sha256": "f6fdd7c06e4fa9c800a9016e58567f7d2e7d3b1586a05109f882fb5188908a17",
+      "package_relative_path": "handoff/path_mapping_request.json"
+    },
+    {
+      "filename": "task_traceability.json",
+      "size_bytes": 4195,
+      "sha256": "299c5b264e2b08e7b3ccae04eccf7c863a230199ff8d92c310348d3c1dcfafb1",
+      "package_relative_path": "handoff/task_traceability.json"
+    },
+    {
+      "filename": "downstream_receipts.json",
+      "size_bytes": 39323,
+      "sha256": "f1f444c93cf6366e5219b3795912742195aaf08277c7a7203e46a559cf5261e3",
+      "package_relative_path": "handoff/downstream_receipts.json"
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "size_bytes": 121632,
+      "sha256": "328ac348891bc1c7db08e212e687a03760ec9dd11af5ee39ec5c8d052e9ed7da",
+      "package_relative_path": "delivery_manifest.sha256.tsv"
+    },
+    {
+      "filename": "deck.py",
+      "size_bytes": 5581,
+      "sha256": "777279c646cb5083076b5e459d094973c98459b5646f609c0e78b8bec14ee04c",
+      "package_relative_path": "deck_runtime/deck.py"
+    },
+    {
+      "filename": "builder.py",
+      "size_bytes": 5609,
+      "sha256": "b3a156c9b06a03860a1f79203937b5945509d4083b095a29970c3c54a96ff8aa",
+      "package_relative_path": "deck_runtime/builder.py"
+    },
+    {
+      "filename": "planner.py",
+      "size_bytes": 9275,
+      "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f",
+      "package_relative_path": "deck_runtime/planner.py"
+    },
+    {
+      "filename": "commands.py",
+      "size_bytes": 1488,
+      "sha256": "f8fe73472c38befe2a54b4a07e215e0910448eb6ba6a2f720b5079a67f5afe89",
+      "package_relative_path": "deck_runtime/commands.py"
+    },
+    {
+      "filename": "p14_adapter.py",
+      "size_bytes": 3461,
+      "sha256": "66306b0da1967a7eef163eaf146d23cb77d1b11d2906c92b894d662f522adf82",
+      "package_relative_path": "deck_runtime/p14_adapter.py"
+    }
+  ],
+  "manifest": {
+    "filename": "delivery_manifest.sha256.tsv",
+    "size_bytes": 121632,
+    "sha256": "328ac348891bc1c7db08e212e687a03760ec9dd11af5ee39ec5c8d052e9ed7da",
+    "package_relative_path": "delivery_manifest.sha256.tsv",
+    "records": 189,
+    "self_hash_policy": "Manifest excludes itself; this external receipt binds it. The receipt excludes its own hash to avoid recursion."
+  },
+  "integrity": {
+    "zip_crc": "PASS",
+    "archive_vs_original_files": "PASS",
+    "member_count": 190,
+    "exports_vs_zip_same_filename_and_original_bytes": "PASS",
+    "export_count": 25,
+    "fresh_extract_after_rerun_bytes_unchanged": "PASS",
+    "unexpected_files_after_rerun": 0
+  },
+  "archive_header_timestamp": "1980-01-01 00:00:00 only for deterministic ZIP headers; execution times are actual UTC timestamps above.",
+  "fresh_extract_runs": [
+    {
+      "label": "package_integrity",
+      "command": [
+        "python",
+        "-B",
+        "tools/verify_delivery.py"
+      ],
+      "cwd": "/workspace/scratch/cdf89f08e32d/_work/P15_fresh_extract/P15_DeckRuntime_V0.1",
+      "started_utc": "2026-10-28T19:22:38.067012+00:00",
+      "finished_utc": "2026-10-28T19:22:38.325823+00:00",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"P15_AUTHOR_PACKAGE_INTEGRITY_NOT_INDEPENDENT_GATE\",\n  \"manifest_records\": 189,\n  \"package_files\": 190,\n  \"preserved_upstream_files\": 70,\n  \"p14_files_equal_original_zip\": 15,\n  \"recorded_executions\": 12,\n  \"execution_snapshot_members\": 829,\n  \"final_test_source_bindings\": 72,\n  \"manifest_self_binding\": \"external delivery_receipt.json\",\n  \"generated_python_cache_files\": \"ignored\",\n  \"production_gate\": \"BLOCKED\"\n}\n",
+      "stderr": "",
+      "stdout_size_bytes": 450,
+      "stderr_size_bytes": 0,
+      "stdout_sha256": "22a6d852b5836cdba62b96d41efdc88da31ce92d37ea18d5cdb6eb91febe2cfb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "author_tests",
+      "command": [
+        "python",
+        "-B",
+        "tools/author_tests.py"
+      ],
+      "cwd": "/workspace/scratch/cdf89f08e32d/_work/P15_fresh_extract/P15_DeckRuntime_V0.1",
+      "started_utc": "2026-10-28T19:22:38.325929+00:00",
+      "finished_utc": "2026-10-28T19:22:50.012863+00:00",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"scope\": \"P15_AUTHOR_UNIT_AND_ISOLATED_CONTRACT_TESTS\",\n  \"tests_run\": 148,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"skipped\": 0,\n  \"status\": \"PASS\",\n  \"tests\": [\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_build_is_immutable_and_does_not_change_party\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_duplicate_party_character_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_instance_identity_independent_of_shuffle_seed\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_instance_ids_bound_to_battle\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_missing_common_owner_mapping_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_party_requires_three_slots\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_production_build_explicitly_blocked\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_recipe_catalog_hash_mismatch_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_unknown_character_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_01\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_02\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_03\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_04\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_05\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_06\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_07\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_08\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_09\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_10\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_11\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_12\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_13\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_14\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_15\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_16\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_17\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_18\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_19\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_20\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_21\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_22\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_23\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_24\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_adapter_refuses_cached_candidate_against_new_basis\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_cache_capacity_never_evicts_old_identity\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_changed_context_cannot_reuse_prior_evidence\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_concurrent_24_identical_proposals_share_bytes\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_id_collision_for_changed_revision\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_id_collision_for_changed_targets_is_stable\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_memory_cache_not_a_commit_receipt\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_pure_recompute_identical_candidate_bytes\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_rejected_request_keeps_same_rejection_after_balance_changes\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_returned_copies_cannot_mutate_cached_decision\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_commands.CommandTests.test_same_request_returns_original_evidence_before_revision_check\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_cross_owner_rng_jump_agreement\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_different_seed_changes_fixture_order\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_invalid_seed_and_history_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_rng_count_exhaustion_no_wrap\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_seven_literal_fixed_seed_vectors\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_shuffle_continues_existing_stream\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_determinism_tests.DeterminismTests.test_three_python_hash_seed_processes_reexecute_real_p15\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.EntryBasisTests.test_candidate_rejection_rolls_back_post_dot_changes\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.EntryBasisTests.test_empty_deck_reports_shortfall_without_hp_or_extra_rng\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.EntryBasisTests.test_hand_capacity_shortfall_matches_p14_actual_movement_count\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.EntryBasisTests.test_real_post_dot_private_basis_bound_by_exact_hash\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.EntryBasisTests.test_terminal_dot_never_calls_p15\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_collision_before_stale_revision_does_not_charge\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_concurrent_24_clicks_commit_and_charge_once\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_double_click_same_id_does_not_call_provider_again\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_insufficient_energy_refuses_without_receipt_or_state_change\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_after_deck_patch_retry\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_after_resolution_retry\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_before_publish_retry\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_multi_target_one_invalid_rejects_entire_play\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_multi_target_order_and_exhaust_paid_once\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_new_id_same_spent_instance_does_not_charge\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_one_commit_contains_fee_card_and_effect\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_original_p14_import_namespace_receives_its_own_rejection_class\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_draw_reporting_mismatch_fails_before_binding\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_effect_definition_mismatch_fails_binding\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_effect_rejection_rolls_back_accepted_candidate\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_public_state_remains_old_at_all_precommit_checkpoints\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_restart_p15_cache_still_relies_on_p14_accepted_receipt\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_shuffle_interrupted_retry_same_rng\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_two_distinct_commands_same_revision_commit_once\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_p14_contract.P14ContractTests.test_zero_cost_still_consumes_once\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_bool_count_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_both_piles_empty_shortfall_no_fatigue\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_capacity_stops_without_consuming_extra_cards\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_consume_exhaust_preserves_other_zones\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_discard_hand_appends_in_original_hand_order\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_double_consume_rejected_without_mutation\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_draws_from_left\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_duplicate_zones_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_exhaust_never_recycled\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_full_hand_preserves_draw_discard_and_rng\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_large_draw_shortfall_terminates\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_patch_capacity_rejects_whole_operation\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_recycle_after_finishing_existing_draw\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_recycle_disabled\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_reorder_same_zone_matches_sequential_move_interpreter\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_upstream_F014_exact_pile_and_rng_projection\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_piles.PileTests.test_zero_request_does_not_shuffle_discard\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_001_insufficient_energy\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_002_unknown_actor\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_003_enemy_actor\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_004_dead_actor\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_005_instance_belongs_to_other_hero\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_006_missing_instance\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_007_already_discarded\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_008_already_exhausted\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_009_enemy_turn\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_010_stale_revision\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_011_wrong_battle\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_012_missing_target\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_013_dead_target\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_014_friendly_target_for_attack\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_015_too_many_targets\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_016_no_targets\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_017_duplicate_targets\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_018_self_reported_cost\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_019_self_reported_hp\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_020_bool_revision\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_021_negative_energy_snapshot\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_022_same_instance_two_zones\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_023_wrong_content_version\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_024_wrong_rules_version\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_025_disabled_buff\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_026_disabled_debuff\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_027_unknown_card_definition\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_028_unsupported_contract_version\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_029_card_owned_by_enemy\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_030_non_string_target\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_031_invalid_rng_history\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_032_zero_seed\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_033_closed_battle\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_034_aborted_battle\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_035_extra_request_id_wire_field\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_036_party_definition_changed\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_037_signature_instance_forged_owner\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_INV_038_unowned_system_command\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_A_EDGE\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_BARRIER\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_B_WALL\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_C_MEND\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_D_BRAND\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_EMBER\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_RECOVER\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_STRIKE\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_add_energy_capped_and_returned_only_as_candidate\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_boolean_and_negative_cost_config_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_deck_patch_schema_is_exact_p13_definition_projection\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_end_turn_discards_all_without_energy_change\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_end_turn_keep_is_explicit_noop\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_keep_energy_never_grants_resources\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_no_default_production_mode\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_status_reapplication_rejected\",\n      \"status\": \"PASS\"\n    },\n    {\n      \"test\": \"deck_unit_tests.test_validation.ValidationTests.test_valid_card_returns_bound_candidate_and_reference_only_intent\",\n      \"status\": \"PASS\"\n    }\n  ]\n}\n",
+      "stderr": "test_build_is_immutable_and_does_not_change_party (deck_unit_tests.test_builder.BuildTests.test_build_is_immutable_and_does_not_change_party) ... ok\ntest_duplicate_party_character_rejected (deck_unit_tests.test_builder.BuildTests.test_duplicate_party_character_rejected) ... ok\ntest_instance_identity_independent_of_shuffle_seed (deck_unit_tests.test_builder.BuildTests.test_instance_identity_independent_of_shuffle_seed) ... ok\ntest_instance_ids_bound_to_battle (deck_unit_tests.test_builder.BuildTests.test_instance_ids_bound_to_battle) ... ok\ntest_missing_common_owner_mapping_rejected (deck_unit_tests.test_builder.BuildTests.test_missing_common_owner_mapping_rejected) ... ok\ntest_party_requires_three_slots (deck_unit_tests.test_builder.BuildTests.test_party_requires_three_slots) ... ok\ntest_production_build_explicitly_blocked (deck_unit_tests.test_builder.BuildTests.test_production_build_explicitly_blocked) ... ok\ntest_recipe_catalog_hash_mismatch_rejected (deck_unit_tests.test_builder.BuildTests.test_recipe_catalog_hash_mismatch_rejected) ... ok\ntest_unknown_character_rejected (deck_unit_tests.test_builder.BuildTests.test_unknown_character_rejected) ... ok\ntest_upstream_MOCK_DECK_01 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_01) ... ok\ntest_upstream_MOCK_DECK_02 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_02) ... ok\ntest_upstream_MOCK_DECK_03 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_03) ... ok\ntest_upstream_MOCK_DECK_04 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_04) ... ok\ntest_upstream_MOCK_DECK_05 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_05) ... ok\ntest_upstream_MOCK_DECK_06 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_06) ... ok\ntest_upstream_MOCK_DECK_07 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_07) ... ok\ntest_upstream_MOCK_DECK_08 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_08) ... ok\ntest_upstream_MOCK_DECK_09 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_09) ... ok\ntest_upstream_MOCK_DECK_10 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_10) ... ok\ntest_upstream_MOCK_DECK_11 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_11) ... ok\ntest_upstream_MOCK_DECK_12 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_12) ... ok\ntest_upstream_MOCK_DECK_13 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_13) ... ok\ntest_upstream_MOCK_DECK_14 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_14) ... ok\ntest_upstream_MOCK_DECK_15 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_15) ... ok\ntest_upstream_MOCK_DECK_16 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_16) ... ok\ntest_upstream_MOCK_DECK_17 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_17) ... ok\ntest_upstream_MOCK_DECK_18 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_18) ... ok\ntest_upstream_MOCK_DECK_19 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_19) ... ok\ntest_upstream_MOCK_DECK_20 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_20) ... ok\ntest_upstream_MOCK_DECK_21 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_21) ... ok\ntest_upstream_MOCK_DECK_22 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_22) ... ok\ntest_upstream_MOCK_DECK_23 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_23) ... ok\ntest_upstream_MOCK_DECK_24 (deck_unit_tests.test_builder.BuildTests.test_upstream_MOCK_DECK_24) ... ok\ntest_adapter_refuses_cached_candidate_against_new_basis (deck_unit_tests.test_commands.CommandTests.test_adapter_refuses_cached_candidate_against_new_basis) ... ok\ntest_cache_capacity_never_evicts_old_identity (deck_unit_tests.test_commands.CommandTests.test_cache_capacity_never_evicts_old_identity) ... ok\ntest_changed_context_cannot_reuse_prior_evidence (deck_unit_tests.test_commands.CommandTests.test_changed_context_cannot_reuse_prior_evidence) ... ok\ntest_concurrent_24_identical_proposals_share_bytes (deck_unit_tests.test_commands.CommandTests.test_concurrent_24_identical_proposals_share_bytes) ... ok\ntest_id_collision_for_changed_revision (deck_unit_tests.test_commands.CommandTests.test_id_collision_for_changed_revision) ... ok\ntest_id_collision_for_changed_targets_is_stable (deck_unit_tests.test_commands.CommandTests.test_id_collision_for_changed_targets_is_stable) ... ok\ntest_memory_cache_not_a_commit_receipt (deck_unit_tests.test_commands.CommandTests.test_memory_cache_not_a_commit_receipt) ... ok\ntest_pure_recompute_identical_candidate_bytes (deck_unit_tests.test_commands.CommandTests.test_pure_recompute_identical_candidate_bytes) ... ok\ntest_rejected_request_keeps_same_rejection_after_balance_changes (deck_unit_tests.test_commands.CommandTests.test_rejected_request_keeps_same_rejection_after_balance_changes) ... ok\ntest_returned_copies_cannot_mutate_cached_decision (deck_unit_tests.test_commands.CommandTests.test_returned_copies_cannot_mutate_cached_decision) ... ok\ntest_same_request_returns_original_evidence_before_revision_check (deck_unit_tests.test_commands.CommandTests.test_same_request_returns_original_evidence_before_revision_check) ... ok\ntest_cross_owner_rng_jump_agreement (deck_determinism_tests.DeterminismTests.test_cross_owner_rng_jump_agreement) ... ok\ntest_different_seed_changes_fixture_order (deck_determinism_tests.DeterminismTests.test_different_seed_changes_fixture_order) ... ok\ntest_invalid_seed_and_history_rejected (deck_determinism_tests.DeterminismTests.test_invalid_seed_and_history_rejected) ... ok\ntest_rng_count_exhaustion_no_wrap (deck_determinism_tests.DeterminismTests.test_rng_count_exhaustion_no_wrap) ... ok\ntest_seven_literal_fixed_seed_vectors (deck_determinism_tests.DeterminismTests.test_seven_literal_fixed_seed_vectors) ... ok\ntest_shuffle_continues_existing_stream (deck_determinism_tests.DeterminismTests.test_shuffle_continues_existing_stream) ... ok\ntest_three_python_hash_seed_processes_reexecute_real_p15 (deck_determinism_tests.DeterminismTests.test_three_python_hash_seed_processes_reexecute_real_p15) ... ok\ntest_candidate_rejection_rolls_back_post_dot_changes (deck_unit_tests.test_p14_contract.EntryBasisTests.test_candidate_rejection_rolls_back_post_dot_changes) ... ok\ntest_empty_deck_reports_shortfall_without_hp_or_extra_rng (deck_unit_tests.test_p14_contract.EntryBasisTests.test_empty_deck_reports_shortfall_without_hp_or_extra_rng) ... ok\ntest_hand_capacity_shortfall_matches_p14_actual_movement_count (deck_unit_tests.test_p14_contract.EntryBasisTests.test_hand_capacity_shortfall_matches_p14_actual_movement_count) ... ok\ntest_real_post_dot_private_basis_bound_by_exact_hash (deck_unit_tests.test_p14_contract.EntryBasisTests.test_real_post_dot_private_basis_bound_by_exact_hash) ... ok\ntest_terminal_dot_never_calls_p15 (deck_unit_tests.test_p14_contract.EntryBasisTests.test_terminal_dot_never_calls_p15) ... ok\ntest_collision_before_stale_revision_does_not_charge (deck_unit_tests.test_p14_contract.P14ContractTests.test_collision_before_stale_revision_does_not_charge) ... ok\ntest_concurrent_24_clicks_commit_and_charge_once (deck_unit_tests.test_p14_contract.P14ContractTests.test_concurrent_24_clicks_commit_and_charge_once) ... ok\ntest_double_click_same_id_does_not_call_provider_again (deck_unit_tests.test_p14_contract.P14ContractTests.test_double_click_same_id_does_not_call_provider_again) ... ok\ntest_insufficient_energy_refuses_without_receipt_or_state_change (deck_unit_tests.test_p14_contract.P14ContractTests.test_insufficient_energy_refuses_without_receipt_or_state_change) ... ok\ntest_interrupted_after_deck_patch_retry (deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_after_deck_patch_retry) ... ok\ntest_interrupted_after_resolution_retry (deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_after_resolution_retry) ... ok\ntest_interrupted_before_publish_retry (deck_unit_tests.test_p14_contract.P14ContractTests.test_interrupted_before_publish_retry) ... ok\ntest_multi_target_one_invalid_rejects_entire_play (deck_unit_tests.test_p14_contract.P14ContractTests.test_multi_target_one_invalid_rejects_entire_play) ... ok\ntest_multi_target_order_and_exhaust_paid_once (deck_unit_tests.test_p14_contract.P14ContractTests.test_multi_target_order_and_exhaust_paid_once) ... ok\ntest_new_id_same_spent_instance_does_not_charge (deck_unit_tests.test_p14_contract.P14ContractTests.test_new_id_same_spent_instance_does_not_charge) ... ok\ntest_one_commit_contains_fee_card_and_effect (deck_unit_tests.test_p14_contract.P14ContractTests.test_one_commit_contains_fee_card_and_effect) ... ok\ntest_original_p14_import_namespace_receives_its_own_rejection_class (deck_unit_tests.test_p14_contract.P14ContractTests.test_original_p14_import_namespace_receives_its_own_rejection_class) ... ok\ntest_p14_draw_reporting_mismatch_fails_before_binding (deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_draw_reporting_mismatch_fails_before_binding) ... ok\ntest_p14_effect_definition_mismatch_fails_binding (deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_effect_definition_mismatch_fails_binding) ... ok\ntest_p14_effect_rejection_rolls_back_accepted_candidate (deck_unit_tests.test_p14_contract.P14ContractTests.test_p14_effect_rejection_rolls_back_accepted_candidate) ... ok\ntest_public_state_remains_old_at_all_precommit_checkpoints (deck_unit_tests.test_p14_contract.P14ContractTests.test_public_state_remains_old_at_all_precommit_checkpoints) ... ok\ntest_restart_p15_cache_still_relies_on_p14_accepted_receipt (deck_unit_tests.test_p14_contract.P14ContractTests.test_restart_p15_cache_still_relies_on_p14_accepted_receipt) ... ok\ntest_shuffle_interrupted_retry_same_rng (deck_unit_tests.test_p14_contract.P14ContractTests.test_shuffle_interrupted_retry_same_rng) ... ok\ntest_two_distinct_commands_same_revision_commit_once (deck_unit_tests.test_p14_contract.P14ContractTests.test_two_distinct_commands_same_revision_commit_once) ... ok\ntest_zero_cost_still_consumes_once (deck_unit_tests.test_p14_contract.P14ContractTests.test_zero_cost_still_consumes_once) ... ok\ntest_bool_count_rejected (deck_unit_tests.test_piles.PileTests.test_bool_count_rejected) ... ok\ntest_both_piles_empty_shortfall_no_fatigue (deck_unit_tests.test_piles.PileTests.test_both_piles_empty_shortfall_no_fatigue) ... ok\ntest_capacity_stops_without_consuming_extra_cards (deck_unit_tests.test_piles.PileTests.test_capacity_stops_without_consuming_extra_cards) ... ok\ntest_consume_exhaust_preserves_other_zones (deck_unit_tests.test_piles.PileTests.test_consume_exhaust_preserves_other_zones) ... ok\ntest_discard_hand_appends_in_original_hand_order (deck_unit_tests.test_piles.PileTests.test_discard_hand_appends_in_original_hand_order) ... ok\ntest_double_consume_rejected_without_mutation (deck_unit_tests.test_piles.PileTests.test_double_consume_rejected_without_mutation) ... ok\ntest_draws_from_left (deck_unit_tests.test_piles.PileTests.test_draws_from_left) ... ok\ntest_duplicate_zones_rejected (deck_unit_tests.test_piles.PileTests.test_duplicate_zones_rejected) ... ok\ntest_exhaust_never_recycled (deck_unit_tests.test_piles.PileTests.test_exhaust_never_recycled) ... ok\ntest_full_hand_preserves_draw_discard_and_rng (deck_unit_tests.test_piles.PileTests.test_full_hand_preserves_draw_discard_and_rng) ... ok\ntest_large_draw_shortfall_terminates (deck_unit_tests.test_piles.PileTests.test_large_draw_shortfall_terminates) ... ok\ntest_patch_capacity_rejects_whole_operation (deck_unit_tests.test_piles.PileTests.test_patch_capacity_rejects_whole_operation) ... ok\ntest_recycle_after_finishing_existing_draw (deck_unit_tests.test_piles.PileTests.test_recycle_after_finishing_existing_draw) ... ok\ntest_recycle_disabled (deck_unit_tests.test_piles.PileTests.test_recycle_disabled) ... ok\ntest_reorder_same_zone_matches_sequential_move_interpreter (deck_unit_tests.test_piles.PileTests.test_reorder_same_zone_matches_sequential_move_interpreter) ... ok\ntest_upstream_F014_exact_pile_and_rng_projection (deck_unit_tests.test_piles.PileTests.test_upstream_F014_exact_pile_and_rng_projection) ... ok\ntest_zero_request_does_not_shuffle_discard (deck_unit_tests.test_piles.PileTests.test_zero_request_does_not_shuffle_discard) ... ok\ntest_INV_001_insufficient_energy (deck_unit_tests.test_validation.ValidationTests.test_INV_001_insufficient_energy) ... ok\ntest_INV_002_unknown_actor (deck_unit_tests.test_validation.ValidationTests.test_INV_002_unknown_actor) ... ok\ntest_INV_003_enemy_actor (deck_unit_tests.test_validation.ValidationTests.test_INV_003_enemy_actor) ... ok\ntest_INV_004_dead_actor (deck_unit_tests.test_validation.ValidationTests.test_INV_004_dead_actor) ... ok\ntest_INV_005_instance_belongs_to_other_hero (deck_unit_tests.test_validation.ValidationTests.test_INV_005_instance_belongs_to_other_hero) ... ok\ntest_INV_006_missing_instance (deck_unit_tests.test_validation.ValidationTests.test_INV_006_missing_instance) ... ok\ntest_INV_007_already_discarded (deck_unit_tests.test_validation.ValidationTests.test_INV_007_already_discarded) ... ok\ntest_INV_008_already_exhausted (deck_unit_tests.test_validation.ValidationTests.test_INV_008_already_exhausted) ... ok\ntest_INV_009_enemy_turn (deck_unit_tests.test_validation.ValidationTests.test_INV_009_enemy_turn) ... ok\ntest_INV_010_stale_revision (deck_unit_tests.test_validation.ValidationTests.test_INV_010_stale_revision) ... ok\ntest_INV_011_wrong_battle (deck_unit_tests.test_validation.ValidationTests.test_INV_011_wrong_battle) ... ok\ntest_INV_012_missing_target (deck_unit_tests.test_validation.ValidationTests.test_INV_012_missing_target) ... ok\ntest_INV_013_dead_target (deck_unit_tests.test_validation.ValidationTests.test_INV_013_dead_target) ... ok\ntest_INV_014_friendly_target_for_attack (deck_unit_tests.test_validation.ValidationTests.test_INV_014_friendly_target_for_attack) ... ok\ntest_INV_015_too_many_targets (deck_unit_tests.test_validation.ValidationTests.test_INV_015_too_many_targets) ... ok\ntest_INV_016_no_targets (deck_unit_tests.test_validation.ValidationTests.test_INV_016_no_targets) ... ok\ntest_INV_017_duplicate_targets (deck_unit_tests.test_validation.ValidationTests.test_INV_017_duplicate_targets) ... ok\ntest_INV_018_self_reported_cost (deck_unit_tests.test_validation.ValidationTests.test_INV_018_self_reported_cost) ... ok\ntest_INV_019_self_reported_hp (deck_unit_tests.test_validation.ValidationTests.test_INV_019_self_reported_hp) ... ok\ntest_INV_020_bool_revision (deck_unit_tests.test_validation.ValidationTests.test_INV_020_bool_revision) ... ok\ntest_INV_021_negative_energy_snapshot (deck_unit_tests.test_validation.ValidationTests.test_INV_021_negative_energy_snapshot) ... ok\ntest_INV_022_same_instance_two_zones (deck_unit_tests.test_validation.ValidationTests.test_INV_022_same_instance_two_zones) ... ok\ntest_INV_023_wrong_content_version (deck_unit_tests.test_validation.ValidationTests.test_INV_023_wrong_content_version) ... ok\ntest_INV_024_wrong_rules_version (deck_unit_tests.test_validation.ValidationTests.test_INV_024_wrong_rules_version) ... ok\ntest_INV_025_disabled_buff (deck_unit_tests.test_validation.ValidationTests.test_INV_025_disabled_buff) ... ok\ntest_INV_026_disabled_debuff (deck_unit_tests.test_validation.ValidationTests.test_INV_026_disabled_debuff) ... ok\ntest_INV_027_unknown_card_definition (deck_unit_tests.test_validation.ValidationTests.test_INV_027_unknown_card_definition) ... ok\ntest_INV_028_unsupported_contract_version (deck_unit_tests.test_validation.ValidationTests.test_INV_028_unsupported_contract_version) ... ok\ntest_INV_029_card_owned_by_enemy (deck_unit_tests.test_validation.ValidationTests.test_INV_029_card_owned_by_enemy) ... ok\ntest_INV_030_non_string_target (deck_unit_tests.test_validation.ValidationTests.test_INV_030_non_string_target) ... ok\ntest_INV_031_invalid_rng_history (deck_unit_tests.test_validation.ValidationTests.test_INV_031_invalid_rng_history) ... ok\ntest_INV_032_zero_seed (deck_unit_tests.test_validation.ValidationTests.test_INV_032_zero_seed) ... ok\ntest_INV_033_closed_battle (deck_unit_tests.test_validation.ValidationTests.test_INV_033_closed_battle) ... ok\ntest_INV_034_aborted_battle (deck_unit_tests.test_validation.ValidationTests.test_INV_034_aborted_battle) ... ok\ntest_INV_035_extra_request_id_wire_field (deck_unit_tests.test_validation.ValidationTests.test_INV_035_extra_request_id_wire_field) ... ok\ntest_INV_036_party_definition_changed (deck_unit_tests.test_validation.ValidationTests.test_INV_036_party_definition_changed) ... ok\ntest_INV_037_signature_instance_forged_owner (deck_unit_tests.test_validation.ValidationTests.test_INV_037_signature_instance_forged_owner) ... ok\ntest_INV_038_unowned_system_command (deck_unit_tests.test_validation.ValidationTests.test_INV_038_unowned_system_command) ... ok\ntest_P03_MOCK_P03_CARD_A_EDGE (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_A_EDGE) ... ok\ntest_P03_MOCK_P03_CARD_BARRIER (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_BARRIER) ... ok\ntest_P03_MOCK_P03_CARD_B_WALL (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_B_WALL) ... ok\ntest_P03_MOCK_P03_CARD_C_MEND (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_C_MEND) ... ok\ntest_P03_MOCK_P03_CARD_D_BRAND (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_D_BRAND) ... ok\ntest_P03_MOCK_P03_CARD_EMBER (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_EMBER) ... ok\ntest_P03_MOCK_P03_CARD_RECOVER (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_RECOVER) ... ok\ntest_P03_MOCK_P03_CARD_STRIKE (deck_unit_tests.test_validation.ValidationTests.test_P03_MOCK_P03_CARD_STRIKE) ... ok\ntest_add_energy_capped_and_returned_only_as_candidate (deck_unit_tests.test_validation.ValidationTests.test_add_energy_capped_and_returned_only_as_candidate) ... ok\ntest_boolean_and_negative_cost_config_rejected (deck_unit_tests.test_validation.ValidationTests.test_boolean_and_negative_cost_config_rejected) ... ok\ntest_deck_patch_schema_is_exact_p13_definition_projection (deck_unit_tests.test_validation.ValidationTests.test_deck_patch_schema_is_exact_p13_definition_projection) ... ok\ntest_end_turn_discards_all_without_energy_change (deck_unit_tests.test_validation.ValidationTests.test_end_turn_discards_all_without_energy_change) ... ok\ntest_end_turn_keep_is_explicit_noop (deck_unit_tests.test_validation.ValidationTests.test_end_turn_keep_is_explicit_noop) ... ok\ntest_keep_energy_never_grants_resources (deck_unit_tests.test_validation.ValidationTests.test_keep_energy_never_grants_resources) ... ok\ntest_no_default_production_mode (deck_unit_tests.test_validation.ValidationTests.test_no_default_production_mode) ... ok\ntest_status_reapplication_rejected (deck_unit_tests.test_validation.ValidationTests.test_status_reapplication_rejected) ... ok\ntest_valid_card_returns_bound_candidate_and_reference_only_intent (deck_unit_tests.test_validation.ValidationTests.test_valid_card_returns_bound_candidate_and_reference_only_intent) ... ok\n\n----------------------------------------------------------------------\nRan 148 tests in 11.516s\n\nOK\n",
+      "stdout_size_bytes": 20282,
+      "stderr_size_bytes": 19365,
+      "stdout_sha256": "e3a482773ea8ce31cb001b91db40c69a75b60d0dff7c767eac03bfb537319a05",
+      "stderr_sha256": "acde41cced3ecf189a1dd043fef6e04744bdc2b5a064b5c2e6732d3654847ba2"
+    },
+    {
+      "label": "live_p15_replay",
+      "command": [
+        "python",
+        "-B",
+        "tools/replay_example.py"
+      ],
+      "cwd": "/workspace/scratch/cdf89f08e32d/_work/P15_fresh_extract/P15_DeckRuntime_V0.1",
+      "started_utc": "2026-10-28T19:22:50.013388+00:00",
+      "finished_utc": "2026-10-28T19:22:51.094713+00:00",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"scope\": \"AUTHOR_REPLANNED_P15_UNCHANGED_P14_ISOLATED\",\n  \"request_count\": 18,\n  \"candidate_evidence_count\": 9,\n  \"final_state_sha256\": \"fc6afabe831be5d760978106744c1fd6c97921a1f5c0611e5995d482a766bee1\",\n  \"replay_sha256\": \"dd90ff57a7ffa961157a87acb1aee7b7502a9d8d261e9c12b4f8ab30ebb2764a\"\n}\n",
+      "stderr": "",
+      "stdout_size_bytes": 316,
+      "stderr_size_bytes": 0,
+      "stdout_sha256": "f6afc1196adc11537b8f15bdd92513bf71492b585bd5b7e7f90ff2bee236d7ae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "demo",
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "deck_runtime"
+      ],
+      "cwd": "/workspace/scratch/cdf89f08e32d/_work/P15_fresh_extract/P15_DeckRuntime_V0.1",
+      "started_utc": "2026-10-28T19:22:51.095613+00:00",
+      "finished_utc": "2026-10-28T19:22:52.190762+00:00",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "status": "PASS",
+      "stdout": "{\n  \"scope\": \"AUTHOR_ISOLATED_CONTRACT_EXECUTION_REAL_P15_UNCHANGED_P14_FIXTURE_P17_AND_P16\",\n  \"commits\": 12,\n  \"revision\": 12,\n  \"rejected_requests\": 3,\n  \"duplicate_no_ops\": 3,\n  \"energy_spent_events\": 3,\n  \"recycle_count\": 2,\n  \"rng_draw_count\": 16,\n  \"final_state_sha256\": \"fc6afabe831be5d760978106744c1fd6c97921a1f5c0611e5995d482a766bee1\",\n  \"replay_sha256\": \"dd90ff57a7ffa961157a87acb1aee7b7502a9d8d261e9c12b4f8ab30ebb2764a\",\n  \"full_game_integration\": \"NOT_RUN\",\n  \"real_p17_party\": \"BLOCKED\",\n  \"P32_P35_independent\": \"NOT_RUN\"\n}\n",
+      "stderr": "",
+      "stdout_size_bytes": 539,
+      "stderr_size_bytes": 0,
+      "stdout_sha256": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "production_preflight",
+      "command": [
+        "python",
+        "-B",
+        "tools/preflight.py"
+      ],
+      "cwd": "/workspace/scratch/cdf89f08e32d/_work/P15_fresh_extract/P15_DeckRuntime_V0.1",
+      "started_utc": "2026-10-28T19:22:52.190852+00:00",
+      "finished_utc": "2026-10-28T19:22:52.229846+00:00",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "status": "BLOCKED_EXPECTED_PRODUCTION_GATE",
+      "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"task_id\": \"TASK-02-01\",\n  \"production_write_allowlist\": [],\n  \"p13_mapping_status\": \"ISOLATED_MAPPING_VERIFIED_TARGET_BLOCKED\",\n  \"p15_mapped_paths\": [\n    {\n      \"owner\": \"P15\",\n      \"design_path\": \"runtime/battle/deck/**\",\n      \"isolated_relative_path\": null,\n      \"actual_production_path\": null,\n      \"scope\": \"PLANNED_NOT_ACTUAL\",\n      \"status\": \"BLOCKED_NOT_MAPPED\",\n      \"write_allowed\": false,\n      \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n    },\n    {\n      \"owner\": \"P15\",\n      \"design_path\": \"runtime/battle/card_actions/**\",\n      \"isolated_relative_path\": null,\n      \"actual_production_path\": null,\n      \"scope\": \"PLANNED_NOT_ACTUAL\",\n      \"status\": \"BLOCKED_NOT_MAPPED\",\n      \"write_allowed\": false,\n      \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n    },\n    {\n      \"owner\": \"P15\",\n      \"design_path\": \"tests/deck_unit/**\",\n      \"isolated_relative_path\": null,\n      \"actual_production_path\": null,\n      \"scope\": \"PLANNED_NOT_ACTUAL\",\n      \"status\": \"BLOCKED_NOT_MAPPED\",\n      \"write_allowed\": false,\n      \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n    }\n  ],\n  \"missing\": [\n    \"P13 production actual_path_mapping and authorization\",\n    \"P17 genuine hash-bound PartySnapshot\",\n    \"P03/P05 approved deck/fee/hand/entry/common-owner policy\",\n    \"P22 official content IDs and schema\",\n    \"P13/P14 accepted production negative-result and draw-report contract\",\n    \"Target engine/OS evidence\",\n    \"P32 independent tests and P35 independent gate\",\n    \"User-designated EXT-INTEGRATOR\"\n  ],\n  \"isolated_runtime_supported\": true,\n  \"target_runtime\": \"NOT_RUN\"\n}\n",
+      "stderr": "",
+      "stdout_size_bytes": 1880,
+      "stderr_size_bytes": 0,
+      "stdout_sha256": "9a245e7a32508bebd462a2f2bcf622e71f4e2f19e4102001e3bc126ec06bfb83",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "package_members": [
+    {
+      "package_relative_path": "README.md",
+      "size_bytes": 8509,
+      "sha256": "6e725a00ab8e4d1cf2d3446a727c51a142e92b2b0584f297f80b11ea50e0c737",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "card_legality_table.tsv",
+      "size_bytes": 4432,
+      "sha256": "74d87344d24ce39ee0a882b1b22de000aa3d76817ad6c39a824b43c23edef5fa",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_determinism_tests.py",
+      "size_bytes": 3143,
+      "sha256": "055aece1496532f6a84baae4ff034e9fd712f3f5d1a3de96795b1880e85b64f5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_patch_schema.json",
+      "size_bytes": 3887,
+      "sha256": "8406bf56f9f08f0fc787630435c559d0f2758b214f69a7221e3a17d0e5d47fd3",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/__init__.py",
+      "size_bytes": 865,
+      "sha256": "7a92adecba2d39b2401aa639858994f8452ca508e22c406036fef82906921c7c",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/__main__.py",
+      "size_bytes": 169,
+      "sha256": "e91fec4924290249e30baac44f65fec0e8f81bd7168f6810d896867cfaa82fc4",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/builder.py",
+      "size_bytes": 5609,
+      "sha256": "b3a156c9b06a03860a1f79203937b5945509d4083b095a29970c3c54a96ff8aa",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/commands.py",
+      "size_bytes": 1488,
+      "sha256": "f8fe73472c38befe2a54b4a07e215e0910448eb6ba6a2f720b5079a67f5afe89",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/content.py",
+      "size_bytes": 7292,
+      "sha256": "805f443e5844c76f76b3bc20666e87497c19a7a37eff922df8fd901dec1d50d6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/deck.py",
+      "size_bytes": 5581,
+      "sha256": "777279c646cb5083076b5e459d094973c98459b5646f609c0e78b8bec14ee04c",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/errors.py",
+      "size_bytes": 860,
+      "sha256": "39bf5e597916b9ccebe8d5fe3e53ae15c6ead9ca584c3560806c52828e56cfa6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/p14_adapter.py",
+      "size_bytes": 3461,
+      "sha256": "66306b0da1967a7eef163eaf146d23cb77d1b11d2906c92b894d662f522adf82",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/planner.py",
+      "size_bytes": 9275,
+      "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/rng.py",
+      "size_bytes": 2637,
+      "sha256": "1d0138704cd3154e868c2a544371a0f74fad4f7ea4d317178917acfb73ee5304",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_runtime/wire.py",
+      "size_bytes": 720,
+      "sha256": "6e1e43eb3c0902c34607281743ebac8660736a27a8e7ed613c5325856a0c17e5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/__init__.py",
+      "size_bytes": 72,
+      "sha256": "93ef507078ceb4fa463d9bd4cfa228b31d65ec93fbbfe2770f349fc452ef148c",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/extension_support.py",
+      "size_bytes": 1139,
+      "sha256": "1db544bbdc85525ebd5642fbf9f9541350fbbd47ae1af22de8cbdbb7f98df5d0",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_builder.py",
+      "size_bytes": 4544,
+      "sha256": "3cc61807215893726d9ba784759c7b2c086d92f588cdb19444dfc8d0b34000fe",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_commands.py",
+      "size_bytes": 4889,
+      "sha256": "80077a38c76d5cebd8b025ce07787c43e3cc54a4479814f7c5c4fb82f9200588",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_determinism.py",
+      "size_bytes": 52,
+      "sha256": "7970f31071777d42de92b24b6b9423db10704372d3cf6c9ff356ad7b3f129cae",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_p14_contract.py",
+      "size_bytes": 14617,
+      "sha256": "a03672667157d102c6753f4d76bc2fe239cb4176c09c44d2a28109e00785eafe",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_piles.py",
+      "size_bytes": 6486,
+      "sha256": "48547c172921451bbc62ae33b2ddbacee77b7fc9e34fdff79149765800208b87",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "deck_unit_tests/test_validation.py",
+      "size_bytes": 5622,
+      "sha256": "c205647200fa877b0e06668c2bbf69e5f69d1cf4164a92b5434311045ca3ef0e",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "size_bytes": 121632,
+      "sha256": "328ac348891bc1c7db08e212e687a03760ec9dd11af5ee39ec5c8d052e9ed7da",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/defect_log.json",
+      "size_bytes": 2804,
+      "sha256": "3fc42b47b64f954bda14f7913b0cb37a3fa638cd35f8da2d57e06b6cd7ee18b0",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/environment.json",
+      "size_bytes": 302,
+      "sha256": "5ad5e8bbc94464734dbca898b75e56492b79601b203ebba6264f28b2f0576d99",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/final_source_binding.json",
+      "size_bytes": 22091,
+      "sha256": "1ca8a48e6d6964246921107ffec670d6b63cccb194207a57c608f759ec6f930f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/input_conflicts.json",
+      "size_bytes": 1010,
+      "sha256": "788b98854262bc0fcda6aca99761fa9d32591c6d679a9d792b41f8b8bb76a854",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/input_immutability_check.json",
+      "size_bytes": 793293,
+      "sha256": "06c45882acd56368531161924a5c67521d0febcd8e168b89fd069749a6abb8d1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_001/executed_sources.zip",
+      "size_bytes": 148217,
+      "sha256": "19b0306864a0fab9515aeee1d029a5bd4e58c23ee11694a5413e52ecee5a2ce0",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_001/execution.json",
+      "size_bytes": 591,
+      "sha256": "9c3d74e2343ff257aba03eff6189e9602d3eaec56f852f59db7e93ef26f3e822",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_001/source_manifest.json",
+      "size_bytes": 12559,
+      "sha256": "a58ee3912f482e34e9cff732f0ea577f33efc1a4a344d482f1b4d1c2e697eadf",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_001/stdout.log",
+      "size_bytes": 244,
+      "sha256": "65549ffba4bdabd371b2ba09f0ceaa1a6ddcd33cf5bbce03d188bedad2455e44",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_002/executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "54620ea647bc4059a5b3707d1f5b9e4924a4843d6813ce9e3252b7b4d2462081",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_002/execution.json",
+      "size_bytes": 591,
+      "sha256": "f9e4f92e5565a866891c9b154aea34ed54b70445906ebf0c66ecfe569d5df9b1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_002/source_manifest.json",
+      "size_bytes": 12559,
+      "sha256": "dd73946ca45b3fb72aeecb4997243fd860cbe7c29e251b36c9f3fcfa5d6ec38b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_002/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/adapter_identity_002/stdout.log",
+      "size_bytes": 236,
+      "sha256": "3ad860d4000dd74b474842b88f6adb57fca0e448019afe5ed24968fbef7a000d",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_001/executed_sources.zip",
+      "size_bytes": 121273,
+      "sha256": "bbf8e28345a41df2669885c20bb04f0214dcada65215d4004098c33bc71a9dd9",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_001/execution.json",
+      "size_bytes": 568,
+      "sha256": "7f91ac89378704c76611892ba4f195e70d877087863a52c77746f9af45435267",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_001/source_manifest.json",
+      "size_bytes": 11387,
+      "sha256": "c329cfc5cc8ab3a9124ac7917c78be74e74c14403f7ed696b590b9bf90bfed35",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_001/stderr.log",
+      "size_bytes": 18809,
+      "sha256": "397cda7f77ab304ee05a3f0bea10c29d45e7dde512ef84aab339953463759340",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_001/stdout.log",
+      "size_bytes": 19783,
+      "sha256": "2fab83d8fd0d29dc08542f0619c5ea05bc1d0980af139c0cc7e62dfc9b6aae2a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_002/executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "3ba0a35254e10ec88d026aa9eec82edf32a9bc3bc39f7b057b9465efded9c4be",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_002/execution.json",
+      "size_bytes": 568,
+      "sha256": "b42d036fb0714087df33d2d88e1722e256901abeab687c2f8cb86e4f509ec777",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_002/source_manifest.json",
+      "size_bytes": 12386,
+      "sha256": "e1a43ef0a2d5fcfd9bcee2ba098f210634392cf0b1aeaedd2a765de4397768e5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_002/stderr.log",
+      "size_bytes": 19168,
+      "sha256": "24ef1ef251d6fde6fefcae2aa74233e61d8fa937197cc8b84a23bff87202854b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_002/stdout.log",
+      "size_bytes": 20110,
+      "sha256": "1344d003f69512718f36af14fa117e61c4ae387387ab890f2eed722fa29f8000",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_003/executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "0aae6496a64156105395f2051c25559f5e4841ffed829db096d58ada045c9b57",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_003/execution.json",
+      "size_bytes": 568,
+      "sha256": "1780b05bea3289524e4f26b7c2f666571a56c81fb0dae1bc9904348d5a032fa6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_003/source_manifest.json",
+      "size_bytes": 12559,
+      "sha256": "dd73946ca45b3fb72aeecb4997243fd860cbe7c29e251b36c9f3fcfa5d6ec38b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_003/stderr.log",
+      "size_bytes": 19365,
+      "sha256": "03040aa629d5a6a6ec09bd4ea8968c4df98d43f20140ff55cb347a94bab0c5d2",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/author_003/stdout.log",
+      "size_bytes": 20282,
+      "sha256": "e3a482773ea8ce31cb001b91db40c69a75b60d0dff7c767eac03bfb537319a05",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/contracts_001/executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "d7156e5a3628f1bfbc11c6e50e2e43ff95523706265fec73bb7012431bd13c62",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/contracts_001/execution.json",
+      "size_bytes": 574,
+      "sha256": "eb8bd20c6b3ce4ba8756a3e41e3f7bbc9f21c3cab3c731fa9c03c8b307c4a013",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/contracts_001/source_manifest.json",
+      "size_bytes": 12386,
+      "sha256": "e1a43ef0a2d5fcfd9bcee2ba098f210634392cf0b1aeaedd2a765de4397768e5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/contracts_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/contracts_001/stdout.log",
+      "size_bytes": 101,
+      "sha256": "b2552b4a2af4942fad3dd80c45e07ab15f96665706562a08faee5e9b5efe1043",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/demo_001/executed_sources.zip",
+      "size_bytes": 121273,
+      "sha256": "43398fb221ef895857aa565ba911a13f3ac3e0b923b8813cad0d191fffd8d9bd",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/demo_001/execution.json",
+      "size_bytes": 569,
+      "sha256": "678c598df70293bf412ae10813f5a69cb8a3349e246d6c84a218754172942b94",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/demo_001/source_manifest.json",
+      "size_bytes": 11387,
+      "sha256": "c329cfc5cc8ab3a9124ac7917c78be74e74c14403f7ed696b590b9bf90bfed35",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/demo_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/demo_001/stdout.log",
+      "size_bytes": 539,
+      "sha256": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/fixtures_001/executed_sources.zip",
+      "size_bytes": 102646,
+      "sha256": "3dc162002d3d5a5ece285e8b616f07bf54db2868b45cc065a3b8ebc2219dda95",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/fixtures_001/execution.json",
+      "size_bytes": 580,
+      "sha256": "b396c13542d0cff029970bc3a678cbad8b1cae0b0e7a2992674f55cc02d116b9",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/fixtures_001/source_manifest.json",
+      "size_bytes": 9355,
+      "sha256": "2b4e64948657fc9f7e62a718b541fa3fd82e888d203d2b4c18cc253a4487d5c7",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/fixtures_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/fixtures_001/stdout.log",
+      "size_bytes": 59,
+      "sha256": "f17e54db86467256bafd4d3f4900d1dcf2c79e3e91a8c14e154e612bbbe92d70",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/optional_schema_001/executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "a4dba383ee545f64d37da53ee203be2c867f6ec6f74f1839f3a8b4804a500195",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/optional_schema_001/execution.json",
+      "size_bytes": 600,
+      "sha256": "4f04bfd33f224780fe248ae25fd0e80641a6f1e69e378d788ebe9c4fab368677",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/optional_schema_001/source_manifest.json",
+      "size_bytes": 12559,
+      "sha256": "dd73946ca45b3fb72aeecb4997243fd860cbe7c29e251b36c9f3fcfa5d6ec38b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/optional_schema_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/optional_schema_001/stdout.log",
+      "size_bytes": 268,
+      "sha256": "835e984d6898f856f5ae86e55275b94858be0e1293254a1302f264328af237b2",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/preflight_001/executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "a4dba383ee545f64d37da53ee203be2c867f6ec6f74f1839f3a8b4804a500195",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/preflight_001/execution.json",
+      "size_bytes": 568,
+      "sha256": "26e1780f68f63c371455ca51487ae4932e0559a64eea5a4361aa57d542fea3ca",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/preflight_001/source_manifest.json",
+      "size_bytes": 12559,
+      "sha256": "dd73946ca45b3fb72aeecb4997243fd860cbe7c29e251b36c9f3fcfa5d6ec38b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/preflight_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/preflight_001/stdout.log",
+      "size_bytes": 1880,
+      "sha256": "9a245e7a32508bebd462a2f2bcf622e71f4e2f19e4102001e3bc126ec06bfb83",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_001/executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "e93c9139d315db3132fe47c7015c322761049284ca086ba8febc8f3263c8e434",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_001/execution.json",
+      "size_bytes": 570,
+      "sha256": "9b5f0c71cad5ad1f3f89d86234e90f349da4643139f5145ed34a09be180e4d34",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_001/source_manifest.json",
+      "size_bytes": 12386,
+      "sha256": "e1a43ef0a2d5fcfd9bcee2ba098f210634392cf0b1aeaedd2a765de4397768e5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_001/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_001/stdout.log",
+      "size_bytes": 316,
+      "sha256": "f6afc1196adc11537b8f15bdd92513bf71492b585bd5b7e7f90ff2bee236d7ae",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_002/executed_sources.zip",
+      "size_bytes": 150851,
+      "sha256": "4f81e06d42274676a56b676ad77b3087569723ed1b233b46ac1691796c7dcad3",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_002/execution.json",
+      "size_bytes": 570,
+      "sha256": "1c1069680eb14d99ebd72949c0abd682caa6a6c4bfdd696fc44775aa13c15bc3",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_002/source_manifest.json",
+      "size_bytes": 12722,
+      "sha256": "43b5250f9372e73c702596a662829772a9d413598d4abc096f92a90e51b2bf5a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_002/stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/runs/replay_002/stdout.log",
+      "size_bytes": 316,
+      "sha256": "f6afc1196adc11537b8f15bdd92513bf71492b585bd5b7e7f90ff2bee236d7ae",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "evidence/source_input_receipt.json",
+      "size_bytes": 430766,
+      "sha256": "e1e3c51dff26744e82520ae96f9f4425683c97a523563a06bcbb55ea8fafa0a8",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/__init__.py",
+      "size_bytes": 76,
+      "sha256": "6f2f9d716f6d8021b45a7d2dd924b9b1952433752a3d8478a4b02bf3cc618847",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/demo.py",
+      "size_bytes": 4138,
+      "sha256": "a8173d4f956572c1e8af0fab260356f4184b1bcac4e9e2c38147a71dc5954c67",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/demo_summary.json",
+      "size_bytes": 539,
+      "sha256": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/example_requests.json",
+      "size_bytes": 313813,
+      "sha256": "347dabedaac3beb05d81d0dad5ffb4ba442ee4361b912263dbee8b9e9038e450",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/final_battle_state.json",
+      "size_bytes": 5247,
+      "sha256": "fc6afabe831be5d760978106744c1fd6c97921a1f5c0611e5995d482a766bee1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/p14_recorded_replay.json",
+      "size_bytes": 23994,
+      "sha256": "71d098ec1093bec48889c5d59dd39c8b25a56918699efbb557cd367f126bfa45",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "examples/support.py",
+      "size_bytes": 5969,
+      "sha256": "9215f50d8ff3189dd8f99d29e10af0d0b490c6968a0101b8cf1cb6cd723614d8",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "fixtures/deck_policy.fixture.json",
+      "size_bytes": 624,
+      "sha256": "f2244e39cfe5e977fcb73e359cd5b2f99f32e1875e6b4587ec0d5d86320cde4b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "fixtures/extension_cards.fixture.json",
+      "size_bytes": 977,
+      "sha256": "7808c3076fb1f050d2757d9b14e138629b9ad06b8f62d34a0e618d09a1eaa254",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "fixtures/fixed_seed_vectors.json",
+      "size_bytes": 3110,
+      "sha256": "96ef7b463a6ac76b85d90f0b3837bbee7b9c3d0d04518606f10583484623e493",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/P15_API.md",
+      "size_bytes": 8358,
+      "sha256": "d1b514d82574597ec72a419745117f6403bcab260ee8222d7110ac4f4d6d6cb9",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/author_review.md",
+      "size_bytes": 2059,
+      "sha256": "7a1b3fc4e3a3f42d39602c39e87fb3447825e44736d9fbe43d3c6d735b4a48ea",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/blockers.json",
+      "size_bytes": 7768,
+      "sha256": "7aaf91ebcfeed1e3bc627e3ae9e6ee04400b440826b6b9646dea199182328a39",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/contract_acceptance.json",
+      "size_bytes": 4232,
+      "sha256": "b829da114353426c280fffa6cbcabebbce50a6c6804521ffc1096f4e1921b7df",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/downstream_receipts.json",
+      "size_bytes": 39323,
+      "sha256": "f1f444c93cf6366e5219b3795912742195aaf08277c7a7203e46a559cf5261e3",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/interface_rfcs.json",
+      "size_bytes": 10682,
+      "sha256": "5bf234b4006bb6c31cf21546c4551c89d35cf3916cd7d8ed10a9515b38aab30a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/path_mapping_request.json",
+      "size_bytes": 2906,
+      "sha256": "f6fdd7c06e4fa9c800a9016e58567f7d2e7d3b1586a05109f882fb5188908a17",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "handoff/task_traceability.json",
+      "size_bytes": 4195,
+      "sha256": "299c5b264e2b08e7b3ccae04eccf7c863a230199ff8d92c310348d3c1dcfafb1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "integration_handoff.md",
+      "size_bytes": 4360,
+      "sha256": "79cef9731aefba35003357c52bb6a0c69c0de2bd6fed80417f150a8c6c501c75",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "invalid_play_cases.json",
+      "size_bytes": 200907,
+      "sha256": "fd700bc1caae6011369cea9e91c0ae950720c48945ddf4ed340f2d6cfff27c83",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/author_tests.py",
+      "size_bytes": 1505,
+      "sha256": "055157d9fc119630b6fc73af960669141744bceb77f6ed4343d5595043b9da0e",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/check_contracts.py",
+      "size_bytes": 1737,
+      "sha256": "5e961888db798e5a9906ab579077b4a8d20e1b23f976cb14b81bf7c72380e926",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/export_examples.py",
+      "size_bytes": 651,
+      "sha256": "df8992c9ade1ba49c28d8bfbd574e0a679c521e53cdd7c80e58cd2e4ed98b2e4",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/generate_invalid_cases.py",
+      "size_bytes": 4996,
+      "sha256": "b4e902410c1f94fe37900679838da5e6c256e72ee5eced23358f82dcbc31d4d1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/preflight.py",
+      "size_bytes": 1109,
+      "sha256": "07ec0b7edd7c92b3ef3683c72a111ddbe8cc4260db28472afd97507a81e1e1cf",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/probe_p14_module_identity.py",
+      "size_bytes": 1444,
+      "sha256": "ed083c14b4181dc1a5c9f87b39e705d900fba1311940e2d5fec096535da15b15",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/record_run.py",
+      "size_bytes": 2285,
+      "sha256": "4178a8f6a4ab54df7f01d7b32d6aca89e14e290dd9a290420e8a9fda338b1d43",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/replay_example.py",
+      "size_bytes": 1448,
+      "sha256": "44852190a0060a99de7c19f2f50e896149e54183a3203c70b5f1b58238b4e8dd",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "tools/verify_delivery.py",
+      "size_bytes": 5993,
+      "sha256": "47d9c2289e1084469f84c961f07118b4cc2ab93bfb9a3a4e0c80f00254bcdccf",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/SELF_VALIDATION_RESULTS.txt",
+      "size_bytes": 2642,
+      "sha256": "c714f3680c7c5f98d273f81cb33ba8e7f4e4f2b37fdef6841e3d1db40acdd6bc",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/planning/decisions/decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/planning/handoffs/README_handoff.txt",
+      "size_bytes": 2317,
+      "sha256": "570b0d036d3af548e10a3ecbccbba9a02ba23a2555c43f72e50668447aad5ae2",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/planning/handoffs/task_register.tsv",
+      "size_bytes": 3484,
+      "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/spec/product/requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/spec/product/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P01/spec/product/scope_matrix.tsv",
+      "size_bytes": 2624,
+      "sha256": "d84f7c95e0251b4f07b4789d68b6d9285c5d340dc0d56a2ba3df89fb0512c745",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/P02_DELIVERY_README.md",
+      "size_bytes": 5160,
+      "sha256": "20755cd480bfee050ab720fb07d0579d8a657897819fc381414433277558f8d4",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/P02_static_validation.log",
+      "size_bytes": 865,
+      "sha256": "a947c41a3022488830c68dd557c24517d7c6693283981ba9ea8e8042ebcbfb28",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/downstream_handoff.tsv",
+      "size_bytes": 3039,
+      "sha256": "58e9c8dc1be01492c9486718a1096d3c619fb0baae2b5b02fe2de2cb3c1dbd27",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/manifest.sha256.tsv",
+      "size_bytes": 5746,
+      "sha256": "129caa0b09d46aa1a6e7da6edf2995ba9cb753e6ccc94c46a6fe75134242de6f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/source_input_receipt.tsv",
+      "size_bytes": 3909,
+      "sha256": "d3bb1464ea679e41c5e7298ded377780fa957cc79eadbafcdbb4d77744127be1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+      "size_bytes": 200474,
+      "sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/effect_priority.tsv",
+      "size_bytes": 5253,
+      "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/fixture_index.tsv",
+      "size_bytes": 7022,
+      "sha256": "19d759d5e57d9801801d3f453c213f570d63b8fc2333f231bb636b82d120a532",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/interface_rfc_and_blockers.md",
+      "size_bytes": 4666,
+      "sha256": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/resolution_examples.md",
+      "size_bytes": 3552,
+      "sha256": "c3de37b08141857dee8fa1e8712d6ded2c0661d8c154e80c89dfbc6679bf5fba",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/terminal_phase_truth_table.tsv",
+      "size_bytes": 3644,
+      "sha256": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/resolution/validate_spec_fixtures.py",
+      "size_bytes": 17497,
+      "sha256": "e7de08f89848a85f5a167ec95030c90810b28bce83d941b5b4de2bb9e764bfc1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+      "size_bytes": 15376,
+      "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/state_machine/battle_state_machine.mmd",
+      "size_bytes": 1406,
+      "sha256": "3af3c4f3e7c6ee618ecb9468fa669b0ba7da59b875914f9dc358662e48dce44b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+      "size_bytes": 4734,
+      "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/P03_DELIVERY_README.md",
+      "size_bytes": 4429,
+      "sha256": "d1a55b0e8d08a279e9aa2dd021e8241c97f2cb6cf2679eb1f18f11b7b90bf079",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/P03_static_validation.log",
+      "size_bytes": 822,
+      "sha256": "9cf040e75d0ad89017574306034f9956092609d8a01f05a59919724f5c3638fc",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/card_catalog.json",
+      "size_bytes": 15036,
+      "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/card_choice_cases.tsv",
+      "size_bytes": 3561,
+      "sha256": "a7aefcc60e2ce6cbaedd099a8afd44e6edfac0620c9d57224a742bb4893dd8a6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/card_dictionary.tsv",
+      "size_bytes": 1558,
+      "sha256": "4928ad5d82fb6b18c3e01ce7968c2b010f668815c932d1775bee66c69e976bc6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/card_effect_examples.json",
+      "size_bytes": 4974,
+      "sha256": "0ed597d9bfde4bb4bc6806a6570ed4108873d4e8b43d77a0e53f454d8cdf9d64",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/character_card_pool.tsv",
+      "size_bytes": 479,
+      "sha256": "284199ae93a484e808d1546975b16cec4d14071d01f84c0b52865bf76d2db3e6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/choice_scenarios.json",
+      "size_bytes": 5764,
+      "sha256": "7aa073d511b30e9392fd9eddc794088605dedab6440a4a909de9942e719d318a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/deck_build_fixtures.json",
+      "size_bytes": 35763,
+      "sha256": "1b8fe32b8977db17d1254270b8cf0ded31534fa6a8ce3868af2de5bc18587820",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/content/cards/validate_card_content.py",
+      "size_bytes": 15891,
+      "sha256": "388f115fb9e46dc51cad466244a706e7bcbfb10232b4dbfb10abad6e24a5a870",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/design/cards/card_effect_event_map.tsv",
+      "size_bytes": 1525,
+      "sha256": "0bd1084662836dd9e9264c18a90be813fce9077eeb3bfe8d4316377fbb2d22cb",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/design/cards/card_keywords.md",
+      "size_bytes": 2130,
+      "sha256": "fef1ec36ba21005bbedcc3f123fb39be279b7837f43d0eff94a75a63010b451f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/design/cards/interface_rfc_blockers.md",
+      "size_bytes": 3726,
+      "sha256": "6d2b319e10d9a1ba9ab7702e41dda946d19c0bd6e05e5231109bc1e631fb77e2",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/design/cards/party_deck_rules.md",
+      "size_bytes": 5860,
+      "sha256": "a720f173654ad37b5d691559dd9206854ecf469d1c18883e53b8d7a78cd4bae6",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/downstream_handoff.tsv",
+      "size_bytes": 2083,
+      "sha256": "8ae20f6df0a16281b2ace23a40fe23487f5a70739d0e9826d4803f3562c95102",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/manifest.sha256.tsv",
+      "size_bytes": 6936,
+      "sha256": "b0e210c576b1ab49bda71e42b388d950979acffda4d9ca5edfcefca1fcc77895",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P03/source_input_receipt.tsv",
+      "size_bytes": 2495,
+      "sha256": "db65e502d79ea367f2d39bddefdc5f466d6b8fe02ac619fbddb6fea76e9b9115",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/architecture/authorization_basis.json",
+      "size_bytes": 845,
+      "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/canonical_vectors.json",
+      "size_bytes": 39486,
+      "sha256": "8a1c838be0b3bcb2d11f43ef7ed8bf13b6c9bf06903482f1e00108c429a58dd9",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/contract_semantics.md",
+      "size_bytes": 8986,
+      "sha256": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/examples/DeckPatchCandidate.json",
+      "size_bytes": 675,
+      "sha256": "2a2b083d6aa67ecf45301e700ac4d387f56f11123f909875efae2dcda578f362",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/examples/PartySnapshot.json",
+      "size_bytes": 657,
+      "sha256": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/fixture_notice.json",
+      "size_bytes": 334,
+      "sha256": "5302907b1c07d52947f113e72a76c9a8fab45a624daa24c3ecb726b68df67bb4",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/interface_rfcs.json",
+      "size_bytes": 4828,
+      "sha256": "1e9ec5bf53a4d47844a5fe57f2505798ef27e01f975c36a0c7f5b53cfbed8bed",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P13/runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/__init__.py",
+      "size_bytes": 672,
+      "sha256": "5c5da680c4c472b213ac75b2a2c5fabe53b1d9d560d537c09f0eca302da8e42b",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/__main__.py",
+      "size_bytes": 964,
+      "sha256": "d0fcb463bed855bef20d015b7d6b5c5443c6f248789ecf78e0350b81d0faa15f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/core.py",
+      "size_bytes": 14017,
+      "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/replay.py",
+      "size_bytes": 2424,
+      "sha256": "6a5d5eef5b2f357289c447035a6673142e8a79f9a2a197c9a4f41a7bf90445d5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/rng.py",
+      "size_bytes": 1510,
+      "sha256": "63582486ea35ae90272b8146a2dcfa1c3c7b084029da8349b6da59edd0a738ed",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/battle_core/wire.py",
+      "size_bytes": 730,
+      "sha256": "f5720daa1a54a1ab88c90b81530559fa23e3384e8fc3a9701453b73903dad741",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/handoff/blockers.json",
+      "size_bytes": 3489,
+      "sha256": "2bb0486304150aa027d25bb27abc0cc79cb8b46dffe0cd72c9723b273774360f",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/handoff/contract_acceptance.json",
+      "size_bytes": 1387,
+      "sha256": "708ba19c48428cd6efaf22255289be24830279104bcbc7ba491074093b045243",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/P14/handoff/path_mapping_request.json",
+      "size_bytes": 1505,
+      "sha256": "6e49752960c1d4178f4a359038f7f74ff80a8f51ba7f33a53e890bd17bd2dfc5",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/V6/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/archives/P14_BattleCore_V0.1.zip",
+      "size_bytes": 3393475,
+      "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "upstream/conflicts/effect_priority_11byte.tsv",
+      "size_bytes": 11,
+      "sha256": "68c9a1609b1f46aec7a99c0259d7c1de6efd191dbbe86e16edd22887274df763",
+      "status": "PASS"
+    },
+    {
+      "package_relative_path": "verification_status.json",
+      "size_bytes": 4522,
+      "sha256": "6f73ee664f40f132ac06bda4ad602598cb3333fb9f0caeb35481eddbc26a6598",
+      "status": "PASS"
+    }
+  ],
+  "final_author_test_summary": {
+    "tests_run": 148,
+    "passed": 148,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "formal_engine_integration": "BLOCKED",
+  "target_environment_test": "NOT_RUN",
+  "P32_independent": "NOT_RUN",
+  "P33_independent": "NOT_RUN",
+  "P35_independent": "NOT_RUN",
+  "downstream_status": "PREPARED_NOT_ACKNOWLEDGED",
+  "production_write_allowlist": [],
+  "github_write_performed": false,
+  "additional_persistent_storage_performed": false
+}

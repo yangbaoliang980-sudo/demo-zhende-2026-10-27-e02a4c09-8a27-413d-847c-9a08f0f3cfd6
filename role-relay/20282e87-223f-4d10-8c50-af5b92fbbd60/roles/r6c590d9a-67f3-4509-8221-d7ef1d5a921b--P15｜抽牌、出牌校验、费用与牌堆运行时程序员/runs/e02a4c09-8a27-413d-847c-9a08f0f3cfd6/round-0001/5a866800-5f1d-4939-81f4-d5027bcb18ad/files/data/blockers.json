@@ -1,0 +1,199 @@
+{
+  "version": "P15-BLOCKERS/0.1.0",
+  "task_id": "TASK-02-01",
+  "formal_status": "BLOCKED",
+  "blockers": [
+    {
+      "id": "P15-BLK-001",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "topic": "Production path/authorization",
+      "missing": "Original actual_path_mapping still has null paths and write_allowed=false for all three P15 paths.",
+      "required_evidence": "Versioned actual_path_mapping plus repository/base SHA and explicit owner authorization.",
+      "source": [
+        {
+          "source_id": "SRC-033",
+          "package_path": "upstream/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        }
+      ],
+      "independent_work": "ISOLATED_ONLY"
+    },
+    {
+      "id": "P15-BLK-002",
+      "owner": "P17",
+      "status": "BLOCKED",
+      "topic": "Real party input",
+      "missing": "No real P17 PartySnapshot, version, hash or acceptance was received.",
+      "required_evidence": "Fixed original P17 snapshot with three legal members, content references and owner receipt.",
+      "source": [
+        {
+          "source_id": "SRC-041",
+          "package_path": "upstream/P13/contracts/internal/examples/PartySnapshot.json",
+          "sha256": "15beba3669e0f647ed54df69d0b4769c9971b6ea9b8f39e0f9d34151b427d0de",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        }
+      ],
+      "independent_work": "FIXTURE_ONLY"
+    },
+    {
+      "id": "P15-BLK-003",
+      "owner": "P03",
+      "status": "BLOCKED",
+      "topic": "Approved cards/deck and common instance ownership",
+      "missing": "P03 catalog and recipes are draft mock inputs; COMMON templates lack instance owner policy.",
+      "required_evidence": "P03 approved catalog/recipe and common-owner policy; P04 roster and P05 costs acknowledged.",
+      "source": [
+        {
+          "source_id": "SRC-018",
+          "package_path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        }
+      ],
+      "independent_work": "FIXTURE_ONLY"
+    },
+    {
+      "id": "P15-BLK-004",
+      "owner": "P02",
+      "status": "BLOCKED",
+      "topic": "Approved draw/hand/energy/dead-owner policies",
+      "missing": "Initial/turn draw counts, hand cap, recycle/end-turn/entry energy/dead-owner policies are not frozen for production.",
+      "required_evidence": "P02/P03/P05 policy versions and source hashes; P01/P08 decision for zero-study rewards if relevant.",
+      "source": [
+        {
+          "source_id": "SRC-015",
+          "package_path": "upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+          "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+          "version": "P02-BATTLE-0.1.0-draft",
+          "owner": "P02"
+        }
+      ],
+      "independent_work": "EXPLICIT_FIXTURE_POLICIES_ONLY"
+    },
+    {
+      "id": "P15-BLK-005",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "topic": "Versioned candidate-adjacent DTOs",
+      "missing": "No shared negative-candidate, ActionIntent, deck-build initialization or per-command draw-report DTO.",
+      "required_evidence": "Owner-adjudicated contract versions and positive/negative canonical vectors for relevant RFCs.",
+      "source": [
+        {
+          "source_id": "SRC-035",
+          "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        }
+      ],
+      "independent_work": "LOCAL_EVIDENCE_AND_ORIGINAL_P14_PYTHON_PORT_ONLY"
+    },
+    {
+      "id": "P15-BLK-006",
+      "owner": "P14",
+      "status": "BLOCKED",
+      "topic": "Separate entry draw reporting",
+      "missing": "Rules.entry_draw_requested is shared by start and later entry, so differing P15 counts cannot bind accurately.",
+      "required_evidence": "Versioned dynamic draw report or independent start/turn counts; retain atomic P14 submission.",
+      "source": [
+        {
+          "source_id": "SRC-049",
+          "package_path": "upstream/P14/battle_core/model.py",
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+          "version": "P14-BATTLE-CORE/0.1.0-isolated",
+          "owner": "P14"
+        }
+      ],
+      "independent_work": "EQUAL_COUNTS_REQUIRED_IN_CURRENT_ADAPTER"
+    },
+    {
+      "id": "P15-BLK-007",
+      "owner": "P22",
+      "status": "BLOCKED",
+      "topic": "Official content and instance IDs",
+      "missing": "MOCK_P03 IDs and p15inst SHA names are isolated namespaces, not approved global IDs.",
+      "required_evidence": "Fixed ID registry/schema with content and instance naming acceptance.",
+      "source": [
+        {
+          "source_id": "SRC-018",
+          "package_path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        }
+      ],
+      "independent_work": "FIXTURE_NAMESPACE_ONLY"
+    },
+    {
+      "id": "P15-BLK-008",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "topic": "Target runtime evidence",
+      "missing": "No actual game engine, target OS/version, build entry point or authorized production checkout received.",
+      "required_evidence": "P13/P01 fixed target environment and mapped checkout; P34 reproducible build evidence.",
+      "source": [
+        {
+          "source_id": "SRC-034",
+          "package_path": "upstream/P13/architecture/authorization_basis.json",
+          "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+          "version": "YLTT-INTERNAL/0.1.0-isolated",
+          "owner": "P13"
+        }
+      ],
+      "independent_work": "LINUX_PYTHON_AUTHOR_RUN_ONLY"
+    },
+    {
+      "id": "P15-BLK-009",
+      "owner": "P03",
+      "status": "BLOCKED",
+      "topic": "BUFF/DEBUFF proposal cards",
+      "missing": "Two proposed cards remain disabled pending rule, balance and effect contract approvals.",
+      "required_evidence": "P03/P02/P05 approved semantics followed by P13/P14 versioned effect contract.",
+      "source": [
+        {
+          "source_id": "SRC-018",
+          "package_path": "upstream/P03/content/cards/card_catalog.json",
+          "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+          "version": "P03-CARDS-0.1.0-draft",
+          "owner": "P03"
+        }
+      ],
+      "independent_work": "DISABLED_REJECTION_TESTED"
+    }
+  ],
+  "not_run_gates": [
+    {
+      "gate": "P32 independent test",
+      "owner": "P32",
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "P33 manual target UI test",
+      "owner": "P33",
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "P35 independent evidence acceptance",
+      "owner": "P35",
+      "status": "NOT_RUN"
+    },
+    {
+      "gate": "Target engine / desktop / P21 persistence / Anki / full-game E2E",
+      "owner": "P32",
+      "status": "NOT_RUN",
+      "dependency": "Actual mapped integration and target environment"
+    },
+    {
+      "gate": "Cross-module integration",
+      "owner": "EXT-INTEGRATOR",
+      "status": "NOT_RUN",
+      "dependency": "User designation and authorization not received"
+    }
+  ],
+  "policy": "Missing production inputs do not invalidate executed isolated tests; isolated tests do not release production or independent gates."
+}

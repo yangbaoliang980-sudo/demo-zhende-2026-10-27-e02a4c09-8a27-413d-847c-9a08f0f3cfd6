@@ -1,0 +1,114 @@
+{
+  "version": "P15-TASK-TRACE/0.1.0",
+  "task_id": "TASK-02-01",
+  "stage": "S02",
+  "role": "P15",
+  "artifact_version": "P15-DECK-RUNTIME/0.1.0-isolated",
+  "upstream_task_row": {
+    "task_id": "TASK-02-01",
+    "role_id": "P15",
+    "stage": "S02",
+    "artifact_version": "TO_BE_ASSIGNED",
+    "task": "抽牌/费用/DeckPatch候选",
+    "activation_status": "PENDING_G1_INPUT",
+    "upstream": "P02+P14+P22",
+    "input_qualification": "不可直接扣费",
+    "allowed_paths_requirement": "UNMAPPED;P15_OWNED",
+    "downstream_consumer": "P14/P32",
+    "reviewer": "P32/P35",
+    "acceptance": "重复指令和牌堆确定性"
+  },
+  "task_source": [
+    {
+      "source_id": "SRC-065",
+      "package_path": "upstream/P01/planning/handoffs/task_register.tsv",
+      "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "version": "P01-S00-V0.1",
+      "owner": "P01"
+    }
+  ],
+  "requirement_source": [
+    {
+      "source_id": "SRC-067",
+      "package_path": "upstream/P01/spec/product/requirements_traceability.tsv",
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "version": "P01-S00-V0.1",
+      "owner": "P01"
+    }
+  ],
+  "activation": "Current user explicitly authorizes P15 isolated work; upstream PENDING_G1_INPUT is preserved and production G1 is not released.",
+  "trace": [
+    {
+      "requirement_id": "REQ-005",
+      "upstream_implementation_owner": "P04",
+      "requirement": "战斗采用三人编队，角色独立定位、属性、技能与卡牌关联。",
+      "p15_status": "ISOLATED_PARTIAL_AUTHOR_PASS",
+      "p15_artifacts": [
+        "deck_runtime/builder.py",
+        "deck_unit_tests/test_builder.py"
+      ],
+      "limits": "Real P17/P04 roster and production owner policy blocked; no MVP roster count approved."
+    },
+    {
+      "requirement_id": "REQ-006",
+      "upstream_implementation_owner": "P02",
+      "requirement": "战斗为回合制出牌，至少涵盖攻击、防御、治疗、增益类型。",
+      "p15_status": "ISOLATED_PARTIAL_AUTHOR_PASS",
+      "p15_artifacts": [
+        "deck_runtime/planner.py",
+        "deck_unit_tests/test_validation.py"
+      ],
+      "limits": "Attack/defense/heal/DOT fixture validation works; BUFF/DEBUFF disabled and BLOCKED."
+    },
+    {
+      "requirement_id": "REQ-015",
+      "upstream_implementation_owner": "P01",
+      "requirement": "单文件唯一修改owner，跨岗修改必须提接口变更申请。",
+      "p15_status": "AUTHOR_BOUNDARY_REVIEW_COMPLETED",
+      "p15_artifacts": [
+        "evidence/input_immutability_check.json",
+        "handoff/path_mapping_request.json"
+      ],
+      "limits": "No mapped production files or upstream originals modified; not P35 acceptance."
+    },
+    {
+      "requirement_id": "REQ-019",
+      "upstream_implementation_owner": "P01",
+      "requirement": "当前优先S00至S03首个战斗竖切，环境不足要写阻塞。",
+      "p15_status": "S02_ISOLATED_DELIVERED_FORMAL_BLOCKED",
+      "p15_artifacts": [
+        "verification_status.json",
+        "handoff/blockers.json"
+      ],
+      "limits": "No S03 whole-game, engine or Anki completion claim."
+    },
+    {
+      "requirement_id": "REQ-021",
+      "upstream_implementation_owner": "P14",
+      "requirement": "P15只给候选，P14唯一权威写入费用与战斗状态。",
+      "p15_status": "ISOLATED_AUTHOR_CONTRACT_PASS",
+      "p15_artifacts": [
+        "deck_runtime/p14_adapter.py",
+        "deck_unit_tests/test_p14_contract.py"
+      ],
+      "limits": "Real P14 commits fees/card/effects; P15 only candidates. P32/P35 NOT_RUN."
+    },
+    {
+      "requirement_id": "REQ-024",
+      "upstream_implementation_owner": "P29",
+      "requirement": "禁动画不改变结算。",
+      "p15_status": "NOT_RUN_TARGET_PRESENTATION",
+      "p15_artifacts": [
+        "deck_runtime/planner.py",
+        "examples/demo.py"
+      ],
+      "limits": "Pure logic has no renderer; actual animation on/off comparison is NOT_RUN."
+    }
+  ],
+  "decisions_not_made": [
+    "DEC-003 zero-study policy",
+    "DEC-004 MVP quantities"
+  ],
+  "production_paths": null,
+  "production_write_allowlist": []
+}

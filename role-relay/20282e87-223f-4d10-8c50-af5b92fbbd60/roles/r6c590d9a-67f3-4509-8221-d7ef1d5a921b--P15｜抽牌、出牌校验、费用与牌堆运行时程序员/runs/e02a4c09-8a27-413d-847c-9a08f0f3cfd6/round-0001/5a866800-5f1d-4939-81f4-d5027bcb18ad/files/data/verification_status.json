@@ -1,0 +1,137 @@
+{
+  "version": "P15-VERIFICATION/0.1.0",
+  "task_id": "TASK-02-01",
+  "artifact_version": "P15-DECK-RUNTIME/0.1.0-isolated",
+  "recorded_utc": "2026-10-28T19:21:29.885615+00:00",
+  "overall": "ISOLATED_DELIVERY_AUTHOR_VERIFIED_PRODUCTION_BLOCKED",
+  "layers": [
+    {
+      "layer": "P15 author design review",
+      "status": "COMPLETED_AUTHOR_REVIEW",
+      "evidence": "handoff/author_review.md"
+    },
+    {
+      "layer": "P15 author unit and isolated P14 contract tests",
+      "status": "PASS",
+      "tests_run": 148,
+      "passed": 148,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "evidence": "evidence/runs/author_003",
+      "groups": {
+        "deck_unit_tests.test_builder.BuildTests": 33,
+        "deck_unit_tests.test_commands.CommandTests": 11,
+        "deck_determinism_tests.DeterminismTests": 7,
+        "deck_unit_tests.test_p14_contract.EntryBasisTests": 5,
+        "deck_unit_tests.test_p14_contract.P14ContractTests": 20,
+        "deck_unit_tests.test_piles.PileTests": 17,
+        "deck_unit_tests.test_validation.ValidationTests": 55
+      }
+    },
+    {
+      "layer": "Unchanged P13 validator",
+      "status": "PASS_AUTHOR_ONLY",
+      "messages": 168,
+      "evidence": "evidence/runs/contracts_001"
+    },
+    {
+      "layer": "Live P15 replanning plus original P14 replay",
+      "status": "PASS_AUTHOR_ONLY",
+      "request_count": 18,
+      "candidate_evidence_count": 9,
+      "evidence": "evidence/runs/replay_002"
+    },
+    {
+      "layer": "Original P14 import namespace rejection regression",
+      "status": "PASS_AUTHOR_ONLY",
+      "previous_run": "FAIL in adapter_identity_001; source preserved",
+      "evidence": "evidence/runs/adapter_identity_002"
+    },
+    {
+      "layer": "Three independent PYTHONHASHSEED processes",
+      "status": "PASS_AUTHOR_ONLY",
+      "values": [
+        "0",
+        "1",
+        "777"
+      ],
+      "evidence": "evidence/runs/author_003",
+      "scope": "Child processes execute the real P15 demo; independent processes are not independent role acceptance."
+    },
+    {
+      "layer": "Raw input immutability",
+      "status": "PASS_AUTHOR_ONLY",
+      "counts": {
+        "uploaded_archives": 4,
+        "expanded_members": 2930,
+        "preserved_sources": 70
+      },
+      "evidence": "evidence/input_immutability_check.json"
+    },
+    {
+      "layer": "Optional jsonschema algorithm comparison",
+      "status": "NOT_RUN",
+      "dependency_gate": "BLOCKED",
+      "exit_code": 3,
+      "evidence": "evidence/runs/optional_schema_001",
+      "reason": "jsonschema unavailable in execution Python; no comparison claimed"
+    },
+    {
+      "layer": "Production preflight",
+      "status": "BLOCKED",
+      "exit_code": 3,
+      "evidence": "evidence/runs/preflight_001"
+    },
+    {
+      "layer": "P32 independent unit/contract tests",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P33 independent manual test",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P35 independent design/evidence gate",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "Target engine and desktop",
+      "status": "NOT_RUN",
+      "dependency_gate": "BLOCKED"
+    },
+    {
+      "layer": "UI/animation, Anki, P21 save/restore and full-game E2E",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "Final ZIP CRC, bytes and new-extract rerun",
+      "status": "RECORDED_IN_EXTERNAL_DELIVERY_RECEIPT",
+      "note": "Final archive hash and actual packaging runs cannot be embedded recursively in this archive; consult delivery_receipt.json."
+    }
+  ],
+  "demo_summary": {
+    "scope": "AUTHOR_ISOLATED_CONTRACT_EXECUTION_REAL_P15_UNCHANGED_P14_FIXTURE_P17_AND_P16",
+    "commits": 12,
+    "revision": 12,
+    "rejected_requests": 3,
+    "duplicate_no_ops": 3,
+    "energy_spent_events": 3,
+    "recycle_count": 2,
+    "rng_draw_count": 16,
+    "final_state_sha256": "fc6afabe831be5d760978106744c1fd6c97921a1f5c0611e5995d482a766bee1",
+    "replay_sha256": "dd90ff57a7ffa961157a87acb1aee7b7502a9d8d261e9c12b4f8ab30ebb2764a",
+    "full_game_integration": "NOT_RUN",
+    "real_p17_party": "BLOCKED",
+    "P32_P35_independent": "NOT_RUN"
+  },
+  "historical_failure_preserved": "P15-DEF-001: original module import mismatch; fixed in P15, author retested, independent closure NOT_RUN.",
+  "claims_excluded": [
+    "Production mapping approved",
+    "P17 genuine party verified",
+    "Game integrated or released",
+    "Real Anki linkage",
+    "P32/P33/P35 signed off",
+    "Third-party schema comparison passed"
+  ]
+}

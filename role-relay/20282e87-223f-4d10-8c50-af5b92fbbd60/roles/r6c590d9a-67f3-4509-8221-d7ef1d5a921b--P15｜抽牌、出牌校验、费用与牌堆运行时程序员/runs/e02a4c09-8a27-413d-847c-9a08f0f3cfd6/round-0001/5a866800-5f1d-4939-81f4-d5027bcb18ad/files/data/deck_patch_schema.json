@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:p15:deck-patch:0.1.0-isolated",
+  "title": "P13 DeckPatchCandidate unchanged definition projection for P15",
+  "description": "Exact selected P13 definitions. Source SHA-256 b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac; not a new shared DTO.",
+  "$defs": {
+    "DeckPatchCandidate": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "DeckPatchCandidate"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "command_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "command_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "snapshot_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "moves": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Move"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "energy_delta": {
+          "type": "integer",
+          "minimum": -9007199254740991,
+          "maximum": 9007199254740991
+        },
+        "rng_before": {
+          "$ref": "#/$defs/Rng"
+        },
+        "rng_after": {
+          "$ref": "#/$defs/Rng"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "command_id",
+        "expected_revision",
+        "command_sha256",
+        "snapshot_sha256",
+        "policy_version",
+        "moves",
+        "energy_delta",
+        "rng_before",
+        "rng_after"
+      ],
+      "additionalProperties": false
+    },
+    "Move": {
+      "type": "object",
+      "properties": {
+        "instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "from_zone": {
+          "enum": [
+            "draw",
+            "hand",
+            "discard",
+            "exhaust"
+          ]
+        },
+        "to_zone": {
+          "enum": [
+            "draw",
+            "hand",
+            "discard",
+            "exhaust"
+          ]
+        },
+        "to_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4095
+        }
+      },
+      "required": [
+        "instance_id",
+        "from_zone",
+        "to_zone",
+        "to_index"
+      ],
+      "additionalProperties": false
+    },
+    "Rng": {
+      "type": "object",
+      "properties": {
+        "algorithm": {
+          "const": "xorshift32-v1"
+        },
+        "initial_seed": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "state": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967295
+        },
+        "draw_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "algorithm",
+        "initial_seed",
+        "state",
+        "draw_count"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$ref": "#/$defs/DeckPatchCandidate"
+}

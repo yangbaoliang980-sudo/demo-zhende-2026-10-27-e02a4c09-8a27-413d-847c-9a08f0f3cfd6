@@ -1,0 +1,80 @@
+{
+  "request_id": "P15-PATH-001",
+  "version": "0.1.0",
+  "owner": "P15",
+  "decision_owner": "P13",
+  "status": "PREPARED_NOT_ACKNOWLEDGED",
+  "source": [
+    {
+      "source_id": "SRC-033",
+      "package_path": "upstream/P13/architecture/actual_path_mapping.json",
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-034",
+      "package_path": "upstream/P13/architecture/authorization_basis.json",
+      "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-065",
+      "package_path": "upstream/P01/planning/handoffs/task_register.tsv",
+      "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "version": "P01-S00-V0.1",
+      "owner": "P01"
+    }
+  ],
+  "production_write_allowlist": [],
+  "original_p15_mappings": [
+    {
+      "owner": "P15",
+      "design_path": "runtime/battle/deck/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P15",
+      "design_path": "runtime/battle/card_actions/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P15",
+      "design_path": "tests/deck_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "new_isolated_delivery_paths": [
+    "deck_runtime/**",
+    "deck_unit_tests/**",
+    "deck_determinism_tests.py",
+    "deck_patch_schema.json",
+    "invalid_play_cases.json",
+    "card_legality_table.tsv",
+    "examples/**",
+    "fixtures/**",
+    "tools/**",
+    "handoff/**",
+    "evidence/**"
+  ],
+  "scope": "New isolated deliverable only. These paths do not claim approval as actual production paths.",
+  "requested_decision": "P13 must map each planned production path to an actual repository/commit/directory and supply owner authorization before any overwrite or integration.",
+  "upstream_modification_allowlist": [],
+  "EXT_INTEGRATOR_authorization": "NOT_RECEIVED"
+}
