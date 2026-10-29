@@ -1,0 +1,1324 @@
+{
+  "task_id": "P16-S03-AI-001",
+  "version": "P16-SOURCE-RECEIPT/0.1.0",
+  "upstream_files": [
+    {
+      "role": "P01",
+      "relative_path": "upstream/P01/planning/handoffs/task_register.tsv",
+      "source_path": "inputs/unpacked/139034e2179fbe35/planning/handoffs/task_register.tsv",
+      "size_bytes": 3484,
+      "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60",
+      "modifiable": false
+    },
+    {
+      "role": "P01",
+      "relative_path": "upstream/P01/planning/handoffs/role_activation_register.tsv",
+      "source_path": "inputs/unpacked/139034e2179fbe35/planning/handoffs/role_activation_register.tsv",
+      "size_bytes": 5628,
+      "sha256": "5bbb4eb565b2f6dd06bb68a0908b22e7b561061cb1c8afbd8c07dfac0cf6e862",
+      "modifiable": false
+    },
+    {
+      "role": "P01",
+      "relative_path": "upstream/P01/spec/product/requirements_traceability.tsv",
+      "source_path": "inputs/unpacked/139034e2179fbe35/spec/product/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "modifiable": false
+    },
+    {
+      "role": "P01",
+      "relative_path": "upstream/P01/spec/product/requirements_baseline_v6.txt",
+      "source_path": "inputs/unpacked/139034e2179fbe35/spec/product/requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "modifiable": false
+    },
+    {
+      "role": "P02",
+      "relative_path": "upstream/P02/spec/battle/state_machine/battle_state_machine.md",
+      "source_path": "inputs/unpacked/969c7e7688f795aa/spec/battle/state_machine/battle_state_machine.md",
+      "size_bytes": 15376,
+      "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "modifiable": false
+    },
+    {
+      "role": "P02",
+      "relative_path": "upstream/P02/spec/battle/state_machine/battle_state_machine.mmd",
+      "source_path": "inputs/unpacked/969c7e7688f795aa/spec/battle/state_machine/battle_state_machine.mmd",
+      "size_bytes": 1406,
+      "sha256": "3af3c4f3e7c6ee618ecb9468fa669b0ba7da59b875914f9dc358662e48dce44b",
+      "modifiable": false
+    },
+    {
+      "role": "P02",
+      "relative_path": "upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+      "source_path": "inputs/unpacked/969c7e7688f795aa/spec/battle/state_machine/turn_sequence.tsv",
+      "size_bytes": 4734,
+      "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "modifiable": false
+    },
+    {
+      "role": "P02",
+      "relative_path": "upstream/P02/spec/battle/resolution/effect_priority.tsv",
+      "source_path": "inputs/unpacked/969c7e7688f795aa/spec/battle/resolution/effect_priority.tsv",
+      "size_bytes": 5253,
+      "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+      "modifiable": false
+    },
+    {
+      "role": "P02",
+      "relative_path": "upstream/P02/spec/battle/resolution/terminal_phase_truth_table.tsv",
+      "source_path": "inputs/unpacked/969c7e7688f795aa/spec/battle/resolution/terminal_phase_truth_table.tsv",
+      "size_bytes": 3644,
+      "sha256": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/content/enemies/boss_phase_graph.json",
+      "size_bytes": 6305,
+      "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/content/enemies/enemy_specs.json",
+      "size_bytes": 25799,
+      "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/content/enemies/enemy_truth_cases.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/content/enemies/enemy_truth_cases.tsv",
+      "size_bytes": 201375,
+      "sha256": "290885204ce736e1e2ba4e44f21de0bb7fdaabf6743c133cbe210b2f5929755b",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/content/enemies/intent_dictionary.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/content/enemies/intent_dictionary.tsv",
+      "size_bytes": 5583,
+      "sha256": "db64c4d509638bbf969d374ff905e5bc2d76afdd44218e99d4142d06074497bc",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/behavior_and_counterplay.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/behavior_and_counterplay.md",
+      "size_bytes": 9126,
+      "sha256": "f8c0d925a71da2ad2fd845dca802e916fef1d2043eca3df2d5aedc071be2125a",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/content_format.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/content_format.md",
+      "size_bytes": 6900,
+      "sha256": "8da7447cbcc1a31bbc68136b1ff7851679af1c18a8b8988b24caadd9dc6bbe31",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/interface_rfc_and_blockers.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/interface_rfc_and_blockers.md",
+      "size_bytes": 7783,
+      "sha256": "c6467953c7857c3ed49f4f4fa02236ad6e2095c751d486f2b58dbce0652b66e4",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/state_resolution_rules.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/state_resolution_rules.tsv",
+      "size_bytes": 3025,
+      "sha256": "16cc4c72b3f6a6a4e47a3f6d78b52929ff88a0b7350e8ce44adc61d85f07e34f",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/state_coverage.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/state_coverage.tsv",
+      "size_bytes": 2704,
+      "sha256": "c70f617df6f77ad8e3c552259d4d949a584d730ead3049e44b95f2694c8c659f",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/source_input_receipt.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/source_input_receipt.tsv",
+      "size_bytes": 4835,
+      "sha256": "fdf4899b83bbb07ceeac9476f362e5324eccfbab3da013ea99e0323e5bec0b85",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/verification/test_content_guardrails.py",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/verification/test_content_guardrails.py",
+      "size_bytes": 4434,
+      "sha256": "2b1b0979f6527ed46ce53ec6a4e352d902e99ba99b3cf69cf6ee9d1546e9aa4b",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/verification/validate_enemy_content.py",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/verification/validate_enemy_content.py",
+      "size_bytes": 20250,
+      "sha256": "08392bcffc959d6a5e07f8d34c73bd56433ae23401fa5b5d11bd9ae3c10f8ce4",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/verification/verify_manifest.py",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/verification/verify_manifest.py",
+      "size_bytes": 2030,
+      "sha256": "b42cb37b419bb5ae0de421c3067dd015d9512259d7f0708ff88282a7d7d89606",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/README.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/README.md",
+      "size_bytes": 10901,
+      "sha256": "0a8690fbac12b11128e65df95ea1877028409ace1f6ff9279a5505e668dfb53c",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/__init__.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/contracts.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/demo.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+      "size_bytes": 2073,
+      "sha256": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/host.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+      "size_bytes": 3979,
+      "sha256": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/path_guard.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+      "size_bytes": 1229,
+      "sha256": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/ports.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/ports.py",
+      "size_bytes": 3699,
+      "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/sequence.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+      "size_bytes": 2594,
+      "sha256": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/runtime/framework/yltt_framework/testing.py",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+      "size_bytes": 1333,
+      "sha256": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/contracts/internal/contract_semantics.md",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+      "size_bytes": 8986,
+      "sha256": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/contracts/internal/internal_api_contracts.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/contracts/internal/interface_rfcs.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/interface_rfcs.json",
+      "size_bytes": 4828,
+      "sha256": "1e9ec5bf53a4d47844a5fe57f2505798ef27e01f975c36a0c7f5b53cfbed8bed",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/architecture/actual_path_mapping.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/architecture/authorization_basis.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+      "size_bytes": 845,
+      "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/architecture/do_not_touch.txt",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+      "size_bytes": 962,
+      "sha256": "dc77710b4b37366294fa79433d44d264233b0022672e16c4d28d9eb14851c8de",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/P13/architecture/target_environment_requirements.json",
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/__init__.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/__init__.py",
+      "size_bytes": 672,
+      "sha256": "5c5da680c4c472b213ac75b2a2c5fabe53b1d9d560d537c09f0eca302da8e42b",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/__main__.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/__main__.py",
+      "size_bytes": 964,
+      "sha256": "d0fcb463bed855bef20d015b7d6b5c5443c6f248789ecf78e0350b81d0faa15f",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/core.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/core.py",
+      "size_bytes": 14017,
+      "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/model.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/ports.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/replay.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/replay.py",
+      "size_bytes": 2424,
+      "sha256": "6a5d5eef5b2f357289c447035a6673142e8a79f9a2a197c9a4f41a7bf90445d5",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/resolver.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/rng.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/rng.py",
+      "size_bytes": 1510,
+      "sha256": "63582486ea35ae90272b8146a2dcfa1c3c7b084029da8349b6da59edd0a738ed",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/battle_core/wire.py",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/wire.py",
+      "size_bytes": 730,
+      "sha256": "f5720daa1a54a1ab88c90b81530559fa23e3384e8fc3a9701453b73903dad741",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/handoff/interface_rfcs.json",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/handoff/IC05_API.md",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/integration_handoff.md",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/integration_handoff.md",
+      "size_bytes": 5748,
+      "sha256": "7be2f893d7f3a13b79ebe6bf8acfb092e8383a43f7c9b49802504313d38f58b8",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/P14/README.md",
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/README.md",
+      "size_bytes": 10916,
+      "sha256": "322c07b3f817d190bd5e190971f021cbec924e76e621cd6cc7a0319c1b9b0824",
+      "modifiable": false
+    },
+    {
+      "role": "P15",
+      "relative_path": "upstream/P15/README.md",
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/README.md",
+      "size_bytes": 8509,
+      "sha256": "6e725a00ab8e4d1cf2d3446a727c51a142e92b2b0584f297f80b11ea50e0c737",
+      "modifiable": false
+    },
+    {
+      "role": "P15",
+      "relative_path": "upstream/P15/handoff/interface_rfcs.json",
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/handoff/interface_rfcs.json",
+      "size_bytes": 10682,
+      "sha256": "5bf234b4006bb6c31cf21546c4551c89d35cf3916cd7d8ed10a9515b38aab30a",
+      "modifiable": false
+    },
+    {
+      "role": "P13",
+      "relative_path": "upstream/archives/P13_ClientArchitecture_V0.1.zip",
+      "source_path": "inputs/unpacked/c617d116d785e8f9/files/013/P13_ClientArchitecture_V0.1.zip",
+      "size_bytes": 2635479,
+      "sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "modifiable": false
+    },
+    {
+      "role": "P14",
+      "relative_path": "upstream/archives/P14_BattleCore_V0.1.zip",
+      "source_path": "inputs/unpacked/dc2251676668f727/files/001/P14_BattleCore_V0.1.zip",
+      "size_bytes": 3393475,
+      "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/archives/P06_Enemy_Delivery_V0.1.zip",
+      "source_path": "inputs/unpacked/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/P06_Enemy_Delivery_V0.1.zip",
+      "size_bytes": 168593,
+      "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/path_mapping_request.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/path_mapping_request.tsv",
+      "size_bytes": 541,
+      "sha256": "ae9276ec90f4bc247367da810011c58831d47324b9bce6e085605918c72d6df5",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/budget_trace.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/budget_trace.tsv",
+      "size_bytes": 837,
+      "sha256": "6351399de200a3072fab1f85a2a3c0dc9f2470f3bf507312a851d03a325d9c73",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/delivery_manifest.sha256.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/delivery_manifest.sha256.tsv",
+      "size_bytes": 63871,
+      "sha256": "b4e47b0eebf7a8b7c43a85108eda935ca8e1eeb563dc90b1c2ec22195d5698a2",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/boss_phase_graph.mmd",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/boss_phase_graph.mmd",
+      "size_bytes": 636,
+      "sha256": "b447b8dd4d8301ecb6a1db2f96391a7e042b59e59dc1d658f8b33a6564140184",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/downstream_handoff.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/downstream_handoff.tsv",
+      "size_bytes": 3188,
+      "sha256": "1609a525622200be08d746020c457fbd54ff769c529eefe5b9bf256f3453367f",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/enemy_action_table.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/enemy_action_table.tsv",
+      "size_bytes": 5101,
+      "sha256": "b5771140fd250a5d449ead505ff1994c72df7049645819751ba4c17cbf920144",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/asset_requests.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/asset_requests.tsv",
+      "size_bytes": 1171,
+      "sha256": "133d8b80dea66da8162bedaff3bacf4e2708545717bd6583ac19dbfe04fa7ddd",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/content_guardrails.stderr.log",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/content_guardrails.stderr.log",
+      "size_bytes": 2901,
+      "sha256": "910c4b510f5f4a603d8a44485836845df1a42b1b2e6c52e3e35e31cfbaae0025",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/input_verification.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/input_verification.json",
+      "size_bytes": 12707,
+      "sha256": "a6bebdba86cb752cbaaffd81165dbd9d348b0e5283b79cab21ee38b4a9863782",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/content_validation.stderr.log",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/content_validation.stderr.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/truth_case_inventory.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/truth_case_inventory.json",
+      "size_bytes": 1154,
+      "sha256": "f5d5b5c0d2de731e1fdd9347ce35ced7fde33d52324185398ef4c720518d096b",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/validation_run_01.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/validation_run_01.json",
+      "size_bytes": 2691,
+      "sha256": "74abf1825f7afba46ebef115d44e7651cc8cb6606022841b6917a2520fb81386",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/content_guardrails.stdout.log",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/content_guardrails.stdout.log",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/author_environment.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/author_environment.json",
+      "size_bytes": 413,
+      "sha256": "b39acb664a7345b38b03b46d35c4ce6752e3bb5347381394f2a28cce4051239e",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/author_revision_notes.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/author_revision_notes.md",
+      "size_bytes": 808,
+      "sha256": "e51c3c4034947443876bac3af7580285a6317671fd14ddb84da22675c5337c92",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/content_validation.stdout.log",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/content_validation.stdout.log",
+      "size_bytes": 748,
+      "sha256": "ed2e75b6ebb8b76cc7d543560df8066854f1ab4a7f9809f311a4294f52f9ae15",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p01_requirements_baseline_v6.txt",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p01_requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p01_decisions_pending.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p01_decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p02_battle_state_machine.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p02_battle_state_machine.md",
+      "size_bytes": 15376,
+      "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p03_card_catalog.json",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p03_card_catalog.json",
+      "size_bytes": 15036,
+      "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p05_interface_rfc_blockers.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p05_interface_rfc_blockers.md",
+      "size_bytes": 4088,
+      "sha256": "6ba91ea29b4adef4da2e59dfb2f8d52ea3feaddc7b697eff7c4a4d3ed554358a",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p01_requirements_traceability.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p01_requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p05_stage_resource_budget.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p05_stage_resource_budget.tsv",
+      "size_bytes": 1381,
+      "sha256": "d4849f7f8237eec1d359ae06d7a0689b3500552ed17dbd1bb67213b5f4f225d9",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p02_terminal_phase_truth_table.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p02_terminal_phase_truth_table.tsv",
+      "size_bytes": 3644,
+      "sha256": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/V6_freeze.txt",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/V6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p05_balance_parameters.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p05_balance_parameters.tsv",
+      "size_bytes": 25009,
+      "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p02_effect_priority.tsv",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p02_effect_priority.tsv",
+      "size_bytes": 5253,
+      "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p02_interface_rfc_and_blockers.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p02_interface_rfc_and_blockers.md",
+      "size_bytes": 4666,
+      "sha256": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22",
+      "modifiable": false
+    },
+    {
+      "role": "P06",
+      "relative_path": "upstream/P06/design/enemies/evidence/readonly_upstream/p05_balance_report.md",
+      "source_path": "inputs/unpacked/0a2912acc81c594b/design/enemies/evidence/readonly_upstream/p05_balance_report.md",
+      "size_bytes": 14805,
+      "sha256": "7cd480be755a78f446fa2cddb59daa62854a62652b1a8c3c4ba72838e8c931db",
+      "modifiable": false
+    },
+    {
+      "role": "V6",
+      "relative_path": "upstream/V6/github_roles_v6.txt",
+      "source_path": "GitHub blob 5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "modifiable": false
+    }
+  ],
+  "input_audit_summary": {
+    "unique_archives": 61,
+    "extracted_members": 3912,
+    "relay_manifest_records": 699
+  },
+  "archives": [
+    {
+      "source_path": "upload/relay-materials-1-3c31460e1a.zip",
+      "filename": "relay-materials-1-3c31460e1a.zip",
+      "size_bytes": 12419145,
+      "sha256": "3c31460e1aaadd43bb0526e299e9167460bb3281f17d4910ca80d480faef9d09",
+      "extracted_root": "inputs/unpacked/3c31460e1aaadd43",
+      "entries": 12,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-2-e938468404.zip",
+      "filename": "relay-materials-2-e938468404.zip",
+      "size_bytes": 16364928,
+      "sha256": "e93846840487868806572a6729417c1eed885b72a261301c0d7c3188f8222d25",
+      "extracted_root": "inputs/unpacked/e938468404878688",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-3-daa97d5d76.zip",
+      "filename": "relay-materials-3-daa97d5d76.zip",
+      "size_bytes": 17001841,
+      "sha256": "daa97d5d7644b75ff187c20d8a2aead26eca6a3e4a731acfaaaabac31ec63ab3",
+      "extracted_root": "inputs/unpacked/daa97d5d7644b75f",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-4-049f897f55.zip",
+      "filename": "relay-materials-4-049f897f55.zip",
+      "size_bytes": 13174215,
+      "sha256": "049f897f552b45c843972df6e5d5793ade476c1703d5259598b4a35da13011e9",
+      "extracted_root": "inputs/unpacked/049f897f552b45c8",
+      "entries": 19,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3c31460e1aaadd43/files/011/relay-materials-1-c617d116d7.zip",
+      "filename": "relay-materials-1-c617d116d7.zip",
+      "size_bytes": 11146290,
+      "sha256": "c617d116d785e8f9d3d4b89cc8386777c2b0ca28a6cc139e1748a23dac8d76b7",
+      "extracted_root": "inputs/unpacked/c617d116d785e8f9",
+      "entries": 108,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/e938468404878688/files/001/relay-materials-2-d3f598c365.zip",
+      "filename": "relay-materials-2-d3f598c365.zip",
+      "size_bytes": 16364229,
+      "sha256": "d3f598c365bd371f68c4d469175cf7feee1c43e312dfb8932fba3942af319644",
+      "extracted_root": "inputs/unpacked/d3f598c365bd371f",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/daa97d5d7644b75f/files/001/relay-materials-3-02e8113369.zip",
+      "filename": "relay-materials-3-02e8113369.zip",
+      "size_bytes": 17001142,
+      "sha256": "02e8113369b3292cb21d6c7fe9e71f7fc829dce4652bcd385c9b33c1678cc6fb",
+      "extracted_root": "inputs/unpacked/02e8113369b3292c",
+      "entries": 4,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/049f897f552b45c8/files/001/relay-materials-4-dc22516766.zip",
+      "filename": "relay-materials-4-dc22516766.zip",
+      "size_bytes": 6792044,
+      "sha256": "dc2251676668f7273b5e6a47968235ba87076436cc766c61f4f693c70cd81afe",
+      "extracted_root": "inputs/unpacked/dc2251676668f727",
+      "entries": 86,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/049f897f552b45c8/files/003/P15_DeckRuntime_V0.1.zip",
+      "filename": "P15_DeckRuntime_V0.1.zip",
+      "size_bytes": 5549301,
+      "sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+      "extracted_root": "inputs/unpacked/f19cb1114015a2a2",
+      "entries": 190,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c617d116d785e8f9/files/005/P12_AnkiTransport_V0.1.zip",
+      "filename": "P12_AnkiTransport_V0.1.zip",
+      "size_bytes": 1206963,
+      "sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "extracted_root": "inputs/unpacked/2da7038354b81edb",
+      "entries": 145,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c617d116d785e8f9/files/013/P13_ClientArchitecture_V0.1.zip",
+      "filename": "P13_ClientArchitecture_V0.1.zip",
+      "size_bytes": 2635479,
+      "sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "extracted_root": "inputs/unpacked/3324610eff8d9232",
+      "entries": 176,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c617d116d785e8f9/files/107/relay-materials-1-0e6d465d5f.zip",
+      "filename": "relay-materials-1-0e6d465d5f.zip",
+      "size_bytes": 2650213,
+      "sha256": "0e6d465d5f92b5955b04dd8a501aed224cadc7ef493bb85bc40f7dfbf20749dc",
+      "extracted_root": "inputs/unpacked/0e6d465d5f92b595",
+      "entries": 85,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/d3f598c365bd371f/files/001/relay-materials-2-90d965dbc7.zip",
+      "filename": "relay-materials-2-90d965dbc7.zip",
+      "size_bytes": 16363530,
+      "sha256": "90d965dbc790d78aa6ba32ce6211cf40345489691d521dcc21c8730a35d6631a",
+      "extracted_root": "inputs/unpacked/90d965dbc790d78a",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/02e8113369b3292c/files/001/relay-materials-3-3b4d4286cc.zip",
+      "filename": "relay-materials-3-3b4d4286cc.zip",
+      "size_bytes": 16545223,
+      "sha256": "3b4d4286cc6068c1274111aac7cc1215ad36d5e5293aa2165be02ff54e2abf2f",
+      "extracted_root": "inputs/unpacked/3b4d4286cc6068c1",
+      "entries": 75,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/dc2251676668f727/files/001/P14_BattleCore_V0.1.zip",
+      "filename": "P14_BattleCore_V0.1.zip",
+      "size_bytes": 3393475,
+      "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "extracted_root": "inputs/unpacked/a439f32c482117e2",
+      "entries": 180,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/adapter_identity_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 148217,
+      "sha256": "19b0306864a0fab9515aeee1d029a5bd4e58c23ee11694a5413e52ecee5a2ce0",
+      "extracted_root": "inputs/unpacked/19b0306864a0fab9",
+      "entries": 72,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/adapter_identity_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "54620ea647bc4059a5b3707d1f5b9e4924a4843d6813ce9e3252b7b4d2462081",
+      "extracted_root": "inputs/unpacked/54620ea647bc4059",
+      "entries": 72,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/author_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 121273,
+      "sha256": "bbf8e28345a41df2669885c20bb04f0214dcada65215d4004098c33bc71a9dd9",
+      "extracted_root": "inputs/unpacked/bbf8e28345a41df2",
+      "entries": 65,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/author_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "3ba0a35254e10ec88d026aa9eec82edf32a9bc3bc39f7b057b9465efded9c4be",
+      "extracted_root": "inputs/unpacked/3ba0a35254e10ec8",
+      "entries": 71,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/author_003/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "0aae6496a64156105395f2051c25559f5e4841ffed829db096d58ada045c9b57",
+      "extracted_root": "inputs/unpacked/0aae6496a6415610",
+      "entries": 72,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/contracts_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "d7156e5a3628f1bfbc11c6e50e2e43ff95523706265fec73bb7012431bd13c62",
+      "extracted_root": "inputs/unpacked/d7156e5a3628f1bf",
+      "entries": 71,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/demo_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 121273,
+      "sha256": "43398fb221ef895857aa565ba911a13f3ac3e0b923b8813cad0d191fffd8d9bd",
+      "extracted_root": "inputs/unpacked/43398fb221ef8958",
+      "entries": 65,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/fixtures_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 102646,
+      "sha256": "3dc162002d3d5a5ece285e8b616f07bf54db2868b45cc065a3b8ebc2219dda95",
+      "extracted_root": "inputs/unpacked/3dc162002d3d5a5e",
+      "entries": 53,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/optional_schema_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 148624,
+      "sha256": "a4dba383ee545f64d37da53ee203be2c867f6ec6f74f1839f3a8b4804a500195",
+      "extracted_root": "inputs/unpacked/a4dba383ee545f64",
+      "entries": 72,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/replay_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 147339,
+      "sha256": "e93c9139d315db3132fe47c7015c322761049284ca086ba8febc8f3263c8e434",
+      "extracted_root": "inputs/unpacked/e93c9139d315db31",
+      "entries": 71,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/f19cb1114015a2a2/P15_DeckRuntime_V0.1/evidence/runs/replay_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 150851,
+      "sha256": "4f81e06d42274676a56b676ad77b3087569723ed1b233b46ac1691796c7dcad3",
+      "extracted_root": "inputs/unpacked/4f81e06d42274676",
+      "entries": 73,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/2da7038354b81edb/P12_AnkiTransport_V0.1/evidence/author_run_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 61151,
+      "sha256": "5d9eb6703c3641bdb6ef5cbe482b7b1e64cfa861845754120e3e7e6ac266dca8",
+      "extracted_root": "inputs/unpacked/5d9eb6703c3641bd",
+      "entries": 27,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/2da7038354b81edb/P12_AnkiTransport_V0.1/evidence/author_run_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 69366,
+      "sha256": "d8085f90ac6c49315d3dd34ed7055c871bac70008960037c305168ddec48b70d",
+      "extracted_root": "inputs/unpacked/d8085f90ac6c4931",
+      "entries": 31,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/2da7038354b81edb/P12_AnkiTransport_V0.1/evidence/author_run_005/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 84385,
+      "sha256": "b7ecbda11a9dffc5221e9ee10d247b8acaca6c712e364442f36c15001ad7d6d1",
+      "extracted_root": "inputs/unpacked/b7ecbda11a9dffc5",
+      "entries": 51,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/2da7038354b81edb/P12_AnkiTransport_V0.1/sources/archives/P11_StudyLedger_V0.1.zip",
+      "filename": "P11_StudyLedger_V0.1.zip",
+      "size_bytes": 435064,
+      "sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+      "extracted_root": "inputs/unpacked/54185f5093f1e7ce",
+      "entries": 106,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/evidence/runs/architecture_check_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 67987,
+      "sha256": "70b3aab7eee50e4b78c07f898bcf498d699679937b2563e2426ced5b7cda4d5f",
+      "extracted_root": "inputs/unpacked/70b3aab7eee50e4b",
+      "entries": 53,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/evidence/runs/author_tests_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 43210,
+      "sha256": "d4669b8c77e50e6cc82b3458d590926f9c3871f97b8cb2173c2480196fce3428",
+      "extracted_root": "inputs/unpacked/d4669b8c77e50e6c",
+      "entries": 37,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/evidence/runs/canonical_oracle_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 56443,
+      "sha256": "8dd4c522dded8b158ee27cdb332a3a0ea37876f58a8386206977c9275713e701",
+      "extracted_root": "inputs/unpacked/8dd4c522dded8b15",
+      "entries": 44,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/evidence/runs/environment_probe_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 50204,
+      "sha256": "40fffc6cb992832c2ea0ed22b0046bc4d64b7c7b8050c29172679a8fcb4bade6",
+      "extracted_root": "inputs/unpacked/40fffc6cb992832c",
+      "entries": 42,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/evidence/runs/p12_unchanged_smoke_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 94415,
+      "sha256": "aeba1d438b0b79bb224ecd648a159d0227960beb216cc160ec550e02f4e4a723",
+      "extracted_root": "inputs/unpacked/aeba1d438b0b79bb",
+      "entries": 63,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/0e6d465d5f92b595/files/022/failing_sources.zip",
+      "filename": "failing_sources.zip",
+      "size_bytes": 24998,
+      "sha256": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+      "extracted_root": "inputs/unpacked/576da4fb7bb2b0f9",
+      "entries": 12,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/90d965dbc790d78a/files/001/relay-materials-1-a9385ef43d.zip",
+      "filename": "relay-materials-1-a9385ef43d.zip",
+      "size_bytes": 16362831,
+      "sha256": "a9385ef43d2630b7842c7ce672ea91129e0744eef9869e8bac540344efb6843d",
+      "extracted_root": "inputs/unpacked/a9385ef43d2630b7",
+      "entries": 93,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/3b4d4286cc6068c1/files/001/relay-materials-2-c668973fc2.zip",
+      "filename": "relay-materials-2-c668973fc2.zip",
+      "size_bytes": 15139774,
+      "sha256": "c668973fc2615724615038c34aa3f535b100960d2c8e0077472f145e65a8e66e",
+      "extracted_root": "inputs/unpacked/c668973fc2615724",
+      "entries": 69,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/author_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 266976,
+      "sha256": "3977b7a7bc0f5a7272616d5051662b58c34280f2186526f023b36c865871a688",
+      "extracted_root": "inputs/unpacked/3977b7a7bc0f5a72",
+      "entries": 94,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/author_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 266945,
+      "sha256": "cc9e0ea077804b9b2b8b9f46e5b327057b7ae7c21ecb0de94f225f5cff71fadf",
+      "extracted_root": "inputs/unpacked/cc9e0ea077804b9b",
+      "entries": 94,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/author_003/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 276864,
+      "sha256": "2b1a9b53e2fd0c2c9b1c5819ead4c1b65a7aa37fe2202dfacfa152b40a6dbb99",
+      "extracted_root": "inputs/unpacked/2b1a9b53e2fd0c2c",
+      "entries": 96,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/author_004/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 279910,
+      "sha256": "eea138e5a156d0ad12bb79c4de3a62d385052eb3ea6e009193b7b59123b9f39c",
+      "extracted_root": "inputs/unpacked/eea138e5a156d0ad",
+      "entries": 98,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/contracts_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 292395,
+      "sha256": "a645d025811366a730f1bbeb1c3bcb3081faf2598e2725da6e60d7c40d9ea273",
+      "extracted_root": "inputs/unpacked/a645d025811366a7",
+      "entries": 100,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/contracts_002/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 292790,
+      "sha256": "184fdd7c0831c287b253d13f68b8aa8272db691cfcf0af7c7ce143e9ab2800bc",
+      "extracted_root": "inputs/unpacked/184fdd7c0831c287",
+      "entries": 101,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/demo_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 266976,
+      "sha256": "3caad5b36992704d6cd4d664f79fc34ecc7bdd7a6ef5910938484653e93497ee",
+      "extracted_root": "inputs/unpacked/3caad5b36992704d",
+      "entries": 94,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/preflight_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 296449,
+      "sha256": "e644bd35751eea68a31084a41c1b10aa8112296b1351d02693ca1d844e26b789",
+      "extracted_root": "inputs/unpacked/e644bd35751eea68",
+      "entries": 104,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a439f32c482117e2/P14_BattleCore_V0.1/evidence/runs/samples_001/executed_sources.zip",
+      "filename": "executed_sources.zip",
+      "size_bytes": 279910,
+      "sha256": "9eeabac7af6b51e7aedda0c4faaa530c7dfec0db264f41a72989406fe3847dea",
+      "extracted_root": "inputs/unpacked/9eeabac7af6b51e7",
+      "entries": 98,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/004/P09_Linguistic_Mapping_V0.1.zip",
+      "filename": "P09_Linguistic_Mapping_V0.1.zip",
+      "size_bytes": 5041990,
+      "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "extracted_root": "inputs/unpacked/d2418d564772963d",
+      "entries": 86,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/026/received_relay_materials.zip",
+      "filename": "received_relay_materials.zip",
+      "size_bytes": 7825496,
+      "sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "extracted_root": "inputs/unpacked/e9818b1abe21a7e1",
+      "entries": 49,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/056/P01_S00_V6_完整交接包.zip",
+      "filename": "P01_S00_V6_完整交接包.zip",
+      "size_bytes": 34628,
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "extracted_root": "inputs/unpacked/139034e2179fbe35",
+      "entries": 16,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/063/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "filename": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "size_bytes": 47224,
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "extracted_root": "inputs/unpacked/969c7e7688f795aa",
+      "entries": 15,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/072/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "filename": "P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "size_bytes": 29930,
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "extracted_root": "inputs/unpacked/de0fa1b8309eb504",
+      "entries": 17,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/078/P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "filename": "P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "size_bytes": 38736,
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "extracted_root": "inputs/unpacked/8a6c28d2eb87a495",
+      "entries": 20,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/084/P05_S01_Balance_Delivery_V0.1.zip",
+      "filename": "P05_S01_Balance_Delivery_V0.1.zip",
+      "size_bytes": 55092,
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "extracted_root": "inputs/unpacked/98592b1b16bd8e03",
+      "entries": 20,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/085/relay-materials-1-3559b922b7.zip",
+      "filename": "relay-materials-1-3559b922b7.zip",
+      "size_bytes": 639564,
+      "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "extracted_root": "inputs/unpacked/3559b922b7639cc4",
+      "entries": 35,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/a9385ef43d2630b7/files/086/relay-materials-1-1b174d40f0.zip",
+      "filename": "relay-materials-1-1b174d40f0.zip",
+      "size_bytes": 1279557,
+      "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "extracted_root": "inputs/unpacked/1b174d40f030b442",
+      "entries": 36,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c668973fc2615724/files/001/P08_Anki_Reward_Policy_V0.1.zip",
+      "filename": "P08_Anki_Reward_Policy_V0.1.zip",
+      "size_bytes": 2523333,
+      "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "extracted_root": "inputs/unpacked/c61826ec9af75cbd",
+      "entries": 62,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c668973fc2615724/files/002/relay-materials-1-3c7e523083.zip",
+      "filename": "relay-materials-1-3c7e523083.zip",
+      "size_bytes": 2559544,
+      "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "extracted_root": "inputs/unpacked/3c7e523083a36a9d",
+      "entries": 37,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c668973fc2615724/files/004/P10_S04_Probe_Report_V0.1.zip",
+      "filename": "P10_S04_Probe_Report_V0.1.zip",
+      "size_bytes": 271956,
+      "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "extracted_root": "inputs/unpacked/214d2600c67a9b59",
+      "entries": 57,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/c61826ec9af75cbd/P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip",
+      "filename": "P07_Stage_Delivery_V0.1.zip",
+      "size_bytes": 1214430,
+      "sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "extracted_root": "inputs/unpacked/cd494cd3f6a29d1f",
+      "entries": 67,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "inputs/unpacked/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/P06_Enemy_Delivery_V0.1.zip",
+      "filename": "P06_Enemy_Delivery_V0.1.zip",
+      "size_bytes": 168593,
+      "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "extracted_root": "inputs/unpacked/0a2912acc81c594b",
+      "entries": 43,
+      "crc": "PASS"
+    }
+  ],
+  "outer_attachments": [
+    {
+      "source_path": "upload/relay-materials-1-3c31460e1a.zip",
+      "filename": "relay-materials-1-3c31460e1a.zip",
+      "size_bytes": 12419145,
+      "sha256": "3c31460e1aaadd43bb0526e299e9167460bb3281f17d4910ca80d480faef9d09",
+      "extracted_root": "inputs/unpacked/3c31460e1aaadd43",
+      "entries": 12,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-2-e938468404.zip",
+      "filename": "relay-materials-2-e938468404.zip",
+      "size_bytes": 16364928,
+      "sha256": "e93846840487868806572a6729417c1eed885b72a261301c0d7c3188f8222d25",
+      "extracted_root": "inputs/unpacked/e938468404878688",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-3-daa97d5d76.zip",
+      "filename": "relay-materials-3-daa97d5d76.zip",
+      "size_bytes": 17001841,
+      "sha256": "daa97d5d7644b75ff187c20d8a2aead26eca6a3e4a731acfaaaabac31ec63ab3",
+      "extracted_root": "inputs/unpacked/daa97d5d7644b75f",
+      "entries": 2,
+      "crc": "PASS"
+    },
+    {
+      "source_path": "upload/relay-materials-4-049f897f55.zip",
+      "filename": "relay-materials-4-049f897f55.zip",
+      "size_bytes": 13174215,
+      "sha256": "049f897f552b45c843972df6e5d5793ade476c1703d5259598b4a35da13011e9",
+      "extracted_root": "inputs/unpacked/049f897f552b45c8",
+      "entries": 19,
+      "crc": "PASS"
+    }
+  ],
+  "internal_manifest_records": 614,
+  "github_verification": "evidence/github_fixed_source_verification.json",
+  "task_activation": {
+    "local_task_id": "P16-S03-AI-001",
+    "local_task_authority": "CURRENT_USER_EXPLICIT_P16_REQUEST",
+    "P01_explicit_P16_task_row": null,
+    "related_P01_task": "TASK-03-01_SUPPORTS_S03_HUD",
+    "S07": "ISOLATED_BOUNDARY_PREFLIGHT_ONLY_NOT_FORMAL_STAGE_ACTIVATION",
+    "version": "P16-ENEMY-AI/0.1.0-isolated",
+    "internal_contract_version": "YLTT-INTERNAL/0.1.0-isolated"
+  },
+  "source_versions": {
+    "V6": "V6.0",
+    "P01": "P01-REQ-V0.1",
+    "P02": "P02-BATTLE-0.1.0-draft",
+    "P06": "P06-ENEMY-0.1.0-proposal",
+    "P13": "YLTT-INTERNAL/0.1.0-isolated",
+    "P14": "P14-BATTLE-CORE/0.1.0-isolated",
+    "P15": "P15-DECK-RUNTIME/0.1.0-isolated"
+  }
+}

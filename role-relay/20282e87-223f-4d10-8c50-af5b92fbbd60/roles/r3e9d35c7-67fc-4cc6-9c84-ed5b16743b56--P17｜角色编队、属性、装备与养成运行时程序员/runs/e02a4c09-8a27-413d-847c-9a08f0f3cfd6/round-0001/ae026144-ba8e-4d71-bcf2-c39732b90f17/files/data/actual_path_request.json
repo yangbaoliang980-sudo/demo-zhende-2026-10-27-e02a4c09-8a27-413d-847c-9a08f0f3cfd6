@@ -1,0 +1,53 @@
+{
+  "schema_version": "P16-ACTUAL-PATH-REQUEST/0.1.0",
+  "status": "PRODUCTION_BLOCKED",
+  "source_mapping": {
+    "relative_path": "upstream/P13/architecture/actual_path_mapping.json",
+    "size_bytes": 16790,
+    "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+  },
+  "observed_original_P16_entries": [
+    {
+      "owner": "P16",
+      "design_path": "runtime/battle/enemy_ai/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P16",
+      "design_path": "tests/enemy_ai_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "isolated_authorization": "CURRENT_USER_EXPLICIT_P16_REQUEST; NEW_DELIVERY_PACKAGE_ONLY",
+  "isolated_root_name": "P16_EnemyAI_V0.1",
+  "isolated_runtime": "enemy_ai/**",
+  "isolated_tests": "tests/enemy_ai_unit/**",
+  "metadata_and_evidence": "README.md; P16_API.md; integration_handoff.md; handoff/**; evidence/**; examples/**; tools/**; fixtures/schema/manifest",
+  "upstream_readonly": [
+    "upstream/**",
+    "../upload/**",
+    "../inputs/**"
+  ],
+  "production_actual_path": null,
+  "production_write_whitelist": [],
+  "overwrite_existing_engine_files": false,
+  "requested_owner": "P13",
+  "requested_evidence": [
+    "actual repository and fixed commit",
+    "actual paths",
+    "owner authorization",
+    "base SHA",
+    "target environment"
+  ],
+  "integrator": "USER_DESIGNATED_EXT-INTEGRATOR_ONLY"
+}

@@ -1,0 +1,269 @@
+{
+  "schema_version": "P16-RFC-SET/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "items": [
+    {
+      "id": "RFC-P16-001",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P14",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-07",
+        "IC-12"
+      ],
+      "title": "EnemyBehavior / Announcement 版本化只读输入与原子候选受理",
+      "base_files": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/ports.py",
+          "size_bytes": 1077,
+          "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5"
+        }
+      ],
+      "requested_changes": [
+        "P13 新版快照承载本包 P16-BEHAVIOR/0.1.0-proposal 所列字段；由 P14 提供可信 committed history。",
+        "P14 原子保存冻结 Announcement、slot_key、BehaviorCandidate 与效果回执；候选绝不包含 HP/phase/phase_epoch 权威写入。",
+        "失败/重复/回滚不消费槽；相同槽重试不新增攻击；post-DOT 判断与正式下一预告使用正确快照。"
+      ],
+      "acceptance_criteria": [
+        "正常连续至少3轮，轮换/蓄力/CD/预告一致",
+        "24并发同ID仅一次提交",
+        "中断后重启保留冻结目标，不使用AI缓存当权威状态"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    },
+    {
+      "id": "RFC-P16-002",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P14",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-07",
+        "IC-12"
+      ],
+      "title": "有序阶段批次、根检查点关联与幂等受理",
+      "base_files": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "size_bytes": 6305,
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        }
+      ],
+      "requested_changes": [
+        "按反应排空后的HP生成P2/P3有序提议，before_hp与root_command_id须由P14真实事务绑定。",
+        "一次批次只提升一次epoch/ENTRY_WAIT，取消旧蓄力一次，零额外行动；死亡优先。",
+        "shared PhaseProposal之外的root identity/graph hash/once_key依据owner决定进入新DTO，不能偷偷加字段。"
+      ],
+      "acceptance_criteria": [
+        "76→75/P1→P2、38→37/P2→P3、80→30有序双提议",
+        "80→0无阶段",
+        "已提/已提交/治疗重跨/同ID重放不重复等待或额外攻击",
+        "P06-ET-059/061在真实P14受理端执行"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    },
+    {
+      "id": "RFC-P16-003",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P14",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-07"
+      ],
+      "title": "冻结群攻名单筛减后的目标基数",
+      "base_files": [
+        {
+          "relative_path": "upstream/P14/battle_core/model.py",
+          "size_bytes": 7537,
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/resolver.py",
+          "size_bytes": 19138,
+          "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        }
+      ],
+      "requested_changes": [
+        "为LOCK_ALL_ALIVE定义已锁定幸存者合法目标数量，仍禁止新目标和自动重选。",
+        "伤害与每目标事件完全由P14生成，P16只返回筛减后的EnemyIntent。"
+      ],
+      "acceptance_criteria": [
+        "原3目标其中1失效，剩余2人各受一次基础6伤害（P06 P2 sweep）",
+        "无目标明确SKIP",
+        "每目标护盾/死亡由P14计算",
+        "原 test_existing_p14_cannot_execute_partial_sweep 替换为通过行为前保留旧FAIL/限制证据"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    },
+    {
+      "id": "RFC-P16-004",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P13",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-12"
+      ],
+      "title": "意图偏差原因与安全跳过的消息运输",
+      "base_files": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ],
+      "requested_changes": [
+        "冻结预告/正式执行应关联同intent_token并提供偏差原因：失效目标、CD、阶段替换、蓄力过期等。",
+        "当前SAFE_SKIP映射为P06零效果SKIP技能，不保证P14产生ENEMY_ACTION_SKIPPED；正式事件原因需要版本化支持。",
+        "P19仅渲染基础伤害标签，真实数字只从P14已提交事件取；图片与动画不参与选择。"
+      ],
+      "acceptance_criteria": [
+        "UI能解释预告/实际偏差",
+        "禁动画/缺图与逻辑结果一致需P33真机验证",
+        "原DTO不接受未声明字段"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    },
+    {
+      "id": "RFC-P16-005",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P13",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-07"
+      ],
+      "title": "targetable 与多敌行动队列合同",
+      "base_files": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        }
+      ],
+      "requested_changes": [
+        "P14可信快照提供合法targetable状态，P02确认与死亡/不可选中/召唤排序关系。",
+        "多敌或召唤进入批准范围后再冻结EnemyBatch顺序、槽位ID和总量上限。"
+      ],
+      "acceptance_criteria": [
+        "S03单怪不引入多敌新行为",
+        "slot_key严格一次",
+        "P06没有召唤配置时空召唤且拒绝SUMMON"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    },
+    {
+      "id": "RFC-P16-006",
+      "revision": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requester": "P16",
+      "requested_technical_owner": "P06",
+      "shape_owner": "P13",
+      "related_interfaces": [
+        "IC-07",
+        "IC-12"
+      ],
+      "title": "P06生产内容与召唤条件补充请求（条件式）",
+      "base_files": [
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "size_bytes": 6305,
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        }
+      ],
+      "requested_changes": [
+        "保持现P06循环和数值；正式配置需P01批准范围、P22 IDs/Schema。",
+        "若产品后续要求召唤，P06明确触发条件、与死亡/阶段/蓄力优先级、召唤上限及失败回退；当前不实现臆造机制。"
+      ],
+      "acceptance_criteria": [
+        "新配置有固定版本/SHA/需求ID",
+        "内容改变同时更新源真值表",
+        "超MVP成本由P01报用户"
+      ],
+      "changes_applied_to_upstream": false,
+      "owner_acknowledgement": "NOT_RECEIVED",
+      "current_contract": "YLTT-INTERNAL/0.1.0-isolated",
+      "new_shared_version": "OWNER_TO_ASSIGN; no silent extension",
+      "merge_policy": "Preserve both base SHA; on drift create ChangeRequest; do not overwrite"
+    }
+  ],
+  "sent_messages": false,
+  "cross_module_merge": "NOT_AUTHORIZED_NOT_PERFORMED"
+}

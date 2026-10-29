@@ -1,0 +1,115 @@
+{
+  "task_id": "P17-S05-S06-S07-META-001",
+  "version": "P17-META/0.1.0-isolated",
+  "overall": "ISOLATED_RUNTIME_DELIVERED_PRODUCTION_BLOCKED",
+  "author_design_review": "COMPLETED_AUTHOR_REVIEW_NOT_P35",
+  "author_unit_and_model_tests": {
+    "status": "PASS",
+    "tests_run": 123,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "p13_structural_contracts": {
+    "status": "PASS",
+    "scope": "P13_ORIGINAL_STRUCTURAL_CONTRACT_AND_REJECTION_CHECKS",
+    "validated_dto_counts": {
+      "PartySnapshot": 1,
+      "WalletSnapshot": 1,
+      "WalletDeltaCandidate": 11,
+      "AtomicCommitProposal": 4
+    },
+    "total_validated": 17,
+    "unbound_composite_requests_rejected": [
+      "FIXTURE_CMD_001",
+      "FIXTURE_CMD_002",
+      "FIXTURE_CMD_003",
+      "FIXTURE_CMD_004",
+      "FIXTURE_CMD_005",
+      "FIXTURE_CMD_006",
+      "FIXTURE_CMD_007"
+    ],
+    "p11_legacy_fields": {
+      "RewardIntent": [
+        "transaction_id",
+        "operation_key",
+        "family_key",
+        "kind",
+        "desired_active",
+        "policy_snapshot",
+        "source_evidence_ref",
+        "resolution_ref"
+      ],
+      "WalletDelta": [
+        "intent_sha256",
+        "family_key",
+        "expected_wallet_version",
+        "wallet_before_sha256",
+        "changes",
+        "source_after",
+        "unresolved",
+        "reason",
+        "policy_sha256"
+      ]
+    },
+    "p11_runtime_adapter": "BLOCKED_SOURCE_AFTER_LOSSLESS_MAPPING_NOT_ACCEPTED",
+    "p21_real_atomic_commit": "BLOCKED_NOT_RECEIVED"
+  },
+  "replay": {
+    "status": "PASS",
+    "scope": "P17_AUTHOR_REPLAY",
+    "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165",
+    "summary": {
+      "committed_simulation_transactions": 11,
+      "available_training_tokens": 1,
+      "character_levels": [
+        2,
+        3,
+        1
+      ],
+      "wallet_revision": 4,
+      "meta_revision": 11
+    }
+  },
+  "determinism": {
+    "status": "PASS",
+    "scope": "THREE_ISOLATED_PYTHON_PROCESSES",
+    "results": [
+      {
+        "pythonhashseed": "1",
+        "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+      },
+      {
+        "pythonhashseed": "17",
+        "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+      },
+      {
+        "pythonhashseed": "8675309",
+        "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+      }
+    ]
+  },
+  "formal_preflight": {
+    "status": "BLOCKED",
+    "exit_code": 3,
+    "evidence": "evidence/runs/preflight_final"
+  },
+  "P32_independent_automation": "NOT_RUN",
+  "P33_target_manual": "NOT_RUN",
+  "P35_independent_review": "NOT_RUN",
+  "production_P11_adapter": "BLOCKED",
+  "production_P18_adapter": "BLOCKED",
+  "production_P21_storage": "BLOCKED",
+  "target_Windows": "NOT_RUN",
+  "engine": "NOT_RUN",
+  "real_Anki": "NOT_RUN",
+  "integrated_game_E2E": "NOT_RUN",
+  "physical_crash_powerloss_backup_recovery": "NOT_RUN",
+  "separate_python_process_reload": "PASS_AUTHOR_TEST_ONLY_STDIN_BYTES_NO_DISK",
+  "equipment": "DEFAULT_DISABLED_SYNTHETIC_MECHANICS_TESTED_NOT_DEC009_APPROVAL",
+  "rating_values_no_study_debt_policy": "BLOCKED_UNAPPROVED",
+  "counts_note": "123 unit/model tests include concurrency and P13 validation cases; contract/replay evidence is additional scope, not additive acceptance totals.",
+  "input_immutability": "PASS",
+  "executed_source_binding": "PASS",
+  "package_fresh_reproduction": "RECORDED_IN_OUTER_DELIVERY_RECEIPT"
+}

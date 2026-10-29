@@ -1,0 +1,152 @@
+{
+  "task_id": "P17-S05-S06-S07-META-001",
+  "status": "PRODUCTION_INTEGRATION_BLOCKED",
+  "items": [
+    {
+      "id": "P17-BLK-001",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "missing": "P17四条正式actual_path_mapping和写入授权未提供",
+      "release_evidence": "P13签发固定工程提交、实际路径与白名单；保留既有null/false版本",
+      "base_files": [
+        {
+          "path": "sources/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-002",
+      "owner": "P21",
+      "status": "BLOCKED",
+      "missing": "真实AtomicStore/submit/lookup、持久回执与备份连续性实现未收到",
+      "release_evidence": "提交可执行P21版本和API哈希；在真实持久层重跑原子性、并发、恢复测试",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-003",
+      "owner": "P11/P13/P21",
+      "status": "BLOCKED",
+      "missing": "原P11 WalletPort与新候选模型尚无批准的无损适配",
+      "release_evidence": "明确operation/family键、source_after全量会计、政策快照、撤销和复合提交合同",
+      "base_files": [
+        {
+          "path": "sources/P11/ledger_runtime/ports.py",
+          "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+        },
+        {
+          "path": "sources/P11/ledger_runtime/types.py",
+          "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-004",
+      "owner": "P18/P13/P21",
+      "status": "BLOCKED",
+      "missing": "真实关卡终局授权、首通/重复凭证、预算和成本resolver未收到",
+      "release_evidence": "P18提供固定实现与凭证结构；同事务提交进度/掉落/消费/钱包",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-005",
+      "owner": "P01/P08/P11",
+      "status": "BLOCKED",
+      "missing": "DEC-001/002/003正式四键、已消费Undo和无学习日政策仍待批准",
+      "release_evidence": "P01登记用户决策；P08发行PolicyRecord；P11验证资格；本岗不能批准负债、免费奖励或限额",
+      "base_files": [
+        {
+          "path": "sources/P01/planning/decisions/decisions_pending.tsv",
+          "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-006",
+      "owner": "P01/P04/P05/P22",
+      "status": "BLOCKED",
+      "missing": "DEC-009装备范围及正式装备/成长成本、内容ID尚未批准",
+      "release_evidence": "批准范围与内容发布版本；测试装备仍隔离，默认关闭",
+      "base_files": [
+        {
+          "path": "sources/P04/content/characters/character_skeleton.json",
+          "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515"
+        },
+        {
+          "path": "sources/P01/planning/decisions/decisions_pending.tsv",
+          "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-007",
+      "owner": "P13/P15/P14",
+      "status": "BLOCKED",
+      "missing": "原PartySnapshot没有support/skill/equipment/P03引用的完整消费合同",
+      "release_evidence": "P13版本化DTO与P15/P14接收口径；保留P17完整导出和原P13投影",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-008",
+      "owner": "P22",
+      "status": "BLOCKED",
+      "missing": "全球内容ID/Schema/release_registry正式版本缺失",
+      "release_evidence": "P22注册内容并校验；不能把MOCK/TEST标识当正式内容",
+      "base_files": [
+        {
+          "path": "sources/P04/content/characters/character_skeleton.json",
+          "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-009",
+      "owner": "P13/P34",
+      "status": "BLOCKED",
+      "missing": "真实可构建工程、目标Windows/引擎/Anki环境证据缺失",
+      "release_evidence": "提供固定工程及目标机指纹和运行证据；当前仅Python隔离执行",
+      "base_files": [
+        {
+          "path": "sources/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ]
+    },
+    {
+      "id": "P17-BLK-010",
+      "owner": "P32/P33/P35",
+      "status": "NOT_RUN",
+      "missing": "独立自动化、目标端人工与独立证据门禁未执行",
+      "release_evidence": "分别由各owner签署本固定交付版本的独立结果",
+      "base_files": []
+    },
+    {
+      "id": "P17-BLK-011",
+      "owner": "P13/P21",
+      "status": "BLOCKED",
+      "missing": "隔离快照受P13 1MiB/数组界限约束，长期记录分段/迁移未设计受理",
+      "release_evidence": "正式存储明确分页/保留/迁移与去重契约，不可通过删除历史凭证绕过",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ]
+    }
+  ]
+}

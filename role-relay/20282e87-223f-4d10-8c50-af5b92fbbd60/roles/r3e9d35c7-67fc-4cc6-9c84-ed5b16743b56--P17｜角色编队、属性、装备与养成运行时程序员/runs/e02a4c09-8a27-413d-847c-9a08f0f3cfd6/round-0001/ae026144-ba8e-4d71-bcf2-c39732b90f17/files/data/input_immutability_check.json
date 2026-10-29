@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "outer_attachments": 4,
+  "all_unique_archives": 61,
+  "extracted_members": 3912,
+  "retained_upstream_copies": 88,
+  "errors": [],
+  "audit_sha256": "3e7b0ff959422dff542aa52a0280002eef010551155f8018a3fac977716ae5e4",
+  "source_receipt_sha256": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f",
+  "basis": "Re-read every actual byte after P16 development; not inferred from file names."
+}

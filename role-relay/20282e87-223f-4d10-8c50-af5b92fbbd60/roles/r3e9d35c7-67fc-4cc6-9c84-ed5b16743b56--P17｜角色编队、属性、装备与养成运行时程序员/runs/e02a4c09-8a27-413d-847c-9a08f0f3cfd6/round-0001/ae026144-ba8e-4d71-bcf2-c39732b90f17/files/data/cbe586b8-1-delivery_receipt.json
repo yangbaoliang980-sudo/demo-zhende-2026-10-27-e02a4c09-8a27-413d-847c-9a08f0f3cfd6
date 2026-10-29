@@ -1,0 +1,960 @@
+{
+  "schema_version": "P17-DELIVERY-RECEIPT/1.0",
+  "task_id": "P17-S05-S06-S07-META-001",
+  "delivery_version": "P17-META/0.1.0-isolated",
+  "archive": {
+    "filename": "P17_CharacterPartyWallet_V0.1.zip",
+    "size_bytes": 2129280,
+    "sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+    "package_root": "P17_CharacterPartyWallet_V0.1",
+    "file_count": 206
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 7336,
+      "sha256": "f0d2979d03af902f8d774dac88c76f3386a0c8d84227209ee0e108bbdbcff68a",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/README.md"
+    },
+    {
+      "filename": "P17_API.md",
+      "package_relative_path": "P17_API.md",
+      "size_bytes": 16158,
+      "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/P17_API.md"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "package_relative_path": "integration_handoff.md",
+      "size_bytes": 7380,
+      "sha256": "8fea69e44da3420fb0a3f4007fd223a2ecf284807b33796dec9f8114db703de0",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/integration_handoff.md"
+    },
+    {
+      "filename": "wallet_delta_contract.json",
+      "package_relative_path": "wallet_delta_contract.json",
+      "size_bytes": 4832,
+      "sha256": "d0a84fbadd57cd04270a4c86c57e55c3229ea4c0f87d17a3c1bf2dc1fc2512ff",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/wallet_delta_contract.json"
+    },
+    {
+      "filename": "wallet_concurrency_tests.py",
+      "package_relative_path": "wallet_concurrency_tests.py",
+      "size_bytes": 5970,
+      "sha256": "9e6d2413c39e183aac16e97383661c603c1a3db45f58055e5e9167a02a2936c6",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/wallet_concurrency_tests.py"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "source_input_receipt.json",
+      "size_bytes": 38762,
+      "sha256": "199cf48d8823397bc9e4786f197f32f6ad8f9f80a3ca5597ee40b9ace9f99afc",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/source_input_receipt.json"
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "size_bytes": 167473,
+      "sha256": "3907b9f2f50c819ec5ef23c3335327c1560efa8cb174aaea95efea9cba786696",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/delivery_manifest.sha256.tsv"
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "size_bytes": 3540,
+      "sha256": "f2508593383a0e90d662e26777aefac0913880576e310355ed1c80ce1b947547",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/verification_status.json"
+    },
+    {
+      "filename": "blockers.json",
+      "package_relative_path": "blockers.json",
+      "size_bytes": 5872,
+      "sha256": "f8afeb7196413d7609a4fca7bbf25d032423517e6737b9493e3f21bad2df2ce6",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/blockers.json"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "interface_rfcs.json",
+      "size_bytes": 5790,
+      "sha256": "c5643230f3c1e845962ca746942ab1ca1895a358928c70962afb0d564845992e",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/interface_rfcs.json"
+    },
+    {
+      "filename": "defect_log.json",
+      "package_relative_path": "defect_log.json",
+      "size_bytes": 2938,
+      "sha256": "70e2cb0242963fb10297cbbacd60c5c57b09193909db184943805fdc8fea388b",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/defect_log.json"
+    },
+    {
+      "filename": "lifecycle_execution.json",
+      "package_relative_path": "examples/lifecycle_execution.json",
+      "size_bytes": 179211,
+      "sha256": "bee5adfd2e33a72151ed409e5114da7a04032c533bd1f0bdb92d5cea84fa8246",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/lifecycle_execution.json"
+    },
+    {
+      "filename": "demo_summary.json",
+      "package_relative_path": "examples/demo_summary.json",
+      "size_bytes": 517,
+      "sha256": "9c0e4c7f4338ecf66a085a0ef911d4a3ddd430110dd802d9cb67e017b25dda12",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/demo_summary.json"
+    },
+    {
+      "filename": "service.py",
+      "package_relative_path": "character_party_runtime/service.py",
+      "size_bytes": 12341,
+      "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/service.py"
+    },
+    {
+      "filename": "rules.py",
+      "package_relative_path": "runtime/meta/wallet/rules.py",
+      "size_bytes": 15201,
+      "sha256": "b89f4e330c79887a6391b87fbfcfec3d6f147b63862c4da00f5de07293ac7616",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/rules.py"
+    },
+    {
+      "filename": "projection.py",
+      "package_relative_path": "runtime/meta/party/projection.py",
+      "size_bytes": 2766,
+      "sha256": "a25783dfc2a1e739d846ca5a39f6de29dcff06a54ddf4e515ef9e29043713c02",
+      "workspace_path": "/workspace/scratch/31be188e9695/deliverables/exports/projection.py"
+    }
+  ],
+  "integrity": {
+    "zip_crc": "PASS",
+    "zip_member_byte_matches": 206,
+    "independent_export_byte_matches": 16,
+    "export_names_equal_package_basenames": true,
+    "manifest_self_hash_policy": "Manifest excludes itself; this outer receipt binds the exported manifest and the complete archive."
+  },
+  "fresh_package_reproduction": {
+    "status": "PASS_WITH_EXPECTED_FORMAL_BLOCK",
+    "isolated_directory": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "runs": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/verify_delivery.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:06.809671+00:00",
+        "finished_utc": "2026-10-29T02:05:06.892373+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\"status\": \"PASS\", \"manifest_entries\": 205, \"package_file_count\": 206, \"upstream_originals_verified\": 93, \"executed_source_bindings\": 114, \"scope\": \"LOCAL_BYTES_NOT_P35_ACCEPTANCE\"}\n",
+        "stderr": "",
+        "stdout_sha256": "4dae7caf7d6dc4b8d6e6eec789286e573ec72b456b4aa947e5b73fafe5e54645",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "status": "PASS",
+          "manifest_entries": 205,
+          "package_file_count": 206,
+          "upstream_originals_verified": 93,
+          "executed_source_bindings": 114,
+          "scope": "LOCAL_BYTES_NOT_P35_ACCEPTANCE"
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/author_tests.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:06.894837+00:00",
+        "finished_utc": "2026-10-29T02:05:27.435991+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\"tests_run\": 123, \"failures\": 0, \"errors\": 0, \"skipped\": 0, \"status\": \"PASS\", \"scope\": \"P17_AUTHOR_TESTS_ONLY\", \"tests\": [{\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_bad_resource_shape_rejected_without_typeerror\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_command_unknown_fields_are_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_direct_wallet_module_import_in_new_process\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_full_length_valid_profile_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_level_caller_cannot_override_cost\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_malformed_entitlement_key_rejected_without_typeerror\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_missing_catalog_character_id_rejected_as_domain_error\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_boundaries.BoundaryTests.test_no_hardcoded_total_roster_limit\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_acquire_unknown_character\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_all_p05_growth_rows\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_bool_rank_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_duplicate_acquisition_same_entitlement\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_duplicate_character_different_entitlement_no_bonus\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_level_cap\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_level_insufficient_materials\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_level_insufficient_xp\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_level_jump_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_level_old_from_rank\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_p04_original_lifecycle\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_public_attribute_api_on_character_without_party\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_readonly_snapshot\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_skill_cap\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_skill_character_level_gate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_skill_growth_and_no_card_scaling\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_skill_insufficient_materials\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_skill_jump\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_unowned_upgrade\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_xp_for_unowned_rejects_entire_grant\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.CharacterTests.test_xp_is_not_spent_or_auto_leveled\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_default_feature_closed\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_duplicate_checked_before_disabled_flag\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_duplicate_equipment_grant_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_equip_unequip_and_derived_recalculate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_equipment_grant_is_disabled_by_default\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_instance_cannot_equip_twice_across_characters\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_level_gate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_role_gate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_unowned_instance\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_valid_two_slots_and_atomic_replacement\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.EquipmentTests.test_wrong_slot\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_all_six_ordered_permutations\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_duplicate_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_empty_party_cannot_export_for_battle\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_id_type_priority\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_missing_content_before_ownership\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_party_change_does_not_spend_or_scale_cards\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_payload_type\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_projection_preserves_lossless_sidecar\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_role_diversity_not_required\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_too_few\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_too_many\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_unknown_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_characters.PartyTests.test_unowned_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_authority_removed_between_plan_commit_blocks\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_composite_mock_rollback_preserves_foreign_domain\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_content_fence\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_continuity_fence\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_cross_domain_atomic_projection_blocks_without_owner_contract\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_duplicate_command_no_second_debit\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_evidence_change_between_plan_and_commit_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_faults_before_publish_change_nothing\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_json_duplicate_keys_and_floats_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_original_p13_atomic_character_projection\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unattributed_wallet_change\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unsupported_support_field\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_production_constructor_closed\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_real_p21_unbound_does_not_debit\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_rehydrate_preserves_consumed_request_and_values\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_reload_old_continuity_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_corruption\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_rehashed_broken_accounting\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_payload_collision\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_revision_is_collision_not_retry\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_separate_python_process_rehydrate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_stale_distinct_request\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_store_instance_fence\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_tampered_candidate_recomputed_and_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_unknown_outcome_lookup_and_same_request_retry\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_transactions.TransactionTests.test_wallet_revision_fence\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_aggregate_credit_overflow_is_atomic\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_boolean_credit_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_capture_released_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_deterministic_oldest_source_first\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_direct_spend_cannot_bypass_reservation\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_duplicate_reservation_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_duplicate_resource_credit_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_first_clear_cannot_regrant_with_new_delivery_reference\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_first_clear_identity_rejects_battle_id\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_fixed_seed_sequence_conserves_every_source\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_full_unspent_study_revoke\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_grant_profile_mismatch\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_learning_issuer_mismatch\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_learning_reward_from_resolved_p11_fixture\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_missing_grant_port_fails_closed\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_multi_resource_insufficiency_keeps_every_resource\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_negative_credit_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_new_repeat_battle_can_credit_separately\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_one_purpose_cannot_hold_two_reservations\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_payload_cannot_self_declare_trusted_reward\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_policy_change_does_not_reset_entitlement\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_release_captured_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_release_restores_exact_source\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_repeat_battle_receipt_cannot_be_claimed_twice\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_reservation_cannot_change_purpose\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_reserve_capture_once\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_reserved_materials_cannot_fund_upgrade\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_reserved_study_revoke_blocks_until_release\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_reversal_policy_must_match_original\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_revoke_never_uses_another_source_to_pay_shortfall\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_same_entitlement_different_amount_collides\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_source_domains_are_separate\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_spend_consumption_key_once_across_references\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_spend_same_identity_changed_cost_rejected\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_spent_study_revoke_blocks_without_debt\", \"status\": \"PASS\"}, {\"test_id\": \"tests.character_unit.test_wallet.WalletTests.test_unapproved_restore_cannot_recredit_revoked_family\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_capture_release_race_one_terminal_transition\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_reservation_race_cannot_overdraw\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_same_entitlement_two_request_ids_one_credit\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_same_request_id_distinct_payload_race_collides\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_twelve_same_request_retries_one_commit\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_twenty_distinct_spends_with_conflict_replan\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_two_upgrades_compete_for_last_four_tokens\", \"status\": \"PASS\"}, {\"test_id\": \"wallet_concurrency_tests.WalletConcurrencyTests.test_undo_spend_race_preserves_nonnegative_source\", \"status\": \"PASS\"}]}\n",
+        "stderr": "test_bad_resource_shape_rejected_without_typeerror (tests.character_unit.test_boundaries.BoundaryTests.test_bad_resource_shape_rejected_without_typeerror) ... ok\ntest_command_unknown_fields_are_rejected (tests.character_unit.test_boundaries.BoundaryTests.test_command_unknown_fields_are_rejected) ... ok\ntest_direct_wallet_module_import_in_new_process (tests.character_unit.test_boundaries.BoundaryTests.test_direct_wallet_module_import_in_new_process) ... ok\ntest_full_length_valid_profile_id (tests.character_unit.test_boundaries.BoundaryTests.test_full_length_valid_profile_id) ... ok\ntest_level_caller_cannot_override_cost (tests.character_unit.test_boundaries.BoundaryTests.test_level_caller_cannot_override_cost) ... ok\ntest_malformed_entitlement_key_rejected_without_typeerror (tests.character_unit.test_boundaries.BoundaryTests.test_malformed_entitlement_key_rejected_without_typeerror) ... ok\ntest_missing_catalog_character_id_rejected_as_domain_error (tests.character_unit.test_boundaries.BoundaryTests.test_missing_catalog_character_id_rejected_as_domain_error) ... ok\ntest_no_hardcoded_total_roster_limit (tests.character_unit.test_boundaries.BoundaryTests.test_no_hardcoded_total_roster_limit) ... ok\ntest_acquire_unknown_character (tests.character_unit.test_characters.CharacterTests.test_acquire_unknown_character) ... ok\ntest_all_p05_growth_rows (tests.character_unit.test_characters.CharacterTests.test_all_p05_growth_rows) ... ok\ntest_bool_rank_rejected (tests.character_unit.test_characters.CharacterTests.test_bool_rank_rejected) ... ok\ntest_duplicate_acquisition_same_entitlement (tests.character_unit.test_characters.CharacterTests.test_duplicate_acquisition_same_entitlement) ... ok\ntest_duplicate_character_different_entitlement_no_bonus (tests.character_unit.test_characters.CharacterTests.test_duplicate_character_different_entitlement_no_bonus) ... ok\ntest_level_cap (tests.character_unit.test_characters.CharacterTests.test_level_cap) ... ok\ntest_level_insufficient_materials (tests.character_unit.test_characters.CharacterTests.test_level_insufficient_materials) ... ok\ntest_level_insufficient_xp (tests.character_unit.test_characters.CharacterTests.test_level_insufficient_xp) ... ok\ntest_level_jump_rejected (tests.character_unit.test_characters.CharacterTests.test_level_jump_rejected) ... ok\ntest_level_old_from_rank (tests.character_unit.test_characters.CharacterTests.test_level_old_from_rank) ... ok\ntest_p04_original_lifecycle (tests.character_unit.test_characters.CharacterTests.test_p04_original_lifecycle) ... ok\ntest_public_attribute_api_on_character_without_party (tests.character_unit.test_characters.CharacterTests.test_public_attribute_api_on_character_without_party) ... ok\ntest_readonly_snapshot (tests.character_unit.test_characters.CharacterTests.test_readonly_snapshot) ... ok\ntest_skill_cap (tests.character_unit.test_characters.CharacterTests.test_skill_cap) ... ok\ntest_skill_character_level_gate (tests.character_unit.test_characters.CharacterTests.test_skill_character_level_gate) ... ok\ntest_skill_growth_and_no_card_scaling (tests.character_unit.test_characters.CharacterTests.test_skill_growth_and_no_card_scaling) ... ok\ntest_skill_insufficient_materials (tests.character_unit.test_characters.CharacterTests.test_skill_insufficient_materials) ... ok\ntest_skill_jump (tests.character_unit.test_characters.CharacterTests.test_skill_jump) ... ok\ntest_unowned_upgrade (tests.character_unit.test_characters.CharacterTests.test_unowned_upgrade) ... ok\ntest_xp_for_unowned_rejects_entire_grant (tests.character_unit.test_characters.CharacterTests.test_xp_for_unowned_rejects_entire_grant) ... ok\ntest_xp_is_not_spent_or_auto_leveled (tests.character_unit.test_characters.CharacterTests.test_xp_is_not_spent_or_auto_leveled) ... ok\ntest_default_feature_closed (tests.character_unit.test_characters.EquipmentTests.test_default_feature_closed) ... ok\ntest_duplicate_checked_before_disabled_flag (tests.character_unit.test_characters.EquipmentTests.test_duplicate_checked_before_disabled_flag) ... ok\ntest_duplicate_equipment_grant_rejected (tests.character_unit.test_characters.EquipmentTests.test_duplicate_equipment_grant_rejected) ... ok\ntest_equip_unequip_and_derived_recalculate (tests.character_unit.test_characters.EquipmentTests.test_equip_unequip_and_derived_recalculate) ... ok\ntest_equipment_grant_is_disabled_by_default (tests.character_unit.test_characters.EquipmentTests.test_equipment_grant_is_disabled_by_default) ... ok\ntest_instance_cannot_equip_twice_across_characters (tests.character_unit.test_characters.EquipmentTests.test_instance_cannot_equip_twice_across_characters) ... ok\ntest_level_gate (tests.character_unit.test_characters.EquipmentTests.test_level_gate) ... ok\ntest_role_gate (tests.character_unit.test_characters.EquipmentTests.test_role_gate) ... ok\ntest_unowned_instance (tests.character_unit.test_characters.EquipmentTests.test_unowned_instance) ... ok\ntest_valid_two_slots_and_atomic_replacement (tests.character_unit.test_characters.EquipmentTests.test_valid_two_slots_and_atomic_replacement) ... ok\ntest_wrong_slot (tests.character_unit.test_characters.EquipmentTests.test_wrong_slot) ... ok\ntest_all_six_ordered_permutations (tests.character_unit.test_characters.PartyTests.test_all_six_ordered_permutations) ... ok\ntest_duplicate_id (tests.character_unit.test_characters.PartyTests.test_duplicate_id) ... ok\ntest_empty_party_cannot_export_for_battle (tests.character_unit.test_characters.PartyTests.test_empty_party_cannot_export_for_battle) ... ok\ntest_id_type_priority (tests.character_unit.test_characters.PartyTests.test_id_type_priority) ... ok\ntest_missing_content_before_ownership (tests.character_unit.test_characters.PartyTests.test_missing_content_before_ownership) ... ok\ntest_party_change_does_not_spend_or_scale_cards (tests.character_unit.test_characters.PartyTests.test_party_change_does_not_spend_or_scale_cards) ... ok\ntest_payload_type (tests.character_unit.test_characters.PartyTests.test_payload_type) ... ok\ntest_projection_preserves_lossless_sidecar (tests.character_unit.test_characters.PartyTests.test_projection_preserves_lossless_sidecar) ... ok\ntest_role_diversity_not_required (tests.character_unit.test_characters.PartyTests.test_role_diversity_not_required) ... ok\ntest_too_few (tests.character_unit.test_characters.PartyTests.test_too_few) ... ok\ntest_too_many (tests.character_unit.test_characters.PartyTests.test_too_many) ... ok\ntest_unknown_id (tests.character_unit.test_characters.PartyTests.test_unknown_id) ... ok\ntest_unowned_id (tests.character_unit.test_characters.PartyTests.test_unowned_id) ... ok\ntest_authority_removed_between_plan_commit_blocks (tests.character_unit.test_transactions.TransactionTests.test_authority_removed_between_plan_commit_blocks) ... ok\ntest_composite_mock_rollback_preserves_foreign_domain (tests.character_unit.test_transactions.TransactionTests.test_composite_mock_rollback_preserves_foreign_domain) ... ok\ntest_content_fence (tests.character_unit.test_transactions.TransactionTests.test_content_fence) ... ok\ntest_continuity_fence (tests.character_unit.test_transactions.TransactionTests.test_continuity_fence) ... ok\ntest_cross_domain_atomic_projection_blocks_without_owner_contract (tests.character_unit.test_transactions.TransactionTests.test_cross_domain_atomic_projection_blocks_without_owner_contract) ... ok\ntest_duplicate_command_no_second_debit (tests.character_unit.test_transactions.TransactionTests.test_duplicate_command_no_second_debit) ... ok\ntest_evidence_change_between_plan_and_commit_rejected (tests.character_unit.test_transactions.TransactionTests.test_evidence_change_between_plan_and_commit_rejected) ... ok\ntest_faults_before_publish_change_nothing (tests.character_unit.test_transactions.TransactionTests.test_faults_before_publish_change_nothing) ... ok\ntest_json_duplicate_keys_and_floats_rejected (tests.character_unit.test_transactions.TransactionTests.test_json_duplicate_keys_and_floats_rejected) ... ok\ntest_original_p13_atomic_character_projection (tests.character_unit.test_transactions.TransactionTests.test_original_p13_atomic_character_projection) ... ok\ntest_p13_rejects_unattributed_wallet_change (tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unattributed_wallet_change) ... ok\ntest_p13_rejects_unsupported_support_field (tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unsupported_support_field) ... ok\ntest_production_constructor_closed (tests.character_unit.test_transactions.TransactionTests.test_production_constructor_closed) ... ok\ntest_real_p21_unbound_does_not_debit (tests.character_unit.test_transactions.TransactionTests.test_real_p21_unbound_does_not_debit) ... ok\ntest_rehydrate_preserves_consumed_request_and_values (tests.character_unit.test_transactions.TransactionTests.test_rehydrate_preserves_consumed_request_and_values) ... ok\ntest_reload_old_continuity_rejected (tests.character_unit.test_transactions.TransactionTests.test_reload_old_continuity_rejected) ... ok\ntest_reload_rejects_corruption (tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_corruption) ... ok\ntest_reload_rejects_rehashed_broken_accounting (tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_rehashed_broken_accounting) ... ok\ntest_same_id_changed_payload_collision (tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_payload_collision) ... ok\ntest_same_id_changed_revision_is_collision_not_retry (tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_revision_is_collision_not_retry) ... ok\ntest_separate_python_process_rehydrate (tests.character_unit.test_transactions.TransactionTests.test_separate_python_process_rehydrate) ... ok\ntest_stale_distinct_request (tests.character_unit.test_transactions.TransactionTests.test_stale_distinct_request) ... ok\ntest_store_instance_fence (tests.character_unit.test_transactions.TransactionTests.test_store_instance_fence) ... ok\ntest_tampered_candidate_recomputed_and_rejected (tests.character_unit.test_transactions.TransactionTests.test_tampered_candidate_recomputed_and_rejected) ... ok\ntest_unknown_outcome_lookup_and_same_request_retry (tests.character_unit.test_transactions.TransactionTests.test_unknown_outcome_lookup_and_same_request_retry) ... ok\ntest_wallet_revision_fence (tests.character_unit.test_transactions.TransactionTests.test_wallet_revision_fence) ... ok\ntest_aggregate_credit_overflow_is_atomic (tests.character_unit.test_wallet.WalletTests.test_aggregate_credit_overflow_is_atomic) ... ok\ntest_boolean_credit_rejected (tests.character_unit.test_wallet.WalletTests.test_boolean_credit_rejected) ... ok\ntest_capture_released_rejected (tests.character_unit.test_wallet.WalletTests.test_capture_released_rejected) ... ok\ntest_deterministic_oldest_source_first (tests.character_unit.test_wallet.WalletTests.test_deterministic_oldest_source_first) ... ok\ntest_direct_spend_cannot_bypass_reservation (tests.character_unit.test_wallet.WalletTests.test_direct_spend_cannot_bypass_reservation) ... ok\ntest_duplicate_reservation_id (tests.character_unit.test_wallet.WalletTests.test_duplicate_reservation_id) ... ok\ntest_duplicate_resource_credit_rejected (tests.character_unit.test_wallet.WalletTests.test_duplicate_resource_credit_rejected) ... ok\ntest_first_clear_cannot_regrant_with_new_delivery_reference (tests.character_unit.test_wallet.WalletTests.test_first_clear_cannot_regrant_with_new_delivery_reference) ... ok\ntest_first_clear_identity_rejects_battle_id (tests.character_unit.test_wallet.WalletTests.test_first_clear_identity_rejects_battle_id) ... ok\ntest_fixed_seed_sequence_conserves_every_source (tests.character_unit.test_wallet.WalletTests.test_fixed_seed_sequence_conserves_every_source) ... ok\ntest_full_unspent_study_revoke (tests.character_unit.test_wallet.WalletTests.test_full_unspent_study_revoke) ... ok\ntest_grant_profile_mismatch (tests.character_unit.test_wallet.WalletTests.test_grant_profile_mismatch) ... ok\ntest_learning_issuer_mismatch (tests.character_unit.test_wallet.WalletTests.test_learning_issuer_mismatch) ... ok\ntest_learning_reward_from_resolved_p11_fixture (tests.character_unit.test_wallet.WalletTests.test_learning_reward_from_resolved_p11_fixture) ... ok\ntest_missing_grant_port_fails_closed (tests.character_unit.test_wallet.WalletTests.test_missing_grant_port_fails_closed) ... ok\ntest_multi_resource_insufficiency_keeps_every_resource (tests.character_unit.test_wallet.WalletTests.test_multi_resource_insufficiency_keeps_every_resource) ... ok\ntest_negative_credit_rejected (tests.character_unit.test_wallet.WalletTests.test_negative_credit_rejected) ... ok\ntest_new_repeat_battle_can_credit_separately (tests.character_unit.test_wallet.WalletTests.test_new_repeat_battle_can_credit_separately) ... ok\ntest_one_purpose_cannot_hold_two_reservations (tests.character_unit.test_wallet.WalletTests.test_one_purpose_cannot_hold_two_reservations) ... ok\ntest_payload_cannot_self_declare_trusted_reward (tests.character_unit.test_wallet.WalletTests.test_payload_cannot_self_declare_trusted_reward) ... ok\ntest_policy_change_does_not_reset_entitlement (tests.character_unit.test_wallet.WalletTests.test_policy_change_does_not_reset_entitlement) ... ok\ntest_release_captured_rejected (tests.character_unit.test_wallet.WalletTests.test_release_captured_rejected) ... ok\ntest_release_restores_exact_source (tests.character_unit.test_wallet.WalletTests.test_release_restores_exact_source) ... ok\ntest_repeat_battle_receipt_cannot_be_claimed_twice (tests.character_unit.test_wallet.WalletTests.test_repeat_battle_receipt_cannot_be_claimed_twice) ... ok\ntest_reservation_cannot_change_purpose (tests.character_unit.test_wallet.WalletTests.test_reservation_cannot_change_purpose) ... ok\ntest_reserve_capture_once (tests.character_unit.test_wallet.WalletTests.test_reserve_capture_once) ... ok\ntest_reserved_materials_cannot_fund_upgrade (tests.character_unit.test_wallet.WalletTests.test_reserved_materials_cannot_fund_upgrade) ... ok\ntest_reserved_study_revoke_blocks_until_release (tests.character_unit.test_wallet.WalletTests.test_reserved_study_revoke_blocks_until_release) ... ok\ntest_reversal_policy_must_match_original (tests.character_unit.test_wallet.WalletTests.test_reversal_policy_must_match_original) ... ok\ntest_revoke_never_uses_another_source_to_pay_shortfall (tests.character_unit.test_wallet.WalletTests.test_revoke_never_uses_another_source_to_pay_shortfall) ... ok\ntest_same_entitlement_different_amount_collides (tests.character_unit.test_wallet.WalletTests.test_same_entitlement_different_amount_collides) ... ok\ntest_source_domains_are_separate (tests.character_unit.test_wallet.WalletTests.test_source_domains_are_separate) ... ok\ntest_spend_consumption_key_once_across_references (tests.character_unit.test_wallet.WalletTests.test_spend_consumption_key_once_across_references) ... ok\ntest_spend_same_identity_changed_cost_rejected (tests.character_unit.test_wallet.WalletTests.test_spend_same_identity_changed_cost_rejected) ... ok\ntest_spent_study_revoke_blocks_without_debt (tests.character_unit.test_wallet.WalletTests.test_spent_study_revoke_blocks_without_debt) ... ok\ntest_unapproved_restore_cannot_recredit_revoked_family (tests.character_unit.test_wallet.WalletTests.test_unapproved_restore_cannot_recredit_revoked_family) ... ok\ntest_capture_release_race_one_terminal_transition (wallet_concurrency_tests.WalletConcurrencyTests.test_capture_release_race_one_terminal_transition) ... ok\ntest_reservation_race_cannot_overdraw (wallet_concurrency_tests.WalletConcurrencyTests.test_reservation_race_cannot_overdraw) ... ok\ntest_same_entitlement_two_request_ids_one_credit (wallet_concurrency_tests.WalletConcurrencyTests.test_same_entitlement_two_request_ids_one_credit) ... ok\ntest_same_request_id_distinct_payload_race_collides (wallet_concurrency_tests.WalletConcurrencyTests.test_same_request_id_distinct_payload_race_collides) ... ok\ntest_twelve_same_request_retries_one_commit (wallet_concurrency_tests.WalletConcurrencyTests.test_twelve_same_request_retries_one_commit) ... ok\ntest_twenty_distinct_spends_with_conflict_replan (wallet_concurrency_tests.WalletConcurrencyTests.test_twenty_distinct_spends_with_conflict_replan) ... ok\ntest_two_upgrades_compete_for_last_four_tokens (wallet_concurrency_tests.WalletConcurrencyTests.test_two_upgrades_compete_for_last_four_tokens) ... ok\ntest_undo_spend_race_preserves_nonnegative_source (wallet_concurrency_tests.WalletConcurrencyTests.test_undo_spend_race_preserves_nonnegative_source) ... ok\n\n----------------------------------------------------------------------\nRan 123 tests in 20.385s\n\nOK\n",
+        "stdout_sha256": "cef5e12734cbd5e7e9fe9e6fe4fe09e1f285164c95e48e309d169e371d79e9a5",
+        "stderr_sha256": "35a3f2c5898d646fdc03c02b46f569e505eb609a3b6ea9cd84c6f66136d3ca33",
+        "structured_result": {
+          "tests_run": 123,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "status": "PASS",
+          "scope": "P17_AUTHOR_TESTS_ONLY",
+          "tests": [
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_bad_resource_shape_rejected_without_typeerror",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_command_unknown_fields_are_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_direct_wallet_module_import_in_new_process",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_full_length_valid_profile_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_level_caller_cannot_override_cost",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_malformed_entitlement_key_rejected_without_typeerror",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_missing_catalog_character_id_rejected_as_domain_error",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_boundaries.BoundaryTests.test_no_hardcoded_total_roster_limit",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_acquire_unknown_character",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_all_p05_growth_rows",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_bool_rank_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_duplicate_acquisition_same_entitlement",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_duplicate_character_different_entitlement_no_bonus",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_level_cap",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_level_insufficient_materials",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_level_insufficient_xp",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_level_jump_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_level_old_from_rank",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_p04_original_lifecycle",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_public_attribute_api_on_character_without_party",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_readonly_snapshot",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_skill_cap",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_skill_character_level_gate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_skill_growth_and_no_card_scaling",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_skill_insufficient_materials",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_skill_jump",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_unowned_upgrade",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_xp_for_unowned_rejects_entire_grant",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.CharacterTests.test_xp_is_not_spent_or_auto_leveled",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_default_feature_closed",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_duplicate_checked_before_disabled_flag",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_duplicate_equipment_grant_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_equip_unequip_and_derived_recalculate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_equipment_grant_is_disabled_by_default",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_instance_cannot_equip_twice_across_characters",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_level_gate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_role_gate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_unowned_instance",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_valid_two_slots_and_atomic_replacement",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.EquipmentTests.test_wrong_slot",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_all_six_ordered_permutations",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_duplicate_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_empty_party_cannot_export_for_battle",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_id_type_priority",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_missing_content_before_ownership",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_party_change_does_not_spend_or_scale_cards",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_payload_type",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_projection_preserves_lossless_sidecar",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_role_diversity_not_required",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_too_few",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_too_many",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_unknown_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_characters.PartyTests.test_unowned_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_authority_removed_between_plan_commit_blocks",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_composite_mock_rollback_preserves_foreign_domain",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_content_fence",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_continuity_fence",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_cross_domain_atomic_projection_blocks_without_owner_contract",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_duplicate_command_no_second_debit",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_evidence_change_between_plan_and_commit_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_faults_before_publish_change_nothing",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_json_duplicate_keys_and_floats_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_original_p13_atomic_character_projection",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unattributed_wallet_change",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_p13_rejects_unsupported_support_field",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_production_constructor_closed",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_real_p21_unbound_does_not_debit",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_rehydrate_preserves_consumed_request_and_values",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_reload_old_continuity_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_corruption",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_reload_rejects_rehashed_broken_accounting",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_payload_collision",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_same_id_changed_revision_is_collision_not_retry",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_separate_python_process_rehydrate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_stale_distinct_request",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_store_instance_fence",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_tampered_candidate_recomputed_and_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_unknown_outcome_lookup_and_same_request_retry",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_transactions.TransactionTests.test_wallet_revision_fence",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_aggregate_credit_overflow_is_atomic",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_boolean_credit_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_capture_released_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_deterministic_oldest_source_first",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_direct_spend_cannot_bypass_reservation",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_duplicate_reservation_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_duplicate_resource_credit_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_first_clear_cannot_regrant_with_new_delivery_reference",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_first_clear_identity_rejects_battle_id",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_fixed_seed_sequence_conserves_every_source",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_full_unspent_study_revoke",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_grant_profile_mismatch",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_learning_issuer_mismatch",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_learning_reward_from_resolved_p11_fixture",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_missing_grant_port_fails_closed",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_multi_resource_insufficiency_keeps_every_resource",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_negative_credit_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_new_repeat_battle_can_credit_separately",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_one_purpose_cannot_hold_two_reservations",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_payload_cannot_self_declare_trusted_reward",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_policy_change_does_not_reset_entitlement",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_release_captured_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_release_restores_exact_source",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_repeat_battle_receipt_cannot_be_claimed_twice",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_reservation_cannot_change_purpose",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_reserve_capture_once",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_reserved_materials_cannot_fund_upgrade",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_reserved_study_revoke_blocks_until_release",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_reversal_policy_must_match_original",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_revoke_never_uses_another_source_to_pay_shortfall",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_same_entitlement_different_amount_collides",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_source_domains_are_separate",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_spend_consumption_key_once_across_references",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_spend_same_identity_changed_cost_rejected",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_spent_study_revoke_blocks_without_debt",
+              "status": "PASS"
+            },
+            {
+              "test_id": "tests.character_unit.test_wallet.WalletTests.test_unapproved_restore_cannot_recredit_revoked_family",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_capture_release_race_one_terminal_transition",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_reservation_race_cannot_overdraw",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_same_entitlement_two_request_ids_one_credit",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_same_request_id_distinct_payload_race_collides",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_twelve_same_request_retries_one_commit",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_twenty_distinct_spends_with_conflict_replan",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_two_upgrades_compete_for_last_four_tokens",
+              "status": "PASS"
+            },
+            {
+              "test_id": "wallet_concurrency_tests.WalletConcurrencyTests.test_undo_spend_race_preserves_nonnegative_source",
+              "status": "PASS"
+            }
+          ]
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/check_contracts.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:27.437259+00:00",
+        "finished_utc": "2026-10-29T02:05:27.578431+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\"status\": \"PASS\", \"scope\": \"P13_ORIGINAL_STRUCTURAL_CONTRACT_AND_REJECTION_CHECKS\", \"validated_dto_counts\": {\"PartySnapshot\": 1, \"WalletSnapshot\": 1, \"WalletDeltaCandidate\": 11, \"AtomicCommitProposal\": 4}, \"total_validated\": 17, \"unbound_composite_requests_rejected\": [\"FIXTURE_CMD_001\", \"FIXTURE_CMD_002\", \"FIXTURE_CMD_003\", \"FIXTURE_CMD_004\", \"FIXTURE_CMD_005\", \"FIXTURE_CMD_006\", \"FIXTURE_CMD_007\"], \"p11_legacy_fields\": {\"RewardIntent\": [\"transaction_id\", \"operation_key\", \"family_key\", \"kind\", \"desired_active\", \"policy_snapshot\", \"source_evidence_ref\", \"resolution_ref\"], \"WalletDelta\": [\"intent_sha256\", \"family_key\", \"expected_wallet_version\", \"wallet_before_sha256\", \"changes\", \"source_after\", \"unresolved\", \"reason\", \"policy_sha256\"]}, \"p11_runtime_adapter\": \"BLOCKED_SOURCE_AFTER_LOSSLESS_MAPPING_NOT_ACCEPTED\", \"p21_real_atomic_commit\": \"BLOCKED_NOT_RECEIVED\"}\n",
+        "stderr": "",
+        "stdout_sha256": "35e35b7efae26f7c97443410879d1fe9f15d8353ee66c97835107630cbcbf1a8",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "status": "PASS",
+          "scope": "P13_ORIGINAL_STRUCTURAL_CONTRACT_AND_REJECTION_CHECKS",
+          "validated_dto_counts": {
+            "PartySnapshot": 1,
+            "WalletSnapshot": 1,
+            "WalletDeltaCandidate": 11,
+            "AtomicCommitProposal": 4
+          },
+          "total_validated": 17,
+          "unbound_composite_requests_rejected": [
+            "FIXTURE_CMD_001",
+            "FIXTURE_CMD_002",
+            "FIXTURE_CMD_003",
+            "FIXTURE_CMD_004",
+            "FIXTURE_CMD_005",
+            "FIXTURE_CMD_006",
+            "FIXTURE_CMD_007"
+          ],
+          "p11_legacy_fields": {
+            "RewardIntent": [
+              "transaction_id",
+              "operation_key",
+              "family_key",
+              "kind",
+              "desired_active",
+              "policy_snapshot",
+              "source_evidence_ref",
+              "resolution_ref"
+            ],
+            "WalletDelta": [
+              "intent_sha256",
+              "family_key",
+              "expected_wallet_version",
+              "wallet_before_sha256",
+              "changes",
+              "source_after",
+              "unresolved",
+              "reason",
+              "policy_sha256"
+            ]
+          },
+          "p11_runtime_adapter": "BLOCKED_SOURCE_AFTER_LOSSLESS_MAPPING_NOT_ACCEPTED",
+          "p21_real_atomic_commit": "BLOCKED_NOT_RECEIVED"
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "-m",
+          "character_party_runtime"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:27.578866+00:00",
+        "finished_utc": "2026-10-29T02:05:28.593054+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\n  \"scope\": \"P17_ISOLATED_EXECUTION_WITH_SYNTHETIC_P11_P18_AND_IN_MEMORY_P21_MODEL\",\n  \"production_commit\": \"BLOCKED\",\n  \"durable\": false,\n  \"final_state_sha256\": \"e4bf67c4fe2cece75265a0ee51cdd0e2b9e674da48e1683f747c443608c7939c\",\n  \"summary\": {\n    \"committed_simulation_transactions\": 11,\n    \"available_training_tokens\": 1,\n    \"character_levels\": [\n      2,\n      3,\n      1\n    ],\n    \"wallet_revision\": 4,\n    \"meta_revision\": 11\n  }\n}\n",
+        "stderr": "",
+        "stdout_sha256": "3b27ccc9cf226d5cd359c92fbd58d33d6df81abb557b7902747776558877e0ae",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "scope": "P17_ISOLATED_EXECUTION_WITH_SYNTHETIC_P11_P18_AND_IN_MEMORY_P21_MODEL",
+          "production_commit": "BLOCKED",
+          "durable": false,
+          "final_state_sha256": "e4bf67c4fe2cece75265a0ee51cdd0e2b9e674da48e1683f747c443608c7939c",
+          "summary": {
+            "committed_simulation_transactions": 11,
+            "available_training_tokens": 1,
+            "character_levels": [
+              2,
+              3,
+              1
+            ],
+            "wallet_revision": 4,
+            "meta_revision": 11
+          }
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_demo.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:28.593514+00:00",
+        "finished_utc": "2026-10-29T02:05:29.594596+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\"status\": \"PASS\", \"scope\": \"P17_AUTHOR_REPLAY\", \"execution_sha256\": \"3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165\", \"summary\": {\"committed_simulation_transactions\": 11, \"available_training_tokens\": 1, \"character_levels\": [2, 3, 1], \"wallet_revision\": 4, \"meta_revision\": 11}}\n",
+        "stderr": "",
+        "stdout_sha256": "66bb3c47db326a741205209f455a032d0f2cddcab9872d6327f9b0cfd0f53c62",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "status": "PASS",
+          "scope": "P17_AUTHOR_REPLAY",
+          "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165",
+          "summary": {
+            "committed_simulation_transactions": 11,
+            "available_training_tokens": 1,
+            "character_levels": [
+              2,
+              3,
+              1
+            ],
+            "wallet_revision": 4,
+            "meta_revision": 11
+          }
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/check_determinism.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:29.594996+00:00",
+        "finished_utc": "2026-10-29T02:05:32.709288+00:00",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "exit_matches_expected": true,
+        "stdout": "{\"status\": \"PASS\", \"scope\": \"THREE_ISOLATED_PYTHON_PROCESSES\", \"results\": [{\"pythonhashseed\": \"1\", \"execution_sha256\": \"3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165\"}, {\"pythonhashseed\": \"17\", \"execution_sha256\": \"3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165\"}, {\"pythonhashseed\": \"8675309\", \"execution_sha256\": \"3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165\"}]}\n",
+        "stderr": "",
+        "stdout_sha256": "dbacc23c2f9e5f71bdc466dde53e22671f31b1bee4ff1e6f6c11e9a7368f63b2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "status": "PASS",
+          "scope": "THREE_ISOLATED_PYTHON_PROCESSES",
+          "results": [
+            {
+              "pythonhashseed": "1",
+              "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+            },
+            {
+              "pythonhashseed": "17",
+              "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+            },
+            {
+              "pythonhashseed": "8675309",
+              "execution_sha256": "3ac1fea3e430b5a5a1cad8c7e529e32a38b107bdd3d3a563ad180469171b6165"
+            }
+          ]
+        }
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/preflight.py"
+        ],
+        "cwd": "/tmp/p17_fresh_ujrlov3u/P17_CharacterPartyWallet_V0.1",
+        "started_utc": "2026-10-29T02:05:32.709739+00:00",
+        "finished_utc": "2026-10-29T02:05:32.745283+00:00",
+        "exit_code": 3,
+        "expected_exit_code": 3,
+        "exit_matches_expected": true,
+        "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"production_bootstrap_implemented\": false,\n  \"p17_mappings\": [\n    {\n      \"design_path\": \"runtime/meta/characters/**\",\n      \"actual_production_path\": null,\n      \"write_allowed\": false\n    },\n    {\n      \"design_path\": \"runtime/meta/party/**\",\n      \"actual_production_path\": null,\n      \"write_allowed\": false\n    },\n    {\n      \"design_path\": \"tests/character_unit/**\",\n      \"actual_production_path\": null,\n      \"write_allowed\": false\n    },\n    {\n      \"design_path\": \"runtime/meta/wallet/**\",\n      \"actual_production_path\": null,\n      \"write_allowed\": false\n    }\n  ],\n  \"blocking_items\": [\n    {\n      \"id\": \"P17-BLK-001\",\n      \"owner\": \"P13\",\n      \"condition\": \"P17四条正式actual_path_mapping和写入授权未提供\"\n    },\n    {\n      \"id\": \"P17-BLK-002\",\n      \"owner\": \"P21\",\n      \"condition\": \"真实AtomicStore/submit/lookup、持久回执与备份连续性实现未收到\"\n    },\n    {\n      \"id\": \"P17-BLK-003\",\n      \"owner\": \"P11/P13/P21\",\n      \"condition\": \"原P11 WalletPort与新候选模型尚无批准的无损适配\"\n    },\n    {\n      \"id\": \"P17-BLK-004\",\n      \"owner\": \"P18/P13/P21\",\n      \"condition\": \"真实关卡终局授权、首通/重复凭证、预算和成本resolver未收到\"\n    },\n    {\n      \"id\": \"P17-BLK-005\",\n      \"owner\": \"P01/P08/P11\",\n      \"condition\": \"DEC-001/002/003正式四键、已消费Undo和无学习日政策仍待批准\"\n    },\n    {\n      \"id\": \"P17-BLK-006\",\n      \"owner\": \"P01/P04/P05/P22\",\n      \"condition\": \"DEC-009装备范围及正式装备/成长成本、内容ID尚未批准\"\n    },\n    {\n      \"id\": \"P17-BLK-007\",\n      \"owner\": \"P13/P15/P14\",\n      \"condition\": \"原PartySnapshot没有support/skill/equipment/P03引用的完整消费合同\"\n    },\n    {\n      \"id\": \"P17-BLK-008\",\n      \"owner\": \"P22\",\n      \"condition\": \"全球内容ID/Schema/release_registry正式版本缺失\"\n    },\n    {\n      \"id\": \"P17-BLK-009\",\n      \"owner\": \"P13/P34\",\n      \"condition\": \"真实可构建工程、目标Windows/引擎/Anki环境证据缺失\"\n    },\n    {\n      \"id\": \"P17-BLK-010\",\n      \"owner\": \"P32/P33/P35\",\n      \"condition\": \"独立自动化、目标端人工与独立证据门禁未执行\"\n    },\n    {\n      \"id\": \"P17-BLK-011\",\n      \"owner\": \"P13/P21\",\n      \"condition\": \"隔离快照受P13 1MiB/数组界限约束，长期记录分段/迁移未设计受理\"\n    }\n  ],\n  \"target_engine_run\": \"NOT_RUN\",\n  \"windows_run\": \"NOT_RUN\",\n  \"anki_e2e\": \"NOT_RUN\",\n  \"independent_acceptance\": \"NOT_RUN\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "2a44b66c34b3d4fabdcc4e58eeba38834ce9f49102e4d6ffcd70425fa4c5d2c4",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "structured_result": {
+          "status": "BLOCKED",
+          "production_bootstrap_implemented": false,
+          "p17_mappings": [
+            {
+              "design_path": "runtime/meta/characters/**",
+              "actual_production_path": null,
+              "write_allowed": false
+            },
+            {
+              "design_path": "runtime/meta/party/**",
+              "actual_production_path": null,
+              "write_allowed": false
+            },
+            {
+              "design_path": "tests/character_unit/**",
+              "actual_production_path": null,
+              "write_allowed": false
+            },
+            {
+              "design_path": "runtime/meta/wallet/**",
+              "actual_production_path": null,
+              "write_allowed": false
+            }
+          ],
+          "blocking_items": [
+            {
+              "id": "P17-BLK-001",
+              "owner": "P13",
+              "condition": "P17四条正式actual_path_mapping和写入授权未提供"
+            },
+            {
+              "id": "P17-BLK-002",
+              "owner": "P21",
+              "condition": "真实AtomicStore/submit/lookup、持久回执与备份连续性实现未收到"
+            },
+            {
+              "id": "P17-BLK-003",
+              "owner": "P11/P13/P21",
+              "condition": "原P11 WalletPort与新候选模型尚无批准的无损适配"
+            },
+            {
+              "id": "P17-BLK-004",
+              "owner": "P18/P13/P21",
+              "condition": "真实关卡终局授权、首通/重复凭证、预算和成本resolver未收到"
+            },
+            {
+              "id": "P17-BLK-005",
+              "owner": "P01/P08/P11",
+              "condition": "DEC-001/002/003正式四键、已消费Undo和无学习日政策仍待批准"
+            },
+            {
+              "id": "P17-BLK-006",
+              "owner": "P01/P04/P05/P22",
+              "condition": "DEC-009装备范围及正式装备/成长成本、内容ID尚未批准"
+            },
+            {
+              "id": "P17-BLK-007",
+              "owner": "P13/P15/P14",
+              "condition": "原PartySnapshot没有support/skill/equipment/P03引用的完整消费合同"
+            },
+            {
+              "id": "P17-BLK-008",
+              "owner": "P22",
+              "condition": "全球内容ID/Schema/release_registry正式版本缺失"
+            },
+            {
+              "id": "P17-BLK-009",
+              "owner": "P13/P34",
+              "condition": "真实可构建工程、目标Windows/引擎/Anki环境证据缺失"
+            },
+            {
+              "id": "P17-BLK-010",
+              "owner": "P32/P33/P35",
+              "condition": "独立自动化、目标端人工与独立证据门禁未执行"
+            },
+            {
+              "id": "P17-BLK-011",
+              "owner": "P13/P21",
+              "condition": "隔离快照受P13 1MiB/数组界限约束，长期记录分段/迁移未设计受理"
+            }
+          ],
+          "target_engine_run": "NOT_RUN",
+          "windows_run": "NOT_RUN",
+          "anki_e2e": "NOT_RUN",
+          "independent_acceptance": "NOT_RUN"
+        }
+      }
+    ]
+  },
+  "scope": "P17_AUTHOR_DELIVERY_ONLY_NOT_P32_P33_P35_ACCEPTANCE",
+  "production_integration": "BLOCKED",
+  "target_Windows_engine_Anki_game_E2E": "NOT_RUN",
+  "P32": "NOT_RUN",
+  "P33": "NOT_RUN",
+  "P35": "NOT_RUN",
+  "created_utc": "2026-10-29T02:05:32.750674+00:00"
+}

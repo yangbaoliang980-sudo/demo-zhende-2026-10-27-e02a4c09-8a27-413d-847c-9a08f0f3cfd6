@@ -1,0 +1,143 @@
+{
+  "version": "P17-RFC-BUNDLE/0.1.0",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "items": [
+    {
+      "rfc_id": "RFC-P17-001",
+      "contract_owner": "P13",
+      "title": "P17实际路径请求",
+      "base_files": [
+        {
+          "path": "sources/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "runtime/meta/characters/**",
+        "runtime/meta/party/**",
+        "runtime/meta/wallet/**",
+        "tests/character_unit/**"
+      ],
+      "proposal": "仅记录当前隔离包路径；正式路径保持null，禁止覆盖。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    },
+    {
+      "rfc_id": "RFC-P17-002",
+      "contract_owner": "P13/P21",
+      "title": "完整候选与原子提交resolver",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "sources/P13/runtime/framework/yltt_framework/ports.py",
+          "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "P17-CANDIDATE/0.1.0-isolated",
+        "P13 AtomicCommitProposal"
+      ],
+      "proposal": "完整after_state、源批次、预留、消费与receipt同事务提交；只存wallet_delta有损。需受控联合resolver和连续性检查。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    },
+    {
+      "rfc_id": "RFC-P17-003",
+      "contract_owner": "P11/P13/P21",
+      "title": "RewardIntent/source_after无损适配",
+      "base_files": [
+        {
+          "path": "sources/P11/ledger_runtime/types.py",
+          "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+        },
+        {
+          "path": "sources/P11/ledger_runtime/ports.py",
+          "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+        },
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "P17-GRANT-INPUT/0.1.0-proposal",
+        "P17-REVERSAL-INPUT/0.1.0-proposal"
+      ],
+      "proposal": "本包没有P11 compute的生产实现。保留原family/operation因果、desired_active、完整政策与会计G/R/S/A/T/U/K/M，先按批准政策定义无损转换。禁止直接丢弃source_after。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    },
+    {
+      "rfc_id": "RFC-P17-004",
+      "contract_owner": "P13/P15/P14",
+      "title": "完整编队与属性消费",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "sources/P04/content/characters/character_skeleton.json",
+          "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "P17-PARTY-EXPORT/0.1.0-proposal",
+        "PartySnapshot EntityStats"
+      ],
+      "proposal": "显式支持support、level、skill_rank、装备与P03别名，或由owner明确逐项不消费；禁止无批准卡牌倍率。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    },
+    {
+      "rfc_id": "RFC-P17-005",
+      "contract_owner": "P18/P13/P21",
+      "title": "奖励和关卡消费凭证",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "P17-GRANT-INPUT/0.1.0-proposal",
+        "P17-COST-INPUT/0.1.0-proposal"
+      ],
+      "proposal": "首通键不含battle_id；重复奖励绑定battle_id；资格及成本resolver来自P18，状态与钱包同事务。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    },
+    {
+      "rfc_id": "RFC-P17-006",
+      "contract_owner": "P13/P21",
+      "title": "长期记录容量与存档迁移",
+      "base_files": [
+        {
+          "path": "sources/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "proposed_types_or_paths": [
+        "P17-STATE/0.1.0-isolated"
+      ],
+      "proposal": "目前采用P13安全消息界限；正式分段/去重保留/备份水位需新版本，不允许自动遗忘消费或发奖凭证。",
+      "proposal_source_sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "production_change_applied": false
+    }
+  ]
+}

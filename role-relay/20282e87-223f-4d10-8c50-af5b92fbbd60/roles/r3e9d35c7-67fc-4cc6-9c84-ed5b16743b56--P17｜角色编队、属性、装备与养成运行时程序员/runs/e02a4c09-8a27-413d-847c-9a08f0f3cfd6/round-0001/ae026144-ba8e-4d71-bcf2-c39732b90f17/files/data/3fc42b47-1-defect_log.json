@@ -1,0 +1,53 @@
+{
+  "version": "P15-DEFECT-LOG/0.1.0",
+  "owner": "P15",
+  "updated_utc": "2026-10-28T19:21:29.885615+00:00",
+  "defects": [
+    {
+      "defect_id": "P15-DEF-001",
+      "fix_owner": "P15",
+      "status": "FIXED_AUTHOR_VERIFIED_INDEPENDENT_RETEST_NOT_RUN",
+      "observed_status": "FAIL",
+      "reproducer": "python -B tools/probe_p14_module_identity.py",
+      "observed": "Original P14 module name battle_core did not catch vendored CandidateRejected. An insufficient-energy request became INTERNAL_RESOLUTION_ERROR / COMMITTED / FAULTED. Energy stayed zero; authoritative state changed.",
+      "root_cause": "Identical Python source imported under two module names has distinct exception class identities. P15 hard-coded the vendored P14 class.",
+      "failed_run": "evidence/runs/adapter_identity_001",
+      "failed_source_snapshot": {
+        "relative_path": "evidence/runs/adapter_identity_001/executed_sources.zip",
+        "size_bytes": 148217,
+        "sha256": "19b0306864a0fab9515aeee1d029a5bd4e58c23ee11694a5413e52ecee5a2ce0"
+      },
+      "failed_stdout": {
+        "relative_path": "evidence/runs/adapter_identity_001/stdout.log",
+        "size_bytes": 244,
+        "sha256": "65549ffba4bdabd371b2ba09f0ceaa1a6ddcd33cf5bbce03d188bedad2455e44"
+      },
+      "change": "P15 adapter requires caller-supplied rejection_type from the actual P14 owner module; P14 source unchanged.",
+      "fixed_source": {
+        "relative_path": "deck_runtime/p14_adapter.py",
+        "size_bytes": 3461,
+        "sha256": "66306b0da1967a7eef163eaf146d23cb77d1b11d2906c92b894d662f522adf82"
+      },
+      "fixed_run": "evidence/runs/adapter_identity_002",
+      "fixed_stdout": {
+        "relative_path": "evidence/runs/adapter_identity_002/stdout.log",
+        "size_bytes": 236,
+        "sha256": "3ad860d4000dd74b474842b88f6adb57fca0e448019afe5ed24968fbef7a000d"
+      },
+      "fixed_observation": "REJECTED / ENERGY_INSUFFICIENT; all authoritative state bytes unchanged; energy zero.",
+      "regression_test": "deck_unit_tests.test_p14_contract.P14ContractTests.test_original_p14_import_namespace_receives_its_own_rejection_class",
+      "regression_run": "evidence/runs/author_003",
+      "P32_retest": "NOT_RUN",
+      "P35_closure": "NOT_RUN"
+    }
+  ],
+  "evidence_corrections": [
+    {
+      "id": "P15-EVID-001",
+      "type": "COVERAGE_CORRECTION_NOT_HISTORICAL_TEST_FAILURE",
+      "detail": "The first double-click test checked cache size, which did not prove the provider was never called. It was changed to count actual propose invocations. Historical passing logs remain unmodified.",
+      "current_test": "deck_unit_tests.test_p14_contract.P14ContractTests.test_double_click_same_id_does_not_call_provider_again",
+      "current_evidence": "evidence/runs/author_003"
+    }
+  ]
+}

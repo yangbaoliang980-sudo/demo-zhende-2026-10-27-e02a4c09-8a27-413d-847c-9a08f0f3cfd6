@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "final_author_run": "evidence/runs/author_final_001",
+  "verified_files": 30,
+  "changed_files": [],
+  "files": [
+    {
+      "path": "boss_transition_cases.tsv",
+      "size_bytes": 20818,
+      "sha256": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/__init__.py",
+      "size_bytes": 847,
+      "sha256": "70083cb8ba01c3d74773cda65da521474df6bf13c981b523f1e453f032c51805",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/__main__.py",
+      "size_bytes": 116,
+      "sha256": "54d426c3410b2306e703b06dacc0be89430dc93d2f1d0b4b1d72b0160b7aa569",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/content.py",
+      "size_bytes": 11817,
+      "sha256": "d651bf4f2b93aa1960a9d62fa923ebd2fb9dd460534c481f99859840fd8440e3",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/inputs.py",
+      "size_bytes": 5435,
+      "sha256": "86418afd5d0e37eefc58b8c9522fd3c4e33aafe6e91a4e704b146e29ab380190",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/p14_adapter.py",
+      "size_bytes": 1670,
+      "sha256": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/phases.py",
+      "size_bytes": 4918,
+      "sha256": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/planner.py",
+      "size_bytes": 16356,
+      "sha256": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309",
+      "still_same_bytes": true
+    },
+    {
+      "path": "enemy_ai/types.py",
+      "size_bytes": 7007,
+      "sha256": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445",
+      "still_same_bytes": true
+    },
+    {
+      "path": "examples/__init__.py",
+      "size_bytes": 71,
+      "sha256": "9e641cc940713eee91acefe41f6b582e7f3f33eb046f8117709fc09efc6cd22e",
+      "still_same_bytes": true
+    },
+    {
+      "path": "examples/demo.py",
+      "size_bytes": 3644,
+      "sha256": "cb8f0ae37582ab57b730a2ea33006c25cd57e87a0722b1a5b1a404f4cff7d979",
+      "still_same_bytes": true
+    },
+    {
+      "path": "examples/demo_execution.json",
+      "size_bytes": 36076,
+      "sha256": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135",
+      "still_same_bytes": true
+    },
+    {
+      "path": "examples/fixture_inputs.py",
+      "size_bytes": 6829,
+      "sha256": "cc3e7323dd1af0b295c64029b34eb390ad26947956fb9654cda653f96ffa516c",
+      "still_same_bytes": true
+    },
+    {
+      "path": "examples/p14_fixture.py",
+      "size_bytes": 3696,
+      "sha256": "39a943fdda138383a8a9b1e38ae56540a95e77d2b4a5925020241be9e0da26bc",
+      "still_same_bytes": true
+    },
+    {
+      "path": "intent_replay_fixtures.json",
+      "size_bytes": 783721,
+      "sha256": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/__init__.py",
+      "size_bytes": 56,
+      "sha256": "a9a04e56e607367f53dbbdc71f7630ba2ea9247f93926b32ac3b3460126bfa02",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/__init__.py",
+      "size_bytes": 58,
+      "sha256": "6b450f5ef53e89f573058342b8427432b246e53ed7cfd0a158af4096c8ceb2d6",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/test_p06_projection.py",
+      "size_bytes": 644,
+      "sha256": "fe5349fd5d56f4346ccf12aeb853aa370d174e18a82a84b8fe3cc364ffb32735",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/test_p14_contract.py",
+      "size_bytes": 12518,
+      "sha256": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/test_phases.py",
+      "size_bytes": 5634,
+      "sha256": "f1669033468a16a37982c3231faaa894e143222b5232982c36d1472e8b7f3383",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/test_planner.py",
+      "size_bytes": 19024,
+      "sha256": "07304faef7e430e2d563b2126dbb5360e2caff4128a2f89e024605b039e0d817",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tests/enemy_ai_unit/test_replay.py",
+      "size_bytes": 1386,
+      "sha256": "87620e93756189f3d4ce6291a53f82ce5b5535a0aea009e14b719fa28b3764d5",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/author_tests.py",
+      "size_bytes": 618,
+      "sha256": "8404e0ceaa7aa99c2a9e67700d0b70c02f359e04b0a5feba7f70f9711237f90b",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/check_contracts.py",
+      "size_bytes": 1819,
+      "sha256": "0a937656d1e93ae492790a6f26de625224c4b3794fb492b61624b9f5c5af711c",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/p06_projection.py",
+      "size_bytes": 10693,
+      "sha256": "bbac94c82171074ba6ff908d2b758e3b96c2588fdde9d993076ba67fc3f3b04d",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/preflight.py",
+      "size_bytes": 866,
+      "sha256": "25f0001a4fdf5234d3d8ae7099c30c5cf8810c0650aaf5c7b138b949c78f10bb",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/record_run.py",
+      "size_bytes": 2186,
+      "sha256": "f4190493c34bc65795b800006e8360c8183fa087fd0e847be2e22fe6f0baae42",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/replay_demo.py",
+      "size_bytes": 634,
+      "sha256": "4d39c7f7cb39fc1d9c4128c0a182992c7c252963e63b0077b95cfa4c28b54612",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/replay_fixtures.py",
+      "size_bytes": 1575,
+      "sha256": "cb59363d2adda0e2fbe3b5d70325cbaf059439ae6fa2812d7016950f525eddf6",
+      "still_same_bytes": true
+    },
+    {
+      "path": "tools/verify_delivery.py",
+      "size_bytes": 3171,
+      "sha256": "d9b84025387189f5c5db1656a92258c1a1b30e45dc7ce84705ae66133f73bb85",
+      "still_same_bytes": true
+    }
+  ]
+}

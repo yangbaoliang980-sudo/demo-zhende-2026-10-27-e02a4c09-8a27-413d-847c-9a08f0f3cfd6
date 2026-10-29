@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "defect_id": "P17-DEF-001",
+      "owner": "P17",
+      "observed_failure": "低层钱包模块直接导入触发循环依赖",
+      "file": "character_party_runtime/__init__.py",
+      "fixed_file_sha256": "ced917d4b0a46f1068e65b591a84370ea20bba7facf398c4aeb3ca3f641701fb",
+      "regression_test": "test_direct_wallet_module_import_in_new_process",
+      "repair": "公共导出改为惰性解析，低层模块可独立导入",
+      "status": "AUTHOR_FIXED_AND_REGRESSION_PASS",
+      "failed_run": "evidence/runs/boundaries_001",
+      "fixed_run": "evidence/runs/boundaries_002",
+      "full_regression": "evidence/runs/author_final",
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN"
+    },
+    {
+      "defect_id": "P17-DEF-002",
+      "owner": "P17",
+      "observed_failure": "128字符合法profile_id拼接wallet_id超过P13长度上限",
+      "file": "runtime/meta/wallet/rules.py",
+      "fixed_file_sha256": "b89f4e330c79887a6391b87fbfcfec3d6f147b63862c4da00f5de07293ac7616",
+      "regression_test": "test_full_length_valid_profile_id",
+      "repair": "wallet_id使用固定长度账号指纹；beneficiary_id保留原值",
+      "status": "AUTHOR_FIXED_AND_REGRESSION_PASS",
+      "failed_run": "evidence/runs/boundaries_001",
+      "fixed_run": "evidence/runs/boundaries_002",
+      "full_regression": "evidence/runs/author_final",
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN"
+    },
+    {
+      "defect_id": "P17-DEF-003",
+      "owner": "P17",
+      "observed_failure": "畸形权益key在类型验证前去重触发TypeError",
+      "file": "character_party_runtime/state.py",
+      "fixed_file_sha256": "a2301a5520065be600a320654038302cb0d70c78928a7f8bc73a28cfd53e21df",
+      "regression_test": "test_malformed_entitlement_key_rejected_without_typeerror",
+      "repair": "逐项验证key/shape后再去重",
+      "status": "AUTHOR_FIXED_AND_REGRESSION_PASS",
+      "failed_run": "evidence/runs/boundaries_001",
+      "fixed_run": "evidence/runs/boundaries_002",
+      "full_regression": "evidence/runs/author_final",
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN"
+    },
+    {
+      "defect_id": "P17-DEF-004",
+      "owner": "P17",
+      "observed_failure": "缺character_id的内容行触发KeyError",
+      "file": "character_party_runtime/content.py",
+      "fixed_file_sha256": "a3c04837bbe7d645f219c911a9e4482aa1f3a32f801b06347a1090e540cfc651",
+      "regression_test": "test_missing_catalog_character_id_rejected_as_domain_error",
+      "repair": "先验证完整字段与类型，再建立去重和索引",
+      "status": "AUTHOR_FIXED_AND_REGRESSION_PASS",
+      "failed_run": "evidence/runs/boundaries_001",
+      "fixed_run": "evidence/runs/boundaries_002",
+      "full_regression": "evidence/runs/author_final",
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN"
+    }
+  ],
+  "assembly_note": "evidence/build_notes.json"
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": "P16-VERIFICATION/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "delivery_version": "P16-ENEMY-AI/0.1.0-isolated",
+  "scope": "AUTHOR_ISOLATED_MODULE_ONLY",
+  "author_design_review": {
+    "status": "COMPLETED_AUTHOR_REVIEW",
+    "evidence": "evidence/author_review.md"
+  },
+  "author_tests": {
+    "validation_layer": "P16_AUTHOR_ONLY",
+    "tests_run": 182,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "status": "AUTHOR_PASS",
+    "P32": "NOT_RUN",
+    "P35": "NOT_RUN",
+    "run": "evidence/runs/author_final_001",
+    "subsets_not_additive": {
+      "P14_contract_tests": 18,
+      "P06_source_projection_tests": 86,
+      "phase_tests": 18,
+      "planner_content_tests": 57,
+      "replay_tests": 3
+    }
+  },
+  "P06_truth_table": {
+    "source_cases": 89,
+    "AUTHOR_P16_PROJECTION_PASS": 86,
+    "BLOCKED": 3,
+    "evidence": "evidence/p06_projection_results.json",
+    "blocked_cases": [
+      "P06-ET-059",
+      "P06-ET-061",
+      "P06-ET-076"
+    ],
+    "scope": "P16_PROJECTION_NOT_FULL_GAME_COMMIT"
+  },
+  "P13_original_validator": {
+    "status": "AUTHOR_CONTRACT_PASS",
+    "validator": "UNMODIFIED_P13_ORIGINAL",
+    "valid_messages": 140,
+    "by_dto": {
+      "BattleSnapshot": 84,
+      "EnemyIntent": 51,
+      "PhaseProposal": 5
+    },
+    "expected_invalid_inputs": [
+      {
+        "case_id": "P06-ET-081",
+        "error": "SCHEMA_INTEGER_RANGE"
+      },
+      {
+        "case_id": "P06-ET-082",
+        "error": "SCHEMA_INTEGER_RANGE"
+      }
+    ],
+    "failures": [],
+    "formal_contract_acceptance": "BLOCKED",
+    "independent_P32": "NOT_RUN",
+    "evidence": "evidence/runs/shared_contracts_001"
+  },
+  "cross_process_determinism": {
+    "status": "AUTHOR_PASS",
+    "independent_python_processes": 3,
+    "PYTHONHASHSEED": [
+      "1",
+      "222",
+      "random"
+    ],
+    "test": "ReplayTests.test_three_processes_hash_seeds_same_execution_digest",
+    "scope": "86 requests recomputed per process"
+  },
+  "P14_single_slot_demo": {
+    "scope": "ONE_SLOT_ISOLATED_CONTRACT_EXECUTION",
+    "actual_modules": [
+      "P16 enemy_ai",
+      "P14 original battle_core",
+      "P13 original codec/schema"
+    ],
+    "fixture_dependencies": [
+      "P17 three-unit initial party",
+      "P15 declared END_TURN no-move candidate",
+      "P06 provisional enemy content",
+      "P16 behavior extension not persisted by P14"
+    ],
+    "requests": 3,
+    "commits": 2,
+    "duplicate_no_op": 1,
+    "preview_base_damage": 8,
+    "damage_events": [
+      {
+        "absorbed": 4,
+        "hp_after": 46,
+        "hp_loss": 4,
+        "overkill": 0,
+        "raw": 8,
+        "shield_after": 0,
+        "source_unit_id": "E1",
+        "target_unit_id": "H1"
+      }
+    ],
+    "hero_hp_before": 50,
+    "hero_hp_after": 46,
+    "final_revision": 2,
+    "rng_unchanged": true,
+    "phase_proposal_order": [
+      "MOCK_P06_PHASE_2",
+      "MOCK_P06_PHASE_3"
+    ],
+    "boss_phase_still_original": "MOCK_P06_PHASE_1",
+    "p14_behavior_commit": "BLOCKED",
+    "p14_phase_acceptance": "BLOCKED",
+    "game_E2E": "NOT_RUN"
+  },
+  "demo_replay": {
+    "status": "AUTHOR_DEMO_REPLAY_PASS",
+    "recomputed_from_initial_inputs": true,
+    "p14_replay_sha256": "30e4a0d6471e1d13590de92f414c1aa6eecd533d2f4e734569dfb97fe8e47bcb",
+    "full_execution_sha256": "c230e65439bd3fd3e4110f23dc5a89bd2c36f53fbeb2d6e8f1546ea6ef75a240",
+    "evidence": "evidence/runs/demo_replay_001"
+  },
+  "upstream_content_static_validator": {
+    "status": "AUTHOR_STATIC_PASS",
+    "evidence": "evidence/runs/upstream_p06_static_001",
+    "runtime_integration": "NOT_PROVEN_BY_THIS_CHECK"
+  },
+  "input_immutability": {
+    "status": "PASS",
+    "outer_attachments": 4,
+    "all_unique_archives": 61,
+    "extracted_members": 3912,
+    "retained_upstream_copies": 88,
+    "errors": [],
+    "audit_sha256": "3e7b0ff959422dff542aa52a0280002eef010551155f8018a3fac977716ae5e4",
+    "source_receipt_sha256": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f",
+    "basis": "Re-read every actual byte after P16 development; not inferred from file names."
+  },
+  "executed_source_binding": {
+    "status": "PASS",
+    "files": 30,
+    "evidence": "evidence/final_executed_source_binding.json"
+  },
+  "formal_preflight": {
+    "status": "BLOCKED",
+    "actual_exit_code": 3,
+    "evidence": "evidence/runs/preflight_001",
+    "missing_items": "handoff/blockers.json"
+  },
+  "independent": {
+    "P32": "NOT_RUN",
+    "P33": "NOT_RUN",
+    "P35": "NOT_RUN",
+    "P25_style": "NOT_RUN_NOT_AN_ART_DELIVERY",
+    "P37_compliance": "NOT_RUN"
+  },
+  "target_engine": "NOT_RUN",
+  "target_Windows": "NOT_RUN",
+  "actual_UI_animation": "NOT_RUN",
+  "real_Anki": "NOT_RUN",
+  "P21_persistence": "NOT_RUN",
+  "whole_game_E2E": "NOT_RUN",
+  "formal_behaviour_commit": "BLOCKED",
+  "formal_phase_acceptance": "BLOCKED",
+  "production_path_authorization": "BLOCKED",
+  "cross_module_merge": "NOT_PERFORMED",
+  "archive_and_fresh_extraction_evidence": "Recorded after final ZIP creation in external delivery_receipt.json; no premature PASS here"
+}

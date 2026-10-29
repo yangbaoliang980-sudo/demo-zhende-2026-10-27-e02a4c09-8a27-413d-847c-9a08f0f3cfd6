@@ -1,0 +1,19 @@
+{
+  "scope": "P17_ISOLATED_EXECUTION_WITH_SYNTHETIC_P11_P18_AND_IN_MEMORY_P21_MODEL",
+  "production_commit": "BLOCKED",
+  "durable": false,
+  "final_state_sha256": "e4bf67c4fe2cece75265a0ee51cdd0e2b9e674da48e1683f747c443608c7939c",
+  "summary": {
+    "committed_simulation_transactions": 11,
+    "available_training_tokens": 1,
+    "character_levels": [
+      2,
+      3,
+      1
+    ],
+    "wallet_revision": 4,
+    "meta_revision": 11
+  },
+  "source_expectations_match": true,
+  "retry_status": "DUPLICATE_NO_OP"
+}
