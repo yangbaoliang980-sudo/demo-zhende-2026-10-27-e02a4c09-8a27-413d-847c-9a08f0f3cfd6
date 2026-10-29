@@ -1,0 +1,83 @@
+{
+  "schema_version": "P18-FIRST-CLEAR-KEYS/0.1.0",
+  "lifetime": "STABLE_PLAYER_SAVE_SCOPE_AND_CANONICAL_STAGE",
+  "identity_encoding": "P13 canonical UTF-8 JSON array",
+  "hash": "SHA-256",
+  "excluded": [
+    "battle_id",
+    "terminal_revision",
+    "chapter_id",
+    "content_version",
+    "reward_version",
+    "filename",
+    "device_id",
+    "store_instance"
+  ],
+  "p17_projection_status": "PROPOSAL_NOT_ACCEPTED",
+  "p17_projection": {
+    "profile_id": "player_save_scope_id",
+    "campaign_id": "YLTT_STAGE_SCOPE",
+    "stage_id": "canonical_stage_id",
+    "scope_constraint": "P17 profile_id must equal stable save scope for this isolated adapter"
+  },
+  "vectors": [
+    {
+      "scope": "fixture.save.A",
+      "stage_id": "MOCK_P07_STAGE_001",
+      "logical_identity": [
+        "STAGE_FIRST_CLEAR",
+        "fixture.save.A",
+        "MOCK_P07_STAGE_001"
+      ],
+      "key_sha256": "d8bcae9579feefa04bad02025ad360df93a59c67b2aef8bdb7fe36dd0d9b2ffc"
+    },
+    {
+      "scope": "fixture.save.A",
+      "stage_id": "MOCK_P07_STAGE_002",
+      "logical_identity": [
+        "STAGE_FIRST_CLEAR",
+        "fixture.save.A",
+        "MOCK_P07_STAGE_002"
+      ],
+      "key_sha256": "592363245a6ed5a97745cc1176b1d603c04d2db74fe42a8cbf764d69c81b128f"
+    },
+    {
+      "scope": "fixture.save.B",
+      "stage_id": "MOCK_P07_STAGE_001",
+      "logical_identity": [
+        "STAGE_FIRST_CLEAR",
+        "fixture.save.B",
+        "MOCK_P07_STAGE_001"
+      ],
+      "key_sha256": "83d737d596c6af27d137f4decefee6f579e7931623caa90508adecf71981bcbc"
+    },
+    {
+      "scope": "fixture.save.B",
+      "stage_id": "MOCK_P07_STAGE_002",
+      "logical_identity": [
+        "STAGE_FIRST_CLEAR",
+        "fixture.save.B",
+        "MOCK_P07_STAGE_002"
+      ],
+      "key_sha256": "378f45386e42d8bea88c930f0793857d05e3f95e995fbd9cc9217eb0be64fa01"
+    }
+  ],
+  "repeat_vectors": [
+    [
+      "STAGE_REPEAT_CLEAR",
+      "fixture.save.A",
+      "MOCK_P07_STAGE_001",
+      "battle.A",
+      2
+    ],
+    [
+      "STAGE_REPEAT_CLEAR",
+      "fixture.save.A",
+      "MOCK_P07_STAGE_001",
+      "battle.B",
+      2
+    ]
+  ],
+  "default_repeat_enabled": false,
+  "same_battle_higher_revision": "RECONCILE_ONLY_NO_NEW_AWARD"
+}

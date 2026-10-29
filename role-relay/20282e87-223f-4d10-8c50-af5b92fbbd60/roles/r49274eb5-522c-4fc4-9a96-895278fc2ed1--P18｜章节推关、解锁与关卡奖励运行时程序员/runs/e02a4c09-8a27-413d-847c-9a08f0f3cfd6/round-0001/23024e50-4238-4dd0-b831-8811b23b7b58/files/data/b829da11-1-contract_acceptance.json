@@ -1,0 +1,109 @@
+{
+  "version": "P15-CONTRACT-ACCEPTANCE/0.1.0",
+  "receiver": "P15",
+  "scope": "ISOLATED_AUTHOR_IMPLEMENTATION_ONLY",
+  "status": "ACCEPTED_WITH_EXPLICIT_RESERVATIONS_BY_P15_ONLY",
+  "task_id": "TASK-02-01",
+  "accepted_inputs": [
+    {
+      "source_id": "SRC-006",
+      "package_path": "upstream/P02/spec/battle/resolution/battle_replay_fixtures.json",
+      "sha256": "538c7dc1e57ee1b56a745ef537b6198406b6410025abb5c8bb1734cfc69407b1",
+      "version": "P02-BATTLE-0.1.0-draft",
+      "owner": "P02"
+    },
+    {
+      "source_id": "SRC-015",
+      "package_path": "upstream/P02/spec/battle/state_machine/turn_sequence.tsv",
+      "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "version": "P02-BATTLE-0.1.0-draft",
+      "owner": "P02"
+    },
+    {
+      "source_id": "SRC-018",
+      "package_path": "upstream/P03/content/cards/card_catalog.json",
+      "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+      "version": "P03-CARDS-0.1.0-draft",
+      "owner": "P03"
+    },
+    {
+      "source_id": "SRC-024",
+      "package_path": "upstream/P03/content/cards/deck_build_fixtures.json",
+      "sha256": "1b8fe32b8977db17d1254270b8cf0ded31534fa6a8ce3868af2de5bc18587820",
+      "version": "P03-CARDS-0.1.0-draft",
+      "owner": "P03"
+    },
+    {
+      "source_id": "SRC-033",
+      "package_path": "upstream/P13/architecture/actual_path_mapping.json",
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-035",
+      "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-044",
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-045",
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/contracts.py",
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "owner": "P13"
+    },
+    {
+      "source_id": "SRC-050",
+      "package_path": "upstream/P14/battle_core/ports.py",
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "version": "P14-BATTLE-CORE/0.1.0-isolated",
+      "owner": "P14"
+    },
+    {
+      "source_id": "SRC-056",
+      "package_path": "upstream/P14/handoff/IC05_API.md",
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "version": "P14-BATTLE-CORE/0.1.0-isolated",
+      "owner": "P14"
+    },
+    {
+      "source_id": "SRC-070",
+      "package_path": "upstream/archives/P14_BattleCore_V0.1.zip",
+      "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "version": "P14-BATTLE-CORE/0.1.0-isolated",
+      "owner": "P14"
+    }
+  ],
+  "shared_contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "runtime_version": "P15-DECK-RUNTIME/0.1.0-isolated",
+  "accepted_semantics": [
+    "Original P13 byte codec/schema and immutable messages",
+    "P02 xorshift32/Fisher-Yates fixed fixture order",
+    "P03 enabled mock cards and recipe order only",
+    "P14 authoritative single submission and original candidate port"
+  ],
+  "reservations": [
+    "Real P17 input missing",
+    "Production actual paths unmapped",
+    "Common-card owner policy explicit fixture only",
+    "Initial/turn requested counts must match current P14 field",
+    "No shared negative-candidate or ActionIntent DTO",
+    "No persistence or process-death guarantee from the P15 memory cache",
+    "BUFF/DEBUFF proposals disabled",
+    "All mock values and IDs unapproved for production"
+  ],
+  "production_acceptance": "BLOCKED",
+  "P13_P14_other_owner_acknowledgment": "NOT_RECEIVED",
+  "independent_test": "NOT_RUN",
+  "independent_review": "NOT_RUN",
+  "production_write_allowlist": []
+}

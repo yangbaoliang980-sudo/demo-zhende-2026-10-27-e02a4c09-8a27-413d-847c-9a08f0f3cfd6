@@ -1,0 +1,259 @@
+{
+  "schema_version": "P18-TRACEABILITY/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "requirement_ids": [
+    "REQ-010",
+    "REQ-028"
+  ],
+  "requirements_source": {
+    "path": "upstream/P01/spec/product/requirements_traceability.tsv",
+    "size_bytes": 17235,
+    "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+  },
+  "role_source": {
+    "path": "upstream/V6/v6_roles.txt",
+    "size_bytes": 178461,
+    "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+  },
+  "requested_stage": "S07",
+  "current_delivery_scope": "ISOLATED_DOMAIN_IMPLEMENTATION; FORMAL_STAGE_GATE_NOT_GRANTED",
+  "criteria": [
+    {
+      "criterion": "关卡资格与非法跳关",
+      "implemented_files": [
+        {
+          "path": "stage_runtime/content.py",
+          "size_bytes": 10784,
+          "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+        },
+        {
+          "path": "stage_runtime/service.py",
+          "size_bytes": 24862,
+          "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_admission.AdmissionTests.test_active_attempt_blocks_second_battle",
+        "tests.stage_unit.test_admission.AdmissionTests.test_battle_id_never_reused_after_loss",
+        "tests.stage_unit.test_admission.AdmissionTests.test_client_supplied_party_cannot_replace_trusted_reference",
+        "tests.stage_unit.test_admission.AdmissionTests.test_default_authority_closed",
+        "tests.stage_unit.test_admission.AdmissionTests.test_disabled_elite_reservation_is_not_stage",
+        "tests.stage_unit.test_admission.AdmissionTests.test_duplicate_request_same_bytes",
+        "tests.stage_unit.test_admission.AdmissionTests.test_entry_old_catalog_rejected",
+        "tests.stage_unit.test_admission.AdmissionTests.test_entry_other_battle_rejected",
+        "tests.stage_unit.test_admission.AdmissionTests.test_entry_other_scope_rejected",
+        "tests.stage_unit.test_admission.AdmissionTests.test_frozen_candidate_mutation_does_not_change_bytes",
+        "tests.stage_unit.test_admission.AdmissionTests.test_invalid_seed_rejected",
+        "tests.stage_unit.test_admission.AdmissionTests.test_locked_boss",
+        "tests.stage_unit.test_admission.AdmissionTests.test_missing_entry_evidence",
+        "tests.stage_unit.test_admission.AdmissionTests.test_normal_entry_does_not_publish_during_plan",
+        "tests.stage_unit.test_admission.AdmissionTests.test_production_mode_blocked",
+        "tests.stage_unit.test_admission.AdmissionTests.test_request_id_collision",
+        "tests.stage_unit.test_admission.AdmissionTests.test_stale_domain_revision",
+        "tests.stage_unit.test_admission.AdmissionTests.test_unknown_operation_cannot_unlock",
+        "tests.stage_unit.test_admission.AdmissionTests.test_unknown_stage",
+        "tests.stage_unit.test_admission.AdmissionTests.test_valid_first_clear_unlocks_boss_without_level_gate",
+        "tests.stage_unit.test_admission.AdmissionTests.test_valid_p13_view_and_complete_detailed_view"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "criterion": "重复终局、不同战斗同关首通及非法结果",
+      "implemented_files": [
+        {
+          "path": "stage_runtime/service.py",
+          "size_bytes": 24862,
+          "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+        },
+        {
+          "path": "first_clear_keys.json",
+          "size_bytes": 2225,
+          "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_settlement.SettlementTests.test_boss_replay_no_extra_chapter_reward",
+        "tests.stage_unit.test_settlement.SettlementTests.test_content_version_mismatch",
+        "tests.stage_unit.test_settlement.SettlementTests.test_different_battle_same_stage_first_clear_only_once",
+        "tests.stage_unit.test_settlement.SettlementTests.test_failure_does_not_erase_prior_clear",
+        "tests.stage_unit.test_settlement.SettlementTests.test_failure_then_retry_can_first_clear",
+        "tests.stage_unit.test_settlement.SettlementTests.test_final_snapshot_hash_mismatch",
+        "tests.stage_unit.test_settlement.SettlementTests.test_first_clear_shared_tokens_and_three_xp",
+        "tests.stage_unit.test_settlement.SettlementTests.test_first_key_excludes_battle_and_version",
+        "tests.stage_unit.test_settlement.SettlementTests.test_forged_result_hash",
+        "tests.stage_unit.test_settlement.SettlementTests.test_full_two_stage_chapter",
+        "tests.stage_unit.test_settlement.SettlementTests.test_future_revision",
+        "tests.stage_unit.test_settlement.SettlementTests.test_higher_revision_after_commit_review_no_new_reward",
+        "tests.stage_unit.test_settlement.SettlementTests.test_identity_collision_after_commit",
+        "tests.stage_unit.test_settlement.SettlementTests.test_inflight_uses_admitted_budget",
+        "tests.stage_unit.test_settlement.SettlementTests.test_missing_pinned_content_quarantines",
+        "tests.stage_unit.test_settlement.SettlementTests.test_nonwinning_outcomes_no_clear",
+        "tests.stage_unit.test_settlement.SettlementTests.test_old_revision",
+        "tests.stage_unit.test_settlement.SettlementTests.test_party_binding",
+        "tests.stage_unit.test_settlement.SettlementTests.test_party_ui_draft_cannot_change_xp_recipients",
+        "tests.stage_unit.test_settlement.SettlementTests.test_repeat_enabled_only_in_synthetic_catalog",
+        "tests.stage_unit.test_settlement.SettlementTests.test_repeated_quarantine_is_noop",
+        "tests.stage_unit.test_settlement.SettlementTests.test_result_with_no_admission",
+        "tests.stage_unit.test_settlement.SettlementTests.test_same_message_new_request_reuses_terminal_receipt",
+        "tests.stage_unit.test_settlement.SettlementTests.test_same_message_same_request_noop",
+        "tests.stage_unit.test_settlement.SettlementTests.test_scope_mismatch",
+        "tests.stage_unit.test_settlement.SettlementTests.test_seed_binding",
+        "tests.stage_unit.test_settlement.SettlementTests.test_source_text_is_not_authority",
+        "tests.stage_unit.test_settlement.SettlementTests.test_stage_mismatch",
+        "tests.stage_unit.test_settlement.SettlementTests.test_two_save_scopes_each_have_own_first_clear",
+        "tests.stage_unit.test_settlement.SettlementTests.test_version_update_does_not_reset_first_key"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "criterion": "退出重进、存档连续性、撤销与隔离",
+      "implemented_files": [
+        {
+          "path": "stage_runtime/state.py",
+          "size_bytes": 10584,
+          "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+        },
+        {
+          "path": "stage_runtime/service.py",
+          "size_bytes": 24862,
+          "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_process_reload.ProcessReloadTests.test_child_process_preserves_scope_chapter_and_first_clear",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_abort_tombstone_blocks_late_win",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_authoritative_abort_then_new_battle",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_cannot_close_existing_win_to_avoid_settlement",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_cannot_turn_active_battle_into_ui_abort",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_duplicate_close_noop",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_explicit_restore_reconciliation_blocks",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_faulted_snapshot_closes_without_result",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_legacy_view_rejects_lossy_review_projection",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_memory_reload_preserves_stage_and_receipts",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_missing_external_continuity_cannot_prove_backup",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_older_snapshot_rejected_by_retained_head",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_pause_resume_same_pinned_battle",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_prerequisite_revoked_while_boss_inflight_quarantines_award",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_prerequisite_under_review_blocks_boss_entry",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_readonly_reward_query_does_not_claim",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_renaming_storage_file_does_not_change_key",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_repeated_revocation_is_noop",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_resume_finished_battle_routes_to_settlement",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_revoke_after_award_keeps_first_clear_tombstone",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_revoke_before_award_invalidates_pending_win",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_revoke_receipt_id_collision",
+        "tests.stage_unit.test_recovery.RecoveryTests.test_untrusted_revocation_no_freeze"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "criterion": "同事务、并发竞争和 UNKNOWN 恢复",
+      "implemented_files": [
+        {
+          "path": "stage_runtime/transactions.py",
+          "size_bytes": 4866,
+          "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+        },
+        {
+          "path": "tests/support/memory_model.py",
+          "size_bytes": 3678,
+          "sha256": "b3141bdd232f881da23ef4e568756eb22fbcd8e2b5cb589ac4aed82cfa9a04d7"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_transactions.TransactionTests.test_ack_lost_requires_lookup_before_new_attempt",
+        "tests.stage_unit.test_transactions.TransactionTests.test_bundle_cannot_claim_durable_before_commit",
+        "tests.stage_unit.test_transactions.TransactionTests.test_bundle_wallet_tampering_rejected_after_rehash",
+        "tests.stage_unit.test_transactions.TransactionTests.test_candidate_tampering_rejected_after_rehash",
+        "tests.stage_unit.test_transactions.TransactionTests.test_concurrent_different_battle_entries_then_two_wins_only_one_first",
+        "tests.stage_unit.test_transactions.TransactionTests.test_concurrent_duplicate_delivery_one_publish",
+        "tests.stage_unit.test_transactions.TransactionTests.test_failures_never_publish_half_stage_or_wallet",
+        "tests.stage_unit.test_transactions.TransactionTests.test_no_p17_port_blocks_monetary_candidate",
+        "tests.stage_unit.test_transactions.TransactionTests.test_noncommit_unknown_blocks_retry_award",
+        "tests.stage_unit.test_transactions.TransactionTests.test_p13_projection_with_actual_p17_wallet_candidate",
+        "tests.stage_unit.test_transactions.TransactionTests.test_production_store_remains_unbound",
+        "tests.stage_unit.test_transactions.TransactionTests.test_real_p17_overflow_rejects_whole_joint_transaction",
+        "tests.stage_unit.test_transactions.TransactionTests.test_same_result_multiple_requests_cas_only_one",
+        "tests.stage_unit.test_transactions.TransactionTests.test_same_save_scope_not_store_instance_defines_first_clear_key",
+        "tests.stage_unit.test_transactions.TransactionTests.test_source_authority_changes_before_commit"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "criterion": "结构、内容与整数边界",
+      "implemented_files": [
+        {
+          "path": "stage_runtime/common.py",
+          "size_bytes": 2761,
+          "sha256": "0816f5d85f62386f0322e0e389b183d67f901554cf080a4d00eb110838400c8b"
+        },
+        {
+          "path": "stage_runtime/content.py",
+          "size_bytes": 10784,
+          "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_admitted_fallen_member_still_receives_xp",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_bool_is_not_revision_integer",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_chapter_completion_cannot_reference_another_chapter",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_duplicate_json_key_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_duplicate_stage_id_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_empty_and_overlong_scope_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_first_clear_cannot_exist_without_terminal_receipt",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_float_and_nonfinite_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_graph_cycle_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_inflight_snapshot_final_without_result_waits",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_malformed_commands_return_explicit_rejections",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_malformed_nested_payload_rejected_without_python_exception",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_no_implicit_next_chapter",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_nonzero_disabled_repeat_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_snapshot_encoding_limit_fails_closed",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_synthetic_disjoint_chapter_not_cleared_by_first_chapter",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_tampered_admission_hash_rejected_on_reload",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_terminal_bool_revision_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_unapproved_alias_rejected",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_unknown_persisted_stage_requires_migration",
+        "tests.stage_unit.test_boundaries.BoundaryTests.test_unknown_prerequisite_rejected"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    },
+    {
+      "criterion": "未修改 P14/P17 原生契约消费",
+      "implemented_files": [
+        {
+          "path": "tests/support/p14_native.py",
+          "size_bytes": 4151,
+          "sha256": "1937ed68c732e3c4635bc52313f3585a8d3b5b68a9a6d44e8fdad22aff159481"
+        },
+        {
+          "path": "tests/support/p17_port.py",
+          "size_bytes": 3124,
+          "sha256": "b3cf7ab86608abaeb7152566102ba9ea7be32846228406a57906022b9acd9a2e"
+        }
+      ],
+      "executed_author_test_ids": [
+        "tests.stage_unit.test_native_contract.NativeContractTests.test_native_resume_uses_original_battle_snapshot",
+        "tests.stage_unit.test_native_contract.NativeContractTests.test_p14_and_p18_retries_do_not_add_rewards",
+        "tests.stage_unit.test_native_contract.NativeContractTests.test_unmodified_p14_abort_has_no_battle_result",
+        "tests.stage_unit.test_native_contract.NativeContractTests.test_unmodified_p14_result_consumed_with_unmodified_p17"
+      ],
+      "status": "PASS_AUTHOR_ONLY",
+      "independent_acceptance": "NOT_RUN"
+    }
+  ],
+  "not_owned": [
+    "battle authority generation",
+    "enemy AI",
+    "chapter UI",
+    "Anki learning rewards",
+    "wallet arithmetic",
+    "physical storage",
+    "cross-module merge"
+  ]
+}

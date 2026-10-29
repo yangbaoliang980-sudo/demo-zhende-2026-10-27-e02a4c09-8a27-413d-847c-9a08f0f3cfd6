@@ -1,0 +1,279 @@
+# P18｜关卡进度、解锁与首通奖励运行库交付
+
+**已完成可执行的隔离运行库、奖励事务候选、测试与完整交接包。最终 ZIP 已在新解压目录复跑：114 项作者测试全部通过。**
+
+任务编号：`P18-S07-STAGES-001`
+交付版本：`P18-STAGES/0.1.0-isolated`
+当前状态：**ISOLATED_RUNTIME_DELIVERED / PRODUCTION_INTEGRATION_BLOCKED**
+
+正式工程接入仍受 **P13 实际路径授权、P21 真实持久事务及相关接口接收**阻塞。P32 独测、P33 人工验收、P35 独审，以及目标引擎、Windows、真实 Anki 和整游戏 E2E 均为 **NOT_RUN**。
+
+## 一、完整成果下载
+
+| 文件 | 实际大小 | 内容 |
+| --- | --- | --- |
+| **P18_StageRuntime_V0.1.zip** | **4,753,471 字节** | 210 个实体文件：完整源码、测试、只读上游原件、接口说明、样例与执行证据 |
+| **P18_delivery_receipt.json** | **316,771 字节** | ZIP 与 23 个独立导出的实际大小、SHA-256、包内路径，以及最终新解压目录的完整复跑记录 |
+
+ZIP 的 SHA-256：
+
+纯文本
+
+`4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297`
+
+已实际完成 ZIP CRC 检查、**210 个包内文件与生成目录逐字节比对**、**23 个独立导出与包内对应文件同名同字节比对**，以及新解压目录复跑后的文件不变性核验。清单记录其余 209 个文件；清单自身与 ZIP 由包外交付回执绑定，避免循环哈希。
+
+### 运行库、必交文件与接口
+
+| 文件 | 用途 |
+| --- | --- |
+| README.md | 阅读入口、能力范围、运行命令和验收边界 |
+| first_clear_keys.json | 首通身份规则、实际哈希向量、重复奖励身份与 P17 映射提案 |
+| stage_progress_fixtures.json | 原 P07 场景预期及来源绑定；与实际执行结果分开保存 |
+| stage_reward_tests.py | 奖励、恢复与事务测试入口，调用完整包内的实际测试 |
+| service.py | stage_runtime/service.py：入场、终局、首通、重试、撤销与隔离 |
+| transactions.py | stage_runtime/transactions.py：P18/P17 联合事务候选及提交前重验 |
+| P18_API.md | 请求结构、端口、身份、恢复、错误处理及容量限制 |
+| stage_runtime_contract.json | 机器可读接口提案说明，明确标注尚未获 owner 接收 |
+
+**运行时请使用完整 ZIP。** 单独导出的源码与测试入口需要包内其余模块及原 P13/P14/P17 依赖。
+
+### 证据与交接资料
+
+| 文件 | 用途 |
+| --- | --- |
+| source_input_receipt.json | 固定提交、来源路径、95 份只读输入的实际哈希及缺项 |
+| delivery_manifest.json | 逐文件路径、大小、SHA-256、格式/版本、源输入哈希、接收人和修改白名单 |
+| verification_status.json | 作者测试、契约检查、独立验收、真机及 E2E 的分层状态 |
+| p07_projection_results.json | 原 P07 场景的实际执行、期望对照与 NOT_RUN 记录 |
+| integration_handoff.md | 下一位的接收、复现、接线与异常恢复说明 |
+| blockers.json | 11 项正式接入阻塞、责任方、缺失工件与证据 |
+| interface_rfcs.json | 6 项带实际 base SHA 的版本化 RFC，状态为 PREPARED_NOT_SUBMITTED |
+| downstream_receipts.json | 14 个接收方、69 条带实际文件哈希的准备交接记录 |
+
+## 二、本轮实际实现
+
+### 1. 关卡资格、选择与战斗参数快照
+
+运行库读取收到的 P07 解锁图和章节配置，并核验 P05 奖励参数、P06 敌人与 Boss 引用。入场时校验关卡存在、前置通关、当前存档作用域、三人编队和活动战斗状态。
+
+每次合法入场都会冻结 stage、battle、存档 scope、编队、种子、规则与内容版本、配置哈希，以及前置首通回执。后续结算必须匹配这份入场记录。推荐等级没有被擅自转换成硬门槛，Boss 阶段仍由上游战斗模块执行。
+
+### 2. 首通键与 battle_id 分离
+
+首通逻辑身份固定为：
+
+纯文本
+
+`["STAGE_FIRST_CLEAR", player_save_scope_id, canonical_stage_id]`
+
+使用原 P13 的规范化 JSON 和 SHA-256 生成键。**battle_id、终局修订号、章节、内容版本、设备、存档文件名和 store instance 均不进入首通键。**
+
+实际行为如下：
+
+| 输入情况 | 处理结果 |
+| --- | --- |
+| 同一终局、同一请求重复提交 | 返回已有请求记录，不再次授奖 |
+| 同一终局换 request_id | 返回已有终局记录，不再次授奖 |
+| 同一 stage，由两个不同 battle_id 获胜 | 只产生一次首通 |
+| 同一 request_id 改参数 | 拒绝身份碰撞 |
+| 非法跳关、未入场结果、关卡或存档串换 | 拒绝，不解锁、不生成钱包变更 |
+| 旧终局修订号或伪造终局 | 拒绝，不生成钱包变更 |
+| 同一 battle 已结算后出现更高终局修订 | 转入审查/对账，不产生第二份奖励 |
+
+重复奖励具有独立身份和防重逻辑；**收到的候选配置仍关闭重复奖励，金额为零**。正金额重复奖励只在明确标注的合成测试 Catalog 中验证，没有修改 P07/P05 原表。
+
+### 3. 进度、首通、钱包与 XP 的联合候选
+
+P18 根据合法终局和固定奖励配置生成授权输入，由**未修改的 P17 代码**计算钱包、来源账和角色 XP 候选，再与以下内容组成完整联合事务：
+
+- 关卡进度及解锁依据。
+- 首通墓碑和终局高水位。
+- 钱包资源与来源记录。
+- 入场角色 XP。
+- 请求指纹和事务回执。
+
+提交前重新解析权威来源、检查前态和 revision，并重算完整候选。篡改候选后重新计算哈希，也不能绕过重验。
+
+**P21 未绑定时，正式提交入口明确拒绝。** 本轮原子性验证使用单锁内存模型，所有回执均标注 durable=false；没有将内存验证写成物理事务或持久存档通过。
+
+### 4. 失败、退出重进、恢复与对账
+
+LOSS/DRAW 不授奖、不解锁，允许按正常资格重试。ABORTED/FAULTED 消费 P14 权威快照；这两种情况没有被伪造成 BattleResult。退出重进复用原 admission 和权威战斗快照。
+
+恢复时检查 scope、store、continuity、revision、首通集合及终局对应关系，并要求来自备份之外的权威存储状态。旧备份、连续性不匹配或提交状态 UNKNOWN 会阻止继续领奖。
+
+结算后撤销保留首通墓碑和历史奖励，相关状态转入审查；P18 不自行扣回 Wallet、删除首通或开放重新领取。完整规则与异常边界已写入上述 API 文档。
+
+## 三、实际运行示例
+
+已执行：
+
+**非法跳 Boss → 普通关首通 → Boss 战败 → 重试 Boss 首通 → 普通关再次胜利 → 重复终局 no-op → 重新解码。**
+
+按收到、尚未获正式批准的候选配置：
+
+| 事件 | 共享代币变化 | 每名入场角色 XP 变化 |
+| --- | --- | --- |
+| 普通关首通 | +3 | +4 |
+| Boss 战败 | 0 | 0 |
+| Boss 首通 | +12 | +18 |
+| 普通关再次胜利 | 0 | 0 |
+| 重复终局消息 | 0 | 0 |
+
+最终为 **15 代币、三名角色各 22 XP、2 个首通、章节完成**。实际产生 **8 次内存模型提交**，stage revision 为 8、meta revision 为 4、wallet revision 为 2。
+
+完整输入、候选、联合事务和模型回执可下载：
+
+其中原生契约样例使用合成战斗输入驱动**未修改的 P14 核心**产生终局，再交给 P18/P17 处理；其证明范围是隔离契约消费。
+
+## 四、实际验证结果
+
+以下检查存在包含和重叠关系，不能相加为额外测试总数。
+
+| 验证层级 | 结果 | 证明范围 |
+| --- | --- | --- |
+| 作者设计复核 | COMPLETED_AUTHOR_REVIEW | 领域约束、所有权、来源及声明范围 |
+| 最终作者测试 | **114 PASS，0 FAIL，0 error，0 skip** | 最终 ZIP 新解压目录复跑一致 |
+| 原 P14/P17 契约测试 | **4 项通过，包含在 114 项内** | 原核心胜利、退出、恢复及重复请求处理 |
+| 并发与故障 | **通过，包含在 114 项内** | 重复提交竞争、不同战斗入场竞争、提交前故障、响应丢失后的回执查询 |
+| 原 P07 场景重放 | **35 PASS，32 NOT_RUN，共 67 项** | 已适配场景逐项比较原件期望；其余未补写 PASS |
+| 原 P13 校验器 | **38 个去重 DTO 样例通过** | 包含 BattleResult、BattleSnapshot、AtomicCommitProposal、WalletDeltaCandidate 等 |
+| 跨进程确定性 | **通过** | 3 个不同 PYTHONHASHSEED 的运行结果一致 |
+| 子进程重载 | **1 项通过，包含在 114 项内** | 字节重载后章节和首通状态一致；未验证真实存档重启 |
+| 正式前置检查 | **BLOCKED，exit 3** | 缺正式路径、事务、配置批准及目标环境时拒绝接入 |
+| P21 持久化、P32/P33/P35 | **NOT_RUN** | 未代签真实事务或独立验收 |
+| 引擎、Windows、真实 Anki、整游戏 E2E | **NOT_RUN** | 未执行 |
+
+上游核验实际读取了 **5 个上传包、80 个去重压缩包、5,928 个展开文件成员**，完成 **734 条 relay 清单校验**；外层清单对应 66 个原附件。最终复核确认上传包和展开原件字节未改变，包内 95 份只读输入也通过校验。
+
+另已修正一处证据文本复制时多出的末尾换行，恢复与 GitHub 原始 blob 字节一致；历史执行快照和修复记录保留在包内，独立关单仍为 NOT_RUN。详见 defect_log.json。
+
+## 五、正式接入仍需处理的事项
+
+| 阻塞 | 责任方与接收动作 |
+| --- | --- |
+| P18 三条正式路径均为 null／write_allowed=false | **P13** 提供实际工程路径、固定 base commit 与修改白名单 |
+| P21 物理事务未收到 | **P21** 提供持久原子提交、首通唯一约束、回执查询和备份连续性核验 |
+| P17 profile 与稳定存档 scope 的映射尚未批准 | **P13/P17/P21** 接收或修订固定 namespace 与联合候选接口 |
+| 终局索引、撤销及一致读取端口未接收 | **P14/P13/P21** 提供版本化权威端口 |
+| 正式预算、内容 ID、迁移与目标环境缺项 | **P01/P05/P07/P22/P34** 提供批准文件和目标环境证据 |
+| 原 P07 部分场景仍需澄清 | **P07** 处理 ST-030 高修订后的 review 状态，以及 ST-031 双 admission 与单活动战斗规则的关系 |
+| 长期历史容量与迁移 | **P13/P21** 提供保留首通和去重语义的分段方案，不能靠删除凭证缩小存档 |
+| 独立验收与最终整合 | **P32/P33/P35** 执行各自门禁；用户指定 **EXT-INTEGRATOR** 后再进行真实工程接线 |
+
+6 项 RFC 均为 **PREPARED_NOT_SUBMITTED**；14 个接收方的 69 条交接记录均为 **PREPARED_NOT_ACKNOWLEDGED**。本轮没有修改其他岗位原件、执行跨模块合并或宣布正式发布。
+
+## 六、下一位直接复现
+
+完整解压后进入 P18_StageRuntime_V0.1，使用 Python 3.12；本次实际环境为 Python 3.12.14，无需安装第三方依赖：
+
+Bash
+
+`python -B tools/verify_delivery.py
+python -B tools/author_tests.py
+python -B tools/check_contracts.py
+python -B -m stage_runtime
+python -B tools/replay_demo.py
+python -B tools/replay_p07.py
+python -B tools/check_determinism.py
+python -B tools/preflight.py`
+
+**最终 ZIP 新目录实跑中，前七条退出码均为 0，最后一条为 3／BLOCKED。** 八条命令的实际参数、执行时间、标准输出、标准错误及退出码已完整写入包外交付回执。下一位可直接使用本包进行接口受理或独立复测。
+
+---
+
+## 本次归档的原始文件
+
+- [builder.py](files/code/builder.py)
+- [06c45882-1-input_immutability_check.json](files/data/06c45882-1-input_immutability_check.json)
+- [b75d7867-1-demo_summary.json](files/data/b75d7867-1-demo_summary.json)
+- [3fc42b47-1-defect_log.json](files/data/3fc42b47-1-defect_log.json)
+- [f6fdd7c0-1-path_mapping_request.json](files/data/f6fdd7c0-1-path_mapping_request.json)
+- [b829da11-1-contract_acceptance.json](files/data/b829da11-1-contract_acceptance.json)
+- [relay-materials-1-c617d116d7.zip](files/archives/relay-materials-1-c617d116d7.zip)
+- [relay-materials-2-d3f598c365.zip](files/archives/relay-materials-2-d3f598c365.zip)
+- [relay-materials-3-02e8113369.zip](files/archives/relay-materials-3-02e8113369.zip)
+- [relay-materials-4-dc22516766.zip](files/archives/relay-materials-4-dc22516766.zip)
+- [P15_DeckRuntime_V0.1.zip](files/archives/P15_DeckRuntime_V0.1.zip)
+- [P15_API.md](files/documents/P15_API.md)
+- [invalid_play_cases.json](files/data/invalid_play_cases.json)
+- [deck_patch_schema.json](files/data/deck_patch_schema.json)
+- [deck.py](files/code/deck.py)
+- [commands.py](files/code/commands.py)
+- [deck_determinism_tests.py](files/code/deck_determinism_tests.py)
+- [card_legality_table.tsv](files/data/card_legality_table.tsv)
+- [example_requests.json](files/data/example_requests.json)
+- [content.py](files/code/content.py)
+- [P16_EnemyAI_V0.1.zip](files/archives/P16_EnemyAI_V0.1.zip)
+- [47cc0e19-1-downstream_receipts.json](files/data/47cc0e19-1-downstream_receipts.json)
+- [P16_API.md](files/documents/P16_API.md)
+- [enemy_intent_schema.json](files/data/enemy_intent_schema.json)
+- [5998045e-1-delivery_manifest.sha256.tsv](files/data/5998045e-1-delivery_manifest.sha256.tsv)
+- [phases.py](files/code/phases.py)
+- [types.py](files/code/types.py)
+- [3568e96b-1-p14_adapter.py](files/code/3568e96b-1-p14_adapter.py)
+- [p06_projection_results.json](files/data/p06_projection_results.json)
+- [input_immutability_check.json](files/data/input_immutability_check.json)
+- [boss_transition_cases.tsv](files/data/boss_transition_cases.tsv)
+- [91352728-1-planner.py](files/code/91352728-1-planner.py)
+- [demo_summary.json](files/data/demo_summary.json)
+- [delivery_receipt.json](files/data/delivery_receipt.json)
+- [README.md](files/documents/README.md)
+- [integration_handoff.md](files/documents/integration_handoff.md)
+- [intent_replay_fixtures.json](files/data/intent_replay_fixtures.json)
+- [verification_status.json](files/data/verification_status.json)
+- [source_input_receipt.json](files/data/source_input_receipt.json)
+- [defect_log.json](files/data/defect_log.json)
+- [final_executed_source_binding.json](files/data/final_executed_source_binding.json)
+- [blockers.json](files/data/blockers.json)
+- [interface_rfcs.json](files/data/interface_rfcs.json)
+- [actual_path_request.json](files/data/actual_path_request.json)
+- [contract_acceptance.json](files/data/contract_acceptance.json)
+- [task_traceability.json](files/data/task_traceability.json)
+- [test_p14_contract.py](files/code/test_p14_contract.py)
+- [demo_execution.json](files/data/demo_execution.json)
+- [f2508593-1-verification_status.json](files/data/f2508593-1-verification_status.json)
+- [f8afeb71-1-blockers.json](files/data/f8afeb71-1-blockers.json)
+- [c5643230-1-interface_rfcs.json](files/data/c5643230-1-interface_rfcs.json)
+- [70e2cb02-1-defect_log.json](files/data/70e2cb02-1-defect_log.json)
+- [lifecycle_execution.json](files/data/lifecycle_execution.json)
+- [9c0e4c7f-1-demo_summary.json](files/data/9c0e4c7f-1-demo_summary.json)
+- [service.py](files/code/service.py)
+- [rules.py](files/code/rules.py)
+- [cbe586b8-1-delivery_receipt.json](files/data/cbe586b8-1-delivery_receipt.json)
+- [P17_CharacterPartyWallet_V0.1.zip](files/archives/P17_CharacterPartyWallet_V0.1.zip)
+- [f0d2979d-1-README.md](files/documents/f0d2979d-1-README.md)
+- [P17_API.md](files/documents/P17_API.md)
+- [8fea69e4-1-integration_handoff.md](files/documents/8fea69e4-1-integration_handoff.md)
+- [wallet_delta_contract.json](files/data/wallet_delta_contract.json)
+- [wallet_concurrency_tests.py](files/code/wallet_concurrency_tests.py)
+- [199cf48d-1-source_input_receipt.json](files/data/199cf48d-1-source_input_receipt.json)
+- [delivery_manifest.sha256.tsv](files/data/delivery_manifest.sha256.tsv)
+- [projection.py](files/code/projection.py)
+- [P18_StageRuntime_V0.1.zip](files/archives/P18_StageRuntime_V0.1.zip)
+- [P18_delivery_receipt.json](files/data/P18_delivery_receipt.json)
+- [63e294bc-1-README.md](files/documents/63e294bc-1-README.md)
+- [P18_API.md](files/documents/P18_API.md)
+- [c9796066-1-integration_handoff.md](files/documents/c9796066-1-integration_handoff.md)
+- [first_clear_keys.json](files/data/first_clear_keys.json)
+- [stage_progress_fixtures.json](files/data/stage_progress_fixtures.json)
+- [stage_reward_tests.py](files/code/stage_reward_tests.py)
+- [a39b7729-1-service.py](files/code/a39b7729-1-service.py)
+- [transactions.py](files/code/transactions.py)
+- [stage_runtime_contract.json](files/data/stage_runtime_contract.json)
+- [3cbbfa8b-1-source_input_receipt.json](files/data/3cbbfa8b-1-source_input_receipt.json)
+- [delivery_manifest.json](files/data/delivery_manifest.json)
+- [ce8d1db8-1-verification_status.json](files/data/ce8d1db8-1-verification_status.json)
+- [36d81aeb-1-blockers.json](files/data/36d81aeb-1-blockers.json)
+- [bb7670ad-1-interface_rfcs.json](files/data/bb7670ad-1-interface_rfcs.json)
+- [401b29cc-1-actual_path_request.json](files/data/401b29cc-1-actual_path_request.json)
+- [92bf28a5-1-contract_acceptance.json](files/data/92bf28a5-1-contract_acceptance.json)
+- [3d5c9642-1-task_traceability.json](files/data/3d5c9642-1-task_traceability.json)
+- [d3a41c53-1-defect_log.json](files/data/d3a41c53-1-defect_log.json)
+- [downstream_receipts.json](files/data/downstream_receipts.json)
+- [p07_projection_results.json](files/data/p07_projection_results.json)
+- [129e66ee-1-demo_summary.json](files/data/129e66ee-1-demo_summary.json)
+- [04823653-1-lifecycle_execution.json](files/data/04823653-1-lifecycle_execution.json)
+- [native_p14_contract_execution.json](files/data/native_p14_contract_execution.json)
+

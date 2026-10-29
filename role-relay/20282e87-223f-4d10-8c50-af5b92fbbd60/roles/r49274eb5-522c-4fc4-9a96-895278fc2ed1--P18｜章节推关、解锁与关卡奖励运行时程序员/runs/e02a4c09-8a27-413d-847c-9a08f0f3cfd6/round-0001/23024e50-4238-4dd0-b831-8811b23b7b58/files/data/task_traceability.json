@@ -1,0 +1,139 @@
+{
+  "schema_version": "P16-TRACE/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "activation": "CURRENT_USER_EXPLICIT_P16_REQUEST",
+  "delivery_version": "P16-ENEMY-AI/0.1.0-isolated",
+  "P01_task_register_base": {
+    "relative_path": "upstream/P01/planning/handoffs/task_register.tsv",
+    "size_bytes": 3484,
+    "sha256": "d1146beecb5d7b2787f8576ec45fc273a93fbfbff766bdc239f70383b103ca60"
+  },
+  "P01_P16_task_row_exists": false,
+  "related_P01_task": "TASK-03-01 (P19; supporting dependency only)",
+  "source_requirements": [
+    {
+      "requirement_id": "REQ-009",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "敌人",
+      "normalized_requirement": "敌方需要行动意图、技能与Boss阶段机制。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "二.游戏核心玩法",
+      "source_exact_quote": "敌人具有行动意图、技能和 BOSS 阶段机制。",
+      "quote_sha256": "a603ee54640fea7fed7cf8dc72ffa3c4aad1797918ab6f37845786fbbcea7000",
+      "implementation_owner": "P06",
+      "independent_reviewer": "P32/P35",
+      "stage": "S03/S07",
+      "observable_acceptance": "S03单怪意图;S07阈值与阶段转换边界测试",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "优先级",
+      "normalized_requirement": "当前优先S00至S03首个战斗竖切，环境不足要写阻塞。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "四.本次优先完成的研发阶段",
+      "source_exact_quote": "本次以 S00—S03首个战斗竖切 为优先研发目标；如果环境或关键依赖不满足，必须如实记录阻塞，而不是虚构完成结果。",
+      "quote_sha256": "f98ef8fc3183c42e91795b65c31473b25b6fb3186299842d956aec983ea1d5d6",
+      "implementation_owner": "P01",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S03",
+      "observable_acceptance": "当前任务及门禁优先S00-S03，阻塞记录完整",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "界面",
+      "normalized_requirement": "S03需可独立测试的卡牌战斗竖切。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "第四阶段：S03",
+      "source_exact_quote": "目标是形成一个可以独立测试的卡牌战斗竖切：",
+      "quote_sha256": "a58fee50ff68dbbab00bc74c704f4698e6ec9da0f33e7b33aaa323f991afedde",
+      "implementation_owner": "P19",
+      "independent_reviewer": "P32/P35",
+      "stage": "S03",
+      "observable_acceptance": "交互输入、结算渲染、结束回合、敌方行动、胜负判断可复现",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "界面",
+      "normalized_requirement": "禁动画不改变结算。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "第四阶段：S03",
+      "source_exact_quote": "关闭或跳过动画不影响战斗计算。",
+      "quote_sha256": "a339c7f6672c2013f44949d1d457a0934dc3c34b6b8d1a05cc1b48a6828486b9",
+      "implementation_owner": "P29",
+      "independent_reviewer": "P32/P35",
+      "stage": "S03",
+      "observable_acceptance": "禁动画/跳过与有动画权威战斗终态相同",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "验收",
+      "normalized_requirement": "S00-S03优先可独立测试模块，不把未集成算整游戏。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "八.本次最终验收标准",
+      "source_exact_quote": "在技术条件允许时，完成并真实测试S01—S03的独立战斗竖切。",
+      "quote_sha256": "316eb5364aaff16a69c261fba4bd0a7f60852af2dc6fdaadee3c35511eb43ab1",
+      "implementation_owner": "P35",
+      "independent_reviewer": "P32/P35",
+      "stage": "S01-S03",
+      "observable_acceptance": "固定输入实测通过与真实集成状态分别呈现",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    }
+  ],
+  "requirements_base": {
+    "relative_path": "upstream/P01/spec/product/requirements_traceability.tsv",
+    "size_bytes": 17235,
+    "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+  },
+  "scope": {
+    "S03": "ISOLATED_EXECUTABLE_MODULE",
+    "S07": "EXISTING_P06_PHASE_PROPOSAL_BOUNDARIES_ONLY_NOT_FORMAL_STAGE_ACTIVATION"
+  },
+  "results": {
+    "decision_and_intent": "AUTHOR_IMPLEMENTED_TESTED",
+    "phase_proposals": "AUTHOR_IMPLEMENTED_TESTED",
+    "phase_commit": "BLOCKED_P14",
+    "summons": "NO_UPSTREAM_CONFIGURATION_NO_MECHANISM_ADDED",
+    "ui": "NOT_RUN",
+    "game_integration": "NOT_RUN"
+  },
+  "test_files": [
+    {
+      "relative_path": "tests/enemy_ai_unit/test_p06_projection.py",
+      "size_bytes": 644,
+      "sha256": "fe5349fd5d56f4346ccf12aeb853aa370d174e18a82a84b8fe3cc364ffb32735"
+    },
+    {
+      "relative_path": "tests/enemy_ai_unit/test_p14_contract.py",
+      "size_bytes": 12518,
+      "sha256": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c"
+    },
+    {
+      "relative_path": "tests/enemy_ai_unit/test_phases.py",
+      "size_bytes": 5634,
+      "sha256": "f1669033468a16a37982c3231faaa894e143222b5232982c36d1472e8b7f3383"
+    },
+    {
+      "relative_path": "tests/enemy_ai_unit/test_planner.py",
+      "size_bytes": 19024,
+      "sha256": "07304faef7e430e2d563b2126dbb5360e2caff4128a2f89e024605b039e0d817"
+    },
+    {
+      "relative_path": "tests/enemy_ai_unit/test_replay.py",
+      "size_bytes": 1386,
+      "sha256": "87620e93756189f3d4ce6291a53f82ce5b5535a0aea009e14b719fa28b3764d5"
+    }
+  ]
+}

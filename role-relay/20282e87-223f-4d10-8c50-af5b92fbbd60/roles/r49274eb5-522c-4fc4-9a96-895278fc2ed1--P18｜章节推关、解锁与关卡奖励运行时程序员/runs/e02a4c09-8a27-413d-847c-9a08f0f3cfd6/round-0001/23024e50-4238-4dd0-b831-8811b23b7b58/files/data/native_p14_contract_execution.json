@@ -1,0 +1,1289 @@
+{
+  "scope": "UNMODIFIED_P14_RESULT_UNMODIFIED_P17_CANDIDATE_TEST_STORE_ONLY",
+  "durable": false,
+  "p14_command": {
+    "battle_id": "native.battle",
+    "command_id": "native.play",
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "BattleCommand",
+    "expected_revision": 0,
+    "kind": "PLAY_CARD",
+    "payload": {
+      "actor_id": "unit.df91e9f3eadb9151174b34f218508838",
+      "card_instance_id": "fixture.card",
+      "target_ids": [
+        "fixture.native-enemy"
+      ]
+    }
+  },
+  "p14_reply": {
+    "battle_id": "native.battle",
+    "code": "OK",
+    "command_id": "native.play",
+    "commit": {
+      "battle_id": "native.battle",
+      "command_id": "native.play",
+      "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "dto_type": "BattleCommitBatch",
+      "events": [
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "command_sha256": "949a50a705ab2dc652c49c05c73676cd6e4f5dab0df280229d810466ccabb282"
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "COMMAND_ACCEPTED",
+          "revision": 1,
+          "seq": 1
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "amount": 1,
+            "energy_after": 0
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "ENERGY_SPENT",
+          "revision": 1,
+          "seq": 2
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "from_zone": "hand",
+            "instance_id": "fixture.card",
+            "to_index": 0,
+            "to_zone": "discard"
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "CARD_MOVED",
+          "revision": 1,
+          "seq": 3
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "effect_index": 0,
+            "source_unit_id": "unit.df91e9f3eadb9151174b34f218508838",
+            "target_unit_ids": [
+              "fixture.native-enemy"
+            ]
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "EFFECT_STARTED",
+          "revision": 1,
+          "seq": 4
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "absorbed": 0,
+            "hp_after": 0,
+            "hp_loss": 1,
+            "overkill": 0,
+            "raw": 1,
+            "shield_after": 0,
+            "source_unit_id": "unit.df91e9f3eadb9151174b34f218508838",
+            "target_unit_id": "fixture.native-enemy"
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "DAMAGE_APPLIED",
+          "revision": 1,
+          "seq": 5
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "unit_id": "fixture.native-enemy"
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "UNIT_DIED",
+          "revision": 1,
+          "seq": 6
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "outcome": "WIN"
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "BATTLE_FINISHED",
+          "revision": 1,
+          "seq": 7
+        },
+        {
+          "battle_id": "native.battle",
+          "command_id": "native.play",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "data": {
+            "revision": 1
+          },
+          "dto_type": "BattleEvent",
+          "event_type": "COMMAND_COMMITTED",
+          "revision": 1,
+          "seq": 8
+        }
+      ],
+      "previous_revision": 0,
+      "snapshot": {
+        "battle_id": "native.battle",
+        "boss_states": [],
+        "card_instances": [
+          {
+            "card_id": "fixture.native-strike",
+            "instance_id": "fixture.card",
+            "owner_unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+          }
+        ],
+        "content_version": "fixture:P18-battle-v1",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleSnapshot",
+        "energy": 0,
+        "last_event_seq": 8,
+        "outcome": "WIN",
+        "phase": "TERMINAL",
+        "revision": 1,
+        "rng": {
+          "algorithm": "xorshift32-v1",
+          "draw_count": 0,
+          "initial_seed": 1,
+          "state": 1
+        },
+        "rules_version": "P02-BATTLE-0.1.0-draft",
+        "turn_number": 1,
+        "units": [
+          {
+            "definition_id": "MOCK_P04_CHAR_001",
+            "hp": 96,
+            "max_hp": 96,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 0,
+            "statuses": [],
+            "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+          },
+          {
+            "definition_id": "MOCK_P04_CHAR_002",
+            "hp": 132,
+            "max_hp": 132,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 1,
+            "statuses": [],
+            "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+          },
+          {
+            "definition_id": "MOCK_P04_CHAR_003",
+            "hp": 108,
+            "max_hp": 108,
+            "shield": 0,
+            "side": "PLAYER",
+            "slot": 2,
+            "statuses": [],
+            "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+          },
+          {
+            "definition_id": "MOCK_P06_ENEMY_001",
+            "hp": 0,
+            "max_hp": 1,
+            "shield": 0,
+            "side": "ENEMY",
+            "slot": 0,
+            "statuses": [],
+            "unit_id": "fixture.native-enemy"
+          }
+        ],
+        "zones": {
+          "discard": [
+            "fixture.card"
+          ],
+          "draw": [],
+          "exhaust": [],
+          "hand": []
+        }
+      }
+    },
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "BattleReply",
+    "observed_revision": 1,
+    "result": "COMMITTED"
+  },
+  "p14_result": {
+    "battle_id": "native.battle",
+    "content_version": "fixture:P18-battle-v1",
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "BattleResult",
+    "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+    "outcome": "WIN",
+    "profile_scope": "fixture.native.save",
+    "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+    "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+    "rules_version": "P02-BATTLE-0.1.0-draft",
+    "stage_id": "MOCK_P07_STAGE_001",
+    "terminal_event_seq": 7,
+    "terminal_revision": 1
+  },
+  "p14_result_raw_sha256": "6e28a4ad19f5aadb353441f44ede1843d71049278e5e004aa0cbf426dc3261a8",
+  "p14_final_snapshot": {
+    "battle_id": "native.battle",
+    "boss_states": [],
+    "card_instances": [
+      {
+        "card_id": "fixture.native-strike",
+        "instance_id": "fixture.card",
+        "owner_unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+      }
+    ],
+    "content_version": "fixture:P18-battle-v1",
+    "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+    "dto_type": "BattleSnapshot",
+    "energy": 0,
+    "last_event_seq": 8,
+    "outcome": "WIN",
+    "phase": "TERMINAL",
+    "revision": 1,
+    "rng": {
+      "algorithm": "xorshift32-v1",
+      "draw_count": 0,
+      "initial_seed": 1,
+      "state": 1
+    },
+    "rules_version": "P02-BATTLE-0.1.0-draft",
+    "turn_number": 1,
+    "units": [
+      {
+        "definition_id": "MOCK_P04_CHAR_001",
+        "hp": 96,
+        "max_hp": 96,
+        "shield": 0,
+        "side": "PLAYER",
+        "slot": 0,
+        "statuses": [],
+        "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+      },
+      {
+        "definition_id": "MOCK_P04_CHAR_002",
+        "hp": 132,
+        "max_hp": 132,
+        "shield": 0,
+        "side": "PLAYER",
+        "slot": 1,
+        "statuses": [],
+        "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+      },
+      {
+        "definition_id": "MOCK_P04_CHAR_003",
+        "hp": 108,
+        "max_hp": 108,
+        "shield": 0,
+        "side": "PLAYER",
+        "slot": 2,
+        "statuses": [],
+        "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+      },
+      {
+        "definition_id": "MOCK_P06_ENEMY_001",
+        "hp": 0,
+        "max_hp": 1,
+        "shield": 0,
+        "side": "ENEMY",
+        "slot": 0,
+        "statuses": [],
+        "unit_id": "fixture.native-enemy"
+      }
+    ],
+    "zones": {
+      "discard": [
+        "fixture.card"
+      ],
+      "draw": [],
+      "exhaust": [],
+      "hand": []
+    }
+  },
+  "p18_request": {
+    "catalog_sha256": "921a1d238ba17e9d862d228f42bdb51b63296c8e97cbc8a2decbd5d82266bc29",
+    "continuity_ref": "fixture.continuity",
+    "expected_revision": 1,
+    "kind": "SETTLE",
+    "payload": {
+      "result": {
+        "battle_id": "native.battle",
+        "content_version": "fixture:P18-battle-v1",
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "BattleResult",
+        "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+        "outcome": "WIN",
+        "profile_scope": "fixture.native.save",
+        "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+        "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+        "rules_version": "P02-BATTLE-0.1.0-draft",
+        "stage_id": "MOCK_P07_STAGE_001",
+        "terminal_event_seq": 7,
+        "terminal_revision": 1
+      }
+    },
+    "player_save_scope_id": "fixture.native.save",
+    "request_id": "req.2",
+    "schema_version": "P18-COMMAND/0.1.0-isolated",
+    "store_instance": "fixture.store"
+  },
+  "p18_candidate": {
+    "after_sha256": "83c98bd908adde683b2c1b430a777da0f57d98870acf8d83448edf8f095c7691",
+    "after_state": {
+      "active_battle_id": null,
+      "attempts": [
+        {
+          "admission": {
+            "battle_content_sha256": "1b2d7d8eb41b9ba7c36f2b1b152f52908faf2ebde852b29f5dfce1150e9b5256",
+            "battle_content_version": "fixture:P18-battle-v1",
+            "battle_id": "native.battle",
+            "battle_rules_version": "P02-BATTLE-0.1.0-draft",
+            "boss_graph_sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+            "catalog_sha256": "921a1d238ba17e9d862d228f42bdb51b63296c8e97cbc8a2decbd5d82266bc29",
+            "chapter_id": "MOCK_P07_CHAPTER_001",
+            "enemy_content_sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+            "entry_ref": "entry.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+            "entry_sha256": "58df75bcb64dca180a3c4a396900106f9439e4d71d7fdc49bd598ab79c7ad177",
+            "party_sha256": "e8d453692e7ea1d1d5749c4f3f59c94ad8ee80c97d6acd0f7003d76a9b803329",
+            "party_snapshot": {
+              "content_version": "P17-CONTENT/0.1.0-test-only",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "PartySnapshot",
+              "members": [
+                {
+                  "attack": 17,
+                  "character_id": "MOCK_P04_CHAR_001",
+                  "defense": 5,
+                  "max_hp": 96,
+                  "slot": 0,
+                  "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+                },
+                {
+                  "attack": 8,
+                  "character_id": "MOCK_P04_CHAR_002",
+                  "defense": 15,
+                  "max_hp": 132,
+                  "slot": 1,
+                  "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+                },
+                {
+                  "attack": 7,
+                  "character_id": "MOCK_P04_CHAR_003",
+                  "defense": 7,
+                  "max_hp": 108,
+                  "slot": 2,
+                  "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+                }
+              ],
+              "party_id": "party.c53bf464d7ad64b7003b3abed96e94f3",
+              "revision": 2
+            },
+            "player_save_scope_id": "fixture.native.save",
+            "prerequisites": [],
+            "reward_config_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+            "seed": 1,
+            "stage_config_sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+            "stage_id": "MOCK_P07_STAGE_001"
+          },
+          "admission_sha256": "17d4ace6f53d7faac0354c7e10f2290bb33ece9f4a0981124acc37a70c537e0a",
+          "battle_id": "native.battle",
+          "closure": null,
+          "high_revision": 1,
+          "status": "SETTLED",
+          "terminal": {
+            "decision": "FIRST_CLEAR",
+            "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+            "receipt_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+            "result": {
+              "battle_id": "native.battle",
+              "content_version": "fixture:P18-battle-v1",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleResult",
+              "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+              "outcome": "WIN",
+              "profile_scope": "fixture.native.save",
+              "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+              "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "stage_id": "MOCK_P07_STAGE_001",
+              "terminal_event_seq": 7,
+              "terminal_revision": 1
+            },
+            "result_sha256": "6e28a4ad19f5aadb353441f44ede1843d71049278e5e004aa0cbf426dc3261a8",
+            "reward_identity": [
+              "STAGE_FIRST_CLEAR",
+              "fixture.native.save",
+              "MOCK_P07_STAGE_001"
+            ]
+          }
+        }
+      ],
+      "continuity_ref": "fixture.continuity",
+      "controls": [],
+      "first_clears": [
+        {
+          "battle_id": "native.battle",
+          "key": "b87a20a5b4d8d5ff22d8424203038e42a1f496c4a2866f8e5146eb8b4d141464",
+          "receipt_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+          "result_sha256": "6e28a4ad19f5aadb353441f44ede1843d71049278e5e004aa0cbf426dc3261a8",
+          "stage_id": "MOCK_P07_STAGE_001"
+        }
+      ],
+      "operations": [
+        {
+          "committed_revision": 1,
+          "request_id": "req.1",
+          "request_sha256": "690d8fe306ad1f397302437090b9ac288190f58fe5d516842d41ece23514a9f0"
+        },
+        {
+          "committed_revision": 2,
+          "request_id": "req.2",
+          "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96"
+        }
+      ],
+      "player_save_scope_id": "fixture.native.save",
+      "quarantines": [],
+      "revision": 2,
+      "schema_version": "P18-STATE/0.1.0-isolated",
+      "stages": [
+        {
+          "confirmed_win_battles": [
+            "native.battle"
+          ],
+          "review_required": false,
+          "stage_id": "MOCK_P07_STAGE_001"
+        },
+        {
+          "confirmed_win_battles": [],
+          "review_required": false,
+          "stage_id": "MOCK_P07_STAGE_002"
+        }
+      ],
+      "store_instance": "fixture.store"
+    },
+    "battle_parameters": null,
+    "before_sha256": "3ac42f93b95ae2a0829a22fdfa6e82dcb2dee14bfb9b21b1faccf258ebd7eff8",
+    "commit_scope": "ISOLATED_CANDIDATE_NOT_COMMITTED",
+    "decision": "FIRST_CLEAR",
+    "evidence_bindings": [
+      {
+        "document": {
+          "continuity_ref": "fixture.continuity",
+          "player_save_scope_id": "fixture.native.save",
+          "revision": 1,
+          "schema_version": "P18-STORE-FENCE/0.1.0-proposal",
+          "state_sha256": "3ac42f93b95ae2a0829a22fdfa6e82dcb2dee14bfb9b21b1faccf258ebd7eff8",
+          "status": "CONSISTENT",
+          "store_instance": "fixture.store"
+        },
+        "kind": "STORE_FENCE",
+        "reference": "fixture.native.save",
+        "sha256": "4406a9554ecfd7b4bb54e36b40858152c2629a28802e36a3326206a1b837f4b9"
+      },
+      {
+        "document": {
+          "admission_sha256": "17d4ace6f53d7faac0354c7e10f2290bb33ece9f4a0981124acc37a70c537e0a",
+          "battle_id": "native.battle",
+          "result": {
+            "battle_id": "native.battle",
+            "content_version": "fixture:P18-battle-v1",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleResult",
+            "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+            "outcome": "WIN",
+            "profile_scope": "fixture.native.save",
+            "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+            "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+            "rules_version": "P02-BATTLE-0.1.0-draft",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "terminal_event_seq": 7,
+            "terminal_revision": 1
+          },
+          "schema_version": "P18-BATTLE-EVIDENCE/0.1.0-proposal",
+          "snapshot": {
+            "battle_id": "native.battle",
+            "boss_states": [],
+            "card_instances": [
+              {
+                "card_id": "fixture.native-strike",
+                "instance_id": "fixture.card",
+                "owner_unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+              }
+            ],
+            "content_version": "fixture:P18-battle-v1",
+            "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+            "dto_type": "BattleSnapshot",
+            "energy": 0,
+            "last_event_seq": 8,
+            "outcome": "WIN",
+            "phase": "TERMINAL",
+            "revision": 1,
+            "rng": {
+              "algorithm": "xorshift32-v1",
+              "draw_count": 0,
+              "initial_seed": 1,
+              "state": 1
+            },
+            "rules_version": "P02-BATTLE-0.1.0-draft",
+            "turn_number": 1,
+            "units": [
+              {
+                "definition_id": "MOCK_P04_CHAR_001",
+                "hp": 96,
+                "max_hp": 96,
+                "shield": 0,
+                "side": "PLAYER",
+                "slot": 0,
+                "statuses": [],
+                "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+              },
+              {
+                "definition_id": "MOCK_P04_CHAR_002",
+                "hp": 132,
+                "max_hp": 132,
+                "shield": 0,
+                "side": "PLAYER",
+                "slot": 1,
+                "statuses": [],
+                "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+              },
+              {
+                "definition_id": "MOCK_P04_CHAR_003",
+                "hp": 108,
+                "max_hp": 108,
+                "shield": 0,
+                "side": "PLAYER",
+                "slot": 2,
+                "statuses": [],
+                "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+              },
+              {
+                "definition_id": "MOCK_P06_ENEMY_001",
+                "hp": 0,
+                "max_hp": 1,
+                "shield": 0,
+                "side": "ENEMY",
+                "slot": 0,
+                "statuses": [],
+                "unit_id": "fixture.native-enemy"
+              }
+            ],
+            "zones": {
+              "discard": [
+                "fixture.card"
+              ],
+              "draw": [],
+              "exhaust": [],
+              "hand": []
+            }
+          }
+        },
+        "kind": "BATTLE",
+        "reference": "native.battle",
+        "sha256": "4e79b3f6a32249527445d213bef6e4a0b08d522389a65fc4337f45aeb871c7a5"
+      }
+    ],
+    "grant": {
+      "characters": [],
+      "eligibility_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+      "equipment": [],
+      "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+      "identity": {
+        "campaign_id": "YLTT_STAGE_SCOPE",
+        "stage_id": "MOCK_P07_STAGE_001"
+      },
+      "issuer": "P18",
+      "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+      "policy_version": "P07-STAGES-0.1.0-proposal",
+      "profile_id": "fixture.native.save",
+      "resources": [
+        {
+          "amount": 3,
+          "resource_id": "MOCK_P04_TRAINING_TOKEN"
+        }
+      ],
+      "schema_version": "P17-GRANT-INPUT/0.1.0-proposal",
+      "source_kind": "STAGE_FIRST_CLEAR",
+      "xp": [
+        {
+          "amount": 4,
+          "character_id": "MOCK_P04_CHAR_001"
+        },
+        {
+          "amount": 4,
+          "character_id": "MOCK_P04_CHAR_002"
+        },
+        {
+          "amount": 4,
+          "character_id": "MOCK_P04_CHAR_003"
+        }
+      ]
+    },
+    "new_first_clear_keys": [
+      "b87a20a5b4d8d5ff22d8424203038e42a1f496c4a2866f8e5146eb8b4d141464"
+    ],
+    "request": {
+      "catalog_sha256": "921a1d238ba17e9d862d228f42bdb51b63296c8e97cbc8a2decbd5d82266bc29",
+      "continuity_ref": "fixture.continuity",
+      "expected_revision": 1,
+      "kind": "SETTLE",
+      "payload": {
+        "result": {
+          "battle_id": "native.battle",
+          "content_version": "fixture:P18-battle-v1",
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "BattleResult",
+          "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+          "outcome": "WIN",
+          "profile_scope": "fixture.native.save",
+          "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+          "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+          "rules_version": "P02-BATTLE-0.1.0-draft",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "terminal_event_seq": 7,
+          "terminal_revision": 1
+        }
+      },
+      "player_save_scope_id": "fixture.native.save",
+      "request_id": "req.2",
+      "schema_version": "P18-COMMAND/0.1.0-isolated",
+      "store_instance": "fixture.store"
+    },
+    "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96",
+    "schema_version": "P18-CANDIDATE/0.1.0-isolated"
+  },
+  "joint_bundle": {
+    "body": {
+      "expected_meta_sha256": "01e5768857509e5a01c982b79c6cc07537becc33dc00d08093c03c70520254cd",
+      "receipt_publication": "ONLY_AFTER_P21_DURABLE_ATOMIC_COMMIT",
+      "required_atomic_owners": [
+        "P18",
+        "P17"
+      ],
+      "schema_version": "P18-JOINT-BODY/0.1.0-proposal",
+      "stage_candidate": {
+        "after_sha256": "83c98bd908adde683b2c1b430a777da0f57d98870acf8d83448edf8f095c7691",
+        "after_state": {
+          "active_battle_id": null,
+          "attempts": [
+            {
+              "admission": {
+                "battle_content_sha256": "1b2d7d8eb41b9ba7c36f2b1b152f52908faf2ebde852b29f5dfce1150e9b5256",
+                "battle_content_version": "fixture:P18-battle-v1",
+                "battle_id": "native.battle",
+                "battle_rules_version": "P02-BATTLE-0.1.0-draft",
+                "boss_graph_sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+                "catalog_sha256": "921a1d238ba17e9d862d228f42bdb51b63296c8e97cbc8a2decbd5d82266bc29",
+                "chapter_id": "MOCK_P07_CHAPTER_001",
+                "enemy_content_sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+                "entry_ref": "entry.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+                "entry_sha256": "58df75bcb64dca180a3c4a396900106f9439e4d71d7fdc49bd598ab79c7ad177",
+                "party_sha256": "e8d453692e7ea1d1d5749c4f3f59c94ad8ee80c97d6acd0f7003d76a9b803329",
+                "party_snapshot": {
+                  "content_version": "P17-CONTENT/0.1.0-test-only",
+                  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                  "dto_type": "PartySnapshot",
+                  "members": [
+                    {
+                      "attack": 17,
+                      "character_id": "MOCK_P04_CHAR_001",
+                      "defense": 5,
+                      "max_hp": 96,
+                      "slot": 0,
+                      "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+                    },
+                    {
+                      "attack": 8,
+                      "character_id": "MOCK_P04_CHAR_002",
+                      "defense": 15,
+                      "max_hp": 132,
+                      "slot": 1,
+                      "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+                    },
+                    {
+                      "attack": 7,
+                      "character_id": "MOCK_P04_CHAR_003",
+                      "defense": 7,
+                      "max_hp": 108,
+                      "slot": 2,
+                      "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+                    }
+                  ],
+                  "party_id": "party.c53bf464d7ad64b7003b3abed96e94f3",
+                  "revision": 2
+                },
+                "player_save_scope_id": "fixture.native.save",
+                "prerequisites": [],
+                "reward_config_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+                "seed": 1,
+                "stage_config_sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+                "stage_id": "MOCK_P07_STAGE_001"
+              },
+              "admission_sha256": "17d4ace6f53d7faac0354c7e10f2290bb33ece9f4a0981124acc37a70c537e0a",
+              "battle_id": "native.battle",
+              "closure": null,
+              "high_revision": 1,
+              "status": "SETTLED",
+              "terminal": {
+                "decision": "FIRST_CLEAR",
+                "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+                "receipt_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+                "result": {
+                  "battle_id": "native.battle",
+                  "content_version": "fixture:P18-battle-v1",
+                  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                  "dto_type": "BattleResult",
+                  "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+                  "outcome": "WIN",
+                  "profile_scope": "fixture.native.save",
+                  "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+                  "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+                  "rules_version": "P02-BATTLE-0.1.0-draft",
+                  "stage_id": "MOCK_P07_STAGE_001",
+                  "terminal_event_seq": 7,
+                  "terminal_revision": 1
+                },
+                "result_sha256": "6e28a4ad19f5aadb353441f44ede1843d71049278e5e004aa0cbf426dc3261a8",
+                "reward_identity": [
+                  "STAGE_FIRST_CLEAR",
+                  "fixture.native.save",
+                  "MOCK_P07_STAGE_001"
+                ]
+              }
+            }
+          ],
+          "continuity_ref": "fixture.continuity",
+          "controls": [],
+          "first_clears": [
+            {
+              "battle_id": "native.battle",
+              "key": "b87a20a5b4d8d5ff22d8424203038e42a1f496c4a2866f8e5146eb8b4d141464",
+              "receipt_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+              "result_sha256": "6e28a4ad19f5aadb353441f44ede1843d71049278e5e004aa0cbf426dc3261a8",
+              "stage_id": "MOCK_P07_STAGE_001"
+            }
+          ],
+          "operations": [
+            {
+              "committed_revision": 1,
+              "request_id": "req.1",
+              "request_sha256": "690d8fe306ad1f397302437090b9ac288190f58fe5d516842d41ece23514a9f0"
+            },
+            {
+              "committed_revision": 2,
+              "request_id": "req.2",
+              "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96"
+            }
+          ],
+          "player_save_scope_id": "fixture.native.save",
+          "quarantines": [],
+          "revision": 2,
+          "schema_version": "P18-STATE/0.1.0-isolated",
+          "stages": [
+            {
+              "confirmed_win_battles": [
+                "native.battle"
+              ],
+              "review_required": false,
+              "stage_id": "MOCK_P07_STAGE_001"
+            },
+            {
+              "confirmed_win_battles": [],
+              "review_required": false,
+              "stage_id": "MOCK_P07_STAGE_002"
+            }
+          ],
+          "store_instance": "fixture.store"
+        },
+        "battle_parameters": null,
+        "before_sha256": "3ac42f93b95ae2a0829a22fdfa6e82dcb2dee14bfb9b21b1faccf258ebd7eff8",
+        "commit_scope": "ISOLATED_CANDIDATE_NOT_COMMITTED",
+        "decision": "FIRST_CLEAR",
+        "evidence_bindings": [
+          {
+            "document": {
+              "continuity_ref": "fixture.continuity",
+              "player_save_scope_id": "fixture.native.save",
+              "revision": 1,
+              "schema_version": "P18-STORE-FENCE/0.1.0-proposal",
+              "state_sha256": "3ac42f93b95ae2a0829a22fdfa6e82dcb2dee14bfb9b21b1faccf258ebd7eff8",
+              "status": "CONSISTENT",
+              "store_instance": "fixture.store"
+            },
+            "kind": "STORE_FENCE",
+            "reference": "fixture.native.save",
+            "sha256": "4406a9554ecfd7b4bb54e36b40858152c2629a28802e36a3326206a1b837f4b9"
+          },
+          {
+            "document": {
+              "admission_sha256": "17d4ace6f53d7faac0354c7e10f2290bb33ece9f4a0981124acc37a70c537e0a",
+              "battle_id": "native.battle",
+              "result": {
+                "battle_id": "native.battle",
+                "content_version": "fixture:P18-battle-v1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "dto_type": "BattleResult",
+                "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+                "outcome": "WIN",
+                "profile_scope": "fixture.native.save",
+                "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+                "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+                "rules_version": "P02-BATTLE-0.1.0-draft",
+                "stage_id": "MOCK_P07_STAGE_001",
+                "terminal_event_seq": 7,
+                "terminal_revision": 1
+              },
+              "schema_version": "P18-BATTLE-EVIDENCE/0.1.0-proposal",
+              "snapshot": {
+                "battle_id": "native.battle",
+                "boss_states": [],
+                "card_instances": [
+                  {
+                    "card_id": "fixture.native-strike",
+                    "instance_id": "fixture.card",
+                    "owner_unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+                  }
+                ],
+                "content_version": "fixture:P18-battle-v1",
+                "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+                "dto_type": "BattleSnapshot",
+                "energy": 0,
+                "last_event_seq": 8,
+                "outcome": "WIN",
+                "phase": "TERMINAL",
+                "revision": 1,
+                "rng": {
+                  "algorithm": "xorshift32-v1",
+                  "draw_count": 0,
+                  "initial_seed": 1,
+                  "state": 1
+                },
+                "rules_version": "P02-BATTLE-0.1.0-draft",
+                "turn_number": 1,
+                "units": [
+                  {
+                    "definition_id": "MOCK_P04_CHAR_001",
+                    "hp": 96,
+                    "max_hp": 96,
+                    "shield": 0,
+                    "side": "PLAYER",
+                    "slot": 0,
+                    "statuses": [],
+                    "unit_id": "unit.df91e9f3eadb9151174b34f218508838"
+                  },
+                  {
+                    "definition_id": "MOCK_P04_CHAR_002",
+                    "hp": 132,
+                    "max_hp": 132,
+                    "shield": 0,
+                    "side": "PLAYER",
+                    "slot": 1,
+                    "statuses": [],
+                    "unit_id": "unit.b04c70a1640f9bbf1330ff39a77b3ca9"
+                  },
+                  {
+                    "definition_id": "MOCK_P04_CHAR_003",
+                    "hp": 108,
+                    "max_hp": 108,
+                    "shield": 0,
+                    "side": "PLAYER",
+                    "slot": 2,
+                    "statuses": [],
+                    "unit_id": "unit.4993fba5b6f2268a313f84c95a7d0bb0"
+                  },
+                  {
+                    "definition_id": "MOCK_P06_ENEMY_001",
+                    "hp": 0,
+                    "max_hp": 1,
+                    "shield": 0,
+                    "side": "ENEMY",
+                    "slot": 0,
+                    "statuses": [],
+                    "unit_id": "fixture.native-enemy"
+                  }
+                ],
+                "zones": {
+                  "discard": [
+                    "fixture.card"
+                  ],
+                  "draw": [],
+                  "exhaust": [],
+                  "hand": []
+                }
+              }
+            },
+            "kind": "BATTLE",
+            "reference": "native.battle",
+            "sha256": "4e79b3f6a32249527445d213bef6e4a0b08d522389a65fc4337f45aeb871c7a5"
+          }
+        ],
+        "grant": {
+          "characters": [],
+          "eligibility_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+          "equipment": [],
+          "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+          "identity": {
+            "campaign_id": "YLTT_STAGE_SCOPE",
+            "stage_id": "MOCK_P07_STAGE_001"
+          },
+          "issuer": "P18",
+          "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+          "policy_version": "P07-STAGES-0.1.0-proposal",
+          "profile_id": "fixture.native.save",
+          "resources": [
+            {
+              "amount": 3,
+              "resource_id": "MOCK_P04_TRAINING_TOKEN"
+            }
+          ],
+          "schema_version": "P17-GRANT-INPUT/0.1.0-proposal",
+          "source_kind": "STAGE_FIRST_CLEAR",
+          "xp": [
+            {
+              "amount": 4,
+              "character_id": "MOCK_P04_CHAR_001"
+            },
+            {
+              "amount": 4,
+              "character_id": "MOCK_P04_CHAR_002"
+            },
+            {
+              "amount": 4,
+              "character_id": "MOCK_P04_CHAR_003"
+            }
+          ]
+        },
+        "new_first_clear_keys": [
+          "b87a20a5b4d8d5ff22d8424203038e42a1f496c4a2866f8e5146eb8b4d141464"
+        ],
+        "request": {
+          "catalog_sha256": "921a1d238ba17e9d862d228f42bdb51b63296c8e97cbc8a2decbd5d82266bc29",
+          "continuity_ref": "fixture.continuity",
+          "expected_revision": 1,
+          "kind": "SETTLE",
+          "payload": {
+            "result": {
+              "battle_id": "native.battle",
+              "content_version": "fixture:P18-battle-v1",
+              "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+              "dto_type": "BattleResult",
+              "final_snapshot_sha256": "8a068faf102f30aec1160c3fa35373f8e747f434e83c55aae14c5cfbf117a678",
+              "outcome": "WIN",
+              "profile_scope": "fixture.native.save",
+              "replay_input_sha256": "30f2e04444df3297b2916304d97f4b8eee0b438090628fc4f202ecd9b3f3e8d2",
+              "result_id": "result:d8ff60a81b0c8ca11114e92c66275eea729a28fb1b0a0f6d6cba85c945b79548",
+              "rules_version": "P02-BATTLE-0.1.0-draft",
+              "stage_id": "MOCK_P07_STAGE_001",
+              "terminal_event_seq": 7,
+              "terminal_revision": 1
+            }
+          },
+          "player_save_scope_id": "fixture.native.save",
+          "request_id": "req.2",
+          "schema_version": "P18-COMMAND/0.1.0-isolated",
+          "store_instance": "fixture.store"
+        },
+        "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96",
+        "schema_version": "P18-CANDIDATE/0.1.0-isolated"
+      },
+      "wallet_character_candidate": {
+        "after_sha256": "9e28d93047c0ec467091cd8ea51836e1e300b5c4e4c0dcbfbe7abd255aa65378",
+        "after_state": {
+          "characters": [
+            {
+              "character_id": "MOCK_P04_CHAR_001",
+              "equipment": [],
+              "level": 1,
+              "skill_rank": 1,
+              "xp_total": 4
+            },
+            {
+              "character_id": "MOCK_P04_CHAR_002",
+              "equipment": [],
+              "level": 1,
+              "skill_rank": 1,
+              "xp_total": 4
+            },
+            {
+              "character_id": "MOCK_P04_CHAR_003",
+              "equipment": [],
+              "level": 1,
+              "skill_rank": 1,
+              "xp_total": 4
+            }
+          ],
+          "content_sha256": "1aec0db77daa14bb552746e250f733e695294d22dc0742616d8f1126dd763875",
+          "continuity_ref": "fixture.continuity",
+          "entitlements": [
+            {
+              "grant": {
+                "characters": [
+                  "MOCK_P04_CHAR_001",
+                  "MOCK_P04_CHAR_002",
+                  "MOCK_P04_CHAR_003"
+                ],
+                "eligibility_ref": "fixture.bootstrap-only",
+                "equipment": [],
+                "grant_ref": "fixture.bootstrap",
+                "identity": {
+                  "battle_id": "fixture.bootstrap",
+                  "campaign_id": "fixture.bootstrap",
+                  "stage_id": "fixture.not-a-player-stage"
+                },
+                "issuer": "P18",
+                "policy_sha256": "6013752bbccb5d49e2c7c70389a28f5a1c79e2a57e2cf3b6ac9b87e7777234fb",
+                "policy_version": "fixture.bootstrap",
+                "profile_id": "fixture.native.save",
+                "resources": [],
+                "schema_version": "P17-GRANT-INPUT/0.1.0-proposal",
+                "source_kind": "STAGE_REPEAT",
+                "xp": []
+              },
+              "key": "050857dea3bb16037e390a96fd9806a41344d9523b02c693a83bfe2d5acb6f91",
+              "semantic_sha256": "8b32c643e190068862553b68c318dd9da7cbe054750ba6c52a845a44cd892222",
+              "status": "ACTIVE"
+            },
+            {
+              "grant": {
+                "characters": [],
+                "eligibility_ref": "p18.receipt.7b31db8d6ded2edf7b0d76cc8b94a3c100783b19dc6a877f04a105dc42fddd0b",
+                "equipment": [],
+                "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+                "identity": {
+                  "campaign_id": "YLTT_STAGE_SCOPE",
+                  "stage_id": "MOCK_P07_STAGE_001"
+                },
+                "issuer": "P18",
+                "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+                "policy_version": "P07-STAGES-0.1.0-proposal",
+                "profile_id": "fixture.native.save",
+                "resources": [
+                  {
+                    "amount": 3,
+                    "resource_id": "MOCK_P04_TRAINING_TOKEN"
+                  }
+                ],
+                "schema_version": "P17-GRANT-INPUT/0.1.0-proposal",
+                "source_kind": "STAGE_FIRST_CLEAR",
+                "xp": [
+                  {
+                    "amount": 4,
+                    "character_id": "MOCK_P04_CHAR_001"
+                  },
+                  {
+                    "amount": 4,
+                    "character_id": "MOCK_P04_CHAR_002"
+                  },
+                  {
+                    "amount": 4,
+                    "character_id": "MOCK_P04_CHAR_003"
+                  }
+                ]
+              },
+              "key": "17a67d57e58ae864cd4b55ea410596639a58a915466bbe34625c21e254f59107",
+              "semantic_sha256": "faf6713b439a554bf16e6a18e4efca6d2548210311be98ad0f653aa6610470cd",
+              "status": "ACTIVE"
+            }
+          ],
+          "equipment_instances": [],
+          "operations": [
+            {
+              "committed_revision": 1,
+              "request_id": "p18.meta.033d040a46813d4b06c4c4038044996688ea12e96f5ad0ff68d68c09c32e82cc",
+              "request_sha256": "753b089b129e0b20455723cdf53e64f75df6ec7a8302b232da8ef0e6b12f4dcb"
+            },
+            {
+              "committed_revision": 2,
+              "request_id": "fixture.set-party",
+              "request_sha256": "7fe8ac4641601978068dd3836f2069fc038ea1dfc237893782490f2023240cfb"
+            },
+            {
+              "committed_revision": 3,
+              "request_id": "p18.meta.988d92405084fd2ff964038f3bea19a82fc899fcf8999ebc8246e548b4f77ebe",
+              "request_sha256": "43559e6b747d27ec93429fec7557ec7787775e086d7c1b60f8343710312f53ad"
+            }
+          ],
+          "party_slots": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "profile_id": "fixture.native.save",
+          "revision": 3,
+          "schema_version": "P17-STATE/0.1.0-isolated",
+          "store_instance": "fixture.store",
+          "wallet": {
+            "consumptions": [],
+            "lots": [
+              {
+                "available": 3,
+                "created_revision": 3,
+                "lot_id": "f91cb02ec4bdb6711c08d4caf6465de1a8886ec09382250bc24eef0859a66434",
+                "quantity": 3,
+                "reserved": 0,
+                "resource_id": "MOCK_P04_TRAINING_TOKEN",
+                "revoked": 0,
+                "source": {
+                  "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+                  "policy_version": "P07-STAGES-0.1.0-proposal",
+                  "source_key": "17a67d57e58ae864cd4b55ea410596639a58a915466bbe34625c21e254f59107",
+                  "source_kind": "STAGE_FIRST_CLEAR"
+                },
+                "spent": 0
+              }
+            ],
+            "reservations": []
+          },
+          "wallet_revision": 1
+        },
+        "before_sha256": "01e5768857509e5a01c982b79c6cc07537becc33dc00d08093c03c70520254cd",
+        "commit_scope": "ISOLATED_CANDIDATE_NOT_COMMITTED",
+        "evidence_binding": {
+          "reference": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb",
+          "sha256": "5252c916ad206ce0c2ad43ac4552c7b866f299e6d2bccd153d13fceb7a769b9a"
+        },
+        "lock_order": [
+          {
+            "key": "profile.c53bf464d7ad64b7003b3abed96e94f359671822189fdb4220601996c161214d",
+            "rank": 10
+          },
+          {
+            "key": "wallet.c53bf464d7ad64b7003b3abed96e94f359671822189fdb4220601996c161214d",
+            "rank": 20
+          },
+          {
+            "key": "request.ae794320a2ca92b4e8d26f7c7ec17a5e9962944d8c61d5d49ccb2df1083e8aa1",
+            "rank": 30
+          }
+        ],
+        "request": {
+          "content_sha256": "1aec0db77daa14bb552746e250f733e695294d22dc0742616d8f1126dd763875",
+          "continuity_ref": "fixture.continuity",
+          "expected_revision": 2,
+          "expected_wallet_revision": 0,
+          "kind": "APPLY_GRANT",
+          "payload": {
+            "grant_ref": "p18.grant.39fbc674ae60cae0efe8dd6c5836982703270bdb0e12071dac971eec03ac41eb"
+          },
+          "profile_id": "fixture.native.save",
+          "request_id": "p18.meta.988d92405084fd2ff964038f3bea19a82fc899fcf8999ebc8246e548b4f77ebe",
+          "schema_version": "P17-COMMAND/0.1.0-isolated",
+          "store_instance": "fixture.store"
+        },
+        "request_sha256": "43559e6b747d27ec93429fec7557ec7787775e086d7c1b60f8343710312f53ad",
+        "required_counterpart_owner": "P18",
+        "schema_version": "P17-CANDIDATE/0.1.0-isolated",
+        "wallet_delta": {
+          "allocations": [
+            {
+              "available_delta": 3,
+              "reserved_delta": 0,
+              "resource_id": "MOCK_P04_TRAINING_TOKEN",
+              "source": {
+                "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+                "policy_version": "P07-STAGES-0.1.0-proposal",
+                "source_key": "17a67d57e58ae864cd4b55ea410596639a58a915466bbe34625c21e254f59107",
+                "source_kind": "STAGE_FIRST_CLEAR"
+              }
+            }
+          ],
+          "beneficiary_id": "fixture.native.save",
+          "changes": [
+            {
+              "available_delta": 3,
+              "reserved_delta": 0,
+              "resource_id": "MOCK_P04_TRAINING_TOKEN"
+            }
+          ],
+          "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+          "dto_type": "WalletDeltaCandidate",
+          "expected_wallet_revision": 0,
+          "intent_sha256": "43559e6b747d27ec93429fec7557ec7787775e086d7c1b60f8343710312f53ad",
+          "reason_code": "ISOLATED_CANDIDATE_ONLY",
+          "unresolved": false,
+          "wallet_before_sha256": "4705757eeb4820b6a0b467c6e529cdf66adeadafb0baa26e45b043c804fb4606",
+          "wallet_id": "wallet.c53bf464d7ad64b7003b3abed96e94f3"
+        }
+      }
+    },
+    "body_sha256": "52c4f77fe14555c5eb750c0ca08c59457a4327d9687ca7c43a3ead2a106620d5",
+    "contract_acceptance": "PREPARED_NOT_ACCEPTED",
+    "durable": false,
+    "p13_projection": {
+      "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "domain_candidate_sha256": "52c4f77fe14555c5eb750c0ca08c59457a4327d9687ca7c43a3ead2a106620d5",
+      "dto_type": "AtomicCommitProposal",
+      "expected_domain_revision": 1,
+      "expected_store_instance": "fixture.store",
+      "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96",
+      "transaction_id": "p18.tx.58f4ac2c70a9bb6c4845701250b8eea6a52b44e0c36f778144a3673cd60537c2",
+      "transaction_kind": "STAGE_PROGRESS_WALLET",
+      "wallet_candidate": {
+        "allocations": [
+          {
+            "available_delta": 3,
+            "reserved_delta": 0,
+            "resource_id": "MOCK_P04_TRAINING_TOKEN",
+            "source": {
+              "policy_sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+              "policy_version": "P07-STAGES-0.1.0-proposal",
+              "source_key": "17a67d57e58ae864cd4b55ea410596639a58a915466bbe34625c21e254f59107",
+              "source_kind": "STAGE_FIRST_CLEAR"
+            }
+          }
+        ],
+        "beneficiary_id": "fixture.native.save",
+        "changes": [
+          {
+            "available_delta": 3,
+            "reserved_delta": 0,
+            "resource_id": "MOCK_P04_TRAINING_TOKEN"
+          }
+        ],
+        "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+        "dto_type": "WalletDeltaCandidate",
+        "expected_wallet_revision": 0,
+        "intent_sha256": "43559e6b747d27ec93429fec7557ec7787775e086d7c1b60f8343710312f53ad",
+        "reason_code": "ISOLATED_CANDIDATE_ONLY",
+        "unresolved": false,
+        "wallet_before_sha256": "4705757eeb4820b6a0b467c6e529cdf66adeadafb0baa26e45b043c804fb4606",
+        "wallet_id": "wallet.c53bf464d7ad64b7003b3abed96e94f3"
+      }
+    },
+    "schema_version": "P18-ATOMIC-BUNDLE/0.1.0-proposal"
+  },
+  "simulated_receipt": {
+    "bundle_sha256": "c88247ed4ab32e05fc0055fa468ee24bc613dfe78e6f6b1f6d733aeb291caeba",
+    "decision": "FIRST_CLEAR",
+    "durable": false,
+    "meta_sha256": "9e28d93047c0ec467091cd8ea51836e1e300b5c4e4c0dcbfbe7abd255aa65378",
+    "origin": "P18_AUTHOR_MEMORY_MODEL_NOT_P21",
+    "request_id": "req.2",
+    "request_sha256": "1566e6caca3d2e5ca280415e9b32da6e07ae410f217da0ab0b4b8fc5983dbe96",
+    "revision": 2,
+    "stage_sha256": "83c98bd908adde683b2c1b430a777da0f57d98870acf8d83448edf8f095c7691",
+    "status": "COMMITTED_SIMULATION",
+    "transaction_id": "p18.tx.58f4ac2c70a9bb6c4845701250b8eea6a52b44e0c36f778144a3673cd60537c2"
+  },
+  "wallet_balance": 3,
+  "xp_each": [
+    4,
+    4,
+    4
+  ]
+}

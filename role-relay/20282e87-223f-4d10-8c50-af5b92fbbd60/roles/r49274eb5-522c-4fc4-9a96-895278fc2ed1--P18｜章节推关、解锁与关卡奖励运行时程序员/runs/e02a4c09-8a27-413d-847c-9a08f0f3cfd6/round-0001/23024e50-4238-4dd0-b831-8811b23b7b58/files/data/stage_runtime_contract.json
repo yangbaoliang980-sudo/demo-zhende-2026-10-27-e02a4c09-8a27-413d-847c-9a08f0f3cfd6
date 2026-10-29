@@ -1,0 +1,195 @@
+{
+  "schema_version": "P18-CONTRACT-SPEC/0.1.0-proposal",
+  "task_id": "P18-S07-STAGES-001",
+  "format": "MACHINE_READABLE_INTERFACE_SPEC_NOT_JSON_SCHEMA",
+  "status": "PREPARED_NOT_ACCEPTED",
+  "implementation_version": "P18-STAGES/0.1.0-isolated",
+  "base_contract": {
+    "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+    "size_bytes": 93217,
+    "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+  },
+  "implementations": [
+    {
+      "path": "stage_runtime/common.py",
+      "size_bytes": 2761,
+      "sha256": "0816f5d85f62386f0322e0e389b183d67f901554cf080a4d00eb110838400c8b"
+    },
+    {
+      "path": "stage_runtime/content.py",
+      "size_bytes": 10784,
+      "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+    },
+    {
+      "path": "stage_runtime/ports.py",
+      "size_bytes": 1381,
+      "sha256": "67a14a1e37baee9214a8c13a29463d6dadcba9edc6eae826efdea6e14b0be9ea"
+    },
+    {
+      "path": "stage_runtime/state.py",
+      "size_bytes": 10584,
+      "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+    },
+    {
+      "path": "stage_runtime/service.py",
+      "size_bytes": 24862,
+      "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+    },
+    {
+      "path": "stage_runtime/projection.py",
+      "size_bytes": 3376,
+      "sha256": "eee49f368604cc1049b84e373d7bae6edf6310d4560c3d2e58fb8fdee0bee3df"
+    },
+    {
+      "path": "stage_runtime/transactions.py",
+      "size_bytes": 4866,
+      "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+    }
+  ],
+  "request": {
+    "schema_version": "P18-COMMAND/0.1.0-isolated",
+    "closed_fields": [
+      "schema_version",
+      "request_id",
+      "player_save_scope_id",
+      "store_instance",
+      "continuity_ref",
+      "expected_revision",
+      "catalog_sha256",
+      "kind",
+      "payload"
+    ],
+    "payloads": {
+      "ENTER": [
+        "stage_id",
+        "battle_id",
+        "entry_ref",
+        "seed"
+      ],
+      "SETTLE": [
+        "result"
+      ],
+      "CLOSE": [
+        "battle_id"
+      ],
+      "REVOKE": [
+        "control_ref"
+      ]
+    },
+    "identifiers": "ASCII [A-Za-z0-9][A-Za-z0-9._:/-]{0,127}",
+    "integers": "bool is not integer; nonnegative safe integers, seed 1..2^32-1",
+    "request_retry": "preserve exact full command bytes for same request_id"
+  },
+  "ports": {
+    "resolve_store": {
+      "version": "P18-STORE-FENCE/0.1.0-proposal",
+      "fields": [
+        "schema_version",
+        "player_save_scope_id",
+        "store_instance",
+        "continuity_ref",
+        "revision",
+        "state_sha256",
+        "status"
+      ],
+      "status_enum": [
+        "CONSISTENT",
+        "COMMIT_UNKNOWN",
+        "RECONCILIATION_REQUIRED"
+      ]
+    },
+    "resolve_entry": {
+      "version": "P18-ENTRY-EVIDENCE/0.1.0-proposal",
+      "fields": [
+        "schema_version",
+        "entry_ref",
+        "player_save_scope_id",
+        "store_instance",
+        "continuity_ref",
+        "stage_id",
+        "battle_id",
+        "catalog_sha256",
+        "party_snapshot",
+        "party_source_sha256",
+        "battle_rules_version",
+        "battle_content_version",
+        "battle_content_sha256"
+      ]
+    },
+    "resolve_battle": {
+      "version": "P18-BATTLE-EVIDENCE/0.1.0-proposal",
+      "fields": [
+        "schema_version",
+        "battle_id",
+        "admission_sha256",
+        "snapshot",
+        "result"
+      ],
+      "snapshot": "original P13 BattleSnapshot",
+      "result": "original P13 BattleResult or null for live/abort/fault"
+    },
+    "resolve_control": {
+      "version": "P18-REVOCATION-EVIDENCE/0.1.0-proposal",
+      "fields": [
+        "schema_version",
+        "control_ref",
+        "player_save_scope_id",
+        "battle_id",
+        "admission_sha256",
+        "superseded_result",
+        "new_revision"
+      ]
+    }
+  },
+  "authority_rule": "Trusted composition only; coherent reads under P21 lock/CAS; document hash is not authentication",
+  "state_version": "P18-STATE/0.1.0-isolated",
+  "candidate_version": "P18-CANDIDATE/0.1.0-isolated",
+  "joint_version": "P18-ATOMIC-BUNDLE/0.1.0-proposal",
+  "plan_statuses": [
+    "CANDIDATE",
+    "DUPLICATE_NO_OP",
+    "REJECTED",
+    "BLOCKED"
+  ],
+  "first_clear_identity": [
+    "STAGE_FIRST_CLEAR",
+    "stable player_save_scope_id",
+    "canonical stage_id"
+  ],
+  "repeat_identity": [
+    "STAGE_REPEAT_CLEAR",
+    "stable player_save_scope_id",
+    "canonical stage_id",
+    "battle_id",
+    "terminal_revision"
+  ],
+  "repeat_revision_rule": "No second grant for higher revision of same battle",
+  "atomic_write_set": [
+    "P18 stage state",
+    "attempt and terminal index",
+    "first-clear tombstones",
+    "derived unlock basis",
+    "P17 wallet and source ledger",
+    "P17 character XP",
+    "request fingerprint",
+    "transaction receipt"
+  ],
+  "read_only_views": [
+    "P18-PROGRESS-VIEW/0.1.0-proposal",
+    "original P13 StageProgressView if lossless"
+  ],
+  "default_repeat_enabled": false,
+  "entry_cost_supported": 0,
+  "rng_drop_draws_supported": 0,
+  "blocked_production_features": [
+    "durable commit",
+    "cross-store restore",
+    "formal ID aliases",
+    "new stage set migration",
+    "hold release/regrant",
+    "approved nonzero cost",
+    "accepted positive repeat budget"
+  ],
+  "tests": "tests/stage_unit/**",
+  "sample": "examples/joint_transaction.json"
+}

@@ -1,0 +1,299 @@
+{
+  "schema_version": "P18-RFC-REGISTER/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "no_messages_sent": true,
+  "IC_owners_from_V6": {
+    "IC-11": "P07",
+    "IC-13": "P18",
+    "IC-20": "P17"
+  },
+  "physical_transaction_owner": "P21",
+  "items": [
+    {
+      "rfc_id": "P18-RFC-001",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P13",
+        "P17",
+        "P21"
+      ],
+      "interfaces": [
+        "IC-13",
+        "IC-20"
+      ],
+      "title": "联合事务与稳定 scope 映射",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P17/P17_API.md",
+          "size_bytes": 16158,
+          "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+        },
+        {
+          "path": "upstream/P17/runtime/meta/wallet/rules.py",
+          "size_bytes": 15201,
+          "sha256": "b89f4e330c79887a6391b87fbfcfec3d6f147b63862c4da00f5de07293ac7616"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "stage_runtime/transactions.py",
+          "size_bytes": 4866,
+          "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+        },
+        {
+          "path": "stage_runtime/service.py",
+          "size_bytes": 24862,
+          "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+        },
+        {
+          "path": "first_clear_keys.json",
+          "size_bytes": 2225,
+          "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+        }
+      ],
+      "requested_decision": "接受完整 P18/P17 复合候选；profile 与 stable save scope 明确绑定；固定 YLTT_STAGE_SCOPE；真实 P21 原子提交和回执",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    },
+    {
+      "rfc_id": "P18-RFC-002",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P13",
+        "P14",
+        "P21"
+      ],
+      "interfaces": [
+        "IC-13"
+      ],
+      "title": "权威 admission、终局索引和撤销",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_result_schema.md",
+          "size_bytes": 5464,
+          "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0"
+        },
+        {
+          "path": "upstream/P14/handoff/interface_rfcs.json",
+          "size_bytes": 7259,
+          "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "stage_runtime/ports.py",
+          "size_bytes": 1381,
+          "sha256": "67a14a1e37baee9214a8c13a29463d6dadcba9edc6eae826efdea6e14b0be9ea"
+        },
+        {
+          "path": "stage_runtime/service.py",
+          "size_bytes": 24862,
+          "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+        },
+        {
+          "path": "stage_runtime/state.py",
+          "size_bytes": 10584,
+          "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+        }
+      ],
+      "requested_decision": "四个只读解析端口及同事务一致读；ABORT/FAULT 不伪造 BattleResult；更高终局只对账，无第二份奖励",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    },
+    {
+      "rfc_id": "P18-RFC-003",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P13",
+        "P20",
+        "P07"
+      ],
+      "interfaces": [
+        "IC-11",
+        "IC-13"
+      ],
+      "title": "完整进度视图与审查状态",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P07/content/stages/stage_graph.json",
+          "size_bytes": 12644,
+          "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+        },
+        {
+          "path": "upstream/P07/design/stages/first_clear_policy.md",
+          "size_bytes": 10814,
+          "sha256": "af618365ca6a875489589dfe20c9ae4be2c11f1569edb0251fc9e0c3eff3be1f"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "stage_runtime/projection.py",
+          "size_bytes": 3376,
+          "sha256": "eee49f368604cc1049b84e373d7bae6edf6310d4560c3d2e58fb8fdee0bee3df"
+        },
+        {
+          "path": "examples/stage_progress_view.json",
+          "size_bytes": 950,
+          "sha256": "292d37e1a03effd90edbefa319fb925c4309b6c666e6f2a5e6a6281d875565c2"
+        }
+      ],
+      "requested_decision": "增加 active/review/quarantine、有效通关与首通消费分离；原 StageProgressView 在有损时拒绝",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    },
+    {
+      "rfc_id": "P18-RFC-004",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P13"
+      ],
+      "interfaces": [
+        "IC-13"
+      ],
+      "title": "真实路径与白名单",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P13/architecture/actual_path_mapping.json",
+          "size_bytes": 16790,
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "actual_path_request.json",
+          "size_bytes": 2767,
+          "sha256": "401b29ccb1b15f4d21275bbeb8d932f6d9eebccaf69341c0b78e26c227802d76"
+        }
+      ],
+      "requested_decision": "请 owner 提供固定工程 base 与 P18 三条 actual path；建议路径不是写授权",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    },
+    {
+      "rfc_id": "P18-RFC-005",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P13",
+        "P21",
+        "P22"
+      ],
+      "interfaces": [
+        "IC-13",
+        "IC-20"
+      ],
+      "title": "存档连续性、长历史和内容迁移",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+          "size_bytes": 3173,
+          "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808"
+        },
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P07/content/stages/stage_graph.json",
+          "size_bytes": 12644,
+          "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "stage_runtime/state.py",
+          "size_bytes": 10584,
+          "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+        },
+        {
+          "path": "stage_runtime/content.py",
+          "size_bytes": 10784,
+          "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+        }
+      ],
+      "requested_decision": "备份外权威 head；分段保留幂等历史与首通；明确 canonical ID alias、新关卡集合及跨 store 迁移，禁止静默重置",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    },
+    {
+      "rfc_id": "P18-RFC-006",
+      "rfc_version": "0.1.0",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "receivers": [
+        "P07",
+        "P14",
+        "P13",
+        "P21"
+      ],
+      "interfaces": [
+        "IC-11",
+        "IC-13"
+      ],
+      "title": "原案例 ST-030/031 与单活动规则裁决",
+      "baseline_inputs": [
+        {
+          "path": "upstream/P07/content/stages/stage_retry_cases.json",
+          "size_bytes": 170850,
+          "sha256": "98e5bbf9097947f7b918da10a89344fd1b7d3ad7a231512dd46bb2855f15c7d8"
+        },
+        {
+          "path": "upstream/P07/content/stages/stage_graph.json",
+          "size_bytes": 12644,
+          "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+        },
+        {
+          "path": "upstream/P07/design/stages/first_clear_policy.md",
+          "size_bytes": 10814,
+          "sha256": "af618365ca6a875489589dfe20c9ae4be2c11f1569edb0251fc9e0c3eff3be1f"
+        }
+      ],
+      "proposed_artifacts": [
+        {
+          "path": "tests/stage_unit/test_transactions.py",
+          "size_bytes": 7930,
+          "sha256": "daab8bb10b10bc70acf357e24dfb928341fd66e85bcedeea23757f9226d9ebac"
+        },
+        {
+          "path": "tests/stage_unit/test_settlement.py",
+          "size_bytes": 9538,
+          "sha256": "ec74e7756d823ba186e6f5995edd27cb82678a812af59c790f661d8f9b8f98d8"
+        },
+        {
+          "path": "P18_API.md",
+          "size_bytes": 13324,
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        }
+      ],
+      "requested_decision": "ST-030 当前隔离实现添加 review hold，不计原案例 PASS；ST-031 的历史双 admission 前提需合法导入/仲裁接口，作者 CAS 测试不能等同原案例",
+      "upstream_changes_applied": false,
+      "accepted_version": null,
+      "conflict_policy": "Preserve both base hashes and ChangeRequest; no overwrite merge"
+    }
+  ]
+}

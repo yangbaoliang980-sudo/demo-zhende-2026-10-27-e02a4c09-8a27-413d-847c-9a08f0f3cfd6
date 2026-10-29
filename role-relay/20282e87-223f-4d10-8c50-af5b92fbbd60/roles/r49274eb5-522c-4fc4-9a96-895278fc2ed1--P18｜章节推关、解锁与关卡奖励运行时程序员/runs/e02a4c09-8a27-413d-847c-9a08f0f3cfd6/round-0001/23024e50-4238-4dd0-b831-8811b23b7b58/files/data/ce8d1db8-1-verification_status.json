@@ -1,0 +1,202 @@
+{
+  "schema_version": "P18-VERIFICATION/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "version": "P18-STAGES/0.1.0-isolated",
+  "overall": "ISOLATED_RUNTIME_DELIVERED / PRODUCTION_INTEGRATION_BLOCKED",
+  "author_design_review": "COMPLETED_AUTHOR_REVIEW",
+  "author_tests": {
+    "tests_run": 114,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true
+  },
+  "author_test_groups": {
+    "test_admission": 21,
+    "test_boundaries": 21,
+    "test_native_contract": 4,
+    "test_process_reload": 1,
+    "test_recovery": 22,
+    "test_settlement": 30,
+    "test_transactions": 15
+  },
+  "original_P07_replay": {
+    "total_source_cases": 67,
+    "executed": 35,
+    "pass": 35,
+    "fail": 0,
+    "not_run": 32
+  },
+  "original_P13_schema": {
+    "status": "PASS_LOCAL_SAMPLES",
+    "unique_dto_count": 38,
+    "by_type": {
+      "AtomicCommitProposal": 9,
+      "BattleCommand": 1,
+      "BattleCommitBatch": 1,
+      "BattleEvent": 8,
+      "BattleReply": 1,
+      "BattleResult": 5,
+      "BattleSnapshot": 5,
+      "PartySnapshot": 4,
+      "StageProgressView": 1,
+      "WalletDeltaCandidate": 3
+    }
+  },
+  "P14_native_P17_actual": {
+    "status": "PASS_AUTHOR_ISOLATED",
+    "test_count": 4,
+    "included_in_114": true
+  },
+  "cross_process_determinism": "PASS_AUTHOR_CROSS_PROCESS",
+  "sample_replay": "PASS_AUTHOR_REPLAY",
+  "child_process_reload": {
+    "status": "PASS_AUTHOR",
+    "test_count": 1,
+    "included_in_114": true,
+    "durable_restart": false
+  },
+  "P21_durable_transaction": "NOT_RUN",
+  "contract_owner_acceptance": "NOT_RUN",
+  "P32": "NOT_RUN",
+  "P33": "NOT_RUN",
+  "P35": "NOT_RUN",
+  "target_engine": "NOT_RUN",
+  "Windows": "NOT_RUN",
+  "real_Anki": "NOT_RUN",
+  "desktop_E2E": "NOT_RUN",
+  "production_preflight": {
+    "status": "BLOCKED",
+    "exit_code": 3
+  },
+  "test_counts_not_additive": true,
+  "final_archive_fresh_run": "See external P18_delivery_receipt.json; not included in immutable ZIP to avoid self-reference",
+  "runs": {
+    "author_final": {
+      "receipt": {
+        "path": "evidence/runs/author_final/run_receipt.json",
+        "size_bytes": 23473,
+        "sha256": "3545745352698ebba990dfec12968b5bc3ee864f577f27468f9177ac3fac4cc3"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/author_final/stdout.log",
+        "size_bytes": 16836,
+        "sha256": "60b8980a4e1b125dacbefc6016bc8199a676de87217bf6cc0d60cb58600eac44"
+      },
+      "stderr": {
+        "path": "evidence/runs/author_final/stderr.log",
+        "size_bytes": 16021,
+        "sha256": "3f7efe8d535b513492c9d07dc3d7e76ca1894027b70ec3e4bc0c47baf2ca0501"
+      }
+    },
+    "contracts_final": {
+      "receipt": {
+        "path": "evidence/runs/contracts_final/run_receipt.json",
+        "size_bytes": 23479,
+        "sha256": "1572f4ea5d37f234ef95d7c38f1db6bbf301649e9e4026a7b730c935e8f146e3"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/contracts_final/stdout.log",
+        "size_bytes": 6035,
+        "sha256": "c980f53b14830b6b875ab93146f15ea9b90f7550c0df73380beb7570af0eb641"
+      },
+      "stderr": {
+        "path": "evidence/runs/contracts_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "p07_replay_final": {
+      "receipt": {
+        "path": "evidence/runs/p07_replay_final/run_receipt.json",
+        "size_bytes": 23476,
+        "sha256": "af10786b5c0b30f6473d4df2ac0728c53c2cb85057362f6ebbb3f54f423636e7"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/p07_replay_final/stdout.log",
+        "size_bytes": 235160,
+        "sha256": "efdfc0e4f1e4006d9f37fdf15ee2a4ee457f0d77c908adb263c134fbb6129bb5"
+      },
+      "stderr": {
+        "path": "evidence/runs/p07_replay_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "replay_demo_final": {
+      "receipt": {
+        "path": "evidence/runs/replay_demo_final/run_receipt.json",
+        "size_bytes": 23477,
+        "sha256": "40e93aa43ef1117cda74f1281a0c4a10d6280d66aab7ae99b6285c3764536ed0"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/replay_demo_final/stdout.log",
+        "size_bytes": 692,
+        "sha256": "48f47c209027a6d09fc8297708a768af61d7d3ce4bf9b4585c4998d12aec31a5"
+      },
+      "stderr": {
+        "path": "evidence/runs/replay_demo_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "determinism_final": {
+      "receipt": {
+        "path": "evidence/runs/determinism_final/run_receipt.json",
+        "size_bytes": 23483,
+        "sha256": "64f18d883b4cdeaa023f72728ee7ce8de3732cf65b8296135060bf9078769d6d"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/determinism_final/stdout.log",
+        "size_bytes": 2342,
+        "sha256": "45c2cb5aed216a64c61bbc6bfcd6fadf88923697aae52007a0a7cfd6d62654ed"
+      },
+      "stderr": {
+        "path": "evidence/runs/determinism_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "sources_final": {
+      "receipt": {
+        "path": "evidence/runs/sources_final/run_receipt.json",
+        "size_bytes": 23475,
+        "sha256": "e95062f5df601c300429b5d9623c4a19f14017a989a382ea1eb20a6fe62bfe73"
+      },
+      "exit_code": 0,
+      "stdout": {
+        "path": "evidence/runs/sources_final/stdout.log",
+        "size_bytes": 17910,
+        "sha256": "e1cd20b3f9914a1364807048e1c49723db9675631ba1e134a0206c30a0dbbd51"
+      },
+      "stderr": {
+        "path": "evidence/runs/sources_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "preflight_final": {
+      "receipt": {
+        "path": "evidence/runs/preflight_final/run_receipt.json",
+        "size_bytes": 23473,
+        "sha256": "213c0f7e0a2a5f561008013147ba31d52e781ffa35caecbdb86fe96462ea9c0b"
+      },
+      "exit_code": 3,
+      "stdout": {
+        "path": "evidence/runs/preflight_final/stdout.log",
+        "size_bytes": 3512,
+        "sha256": "1776fc68b17225556a250a4907c0f725674080706a88837f97da2b7ba189509c"
+      },
+      "stderr": {
+        "path": "evidence/runs/preflight_final/stderr.log",
+        "size_bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  }
+}

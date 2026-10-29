@@ -1,0 +1,42 @@
+{
+  "scope": "ONE_SLOT_ISOLATED_CONTRACT_EXECUTION",
+  "actual_modules": [
+    "P16 enemy_ai",
+    "P14 original battle_core",
+    "P13 original codec/schema"
+  ],
+  "fixture_dependencies": [
+    "P17 three-unit initial party",
+    "P15 declared END_TURN no-move candidate",
+    "P06 provisional enemy content",
+    "P16 behavior extension not persisted by P14"
+  ],
+  "requests": 3,
+  "commits": 2,
+  "duplicate_no_op": 1,
+  "preview_base_damage": 8,
+  "damage_events": [
+    {
+      "absorbed": 4,
+      "hp_after": 46,
+      "hp_loss": 4,
+      "overkill": 0,
+      "raw": 8,
+      "shield_after": 0,
+      "source_unit_id": "E1",
+      "target_unit_id": "H1"
+    }
+  ],
+  "hero_hp_before": 50,
+  "hero_hp_after": 46,
+  "final_revision": 2,
+  "rng_unchanged": true,
+  "phase_proposal_order": [
+    "MOCK_P06_PHASE_2",
+    "MOCK_P06_PHASE_3"
+  ],
+  "boss_phase_still_original": "MOCK_P06_PHASE_1",
+  "p14_behavior_commit": "BLOCKED",
+  "p14_phase_acceptance": "BLOCKED",
+  "game_E2E": "NOT_RUN"
+}

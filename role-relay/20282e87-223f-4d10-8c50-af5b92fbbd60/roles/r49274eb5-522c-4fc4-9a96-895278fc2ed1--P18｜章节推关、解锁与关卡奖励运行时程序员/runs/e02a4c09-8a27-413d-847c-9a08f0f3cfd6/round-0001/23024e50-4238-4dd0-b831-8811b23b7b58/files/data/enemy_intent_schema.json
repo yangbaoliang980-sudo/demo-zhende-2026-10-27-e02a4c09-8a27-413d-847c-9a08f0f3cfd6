@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Original P13 EnemyIntent / PhaseProposal projection; no fields changed",
+  "$defs": {
+    "EnemyIntent": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "EnemyIntent"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "intent_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "actor_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "skill_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "target_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+          },
+          "minItems": 0,
+          "maxItems": 4096
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "no_valid_target": {
+          "enum": [
+            "REJECT",
+            "SKIP"
+          ]
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "expected_revision",
+        "intent_id",
+        "actor_id",
+        "skill_id",
+        "target_ids",
+        "content_version",
+        "no_valid_target"
+      ],
+      "additionalProperties": false
+    },
+    "PhaseProposal": {
+      "type": "object",
+      "properties": {
+        "contract_version": {
+          "const": "YLTT-INTERNAL/0.1.0-isolated"
+        },
+        "dto_type": {
+          "const": "PhaseProposal"
+        },
+        "battle_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "expected_revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "proposal_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "boss_unit_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "from_phase_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "to_phase_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        },
+        "trigger_event_seq": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]*$"
+        }
+      },
+      "required": [
+        "contract_version",
+        "dto_type",
+        "battle_id",
+        "expected_revision",
+        "proposal_id",
+        "boss_unit_id",
+        "from_phase_id",
+        "to_phase_id",
+        "trigger_event_seq",
+        "content_version"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "oneOf": [
+    {
+      "$ref": "#/$defs/EnemyIntent"
+    },
+    {
+      "$ref": "#/$defs/PhaseProposal"
+    }
+  ]
+}

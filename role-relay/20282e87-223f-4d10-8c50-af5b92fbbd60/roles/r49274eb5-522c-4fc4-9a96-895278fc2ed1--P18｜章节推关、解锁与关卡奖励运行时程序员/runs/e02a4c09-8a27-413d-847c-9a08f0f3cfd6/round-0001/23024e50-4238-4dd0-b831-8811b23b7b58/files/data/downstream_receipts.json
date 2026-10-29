@@ -1,0 +1,495 @@
+{
+  "schema_version": "P18-DOWNSTREAM-RECEIPTS/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "sent": false,
+  "accepted": false,
+  "recipient_count": 14,
+  "file_receipt_count": 69,
+  "rows": [
+    {
+      "recipient": "P20",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "recipient": "P20",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/projection.py",
+      "size_bytes": 3376,
+      "sha256": "eee49f368604cc1049b84e373d7bae6edf6310d4560c3d2e58fb8fdee0bee3df"
+    },
+    {
+      "recipient": "P20",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/stage_progress_view.json",
+      "size_bytes": 950,
+      "sha256": "292d37e1a03effd90edbefa319fb925c4309b6c666e6f2a5e6a6281d875565c2"
+    },
+    {
+      "recipient": "P20",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime_contract.json",
+      "size_bytes": 5466,
+      "sha256": "97e07602c832f2fa22b3cf30f153eef1b51262123cb6c2825b30be512d4798f3"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5704,
+      "sha256": "c9796066dc2dd2b1cd02d77639ed86f1be58d2063abecf2c8654a0754fbacdc8"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/transactions.py",
+      "size_bytes": 4866,
+      "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/state.py",
+      "size_bytes": 10584,
+      "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/joint_transaction.json",
+      "size_bytes": 23999,
+      "sha256": "34ff4bd8a63aded0c63f2354a82d8b6af042c9588ac8e3137dc18b1dae445c8d"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "tests/stage_unit/test_transactions.py",
+      "size_bytes": 7930,
+      "sha256": "daab8bb10b10bc70acf357e24dfb928341fd66e85bcedeea23757f9226d9ebac"
+    },
+    {
+      "recipient": "P21",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "tests/stage_unit/test_recovery.py",
+      "size_bytes": 7885,
+      "sha256": "8f5152d65a68cfb704fc6f4dbc8a5c54594d870dc9283e97cb54be4719e929c1"
+    },
+    {
+      "recipient": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "recipient": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/transactions.py",
+      "size_bytes": 4866,
+      "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+    },
+    {
+      "recipient": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/service.py",
+      "size_bytes": 24862,
+      "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+    },
+    {
+      "recipient": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "tests/support/p17_port.py",
+      "size_bytes": 3124,
+      "sha256": "b3cf7ab86608abaeb7152566102ba9ea7be32846228406a57906022b9acd9a2e"
+    },
+    {
+      "recipient": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "first_clear_keys.json",
+      "size_bytes": 2225,
+      "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+    },
+    {
+      "recipient": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "recipient": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/service.py",
+      "size_bytes": 24862,
+      "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+    },
+    {
+      "recipient": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/ports.py",
+      "size_bytes": 1381,
+      "sha256": "67a14a1e37baee9214a8c13a29463d6dadcba9edc6eae826efdea6e14b0be9ea"
+    },
+    {
+      "recipient": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "tests/stage_unit/test_native_contract.py",
+      "size_bytes": 2260,
+      "sha256": "6facd710b2ea9bec4a49eeab2904b7d537127535f6c36558e54e589995df291c"
+    },
+    {
+      "recipient": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/native_p14_contract_execution.json",
+      "size_bytes": 49416,
+      "sha256": "07d9033f8cf5957b29d43eeb132f2975b0b15d6e3c5d755a560bfb2802c05da6"
+    },
+    {
+      "recipient": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "actual_path_request.json",
+      "size_bytes": 2767,
+      "sha256": "401b29ccb1b15f4d21275bbeb8d932f6d9eebccaf69341c0b78e26c227802d76"
+    },
+    {
+      "recipient": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime_contract.json",
+      "size_bytes": 5466,
+      "sha256": "97e07602c832f2fa22b3cf30f153eef1b51262123cb6c2825b30be512d4798f3"
+    },
+    {
+      "recipient": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "contract_acceptance.json",
+      "size_bytes": 1788,
+      "sha256": "92bf28a517d31d255297989ddd1bf9f16a705040a35052f6d44a3a84ac6a8b0c"
+    },
+    {
+      "recipient": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "interface_rfcs.json",
+      "size_bytes": 10417,
+      "sha256": "bb7670ad1650edffa383d95068cd614a9f056be057fee5706c8e95a2988875fc"
+    },
+    {
+      "recipient": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "first_clear_keys.json",
+      "size_bytes": 2225,
+      "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+    },
+    {
+      "recipient": "P07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "p07_projection_results.json",
+      "size_bytes": 235160,
+      "sha256": "efdfc0e4f1e4006d9f37fdf15ee2a4ee457f0d77c908adb263c134fbb6129bb5"
+    },
+    {
+      "recipient": "P07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_progress_fixtures.json",
+      "size_bytes": 172482,
+      "sha256": "2ab6235389bc1c36ab81587a2435807261a033440c3b232159fd4622674e3d94"
+    },
+    {
+      "recipient": "P07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "interface_rfcs.json",
+      "size_bytes": 10417,
+      "sha256": "bb7670ad1650edffa383d95068cd614a9f056be057fee5706c8e95a2988875fc"
+    },
+    {
+      "recipient": "P07",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/demo_summary.json",
+      "size_bytes": 581,
+      "sha256": "129e66ee628fd212c04ffc0cfd89e641fb8aa7072ef60c089a312aa1ef40d5b4"
+    },
+    {
+      "recipient": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/demo_summary.json",
+      "size_bytes": 581,
+      "sha256": "129e66ee628fd212c04ffc0cfd89e641fb8aa7072ef60c089a312aa1ef40d5b4"
+    },
+    {
+      "recipient": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "first_clear_keys.json",
+      "size_bytes": 2225,
+      "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+    },
+    {
+      "recipient": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/content.py",
+      "size_bytes": 10784,
+      "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+    },
+    {
+      "recipient": "P05",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "blockers.json",
+      "size_bytes": 10556,
+      "sha256": "36d81aebef29c08219cada9511586fa55087294b9dacc35107373cd9ce46950d"
+    },
+    {
+      "recipient": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "first_clear_keys.json",
+      "size_bytes": 2225,
+      "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+    },
+    {
+      "recipient": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime/content.py",
+      "size_bytes": 10784,
+      "sha256": "fde50cc7c15fb9bf6689db1f9e0d59360d9417458460be4d527023ac3091a6cf"
+    },
+    {
+      "recipient": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "interface_rfcs.json",
+      "size_bytes": 10417,
+      "sha256": "bb7670ad1650edffa383d95068cd614a9f056be057fee5706c8e95a2988875fc"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 6289,
+      "sha256": "63e294bcd3d7405c55c418060cdc28f962c515bef9805e05d39e19b8020eeca8"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_reward_tests.py",
+      "size_bytes": 421,
+      "sha256": "719fbb1d26b89c53323595516a0f9411ba586625166f044cc8b0bc12f8d4332f"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "tools/author_tests.py",
+      "size_bytes": 1819,
+      "sha256": "8ccde0bdcadfd295ef4addce377cb9df63645a70ea161dfe84dc74a8b8f0233f"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 6612,
+      "sha256": "ce8d1db8fc8a40d3faaba8d95eab3f76356ad373c0921cb05ad198640cbc93b4"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "task_traceability.json",
+      "size_bytes": 15937,
+      "sha256": "3d5c96428668f5322df3d5dd4d3531d59dc8d7f652646910b5ff0840ae8aaf78"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/runs/author_final/run_receipt.json",
+      "size_bytes": 23473,
+      "sha256": "3545745352698ebba990dfec12968b5bc3ee864f577f27468f9177ac3fac4cc3"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/runs/author_final/stdout.log",
+      "size_bytes": 16836,
+      "sha256": "60b8980a4e1b125dacbefc6016bc8199a676de87217bf6cc0d60cb58600eac44"
+    },
+    {
+      "recipient": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "p07_projection_results.json",
+      "size_bytes": 235160,
+      "sha256": "efdfc0e4f1e4006d9f37fdf15ee2a4ee457f0d77c908adb263c134fbb6129bb5"
+    },
+    {
+      "recipient": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 6289,
+      "sha256": "63e294bcd3d7405c55c418060cdc28f962c515bef9805e05d39e19b8020eeca8"
+    },
+    {
+      "recipient": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5704,
+      "sha256": "c9796066dc2dd2b1cd02d77639ed86f1be58d2063abecf2c8654a0754fbacdc8"
+    },
+    {
+      "recipient": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "recipient": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "examples/lifecycle_execution.json",
+      "size_bytes": 422406,
+      "sha256": "04823653fbdfbc9ca0ec073749187c03dbb7a904ad38aa247c390e24378543fb"
+    },
+    {
+      "recipient": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 6612,
+      "sha256": "ce8d1db8fc8a40d3faaba8d95eab3f76356ad373c0921cb05ad198640cbc93b4"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "source_input_receipt.json",
+      "size_bytes": 55321,
+      "sha256": "3cbbfa8bea21b723e6f128d402f64fff68e1ed249321145d0384f75874efe078"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "verification_status.json",
+      "size_bytes": 6612,
+      "sha256": "ce8d1db8fc8a40d3faaba8d95eab3f76356ad373c0921cb05ad198640cbc93b4"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "author_review.md",
+      "size_bytes": 2243,
+      "sha256": "d1a4386474823791f7d23220577511b78ef61dd6e1cfcde24cd9c9a53aad3091"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "defect_log.json",
+      "size_bytes": 2117,
+      "sha256": "d3a41c53a4eb98448fd7a524fd416f4500580b67a45930829b10b4602e96871f"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/input_immutability_check.json",
+      "size_bytes": 888,
+      "sha256": "fd60478389a951520dec53d1e67c15ce8154deeb40dfac8eecbb585860101df4"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "evidence/final_source_binding_check.json",
+      "size_bytes": 494,
+      "sha256": "e540888da755140947191cd5403e20c89cb5e20c102d1c3ab8144daa6345f401"
+    },
+    {
+      "recipient": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "blockers.json",
+      "size_bytes": 10556,
+      "sha256": "36d81aebef29c08219cada9511586fa55087294b9dacc35107373cd9ce46950d"
+    },
+    {
+      "recipient": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 6289,
+      "sha256": "63e294bcd3d7405c55c418060cdc28f962c515bef9805e05d39e19b8020eeca8"
+    },
+    {
+      "recipient": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "blockers.json",
+      "size_bytes": 10556,
+      "sha256": "36d81aebef29c08219cada9511586fa55087294b9dacc35107373cd9ce46950d"
+    },
+    {
+      "recipient": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "task_traceability.json",
+      "size_bytes": 15937,
+      "sha256": "3d5c96428668f5322df3d5dd4d3531d59dc8d7f652646910b5ff0840ae8aaf78"
+    },
+    {
+      "recipient": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "interface_rfcs.json",
+      "size_bytes": 10417,
+      "sha256": "bb7670ad1650edffa383d95068cd614a9f056be057fee5706c8e95a2988875fc"
+    },
+    {
+      "recipient": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "environment_observed.json",
+      "size_bytes": 1829,
+      "sha256": "c3d898dea932a67b5ea7ca9dca3cedc576c0af7c3d3e8ecb6a6c807027ce292f"
+    },
+    {
+      "recipient": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "blockers.json",
+      "size_bytes": 10556,
+      "sha256": "36d81aebef29c08219cada9511586fa55087294b9dacc35107373cd9ce46950d"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "README.md",
+      "size_bytes": 6289,
+      "sha256": "63e294bcd3d7405c55c418060cdc28f962c515bef9805e05d39e19b8020eeca8"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "integration_handoff.md",
+      "size_bytes": 5704,
+      "sha256": "c9796066dc2dd2b1cd02d77639ed86f1be58d2063abecf2c8654a0754fbacdc8"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "actual_path_request.json",
+      "size_bytes": 2767,
+      "sha256": "401b29ccb1b15f4d21275bbeb8d932f6d9eebccaf69341c0b78e26c227802d76"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "interface_rfcs.json",
+      "size_bytes": 10417,
+      "sha256": "bb7670ad1650edffa383d95068cd614a9f056be057fee5706c8e95a2988875fc"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "stage_runtime_contract.json",
+      "size_bytes": 5466,
+      "sha256": "97e07602c832f2fa22b3cf30f153eef1b51262123cb6c2825b30be512d4798f3"
+    },
+    {
+      "recipient": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "relative_path": "contract_acceptance.json",
+      "size_bytes": 1788,
+      "sha256": "92bf28a517d31d255297989ddd1bf9f16a705040a35052f6d44a3a84ac6a8b0c"
+    }
+  ],
+  "whole_package_for_all_recipients": true,
+  "manifest_and_archive_binding": "External P18_delivery_receipt.json; excluded here to avoid circular hashes"
+}

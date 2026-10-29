@@ -1,0 +1,65 @@
+{
+  "schema_version": "P18-CONTRACT-ACCEPTANCE/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "original_P13_schema_check": {
+    "status": "PASS_LOCAL_SAMPLES",
+    "unique_dtos": 38,
+    "by_type": {
+      "AtomicCommitProposal": 9,
+      "BattleCommand": 1,
+      "BattleCommitBatch": 1,
+      "BattleEvent": 8,
+      "BattleReply": 1,
+      "BattleResult": 5,
+      "BattleSnapshot": 5,
+      "PartySnapshot": 4,
+      "StageProgressView": 1,
+      "WalletDeltaCandidate": 3
+    },
+    "evidence": {
+      "path": "evidence/runs/contracts_final/stdout.log",
+      "size_bytes": 6035,
+      "sha256": "c980f53b14830b6b875ab93146f15ea9b90f7550c0df73380beb7570af0eb641"
+    }
+  },
+  "unmodified_P14_P17_contract_tests": {
+    "status": "PASS_AUTHOR_ISOLATED",
+    "count": 4,
+    "included_in_author_total": true,
+    "source": "tests/stage_unit/test_native_contract.py"
+  },
+  "proposals": [
+    {
+      "interface": "P18 authority ports",
+      "owner": "P13/P14/P17/P21",
+      "status": "PREPARED_NOT_ACCEPTED",
+      "accepted_version": null
+    },
+    {
+      "interface": "P18 joint transaction bundle",
+      "owner": "P13/P17/P21",
+      "status": "PREPARED_NOT_ACCEPTED",
+      "accepted_version": null
+    },
+    {
+      "interface": "stable save scope / P17 namespace",
+      "owner": "P13/P17/P21",
+      "status": "PREPARED_NOT_ACCEPTED",
+      "accepted_version": null
+    },
+    {
+      "interface": "extended stage progress view",
+      "owner": "P13/P20",
+      "status": "PREPARED_NOT_ACCEPTED",
+      "accepted_version": null
+    },
+    {
+      "interface": "P07 scenario semantics",
+      "owner": "P07",
+      "status": "PREPARED_NOT_ACCEPTED",
+      "accepted_version": null
+    }
+  ],
+  "P21_physical_atomicity": "NOT_RUN",
+  "external_contract_review": "NOT_RUN"
+}

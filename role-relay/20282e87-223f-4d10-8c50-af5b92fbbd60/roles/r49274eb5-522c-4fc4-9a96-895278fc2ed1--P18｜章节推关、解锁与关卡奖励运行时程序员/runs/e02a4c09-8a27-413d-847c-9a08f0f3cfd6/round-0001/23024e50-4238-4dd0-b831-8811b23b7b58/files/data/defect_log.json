@@ -1,0 +1,79 @@
+{
+  "schema_version": "P16-DEFECTS/0.1.0",
+  "items": [
+    {
+      "id": "P16-DEF-001",
+      "owner": "P16",
+      "status": "AUTHOR_FIXED_REGRESSION_PASS",
+      "independent_close": "NOT_RUN",
+      "cause": "Full P06 content was incorrectly encoded as a P13 wire message; source_hashes keys contain hyphens rejected by P13 codec.",
+      "observed_failure": "NON_ASCII_SCHEMA_KEY at content loader",
+      "fix": "Own immutable ContentBlob for raw P06 JSON; retain P13 codec for wire DTOs only.",
+      "modified_files": [
+        "enemy_ai/content.py"
+      ],
+      "failure_run": "evidence/runs/content_load_001",
+      "pass_runs": [
+        "evidence/runs/content_load_002",
+        "evidence/runs/author_final_001"
+      ],
+      "regression": "ContentTests.test_content_keys_do_not_use_wire_profile",
+      "upstream_modified": false
+    },
+    {
+      "id": "P16-DEF-002",
+      "owner": "P16",
+      "status": "AUTHOR_FIXED_REGRESSION_PASS",
+      "independent_close": "NOT_RUN",
+      "cause": "Sequence uniqueness used set before checking ID element types; dict/list raised TypeError and bool/int/null could be interpreted as missing targets.",
+      "observed_failure": "2 tests executed; 3 subtest failures and 4 subtest errors; no fabricated game damage failure.",
+      "fix": "Validate every ID is a string before uniqueness; validate target identifier syntax.",
+      "modified_files": [
+        "enemy_ai/planner.py",
+        "enemy_ai/types.py"
+      ],
+      "failure_run": "evidence/runs/malformed_ids_001",
+      "pass_runs": [
+        "evidence/runs/author_final_001"
+      ],
+      "regression": [
+        "PlannerTests.test_non_string_locked_targets_reject_without_type_error",
+        "PlannerTests.test_non_string_behavior_ids_reject_without_type_error"
+      ],
+      "upstream_modified": false
+    },
+    {
+      "id": "P16-P14-GAP-001",
+      "owner": "P14",
+      "status": "BLOCKED_INTERFACE_GAP_CONFIRMED",
+      "independent_close": "NOT_RUN",
+      "observed": "P16 filtered locked sweep targets from 3 to 2; original P14 skipped the entire action due to fixed target_count=3.",
+      "author_test_status": "PASS_FOR_ASSERTING_EXISTING_LIMITATION_ONLY",
+      "expected_product_behavior_status": "BLOCKED",
+      "reproduction": "python -B -m unittest tests.enemy_ai_unit.test_p14_contract.P14ContractTests.test_existing_p14_cannot_execute_partial_sweep -v",
+      "evidence": "evidence/runs/author_final_001",
+      "rfc": "RFC-P16-003",
+      "original_files": [
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/model.py",
+          "size_bytes": 7537,
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/resolver.py",
+          "size_bytes": 19138,
+          "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1"
+        }
+      ],
+      "upstream_modified": false
+    }
+  ],
+  "P32_retest": "NOT_RUN",
+  "P35_closure": "NOT_RUN",
+  "two_failed_rework_cycles_without_new_evidence": false
+}

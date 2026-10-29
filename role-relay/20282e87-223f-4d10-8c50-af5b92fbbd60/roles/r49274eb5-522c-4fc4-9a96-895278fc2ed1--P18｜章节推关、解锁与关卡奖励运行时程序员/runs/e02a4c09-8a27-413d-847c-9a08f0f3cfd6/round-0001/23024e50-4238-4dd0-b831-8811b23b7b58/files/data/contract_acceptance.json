@@ -1,0 +1,90 @@
+{
+  "schema_version": "P16-ACCEPTANCE-SCOPE/0.1.0",
+  "status": "AUTHOR_CONSUMPTION_VERIFIED_ONLY",
+  "contracts": [
+    {
+      "source": "P13",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "files": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "accepted_shapes": [
+        "BattleSnapshot",
+        "EnemyIntent",
+        "PhaseProposal"
+      ],
+      "scope": "Original validator used; no original schema changes",
+      "counterparty_acceptance": "NOT_RECEIVED"
+    },
+    {
+      "source": "P06",
+      "version": "P06-ENEMY-0.1.0-proposal",
+      "files": [
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "size_bytes": 6305,
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_truth_cases.tsv",
+          "size_bytes": 201375,
+          "sha256": "290885204ce736e1e2ba4e44f21de0bb7fdaabf6743c133cbe210b2f5929755b"
+        }
+      ],
+      "scope": "Exact fixed test content; no production or summon authorization",
+      "truth_cases": {
+        "all": 89,
+        "P16_projection_pass": 86,
+        "BLOCKED": 3
+      },
+      "counterparty_acceptance": "NOT_RECEIVED"
+    },
+    {
+      "source": "P14",
+      "version": "P14-BATTLE-CORE/0.1.0-isolated",
+      "files": [
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/model.py",
+          "size_bytes": 7537,
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/resolver.py",
+          "size_bytes": 19138,
+          "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1"
+        }
+      ],
+      "scope": "Unmodified original single-slot settlement and retry/rollback tests; own source not merged",
+      "author_contract_tests": 18,
+      "behavior_commit": "BLOCKED",
+      "phase_acceptance": "BLOCKED",
+      "partial_sweep": "BLOCKED",
+      "multi_enemy": "BLOCKED",
+      "counterparty_acceptance": "NOT_RECEIVED"
+    }
+  ],
+  "local_proposals": [
+    "P16-BEHAVIOR/0.1.0-proposal",
+    "P16-ANNOUNCEMENT/0.1.0-proposal",
+    "P16-INTENT-VIEW/0.1.0-proposal",
+    "P16-BEHAVIOR-CANDIDATE/0.1.0-proposal",
+    "P16-PHASE-EVIDENCE/0.1.0-proposal"
+  ],
+  "P12_Anki_contract": "UNTOUCHED_NOT_RUN",
+  "P21_physical_transaction": "UNTOUCHED_NOT_RUN",
+  "independent_signatures": []
+}

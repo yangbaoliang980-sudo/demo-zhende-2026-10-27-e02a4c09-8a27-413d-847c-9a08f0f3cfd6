@@ -1,0 +1,21 @@
+{
+  "task_id": "P18-S07-STAGES-001",
+  "scope": "ISOLATED_REAL_P18_P17_WITH_TEST_AUTHORITIES",
+  "durable": false,
+  "tokens": 15,
+  "xp_each": [
+    22,
+    22,
+    22
+  ],
+  "first_clear_count": 2,
+  "stage_revision": 8,
+  "meta_revision": 4,
+  "wallet_revision": 2,
+  "simulated_commits": 8,
+  "chapter_complete": true,
+  "illegal_skip": "E_LOCKED_STAGE",
+  "repeated_terminal": "REUSE_COMMITTED_RECEIPT",
+  "stage_sha256": "4e53e90fe5f561824f361d94c42296c7fbc184b99aadf5baaffb5cbed6fac10a",
+  "meta_sha256": "1fab16c03ac9c0e83dcd50207495ca73eb8d66f21be1a640eb199a44ea8ce05c"
+}

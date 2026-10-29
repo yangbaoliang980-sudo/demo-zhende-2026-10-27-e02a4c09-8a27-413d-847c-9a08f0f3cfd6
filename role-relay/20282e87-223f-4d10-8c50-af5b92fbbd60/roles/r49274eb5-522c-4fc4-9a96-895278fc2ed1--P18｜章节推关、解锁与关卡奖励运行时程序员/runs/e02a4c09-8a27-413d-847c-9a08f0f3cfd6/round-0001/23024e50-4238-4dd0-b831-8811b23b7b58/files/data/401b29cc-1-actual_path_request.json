@@ -1,0 +1,81 @@
+{
+  "schema_version": "P18-PATH-REQUEST/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "owner_to_accept": "P13",
+  "source_mapping": {
+    "path": "upstream/P13/architecture/actual_path_mapping.json",
+    "size_bytes": 16790,
+    "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+  },
+  "received_P18_rows": [
+    {
+      "owner": "P18",
+      "design_path": "runtime/meta/stages/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P18",
+      "design_path": "runtime/meta/progression/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P18",
+      "design_path": "tests/stage_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "actual_game_repository": null,
+  "actual_game_commit": null,
+  "production_write_authorized": false,
+  "isolated_authorization": "Current user task authorizes standalone verifiable delivery; not real project overwrite",
+  "new_delivery_root": ".",
+  "author_modification_whitelist": [
+    "stage_runtime/**",
+    "tests/stage_unit/**",
+    "tests/support/**",
+    "tools/**",
+    "examples/**",
+    "P18 root delivery documents and fixtures"
+  ],
+  "readonly_paths": [
+    "upstream/**",
+    "evidence/github/**",
+    "evidence/intake/**",
+    "evidence/runs/** once sealed"
+  ],
+  "requested_mappings": [
+    {
+      "design_path": "runtime/meta/stages/**",
+      "delivery_path": "stage_runtime/{content,service,ports}.py",
+      "actual_production_path": null
+    },
+    {
+      "design_path": "runtime/meta/progression/**",
+      "delivery_path": "stage_runtime/{state,projection,transactions,common}.py",
+      "actual_production_path": null
+    },
+    {
+      "design_path": "tests/stage_unit/**",
+      "delivery_path": "tests/stage_unit/**",
+      "actual_production_path": null
+    }
+  ],
+  "merge_owner": "USER_DESIGNATED_EXT-INTEGRATOR_NOT_ASSIGNED",
+  "overwrite_existing": false
+}

@@ -1,0 +1,5653 @@
+{
+  "schema_version": "P18-PROGRESS-FIXTURES/0.1.0",
+  "source_file": "upstream/P07/content/stages/stage_retry_cases.json",
+  "source_sha256": "98e5bbf9097947f7b918da10a89344fd1b7d3ad7a231512dd46bb2855f15c7d8",
+  "expected_case_owner": "P07",
+  "cases_are_expected_not_execution_results": true,
+  "direct_adapter_selected_case_ids": [
+    "P07-ST-001",
+    "P07-ST-002",
+    "P07-ST-003",
+    "P07-ST-011",
+    "P07-ST-012",
+    "P07-ST-013",
+    "P07-ST-014",
+    "P07-ST-015",
+    "P07-ST-016",
+    "P07-ST-017",
+    "P07-ST-018",
+    "P07-ST-019",
+    "P07-ST-020",
+    "P07-ST-021",
+    "P07-ST-024",
+    "P07-ST-025",
+    "P07-ST-026",
+    "P07-ST-028",
+    "P07-ST-036",
+    "P07-ST-037",
+    "P07-ST-038",
+    "P07-ST-039",
+    "P07-ST-040",
+    "P07-ST-041",
+    "P07-ST-042",
+    "P07-ST-043",
+    "P07-ST-044",
+    "P07-ST-045",
+    "P07-ST-055",
+    "P07-ST-056",
+    "P07-ST-057",
+    "P07-ST-059",
+    "P07-ST-061",
+    "P07-ST-062",
+    "P07-ST-067"
+  ],
+  "execution_evidence": "p07_projection_results.json",
+  "upstream_cases": [
+    {
+      "case_id": "P07-ST-001",
+      "title_zh": "入口普通关可进入（仅夹具）",
+      "coverage_tags": [
+        "NORMAL_ENTRY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "active_stage_id": "MOCK_P07_STAGE_001"
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-002",
+      "title_zh": "普通关未通时禁止跳至BOSS",
+      "coverage_tags": [
+        "BOSS_LOCKED",
+        "ILLEGAL_SKIP"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_LOCKED_STAGE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-003",
+      "title_zh": "未知stage必须拒绝",
+      "coverage_tags": [
+        "UNKNOWN_STAGE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_UNKNOWN",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_UNKNOWN_STAGE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-004",
+      "title_zh": "精英预留项不是关卡入口",
+      "coverage_tags": [
+        "ELITE_DISABLED"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "SELECT_RESERVED_ENTRY",
+          "reservation_id": "MOCK_P07_RESERVED_ELITE_ENTRY"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_DISABLED_RESERVATION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-005",
+      "title_zh": "两人编队不能入场",
+      "coverage_tags": [
+        "PARTY_INVALID"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_PARTY_SIZE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-006",
+      "title_zh": "三个槽位重复角色不能入场",
+      "coverage_tags": [
+        "PARTY_INVALID"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_DUPLICATE_CHARACTER"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-007",
+      "title_zh": "有定义但未拥有的角色不能入场",
+      "coverage_tags": [
+        "PARTY_INVALID"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal",
+          "owned_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002"
+          ]
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_UNOWNED_CHARACTER"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-008",
+      "title_zh": "候选包不得生产加载",
+      "coverage_tags": [
+        "FORMAL_GATE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "LOAD_AS_PRODUCTION"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "BLOCKED_MISSING_FORMAL_ACCEPTANCE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-009",
+      "title_zh": "调试跳关不能写玩家进度",
+      "coverage_tags": [
+        "ILLEGAL_SKIP"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "REQUEST_DEBUG_UNLOCK",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "player_save_scope_id": "MOCK_P07_SAVE_A"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_DEBUG_PROGRESS_WRITE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-010",
+      "title_zh": "已确认普通首通后允许进入BOSS",
+      "coverage_tags": [
+        "BOSS_ENTRY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "active_stage_id": "MOCK_P07_STAGE_002"
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-011",
+      "title_zh": "普通关权威WIN原子首通",
+      "coverage_tags": [
+        "NORMAL_FIRST_WIN"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "newly_effective_clear_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "newly_unlocked_stage_ids": [
+          "MOCK_P07_STAGE_002"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-012",
+      "title_zh": "普通到BOSS两关形成完整闭环",
+      "coverage_tags": [
+        "CLOSED_ROUTE",
+        "BOSS_FIRST_WIN"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-B-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "RETURN_TO_CHAPTER_SELECT"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "RETURNED"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          },
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_002",
+            "battle_id": "battle-B",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_002_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 12,
+            "expected_xp_each_character": 18
+          }
+        ],
+        "new_first_entitlement_count": 2,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 15
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 22
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 22
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 22
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "chapter_complete": true,
+        "newly_effective_clear_stage_ids": [
+          "MOCK_P07_STAGE_001",
+          "MOCK_P07_STAGE_002"
+        ],
+        "newly_unlocked_stage_ids": [
+          "MOCK_P07_STAGE_002"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "同一入场三人名单：共享15代币，每人22累计XP。只验证期望算术；不执行战斗。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-013",
+      "title_zh": "失败重试取得新battle_id",
+      "coverage_tags": [
+        "LOSS_RETRY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "LOSS",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-LOSS",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-retry",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR",
+          "ADMITTED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "active_battle_id": "battle-retry",
+        "first_entitlement_still_available": true
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-014",
+      "title_zh": "平局不解锁不发奖",
+      "coverage_tags": [
+        "DRAW"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "DRAW",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-DRAW",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-015",
+      "title_zh": "主动撤退不发首通",
+      "coverage_tags": [
+        "ABORT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "AUTHORITATIVE_ABORT",
+          "battle_id": "battle-A"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "ABORTED_NO_CLEAR"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-016",
+      "title_zh": "故障结束不发奖",
+      "coverage_tags": [
+        "FAULT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "FAULTED",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-FAULTED",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-017",
+      "title_zh": "未最终提交的WIN不能领奖",
+      "coverage_tags": [
+        "PENDING_TERMINAL"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "NOT_ATTEMPTED",
+          "terminal_final": false
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "WAIT_FINAL_TERMINAL"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-018",
+      "title_zh": "非权威结果不能领奖",
+      "coverage_tags": [
+        "UNTRUSTED_RESULT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "UNTRUSTED",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REJECT_UNTRUSTED_RESULT"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-019",
+      "title_zh": "伪造source=P14文本不是信任证据",
+      "coverage_tags": [
+        "UNTRUSTED_RESULT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "UNTRUSTED",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED",
+          "client_source_label": "P14"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REJECT_UNTRUSTED_RESULT"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-020",
+      "title_zh": "结果stage与入场stage不一致",
+      "coverage_tags": [
+        "MISMATCH_STAGE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REJECT_ADMISSION_BINDING"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-021",
+      "title_zh": "结果串用另一存档作用域",
+      "coverage_tags": [
+        "MISMATCH_SCOPE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_B",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REJECT_ADMISSION_BINDING"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-022",
+      "title_zh": "缺入场记录的WIN被拒绝",
+      "coverage_tags": [
+        "MISSING_ADMISSION"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_MISSING_ADMISSION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-023",
+      "title_zh": "旧终局修订晚到不能发奖",
+      "coverage_tags": [
+        "STALE_REVISION"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [],
+        "terminal_high_watermark": {
+          "battle-A": 2
+        },
+        "invalidated_battle_ids": [
+          "battle-A"
+        ]
+      },
+      "actions": [
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_STALE_TERMINAL"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-024",
+      "title_zh": "同身份不同指纹不得覆盖已发奖记录",
+      "coverage_tags": [
+        "PAYLOAD_COLLISION"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "tampered-content",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "REJECT_IDENTITY_PAYLOAD_CONFLICT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-025",
+      "title_zh": "同一结算消息重复只回原回执",
+      "coverage_tags": [
+        "SAME_RESULT_DUPLICATE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "REUSE_COMMITTED_RECEIPT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-026",
+      "title_zh": "同stage不同battle_id首通最多一次",
+      "coverage_tags": [
+        "DIFFERENT_BATTLES_SAME_STAGE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-B-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-027",
+      "title_zh": "BOSS重打不再次首通",
+      "coverage_tags": [
+        "DIFFERENT_BATTLES_SAME_STAGE",
+        "BOSS_FIRST_WIN"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-B-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_002",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_002_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 12,
+            "expected_xp_each_character": 18
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 12
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 18
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 18
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 18
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-028",
+      "title_zh": "领奖后重启再次点击只读回执",
+      "coverage_tags": [
+        "RESTART_AFTER_CLAIM"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "RESTART_SAME_SAVE_SCOPE"
+        },
+        {
+          "op": "UI_ACK_REWARD",
+          "battle_id": "battle-A"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "RESTORED_COMMITTED_RECEIPT",
+          "REUSE_COMMITTED_RECEIPT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-029",
+      "title_zh": "已有首通存档收到历史WIN不补发",
+      "coverage_tags": [
+        "RESTART_AFTER_CLAIM"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ],
+        "committed_battle_ids": [
+          "battle-A"
+        ]
+      },
+      "actions": [
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REUSE_COMMITTED_RECEIPT"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-030",
+      "title_zh": "更高终局修订不视作第二场战斗",
+      "coverage_tags": [
+        "REVISION_NOT_NEW_ATTEMPT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 2,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "battle-A-revision2",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "RECONCILE_REVISION_NO_NEW_AWARD"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-031",
+      "title_zh": "并发终局必须争用同一stage首通权",
+      "coverage_tags": [
+        "CONCURRENT_FIRST_CLAIM"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [],
+        "fixture_admissions": [
+          "race-A",
+          "race-B"
+        ]
+      },
+      "actions": [
+        {
+          "op": "DELIVER_CONCURRENT_TERMINALS",
+          "results": [
+            {
+              "op": "DELIVER_TERMINAL",
+              "stage_id": "MOCK_P07_STAGE_001",
+              "battle_id": "race-A",
+              "player_save_scope_id": "MOCK_P07_SAVE_A",
+              "terminal_revision": 1,
+              "outcome": "WIN",
+              "fixture_authority": "VERIFIED_P14_ADAPTER",
+              "payload_fingerprint": "fixture-race-A-r1-WIN",
+              "commit_outcome": "COMMITTED"
+            },
+            {
+              "op": "DELIVER_TERMINAL",
+              "stage_id": "MOCK_P07_STAGE_001",
+              "battle_id": "race-B",
+              "player_save_scope_id": "MOCK_P07_SAVE_A",
+              "terminal_revision": 1,
+              "outcome": "WIN",
+              "fixture_authority": "VERIFIED_P14_ADAPTER",
+              "payload_fingerprint": "fixture-race-B-r1-WIN",
+              "commit_outcome": "COMMITTED"
+            }
+          ]
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ONE_FIRST_CLEAR_ONE_NO_REPEAT_AWARD"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "race-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [
+        {
+          "order": [
+            "race-A",
+            "race-B"
+          ],
+          "first_clear_winner": "race-A"
+        },
+        {
+          "order": [
+            "race-B",
+            "race-A"
+          ],
+          "first_clear_winner": "race-B"
+        }
+      ],
+      "notes": "历史迁移/双重回调边界；普通入口仍只允许一个活跃attempt。两种交错都须独立实测；award_events代表第一种交错，另一种仅winner不同，stage key和总额相同。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-032",
+      "title_zh": "不同独立玩家档案分别首通",
+      "coverage_tags": [
+        "SEPARATE_SAVE_SCOPES"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "profile-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_B",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "profile-B",
+          "player_save_scope_id": "MOCK_P07_SAVE_B",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-profile-B-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          },
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_B",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "profile-B",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 2,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3,
+          "MOCK_P07_SAVE_B": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_B",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_B",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_B",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "两份已授权独立测试档案；不是复制或回滚同一存档。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-033",
+      "title_zh": "升级内容版本不能重置stage首通",
+      "coverage_tags": [
+        "CONTENT_VERSION_NOT_NEW_FIRST"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "LOAD_CANDIDATE_VERSION",
+          "new_version": "P07-STAGES-0.1.1-proposal"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "new-version",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "new-version",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-new-version-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "LOADED_PRESERVING_KEYS",
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-034",
+      "title_zh": "更新奖励表不能重新发首通",
+      "coverage_tags": [
+        "REWARD_VERSION_NOT_NEW_FIRST"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "LOAD_NEW_REWARD_VERSION",
+          "same_stage_id": "MOCK_P07_STAGE_001"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "new-reward",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "new-reward",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-new-reward-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "LOADED_PRESERVING_KEYS",
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-035",
+      "title_zh": "未经P22批准的别名或改ID不能绕过去重",
+      "coverage_tags": [
+        "UNAPPROVED_ID_ALIAS"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "LOAD_STAGE_ALIAS",
+          "alias": "MOCK_P07_STAGE_RENAMED",
+          "canonical": "MOCK_P07_STAGE_001",
+          "p22_approval": false
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_UNAPPROVED_ALIAS"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-036",
+      "title_zh": "主动退出后旧WIN不能翻回首通",
+      "coverage_tags": [
+        "QUIT_BEFORE_RESULT",
+        "LATE_WIN_AFTER_ABORT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "AUTHORITATIVE_ABORT",
+          "battle_id": "battle-A"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "ABORTED_NO_CLEAR",
+          "REJECT_ABORT_TOMBSTONE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-037",
+      "title_zh": "最终WIN在落盘前崩溃后用原结果补结算",
+      "coverage_tags": [
+        "CRASH_PRE_COMMIT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "CRASH_BEFORE_COMMIT"
+        },
+        {
+          "op": "RESTART_SAME_SAVE_SCOPE"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "PENDING_NO_PUBLICATION",
+          "RESTORE_PENDING_RESULT",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-038",
+      "title_zh": "事务被拒绝不得仅解锁或仅入账",
+      "coverage_tags": [
+        "COMMIT_FAILURE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "ATOMIC_REJECTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "PENDING_NO_PUBLICATION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "newly_effective_clear_stage_ids": [],
+        "newly_unlocked_stage_ids": [],
+        "partial_publication_allowed": false
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-039",
+      "title_zh": "落盘成功但响应丢失后不重复入账",
+      "coverage_tags": [
+        "COMMIT_ACK_LOST"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED_ACK_LOST"
+        },
+        {
+          "op": "RESTART_SAME_SAVE_SCOPE"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR_ACK_LOST",
+          "RESTORED_COMMITTED_RECEIPT",
+          "REUSE_COMMITTED_RECEIPT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-040",
+      "title_zh": "事务中途故障不得留半份XP或首通",
+      "coverage_tags": [
+        "COMMIT_FAILURE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "FAIL_DURING_ATOMIC_COMMIT"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "PENDING_NO_PUBLICATION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "partial_publication_allowed": false
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-041",
+      "title_zh": "失败后重试成功仍可以首通",
+      "coverage_tags": [
+        "LOSS_RETRY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "LOSS",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-LOSS",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "retry-success",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "retry-success",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-retry-success-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR",
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "retry-success",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-042",
+      "title_zh": "结算页关闭不撤销已提交奖励",
+      "coverage_tags": [
+        "EXIT_POST_COMMIT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "CLOSE_RESULT_UI"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "RETURNED_KEEPING_RECEIPT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-043",
+      "title_zh": "提交结果未知时禁止新开一局",
+      "coverage_tags": [
+        "PENDING_BLOCKS_RETRY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "UNKNOWN"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "premature-retry",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "RECONCILE_UNKNOWN_COMMIT",
+          "BLOCKED_PENDING_RECONCILIATION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "publication_status": "UNKNOWN_RECONCILE_REQUIRED"
+      },
+      "schedule_variants": [],
+      "notes": "空award_events表示当前没有可确认的新发奖证据，绝不等价于已证明持久余额为0。必须先查P21。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-044",
+      "title_zh": "发奖前撤回WIN保留失效修订墓碑",
+      "coverage_tags": [
+        "REVOKE_PRE_COMMIT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "NOT_YET_COMMITTED"
+        },
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "PENDING_NO_PUBLICATION",
+          "INVALIDATED_PENDING_WIN",
+          "REJECT_STALE_TERMINAL"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-045",
+      "title_zh": "发奖后撤回不能清空首通去重标记",
+      "coverage_tags": [
+        "REVOKE_POST_COMMIT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR",
+          "REVIEW_HOLD_KEEP_TOMBSTONE"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "retained_consumed_first_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "newly_effective_clear_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-046",
+      "title_zh": "已花掉收益后撤回不得自行负债或降级",
+      "coverage_tags": [
+        "REVOKE_AFTER_SPEND"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ],
+        "committed_battle_ids": [
+          "battle-A"
+        ],
+        "wallet_token_balance": 0,
+        "prior_award_consumed": true,
+        "character_level": 2
+      },
+      "actions": [
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REVIEW_HOLD_KEEP_TOMBSTONE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "retained_consumed_first_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "character_level_after": 2
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-047",
+      "title_zh": "前置关卡胜利被撤回后拒绝新入BOSS",
+      "coverage_tags": [
+        "REVOKED_PREREQUISITE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": true
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "BLOCKED_PREREQUISITE_UNDER_REVIEW"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-048",
+      "title_zh": "BOSS进行中前置被撤回则结算隔离",
+      "coverage_tags": [
+        "REVOKED_INFLIGHT"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "prior-normal",
+          "revision": 2
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REVIEW_HOLD_KEEP_TOMBSTONE",
+          "QUARANTINE_PREREQUISITE_REVOKED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [
+          "MOCK_P07_STAGE_001",
+          "MOCK_P07_STAGE_002"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-049",
+      "title_zh": "Anki Undo不撤销关卡首通",
+      "coverage_tags": [
+        "ANKI_UNDO_SEPARATION"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ANKI_UNDO_NOTIFICATION",
+          "study_event_id": "study-fixture-1"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "IGNORED_BY_STAGE_DOMAIN"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "retained_consumed_first_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "P11自己的学习账本回退不在本用例预期范围；stage侧学习账本写入始终为0。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-050",
+      "title_zh": "不可信撤回消息不能冻结或改奖",
+      "coverage_tags": [
+        "FORGED_REVOKE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "UNTRUSTED_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_UNTRUSTED_REVOCATION"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-051",
+      "title_zh": "同一撤回消息重复不重复补偿",
+      "coverage_tags": [
+        "REPEATED_REVOKE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ],
+        "committed_battle_ids": [
+          "battle-A"
+        ]
+      },
+      "actions": [
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        },
+        {
+          "op": "AUTHORITATIVE_REVOKE",
+          "battle_id": "battle-A",
+          "revision": 2
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REVIEW_HOLD_KEEP_TOMBSTONE",
+          "REUSE_REVIEW_RECEIPT"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "retained_consumed_first_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-052",
+      "title_zh": "BOSS切阶段事件不是关卡胜利",
+      "coverage_tags": [
+        "BOSS_PHASE_NO_AWARD"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "PRESENT_BOSS_PHASE",
+          "phase_id": "MOCK_P06_PHASE_2"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "NO_STAGE_AWARD"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-053",
+      "title_zh": "致死跨阈值只接收最终WIN一次",
+      "coverage_tags": [
+        "BOSS_FATAL_FINAL"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "BOSS_FATAL_THRESHOLD_PRESENTATION",
+          "before_hp": 80,
+          "after_hp": 0
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "NO_STAGE_AWARD",
+          "APPLIED_FIRST_CLEAR",
+          "REUSE_COMMITTED_RECEIPT"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_002",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_002_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 12,
+            "expected_xp_each_character": 18
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 12
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 18
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 18
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 18
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "P02/P06/P14负责终局全序；P07不推算战斗胜负，只消费最终WIN。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-054",
+      "title_zh": "BOSS同归于尽DRAW不发首通",
+      "coverage_tags": [
+        "BOSS_DRAW_NO_CLEAR"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_002",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "DRAW",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-DRAW",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-055",
+      "title_zh": "跳过动画与正常显示结算等价",
+      "coverage_tags": [
+        "ANIMATION_SKIP_EQUIVALENCE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "SKIP_PRESENTATION_ONLY"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "NO_GAMEPLAY_MUTATION",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "比较P07-ST-011：奖励/解锁期望相同；真实动画及引擎尚未执行。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-056",
+      "title_zh": "结果页编队草稿变化不改变入场XP名单",
+      "coverage_tags": [
+        "PINNED_PARTY"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "EDIT_PARTY_UI_DRAFT",
+          "character_ids": []
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "DRAFT_ONLY",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-057",
+      "title_zh": "入场角色阵亡仍按固定名单获XP（候选）",
+      "coverage_tags": [
+        "FALLEN_XP"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED",
+          "fallen_character_ids": [
+            "MOCK_P04_CHAR_002"
+          ]
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-058",
+      "title_zh": "已首通后重复刷关不产生当前未批重复掉落",
+      "coverage_tags": [
+        "REPEAT_ZERO"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "repeat",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "repeat",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-repeat-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-059",
+      "title_zh": "零学习只测试夹具入口，不决定产品权益",
+      "coverage_tags": [
+        "ZERO_STUDY_FIXTURE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "production仍BLOCKED；本项不通过Anki Hook，也不是零学习日已获批准。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-060",
+      "title_zh": "缺敌人或奖励定义时拒绝加载",
+      "coverage_tags": [
+        "MISSING_CATALOG"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "LOAD_WITH_MISSING_REFERENCE",
+          "missing_id": "MOCK_P06_ENEMY_003"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_UNRESOLVED_CONTENT_ID"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-061",
+      "title_zh": "在途内容更新仍使用入场固定版本",
+      "coverage_tags": [
+        "CONTENT_PIN"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "LOAD_NEW_REWARD_VERSION",
+          "same_stage_id": "MOCK_P07_STAGE_001"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED",
+          "admission_content_available": true
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "PINNED_ACTIVE_BATTLE_UNCHANGED",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-062",
+      "title_zh": "在途固定版本丢失则隔离，不套用新奖表",
+      "coverage_tags": [
+        "CONTENT_PIN"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED",
+          "admission_content_available": false
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "QUARANTINE_MISSING_PINNED_CONTENT"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-063",
+      "title_zh": "已首通关卡再次失败不抹掉历史首通",
+      "coverage_tags": [
+        "PRIOR_CLEAR_ON_LOSS"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "lose-again",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "lose-again",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "LOSS",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-lose-again-r1-LOSS",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "CLOSED_NO_CLEAR"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "retained_consumed_first_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "effective_clear_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ]
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-064",
+      "title_zh": "空存档作用域不能作为合法首通键",
+      "coverage_tags": [
+        "SAVE_SCOPE_INVALID"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "REJECT_INVALID_SAVE_SCOPE"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-065",
+      "title_zh": "同存档迁移或改名保留稳定首通作用域",
+      "coverage_tags": [
+        "SAVE_RESTORE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": [
+          {
+            "stage_id": "MOCK_P07_STAGE_001",
+            "valid_confirmed_clear": true,
+            "first_entitlement_consumed": true,
+            "review_hold": false
+          }
+        ]
+      },
+      "actions": [
+        {
+          "op": "MIGRATE_OR_RENAME_SAVE",
+          "same_scope": "MOCK_P07_SAVE_A"
+        },
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "after-migrate",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "after-migrate",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-after-migrate-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "RESTORED_PRESERVING_SCOPE",
+          "ADMITTED",
+          "REPEAT_DISABLED_NO_AWARD"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "迁移有效性及历史标记由P21/P22验证，本包未读取真实存档。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-066",
+      "title_zh": "恢复缺失幂等历史的旧备份不能宣称全局防重",
+      "coverage_tags": [
+        "SAVE_RESTORE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "RESTORE_OLDER_BACKUP",
+          "stage_receipt_history_complete": false
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "BLOCKED_RESTORE_RECONCILIATION_REQUIRED"
+        ],
+        "award_events": [],
+        "new_first_entitlement_count": 0,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {},
+        "xp_delta_by_save_scope_and_character": [],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": [],
+        "publication_status": "UNKNOWN_RECONCILE_REQUIRED"
+      },
+      "schedule_variants": [],
+      "notes": "不能仅靠离线回退副本中的空首通标记证明从未领奖；具体恢复策略由P21/P18/P01裁决。",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    },
+    {
+      "case_id": "P07-ST-067",
+      "title_zh": "暂停恢复当前战斗保留battle_id",
+      "coverage_tags": [
+        "RESUME_SAME_BATTLE"
+      ],
+      "requirement_ids": [
+        "REQ-010",
+        "REQ-028"
+      ],
+      "fixture_only": true,
+      "initial_state": {
+        "player_save_scope_id": "MOCK_P07_SAVE_A",
+        "party_character_ids": [
+          "MOCK_P04_CHAR_001",
+          "MOCK_P04_CHAR_002",
+          "MOCK_P04_CHAR_003"
+        ],
+        "study_event_count": 0,
+        "stage_progress": []
+      },
+      "actions": [
+        {
+          "op": "ADMIT",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "party_character_ids": [
+            "MOCK_P04_CHAR_001",
+            "MOCK_P04_CHAR_002",
+            "MOCK_P04_CHAR_003"
+          ],
+          "content_version": "P07-STAGES-0.1.0-proposal"
+        },
+        {
+          "op": "RESUME_PINNED_BATTLE",
+          "battle_id": "battle-A"
+        },
+        {
+          "op": "DELIVER_TERMINAL",
+          "stage_id": "MOCK_P07_STAGE_001",
+          "battle_id": "battle-A",
+          "player_save_scope_id": "MOCK_P07_SAVE_A",
+          "terminal_revision": 1,
+          "outcome": "WIN",
+          "fixture_authority": "VERIFIED_P14_ADAPTER",
+          "payload_fingerprint": "fixture-battle-A-r1-WIN",
+          "commit_outcome": "COMMITTED"
+        }
+      ],
+      "expected": {
+        "decisions": [
+          "ADMITTED",
+          "RESUMED_SAME_BATTLE",
+          "APPLIED_FIRST_CLEAR"
+        ],
+        "award_events": [
+          {
+            "domain": "FIRST_CLEAR",
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "stage_id": "MOCK_P07_STAGE_001",
+            "battle_id": "battle-A",
+            "terminal_revision": 1,
+            "reward_id": "MOCK_P07_REWARD_001_FIRST",
+            "party_character_ids": [
+              "MOCK_P04_CHAR_001",
+              "MOCK_P04_CHAR_002",
+              "MOCK_P04_CHAR_003"
+            ],
+            "expected_shared_tokens": 3,
+            "expected_xp_each_character": 4
+          }
+        ],
+        "new_first_entitlement_count": 1,
+        "new_repeat_award_count": 0,
+        "token_delta_by_save_scope": {
+          "MOCK_P07_SAVE_A": 3
+        },
+        "xp_delta_by_save_scope_and_character": [
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_001",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_002",
+            "delta": 4
+          },
+          {
+            "player_save_scope_id": "MOCK_P07_SAVE_A",
+            "character_id": "MOCK_P04_CHAR_003",
+            "delta": 4
+          }
+        ],
+        "automatic_clawback_tokens": 0,
+        "automatic_character_downgrade": false,
+        "study_ledger_delta": 0,
+        "review_required_stage_ids": []
+      },
+      "schedule_variants": [],
+      "notes": "",
+      "runtime_status": "NOT_RUN",
+      "actual_runtime_result": null,
+      "execution_owner": "P32_WITH_P18_IMPLEMENTATION",
+      "author_check_layer": "EXPECTED_DATA_STATIC_SANITY_ONLY"
+    }
+  ],
+  "runtime_catalog": {
+    "chapters": [
+      {
+        "chapter_id": "MOCK_P07_CHAPTER_001",
+        "completion_stage_ids": [
+          "MOCK_P07_STAGE_002"
+        ],
+        "entry_stage_ids": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "next_chapter_id": null
+      }
+    ],
+    "content_version": "P07-STAGES-0.1.0-proposal",
+    "party_size": 3,
+    "production_enabled": false,
+    "schema_version": "P18-CATALOG/0.1.0-isolated",
+    "scope": "P07_UNCHANGED_CANDIDATE",
+    "source_hashes": [
+      {
+        "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487",
+        "source_id": "P05_BUDGET"
+      },
+      {
+        "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+        "source_id": "P06_BOSS"
+      },
+      {
+        "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+        "source_id": "P06_ENEMIES"
+      },
+      {
+        "sha256": "818726891190817d890e55b6b20e90426294be8da38414ec42527e4b63655f34",
+        "source_id": "P07_CATALOG"
+      },
+      {
+        "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+        "source_id": "P07_GRAPH"
+      },
+      {
+        "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+        "source_id": "P07_REWARDS"
+      }
+    ],
+    "stages": [
+      {
+        "boss_graph_id": null,
+        "canonical_stage_id": "MOCK_P07_STAGE_001",
+        "chapter_id": "MOCK_P07_CHAPTER_001",
+        "enemy_refs": [
+          {
+            "count": 1,
+            "enemy_id": "MOCK_P06_ENEMY_001"
+          }
+        ],
+        "first": {
+          "resource_id": "MOCK_P04_TRAINING_TOKEN",
+          "tokens": 3,
+          "xp_each": 4
+        },
+        "first_reward_id": "MOCK_P07_REWARD_001_FIRST",
+        "prerequisites": [],
+        "repeat": {
+          "resource_id": "MOCK_P04_TRAINING_TOKEN",
+          "tokens": 0,
+          "xp_each": 0
+        },
+        "repeat_enabled": false,
+        "repeat_reward_id": "MOCK_P07_REWARD_001_REPEAT",
+        "stage_id": "MOCK_P07_STAGE_001"
+      },
+      {
+        "boss_graph_id": "MOCK_P06_GRAPH_001",
+        "canonical_stage_id": "MOCK_P07_STAGE_002",
+        "chapter_id": "MOCK_P07_CHAPTER_001",
+        "enemy_refs": [
+          {
+            "count": 1,
+            "enemy_id": "MOCK_P06_ENEMY_003"
+          }
+        ],
+        "first": {
+          "resource_id": "MOCK_P04_TRAINING_TOKEN",
+          "tokens": 12,
+          "xp_each": 18
+        },
+        "first_reward_id": "MOCK_P07_REWARD_002_FIRST",
+        "prerequisites": [
+          "MOCK_P07_STAGE_001"
+        ],
+        "repeat": {
+          "resource_id": "MOCK_P04_TRAINING_TOKEN",
+          "tokens": 0,
+          "xp_each": 0
+        },
+        "repeat_enabled": false,
+        "repeat_reward_id": "MOCK_P07_REWARD_002_REPEAT",
+        "stage_id": "MOCK_P07_STAGE_002"
+      }
+    ]
+  }
+}

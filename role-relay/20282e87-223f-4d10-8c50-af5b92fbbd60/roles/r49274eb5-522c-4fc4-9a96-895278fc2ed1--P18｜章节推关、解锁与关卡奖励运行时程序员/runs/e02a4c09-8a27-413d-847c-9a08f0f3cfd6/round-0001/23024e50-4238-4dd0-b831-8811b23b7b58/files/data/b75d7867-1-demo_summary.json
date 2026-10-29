@@ -1,0 +1,15 @@
+{
+  "scope": "AUTHOR_ISOLATED_CONTRACT_EXECUTION_REAL_P15_UNCHANGED_P14_FIXTURE_P17_AND_P16",
+  "commits": 12,
+  "revision": 12,
+  "rejected_requests": 3,
+  "duplicate_no_ops": 3,
+  "energy_spent_events": 3,
+  "recycle_count": 2,
+  "rng_draw_count": 16,
+  "final_state_sha256": "fc6afabe831be5d760978106744c1fd6c97921a1f5c0611e5995d482a766bee1",
+  "replay_sha256": "dd90ff57a7ffa961157a87acb1aee7b7502a9d8d261e9c12b4f8ab30ebb2764a",
+  "full_game_integration": "NOT_RUN",
+  "real_p17_party": "BLOCKED",
+  "P32_P35_independent": "NOT_RUN"
+}

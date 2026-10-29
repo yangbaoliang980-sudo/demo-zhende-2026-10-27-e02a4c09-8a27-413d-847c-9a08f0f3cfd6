@@ -1,0 +1,51 @@
+{
+  "schema_version": "P18-DEFECTS/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "runtime_test_failures_observed": 0,
+  "independent_closure": "NOT_RUN",
+  "items": [
+    {
+      "id": "P18-EVID-001",
+      "type": "EVIDENCE_COPY_INTEGRITY",
+      "unique_fix_owner": "P18",
+      "status": "FIXED_AUTHOR_VERIFIED",
+      "symptom": "GitHub UTF-8 text copied via patch added one final LF; local Git blob mismatch",
+      "reproduction": "Compute Git blob SHA1 of the archived author_initial upstream/V6/v6_roles.txt and compare fixed GitHub blob",
+      "actual_before": {
+        "size_bytes": 178462,
+        "sha256": "c18627faf51f10d4bd7ffc121eebcedbfa564d6707ddbca9bfc0d5317ea167af"
+      },
+      "actual_after": {
+        "path": "upstream/V6/v6_roles.txt",
+        "size_bytes": 178461,
+        "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+      },
+      "fix": "Removed exactly the extra LF; V6 text and P17 archive manifest now match original Git blob bytes",
+      "verification": {
+        "path": "evidence/runs/sources_final/stdout.log",
+        "size_bytes": 17910,
+        "sha256": "e1cd20b3f9914a1364807048e1c49723db9675631ba1e134a0206c30a0dbbd51"
+      },
+      "github_expected_and_observed": [
+        {
+          "filename": "v6_roles.txt",
+          "size_bytes": 178461,
+          "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+          "github_blob_sha1": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+          "original_blob_matches": true
+        },
+        {
+          "filename": "p17_archive_manifest.json",
+          "size_bytes": 78086,
+          "sha256": "779bae9a30ec4b4c57b9b8a13c5790a0c501e91be6422c2df0ed81b4ced1f4e0",
+          "github_blob_sha1": "3e4f483eb3079c96a077cffb3270e476db299dff",
+          "original_blob_matches": true
+        }
+      ],
+      "scope": "Metadata text copy only; gameplay source unchanged; earlier run snapshots retained",
+      "P32_retest": "NOT_RUN",
+      "P35_closure": "NOT_RUN"
+    }
+  ],
+  "open_interface_limitations": "blockers.json; not mislabeled as passed implementation"
+}

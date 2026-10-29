@@ -1,0 +1,965 @@
+{
+  "schema_version": "P18-SOURCE-RECEIPT/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "uploads": [
+    {
+      "path": "upload/relay-materials-1-1bad51668e(2).zip",
+      "size_bytes": 11959151,
+      "sha256": "1bad51668e293822c4c16a1d221ad82197c064693f46d41095a5f45e80f23780"
+    },
+    {
+      "path": "upload/relay-materials-2-e938468404(3).zip",
+      "size_bytes": 16364928,
+      "sha256": "e93846840487868806572a6729417c1eed885b72a261301c0d7c3188f8222d25"
+    },
+    {
+      "path": "upload/relay-materials-3-daa97d5d76(3).zip",
+      "size_bytes": 17001841,
+      "sha256": "daa97d5d7644b75ff187c20d8a2aead26eca6a3e4a731acfaaaabac31ec63ab3"
+    },
+    {
+      "path": "upload/relay-materials-4-53e818db01(2).zip",
+      "size_bytes": 12899261,
+      "sha256": "53e818db016a9ba6b51a011b7fae1cb56d9d0f717c9306c4542ed4d02b47c774"
+    },
+    {
+      "path": "upload/relay-materials-5-1646f82fc3.zip",
+      "size_bytes": 15551688,
+      "sha256": "1646f82fc3e79ac879c49746a5374da0ae3da9eb9b5a97fd752ef6bcf5eed78f"
+    }
+  ],
+  "intake_summary": {
+    "unique_archives": 80,
+    "expanded_file_members": 5928,
+    "relay_manifest_records_verified": 734
+  },
+  "github": {
+    "v6_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "p17_commit": "566c02ac14dd29660260010aa5cf0fbb2d0f125d",
+    "p17_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+    "p17_archive_size_bytes": 2129280,
+    "p17_manifest_matches_received_archive": true,
+    "exact_byte_evidence": [
+      {
+        "filename": "v6_roles.txt",
+        "size_bytes": 178461,
+        "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "github_blob_sha1": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+        "original_blob_matches": true
+      },
+      {
+        "filename": "p17_archive_manifest.json",
+        "size_bytes": 78086,
+        "sha256": "779bae9a30ec4b4c57b9b8a13c5790a0c501e91be6422c2df0ed81b4ced1f4e0",
+        "github_blob_sha1": "3e4f483eb3079c96a077cffb3270e476db299dff",
+        "original_blob_matches": true
+      }
+    ],
+    "fixed_commit_file_bindings": [
+      {
+        "repository": "yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c",
+        "commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+        "truncated": false,
+        "local_file": "upstream/V6/v6_roles.txt",
+        "entries": [
+          {
+            "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f/第六轮_全部岗位职责_可复制版V6.0.txt",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+            "size": 178461,
+            "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+          },
+          {
+            "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+            "size": 178461,
+            "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+          }
+        ]
+      },
+      {
+        "repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+        "commit": "566c02ac14dd29660260010aa5cf0fbb2d0f125d",
+        "truncated": false,
+        "local_file": "evidence/github/p17_archive_manifest.json",
+        "entries": [
+          {
+            "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r3e9d35c7-67fc-4cc6-9c84-ed5b16743b56--P17｜角色编队、属性、装备与养成运行时程序员/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/ae026144-ba8e-4d71-bcf2-c39732b90f17/manifest.json",
+            "mode": "100644",
+            "type": "blob",
+            "sha": "3e4f483eb3079c96a077cffb3270e476db299dff",
+            "size": 78086,
+            "url": "https://api.github.com/repos/yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6/git/blobs/3e4f483eb3079c96a077cffb3270e476db299dff"
+          }
+        ]
+      }
+    ]
+  },
+  "copied_inputs": [
+    {
+      "package_path": "upstream/P07/README.md",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/README.md",
+      "size_bytes": 8199,
+      "sha256": "058b30724a8d5000b058d58e917fd0472ee7dffcba7f108b7209902dd653f3c1",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/README.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/content/stages/stage_content_catalog.json",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/content/stages/stage_content_catalog.json",
+      "size_bytes": 3717,
+      "sha256": "818726891190817d890e55b6b20e90426294be8da38414ec42527e4b63655f34",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/content/stages/stage_content_catalog.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/content/stages/stage_graph.json",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/content/stages/stage_graph.json",
+      "size_bytes": 12644,
+      "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/content/stages/stage_graph.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/content/stages/stage_retry_cases.json",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/content/stages/stage_retry_cases.json",
+      "size_bytes": 170850,
+      "sha256": "98e5bbf9097947f7b918da10a89344fd1b7d3ad7a231512dd46bb2855f15c7d8",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/content/stages/stage_retry_cases.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/content/stages/stage_rewards.tsv",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/content/stages/stage_rewards.tsv",
+      "size_bytes": 2597,
+      "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/content/stages/stage_rewards.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/content/stages/stage_table.tsv",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/content/stages/stage_table.tsv",
+      "size_bytes": 767,
+      "sha256": "2e5d14c8f9a59189e0fc2f9e84e73b175cf24c0dfda07364e5b5ca08da59c651",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/content/stages/stage_table.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/design/stages/content_format.md",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/content_format.md",
+      "size_bytes": 4463,
+      "sha256": "e11c531ee9373bccd3b1159e97e79b7862244afa562ffe3ea18b5d0f8bbceacc",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/design/stages/content_format.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/design/stages/first_clear_policy.md",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/first_clear_policy.md",
+      "size_bytes": 10814,
+      "sha256": "af618365ca6a875489589dfe20c9ae4be2c11f1569edb0251fc9e0c3eff3be1f",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/design/stages/first_clear_policy.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/design/stages/interface_rfc_and_blockers.md",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/interface_rfc_and_blockers.md",
+      "size_bytes": 5238,
+      "sha256": "77a835355414a01de665f6ba66b2588c89a67e83fcfc1c1211961ed8be50d59b",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/design/stages/interface_rfc_and_blockers.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P07/design/stages/source_input_receipt.json",
+      "source_path": "intake/cd494cd3f6a29d1f/P07_Stage_Delivery_V0.1/design/stages/source_input_receipt.json",
+      "size_bytes": 12378,
+      "sha256": "96ad46a2e2e55327505b7419ae187cf63d5acf26045cbe4f28ba383408f3f588",
+      "source_archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "source_member": "P07_Stage_Delivery_V0.1/design/stages/source_input_receipt.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P05/README.md",
+      "source_path": "intake/98592b1b16bd8e03/README.md",
+      "size_bytes": 5273,
+      "sha256": "b712135554aaa9180dd352776cbab99b3d0884a8b42650f56bc38ba83735c0dd",
+      "source_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "source_member": "README.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P05/content/balance/balance_parameters.tsv",
+      "source_path": "intake/98592b1b16bd8e03/content/balance/balance_parameters.tsv",
+      "size_bytes": 25009,
+      "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487",
+      "source_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "source_member": "content/balance/balance_parameters.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P05/content/balance/stage_resource_budget.tsv",
+      "source_path": "intake/98592b1b16bd8e03/content/balance/stage_resource_budget.tsv",
+      "size_bytes": 1381,
+      "sha256": "d4849f7f8237eec1d359ae06d7a0689b3500552ed17dbd1bb67213b5f4f225d9",
+      "source_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "source_member": "content/balance/stage_resource_budget.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P05/design/balance/interface_rfc_blockers.md",
+      "source_path": "intake/98592b1b16bd8e03/design/balance/interface_rfc_blockers.md",
+      "size_bytes": 4088,
+      "sha256": "6ba91ea29b4adef4da2e59dfb2f8d52ea3feaddc7b697eff7c4a4d3ed554358a",
+      "source_archive_sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "source_member": "design/balance/interface_rfc_blockers.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/architecture/actual_path_mapping.json",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/architecture/authorization_basis.json",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+      "size_bytes": 845,
+      "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/architecture/authorization_basis.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/architecture/do_not_touch.txt",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+      "size_bytes": 962,
+      "sha256": "dc77710b4b37366294fa79433d44d264233b0022672e16c4d28d9eb14851c8de",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/architecture/do_not_touch.txt",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/architecture/target_environment_requirements.json",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/contracts/internal/contract_semantics.md",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+      "size_bytes": 8986,
+      "sha256": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/contracts/internal/internal_api_contracts.json",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/__init__.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/codec.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/contracts.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/contracts.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/demo.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+      "size_bytes": 2073,
+      "sha256": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/demo.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/host.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+      "size_bytes": 3979,
+      "sha256": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/host.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/path_guard.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+      "size_bytes": 1229,
+      "sha256": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/path_guard.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/ports.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/ports.py",
+      "size_bytes": 3699,
+      "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/ports.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/sequence.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+      "size_bytes": 2594,
+      "sha256": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/sequence.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P13/runtime/framework/yltt_framework/testing.py",
+      "source_path": "intake/3324610eff8d9232/P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+      "size_bytes": 1333,
+      "sha256": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "source_member": "P13_ClientArchitecture_V0.1/runtime/framework/yltt_framework/testing.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/__init__.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/__init__.py",
+      "size_bytes": 672,
+      "sha256": "5c5da680c4c472b213ac75b2a2c5fabe53b1d9d560d537c09f0eca302da8e42b",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/__main__.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/__main__.py",
+      "size_bytes": 964,
+      "sha256": "d0fcb463bed855bef20d015b7d6b5c5443c6f248789ecf78e0350b81d0faa15f",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/__main__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/core.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/core.py",
+      "size_bytes": 14017,
+      "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/core.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/model.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/model.py",
+      "size_bytes": 7537,
+      "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/model.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/ports.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/ports.py",
+      "size_bytes": 1077,
+      "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/ports.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/replay.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/replay.py",
+      "size_bytes": 2424,
+      "sha256": "6a5d5eef5b2f357289c447035a6673142e8a79f9a2a197c9a4f41a7bf90445d5",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/replay.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/resolver.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/resolver.py",
+      "size_bytes": 19138,
+      "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/resolver.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/rng.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/rng.py",
+      "size_bytes": 1510,
+      "sha256": "63582486ea35ae90272b8146a2dcfa1c3c7b084029da8349b6da59edd0a738ed",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/rng.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_core/wire.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_core/wire.py",
+      "size_bytes": 730,
+      "sha256": "f5720daa1a54a1ab88c90b81530559fa23e3384e8fc3a9701453b73903dad741",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_core/wire.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_result.json",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_result.json",
+      "size_bytes": 576,
+      "sha256": "b881e89980c3aaac5b53c6dc33307e23310e2fe12b0869372c8a3ffe367cb761",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_result.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_result_schema.md",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_result_schema.md",
+      "size_bytes": 5464,
+      "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_result_schema.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/battle_snapshot.json",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/battle_snapshot.json",
+      "size_bytes": 1616,
+      "sha256": "845252c3ab65ce2b1bc5d2504beb4cfe835ede75c9b807225fa4077dac0e865c",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/battle_snapshot.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/examples/fixture_ports.py",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/examples/fixture_ports.py",
+      "size_bytes": 1772,
+      "sha256": "bbb97f90d9c6559f5180db0077d06ab9e06d0611f8bb5f9fe80cfc0e671f759f",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/examples/fixture_ports.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/handoff/IC05_API.md",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/handoff/IC05_API.md",
+      "size_bytes": 8125,
+      "sha256": "abb4aca4a5a3c0c05972a3894ebcbc3e2900e47514da439d5e69d818be9ee70e",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/handoff/IC05_API.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P14/handoff/interface_rfcs.json",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/handoff/interface_rfcs.json",
+      "size_bytes": 7259,
+      "sha256": "50be398887a01b60d48efa15eec0b223029e89ea2652bcbdd5494d0e12544965",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/handoff/interface_rfcs.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/P17_API.md",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/P17_API.md",
+      "size_bytes": 16158,
+      "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/P17_API.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/actual_path_request.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/actual_path_request.json",
+      "size_bytes": 2538,
+      "sha256": "b7b704c827d347fb9d98492ef3c2ece8943a48d34b500f1edb76700634434598",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/actual_path_request.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/__init__.py",
+      "size_bytes": 827,
+      "sha256": "ced917d4b0a46f1068e65b591a84370ea20bba7facf398c4aeb3ca3f641701fb",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/__main__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/__main__.py",
+      "size_bytes": 267,
+      "sha256": "b943ca485bdda41185269ec0fe63f61a2c2691a2c9424cfbf4dfb469f48885ac",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/__main__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/_upstream.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/_upstream.py",
+      "size_bytes": 315,
+      "sha256": "033f69664bf580fef1904b900b947b1b0fefca7d535d90afe45b0b411370623e",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/_upstream.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/common.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/common.py",
+      "size_bytes": 3275,
+      "sha256": "9b57db958d3fa7cf22e9e7d9635158ddf9758246af9240d7e135b696693062ff",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/common.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/content.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/content.py",
+      "size_bytes": 6575,
+      "sha256": "a3c04837bbe7d645f219c911a9e4482aa1f3a32f801b06347a1090e540cfc651",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/content.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/service.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/service.py",
+      "size_bytes": 12341,
+      "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/service.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/character_party_runtime/state.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/character_party_runtime/state.py",
+      "size_bytes": 5734,
+      "sha256": "a2301a5520065be600a320654038302cb0d70c78928a7f8bc73a28cfd53e21df",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/character_party_runtime/state.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/fixtures/equipment_test_only.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/fixtures/equipment_test_only.json",
+      "size_bytes": 718,
+      "sha256": "34953c7c212e8b09bd0a6ff1e0b33679b682051372d6d5510dd3fca493842c83",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/fixtures/equipment_test_only.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/integration_handoff.md",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/integration_handoff.md",
+      "size_bytes": 7380,
+      "sha256": "8fea69e44da3420fb0a3f4007fd223a2ecf284807b33796dec9f8114db703de0",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/integration_handoff.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/interface_rfcs.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/interface_rfcs.json",
+      "size_bytes": 5790,
+      "sha256": "c5643230f3c1e845962ca746942ab1ca1895a358928c70962afb0d564845992e",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/interface_rfcs.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/__init__.py",
+      "size_bytes": 64,
+      "sha256": "6adc52896d28b1d4d934984cd9f6e055ec4a9fa44853b5161be492f02c7a420b",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/__init__.py",
+      "size_bytes": 71,
+      "sha256": "1d5feef434470f57721caa89f153bb727d74167e08c2869b5f5cd156102161f0",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/characters/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/characters/__init__.py",
+      "size_bytes": 35,
+      "sha256": "1478d7b1ddd4b5e70fd076373f5f0c96d18e15686dac7ea2149a97b95205945a",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/characters/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/characters/rules.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/characters/rules.py",
+      "size_bytes": 6452,
+      "sha256": "1763fbaa672af4170459f543263fed88199986064f69b17de416f4529957377d",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/characters/rules.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/party/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/party/__init__.py",
+      "size_bytes": 36,
+      "sha256": "29727e5f11bfa86313e7a86af9b6c8d299f0d9a02e749228a70615d136c2a106",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/party/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/party/projection.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/party/projection.py",
+      "size_bytes": 2766,
+      "sha256": "a25783dfc2a1e739d846ca5a39f6de29dcff06a54ddf4e515ef9e29043713c02",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/party/projection.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/wallet/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/wallet/__init__.py",
+      "size_bytes": 79,
+      "sha256": "9dcffbdcb1b52d499448a1312f8a433773679095b6dc1a2552810c36124b26cd",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/wallet/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/runtime/meta/wallet/rules.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/runtime/meta/wallet/rules.py",
+      "size_bytes": 15201,
+      "sha256": "b89f4e330c79887a6391b87fbfcfec3d6f147b63862c4da00f5de07293ac7616",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/runtime/meta/wallet/rules.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/source_input_receipt.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/source_input_receipt.json",
+      "size_bytes": 38762,
+      "sha256": "199cf48d8823397bc9e4786f197f32f6ad8f9f80a3ca5597ee40b9ace9f99afc",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/source_input_receipt.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/character_cases.tsv",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_cases.tsv",
+      "size_bytes": 2587,
+      "sha256": "ff3185d7d03e3d50daedef580eb45e74b6f1eda5e3a83859c3082048c3b6d8f0",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_cases.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/character_deck_contribution.tsv",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_deck_contribution.tsv",
+      "size_bytes": 1611,
+      "sha256": "2d4d3e09557d801749d44a24c1da405351e28fcadf0c23be52f0c07088daa06a",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_deck_contribution.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/character_field_dictionary.tsv",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_field_dictionary.tsv",
+      "size_bytes": 1741,
+      "sha256": "640471c552b1d900c14f9d892768cca5563b90478ed4fe1410387dbfc0e83809",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_field_dictionary.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/character_lifecycle_fixtures.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_lifecycle_fixtures.json",
+      "size_bytes": 4902,
+      "sha256": "4579277dcb1034a5a6a0ffa76149c828a9eac88417c85b29a6d848c72b4e8eb8",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_lifecycle_fixtures.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/character_skeleton.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_skeleton.json",
+      "size_bytes": 8047,
+      "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/character_skeleton.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/progression_costs.tsv",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/progression_costs.tsv",
+      "size_bytes": 5346,
+      "sha256": "5c872fb5ac0a0834ecdfe270a6dd81a42c10aaecf8d58559b822b1fcdc4df41f",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/progression_costs.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P04/content/characters/validate_character_content.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/validate_character_content.py",
+      "size_bytes": 27396,
+      "sha256": "04342bec8624246d163e7891c37de9eb52ee783c75c0fac5886d37c6f42d3c1a",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P04/content/characters/validate_character_content.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/contracts/internal/internal_dto.schema.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/contracts/internal/internal_dto.schema.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/__init__.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/__init__.py",
+      "size_bytes": 133,
+      "sha256": "32581bd293c63c47536b8ba2276b638ff7629babdee1c9e728b4ee88f64bed34",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/__init__.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/codec.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/codec.py",
+      "size_bytes": 3173,
+      "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/codec.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/contracts.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/contracts.py",
+      "size_bytes": 10957,
+      "sha256": "d21a9d90a7ba888b2f525454316c79c0ee04e363842f0a9e9d9536de2d8b962a",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/contracts.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/demo.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/demo.py",
+      "size_bytes": 2073,
+      "sha256": "e5dd755afe0669d47e3aa3cbd462ed0c4bcb2c34b7c8fddd6b8f94c9f6150b55",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/demo.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/host.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/host.py",
+      "size_bytes": 3979,
+      "sha256": "6e4ee4e128816ed4e8e33e9f87f2afa312f08edbb7714e6202f46dd08ecf55e8",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/host.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/path_guard.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/path_guard.py",
+      "size_bytes": 1229,
+      "sha256": "832c2b36c2a0e2cb9ceaad3ef6277d91ca39ffc94b7b81d39740e0da38f62e94",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/path_guard.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/ports.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/ports.py",
+      "size_bytes": 3699,
+      "sha256": "c0a76aaa46d94ad35d72a5b9c3baba5264ad7221fdee1828846a30ebe1e6fa46",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/ports.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/sequence.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/sequence.py",
+      "size_bytes": 2594,
+      "sha256": "499e6bb9b0e24e8134560e1a99d00c4cf52fada55fa36550c40fc41b84db8185",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/sequence.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/sources/P13/runtime/framework/yltt_framework/testing.py",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/testing.py",
+      "size_bytes": 1333,
+      "sha256": "8864a3891d6d453c35c1eed68a0fa6294146296492b6d0b6a7e24078a2992d5f",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/sources/P13/runtime/framework/yltt_framework/testing.py",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P17/wallet_delta_contract.json",
+      "source_path": "intake/339c492a8f4f3963/P17_CharacterPartyWallet_V0.1/wallet_delta_contract.json",
+      "size_bytes": 4832,
+      "sha256": "d0a84fbadd57cd04270a4c86c57e55c3229ea4c0f87d17a3c1bf2dc1fc2512ff",
+      "source_archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "source_member": "P17_CharacterPartyWallet_V0.1/wallet_delta_contract.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+      "source_path": "intake/0a2912acc81c594b/content/enemies/boss_phase_graph.json",
+      "size_bytes": 6305,
+      "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+      "source_archive_sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "source_member": "content/enemies/boss_phase_graph.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P06/content/enemies/enemy_specs.json",
+      "source_path": "intake/0a2912acc81c594b/content/enemies/enemy_specs.json",
+      "size_bytes": 25799,
+      "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+      "source_archive_sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "source_member": "content/enemies/enemy_specs.json",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P01/planning/decisions/decisions_pending.tsv",
+      "source_path": "intake/139034e2179fbe35/planning/decisions/decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "source_member": "planning/decisions/decisions_pending.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P01/planning/handoffs/role_activation_register.tsv",
+      "source_path": "intake/139034e2179fbe35/planning/handoffs/role_activation_register.tsv",
+      "size_bytes": 5628,
+      "sha256": "5bbb4eb565b2f6dd06bb68a0908b22e7b561061cb1c8afbd8c07dfac0cf6e862",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "source_member": "planning/handoffs/role_activation_register.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P01/spec/product/prd_scope_v0.md",
+      "source_path": "intake/139034e2179fbe35/spec/product/prd_scope_v0.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "source_member": "spec/product/prd_scope_v0.md",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P01/spec/product/requirements_baseline_v6.txt",
+      "source_path": "intake/139034e2179fbe35/spec/product/requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "source_member": "spec/product/requirements_baseline_v6.txt",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/P01/spec/product/requirements_traceability.tsv",
+      "source_path": "intake/139034e2179fbe35/spec/product/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "source_member": "spec/product/requirements_traceability.tsv",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/V6/v6_freeze.txt",
+      "source_path": "intake/a439f32c482117e2/P14_BattleCore_V0.1/upstream/V6/v6_freeze.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "source_archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "source_member": "P14_BattleCore_V0.1/upstream/V6/v6_freeze.txt",
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "upstream/V6/v6_roles.txt",
+      "source_path": "github_evidence/v6_roles.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "source_archive_sha256": null,
+      "source_member": null,
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "evidence/github/p17_archive_manifest.json",
+      "source_path": "github_evidence/p17_archive_manifest.json",
+      "size_bytes": 78086,
+      "sha256": "779bae9a30ec4b4c57b9b8a13c5790a0c501e91be6422c2df0ed81b4ced1f4e0",
+      "source_archive_sha256": null,
+      "source_member": null,
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    },
+    {
+      "package_path": "evidence/intake/intake_index.json",
+      "source_path": "intake/intake_index.json",
+      "size_bytes": 2362793,
+      "sha256": "6672292d756c32b7b243469fd52be4121dd2bcafdfe32841e64fde81b8129d44",
+      "source_archive_sha256": null,
+      "source_member": null,
+      "mode": "READ_ONLY_UNMODIFIED_COPY"
+    }
+  ],
+  "missing": [
+    "P21 real atomic store / read-fence / terminal index API",
+    "P13 actual P18 production paths and joint transaction acceptance",
+    "P22 formal stage IDs / migration aliases",
+    "P05/P01 approved stage budgets",
+    "Windows engine environment / P32 / P33 / P35 receipts"
+  ]
+}

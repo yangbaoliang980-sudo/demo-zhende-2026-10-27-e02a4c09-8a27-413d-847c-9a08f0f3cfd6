@@ -1,0 +1,306 @@
+{
+  "schema_version": "P18-BLOCKERS/0.1.0",
+  "task_id": "P18-S07-STAGES-001",
+  "overall": "PRODUCTION_INTEGRATION_BLOCKED",
+  "items": [
+    {
+      "id": "P18-B01",
+      "accountable_owner": "P13",
+      "collaborators": [
+        "P01"
+      ],
+      "title": "实际工程路径与写入授权",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "actual_path_mapping: P18 三条真实路径、固定 base commit、授权白名单",
+        "真实工程入口/引擎/可复用模块证据"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P13/architecture/actual_path_mapping.json",
+          "size_bytes": 16790,
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "observed": "当前 P13 mapping 三条为 null/write_allowed=false；只交付新隔离包",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B02",
+      "accountable_owner": "P21",
+      "collaborators": [
+        "P13",
+        "P17"
+      ],
+      "title": "真实持久联合事务",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "版本化 atomic store API",
+        "scope/first-clear/request 唯一约束",
+        "回执查询与 UNKNOWN 恢复",
+        "备份之外的连续性 fence",
+        "持久故障/并发证据"
+      ],
+      "evidence": [
+        {
+          "path": "stage_runtime/transactions.py",
+          "size_bytes": 4866,
+          "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+        },
+        {
+          "path": "tests/support/memory_model.py",
+          "size_bytes": 3678,
+          "sha256": "b3141bdd232f881da23ef4e568756eb22fbcd8e2b5cb589ac4aed82cfa9a04d7"
+        }
+      ],
+      "observed": "未收到 P21 实现；内存模型 durable=false",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B03",
+      "accountable_owner": "P13",
+      "collaborators": [
+        "P17",
+        "P21"
+      ],
+      "title": "存档作用域与 P17 权益映射",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "账号/profile/save scope 身份映射",
+        "固定 namespace 接收回执",
+        "完整 P17+P18 联合 envelope 接收版本"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P17/P17_API.md",
+          "size_bytes": 16158,
+          "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+        },
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "observed": "profile_id==save_scope 的隔离约束及 YLTT_STAGE_SCOPE 仍为提案",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B04",
+      "accountable_owner": "P14",
+      "collaborators": [
+        "P13",
+        "P21"
+      ],
+      "title": "入场、终局、撤销一致权威端口",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "admission 绑定的终局索引",
+        "更高修订与撤销生命周期契约",
+        "同事务读取授权凭据",
+        "FAULTED/ABORTED 关闭语义接收"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P14/battle_result_schema.md",
+          "size_bytes": 5464,
+          "sha256": "8d54300150cb29e8e93ad8fe8ff052487ee7d19abe54a028496e587f1dafc4e0"
+        },
+        {
+          "path": "stage_runtime/ports.py",
+          "size_bytes": 1381,
+          "sha256": "67a14a1e37baee9214a8c13a29463d6dadcba9edc6eae826efdea6e14b0be9ea"
+        }
+      ],
+      "observed": "原生 P14 核心局部测试通过；生产权威/撤销查询端口未收到",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B05",
+      "accountable_owner": "P01",
+      "collaborators": [
+        "P05",
+        "P07",
+        "P06"
+      ],
+      "title": "关卡预算与正式范围审批",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "P05 正式首通/重复预算与版本",
+        "P07 正式章节配置",
+        "零入场/重试成本政策",
+        "当前 P06 Boss 引用与 P05 预算对应确认",
+        "S07 正式启动门禁"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P07/content/stages/stage_graph.json",
+          "size_bytes": 12644,
+          "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+        },
+        {
+          "path": "upstream/P07/content/stages/stage_rewards.tsv",
+          "size_bytes": 2597,
+          "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827"
+        },
+        {
+          "path": "upstream/P05/content/balance/balance_parameters.tsv",
+          "size_bytes": 25009,
+          "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487"
+        }
+      ],
+      "observed": "原配置 production_enabled=false，repeat 关闭；MVP 数量未当作批准指标",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B06",
+      "accountable_owner": "P22",
+      "collaborators": [
+        "P13",
+        "P21",
+        "P07"
+      ],
+      "title": "正式内容 ID 与迁移",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "canonical stage ID",
+        "alias/重命名表与 base SHA",
+        "跨 store/新增关卡存档迁移版本"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P07/content/stages/stage_graph.json",
+          "size_bytes": 12644,
+          "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+        },
+        {
+          "path": "first_clear_keys.json",
+          "size_bytes": 2225,
+          "sha256": "156cdb26fac213a82c2e509146cd332f61819aef254523fe77f164d87e908120"
+        }
+      ],
+      "observed": "目前 MOCK ID；新关卡集合、别名和跨 continuity 恢复拒绝",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B07",
+      "accountable_owner": "P34",
+      "collaborators": [
+        "P13"
+      ],
+      "title": "目标系统与引擎证据",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "目标 OS/架构/引擎确切版本",
+        "目标工程入口哈希",
+        "真实启动与退出重进环境"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P13/architecture/target_environment_requirements.json",
+          "size_bytes": 1143,
+          "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+        }
+      ],
+      "observed": "仅 Linux/Python 作者环境观测；目标信息原件均缺",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B08",
+      "accountable_owner": "P35",
+      "collaborators": [
+        "P32",
+        "P33"
+      ],
+      "title": "独立验证与门禁",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "P32 独测原始结果",
+        "P33 真机人工记录",
+        "P35 固定包哈希独审回执"
+      ],
+      "evidence": [
+        {
+          "path": "evidence/runs/author_final/run_receipt.json",
+          "size_bytes": 23473,
+          "sha256": "3545745352698ebba990dfec12968b5bc3ee864f577f27468f9177ac3fac4cc3"
+        }
+      ],
+      "observed": "作者执行不能代替独立岗位验收",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B09",
+      "accountable_owner": "P07",
+      "collaborators": [
+        "P13",
+        "P14",
+        "P21"
+      ],
+      "title": "原始场景差异和未适配项",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "ST-030 高修订后的 review 语义",
+        "ST-031 双 admission 与单活动规则的一致裁决",
+        "余下原场景历史/UI/别名测试输入"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P07/content/stages/stage_retry_cases.json",
+          "size_bytes": 170850,
+          "sha256": "98e5bbf9097947f7b918da10a89344fd1b7d3ad7a231512dd46bb2855f15c7d8"
+        }
+      ],
+      "observed": "35 个原案例实际通过，32 个 NOT_RUN；无原 ST-030/031 PASS 声明",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B10",
+      "accountable_owner": "P13",
+      "collaborators": [
+        "P21"
+      ],
+      "title": "长期状态容量与分段",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "保留首通/去重语义的分页/归档/迁移契约",
+        "大存档真实容量预算"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/P13/runtime/framework/yltt_framework/codec.py",
+          "size_bytes": 3173,
+          "sha256": "1899350dd7494e507b77b6f61f36c9bd458d1865911dd8e2da3994e816942808"
+        },
+        {
+          "path": "stage_runtime/state.py",
+          "size_bytes": 10584,
+          "sha256": "65603ce4823172b5f3276e057d8d84fd71eddcee209ddf6dbb313835a8cc8ea7"
+        }
+      ],
+      "observed": "完整 JSON 受 1 MiB/32 深度/100000 节点/4096 集合限制；不会删除凭证",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    },
+    {
+      "id": "P18-B11",
+      "accountable_owner": "P01",
+      "collaborators": [
+        "EXT-INTEGRATOR"
+      ],
+      "title": "最终跨模块整合授权",
+      "status": "BLOCKED",
+      "missing_artifacts_or_acceptances": [
+        "用户指定 EXT-INTEGRATOR 的明确授权和目标 base"
+      ],
+      "evidence": [
+        {
+          "path": "upstream/V6/v6_roles.txt",
+          "size_bytes": 178461,
+          "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+        }
+      ],
+      "observed": "P18 未执行真实工程合并或发布",
+      "unblocked_independent_work": "ISOLATED_IMPLEMENTATION_AND_AUTHOR_VERIFICATION_DELIVERED"
+    }
+  ]
+}
