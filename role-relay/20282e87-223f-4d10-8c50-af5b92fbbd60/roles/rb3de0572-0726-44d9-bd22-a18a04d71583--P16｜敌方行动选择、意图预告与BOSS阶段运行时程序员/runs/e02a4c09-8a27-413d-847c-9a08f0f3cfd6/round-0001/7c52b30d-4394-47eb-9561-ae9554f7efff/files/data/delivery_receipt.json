@@ -1,0 +1,433 @@
+{
+  "schema_version": "P16-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "version": "P16-ENEMY-AI/0.1.0-isolated",
+  "archive": {
+    "filename": "P16_EnemyAI_V0.1.zip",
+    "size_bytes": 11197353,
+    "sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+    "file_count": 195,
+    "crc": "PASS"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "archive_member_path": "P16_EnemyAI_V0.1/README.md",
+      "size_bytes": 8935,
+      "sha256": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f"
+    },
+    {
+      "filename": "P16_API.md",
+      "package_relative_path": "P16_API.md",
+      "archive_member_path": "P16_EnemyAI_V0.1/P16_API.md",
+      "size_bytes": 10229,
+      "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "package_relative_path": "integration_handoff.md",
+      "archive_member_path": "P16_EnemyAI_V0.1/integration_handoff.md",
+      "size_bytes": 6505,
+      "sha256": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1"
+    },
+    {
+      "filename": "intent_replay_fixtures.json",
+      "package_relative_path": "intent_replay_fixtures.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/intent_replay_fixtures.json",
+      "size_bytes": 783721,
+      "sha256": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b"
+    },
+    {
+      "filename": "boss_transition_cases.tsv",
+      "package_relative_path": "boss_transition_cases.tsv",
+      "archive_member_path": "P16_EnemyAI_V0.1/boss_transition_cases.tsv",
+      "size_bytes": 20818,
+      "sha256": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4"
+    },
+    {
+      "filename": "enemy_intent_schema.json",
+      "package_relative_path": "enemy_intent_schema.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_intent_schema.json",
+      "size_bytes": 4072,
+      "sha256": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7"
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/verification_status.json",
+      "size_bytes": 5070,
+      "sha256": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21"
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "archive_member_path": "P16_EnemyAI_V0.1/delivery_manifest.sha256.tsv",
+      "size_bytes": 152488,
+      "sha256": "5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "evidence/source_input_receipt.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/source_input_receipt.json",
+      "size_bytes": 57981,
+      "sha256": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f"
+    },
+    {
+      "filename": "input_immutability_check.json",
+      "package_relative_path": "evidence/input_immutability_check.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/input_immutability_check.json",
+      "size_bytes": 431,
+      "sha256": "96a790a6ba9e8f37c2b6292bd3483a31d7a091b72accb639ceeeb169e93ad589"
+    },
+    {
+      "filename": "p06_projection_results.json",
+      "package_relative_path": "evidence/p06_projection_results.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/p06_projection_results.json",
+      "size_bytes": 414467,
+      "sha256": "fc0c74ed36439ff623d6c146c82f45c4d172917f2110bf28e5cf6ec59a476c30"
+    },
+    {
+      "filename": "demo_summary.json",
+      "package_relative_path": "evidence/demo_summary.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/demo_summary.json",
+      "size_bytes": 999,
+      "sha256": "dc7619551d61484d59e1bfea9917f0504fb972097bbeb8c969d18bfa7b2a8647"
+    },
+    {
+      "filename": "defect_log.json",
+      "package_relative_path": "evidence/defect_log.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/defect_log.json",
+      "size_bytes": 3281,
+      "sha256": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d"
+    },
+    {
+      "filename": "final_executed_source_binding.json",
+      "package_relative_path": "evidence/final_executed_source_binding.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/evidence/final_executed_source_binding.json",
+      "size_bytes": 6025,
+      "sha256": "cfad09ee28801deef6da7532d76622dac7d205f8e656985d2476740f332385bc"
+    },
+    {
+      "filename": "blockers.json",
+      "package_relative_path": "handoff/blockers.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/blockers.json",
+      "size_bytes": 9456,
+      "sha256": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "handoff/interface_rfcs.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/interface_rfcs.json",
+      "size_bytes": 11304,
+      "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+    },
+    {
+      "filename": "actual_path_request.json",
+      "package_relative_path": "handoff/actual_path_request.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/actual_path_request.json",
+      "size_bytes": 1952,
+      "sha256": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84"
+    },
+    {
+      "filename": "contract_acceptance.json",
+      "package_relative_path": "handoff/contract_acceptance.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/contract_acceptance.json",
+      "size_bytes": 3088,
+      "sha256": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c"
+    },
+    {
+      "filename": "task_traceability.json",
+      "package_relative_path": "handoff/task_traceability.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/task_traceability.json",
+      "size_bytes": 6095,
+      "sha256": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6"
+    },
+    {
+      "filename": "downstream_receipts.json",
+      "package_relative_path": "handoff/downstream_receipts.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/handoff/downstream_receipts.json",
+      "size_bytes": 13910,
+      "sha256": "47cc0e19c20cb7ddff7c9df274950062a215e2a920ca717505798d2a16013db0"
+    },
+    {
+      "filename": "planner.py",
+      "package_relative_path": "enemy_ai/planner.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_ai/planner.py",
+      "size_bytes": 16356,
+      "sha256": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309"
+    },
+    {
+      "filename": "phases.py",
+      "package_relative_path": "enemy_ai/phases.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_ai/phases.py",
+      "size_bytes": 4918,
+      "sha256": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085"
+    },
+    {
+      "filename": "types.py",
+      "package_relative_path": "enemy_ai/types.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_ai/types.py",
+      "size_bytes": 7007,
+      "sha256": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445"
+    },
+    {
+      "filename": "content.py",
+      "package_relative_path": "enemy_ai/content.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_ai/content.py",
+      "size_bytes": 11817,
+      "sha256": "d651bf4f2b93aa1960a9d62fa923ebd2fb9dd460534c481f99859840fd8440e3"
+    },
+    {
+      "filename": "p14_adapter.py",
+      "package_relative_path": "enemy_ai/p14_adapter.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/enemy_ai/p14_adapter.py",
+      "size_bytes": 1670,
+      "sha256": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd"
+    },
+    {
+      "filename": "test_p14_contract.py",
+      "package_relative_path": "tests/enemy_ai_unit/test_p14_contract.py",
+      "archive_member_path": "P16_EnemyAI_V0.1/tests/enemy_ai_unit/test_p14_contract.py",
+      "size_bytes": 12518,
+      "sha256": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c"
+    },
+    {
+      "filename": "demo_execution.json",
+      "package_relative_path": "examples/demo_execution.json",
+      "archive_member_path": "P16_EnemyAI_V0.1/examples/demo_execution.json",
+      "size_bytes": 36076,
+      "sha256": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135"
+    }
+  ],
+  "same_name_same_bytes_check": {
+    "status": "PASS",
+    "exports_verified": 27,
+    "archive_members_verified": 195
+  },
+  "manifest": {
+    "relative_path": "delivery_manifest.sha256.tsv",
+    "size_bytes": 152488,
+    "sha256": "5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a"
+  },
+  "receipt_placement": "EXTERNAL_TO_ARCHIVE_TO_AVOID_SELF_REFERENTIAL_HASH",
+  "scope": "AUTHOR_ISOLATED_MODULE; PRODUCTION_BLOCKED; INDEPENDENT_ACCEPTANCE_NOT_RUN",
+  "source_manifest_rows": 194,
+  "downstream_receiver_count": 11,
+  "downstream_file_records": 59,
+  "read_only_upstream_files": 88,
+  "production_write_whitelist": [],
+  "archive_source_inputs": {
+    "upstream/P01/spec/product/requirements_traceability.tsv": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+    "upstream/P02/spec/battle/state_machine/battle_state_machine.md": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+    "upstream/P06/content/enemies/enemy_specs.json": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7",
+    "upstream/P06/content/enemies/boss_phase_graph.json": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+    "upstream/P13/contracts/internal/internal_dto.schema.json": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+    "upstream/P14/battle_core/core.py": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78",
+    "upstream/P14/battle_core/rng.py": "63582486ea35ae90272b8146a2dcfa1c3c7b084029da8349b6da59edd0a738ed"
+  },
+  "fresh_extraction": {
+    "status": "AUTHOR_REPRODUCTION_PASS_WITH_FORMAL_GATE_BLOCKED",
+    "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+    "directory": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "runs": [
+      {
+        "name": "integrity",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/verify_delivery.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233754.2909687,
+        "duration_seconds": 0.206199,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"manifest_files_verified\": 194,\n  \"upstream_copies_verified\": 88,\n  \"copies_compared_to_original_archive\": 73,\n  \"errors\": [],\n  \"manifest_self_sha256\": \"5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "9b386f89d41713a4e7f307f48450482ac222ef880b8f10714d213c555d1979c2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "author_tests",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/author_tests.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233754.4972982,
+        "duration_seconds": 8.410862,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"validation_layer\": \"P16_AUTHOR_ONLY\",\n  \"tests_run\": 182,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"skipped\": 0,\n  \"status\": \"AUTHOR_PASS\",\n  \"P32\": \"NOT_RUN\",\n  \"P35\": \"NOT_RUN\"\n}\n",
+        "stderr": "test_P06_ET_001 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_001) ... ok\ntest_P06_ET_002 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_002) ... ok\ntest_P06_ET_003 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_003) ... ok\ntest_P06_ET_004 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_004) ... ok\ntest_P06_ET_005 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_005) ... ok\ntest_P06_ET_006 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_006) ... ok\ntest_P06_ET_007 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_007) ... ok\ntest_P06_ET_008 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_008) ... ok\ntest_P06_ET_009 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_009) ... ok\ntest_P06_ET_010 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_010) ... ok\ntest_P06_ET_011 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_011) ... ok\ntest_P06_ET_012 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_012) ... ok\ntest_P06_ET_013 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_013) ... ok\ntest_P06_ET_014 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_014) ... ok\ntest_P06_ET_015 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_015) ... ok\ntest_P06_ET_016 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_016) ... ok\ntest_P06_ET_017 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_017) ... ok\ntest_P06_ET_018 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_018) ... ok\ntest_P06_ET_019 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_019) ... ok\ntest_P06_ET_020 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_020) ... ok\ntest_P06_ET_021 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_021) ... ok\ntest_P06_ET_022 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_022) ... ok\ntest_P06_ET_023 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_023) ... ok\ntest_P06_ET_024 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_024) ... ok\ntest_P06_ET_025 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_025) ... ok\ntest_P06_ET_026 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_026) ... ok\ntest_P06_ET_027 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_027) ... ok\ntest_P06_ET_028 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_028) ... ok\ntest_P06_ET_029 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_029) ... ok\ntest_P06_ET_030 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_030) ... ok\ntest_P06_ET_031 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_031) ... ok\ntest_P06_ET_032 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_032) ... ok\ntest_P06_ET_033 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_033) ... ok\ntest_P06_ET_034 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_034) ... ok\ntest_P06_ET_035 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_035) ... ok\ntest_P06_ET_036 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_036) ... ok\ntest_P06_ET_037 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_037) ... ok\ntest_P06_ET_038 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_038) ... ok\ntest_P06_ET_039 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_039) ... ok\ntest_P06_ET_040 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_040) ... ok\ntest_P06_ET_041 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_041) ... ok\ntest_P06_ET_042 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_042) ... ok\ntest_P06_ET_043 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_043) ... ok\ntest_P06_ET_044 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_044) ... ok\ntest_P06_ET_045 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_045) ... ok\ntest_P06_ET_046 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_046) ... ok\ntest_P06_ET_047 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_047) ... ok\ntest_P06_ET_048 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_048) ... ok\ntest_P06_ET_049 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_049) ... ok\ntest_P06_ET_050 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_050) ... ok\ntest_P06_ET_051 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_051) ... ok\ntest_P06_ET_052 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_052) ... ok\ntest_P06_ET_053 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_053) ... ok\ntest_P06_ET_054 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_054) ... ok\ntest_P06_ET_055 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_055) ... ok\ntest_P06_ET_056 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_056) ... ok\ntest_P06_ET_057 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_057) ... ok\ntest_P06_ET_058 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_058) ... ok\ntest_P06_ET_060 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_060) ... ok\ntest_P06_ET_062 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_062) ... ok\ntest_P06_ET_063 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_063) ... ok\ntest_P06_ET_064 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_064) ... ok\ntest_P06_ET_065 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_065) ... ok\ntest_P06_ET_066 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_066) ... ok\ntest_P06_ET_067 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_067) ... ok\ntest_P06_ET_068 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_068) ... ok\ntest_P06_ET_069 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_069) ... ok\ntest_P06_ET_070 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_070) ... ok\ntest_P06_ET_071 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_071) ... ok\ntest_P06_ET_072 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_072) ... ok\ntest_P06_ET_073 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_073) ... ok\ntest_P06_ET_074 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_074) ... ok\ntest_P06_ET_075 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_075) ... ok\ntest_P06_ET_077 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_077) ... ok\ntest_P06_ET_078 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_078) ... ok\ntest_P06_ET_079 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_079) ... ok\ntest_P06_ET_080 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_080) ... ok\ntest_P06_ET_081 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_081) ... ok\ntest_P06_ET_082 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_082) ... ok\ntest_P06_ET_083 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_083) ... ok\ntest_P06_ET_084 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_084) ... ok\ntest_P06_ET_085 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_085) ... ok\ntest_P06_ET_086 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_086) ... ok\ntest_P06_ET_087 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_087) ... ok\ntest_P06_ET_088 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_088) ... ok\ntest_P06_ET_089 (enemy_ai_unit.test_p06_projection.P06ProjectionTests.test_P06_ET_089) ... ok\ntest_concurrent_twentyfour_retries_one_damage (enemy_ai_unit.test_p14_contract.P14ContractTests.test_concurrent_twentyfour_retries_one_damage) ... ok\ntest_duplicate_request_calls_ai_once (enemy_ai_unit.test_p14_contract.P14ContractTests.test_duplicate_request_calls_ai_once) ... ok\ntest_existing_p14_cannot_execute_partial_sweep (enemy_ai_unit.test_p14_contract.P14ContractTests.test_existing_p14_cannot_execute_partial_sweep) ... ok\ntest_interruption_rolls_back_then_retry_matches_clean (enemy_ai_unit.test_p14_contract.P14ContractTests.test_interruption_rolls_back_then_retry_matches_clean) ... ok\ntest_invalid_locked_target_skips_without_hidden_retarget (enemy_ai_unit.test_p14_contract.P14ContractTests.test_invalid_locked_target_skips_without_hidden_retarget) ... ok\ntest_lethal_dot_preempts_ai_and_phase (enemy_ai_unit.test_p14_contract.P14ContractTests.test_lethal_dot_preempts_ai_and_phase) ... ok\ntest_multienemy_p14_port_remains_blocked (enemy_ai_unit.test_p14_contract.P14ContractTests.test_multienemy_p14_port_remains_blocked) ... ok\ntest_nonlethal_dot_does_not_interrupt_release (enemy_ai_unit.test_p14_contract.P14ContractTests.test_nonlethal_dot_does_not_interrupt_release) ... ok\ntest_overkill_from_p14 (enemy_ai_unit.test_p14_contract.P14ContractTests.test_overkill_from_p14) ... ok\ntest_p06_boss_release_damage_projection (enemy_ai_unit.test_p14_contract.P14ContractTests.test_p06_boss_release_damage_projection) ... ok\ntest_p06_elite_release_damage_projection (enemy_ai_unit.test_p14_contract.P14ContractTests.test_p06_elite_release_damage_projection) ... ok\ntest_phase_proposal_real_p14_identity_and_commit_block (enemy_ai_unit.test_p14_contract.P14ContractTests.test_phase_proposal_real_p14_identity_and_commit_block) ... ok\ntest_production_adapter_scope_is_rejected (enemy_ai_unit.test_p14_contract.P14ContractTests.test_production_adapter_scope_is_rejected) ... ok\ntest_real_p14_damage_from_p06_skill (enemy_ai_unit.test_p14_contract.P14ContractTests.test_real_p14_damage_from_p06_skill) ... ok\ntest_rejection_uses_real_exception_class_no_fault (enemy_ai_unit.test_p14_contract.P14ContractTests.test_rejection_uses_real_exception_class_no_fault) ... ok\ntest_same_id_changed_payload_collision (enemy_ai_unit.test_p14_contract.P14ContractTests.test_same_id_changed_payload_collision) ... ok\ntest_shield_changes_actual_loss_not_preview (enemy_ai_unit.test_p14_contract.P14ContractTests.test_shield_changes_actual_loss_not_preview) ... ok\ntest_stale_command_rejects_before_ai (enemy_ai_unit.test_p14_contract.P14ContractTests.test_stale_command_rejects_before_ai) ... ok\ntest_all_pending_no_repeated_phase_or_wait (enemy_ai_unit.test_phases.PhaseTests.test_all_pending_no_repeated_phase_or_wait) ... ok\ntest_already_pending_phase_not_reproposed (enemy_ai_unit.test_phases.PhaseTests.test_already_pending_phase_not_reproposed) ... ok\ntest_both_sides_dead_observed_draw (enemy_ai_unit.test_phases.PhaseTests.test_both_sides_dead_observed_draw) ... ok\ntest_dead_boss_while_other_enemy_alive_no_phase (enemy_ai_unit.test_phases.PhaseTests.test_dead_boss_while_other_enemy_alive_no_phase) ... ok\ntest_death_precedes_phase (enemy_ai_unit.test_phases.PhaseTests.test_death_precedes_phase) ... ok\ntest_future_trigger_sequence_rejected (enemy_ai_unit.test_phases.PhaseTests.test_future_trigger_sequence_rejected) ... ok\ntest_healing_recross_never_regresses (enemy_ai_unit.test_phases.PhaseTests.test_healing_recross_never_regresses) ... ok\ntest_integer_thresholds (enemy_ai_unit.test_phases.PhaseTests.test_integer_thresholds) ... ok\ntest_missing_graph_recommendation_no_proposals (enemy_ai_unit.test_phases.PhaseTests.test_missing_graph_recommendation_no_proposals) ... ok\ntest_no_cross_from_equal_threshold (enemy_ai_unit.test_phases.PhaseTests.test_no_cross_from_equal_threshold) ... ok\ntest_persistent_degraded_mode_never_reenters_graph (enemy_ai_unit.test_phases.PhaseTests.test_persistent_degraded_mode_never_reenters_graph) ... ok\ntest_phase_identity_does_not_change_with_retry_command (enemy_ai_unit.test_phases.PhaseTests.test_phase_identity_does_not_change_with_retry_command) ... ok\ntest_reactions_pending_defers_before_win (enemy_ai_unit.test_phases.PhaseTests.test_reactions_pending_defers_before_win) ... ok\ntest_repeated_phase_plan_same_bytes (enemy_ai_unit.test_phases.PhaseTests.test_repeated_phase_plan_same_bytes) ... ok\ntest_terminal_phase_no_successor (enemy_ai_unit.test_phases.PhaseTests.test_terminal_phase_no_successor) ... ok\ntest_transient_damage_ignored_final_checkpoint_only (enemy_ai_unit.test_phases.PhaseTests.test_transient_damage_ignored_final_checkpoint_only) ... ok\ntest_two_thresholds_one_wait_no_extra_action (enemy_ai_unit.test_phases.PhaseTests.test_two_thresholds_one_wait_no_extra_action) ... ok\ntest_unknown_phase_history_gap_rejected (enemy_ai_unit.test_phases.PhaseTests.test_unknown_phase_history_gap_rejected) ... ok\ntest_content_keys_do_not_use_wire_profile (enemy_ai_unit.test_planner.ContentTests.test_content_keys_do_not_use_wire_profile) ... ok\ntest_content_values_detached (enemy_ai_unit.test_planner.ContentTests.test_content_values_detached) ... ok\ntest_cyclic_graph_has_bounded_degradation (enemy_ai_unit.test_planner.ContentTests.test_cyclic_graph_has_bounded_degradation) ... ok\ntest_duplicate_json_key (enemy_ai_unit.test_planner.ContentTests.test_duplicate_json_key) ... ok\ntest_hash_binding (enemy_ai_unit.test_planner.ContentTests.test_hash_binding) ... ok\ntest_missing_baseline_rejects (enemy_ai_unit.test_planner.ContentTests.test_missing_baseline_rejects) ... ok\ntest_missing_graph_does_not_affect_normal (enemy_ai_unit.test_planner.ContentTests.test_missing_graph_does_not_affect_normal) ... ok\ntest_no_summon_config_is_invented (enemy_ai_unit.test_planner.ContentTests.test_no_summon_config_is_invented) ... ok\ntest_unknown_skill_reference_rejects (enemy_ai_unit.test_planner.ContentTests.test_unknown_skill_reference_rejects) ... ok\ntest_boolean_epoch_rejected (enemy_ai_unit.test_planner.PlannerTests.test_boolean_epoch_rejected) ... ok\ntest_boolean_intent_amount_rejected (enemy_ai_unit.test_planner.PlannerTests.test_boolean_intent_amount_rejected) ... ok\ntest_candidate_contains_no_authoritative_fields (enemy_ai_unit.test_planner.PlannerTests.test_candidate_contains_no_authoritative_fields) ... ok\ntest_charge_cooldown_contradiction_rejects (enemy_ai_unit.test_planner.PlannerTests.test_charge_cooldown_contradiction_rejects) ... ok\ntest_charge_is_zero_damage_and_does_not_advance_cursor (enemy_ai_unit.test_planner.PlannerTests.test_charge_is_zero_damage_and_does_not_advance_cursor) ... ok\ntest_charge_with_cooldown_advances_once (enemy_ai_unit.test_planner.PlannerTests.test_charge_with_cooldown_advances_once) ... ok\ntest_dead_actor_no_slot_or_cooldown (enemy_ai_unit.test_planner.PlannerTests.test_dead_actor_no_slot_or_cooldown) ... ok\ntest_dead_targets_ignored_at_publish (enemy_ai_unit.test_planner.PlannerTests.test_dead_targets_ignored_at_publish) ... ok\ntest_degraded_mode_stays_degraded_after_graph_restored (enemy_ai_unit.test_planner.PlannerTests.test_degraded_mode_stays_degraded_after_graph_restored) ... ok\ntest_duplicate_locked_targets_rejects (enemy_ai_unit.test_planner.PlannerTests.test_duplicate_locked_targets_rejects) ... ok\ntest_entry_wait_one_candidate_no_phase_write (enemy_ai_unit.test_planner.PlannerTests.test_entry_wait_one_candidate_no_phase_write) ... ok\ntest_frozen_output_detached (enemy_ai_unit.test_planner.PlannerTests.test_frozen_output_detached) ... ok\ntest_future_revision_announcement_rejects (enemy_ai_unit.test_planner.PlannerTests.test_future_revision_announcement_rejects) ... ok\ntest_input_array_order_does_not_choose_target (enemy_ai_unit.test_planner.PlannerTests.test_input_array_order_does_not_choose_target) ... ok\ntest_locked_target_dies_no_retarget (enemy_ai_unit.test_planner.PlannerTests.test_locked_target_dies_no_retarget) ... ok\ntest_locked_target_removed_no_retarget (enemy_ai_unit.test_planner.PlannerTests.test_locked_target_removed_no_retarget) ... ok\ntest_low_hp_start_without_history_rejects (enemy_ai_unit.test_planner.PlannerTests.test_low_hp_start_without_history_rejects) ... ok\ntest_missing_graph_only_recommendation (enemy_ai_unit.test_planner.PlannerTests.test_missing_graph_only_recommendation) ... ok\ntest_no_target_preview_is_frozen_skip (enemy_ai_unit.test_planner.PlannerTests.test_no_target_preview_is_frozen_skip) ... ok\ntest_non_string_behavior_ids_reject_without_type_error (enemy_ai_unit.test_planner.PlannerTests.test_non_string_behavior_ids_reject_without_type_error) ... ok\ntest_non_string_locked_targets_reject_without_type_error (enemy_ai_unit.test_planner.PlannerTests.test_non_string_locked_targets_reject_without_type_error) ... ok\ntest_normal_preview_and_action (enemy_ai_unit.test_planner.PlannerTests.test_normal_preview_and_action) ... ok\ntest_old_turn_announcement_rejects (enemy_ai_unit.test_planner.PlannerTests.test_old_turn_announcement_rejects) ... ok\ntest_pending_phase_halts_old_attack (enemy_ai_unit.test_planner.PlannerTests.test_pending_phase_halts_old_attack) ... ok\ntest_pending_reactions_preempt_terminal (enemy_ai_unit.test_planner.PlannerTests.test_pending_reactions_preempt_terminal) ... ok\ntest_phase_epoch_conflict_without_wait_rejects (enemy_ai_unit.test_planner.PlannerTests.test_phase_epoch_conflict_without_wait_rejects) ... ok\ntest_phase_replaced_old_heavy_is_wait (enemy_ai_unit.test_planner.PlannerTests.test_phase_replaced_old_heavy_is_wait) ... ok\ntest_preview_no_state_or_rng_mutation (enemy_ai_unit.test_planner.PlannerTests.test_preview_no_state_or_rng_mutation) ... ok\ntest_recovery_cooldown_ticks_only_in_candidate (enemy_ai_unit.test_planner.PlannerTests.test_recovery_cooldown_ticks_only_in_candidate) ... ok\ntest_release_missing_early_expired_all_skip (enemy_ai_unit.test_planner.PlannerTests.test_release_missing_early_expired_all_skip) ... ok\ntest_release_uses_charge_target_not_rotation (enemy_ai_unit.test_planner.PlannerTests.test_release_uses_charge_target_not_rotation) ... ok\ntest_resealed_forged_amount_rejects_content (enemy_ai_unit.test_planner.PlannerTests.test_resealed_forged_amount_rejects_content) ... ok\ntest_rng_history_mismatch_rejected (enemy_ai_unit.test_planner.PlannerTests.test_rng_history_mismatch_rejected) ... ok\ntest_rotation_and_wrap (enemy_ai_unit.test_planner.PlannerTests.test_rotation_and_wrap) ... ok\ntest_same_snapshot_and_seed_concurrent (enemy_ai_unit.test_planner.PlannerTests.test_same_snapshot_and_seed_concurrent) ... ok\ntest_seed_domain_extremes_no_rng_draws (enemy_ai_unit.test_planner.PlannerTests.test_seed_domain_extremes_no_rng_draws) ... ok\ntest_slot_capacity_rejected_without_overflow (enemy_ai_unit.test_planner.PlannerTests.test_slot_capacity_rejected_without_overflow) ... ok\ntest_stale_context_rejected (enemy_ai_unit.test_planner.PlannerTests.test_stale_context_rejected) ... ok\ntest_sweep_filters_no_new_targets (enemy_ai_unit.test_planner.PlannerTests.test_sweep_filters_no_new_targets) ... ok\ntest_tampered_announcement_digest_rejects (enemy_ai_unit.test_planner.PlannerTests.test_tampered_announcement_digest_rejects) ... ok\ntest_targetability_removed_after_preview (enemy_ai_unit.test_planner.PlannerTests.test_targetability_removed_after_preview) ... ok\ntest_terminal_preempts_action (enemy_ai_unit.test_planner.PlannerTests.test_terminal_preempts_action) ... ok\ntest_unknown_phase_rejects (enemy_ai_unit.test_planner.PlannerTests.test_unknown_phase_rejects) ... ok\ntest_unknown_release_marker_rejects (enemy_ai_unit.test_planner.PlannerTests.test_unknown_release_marker_rejects) ... ok\ntest_unsupported_snapshot_version_rejects (enemy_ai_unit.test_planner.PlannerTests.test_unsupported_snapshot_version_rejects) ... ok\ntest_valid_nonzero_rng_history_preserved (enemy_ai_unit.test_planner.PlannerTests.test_valid_nonzero_rng_history_preserved) ... ok\ntest_wrong_battle_announcement_rejects (enemy_ai_unit.test_planner.PlannerTests.test_wrong_battle_announcement_rejects) ... ok\ntest_wrong_side_locked_target_rejects (enemy_ai_unit.test_planner.PlannerTests.test_wrong_side_locked_target_rejects) ... ok\ntest_changed_fixture_expected_output_detected (enemy_ai_unit.test_replay.ReplayTests.test_changed_fixture_expected_output_detected) ... ok\ntest_recompute_frozen_inputs (enemy_ai_unit.test_replay.ReplayTests.test_recompute_frozen_inputs) ... ok\ntest_three_processes_hash_seeds_same_execution_digest (enemy_ai_unit.test_replay.ReplayTests.test_three_processes_hash_seeds_same_execution_digest) ... ok\n\n----------------------------------------------------------------------\nRan 182 tests in 8.232s\n\nOK\n",
+        "stdout_sha256": "e0560d485f335f857c3c80e0728db8a3f857d7af1cb8a3b9429a0346ba097add",
+        "stderr_sha256": "581d433eddef7f6f08d286f59945086e01c582ea5802859281a51c373c0801d9"
+      },
+      {
+        "name": "intent_replay",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_fixtures.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233762.9082992,
+        "duration_seconds": 0.965823,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"status\": \"AUTHOR_REPLAY_PASS\",\n  \"cases\": 86,\n  \"execution_digest\": \"e544700abdf877d2563135a7754a192588e45cac21e04db2c459f7a37ab2fe8f\",\n  \"failures\": []\n}\n",
+        "stderr": "",
+        "stdout_sha256": "7b325daddf421aadcaefa06ecd110e3bf5b69676efbbc088c5f5b85e94542c80",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "shared_contracts",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/check_contracts.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233763.874204,
+        "duration_seconds": 0.183641,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"status\": \"AUTHOR_CONTRACT_PASS\",\n  \"validator\": \"UNMODIFIED_P13_ORIGINAL\",\n  \"valid_messages\": 140,\n  \"by_dto\": {\n    \"BattleSnapshot\": 84,\n    \"EnemyIntent\": 51,\n    \"PhaseProposal\": 5\n  },\n  \"expected_invalid_inputs\": [\n    {\n      \"case_id\": \"P06-ET-081\",\n      \"error\": \"SCHEMA_INTEGER_RANGE\"\n    },\n    {\n      \"case_id\": \"P06-ET-082\",\n      \"error\": \"SCHEMA_INTEGER_RANGE\"\n    }\n  ],\n  \"failures\": [],\n  \"formal_contract_acceptance\": \"BLOCKED\",\n  \"independent_P32\": \"NOT_RUN\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "e5ca9b8b90e6d241f133092fbb8e042744c04299a6e9d0e329bc7e42984881c1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "module_demo",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "-m",
+          "enemy_ai"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233764.0579183,
+        "duration_seconds": 0.198176,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"scope\": \"ONE_SLOT_ISOLATED_CONTRACT_EXECUTION\",\n  \"actual_modules\": [\n    \"P16 enemy_ai\",\n    \"P14 original battle_core\",\n    \"P13 original codec/schema\"\n  ],\n  \"fixture_dependencies\": [\n    \"P17 three-unit initial party\",\n    \"P15 declared END_TURN no-move candidate\",\n    \"P06 provisional enemy content\",\n    \"P16 behavior extension not persisted by P14\"\n  ],\n  \"requests\": 3,\n  \"commits\": 2,\n  \"duplicate_no_op\": 1,\n  \"preview_base_damage\": 8,\n  \"damage_events\": [\n    {\n      \"absorbed\": 4,\n      \"hp_after\": 46,\n      \"hp_loss\": 4,\n      \"overkill\": 0,\n      \"raw\": 8,\n      \"shield_after\": 0,\n      \"source_unit_id\": \"E1\",\n      \"target_unit_id\": \"H1\"\n    }\n  ],\n  \"hero_hp_before\": 50,\n  \"hero_hp_after\": 46,\n  \"final_revision\": 2,\n  \"rng_unchanged\": true,\n  \"phase_proposal_order\": [\n    \"MOCK_P06_PHASE_2\",\n    \"MOCK_P06_PHASE_3\"\n  ],\n  \"boss_phase_still_original\": \"MOCK_P06_PHASE_1\",\n  \"p14_behavior_commit\": \"BLOCKED\",\n  \"p14_phase_acceptance\": \"BLOCKED\",\n  \"game_E2E\": \"NOT_RUN\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "dc7619551d61484d59e1bfea9917f0504fb972097bbeb8c969d18bfa7b2a8647",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "demo_replay",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_demo.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "started_utc_epoch": 1793233764.2561693,
+        "duration_seconds": 0.225092,
+        "status": "AUTHOR_PASS",
+        "stdout": "{\n  \"status\": \"AUTHOR_DEMO_REPLAY_PASS\",\n  \"recomputed_from_initial_inputs\": true,\n  \"p14_replay_sha256\": \"30e4a0d6471e1d13590de92f414c1aa6eecd533d2f4e734569dfb97fe8e47bcb\",\n  \"full_execution_sha256\": \"c230e65439bd3fd3e4110f23dc5a89bd2c36f53fbeb2d6e8f1546ea6ef75a240\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "fb959f945046d767ebc13389f44a6b440279a5117f971fa47f1254725ba93d52",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "formal_preflight",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/preflight.py"
+        ],
+        "cwd": "/workspace/scratch/cdcc4f899201/fresh_verify_001/P16_EnemyAI_V0.1",
+        "expected_exit_code": 3,
+        "actual_exit_code": 3,
+        "started_utc_epoch": 1793233764.4813335,
+        "duration_seconds": 0.032781,
+        "status": "BLOCKED",
+        "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"exit_code\": 3,\n  \"task_id\": \"P16-S03-AI-001\",\n  \"observed_P13_production_write_authorized\": false,\n  \"P16_actual_paths\": [\n    {\n      \"owner\": \"P16\",\n      \"design_path\": \"runtime/battle/enemy_ai/**\",\n      \"isolated_relative_path\": null,\n      \"actual_production_path\": null,\n      \"scope\": \"PLANNED_NOT_ACTUAL\",\n      \"status\": \"BLOCKED_NOT_MAPPED\",\n      \"write_allowed\": false,\n      \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n    },\n    {\n      \"owner\": \"P16\",\n      \"design_path\": \"tests/enemy_ai_unit/**\",\n      \"isolated_relative_path\": null,\n      \"actual_production_path\": null,\n      \"scope\": \"PLANNED_NOT_ACTUAL\",\n      \"status\": \"BLOCKED_NOT_MAPPED\",\n      \"write_allowed\": false,\n      \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n    }\n  ],\n  \"unmet_items\": [\n    {\n      \"id\": \"P16-B01\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P13\",\n      \"title\": \"正式路径与工程写授权缺失\",\n      \"blocked_scope\": \"生产工程写入/跨模块接入\",\n      \"missing_condition\": \"P16 两条规划路径 actual_production_path=null、write_allowed=false；实际项目/引擎/OS 均未绑定。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P13/architecture/actual_path_mapping.json\",\n          \"size_bytes\": 16790,\n          \"sha256\": \"388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P13 出具固定工程提交、实际路径映射、基线哈希、所有权与写入授权；由用户另行指定 EXT-INTEGRATOR。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/\",\n        \"tests/enemy_ai_unit/\",\n        \"handoff/actual_path_request.json\"\n      ]\n    },\n    {\n      \"id\": \"P16-B02\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P13\",\n      \"title\": \"行为/预告/目标资格 DTO 缺失\",\n      \"blocked_scope\": \"正式行为快照与预告读取\",\n      \"missing_condition\": \"原 BattleSnapshot 无行为游标、enemy_slot、cooldown、Charge、phase_epoch、targetable、预告存储；扩展仍为 P16 明示提案。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P13/contracts/internal/internal_dto.schema.json\",\n          \"size_bytes\": 93217,\n          \"sha256\": \"b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P13/P14 冻结新版本 DTO 与 golden vectors，给出拒绝旧版及迁移语义。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/types.py\",\n        \"P16_API.md\"\n      ]\n    },\n    {\n      \"id\": \"P16-B03\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P14\",\n      \"title\": \"行为候选和冻结预告没有权威提交端口\",\n      \"blocked_scope\": \"连续敌方回合与中断恢复\",\n      \"missing_condition\": \"现 EnemyPlanner 只返回 EnemyIntent；BehaviorCandidate 不能原子提交，适配器仅允许 ONE_SLOT_CONTRACT_TEST_ONLY。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P14/battle_core/core.py\",\n          \"size_bytes\": 14017,\n          \"sha256\": \"224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78\"\n        },\n        {\n          \"relative_path\": \"upstream/P14/battle_core/ports.py\",\n          \"size_bytes\": 1077,\n          \"sha256\": \"86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P14 将行为候选/预告身份/槽位与效果、receipt 同批原子提交，拒绝/回滚不推进；P32 独立复测。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/p14_adapter.py\",\n        \"enemy_ai/planner.py\",\n        \"tests/enemy_ai_unit/test_p14_contract.py\"\n      ]\n    },\n    {\n      \"id\": \"P16-B04\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P14\",\n      \"title\": \"阶段受理端口未实现\",\n      \"blocked_scope\": \"S07 阶段状态提交\",\n      \"missing_condition\": \"inspect_phase_proposal 抛 PHASE_COMMIT_CONTRACT_UNBOUND；P06-ET-059/061 的阶段受理历史无法实际执行。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P14/battle_core/core.py\",\n          \"size_bytes\": 14017,\n          \"sha256\": \"224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78\"\n        },\n        {\n          \"relative_path\": \"upstream/P06/content/enemies/boss_phase_graph.json\",\n          \"size_bytes\": 6305,\n          \"sha256\": \"cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P14 接受有序多阈值提议、一次 epoch/ENTRY_WAIT/取消旧蓄力、零额外行动，提交后输出新快照与回执。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/phases.py\",\n        \"boss_transition_cases.tsv\",\n        \"tests/enemy_ai_unit/test_phases.py\"\n      ]\n    },\n    {\n      \"id\": \"P16-B05\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P14\",\n      \"title\": \"群攻有效目标筛减不被当前固定 target_count 接受\",\n      \"blocked_scope\": \"多人有效目标变化下的群攻结算\",\n      \"missing_condition\": \"P16 冻结3目标后过滤为2；原 P14 Action.target_count=3 导致 ENEMY_ACTION_SKIPPED，未伤害剩余2人。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P14/battle_core/model.py\",\n          \"size_bytes\": 7537,\n          \"sha256\": \"2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2\"\n        },\n        {\n          \"relative_path\": \"upstream/P14/battle_core/core.py\",\n          \"size_bytes\": 14017,\n          \"sha256\": \"224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78\"\n        },\n        {\n          \"relative_path\": \"upstream/P14/battle_core/resolver.py\",\n          \"size_bytes\": 19138,\n          \"sha256\": \"536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P14/P13 明确 ALL_LOCKED_SURVIVORS 或等价目标基数协议，并由 P14 校验内容/锁定名单后结算；不得由 P16 填假目标。\",\n      \"independent_work_delivered\": [\n        \"tests/enemy_ai_unit/test_p14_contract.py\",\n        \"handoff/interface_rfcs.json\"\n      ]\n    },\n    {\n      \"id\": \"P16-B06\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P14\",\n      \"title\": \"多敌批次未绑定\",\n      \"blocked_scope\": \"超过 S03 单怪的多敌/召唤场景\",\n      \"missing_condition\": \"原 P14 拒绝 ENEMY_BATCH_CONTRACT_UNBOUND；本包仅单行动者纯决策，不替 owner 制定额外行动顺序。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P14/battle_core/core.py\",\n          \"size_bytes\": 14017,\n          \"sha256\": \"224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78\"\n        }\n      ],\n      \"unblock_evidence_required\": \"进入多敌范围前，P02/P14 冻结队列顺序/死亡移除/一次性槽位；不阻断本次单怪隔离测试。\",\n      \"independent_work_delivered\": [\n        \"tests/enemy_ai_unit/test_p14_contract.py\"\n      ]\n    },\n    {\n      \"id\": \"P16-B07\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P22\",\n      \"title\": \"正式内容 ID/Schema 尚未冻结\",\n      \"blocked_scope\": \"正式内容导入\",\n      \"missing_condition\": \"本轮沿用 P06 MOCK_P06_* 测试命名空间，production_enabled=false，不得作为正式内容 ID。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P06/content/enemies/enemy_specs.json\",\n          \"size_bytes\": 25799,\n          \"sha256\": \"bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P22 给出正式命名/Schema、固定哈希和 P06 内容迁移表。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/content.py\",\n        \"evidence/source_input_receipt.json\"\n      ]\n    },\n    {\n      \"id\": \"P16-B08\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P06\",\n      \"title\": \"正式行为配置与 S07 机制范围待确认\",\n      \"blocked_scope\": \"正式敌方/召唤内容\",\n      \"missing_condition\": \"P06-ENEMY-0.1.0-proposal 仅隔离提案；没有召唤技能/条件；P16 不补造。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P06/content/enemies/enemy_specs.json\",\n          \"size_bytes\": 25799,\n          \"sha256\": \"bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7\"\n        },\n        {\n          \"relative_path\": \"upstream/P06/content/enemies/boss_phase_graph.json\",\n          \"size_bytes\": 6305,\n          \"sha256\": \"cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P06 提交经 P01 范围确认的生产配置版本；需要召唤时先给条件/优先级/上限，再走 P13/P14 合同。\",\n      \"independent_work_delivered\": [\n        \"enemy_ai/content.py\",\n        \"tests/enemy_ai_unit/test_planner.py\"\n      ]\n    },\n    {\n      \"id\": \"P16-B09\",\n      \"status\": \"BLOCKED\",\n      \"resolution_owner\": \"P13\",\n      \"title\": \"目标环境与可构建工程证据缺失\",\n      \"blocked_scope\": \"目标引擎/Windows 真机验证\",\n      \"missing_condition\": \"实际仅 Linux/Python 3.12.14；目标工程、引擎、目标 OS 的验收信息为空。\",\n      \"evidence\": [\n        {\n          \"relative_path\": \"upstream/P13/architecture/actual_path_mapping.json\",\n          \"size_bytes\": 16790,\n          \"sha256\": \"388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f\"\n        },\n        {\n          \"relative_path\": \"upstream/P13/architecture/target_environment_requirements.json\",\n          \"size_bytes\": 1143,\n          \"sha256\": \"af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda\"\n        }\n      ],\n      \"unblock_evidence_required\": \"P13 提供实际工程/版本/目标设备证据与构建入口；P32/P33 运行后独立给结果。\",\n      \"independent_work_delivered\": [\n        \"evidence/environment.json\",\n        \"tools/author_tests.py\"\n      ]\n    }\n  ],\n  \"independent_P32\": \"NOT_RUN\",\n  \"independent_P33\": \"NOT_RUN\",\n  \"independent_P35\": \"NOT_RUN\",\n  \"target_engine\": \"NOT_RUN\",\n  \"game_E2E\": \"NOT_RUN\"\n}\n",
+        "stderr": "",
+        "stdout_sha256": "5ae4828cd21fe2a865a2b949f5221053039817f6147ae3b4f23c386bc0daa522",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "author_test_summary": {
+      "validation_layer": "P16_AUTHOR_ONLY",
+      "tests_run": 182,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "status": "AUTHOR_PASS",
+      "P32": "NOT_RUN",
+      "P35": "NOT_RUN"
+    },
+    "cross_process_results": [
+      {
+        "PYTHONHASHSEED": "1",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_fixtures.py",
+          "--digest-only"
+        ],
+        "actual_exit_code": 0,
+        "stdout": "e544700abdf877d2563135a7754a192588e45cac21e04db2c459f7a37ab2fe8f\n",
+        "stderr": ""
+      },
+      {
+        "PYTHONHASHSEED": "222",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_fixtures.py",
+          "--digest-only"
+        ],
+        "actual_exit_code": 0,
+        "stdout": "e544700abdf877d2563135a7754a192588e45cac21e04db2c459f7a37ab2fe8f\n",
+        "stderr": ""
+      },
+      {
+        "PYTHONHASHSEED": "random",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "-B",
+          "tools/replay_fixtures.py",
+          "--digest-only"
+        ],
+        "actual_exit_code": 0,
+        "stdout": "e544700abdf877d2563135a7754a192588e45cac21e04db2c459f7a37ab2fe8f\n",
+        "stderr": ""
+      }
+    ],
+    "archive_and_extracted_members_unchanged_after_runs": true,
+    "final_export_byte_comparison": "PASS"
+  },
+  "final_layer_status": {
+    "author_design_review": "COMPLETED_AUTHOR_REVIEW",
+    "author_unit_and_contract_tests": "AUTHOR_PASS",
+    "independent_P32": "NOT_RUN",
+    "independent_P33": "NOT_RUN",
+    "independent_P35": "NOT_RUN",
+    "target_engine": "NOT_RUN",
+    "target_Windows": "NOT_RUN",
+    "actual_UI_animation": "NOT_RUN",
+    "real_Anki": "NOT_RUN",
+    "whole_game_E2E": "NOT_RUN",
+    "production_integration": "BLOCKED",
+    "behavior_commit": "BLOCKED",
+    "phase_acceptance": "BLOCKED"
+  },
+  "README_entry": "README.md",
+  "package_paths_are_relative_to": "P16_EnemyAI_V0.1/",
+  "receipt_self_hash_note": "The archive hash and exports are tool-computed; this external receipt does not claim a self hash or ZIP counterpart."
+}

@@ -1,0 +1,392 @@
+{
+  "schema_version": "P16-DOWNSTREAM/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "receiver_count": 11,
+  "file_receipt_count": 59,
+  "receipts": [
+    {
+      "receiver": "P14",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "P16_API.md",
+          "size_bytes": 10229,
+          "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+        },
+        {
+          "relative_path": "enemy_ai/planner.py",
+          "size_bytes": 16356,
+          "sha256": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309"
+        },
+        {
+          "relative_path": "enemy_ai/phases.py",
+          "size_bytes": 4918,
+          "sha256": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085"
+        },
+        {
+          "relative_path": "enemy_ai/types.py",
+          "size_bytes": 7007,
+          "sha256": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445"
+        },
+        {
+          "relative_path": "enemy_ai/p14_adapter.py",
+          "size_bytes": 1670,
+          "sha256": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd"
+        },
+        {
+          "relative_path": "enemy_intent_schema.json",
+          "size_bytes": 4072,
+          "sha256": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7"
+        },
+        {
+          "relative_path": "examples/demo_execution.json",
+          "size_bytes": 36076,
+          "sha256": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135"
+        },
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P19",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "P16_API.md",
+          "size_bytes": 10229,
+          "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+        },
+        {
+          "relative_path": "intent_replay_fixtures.json",
+          "size_bytes": 783721,
+          "sha256": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b"
+        },
+        {
+          "relative_path": "examples/demo_execution.json",
+          "size_bytes": 36076,
+          "sha256": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135"
+        },
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P27",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "P16_API.md",
+          "size_bytes": 10229,
+          "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+        },
+        {
+          "relative_path": "boss_transition_cases.tsv",
+          "size_bytes": 20818,
+          "sha256": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/intent_dictionary.tsv",
+          "size_bytes": 5583,
+          "sha256": "db64c4d509638bbf969d374ff905e5bc2d76afdd44218e99d4142d06074497bc"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "README.md",
+          "size_bytes": 8935,
+          "sha256": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 5070,
+          "sha256": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21"
+        },
+        {
+          "relative_path": "tools/author_tests.py",
+          "size_bytes": 618,
+          "sha256": "8404e0ceaa7aa99c2a9e67700d0b70c02f359e04b0a5feba7f70f9711237f90b"
+        },
+        {
+          "relative_path": "tools/replay_fixtures.py",
+          "size_bytes": 1575,
+          "sha256": "cb59363d2adda0e2fbe3b5d70325cbaf059439ae6fa2812d7016950f525eddf6"
+        },
+        {
+          "relative_path": "tools/check_contracts.py",
+          "size_bytes": 1819,
+          "sha256": "0a937656d1e93ae492790a6f26de625224c4b3794fb492b61624b9f5c5af711c"
+        },
+        {
+          "relative_path": "tools/verify_delivery.py",
+          "size_bytes": 3171,
+          "sha256": "d9b84025387189f5c5db1656a92258c1a1b30e45dc7ce84705ae66133f73bb85"
+        },
+        {
+          "relative_path": "intent_replay_fixtures.json",
+          "size_bytes": 783721,
+          "sha256": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b"
+        },
+        {
+          "relative_path": "boss_transition_cases.tsv",
+          "size_bytes": 20818,
+          "sha256": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4"
+        },
+        {
+          "relative_path": "evidence/defect_log.json",
+          "size_bytes": 3281,
+          "sha256": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d"
+        },
+        {
+          "relative_path": "evidence/final_executed_source_binding.json",
+          "size_bytes": 6025,
+          "sha256": "cfad09ee28801deef6da7532d76622dac7d205f8e656985d2476740f332385bc"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "integration_handoff.md",
+          "size_bytes": 6505,
+          "sha256": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1"
+        },
+        {
+          "relative_path": "P16_API.md",
+          "size_bytes": 10229,
+          "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+        },
+        {
+          "relative_path": "examples/demo_execution.json",
+          "size_bytes": 36076,
+          "sha256": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 5070,
+          "sha256": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "README.md",
+          "size_bytes": 8935,
+          "sha256": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 5070,
+          "sha256": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21"
+        },
+        {
+          "relative_path": "evidence/source_input_receipt.json",
+          "size_bytes": 57981,
+          "sha256": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f"
+        },
+        {
+          "relative_path": "evidence/input_immutability_check.json",
+          "size_bytes": 431,
+          "sha256": "96a790a6ba9e8f37c2b6292bd3483a31d7a091b72accb639ceeeb169e93ad589"
+        },
+        {
+          "relative_path": "evidence/defect_log.json",
+          "size_bytes": 3281,
+          "sha256": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d"
+        },
+        {
+          "relative_path": "evidence/author_review.md",
+          "size_bytes": 2577,
+          "sha256": "ee3d0f139afb4f395a4370cbf0a376f32c87d295301d479bdf72ea6cccbec0b5"
+        },
+        {
+          "relative_path": "handoff/task_traceability.json",
+          "size_bytes": 6095,
+          "sha256": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6"
+        },
+        {
+          "relative_path": "handoff/actual_path_request.json",
+          "size_bytes": 1952,
+          "sha256": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84"
+        },
+        {
+          "relative_path": "handoff/contract_acceptance.json",
+          "size_bytes": 3088,
+          "sha256": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        },
+        {
+          "relative_path": "handoff/actual_path_request.json",
+          "size_bytes": 1952,
+          "sha256": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84"
+        },
+        {
+          "relative_path": "enemy_intent_schema.json",
+          "size_bytes": 4072,
+          "sha256": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7"
+        },
+        {
+          "relative_path": "enemy_ai/types.py",
+          "size_bytes": 7007,
+          "sha256": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445"
+        },
+        {
+          "relative_path": "handoff/blockers.json",
+          "size_bytes": 9456,
+          "sha256": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P06",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        },
+        {
+          "relative_path": "evidence/p06_projection_results.json",
+          "size_bytes": 414467,
+          "sha256": "fc0c74ed36439ff623d6c146c82f45c4d172917f2110bf28e5cf6ec59a476c30"
+        },
+        {
+          "relative_path": "boss_transition_cases.tsv",
+          "size_bytes": 20818,
+          "sha256": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4"
+        },
+        {
+          "relative_path": "intent_replay_fixtures.json",
+          "size_bytes": 783721,
+          "sha256": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P22",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        },
+        {
+          "relative_path": "evidence/source_input_receipt.json",
+          "size_bytes": 57981,
+          "sha256": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "handoff/task_traceability.json",
+          "size_bytes": 6095,
+          "sha256": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6"
+        },
+        {
+          "relative_path": "handoff/blockers.json",
+          "size_bytes": 9456,
+          "sha256": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c"
+        },
+        {
+          "relative_path": "verification_status.json",
+          "size_bytes": 5070,
+          "sha256": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21"
+        },
+        {
+          "relative_path": "integration_handoff.md",
+          "size_bytes": 6505,
+          "sha256": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    },
+    {
+      "receiver": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "files": [
+        {
+          "relative_path": "README.md",
+          "size_bytes": 8935,
+          "sha256": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f"
+        },
+        {
+          "relative_path": "integration_handoff.md",
+          "size_bytes": 6505,
+          "sha256": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1"
+        },
+        {
+          "relative_path": "handoff/actual_path_request.json",
+          "size_bytes": 1952,
+          "sha256": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84"
+        },
+        {
+          "relative_path": "handoff/contract_acceptance.json",
+          "size_bytes": 3088,
+          "sha256": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c"
+        },
+        {
+          "relative_path": "handoff/interface_rfcs.json",
+          "size_bytes": 11304,
+          "sha256": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af"
+        }
+      ],
+      "production_write_permission": false,
+      "contact_or_acceptance_performed": false
+    }
+  ],
+  "archive_identity": "See external delivery_receipt.json after final packaging"
+}

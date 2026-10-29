@@ -1,0 +1,223 @@
+{
+  "schema_version": "P16-BLOCKERS/0.1.0",
+  "task_id": "P16-S03-AI-001",
+  "items": [
+    {
+      "id": "P16-B01",
+      "status": "BLOCKED",
+      "resolution_owner": "P13",
+      "title": "正式路径与工程写授权缺失",
+      "blocked_scope": "生产工程写入/跨模块接入",
+      "missing_condition": "P16 两条规划路径 actual_production_path=null、write_allowed=false；实际项目/引擎/OS 均未绑定。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P13/architecture/actual_path_mapping.json",
+          "size_bytes": 16790,
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "unblock_evidence_required": "P13 出具固定工程提交、实际路径映射、基线哈希、所有权与写入授权；由用户另行指定 EXT-INTEGRATOR。",
+      "independent_work_delivered": [
+        "enemy_ai/",
+        "tests/enemy_ai_unit/",
+        "handoff/actual_path_request.json"
+      ]
+    },
+    {
+      "id": "P16-B02",
+      "status": "BLOCKED",
+      "resolution_owner": "P13",
+      "title": "行为/预告/目标资格 DTO 缺失",
+      "blocked_scope": "正式行为快照与预告读取",
+      "missing_condition": "原 BattleSnapshot 无行为游标、enemy_slot、cooldown、Charge、phase_epoch、targetable、预告存储；扩展仍为 P16 明示提案。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "unblock_evidence_required": "P13/P14 冻结新版本 DTO 与 golden vectors，给出拒绝旧版及迁移语义。",
+      "independent_work_delivered": [
+        "enemy_ai/types.py",
+        "P16_API.md"
+      ]
+    },
+    {
+      "id": "P16-B03",
+      "status": "BLOCKED",
+      "resolution_owner": "P14",
+      "title": "行为候选和冻结预告没有权威提交端口",
+      "blocked_scope": "连续敌方回合与中断恢复",
+      "missing_condition": "现 EnemyPlanner 只返回 EnemyIntent；BehaviorCandidate 不能原子提交，适配器仅允许 ONE_SLOT_CONTRACT_TEST_ONLY。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/ports.py",
+          "size_bytes": 1077,
+          "sha256": "86bec1f1cb639d7f77042664327870e23cf41c656683ccbb0a0fffb4e7a92fb5"
+        }
+      ],
+      "unblock_evidence_required": "P14 将行为候选/预告身份/槽位与效果、receipt 同批原子提交，拒绝/回滚不推进；P32 独立复测。",
+      "independent_work_delivered": [
+        "enemy_ai/p14_adapter.py",
+        "enemy_ai/planner.py",
+        "tests/enemy_ai_unit/test_p14_contract.py"
+      ]
+    },
+    {
+      "id": "P16-B04",
+      "status": "BLOCKED",
+      "resolution_owner": "P14",
+      "title": "阶段受理端口未实现",
+      "blocked_scope": "S07 阶段状态提交",
+      "missing_condition": "inspect_phase_proposal 抛 PHASE_COMMIT_CONTRACT_UNBOUND；P06-ET-059/061 的阶段受理历史无法实际执行。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "size_bytes": 6305,
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        }
+      ],
+      "unblock_evidence_required": "P14 接受有序多阈值提议、一次 epoch/ENTRY_WAIT/取消旧蓄力、零额外行动，提交后输出新快照与回执。",
+      "independent_work_delivered": [
+        "enemy_ai/phases.py",
+        "boss_transition_cases.tsv",
+        "tests/enemy_ai_unit/test_phases.py"
+      ]
+    },
+    {
+      "id": "P16-B05",
+      "status": "BLOCKED",
+      "resolution_owner": "P14",
+      "title": "群攻有效目标筛减不被当前固定 target_count 接受",
+      "blocked_scope": "多人有效目标变化下的群攻结算",
+      "missing_condition": "P16 冻结3目标后过滤为2；原 P14 Action.target_count=3 导致 ENEMY_ACTION_SKIPPED，未伤害剩余2人。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P14/battle_core/model.py",
+          "size_bytes": 7537,
+          "sha256": "2cf66260e30aa672f2b2b28e5b29144ff1aa1ea2bd38cc88682744795ce954f2"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "relative_path": "upstream/P14/battle_core/resolver.py",
+          "size_bytes": 19138,
+          "sha256": "536df9f7f1617f4bf81484851235ae347888cda0810f8e4eb1021ee98ce5b3a1"
+        }
+      ],
+      "unblock_evidence_required": "P14/P13 明确 ALL_LOCKED_SURVIVORS 或等价目标基数协议，并由 P14 校验内容/锁定名单后结算；不得由 P16 填假目标。",
+      "independent_work_delivered": [
+        "tests/enemy_ai_unit/test_p14_contract.py",
+        "handoff/interface_rfcs.json"
+      ]
+    },
+    {
+      "id": "P16-B06",
+      "status": "BLOCKED",
+      "resolution_owner": "P14",
+      "title": "多敌批次未绑定",
+      "blocked_scope": "超过 S03 单怪的多敌/召唤场景",
+      "missing_condition": "原 P14 拒绝 ENEMY_BATCH_CONTRACT_UNBOUND；本包仅单行动者纯决策，不替 owner 制定额外行动顺序。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ],
+      "unblock_evidence_required": "进入多敌范围前，P02/P14 冻结队列顺序/死亡移除/一次性槽位；不阻断本次单怪隔离测试。",
+      "independent_work_delivered": [
+        "tests/enemy_ai_unit/test_p14_contract.py"
+      ]
+    },
+    {
+      "id": "P16-B07",
+      "status": "BLOCKED",
+      "resolution_owner": "P22",
+      "title": "正式内容 ID/Schema 尚未冻结",
+      "blocked_scope": "正式内容导入",
+      "missing_condition": "本轮沿用 P06 MOCK_P06_* 测试命名空间，production_enabled=false，不得作为正式内容 ID。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        }
+      ],
+      "unblock_evidence_required": "P22 给出正式命名/Schema、固定哈希和 P06 内容迁移表。",
+      "independent_work_delivered": [
+        "enemy_ai/content.py",
+        "evidence/source_input_receipt.json"
+      ]
+    },
+    {
+      "id": "P16-B08",
+      "status": "BLOCKED",
+      "resolution_owner": "P06",
+      "title": "正式行为配置与 S07 机制范围待确认",
+      "blocked_scope": "正式敌方/召唤内容",
+      "missing_condition": "P06-ENEMY-0.1.0-proposal 仅隔离提案；没有召唤技能/条件；P16 不补造。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P06/content/enemies/enemy_specs.json",
+          "size_bytes": 25799,
+          "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+        },
+        {
+          "relative_path": "upstream/P06/content/enemies/boss_phase_graph.json",
+          "size_bytes": 6305,
+          "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+        }
+      ],
+      "unblock_evidence_required": "P06 提交经 P01 范围确认的生产配置版本；需要召唤时先给条件/优先级/上限，再走 P13/P14 合同。",
+      "independent_work_delivered": [
+        "enemy_ai/content.py",
+        "tests/enemy_ai_unit/test_planner.py"
+      ]
+    },
+    {
+      "id": "P16-B09",
+      "status": "BLOCKED",
+      "resolution_owner": "P13",
+      "title": "目标环境与可构建工程证据缺失",
+      "blocked_scope": "目标引擎/Windows 真机验证",
+      "missing_condition": "实际仅 Linux/Python 3.12.14；目标工程、引擎、目标 OS 的验收信息为空。",
+      "evidence": [
+        {
+          "relative_path": "upstream/P13/architecture/actual_path_mapping.json",
+          "size_bytes": 16790,
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        },
+        {
+          "relative_path": "upstream/P13/architecture/target_environment_requirements.json",
+          "size_bytes": 1143,
+          "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+        }
+      ],
+      "unblock_evidence_required": "P13 提供实际工程/版本/目标设备证据与构建入口；P32/P33 运行后独立给结果。",
+      "independent_work_delivered": [
+        "evidence/environment.json",
+        "tools/author_tests.py"
+      ]
+    }
+  ],
+  "P32_independent_test": "NOT_RUN",
+  "P33_manual_test": "NOT_RUN",
+  "P35_independent_audit": "NOT_RUN",
+  "automatic_approval_rejections": [],
+  "production_write_whitelist": []
+}

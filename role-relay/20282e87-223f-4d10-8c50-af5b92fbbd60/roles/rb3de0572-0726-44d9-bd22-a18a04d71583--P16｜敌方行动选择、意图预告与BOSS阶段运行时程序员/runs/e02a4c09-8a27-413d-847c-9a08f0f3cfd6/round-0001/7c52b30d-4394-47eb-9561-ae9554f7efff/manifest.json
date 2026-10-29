@@ -1,0 +1,1689 @@
+{
+  "version": 1,
+  "presetId": "20282e87-223f-4d10-8c50-af5b92fbbd60",
+  "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "roleKey": "rb3de0572-0726-44d9-bd22-a18a04d71583",
+  "roleName": "P16｜敌方行动选择、意图预告与BOSS阶段运行时程序员",
+  "round": 1,
+  "handoffToken": "7c52b30d-4394-47eb-9561-ae9554f7efff",
+  "materials": {
+    "assets": [
+      {
+        "hash": "b3a156c9b06a03860a1f79203937b5945509d4083b095a29970c3c54a96ff8aa",
+        "name": "builder.py",
+        "kind": "file",
+        "size": 5609,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/25d01ee3-a65b-4066-9eb3-4eec21facd0c",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fbuilder.py"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "06c45882acd56368531161924a5c67521d0febcd8e168b89fd069749a6abb8d1",
+        "name": "06c45882-1-input_immutability_check.json",
+        "mergeOriginalName": "input_immutability_check.json",
+        "kind": "file",
+        "size": 793293,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/2e644ce4-833a-4f26-a074-5a5fbb8e2690"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+        "name": "b75d7867-1-demo_summary.json",
+        "mergeOriginalName": "demo_summary.json",
+        "kind": "file",
+        "size": 539,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/c5e1ed9b-9923-4f50-aef2-abbd367fa172"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "3fc42b47b64f954bda14f7913b0cb37a3fa638cd35f8da2d57e06b6cd7ee18b0",
+        "name": "3fc42b47-1-defect_log.json",
+        "mergeOriginalName": "defect_log.json",
+        "kind": "file",
+        "size": 2804,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/5cac5a1e-6c8f-4553-8e01-b06624c9a006"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "f6fdd7c06e4fa9c800a9016e58567f7d2e7d3b1586a05109f882fb5188908a17",
+        "name": "f6fdd7c0-1-path_mapping_request.json",
+        "mergeOriginalName": "path_mapping_request.json",
+        "kind": "file",
+        "size": 2906,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/17e40135-f0b8-4971-a978-ac64962043ab"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "b829da114353426c280fffa6cbcabebbce50a6c6804521ffc1096f4e1921b7df",
+        "name": "b829da11-1-contract_acceptance.json",
+        "mergeOriginalName": "contract_acceptance.json",
+        "kind": "file",
+        "size": 4232,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/59e308fe-cf02-4e0f-a413-4f75632f1966"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "c617d116d785e8f9d3d4b89cc8386777c2b0ca28a6cc139e1748a23dac8d76b7",
+        "name": "relay-materials-1-c617d116d7.zip",
+        "kind": "file",
+        "size": 11146290,
+        "type": "application/zip",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "d3f598c365bd371f68c4d469175cf7feee1c43e312dfb8932fba3942af319644",
+        "name": "relay-materials-2-d3f598c365.zip",
+        "kind": "file",
+        "size": 16364229,
+        "type": "application/zip",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "02e8113369b3292cb21d6c7fe9e71f7fc829dce4652bcd385c9b33c1678cc6fb",
+        "name": "relay-materials-3-02e8113369.zip",
+        "kind": "file",
+        "size": 17001142,
+        "type": "application/zip",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "dc2251676668f7273b5e6a47968235ba87076436cc766c61f4f693c70cd81afe",
+        "name": "relay-materials-4-dc22516766.zip",
+        "kind": "file",
+        "size": 6792044,
+        "type": "application/zip",
+        "sourceUrls": [],
+        "presentation": false
+      },
+      {
+        "hash": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+        "name": "P15_DeckRuntime_V0.1.zip",
+        "kind": "file",
+        "size": 5549301,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/dff1eccf-81c8-40fd-b7d6-bbe20304ec38"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "d1b514d82574597ec72a419745117f6403bcab260ee8222d7110ac4f4d6d6cb9",
+        "name": "P15_API.md",
+        "kind": "file",
+        "size": 8358,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/19b47655-9ad7-44a3-8126-1d93848f7be7",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2FP15_API.md"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "fd700bc1caae6011369cea9e91c0ae950720c48945ddf4ed340f2d6cfff27c83",
+        "name": "invalid_play_cases.json",
+        "kind": "file",
+        "size": 200907,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/c5ae2570-68d4-4e84-a9e9-6cf596c7878e",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Finvalid_play_cases.json"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "8406bf56f9f08f0fc787630435c559d0f2758b214f69a7221e3a17d0e5d47fd3",
+        "name": "deck_patch_schema.json",
+        "kind": "file",
+        "size": 3887,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/03c30fe4-1cb6-4961-95a6-347b251a8808"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "777279c646cb5083076b5e459d094973c98459b5646f609c0e78b8bec14ee04c",
+        "name": "deck.py",
+        "kind": "file",
+        "size": 5581,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/51c02edb-c7df-4d6a-a81c-8a306d1eeb9a",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fdeck.py"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "f8fe73472c38befe2a54b4a07e215e0910448eb6ba6a2f720b5079a67f5afe89",
+        "name": "commands.py",
+        "kind": "file",
+        "size": 1488,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/fd5c80eb-3bc5-4219-ae5f-5347d1aa86c6",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fcommands.py"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "055aece1496532f6a84baae4ff034e9fd712f3f5d1a3de96795b1880e85b64f5",
+        "name": "deck_determinism_tests.py",
+        "kind": "file",
+        "size": 3143,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/00182cd2-5640-4ba1-8620-4289f3f43c93",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fdeck_determinism_tests.py"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "74d87344d24ce39ee0a882b1b22de000aa3d76817ad6c39a824b43c23edef5fa",
+        "name": "card_legality_table.tsv",
+        "kind": "file",
+        "size": 4432,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/8b3e371e-a63f-4563-86b7-99c2ccd534a5",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fcard_legality_table.tsv"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "347dabedaac3beb05d81d0dad5ffb4ba442ee4361b912263dbee8b9e9038e450",
+        "name": "example_requests.json",
+        "kind": "file",
+        "size": 313813,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/07c930e3-4d87-4be9-a959-8ef6de198ac7",
+          "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fexample_requests.json"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "d651bf4f2b93aa1960a9d62fa923ebd2fb9dd460534c481f99859840fd8440e3",
+        "name": "content.py",
+        "kind": "file",
+        "size": 11817,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/1490719d-4ecc-479f-969a-673de0f0e0c9",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fcontent.py"
+        ]
+      },
+      {
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "name": "P16_EnemyAI_V0.1.zip",
+        "kind": "file",
+        "size": 11197353,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/46fcd7f0-9b74-4139-8dd9-eb5c179a2dd3",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2FP16_EnemyAI_V0.1.zip"
+        ]
+      },
+      {
+        "hash": "47cc0e19c20cb7ddff7c9df274950062a215e2a920ca717505798d2a16013db0",
+        "name": "47cc0e19-1-downstream_receipts.json",
+        "kind": "file",
+        "size": 13910,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/b1f72220-0010-4b3d-8244-4a892686b9de",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdownstream_receipts.json"
+        ],
+        "mergeOriginalName": "downstream_receipts.json"
+      },
+      {
+        "hash": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b",
+        "name": "P16_API.md",
+        "kind": "file",
+        "size": 10229,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/729c4b02-069e-4001-8504-8163243a4b22",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2FP16_API.md"
+        ]
+      },
+      {
+        "hash": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7",
+        "name": "enemy_intent_schema.json",
+        "kind": "file",
+        "size": 4072,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/37928a3f-8cd5-418c-9083-f19fb7fd8445",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fenemy_intent_schema.json"
+        ]
+      },
+      {
+        "hash": "5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a",
+        "name": "5998045e-1-delivery_manifest.sha256.tsv",
+        "kind": "file",
+        "size": 152488,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/2e387ab5-b3d3-41c0-b689-dead88d06e3f",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdelivery_manifest.sha256.tsv"
+        ],
+        "mergeOriginalName": "delivery_manifest.sha256.tsv"
+      },
+      {
+        "hash": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085",
+        "name": "phases.py",
+        "kind": "file",
+        "size": 4918,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/ec064598-0ea1-407b-96b7-011fd9dcc651",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fphases.py"
+        ]
+      },
+      {
+        "hash": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445",
+        "name": "types.py",
+        "kind": "file",
+        "size": 7007,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/db289745-6bea-453c-b55a-508b01160f78",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Ftypes.py"
+        ]
+      },
+      {
+        "hash": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd",
+        "name": "3568e96b-1-p14_adapter.py",
+        "kind": "file",
+        "size": 1670,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/7b3bb1b6-9eb6-4f5e-9ebf-be6b637ffd84",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fp14_adapter.py"
+        ],
+        "mergeOriginalName": "p14_adapter.py"
+      },
+      {
+        "hash": "fc0c74ed36439ff623d6c146c82f45c4d172917f2110bf28e5cf6ec59a476c30",
+        "name": "p06_projection_results.json",
+        "kind": "file",
+        "size": 414467,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/9d6b546f-06fc-4495-b547-7a051f0be840"
+        ]
+      },
+      {
+        "hash": "96a790a6ba9e8f37c2b6292bd3483a31d7a091b72accb639ceeeb169e93ad589",
+        "name": "input_immutability_check.json",
+        "kind": "file",
+        "size": 431,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/79884f67-54b8-4273-8d95-01bf11b7d683"
+        ]
+      },
+      {
+        "hash": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4",
+        "name": "boss_transition_cases.tsv",
+        "kind": "file",
+        "size": 20818,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/979dfa83-0a38-43b0-bb6c-def013c52c2f",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fboss_transition_cases.tsv"
+        ]
+      },
+      {
+        "hash": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309",
+        "name": "91352728-1-planner.py",
+        "kind": "file",
+        "size": 16356,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/4c3e44bf-c024-4469-b832-86c1039f156b",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fplanner.py"
+        ],
+        "mergeOriginalName": "planner.py"
+      },
+      {
+        "hash": "dc7619551d61484d59e1bfea9917f0504fb972097bbeb8c969d18bfa7b2a8647",
+        "name": "demo_summary.json",
+        "kind": "file",
+        "size": 999,
+        "type": "application/octet-stream",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/b4580eee-ac93-417c-b401-d651fa7225a1",
+          "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdemo_summary.json"
+        ]
+      },
+      {
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "name": "delivery_receipt.json",
+        "kind": "file",
+        "size": 52374,
+        "type": "application/json",
+        "sourceUrls": [
+          "https://chatgpt.com/c/6ae28d11-7f48-83ea-bd21-73031ddcbe33#file-repair-6df8acf0-ecaa-4aeb-9400-8718de1bb638"
+        ],
+        "presentation": false
+      },
+      {
+        "name": "README.md",
+        "size": 8935,
+        "type": "text/markdown",
+        "hash": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/README.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/README.md",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "README.md",
+          "exportName": "README.md",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "integration_handoff.md",
+        "size": 6505,
+        "type": "text/markdown",
+        "hash": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/integration_handoff.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/integration_handoff.md",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "integration_handoff.md",
+          "exportName": "integration_handoff.md",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "intent_replay_fixtures.json",
+        "size": 783721,
+        "type": "application/json",
+        "hash": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/intent_replay_fixtures.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/intent_replay_fixtures.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "intent_replay_fixtures.json",
+          "exportName": "intent_replay_fixtures.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "verification_status.json",
+        "size": 5070,
+        "type": "application/json",
+        "hash": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/verification_status.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/verification_status.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "verification_status.json",
+          "exportName": "verification_status.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "source_input_receipt.json",
+        "size": 57981,
+        "type": "application/json",
+        "hash": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/evidence/source_input_receipt.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/evidence/source_input_receipt.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "evidence/source_input_receipt.json",
+          "exportName": "source_input_receipt.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "defect_log.json",
+        "size": 3281,
+        "type": "application/json",
+        "hash": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/evidence/defect_log.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/evidence/defect_log.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "evidence/defect_log.json",
+          "exportName": "defect_log.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "final_executed_source_binding.json",
+        "size": 6025,
+        "type": "application/json",
+        "hash": "cfad09ee28801deef6da7532d76622dac7d205f8e656985d2476740f332385bc",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/evidence/final_executed_source_binding.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/evidence/final_executed_source_binding.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "evidence/final_executed_source_binding.json",
+          "exportName": "final_executed_source_binding.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "blockers.json",
+        "size": 9456,
+        "type": "application/json",
+        "hash": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/handoff/blockers.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/handoff/blockers.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "handoff/blockers.json",
+          "exportName": "blockers.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "interface_rfcs.json",
+        "size": 11304,
+        "type": "application/json",
+        "hash": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/handoff/interface_rfcs.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/handoff/interface_rfcs.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "handoff/interface_rfcs.json",
+          "exportName": "interface_rfcs.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "actual_path_request.json",
+        "size": 1952,
+        "type": "application/json",
+        "hash": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/handoff/actual_path_request.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/handoff/actual_path_request.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "handoff/actual_path_request.json",
+          "exportName": "actual_path_request.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "contract_acceptance.json",
+        "size": 3088,
+        "type": "application/json",
+        "hash": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/handoff/contract_acceptance.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/handoff/contract_acceptance.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "handoff/contract_acceptance.json",
+          "exportName": "contract_acceptance.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "task_traceability.json",
+        "size": 6095,
+        "type": "application/json",
+        "hash": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/handoff/task_traceability.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/handoff/task_traceability.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "handoff/task_traceability.json",
+          "exportName": "task_traceability.json",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "test_p14_contract.py",
+        "size": 12518,
+        "type": "application/octet-stream",
+        "hash": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/tests/enemy_ai_unit/test_p14_contract.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/tests/enemy_ai_unit/test_p14_contract.py",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "tests/enemy_ai_unit/test_p14_contract.py",
+          "exportName": "test_p14_contract.py",
+          "hashVerified": true
+        }
+      },
+      {
+        "name": "demo_execution.json",
+        "size": 36076,
+        "type": "application/json",
+        "hash": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135",
+        "kind": "file",
+        "zipEntryPath": "P16_EnemyAI_V0.1/examples/demo_execution.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P16_EnemyAI_V0.1.zip",
+          "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "entryPath": "P16_EnemyAI_V0.1/examples/demo_execution.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "packagePath": "examples/demo_execution.json",
+          "exportName": "demo_execution.json",
+          "hashVerified": true
+        }
+      }
+    ],
+    "complete": true,
+    "issues": [],
+    "issueDetails": []
+  },
+  "coverage": {
+    "kind": "readable-dom",
+    "complete": false,
+    "message": "按本次交接编号取回原会话回答，未重新发送。"
+  },
+  "completion": "recovered-ui-controls-and-stable-text",
+  "fileRecovery": {
+    "nativeReceiptRecovery": {
+      "sourceUrl": "https://chatgpt.com/c/6ae28d11-7f48-83ea-bd21-73031ddcbe33",
+      "handoffToken": "6df8acf0-ecaa-4aeb-9400-8718de1bb638",
+      "files": [
+        {
+          "name": "delivery_receipt.json",
+          "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+          "size": 52374,
+          "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d"
+        }
+      ],
+      "verifiedExports": [
+        {
+          "name": "README.md",
+          "hash": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f",
+          "size": 8935
+        },
+        {
+          "name": "P16_API.md",
+          "hash": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b",
+          "size": 10229
+        },
+        {
+          "name": "integration_handoff.md",
+          "hash": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1",
+          "size": 6505
+        },
+        {
+          "name": "intent_replay_fixtures.json",
+          "hash": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b",
+          "size": 783721
+        },
+        {
+          "name": "boss_transition_cases.tsv",
+          "hash": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4",
+          "size": 20818
+        },
+        {
+          "name": "enemy_intent_schema.json",
+          "hash": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7",
+          "size": 4072
+        },
+        {
+          "name": "verification_status.json",
+          "hash": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21",
+          "size": 5070
+        },
+        {
+          "name": "delivery_manifest.sha256.tsv",
+          "hash": "5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a",
+          "size": 152488
+        },
+        {
+          "name": "source_input_receipt.json",
+          "hash": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f",
+          "size": 57981
+        },
+        {
+          "name": "input_immutability_check.json",
+          "hash": "96a790a6ba9e8f37c2b6292bd3483a31d7a091b72accb639ceeeb169e93ad589",
+          "size": 431
+        },
+        {
+          "name": "p06_projection_results.json",
+          "hash": "fc0c74ed36439ff623d6c146c82f45c4d172917f2110bf28e5cf6ec59a476c30",
+          "size": 414467
+        },
+        {
+          "name": "demo_summary.json",
+          "hash": "dc7619551d61484d59e1bfea9917f0504fb972097bbeb8c969d18bfa7b2a8647",
+          "size": 999
+        },
+        {
+          "name": "defect_log.json",
+          "hash": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d",
+          "size": 3281
+        },
+        {
+          "name": "final_executed_source_binding.json",
+          "hash": "cfad09ee28801deef6da7532d76622dac7d205f8e656985d2476740f332385bc",
+          "size": 6025
+        },
+        {
+          "name": "blockers.json",
+          "hash": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c",
+          "size": 9456
+        },
+        {
+          "name": "interface_rfcs.json",
+          "hash": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af",
+          "size": 11304
+        },
+        {
+          "name": "actual_path_request.json",
+          "hash": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84",
+          "size": 1952
+        },
+        {
+          "name": "contract_acceptance.json",
+          "hash": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c",
+          "size": 3088
+        },
+        {
+          "name": "task_traceability.json",
+          "hash": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6",
+          "size": 6095
+        },
+        {
+          "name": "downstream_receipts.json",
+          "hash": "47cc0e19c20cb7ddff7c9df274950062a215e2a920ca717505798d2a16013db0",
+          "size": 13910
+        },
+        {
+          "name": "planner.py",
+          "hash": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309",
+          "size": 16356
+        },
+        {
+          "name": "phases.py",
+          "hash": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085",
+          "size": 4918
+        },
+        {
+          "name": "types.py",
+          "hash": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445",
+          "size": 7007
+        },
+        {
+          "name": "content.py",
+          "hash": "d651bf4f2b93aa1960a9d62fa923ebd2fb9dd460534c481f99859840fd8440e3",
+          "size": 11817
+        },
+        {
+          "name": "p14_adapter.py",
+          "hash": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd",
+          "size": 1670
+        },
+        {
+          "name": "test_p14_contract.py",
+          "hash": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c",
+          "size": 12518
+        },
+        {
+          "name": "demo_execution.json",
+          "hash": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135",
+          "size": 36076
+        }
+      ]
+    }
+  },
+  "snapshotHash": "11c0b1d290339a5a11f31dc40ca46f20823b2d7f8797595025f3f8b04c40b2fd",
+  "answerBlob": "31e8310daa1ab8d0ee014631afd45bba51eb72ea",
+  "answerHash": "5574e9e7bb752a8ec85795021d2ad78a28ba6e12c317c36d077cbb953e4256b8",
+  "presentation": {
+    "name": "answer-rb3de0572-0726-44d9-bd22-7c52b30d-4394-47eb-9561-ae9554f7efff.md",
+    "readmeBlob": "582ba389bba14a5bb37c89d35985e2808b4aeecc",
+    "readmeHash": "fe04922a050fc62711464b0aab0244491c3df7c3545976b1ef95b7fe4be06e4d",
+    "htmlBlob": "c5ebbf6cb51d8992f5db270ad0e5694041e92f77",
+    "htmlHash": "517879bc36b4464d92282d4b415d1227502505c59483f0d4630f1b96179f6b81"
+  },
+  "files": [
+    {
+      "hash": "b3a156c9b06a03860a1f79203937b5945509d4083b095a29970c3c54a96ff8aa",
+      "name": "builder.py",
+      "kind": "file",
+      "size": 5609,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/25d01ee3-a65b-4066-9eb3-4eec21facd0c",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fbuilder.py"
+      ],
+      "presentation": false,
+      "blob": "39431ad6cf05536bd10c201f61771d4582388d06",
+      "path": "files/code/builder.py"
+    },
+    {
+      "hash": "06c45882acd56368531161924a5c67521d0febcd8e168b89fd069749a6abb8d1",
+      "name": "06c45882-1-input_immutability_check.json",
+      "mergeOriginalName": "input_immutability_check.json",
+      "kind": "file",
+      "size": 793293,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/2e644ce4-833a-4f26-a074-5a5fbb8e2690"
+      ],
+      "presentation": false,
+      "blob": "2a73c6344eff8a047f55f0ce5061f9d089affb36",
+      "path": "files/data/06c45882-1-input_immutability_check.json"
+    },
+    {
+      "hash": "b75d78675231ed6c9ced02ff0bd24234143e82c2317598fcddcd0f30841de455",
+      "name": "b75d7867-1-demo_summary.json",
+      "mergeOriginalName": "demo_summary.json",
+      "kind": "file",
+      "size": 539,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/c5e1ed9b-9923-4f50-aef2-abbd367fa172"
+      ],
+      "presentation": false,
+      "blob": "606b0b2cd543ab5ff9d5d6ea1cf0c7248e1cc7ce",
+      "path": "files/data/b75d7867-1-demo_summary.json"
+    },
+    {
+      "hash": "3fc42b47b64f954bda14f7913b0cb37a3fa638cd35f8da2d57e06b6cd7ee18b0",
+      "name": "3fc42b47-1-defect_log.json",
+      "mergeOriginalName": "defect_log.json",
+      "kind": "file",
+      "size": 2804,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/5cac5a1e-6c8f-4553-8e01-b06624c9a006"
+      ],
+      "presentation": false,
+      "blob": "3ebda3153b37047970a704c84ed4ae2ccd3ec866",
+      "path": "files/data/3fc42b47-1-defect_log.json"
+    },
+    {
+      "hash": "f6fdd7c06e4fa9c800a9016e58567f7d2e7d3b1586a05109f882fb5188908a17",
+      "name": "f6fdd7c0-1-path_mapping_request.json",
+      "mergeOriginalName": "path_mapping_request.json",
+      "kind": "file",
+      "size": 2906,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/17e40135-f0b8-4971-a978-ac64962043ab"
+      ],
+      "presentation": false,
+      "blob": "14e1720b1a7c1054db08c48106a529b7ce80dc8d",
+      "path": "files/data/f6fdd7c0-1-path_mapping_request.json"
+    },
+    {
+      "hash": "b829da114353426c280fffa6cbcabebbce50a6c6804521ffc1096f4e1921b7df",
+      "name": "b829da11-1-contract_acceptance.json",
+      "mergeOriginalName": "contract_acceptance.json",
+      "kind": "file",
+      "size": 4232,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/59e308fe-cf02-4e0f-a413-4f75632f1966"
+      ],
+      "presentation": false,
+      "blob": "77464c2e537b0b7d568f6cdf67c9141095ec4dec",
+      "path": "files/data/b829da11-1-contract_acceptance.json"
+    },
+    {
+      "hash": "c617d116d785e8f9d3d4b89cc8386777c2b0ca28a6cc139e1748a23dac8d76b7",
+      "name": "relay-materials-1-c617d116d7.zip",
+      "kind": "file",
+      "size": 11146290,
+      "type": "application/zip",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "bc5e59e1b622d700aebc04be8b22c527291e2d60",
+      "path": "files/archives/relay-materials-1-c617d116d7.zip"
+    },
+    {
+      "hash": "d3f598c365bd371f68c4d469175cf7feee1c43e312dfb8932fba3942af319644",
+      "name": "relay-materials-2-d3f598c365.zip",
+      "kind": "file",
+      "size": 16364229,
+      "type": "application/zip",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "3eeced4b6105e8ca8e5f3d5461df4b401cca29c8",
+      "path": "files/archives/relay-materials-2-d3f598c365.zip"
+    },
+    {
+      "hash": "02e8113369b3292cb21d6c7fe9e71f7fc829dce4652bcd385c9b33c1678cc6fb",
+      "name": "relay-materials-3-02e8113369.zip",
+      "kind": "file",
+      "size": 17001142,
+      "type": "application/zip",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "6be710dd62f6c4cd33155fbe55d23b9428c2abee",
+      "path": "files/archives/relay-materials-3-02e8113369.zip"
+    },
+    {
+      "hash": "dc2251676668f7273b5e6a47968235ba87076436cc766c61f4f693c70cd81afe",
+      "name": "relay-materials-4-dc22516766.zip",
+      "kind": "file",
+      "size": 6792044,
+      "type": "application/zip",
+      "sourceUrls": [],
+      "presentation": false,
+      "blob": "55259f68d8876ea53b649cfeb6978e1b7f9f6d49",
+      "path": "files/archives/relay-materials-4-dc22516766.zip"
+    },
+    {
+      "hash": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+      "name": "P15_DeckRuntime_V0.1.zip",
+      "kind": "file",
+      "size": 5549301,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/dff1eccf-81c8-40fd-b7d6-bbe20304ec38"
+      ],
+      "presentation": false,
+      "blob": "ba3d85595aa27ee43dd3812edf01bc6f77f58657",
+      "path": "files/archives/P15_DeckRuntime_V0.1.zip"
+    },
+    {
+      "hash": "d1b514d82574597ec72a419745117f6403bcab260ee8222d7110ac4f4d6d6cb9",
+      "name": "P15_API.md",
+      "kind": "file",
+      "size": 8358,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/19b47655-9ad7-44a3-8126-1d93848f7be7",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2FP15_API.md"
+      ],
+      "presentation": false,
+      "blob": "dc39e0af14c6f0549386b8c299b40d701adc9a8e",
+      "path": "files/documents/P15_API.md"
+    },
+    {
+      "hash": "fd700bc1caae6011369cea9e91c0ae950720c48945ddf4ed340f2d6cfff27c83",
+      "name": "invalid_play_cases.json",
+      "kind": "file",
+      "size": 200907,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/c5ae2570-68d4-4e84-a9e9-6cf596c7878e",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Finvalid_play_cases.json"
+      ],
+      "presentation": false,
+      "blob": "08db024ddd33265fb4bfb7b36b2eb397d5f38884",
+      "path": "files/data/invalid_play_cases.json"
+    },
+    {
+      "hash": "8406bf56f9f08f0fc787630435c559d0f2758b214f69a7221e3a17d0e5d47fd3",
+      "name": "deck_patch_schema.json",
+      "kind": "file",
+      "size": 3887,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/03c30fe4-1cb6-4961-95a6-347b251a8808"
+      ],
+      "presentation": false,
+      "blob": "0d4a7302f1abdd11c4c106844b3dcf776091496a",
+      "path": "files/data/deck_patch_schema.json"
+    },
+    {
+      "hash": "777279c646cb5083076b5e459d094973c98459b5646f609c0e78b8bec14ee04c",
+      "name": "deck.py",
+      "kind": "file",
+      "size": 5581,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/51c02edb-c7df-4d6a-a81c-8a306d1eeb9a",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fdeck.py"
+      ],
+      "presentation": false,
+      "blob": "2880c27f0adc97c23f1766be1c210db667319bc9",
+      "path": "files/code/deck.py"
+    },
+    {
+      "hash": "f8fe73472c38befe2a54b4a07e215e0910448eb6ba6a2f720b5079a67f5afe89",
+      "name": "commands.py",
+      "kind": "file",
+      "size": 1488,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/fd5c80eb-3bc5-4219-ae5f-5347d1aa86c6",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fcommands.py"
+      ],
+      "presentation": false,
+      "blob": "4e3b4a4f4f90e44b51f4ae80a12074a31c861821",
+      "path": "files/code/commands.py"
+    },
+    {
+      "hash": "055aece1496532f6a84baae4ff034e9fd712f3f5d1a3de96795b1880e85b64f5",
+      "name": "deck_determinism_tests.py",
+      "kind": "file",
+      "size": 3143,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/00182cd2-5640-4ba1-8620-4289f3f43c93",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fdeck_determinism_tests.py"
+      ],
+      "presentation": false,
+      "blob": "c3ae9a2b6f3923515c817295bcf82ec6af7e5561",
+      "path": "files/code/deck_determinism_tests.py"
+    },
+    {
+      "hash": "74d87344d24ce39ee0a882b1b22de000aa3d76817ad6c39a824b43c23edef5fa",
+      "name": "card_legality_table.tsv",
+      "kind": "file",
+      "size": 4432,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/8b3e371e-a63f-4563-86b7-99c2ccd534a5",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fcard_legality_table.tsv"
+      ],
+      "presentation": false,
+      "blob": "970f95e84e8d34f3b1d3107a1815f1ce55c0ece4",
+      "path": "files/data/card_legality_table.tsv"
+    },
+    {
+      "hash": "347dabedaac3beb05d81d0dad5ffb4ba442ee4361b912263dbee8b9e9038e450",
+      "name": "example_requests.json",
+      "kind": "file",
+      "size": 313813,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/07c930e3-4d87-4be9-a959-8ef6de198ac7",
+        "https://chatgpt.com/backend-api/conversation/6ae2452c-2e44-83ea-9542-5056f0533936/executor/file?message_id=c8013f29-ca44-509d-bf81-0dbaa01fdb84&sandbox_path=%2Fworkspace%2Fscratch%2Fcdf89f08e32d%2Fexports%2Fexample_requests.json"
+      ],
+      "presentation": false,
+      "blob": "e6eed4f6f29167a225a774248b456457e344122f",
+      "path": "files/data/example_requests.json"
+    },
+    {
+      "hash": "d651bf4f2b93aa1960a9d62fa923ebd2fb9dd460534c481f99859840fd8440e3",
+      "name": "content.py",
+      "kind": "file",
+      "size": 11817,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/1490719d-4ecc-479f-969a-673de0f0e0c9",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fcontent.py"
+      ],
+      "blob": "0a139bc5fa66de5fe4971abaea63a28bed029e18",
+      "path": "files/code/content.py"
+    },
+    {
+      "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+      "name": "P16_EnemyAI_V0.1.zip",
+      "kind": "file",
+      "size": 11197353,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/46fcd7f0-9b74-4139-8dd9-eb5c179a2dd3",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2FP16_EnemyAI_V0.1.zip"
+      ],
+      "blob": "1b858d9e5aee9105e97abcf461ea981bf925a496",
+      "path": "files/archives/P16_EnemyAI_V0.1.zip"
+    },
+    {
+      "hash": "47cc0e19c20cb7ddff7c9df274950062a215e2a920ca717505798d2a16013db0",
+      "name": "47cc0e19-1-downstream_receipts.json",
+      "kind": "file",
+      "size": 13910,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/b1f72220-0010-4b3d-8244-4a892686b9de",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdownstream_receipts.json"
+      ],
+      "mergeOriginalName": "downstream_receipts.json",
+      "blob": "145597bf5750888f6ec772bc88a6d30d16c1b400",
+      "path": "files/data/47cc0e19-1-downstream_receipts.json"
+    },
+    {
+      "hash": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b",
+      "name": "P16_API.md",
+      "kind": "file",
+      "size": 10229,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/729c4b02-069e-4001-8504-8163243a4b22",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2FP16_API.md"
+      ],
+      "blob": "0b23b8a57022fa749340fa95f2659dca6c526186",
+      "path": "files/documents/P16_API.md"
+    },
+    {
+      "hash": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7",
+      "name": "enemy_intent_schema.json",
+      "kind": "file",
+      "size": 4072,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/37928a3f-8cd5-418c-9083-f19fb7fd8445",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fenemy_intent_schema.json"
+      ],
+      "blob": "54ba58f6d6a0ebc84623dbb5e5caacaa51fa1315",
+      "path": "files/data/enemy_intent_schema.json"
+    },
+    {
+      "hash": "5998045eec7094e19d0056f742348060cccd10a2c993ce585f92b372859a9a8a",
+      "name": "5998045e-1-delivery_manifest.sha256.tsv",
+      "kind": "file",
+      "size": 152488,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/2e387ab5-b3d3-41c0-b689-dead88d06e3f",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdelivery_manifest.sha256.tsv"
+      ],
+      "mergeOriginalName": "delivery_manifest.sha256.tsv",
+      "blob": "3b81aeca2f3d6e1d92e6df142dfe9814ca927971",
+      "path": "files/data/5998045e-1-delivery_manifest.sha256.tsv"
+    },
+    {
+      "hash": "f02048d587333b2ec0972224ae80fd7b8179b2e7f0fd8587a1c284bf843d1085",
+      "name": "phases.py",
+      "kind": "file",
+      "size": 4918,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/ec064598-0ea1-407b-96b7-011fd9dcc651",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fphases.py"
+      ],
+      "blob": "b74f5504f2b9fa209369d859891deb0b16e6dde0",
+      "path": "files/code/phases.py"
+    },
+    {
+      "hash": "8c906dec542ca56754ba3bd4a2b11f7a8d44cb5b9bb49dac1dca2272e42f1445",
+      "name": "types.py",
+      "kind": "file",
+      "size": 7007,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/db289745-6bea-453c-b55a-508b01160f78",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Ftypes.py"
+      ],
+      "blob": "9271a55aa80b5a096aacdc7353bfa5e72a5c73fe",
+      "path": "files/code/types.py"
+    },
+    {
+      "hash": "3568e96b362c41a5277e7a9ac59e6dfdc5d3bf9784b8ee29339ed35248c141bd",
+      "name": "3568e96b-1-p14_adapter.py",
+      "kind": "file",
+      "size": 1670,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/7b3bb1b6-9eb6-4f5e-9ebf-be6b637ffd84",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fp14_adapter.py"
+      ],
+      "mergeOriginalName": "p14_adapter.py",
+      "blob": "ba0c97e2008b3552e9e390a2cc207f6659db6e68",
+      "path": "files/code/3568e96b-1-p14_adapter.py"
+    },
+    {
+      "hash": "fc0c74ed36439ff623d6c146c82f45c4d172917f2110bf28e5cf6ec59a476c30",
+      "name": "p06_projection_results.json",
+      "kind": "file",
+      "size": 414467,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/9d6b546f-06fc-4495-b547-7a051f0be840"
+      ],
+      "blob": "cfcc9557692b6b93d0f288e7d731ced9a0ed2d7e",
+      "path": "files/data/p06_projection_results.json"
+    },
+    {
+      "hash": "96a790a6ba9e8f37c2b6292bd3483a31d7a091b72accb639ceeeb169e93ad589",
+      "name": "input_immutability_check.json",
+      "kind": "file",
+      "size": 431,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/79884f67-54b8-4273-8d95-01bf11b7d683"
+      ],
+      "blob": "5264d2dd548e252668a2b8c620750585b279e334",
+      "path": "files/data/input_immutability_check.json"
+    },
+    {
+      "hash": "eb6dacef181502fe110a4cdaf0c5fc7bdc8691e7ce776cde7293e490380b0fb4",
+      "name": "boss_transition_cases.tsv",
+      "kind": "file",
+      "size": 20818,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/979dfa83-0a38-43b0-bb6c-def013c52c2f",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fboss_transition_cases.tsv"
+      ],
+      "blob": "1dcae296867e6c93c41000206c5e1f1d64ddf58b",
+      "path": "files/data/boss_transition_cases.tsv"
+    },
+    {
+      "hash": "91352728f6aea0462d96803fc9e718e15ca9929eb3b485b6260e05a8fa7f0309",
+      "name": "91352728-1-planner.py",
+      "kind": "file",
+      "size": 16356,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/4c3e44bf-c024-4469-b832-86c1039f156b",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fplanner.py"
+      ],
+      "mergeOriginalName": "planner.py",
+      "blob": "0be6c21340b0416bb360507f8177508618374c45",
+      "path": "files/code/91352728-1-planner.py"
+    },
+    {
+      "hash": "dc7619551d61484d59e1bfea9917f0504fb972097bbeb8c969d18bfa7b2a8647",
+      "name": "demo_summary.json",
+      "kind": "file",
+      "size": 999,
+      "type": "application/octet-stream",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/b4580eee-ac93-417c-b401-d651fa7225a1",
+        "https://chatgpt.com/backend-api/conversation/6ae28d11-7f48-83ea-bd21-73031ddcbe33/executor/file?message_id=b26b662d-f23a-5951-9571-de37fa5e29c5&sandbox_path=%2Fworkspace%2Fscratch%2Fcdcc4f899201%2Fexports%2Fdemo_summary.json"
+      ],
+      "blob": "97cd1cad496de1b2c7b2dc9daa098bd052efc3b4",
+      "path": "files/data/demo_summary.json"
+    },
+    {
+      "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+      "name": "delivery_receipt.json",
+      "kind": "file",
+      "size": 52374,
+      "type": "application/json",
+      "sourceUrls": [
+        "https://chatgpt.com/c/6ae28d11-7f48-83ea-bd21-73031ddcbe33#file-repair-6df8acf0-ecaa-4aeb-9400-8718de1bb638"
+      ],
+      "presentation": false,
+      "blob": "c7282c87ddc55e53f31397c9c80c00b14a23331b",
+      "path": "files/data/delivery_receipt.json"
+    },
+    {
+      "name": "README.md",
+      "size": 8935,
+      "type": "text/markdown",
+      "hash": "dd3437a0d4c4fd8520c4ee829d9d17ade8d1242f01799a6bb7b1236bfc8ed47f",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/README.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/README.md",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "README.md",
+        "exportName": "README.md",
+        "hashVerified": true
+      },
+      "blob": "2d807d6df09681cfcf49e9993797981873bc37ca",
+      "path": "files/documents/README.md"
+    },
+    {
+      "name": "integration_handoff.md",
+      "size": 6505,
+      "type": "text/markdown",
+      "hash": "e825cb8af7c9bd0f6c367297f6f030fc5e30a801a205ec8115ab54d99e32afa1",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/integration_handoff.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/integration_handoff.md",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "integration_handoff.md",
+        "exportName": "integration_handoff.md",
+        "hashVerified": true
+      },
+      "blob": "8c5fd21e509ec531a97c7907cff964d607697539",
+      "path": "files/documents/integration_handoff.md"
+    },
+    {
+      "name": "intent_replay_fixtures.json",
+      "size": 783721,
+      "type": "application/json",
+      "hash": "6a6daf8ea2a6f856e46be65ff784e34fd2c2c761e4bf5519c625611b5952c07b",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/intent_replay_fixtures.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/intent_replay_fixtures.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "intent_replay_fixtures.json",
+        "exportName": "intent_replay_fixtures.json",
+        "hashVerified": true
+      },
+      "blob": "c331da58eba0300c1fa11c9639ad9ed73c9a12b8",
+      "path": "files/data/intent_replay_fixtures.json"
+    },
+    {
+      "name": "verification_status.json",
+      "size": 5070,
+      "type": "application/json",
+      "hash": "ca3866cb16f6e95116692cc077dfd78e0903caa735e9f4b0dfec2e068221fa21",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/verification_status.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/verification_status.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "verification_status.json",
+        "exportName": "verification_status.json",
+        "hashVerified": true
+      },
+      "blob": "3033928987b55dc2ccef9bd355e685066dd1d9fa",
+      "path": "files/data/verification_status.json"
+    },
+    {
+      "name": "source_input_receipt.json",
+      "size": 57981,
+      "type": "application/json",
+      "hash": "69f5adcabedc0f218af561437b3f862d89e51f6d745afdb8a715e55c86a4fb2f",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/evidence/source_input_receipt.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/evidence/source_input_receipt.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "evidence/source_input_receipt.json",
+        "exportName": "source_input_receipt.json",
+        "hashVerified": true
+      },
+      "blob": "952775ae7c2350068042265d0bc4e757418f0bbf",
+      "path": "files/data/source_input_receipt.json"
+    },
+    {
+      "name": "defect_log.json",
+      "size": 3281,
+      "type": "application/json",
+      "hash": "2a9956b5f2a1d4821b21389ae05efae54d7ffe06dc70e678ff816c3acc4fe96d",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/evidence/defect_log.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/evidence/defect_log.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "evidence/defect_log.json",
+        "exportName": "defect_log.json",
+        "hashVerified": true
+      },
+      "blob": "23a107fff303dad2fc3bb56b38e3f930ef90a2b4",
+      "path": "files/data/defect_log.json"
+    },
+    {
+      "name": "final_executed_source_binding.json",
+      "size": 6025,
+      "type": "application/json",
+      "hash": "cfad09ee28801deef6da7532d76622dac7d205f8e656985d2476740f332385bc",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/evidence/final_executed_source_binding.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/evidence/final_executed_source_binding.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "evidence/final_executed_source_binding.json",
+        "exportName": "final_executed_source_binding.json",
+        "hashVerified": true
+      },
+      "blob": "6f6bbe1aae45d59e678e4c1463754a066bf5fef0",
+      "path": "files/data/final_executed_source_binding.json"
+    },
+    {
+      "name": "blockers.json",
+      "size": 9456,
+      "type": "application/json",
+      "hash": "7b386236219bc66fbdcc4d568c8ebe49bf5d61617d70f8c84702d01fd047ed5c",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/handoff/blockers.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/handoff/blockers.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "handoff/blockers.json",
+        "exportName": "blockers.json",
+        "hashVerified": true
+      },
+      "blob": "c4bb5edd3ca435010c12bf820a0cea32d6add757",
+      "path": "files/data/blockers.json"
+    },
+    {
+      "name": "interface_rfcs.json",
+      "size": 11304,
+      "type": "application/json",
+      "hash": "bc37e7b84ce883d52ba84ac5e575c939b3bcf10efb4257afe0e1f95a0a64b9af",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/handoff/interface_rfcs.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/handoff/interface_rfcs.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "handoff/interface_rfcs.json",
+        "exportName": "interface_rfcs.json",
+        "hashVerified": true
+      },
+      "blob": "70a32ab23a4c4c685a19ff9af89c23d9eb20be61",
+      "path": "files/data/interface_rfcs.json"
+    },
+    {
+      "name": "actual_path_request.json",
+      "size": 1952,
+      "type": "application/json",
+      "hash": "df46acc2ad90639e2362842638942facfa0f296f7c023b2b6d3afe2b89110e84",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/handoff/actual_path_request.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/handoff/actual_path_request.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "handoff/actual_path_request.json",
+        "exportName": "actual_path_request.json",
+        "hashVerified": true
+      },
+      "blob": "aae4b7dde2a0cf33bbcdca05a69e3a91f8110b15",
+      "path": "files/data/actual_path_request.json"
+    },
+    {
+      "name": "contract_acceptance.json",
+      "size": 3088,
+      "type": "application/json",
+      "hash": "a45bdd63a807a8761d8d7af0f6a07e524c98c6d98883b36caf718fae5545469c",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/handoff/contract_acceptance.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/handoff/contract_acceptance.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "handoff/contract_acceptance.json",
+        "exportName": "contract_acceptance.json",
+        "hashVerified": true
+      },
+      "blob": "1b4485c7ff9e996bea1d1095e681867576d69c6e",
+      "path": "files/data/contract_acceptance.json"
+    },
+    {
+      "name": "task_traceability.json",
+      "size": 6095,
+      "type": "application/json",
+      "hash": "55907345b6362edb37b94b60068472177fe28b0d77a50f692d902f31040ea8e6",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/handoff/task_traceability.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/handoff/task_traceability.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "handoff/task_traceability.json",
+        "exportName": "task_traceability.json",
+        "hashVerified": true
+      },
+      "blob": "330c5ed015ec8afd67a7d86d19ad9d8258476aac",
+      "path": "files/data/task_traceability.json"
+    },
+    {
+      "name": "test_p14_contract.py",
+      "size": 12518,
+      "type": "application/octet-stream",
+      "hash": "e074664d8e010d74c291bd63114e0ccbbeabff232acaa1501fb4b9bbf1554e2c",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/tests/enemy_ai_unit/test_p14_contract.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/tests/enemy_ai_unit/test_p14_contract.py",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "tests/enemy_ai_unit/test_p14_contract.py",
+        "exportName": "test_p14_contract.py",
+        "hashVerified": true
+      },
+      "blob": "0e11cd653a3632be9e5d8d1b70702b6ddd6edfc7",
+      "path": "files/code/test_p14_contract.py"
+    },
+    {
+      "name": "demo_execution.json",
+      "size": 36076,
+      "type": "application/json",
+      "hash": "2ed9b0bc2c7e362248f631b0d76f13f94f9be88e827de1bf2fdc5130fd65b135",
+      "kind": "file",
+      "zipEntryPath": "P16_EnemyAI_V0.1/examples/demo_execution.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P16_EnemyAI_V0.1.zip",
+        "hash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "entryPath": "P16_EnemyAI_V0.1/examples/demo_execution.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "delivery_receipt.json",
+        "hash": "33b6387bb7dc7a28661307bc6aed21831d5bfd1a2f9cb80ba75397e83e7a7ba8",
+        "archiveHash": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+        "packagePath": "examples/demo_execution.json",
+        "exportName": "demo_execution.json",
+        "hashVerified": true
+      },
+      "blob": "4a10a012be860dfaa7141117fb08ce238dc75e6f",
+      "path": "files/data/demo_execution.json"
+    }
+  ],
+  "createdAt": "2026-10-29T00:35:29.719Z",
+  "sourceUrl": "https://chatgpt.com/c/6ae28d11-7f48-83ea-bd21-73031ddcbe33"
+}
