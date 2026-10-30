@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "presetId": "20282e87-223f-4d10-8c50-af5b92fbbd60",
+  "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "roleKey": "rc77df7fd-6f55-4572-a753-7ffd25cb1511",
+  "roleName": "P19｜战斗界面、输入交互与状态展示程序员",
+  "round": 1,
+  "handoffToken": "28676444-1f8e-46f1-a43e-20f84eca6d6a",
+  "materials": {
+    "assets": [
+      {
+        "hash": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+        "name": "P19_BattleHUD_V0.1.zip",
+        "kind": "file",
+        "size": 22498864,
+        "type": "application/zip",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/e4139777-92f4-470e-b877-0c701ed3fdf7",
+          "https://chatgpt.com/backend-api/estuary/content?id=file_0000000056b48230bf64b551659b4455&fn=P19_BattleHUD_V0.1.zip&cd=attachment&ts=498144&p=fs&cid=1&sig=01ef0b63ecf69ad19e0e70aad3114f4f77474f3965155629703538eb218ae948&v=0"
+        ],
+        "downloadAttempt": {
+          "context": "page-main",
+          "elapsedMs": 2072,
+          "expectedBytes": 0,
+          "fullRestarts": 0,
+          "nativeAbortAt": null,
+          "nativeAborted": false,
+          "origin": "https://chatgpt.com",
+          "receivedBytes": 22498864,
+          "resumeAttempts": 0,
+          "stage": "bytes-received"
+        }
+      },
+      {
+        "name": "relay-materials-1-17d814d042.zip",
+        "size": 5195472,
+        "hash": "17d814d042ee3f1229f5a94f544c7415244291735d77f9a164a0e2b8c115c486",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-2-35e08bbb06.zip",
+        "size": 11106607,
+        "hash": "35e08bbb06dd7e90782dc7708352156d53d8247846fd6b3da0c33ceb1dca7d76",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-3-2cb4736769.zip",
+        "size": 9193633,
+        "hash": "2cb4736769d648aaad15679296302c6069dc7f54415c40c1b828711b4ed5b243",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-4-f02aa2aa94.zip",
+        "size": 9312734,
+        "hash": "f02aa2aa94d0f59c6328461b9500d26b9d963ae3bd50070c2edc351e9d84a9ba",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-5-3842819104.zip",
+        "size": 13500922,
+        "hash": "38428191040a62800d8e7e356c76bec1435f621b96a8289e52ff3670f66d3fe2",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      {
+        "name": "relay-materials-6-64a68eddc9.zip",
+        "size": 6691818,
+        "hash": "64a68eddc96809fe4410110421b0012d1c7757e46868b2e78f04225a1682c12d",
+        "type": "application/zip",
+        "kind": "file"
+      }
+    ],
+    "complete": true,
+    "issues": [],
+    "issueDetails": []
+  },
+  "coverage": {
+    "kind": "readable-dom",
+    "complete": false,
+    "message": "按本次交接编号取回原会话回答，未重新发送。"
+  },
+  "completion": "recovered-ui-controls-and-stable-text",
+  "fileRecovery": {
+    "partialCapture": {
+      "sourceUrl": "https://chatgpt.com/c/6ae2d00d-4ddc-83ea-b995-a4d25993687a",
+      "handoffToken": "de0bb961-5a0d-48f2-81f5-305651f6824b",
+      "files": [
+        {
+          "name": "P19_HUD_initial.png",
+          "size": 567243,
+          "hash": "43983d0568dd7678bbf156fbdb5378ceeb090ac3a50272cd0786c4cea019f494"
+        },
+        {
+          "name": "interface_rfcs.json",
+          "size": 6409,
+          "hash": "2c7f60d4d3e3d5add1c5b947279412786f604beb5ac814c3d3478ce72d9c3f74"
+        },
+        {
+          "name": "verification_status.json",
+          "size": 4032,
+          "hash": "fcba194e98ca8c2ea18734875b913ef550cf1792d2bd7dd2481b674d2f6bda6d"
+        },
+        {
+          "name": "defect_log.json",
+          "size": 5844,
+          "hash": "13b14689b27057baae8de1e69ab56a5150723b82d9a78e75fa7daefe9b68e090"
+        },
+        {
+          "name": "blockers.json",
+          "size": 10161,
+          "hash": "2d5b6682eea4fdba7e1288dc298b57c9e5b24728d764dbe2edc91597c43619b9"
+        },
+        {
+          "name": "actual_path_request.json",
+          "size": 2854,
+          "hash": "c3da82fd8dec987b89aeebefbdb5f3737f9f4b1d9add22990267478b97c0d794"
+        },
+        {
+          "name": "contract_acceptance.json",
+          "size": 2062,
+          "hash": "2dccc5cf7364a891b205c0cf7ed1e6c94ba5384280873739c362a42a8f33717b"
+        },
+        {
+          "name": "presentation_adapter_spec.md",
+          "size": 3605,
+          "hash": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22"
+        },
+        {
+          "name": "hud_renderer.mjs",
+          "size": 12525,
+          "hash": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44"
+        },
+        {
+          "name": "presentation_adapter.mjs",
+          "size": 2370,
+          "hash": "b779eb8fcef4616d6e1e148d5f733aae990c334c0c5bdf4d50b5267a96f9612c"
+        },
+        {
+          "name": "P19_HUD_victory.png",
+          "size": 584081,
+          "hash": "b7f4d0b7b959d1b2dd366197f2eeb58183151a3bf125e0e71a6fabd1466c8098"
+        },
+        {
+          "name": "task_traceability.json",
+          "size": 8873,
+          "hash": "9ca272ebaa29041507e485426f0516ce0550c5b18bfa9cd8339d6e5c5df66ba3"
+        },
+        {
+          "name": "delivery_manifest.json",
+          "size": 227080,
+          "hash": "c0d3d6ff950166fd39c926c5c2d5a11b9418dae8cff7361d07db9cad73c413dc"
+        },
+        {
+          "name": "third_party_notices.md",
+          "size": 1516,
+          "hash": "9b992c6808ea646a1a6dbf74f448f792e89c1d3c80b308435e0a3ef86e1a5db6"
+        },
+        {
+          "name": "source_input_receipt.json",
+          "size": 46268,
+          "hash": "59d2a499b395822e67e12c8d1a4c0e032f69cbf050d9d368ef115fbb34a409f7"
+        },
+        {
+          "name": "README.md",
+          "size": 6522,
+          "hash": "8099880dc8682a7646f3978930f6083d00a16c7b3b1741e7784271c64685daad"
+        },
+        {
+          "name": "hud_controller.mjs",
+          "size": 15234,
+          "hash": "34380c15c58f2f40e2269fbdf00a988aadaed553e2c0f1006e180ab51403a0b0"
+        },
+        {
+          "name": "P19_HUD_disconnected.png",
+          "size": 579526,
+          "hash": "13839b574920dbfac17e5c75e5bdc37cb844ed3e5166c45a0505ae65cfe3e076"
+        },
+        {
+          "name": "P19_API.md",
+          "size": 6432,
+          "hash": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c"
+        },
+        {
+          "name": "browser_results.json",
+          "size": 17348,
+          "hash": "91e7d81960c37f97874a82a03c466fb8794357777a3dee116b560b699a514874"
+        },
+        {
+          "name": "integration_handoff.md",
+          "size": 4828,
+          "hash": "54bde6e881cd388fa91edabeab2711de58e0e9530367a86c4529b25c15964343"
+        },
+        {
+          "name": "P19_delivery_receipt.json",
+          "size": 50052,
+          "hash": "5fecc024e54990cf7e81c979bb8d271c605f9173b023afb84510c96bd7e797f8"
+        },
+        {
+          "name": "control_state_table.tsv",
+          "size": 2926,
+          "hash": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8"
+        },
+        {
+          "name": "battle_command_tests.py",
+          "size": 523,
+          "hash": "b5fc19a4d9094987fac7d8cd3c21267f6422583bb6a348796a91b6cf4a722151"
+        },
+        {
+          "name": "run_ui.py",
+          "size": 206,
+          "hash": "8b803095f88406804ffebf471a7149925f3d10e3636c9ae02400c8248f78b165"
+        },
+        {
+          "name": "downstream_receipts.json",
+          "size": 17411,
+          "hash": "98c832c0fe5aeaeffef284ae9ad9b8b980f076e0871e0458f6220cba5bbe967c"
+        },
+        {
+          "name": "battle_hud_state_binding.json",
+          "size": 15083,
+          "hash": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd"
+        }
+      ]
+    },
+    "downloadJournal": {
+      "signature": "[\"P19_BattleHUD_V0.1.zip：下载返回 401（请求未获授权；可能是原链接已过期，请从原回答重新获取）\",\"P19_BattleHUD_V0.1.zip：原页面下载控件没有返回可下载地址（20秒）\",\"P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\\\"context\\\":\\\"page-main\\\",\\\"origin\\\":\\\"https://chatgpt.com\\\",\\\"stage\\\":\\\"http-failed\\\",\\\"status\\\":404,\\\"transientCount\\\":0}\",\"P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\\\"context\\\":\\\"page-main\\\",\\\"origin\\\":\\\"https://chatgpt.com\\\",\\\"stage\\\":\\\"resume-rejected\\\",\\\"transientCount\\\":0,\\\"expectedBytes\\\":22498864,\\\"rangeAdvertised\\\":false,\\\"rangeProbeEligible\\\":true,\\\"transientCount\\\":0,\\\"status\\\":200}\",\"P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\\\"context\\\":\\\"page-main\\\",\\\"stage\\\":\\\"entry-not-observed\\\",\\\"transientCount\\\":0}\"]",
+      "attempts": 3,
+      "at": 1793319592867,
+      "phase": "source-access-blocked",
+      "verifiedFiles": 27,
+      "issues": [
+        "P19_BattleHUD_V0.1.zip：下载返回 401（请求未获授权；可能是原链接已过期，请从原回答重新获取）",
+        "P19_BattleHUD_V0.1.zip：原页面下载控件没有返回可下载地址（20秒）",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"origin\":\"https://chatgpt.com\",\"stage\":\"resume-rejected\",\"receivedBytes\":7733248,\"expectedBytes\":22498864,\"rangeAdvertised\":false,\"rangeProbeEligible\":true,\"resumeAttempts\":1,\"status\":200}",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"origin\":\"https://chatgpt.com\",\"stage\":\"resume-rejected\",\"receivedBytes\":7864320,\"expectedBytes\":22498864,\"rangeAdvertised\":false,\"rangeProbeEligible\":true,\"resumeAttempts\":1,\"status\":200}",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"origin\":\"https://chatgpt.com\",\"stage\":\"resume-rejected\",\"receivedBytes\":8192000,\"expectedBytes\":22498864,\"rangeAdvertised\":false,\"rangeProbeEligible\":true,\"resumeAttempts\":1,\"status\":200}",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"stage\":\"entry-not-observed\",\"receivedBytes\":0}",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"origin\":\"https://chatgpt.com\",\"stage\":\"resume-rejected\",\"receivedBytes\":7798784,\"expectedBytes\":22498864,\"rangeAdvertised\":false,\"rangeProbeEligible\":true,\"resumeAttempts\":1,\"status\":200}",
+        "P19_BattleHUD_V0.1.zip：原页面文件下载未完成。下载诊断：{\"context\":\"page-main\",\"origin\":\"https://chatgpt.com\",\"stage\":\"http-failed\",\"status\":404,\"receivedBytes\":0}"
+      ]
+    },
+    "authorizedSupplement": {
+      "sourceUrl": "https://chatgpt.com/c/6ae2d00d-4ddc-83ea-b995-a4d25993687a",
+      "sourceToken": "de0bb961-5a0d-48f2-81f5-305651f6824b",
+      "token": "52b60464-fac5-4573-8ee6-a0750be7356f",
+      "files": [
+        {
+          "name": "P19_BattleHUD_V0.1.zip",
+          "size": 22498864,
+          "hash": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093"
+        }
+      ],
+      "answer": "**[下载 P19_BattleHUD_V0.1.zip](https://chatgpt.com/library?file_id=libfile_7424fdf2602c819190069b49a5197e6c&account_id=personal)**\n\n| 核验项 | 结果 |\n| --- | --- |\n| 原文件 | 存在 |\n| 文件名 |  |\n| 实际大小 | **22,498,864 字节**，与指定值一致 |\n| SHA-256 | **与指定值完全一致** |\n| 保存前后原文件字节 | 一致；未改写、未重新生成、未重新压缩或打包 |\n\n纯文本\n\n`bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093`"
+    }
+  },
+  "snapshotHash": "e4e63afacf47033b392a0898315d222d86806981310c2e21c3c44efcd182455f",
+  "answerBlob": "366140bfa6180cd0c20078cabd264f329a6823e3",
+  "answerHash": "4ce3166918ae75c9d15f369077b7dcf0d86b394090df50600e6e415b97d891ad",
+  "presentation": {
+    "name": "answer-rc77df7fd-6f55-4572-a753-28676444-1f8e-46f1-a43e-20f84eca6d6a.md",
+    "readmeBlob": "9fccbd8661eefdc828e67820e650f2728e1049fa",
+    "readmeHash": "90420bbfca2495471392f815af661e76e9c9cea93304a790ad18f8de166bff32",
+    "htmlBlob": "24f24148402626cae5e7c59dd3d6b583d7235548",
+    "htmlHash": "560e80b110973437947d445f95f9bc1b95625985d2e026fee83f4dc36eab8d27"
+  },
+  "files": [
+    {
+      "hash": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "name": "P19_BattleHUD_V0.1.zip",
+      "kind": "file",
+      "size": 22498864,
+      "type": "application/zip",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/e4139777-92f4-470e-b877-0c701ed3fdf7",
+        "https://chatgpt.com/backend-api/estuary/content?id=file_0000000056b48230bf64b551659b4455&fn=P19_BattleHUD_V0.1.zip&cd=attachment&ts=498144&p=fs&cid=1&sig=01ef0b63ecf69ad19e0e70aad3114f4f77474f3965155629703538eb218ae948&v=0"
+      ],
+      "downloadAttempt": {
+        "context": "page-main",
+        "elapsedMs": 2072,
+        "expectedBytes": 0,
+        "fullRestarts": 0,
+        "nativeAbortAt": null,
+        "nativeAborted": false,
+        "origin": "https://chatgpt.com",
+        "receivedBytes": 22498864,
+        "resumeAttempts": 0,
+        "stage": "bytes-received"
+      },
+      "blob": "6b6e633c3d5ca1b4ff9f2cbf55ad70dc2e4d4892",
+      "path": "files/archives/P19_BattleHUD_V0.1.zip"
+    },
+    {
+      "name": "relay-materials-1-17d814d042.zip",
+      "size": 5195472,
+      "hash": "17d814d042ee3f1229f5a94f544c7415244291735d77f9a164a0e2b8c115c486",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "00477f3e86f0399b03cafd0ab3a2b0799e931515",
+      "path": "files/archives/relay-materials-1-17d814d042.zip"
+    },
+    {
+      "name": "relay-materials-2-35e08bbb06.zip",
+      "size": 11106607,
+      "hash": "35e08bbb06dd7e90782dc7708352156d53d8247846fd6b3da0c33ceb1dca7d76",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "f7ac4b13a2d146245dd3eda7f2ef7778404b7840",
+      "path": "files/archives/relay-materials-2-35e08bbb06.zip"
+    },
+    {
+      "name": "relay-materials-3-2cb4736769.zip",
+      "size": 9193633,
+      "hash": "2cb4736769d648aaad15679296302c6069dc7f54415c40c1b828711b4ed5b243",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "da54e88c4ae938e6513afa97d918e5ecb551acf7",
+      "path": "files/archives/relay-materials-3-2cb4736769.zip"
+    },
+    {
+      "name": "relay-materials-4-f02aa2aa94.zip",
+      "size": 9312734,
+      "hash": "f02aa2aa94d0f59c6328461b9500d26b9d963ae3bd50070c2edc351e9d84a9ba",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "27c15c0d0b8e14f2d5380e81cac2b6b001135c47",
+      "path": "files/archives/relay-materials-4-f02aa2aa94.zip"
+    },
+    {
+      "name": "relay-materials-5-3842819104.zip",
+      "size": 13500922,
+      "hash": "38428191040a62800d8e7e356c76bec1435f621b96a8289e52ff3670f66d3fe2",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "ebc9fa78a78a6abb79f858b052e0a577c2034945",
+      "path": "files/archives/relay-materials-5-3842819104.zip"
+    },
+    {
+      "name": "relay-materials-6-64a68eddc9.zip",
+      "size": 6691818,
+      "hash": "64a68eddc96809fe4410110421b0012d1c7757e46868b2e78f04225a1682c12d",
+      "type": "application/zip",
+      "kind": "file",
+      "blob": "db4653f52dbc5fe9fe65397428864b50433b206b",
+      "path": "files/archives/relay-materials-6-64a68eddc9.zip"
+    }
+  ],
+  "createdAt": "2026-10-30T04:10:24.304Z",
+  "sourceUrl": "https://chatgpt.com/c/6ae2d00d-4ddc-83ea-b995-a4d25993687a"
+}
