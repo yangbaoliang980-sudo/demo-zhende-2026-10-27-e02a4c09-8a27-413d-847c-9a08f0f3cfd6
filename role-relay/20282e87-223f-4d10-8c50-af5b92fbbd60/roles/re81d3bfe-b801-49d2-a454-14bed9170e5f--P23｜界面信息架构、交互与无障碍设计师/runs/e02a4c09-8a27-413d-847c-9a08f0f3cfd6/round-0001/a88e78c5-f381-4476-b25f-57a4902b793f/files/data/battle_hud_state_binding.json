@@ -1,0 +1,353 @@
+{
+  "format": "P19-HUD-BINDING/0.1.0",
+  "task_id": "P19-S03-HUD-001",
+  "delivery_version": "P19-HUD/0.1.0-isolated",
+  "owner": "P19",
+  "shared_dto_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "local_context_version": "P19-HUD-CONTEXT/0.1.0-proposal",
+  "formal_acceptance": "PREPARED_NOT_ACCEPTED",
+  "snapshot_is_sole_source_for_terminal_numeric_state": true,
+  "intent_production_status": "BLOCKED_MISSING_COMMITTED_VIEW",
+  "bindings": [
+    {
+      "id": "HP",
+      "view_selector": "#party/#enemies .hp-label; [role=progressbar]; .hp-fill",
+      "source_field": "BattleSnapshot.units[*].hp/max_hp",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Same accepted snapshot supplies text, aria-valuenow/max and scaleX(hp/max_hp). Never animate or subtract final numeric values in P19.",
+      "missing_or_invalid_behavior": "Invalid snapshot rejected; last confirmed state visibly stale and actions locked.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "SHIELD",
+      "view_selector": ".shield-label",
+      "source_field": "BattleSnapshot.units[*].shield",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Render exact integer; historical SHIELD_CHANGED is text-only.",
+      "missing_or_invalid_behavior": "Never derive shield from event deltas.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "ENERGY",
+      "view_selector": "#energy",
+      "source_field": "BattleSnapshot.energy",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Render exact committed remaining energy; do not subtract card cost locally.",
+      "missing_or_invalid_behavior": "Display — before first valid snapshot; lock new actions.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "HAND",
+      "view_selector": "#hand; #hand-count",
+      "source_field": "BattleSnapshot.zones.hand; card_instances",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14/P15",
+      "render_rule": "Render hand order and length from snapshot; preserve owner_unit_id for command actor.",
+      "missing_or_invalid_behavior": "Missing display context: keep card ID and unknown cost, disable selection.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "path": "upstream/P15/deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        }
+      ]
+    },
+    {
+      "id": "PILES",
+      "view_selector": "#pile-counts",
+      "source_field": "BattleSnapshot.zones.draw/discard/exhaust",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14/P15",
+      "render_rule": "Render array lengths from same snapshot.",
+      "missing_or_invalid_behavior": "No optimistic pile movement.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "path": "upstream/P15/deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        }
+      ]
+    },
+    {
+      "id": "PARTY",
+      "view_selector": "#party",
+      "source_field": "BattleSnapshot.units[side=PLAYER].slot/unit_id/hp",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Sort by slot; render actual unit data; A/B/C are explicitly temporary portraits.",
+      "missing_or_invalid_behavior": "Do not invent absent units or claim formal art.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "ENEMY",
+      "view_selector": "#enemies",
+      "source_field": "BattleSnapshot.units[side=ENEMY]; boss_states",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Render card containers, state pills and committed current_phase_id; enemy artwork is explicitly placeholder.",
+      "missing_or_invalid_behavior": "Do not infer phase by own HP threshold rules.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "STATUS",
+      "view_selector": ".status-list",
+      "source_field": "BattleSnapshot.units[*].statuses[*].status_id/stacks/remaining_triggers",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Render ID, stack count, remaining trigger count as text.",
+      "missing_or_invalid_behavior": "No local ticking or status expiration.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "TURN",
+      "view_selector": "#turn-label; #phase-label; #outcome",
+      "source_field": "BattleSnapshot.turn_number/phase/outcome",
+      "authority": "AUTHORITATIVE_SNAPSHOT",
+      "source_owner": "P14",
+      "render_rule": "Render committed phase/outcome. Terminal/aborted/faulted lock play and end-turn.",
+      "missing_or_invalid_behavior": "No UI-side victory determination.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "CARD_DISPLAY",
+      "view_selector": ".card-cost/.card-name/.card-desc; targetable units",
+      "source_field": "Context.cards[*] bound to battle_id/revision/snapshot_sha256",
+      "authority": "ISOLATED_OWNER_QUERY_PROPOSAL",
+      "source_owner": "P13/P15",
+      "render_rule": "Fixture asks original P15 planner for legality/target sets; renderer only displays. Context is not added to closed P13 DTO.",
+      "missing_or_invalid_behavior": "Drop context atomically; disable play; display waiting text.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P15/deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        },
+        {
+          "path": "upstream/P15/handoff/P15_API.md",
+          "size_bytes": 8358,
+          "sha256": "d1b514d82574597ec72a419745117f6403bcab260ee8222d7110ac4f4d6d6cb9"
+        }
+      ]
+    },
+    {
+      "id": "INTENT",
+      "view_selector": ".enemy-intent",
+      "source_field": "Context.intents[*] bound to battle_id/revision/snapshot_sha256/expected_revision",
+      "authority": "TEST_SCRIPT_OR_UNCOMMITTED_P16_CANDIDATE",
+      "source_owner": "P13/P14/P16",
+      "render_rule": "Show explicit provenance, targets, base_amount and hit_count. Label base amount as NOT actual HP loss. No production-authoritative intent claim.",
+      "missing_or_invalid_behavior": "Drop stale/invalid context and old intent; display 意图尚未同步. Production gate BLOCKED.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P16/enemy_intent_schema.json",
+          "size_bytes": 4072,
+          "sha256": "f94c7c28362bbe5a5e8b109a2f7bef369b39118358b73964e69b1161033fe5d7"
+        },
+        {
+          "path": "upstream/P16/P16_API.md",
+          "size_bytes": 10229,
+          "sha256": "daaccd6c4904dbc80b706d4e861e3b38ae50a6f294fc7b3aedbac60187d4062b"
+        }
+      ]
+    },
+    {
+      "id": "ACTUAL_DAMAGE",
+      "view_selector": "#battle-log",
+      "source_field": "BattleCommitBatch.events[event_type=DAMAGE_APPLIED].data.hp_loss/absorbed",
+      "authority": "HISTORICAL_COMMITTED_EVENT_FACT_ONLY",
+      "source_owner": "P14",
+      "render_rule": "Static text remains readable without audio/animation; it never drives current HP.",
+      "missing_or_invalid_behavior": "Bad history binding discarded; current snapshot remains visible.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_event_samples.json",
+          "size_bytes": 96203,
+          "sha256": "28c9bfe9e598017db0456971beb6d5422e67c9999be38ad83ddd9bbc3feeb448"
+        }
+      ]
+    },
+    {
+      "id": "INPUT",
+      "view_selector": "#play; #end-turn; .hand-card; target buttons",
+      "source_field": "Snapshot.phase + local connection/stale/suspended/pending + validated Context",
+      "authority": "LOCAL_VIEW_STATE_AND_AUTHORITATIVE_PHASE",
+      "source_owner": "P19/P14/P15",
+      "render_rule": "Only PLAY_CARD/END_TURN Commands with original expected_revision; 350ms same signature debounce and synchronous pending lock.",
+      "missing_or_invalid_behavior": "UNKNOWN preserves exact original command; lock new actions.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        },
+        {
+          "path": "upstream/P15/deck_runtime/planner.py",
+          "size_bytes": 9275,
+          "sha256": "7024680cc00a0db9bd8a2c1a8df67d412c8fec9305b0ed17df4008f0e0409e9f"
+        }
+      ]
+    },
+    {
+      "id": "ERROR",
+      "view_selector": "#error-message; #connection-banner; #retry",
+      "source_field": "BattleReply.code/result + local transport/view validation errors",
+      "authority": "OWNER_REPLY_OR_LOCAL_TRANSPORT_STATUS",
+      "source_owner": "P19/P14",
+      "render_rule": "Text alert and state banner, independent of audio. Reconnection clears resolved transient active error, retains history.",
+      "missing_or_invalid_behavior": "No unverified success; retry same ID only.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/P14/battle_core/core.py",
+          "size_bytes": 14017,
+          "sha256": "224674206028f783afb0e91b6ec816b1755ec1edb02e2a297c1308ec35298e78"
+        }
+      ]
+    },
+    {
+      "id": "PRESENTATION",
+      "view_selector": "#motion-mode; #skip-motion; public bridge anchors",
+      "source_field": "Committed BattleCommitBatch + current numeric viewport anchors",
+      "authority": "PRESENTATION_ONLY",
+      "source_owner": "P19 bridge / P29 future driver",
+      "render_rule": "Bind snapshot first; missing/skipped/gap/throwing/hung animation cannot block input or change final fields.",
+      "missing_or_invalid_behavior": "Cancel epoch and retain full static terminal state.",
+      "source_input_hashes": [
+        {
+          "path": "upstream/P13/contracts/internal/internal_dto.schema.json",
+          "size_bytes": 93217,
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "path": "upstream/V6/v6_roles.txt",
+          "size_bytes": 178461,
+          "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "P23-REFERENCES/0.1.0",
+  "references": [
+    {
+      "id": "W3C-WCAG22",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "document_date": "2024-12-12",
+      "status": "W3C Recommendation",
+      "accessed_utc_date": "2026-10-30",
+      "use": "keyboard, focus, contrast, non-color semantics, resize/reflow; adapted desktop criteria only"
+    },
+    {
+      "id": "W3C-JLREQ",
+      "url": "https://www.w3.org/TR/jlreq/",
+      "title": "Requirements for Japanese Text Layout",
+      "document_date": "2020-08-11",
+      "status": "Working Group Note",
+      "accessed_utc_date": "2026-10-30",
+      "use": "Japanese line breaking, punctuation and ruby reference"
+    },
+    {
+      "id": "W3C-CLREQ",
+      "url": "https://www.w3.org/TR/clreq/",
+      "title": "Requirements for Chinese Text Layout",
+      "document_date": "2026-10-07",
+      "status": "Group Note Draft; informative, not frozen normative product spec",
+      "accessed_utc_date": "2026-10-30",
+      "use": "Chinese punctuation and line-layout reference"
+    }
+  ],
+  "source_hash_note": "Retrieved web text is reference material; no invented full-page byte hash. Fixed vendor byte hashes are in font_provenance and delivery manifest."
+}

@@ -1,0 +1,89 @@
+{
+  "layer": "AUTHOR_FONT_CMAP_ONLY",
+  "observed_utc": "2026-10-30T11:12:06.282609+00:00",
+  "fontTools_version": "4.61.1",
+  "unicode_version": "15.0.0",
+  "fonts": [
+    {
+      "path": "design/accessibility/fonts/DejaVuSans.ttf",
+      "size_bytes": 759720,
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "cmap_codepoint_count": 5918
+    },
+    {
+      "path": "design/accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2",
+      "size_bytes": 1132964,
+      "sha256": "5ae4b6b5f176a590babe96d6bb62ee8805f4ddf15877738eda807db1fa20f136",
+      "cmap_codepoint_count": 6886
+    },
+    {
+      "path": "design/accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "size_bytes": 1142552,
+      "sha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "cmap_codepoint_count": 7946
+    }
+  ],
+  "required_distinct_nonspace_codepoints": 594,
+  "fixture_results": [
+    {
+      "id": "TXT-ZH-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-JA-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-ZH-02",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-JA-02",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-MIX-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-PUNC-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-RUBY-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-COMB-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-MISSING-01",
+      "missing_codepoints": [
+        "U+20BB7",
+        "U+F0000"
+      ]
+    },
+    {
+      "id": "TXT-LONG-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-ID-01",
+      "missing_codepoints": []
+    },
+    {
+      "id": "TXT-NUM-01",
+      "missing_codepoints": []
+    }
+  ],
+  "missing_fixture_codepoints": [
+    "U+20BB7",
+    "U+F0000"
+  ],
+  "unexpected_missing_codepoints": [],
+  "language_review": "NOT_RUN",
+  "shaping_test": "NOT_RUN",
+  "screen_reader": "NOT_RUN",
+  "result": "PASS_EXPECTED_MISSING_FIXTURE_ONLY"
+}

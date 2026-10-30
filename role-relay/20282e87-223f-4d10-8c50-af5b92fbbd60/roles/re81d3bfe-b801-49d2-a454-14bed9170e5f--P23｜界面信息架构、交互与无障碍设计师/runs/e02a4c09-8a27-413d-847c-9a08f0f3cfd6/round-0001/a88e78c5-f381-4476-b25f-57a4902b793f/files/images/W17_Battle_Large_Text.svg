@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="title desc" data-wireframe-id="W17_Battle_Large_Text" data-screen-id="battle">
+<title id="title">战斗 / 大字滚动布局提案</title><desc id="desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。本页示意 200% 文字重排，不是目标引擎缩放实测；一次展示较少卡片，完整内容可滚动。</desc>
+<defs><style>@font-face{font-family:P23SC;src:url(../../accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23JP;src:url(../../accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23Symbols;src:url(../../accessibility/fonts/DejaVuSans.ttf) format("truetype");font-weight:400}text{font-family:P23SC,P23JP,P23Symbols,sans-serif;font-weight:400}</style><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W17_Battle_Large_Text   战斗 / 大字滚动布局提案</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">本页示意 200% 文字重排，不是目标引擎缩放实测；一次展示较少卡片，完整内容可滚动。</text>
+<text x="24" y="66.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="480" y="72.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合</text>
+<text x="930" y="72.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">费用 2</text>
+<rect x="24" y="142" width="1232" height="318" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="48" y="164.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="48" y="226.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排 · 基础 1 × 1 次</text>
+<text x="48" y="288.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="48" y="358.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">候选预告；基础值不是实际掉血。</text>
+<rect x="24" y="484" width="1232" height="154" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="48" y="506.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃　费用 1</text>
+<text x="48" y="572.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击 · 基础伤害 4　　向下滚动查看其他手牌</text>
+<rect x="24" y="670" width="320" height="72" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.log_open" data-control="true"/>
+<text x="100.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看完整记录</text>
+<rect x="744" y="670" width="244" height="72" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.play" data-control="true"/>
+<text x="810.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认出牌</text>
+<rect x="1012" y="670" width="244" height="72" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.end_turn" data-control="true"/>
+<text x="1078.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">结束回合</text>
+</svg>

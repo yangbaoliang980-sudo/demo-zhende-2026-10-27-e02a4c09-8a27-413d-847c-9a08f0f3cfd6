@@ -1,0 +1,91 @@
+{
+  "version": "P23-TEXT-FIXTURES/0.1.0",
+  "lifecycle": "DESIGN_TEST_ONLY",
+  "items": [
+    {
+      "id": "TXT-ZH-01",
+      "lang": "zh-Hans",
+      "purpose": "关键意图",
+      "text": "下一次行动：攻击前排；基础 12 × 2 次。实际掉血以结算为准。",
+      "expected": "wrap_no_ellipsis"
+    },
+    {
+      "id": "TXT-JA-01",
+      "lang": "ja",
+      "purpose": "关键意图",
+      "text": "次の行動：前列を攻撃。基礎値 12 × 2 回。実際の減少量は確定した結果を参照。",
+      "expected": "wrap_no_ellipsis"
+    },
+    {
+      "id": "TXT-ZH-02",
+      "lang": "zh-Hans",
+      "purpose": "长卡名",
+      "text": "尚未归还的星间观测记录与第三次校对",
+      "expected": "2_lines_then_full_details_no_autoshrink"
+    },
+    {
+      "id": "TXT-JA-02",
+      "lang": "ja",
+      "purpose": "长卡名",
+      "text": "星のあいだに置き忘れた観測記録と三度目の校閲",
+      "expected": "2_lines_then_full_details_no_autoshrink"
+    },
+    {
+      "id": "TXT-MIX-01",
+      "lang": "ja",
+      "purpose": "中日混排",
+      "text": "旅団の記録 Lv.12 ／ HP 128/160 ／ 護盾 +8",
+      "expected": "protect_numeric_tokens"
+    },
+    {
+      "id": "TXT-PUNC-01",
+      "lang": "ja",
+      "purpose": "禁则",
+      "text": "「確認しました」。次の行動（対象：前列）を確認してください。",
+      "expected": "no_start_closing_no_end_opening"
+    },
+    {
+      "id": "TXT-RUBY-01",
+      "lang": "ja",
+      "purpose": "注音",
+      "text": "語彙（ごい）／ 取り消す（とりけす）",
+      "expected": "ruby_base_atomic_or_parenthetic_reading"
+    },
+    {
+      "id": "TXT-COMB-01",
+      "lang": "ja",
+      "purpose": "组合字符",
+      "text": "が／が・パ／パ",
+      "expected": "grapheme_boundary_only"
+    },
+    {
+      "id": "TXT-MISSING-01",
+      "lang": "ja",
+      "purpose": "缺字压力",
+      "text": "𠮷野の記録 󰀀",
+      "expected": "missing glyph visible fallback [缺字 U+F0000]; keep original UTF-8 in detail"
+    },
+    {
+      "id": "TXT-LONG-01",
+      "lang": "zh-Hans",
+      "purpose": "长错误",
+      "text": "上次升级操作的处理结果尚未确认。你可以继续浏览页面；请先查询原操作，再进行新的资源消耗。",
+      "expected": "persistent_wrap_no_timeout"
+    },
+    {
+      "id": "TXT-ID-01",
+      "lang": "und",
+      "purpose": "技术详情",
+      "text": "request_id=fixture.pending.0000000000000000000000000000000000000001",
+      "expected": "wrap_in_details_do_not_show_as_primary_heading"
+    },
+    {
+      "id": "TXT-NUM-01",
+      "lang": "und",
+      "purpose": "极值",
+      "text": "HP 9007199254740991 / 9007199254740991",
+      "expected": "full_detail_no_rounding; reflow; values must be owner-valid"
+    }
+  ],
+  "ruby_note": "Japanese translations here are design copy candidates; P33 bilingual review NOT_RUN. Do not alter Anki raw fields or normalize event identity."
+}

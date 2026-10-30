@@ -1,0 +1,3067 @@
+{
+  "schema_version": "P23-SOURCE-INPUTS/0.1.0",
+  "task_id": "P23-S03-S06-UX-001",
+  "observed_at_utc": "2026-10-30T10:37:22.446175+00:00",
+  "intake_summary": {
+    "uploaded_count": 15,
+    "unique_archives": 121,
+    "member_count": 9939,
+    "relay_manifest_checks": 839,
+    "relay_failures": 0,
+    "total_decompressed_bytes": 404713974
+  },
+  "uploaded": [
+    {
+      "filename": "P20_Chapters_1280(2).png",
+      "size_bytes": 153618,
+      "sha256": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b",
+      "git_blob_sha1": "f4759e7a92a34b1685344c9c8823574dd37c181c",
+      "local_path": "upload/P20_Chapters_1280(2).png"
+    },
+    {
+      "filename": "P20_Growth_1280(2).png",
+      "size_bytes": 127255,
+      "sha256": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2",
+      "git_blob_sha1": "2afae353179cd094a977598d4092c0ebec790b59",
+      "local_path": "upload/P20_Growth_1280(2).png"
+    },
+    {
+      "filename": "P20_Learning_Quarantine(2).png",
+      "size_bytes": 93389,
+      "sha256": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20",
+      "git_blob_sha1": "237e8f2d606c35cf8aea2290e43f60923a0f2a86",
+      "local_path": "upload/P20_Learning_Quarantine(2).png"
+    },
+    {
+      "filename": "P20_Menu_1280(2).png",
+      "size_bytes": 236583,
+      "sha256": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141",
+      "git_blob_sha1": "baabac2fa2c34e1e7ab3b90d3d2ff4dd82555a13",
+      "local_path": "upload/P20_Menu_1280(2).png"
+    },
+    {
+      "filename": "P20_Menu_390(2).png",
+      "size_bytes": 136599,
+      "sha256": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b",
+      "git_blob_sha1": "f3d9617abeafffe86ac8a70f2f59d503486b0484",
+      "local_path": "upload/P20_Menu_390(2).png"
+    },
+    {
+      "filename": "P20_Migration_Failed(2).png",
+      "size_bytes": 152232,
+      "sha256": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde",
+      "git_blob_sha1": "3ae9358f1183aff3bb91f123884b446fcdf3fc15",
+      "local_path": "upload/P20_Migration_Failed(2).png"
+    },
+    {
+      "filename": "P20_Party_1280(2).png",
+      "size_bytes": 182187,
+      "sha256": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3",
+      "git_blob_sha1": "5457ca3bc2201100be9e0a4a29587caa730d8586",
+      "local_path": "upload/P20_Party_1280(2).png"
+    },
+    {
+      "filename": "P20_Restart_Pending(2).png",
+      "size_bytes": 141542,
+      "sha256": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083",
+      "git_blob_sha1": "b043a0c518e3ae41fef1441378ced97e8dc2ac22",
+      "local_path": "upload/P20_Restart_Pending(2).png"
+    },
+    {
+      "filename": "P20_Settlement_1280(2).png",
+      "size_bytes": 102991,
+      "sha256": "0ef60eefd142644a7872d9b0859f967ee98afe21ba824a8bd54d838d5140bb7a",
+      "git_blob_sha1": "81e6cee071e385a25664d30901a003e6c06cce48",
+      "local_path": "upload/P20_Settlement_1280(2).png"
+    },
+    {
+      "filename": "relay-materials-1-6e8f09abd0.zip",
+      "size_bytes": 16279771,
+      "sha256": "6e8f09abd0d82ee9ab1a01ba2a2bbec182c4ae715a23034b9d879d65c8ba93bb",
+      "git_blob_sha1": "d3e3e6ffde8198e6620c6aefdf88ad9c4bb85346",
+      "local_path": "upload/relay-materials-1-6e8f09abd0.zip"
+    },
+    {
+      "filename": "relay-materials-2-29da14dfaa(1).zip",
+      "size_bytes": 22452537,
+      "sha256": "29da14dfaad05c28c07ef6b2105cdc2d46a01a74519368b99a3933f08879410a",
+      "git_blob_sha1": "91757907271dc845fd646cd67444e5dd9a8a13cd",
+      "local_path": "upload/relay-materials-2-29da14dfaa(1).zip"
+    },
+    {
+      "filename": "relay-materials-2-f5272e0af1(1).zip",
+      "size_bytes": 10384682,
+      "sha256": "f5272e0af1f51a99fa165112ec0d87a726332ca0103915e1df4feeb750a89a47",
+      "git_blob_sha1": "1243469ad99e4ccb1edd735c44651c8ab8ec9b11",
+      "local_path": "upload/relay-materials-2-f5272e0af1(1).zip"
+    },
+    {
+      "filename": "relay-materials-3-712e6357a7(1).zip",
+      "size_bytes": 17766760,
+      "sha256": "712e6357a748863325f1c94a38e0970dea45b3559550a6a5b81d066e6fbb4641",
+      "git_blob_sha1": "f5eda04372152bbdbc629e9f3ce02a49bcc72a4a",
+      "local_path": "upload/relay-materials-3-712e6357a7(1).zip"
+    },
+    {
+      "filename": "relay-materials-4-67e86dc529(1).zip",
+      "size_bytes": 13502051,
+      "sha256": "67e86dc529e9d55d5a78e4cb7b2e80b0aa29369e377598846305826557ede7f6",
+      "git_blob_sha1": "0cbe9f8a57171e907b3d359dd5b8a9ab8cbadbe9",
+      "local_path": "upload/relay-materials-4-67e86dc529(1).zip"
+    },
+    {
+      "filename": "relay-materials-5-1898cbbecd(1).zip",
+      "size_bytes": 6698744,
+      "sha256": "1898cbbecdcbad05b464ec2fa1181b28973c5a49747115d0c199dd96bf5de0b7",
+      "git_blob_sha1": "5138243db7b09765a2167b2b395a7b27ab6d024d",
+      "local_path": "upload/relay-materials-5-1898cbbecd(1).zip"
+    }
+  ],
+  "archives": [
+    {
+      "archive_name": "relay-materials-1-6e8f09abd0.zip",
+      "sha256": "6e8f09abd0d82ee9ab1a01ba2a2bbec182c4ae715a23034b9d879d65c8ba93bb",
+      "size_bytes": 16279771,
+      "origins": [
+        {
+          "upload": "relay-materials-1-6e8f09abd0.zip"
+        }
+      ],
+      "members": 28,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/6e8f09abd0d82ee9"
+    },
+    {
+      "archive_name": "P22_ContentPipeline_V0.1.zip",
+      "sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "size_bytes": 1537563,
+      "origins": [
+        {
+          "archive_sha256": "6e8f09abd0d82ee9ab1a01ba2a2bbec182c4ae715a23034b9d879d65c8ba93bb",
+          "member": "files/001/P22_ContentPipeline_V0.1.zip"
+        }
+      ],
+      "members": 229,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/59823066d3449ec3"
+    },
+    {
+      "archive_name": "relay-materials-1-236d59e507.zip",
+      "sha256": "236d59e507924ab9544d279933a510ab3b5b52771b4cc904c9ab6c02392a14b4",
+      "size_bytes": 11225134,
+      "origins": [
+        {
+          "archive_sha256": "6e8f09abd0d82ee9ab1a01ba2a2bbec182c4ae715a23034b9d879d65c8ba93bb",
+          "member": "files/027/relay-materials-1-236d59e507.zip"
+        }
+      ],
+      "members": 47,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/236d59e507924ab9"
+    },
+    {
+      "archive_name": "P21_LocalSave_V0.1.zip",
+      "sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "size_bytes": 4563265,
+      "origins": [
+        {
+          "archive_sha256": "236d59e507924ab9544d279933a510ab3b5b52771b4cc904c9ab6c02392a14b4",
+          "member": "files/001/P21_LocalSave_V0.1.zip"
+        }
+      ],
+      "members": 379,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/05ec1111199f90da"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "e93fbd5845a53d5dc8540f26e7cbe9ebe62b8ec5823c60b94483d404dcfea979",
+      "size_bytes": 133008,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/author_001/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e93fbd5845a53d5d"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "0e16af233ebd1b6dd92671c6ceb94824d7ff8bc49c3827a9431907c7762b821e",
+      "size_bytes": 496238,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/author_final/executed_sources.zip"
+        }
+      ],
+      "members": 159,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/0e16af233ebd1b6d"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "c62401d55ca088b030db82e23cc5e808e923633d7e4711f0bc2e124b8e86bc4e",
+      "size_bytes": 496466,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/author_final_002/executed_sources.zip"
+        }
+      ],
+      "members": 159,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/c62401d55ca088b0"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "747ff7dcc343506f9b2fceadec6181845507a74ba08aea6f5bd9db190f6d164e",
+      "size_bytes": 488826,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/envelope_counterexample_001/executed_sources.zip"
+        }
+      ],
+      "members": 155,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/747ff7dcc343506f"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "019f05cb2c140777946fee339aed66eb3196845dc4b18e11d30b1cc7a06d1446",
+      "size_bytes": 488836,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/envelope_fixed_001/executed_sources.zip"
+        }
+      ],
+      "members": 155,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/019f05cb2c140777"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "db489bd418a77387a91a22262b221238b10f6e25c2f0b2a83c2811f21d1e404d",
+      "size_bytes": 496443,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/marker_counterexample_001/executed_sources.zip"
+        }
+      ],
+      "members": 159,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/db489bd418a77387"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "e6ade6e27b9ba99b2f1e49d52121b8dd63a1abce638b9f3cba591639917c3736",
+      "size_bytes": 137473,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/native_crash_001/executed_sources.zip"
+        }
+      ],
+      "members": 74,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e6ade6e27b9ba99b"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "77fd2f6060542f164b13e818201a61ea5fa90b6253fc3a9d789cfe15c3400bfe",
+      "size_bytes": 134439,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/review_counterexamples_001/executed_sources.zip"
+        }
+      ],
+      "members": 73,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/77fd2f6060542f16"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "06fa31002d3869cf60d458cbed2dc0ae1ceb0b348495b80e3cb353ff459d6d10",
+      "size_bytes": 134979,
+      "origins": [
+        {
+          "archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+          "member": "P21_LocalSave_V0.1/recovery_logs/review_fixed_001/executed_sources.zip"
+        }
+      ],
+      "members": 73,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/06fa31002d3869cf"
+    },
+    {
+      "archive_name": "P20_MetaUI_V0.1.zip",
+      "sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "size_bytes": 6486161,
+      "origins": [
+        {
+          "archive_sha256": "236d59e507924ab9544d279933a510ab3b5b52771b4cc904c9ab6c02392a14b4",
+          "member": "files/026/P20_MetaUI_V0.1.zip"
+        }
+      ],
+      "members": 270,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/175c51607c175e48"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "a48977482ec3001e79ca9aad6708376431ccb76079ea618d098582ddd09f2eca",
+      "size_bytes": 90421,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/author_final/executed_p20_sources.zip"
+        }
+      ],
+      "members": 40,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/a48977482ec3001e"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "f6c1fbcb6e5a6582ebddba8d3b5ed4930229830652fd56b27b03d18c1ca008d4",
+      "size_bytes": 87943,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/browser_001/executed_p20_sources.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/f6c1fbcb6e5a6582"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "5e66696cc9c3e88dc579e6f7a736211e300222483dff575caa4c77fab8c2d389",
+      "size_bytes": 88045,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/browser_002/executed_p20_sources.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/5e66696cc9c3e88d"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "4e68a9ab1277be6ef896af6b2fd458259437f60681a59c484036423c450a662b",
+      "size_bytes": 88045,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/browser_003/executed_p20_sources.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/4e68a9ab1277be6e"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "7a79a19a2d632b33edf7e150e66ab3e5efcf98f90446f8409b3287691b8cde2f",
+      "size_bytes": 90421,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/browser_final/executed_p20_sources.zip"
+        }
+      ],
+      "members": 40,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/7a79a19a2d632b33"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "f3ed81bf53fa2e1c4a189b0b20d41e5946295bdfa9ddd1e36204a855daecc992",
+      "size_bytes": 40941,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/contracts_001/executed_p20_sources.zip"
+        }
+      ],
+      "members": 16,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/f3ed81bf53fa2e1c"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "46b42efa69a683829160e7931110a858f64075d628dfe2ab9f8f20329188368c",
+      "size_bytes": 80377,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/fixture_generation_001/executed_p20_sources.zip"
+        }
+      ],
+      "members": 35,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/46b42efa69a68382"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "68cae34456f8685469f6842cc0063335f11b9cc4a38cbd838ee7286d9e8a3d59",
+      "size_bytes": 82235,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/js_001/executed_p20_sources.zip"
+        }
+      ],
+      "members": 36,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/68cae34456f86854"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "1704bc1c1352609704dfe1b57c2c632ebd0c3be0129c8b6c6a2d944e142dd960",
+      "size_bytes": 87943,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/js_002/executed_p20_sources.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/1704bc1c13526097"
+    },
+    {
+      "archive_name": "executed_p20_sources.zip",
+      "sha256": "2330e68fcabf1d68c1ce02256381130eea03e1157181ed706468967cba52ad22",
+      "size_bytes": 90421,
+      "origins": [
+        {
+          "archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+          "member": "P20_MetaUI_V0.1/evidence/runs/preflight_final/executed_p20_sources.zip"
+        }
+      ],
+      "members": 40,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/2330e68fcabf1d68"
+    },
+    {
+      "archive_name": "relay-materials-2-29da14dfaa(1).zip",
+      "sha256": "29da14dfaad05c28c07ef6b2105cdc2d46a01a74519368b99a3933f08879410a",
+      "size_bytes": 22452537,
+      "origins": [
+        {
+          "upload": "relay-materials-2-29da14dfaa(1).zip"
+        }
+      ],
+      "members": 2,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/29da14dfaad05c28"
+    },
+    {
+      "archive_name": "P19_BattleHUD_V0.1.zip",
+      "sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "size_bytes": 22498864,
+      "origins": [
+        {
+          "archive_sha256": "29da14dfaad05c28c07ef6b2105cdc2d46a01a74519368b99a3933f08879410a",
+          "member": "files/001/P19_BattleHUD_V0.1.zip"
+        }
+      ],
+      "members": 230,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/bab95fd7337b10da"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "d00060873cd4a8fc4f9f73158eb72c91ba584f348752a7e11926709ae14df597",
+      "size_bytes": 1204005,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_all_001/executed_p19_sources.zip"
+        },
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/browser_003/executed_p19_sources.zip"
+        }
+      ],
+      "members": 28,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d00060873cd4a8fc"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "5dce4d4ec4482bb188b421fbce592de52495bffc33bedf689c12a71730cf73e4",
+      "size_bytes": 1204741,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_all_final/executed_p19_sources.zip"
+        },
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/browser_final/executed_p19_sources.zip"
+        }
+      ],
+      "members": 28,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/5dce4d4ec4482bb1"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "1bf9c6932bd27371df060a6817aefe8669f4c346c03035c2bc46fa0866a42e95",
+      "size_bytes": 51811,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_contract_001/executed_p19_sources.zip"
+        }
+      ],
+      "members": 23,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/1bf9c6932bd27371"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "e151bbaa9ac92dd886498c637bfcbdc040544dd344d9872489db822c8339cdef",
+      "size_bytes": 48631,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_js_001/executed_p19_sources.zip"
+        }
+      ],
+      "members": 20,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e151bbaa9ac92dd8"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "1ac58cfa12209efac5aaad93295f95c613908c0bd5512fbcc5f0f45fc8c23b66",
+      "size_bytes": 48626,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_js_002/executed_p19_sources.zip"
+        }
+      ],
+      "members": 20,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/1ac58cfa12209efa"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "001a2fd0e5beedadeaa0fca289046eb581c1e03f9f143cea4d0e15d347700c9f",
+      "size_bytes": 48887,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/author_js_003/executed_p19_sources.zip"
+        }
+      ],
+      "members": 21,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/001a2fd0e5beedad"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "e577e144a43d7a28c70fafd58cd90f13d1ce0cf6f8e8acb14827a3ad670ccdd3",
+      "size_bytes": 1202525,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/browser_001/executed_p19_sources.zip"
+        }
+      ],
+      "members": 28,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e577e144a43d7a28"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "726adfdd59fb8741e059af2454afd6ca1088dac2a03ecf47d99589cd5c3e8d10",
+      "size_bytes": 1202612,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/browser_002/executed_p19_sources.zip"
+        }
+      ],
+      "members": 28,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/726adfdd59fb8741"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "f2f622a8e4b5df8fe992070df14acdf5952b60bf1d7d9d48eccdbbb3fa81e12d",
+      "size_bytes": 29131,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/fixture_generation_001/executed_p19_sources.zip"
+        }
+      ],
+      "members": 14,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/f2f622a8e4b5df8f"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "14a99353256e16d7eb9c5b77f7b154f1e3ac5733bed463df1a0432edb1cbaa23",
+      "size_bytes": 29143,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/fixture_seed_failure/executed_p19_sources.zip"
+        }
+      ],
+      "members": 14,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/14a99353256e16d7"
+    },
+    {
+      "archive_name": "executed_p19_sources.zip",
+      "sha256": "bf64e83e6ee49f7ed2d86d4f5afc9997bad1f977d400f7bdedff168ebc2b06e4",
+      "size_bytes": 1207246,
+      "origins": [
+        {
+          "archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+          "member": "P19_BattleHUD_V0.1/evidence/runs/preflight_final/executed_p19_sources.zip"
+        }
+      ],
+      "members": 30,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/bf64e83e6ee49f7e"
+    },
+    {
+      "archive_name": "relay-materials-2-f5272e0af1(1).zip",
+      "sha256": "f5272e0af1f51a99fa165112ec0d87a726332ca0103915e1df4feeb750a89a47",
+      "size_bytes": 10384682,
+      "origins": [
+        {
+          "upload": "relay-materials-2-f5272e0af1(1).zip"
+        }
+      ],
+      "members": 2,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/f5272e0af1f51a99"
+    },
+    {
+      "archive_name": "relay-materials-3-359996fd72.zip",
+      "sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+      "size_bytes": 10383899,
+      "origins": [
+        {
+          "archive_sha256": "f5272e0af1f51a99fa165112ec0d87a726332ca0103915e1df4feeb750a89a47",
+          "member": "files/001/relay-materials-3-359996fd72.zip"
+        }
+      ],
+      "members": 222,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/359996fd7206b1ac"
+    },
+    {
+      "archive_name": "P12_AnkiTransport_V0.1.zip",
+      "sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+      "size_bytes": 1206963,
+      "origins": [
+        {
+          "archive_sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+          "member": "files/011/P12_AnkiTransport_V0.1.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/upstream/P12/P12_AnkiTransport_V0.1.zip"
+        }
+      ],
+      "members": 145,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/2da7038354b81edb"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "5d9eb6703c3641bdb6ef5cbe482b7b1e64cfa861845754120e3e7e6ac266dca8",
+      "size_bytes": 61151,
+      "origins": [
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_001/executed_sources.zip"
+        }
+      ],
+      "members": 27,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/5d9eb6703c3641bd"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d8085f90ac6c49315d3dd34ed7055c871bac70008960037c305168ddec48b70d",
+      "size_bytes": 69366,
+      "origins": [
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_002/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_003/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_004/executed_sources.zip"
+        }
+      ],
+      "members": 31,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d8085f90ac6c4931"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "b7ecbda11a9dffc5221e9ee10d247b8acaca6c712e364442f36c15001ad7d6d1",
+      "size_bytes": 84385,
+      "origins": [
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_005/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/evidence/author_run_006/executed_sources.zip"
+        }
+      ],
+      "members": 51,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/b7ecbda11a9dffc5"
+    },
+    {
+      "archive_name": "P11_StudyLedger_V0.1.zip",
+      "sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+      "size_bytes": 435064,
+      "origins": [
+        {
+          "archive_sha256": "2da7038354b81edbd0e8b9d15dca8fcb72adfea323fef265e2198de7b6dd041a",
+          "member": "P12_AnkiTransport_V0.1/sources/archives/P11_StudyLedger_V0.1.zip"
+        },
+        {
+          "archive_sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+          "member": "files/128/P11_StudyLedger_V0.1.zip"
+        }
+      ],
+      "members": 106,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/54185f5093f1e7ce"
+    },
+    {
+      "archive_name": "failing_sources.zip",
+      "sha256": "576da4fb7bb2b0f9fbfa79848f2e27a8de021644222c1cb71d842a857f93a87f",
+      "size_bytes": 24998,
+      "origins": [
+        {
+          "archive_sha256": "54185f5093f1e7ce8639c883fd5b83dd93ac22bb2de6cc1e89ec8658359181f9",
+          "member": "P11_StudyLedger_V0.1/evidence/author_run_002/failing_sources.zip"
+        },
+        {
+          "archive_sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+          "member": "files/134/failing_sources.zip"
+        }
+      ],
+      "members": 12,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/576da4fb7bb2b0f9"
+    },
+    {
+      "archive_name": "P13_ClientArchitecture_V0.1.zip",
+      "sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "size_bytes": 2635479,
+      "origins": [
+        {
+          "archive_sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+          "member": "files/019/P13_ClientArchitecture_V0.1.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/upstream/archives/P13_ClientArchitecture_V0.1.zip"
+        }
+      ],
+      "members": 176,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3324610eff8d9232"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "70b3aab7eee50e4b78c07f898bcf498d699679937b2563e2426ced5b7cda4d5f",
+      "size_bytes": 67987,
+      "origins": [
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/architecture_check_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/author_tests_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/canonical_oracle_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/formal_preflight_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/framework_demo_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/schema_oracle_final/executed_sources.zip"
+        }
+      ],
+      "members": 53,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/70b3aab7eee50e4b"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d4669b8c77e50e6cc82b3458d590926f9c3871f97b8cb2173c2480196fce3428",
+      "size_bytes": 43210,
+      "origins": [
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/author_tests_001/executed_sources.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d4669b8c77e50e6c"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "8dd4c522dded8b158ee27cdb332a3a0ea37876f58a8386206977c9275713e701",
+      "size_bytes": 56443,
+      "origins": [
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/canonical_oracle_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/framework_demo_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/schema_oracle_001/executed_sources.zip"
+        }
+      ],
+      "members": 44,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/8dd4c522dded8b15"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "40fffc6cb992832c2ea0ed22b0046bc4d64b7c7b8050c29172679a8fcb4bade6",
+      "size_bytes": 50204,
+      "origins": [
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/environment_probe_001/executed_sources.zip"
+        }
+      ],
+      "members": 42,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/40fffc6cb992832c"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "aeba1d438b0b79bb224ecd648a159d0227960beb216cc160ec550e02f4e4a723",
+      "size_bytes": 94415,
+      "origins": [
+        {
+          "archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+          "member": "P13_ClientArchitecture_V0.1/architecture/evidence/runs/p12_unchanged_smoke_001/executed_sources.zip"
+        }
+      ],
+      "members": 63,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/aeba1d438b0b79bb"
+    },
+    {
+      "archive_name": "P09_Linguistic_Mapping_V0.1.zip",
+      "sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+      "size_bytes": 5041990,
+      "origins": [
+        {
+          "archive_sha256": "359996fd7206b1aca05b9ef7ca4990fe6b9673c91cbda6fdc0f8949728569a94",
+          "member": "files/200/P09_Linguistic_Mapping_V0.1.zip"
+        }
+      ],
+      "members": 86,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d2418d564772963d"
+    },
+    {
+      "archive_name": "received_relay_materials.zip",
+      "sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+      "size_bytes": 7825496,
+      "origins": [
+        {
+          "archive_sha256": "d2418d564772963d1434bc4c3cf03a33c6a7887fdc684814b9bce1a1b0ff702a",
+          "member": "P09_Linguistic_Mapping_V0.1/design/linguistic/evidence/readonly_archives/received_relay_materials.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/001/received_relay_materials.zip"
+        }
+      ],
+      "members": 49,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e9818b1abe21a7e1"
+    },
+    {
+      "archive_name": "P01_S00_V6_完整交接包.zip",
+      "sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "size_bytes": 34628,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/006/P01_S00_V6_完整交接包.zip"
+        },
+        {
+          "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+          "member": "files/006/P01_S00_V6_完整交接包.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/006/P01_S00_V6_完整交接包.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/006/P01_S00_V6_完整交接包.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/030/P01_S00_V6_完整交接包.zip"
+        }
+      ],
+      "members": 16,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/139034e2179fbe35"
+    },
+    {
+      "archive_name": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "size_bytes": 47224,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+          "member": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/013/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/034/P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip"
+        }
+      ],
+      "members": 15,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/969c7e7688f795aa"
+    },
+    {
+      "archive_name": "P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip",
+      "sha256": "de0fa1b8309eb5043522329f9b5ec1d1bd35dc3a22c667cd1b58884a348b7999",
+      "size_bytes": 29930,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+          "member": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/022/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/043/P03_S01_S02_卡牌牌组与专属技能_V0.1_完整交付包.zip"
+        }
+      ],
+      "members": 17,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/de0fa1b8309eb504"
+    },
+    {
+      "archive_name": "P04_S02_Character_Progression_Delivery_V0.1.zip",
+      "sha256": "8a6c28d2eb87a4955ec702f57180c365cef19366d64295923ed8b9a0294382bc",
+      "size_bytes": 38736,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+          "member": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/028/P04_S02_Character_Progression_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/049/P04_S02_Character_Progression_Delivery_V0.1.zip"
+        }
+      ],
+      "members": 20,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/8a6c28d2eb87a495"
+    },
+    {
+      "archive_name": "P05_S01_Balance_Delivery_V0.1.zip",
+      "sha256": "98592b1b16bd8e03029ab5da24d5edc66d4d996fc14b5f1ef796e027fac1b18b",
+      "size_bytes": 55092,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/034/P05_S01_Balance_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+          "member": "files/034/P05_S01_Balance_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/034/P05_S01_Balance_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/034/P05_S01_Balance_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/055/P05_S01_Balance_Delivery_V0.1.zip"
+        }
+      ],
+      "members": 20,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/98592b1b16bd8e03"
+    },
+    {
+      "archive_name": "relay-materials-1-3559b922b7.zip",
+      "sha256": "3559b922b7639cc462b895a51e197c834c1851b50a8c0015b41a3e27fbbec96d",
+      "size_bytes": 639564,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/035/relay-materials-1-3559b922b7.zip"
+        },
+        {
+          "archive_sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+          "member": "files/035/relay-materials-1-3559b922b7.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/035/relay-materials-1-3559b922b7.zip"
+        }
+      ],
+      "members": 35,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3559b922b7639cc4"
+    },
+    {
+      "archive_name": "relay-materials-1-1b174d40f0.zip",
+      "sha256": "1b174d40f030b4421bb49758896027e609b9cdd1b0e7d5f63f685a04b43c8882",
+      "size_bytes": 1279557,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/036/relay-materials-1-1b174d40f0.zip"
+        },
+        {
+          "archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+          "member": "P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/received_relay_materials.zip"
+        },
+        {
+          "archive_sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+          "member": "files/036/relay-materials-1-1b174d40f0.zip"
+        }
+      ],
+      "members": 36,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/1b174d40f030b442"
+    },
+    {
+      "archive_name": "P08_Anki_Reward_Policy_V0.1.zip",
+      "sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "size_bytes": 2523333,
+      "origins": [
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/046/P08_Anki_Reward_Policy_V0.1.zip"
+        },
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/062/P08_Anki_Reward_Policy_V0.1.zip"
+        }
+      ],
+      "members": 62,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/c61826ec9af75cbd"
+    },
+    {
+      "archive_name": "P07_Stage_Delivery_V0.1.zip",
+      "sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+      "size_bytes": 1214430,
+      "origins": [
+        {
+          "archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+          "member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/P07_Stage_Delivery_V0.1.zip"
+        }
+      ],
+      "members": 67,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/cd494cd3f6a29d1f"
+    },
+    {
+      "archive_name": "P06_Enemy_Delivery_V0.1.zip",
+      "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "size_bytes": 168593,
+      "origins": [
+        {
+          "archive_sha256": "cd494cd3f6a29d1fc8cdd5abe3459a9ce3795bfdd4b42681586768d671eae9f6",
+          "member": "P07_Stage_Delivery_V0.1/design/stages/evidence/readonly_archives/P06_Enemy_Delivery_V0.1.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/upstream/archives/P06_Enemy_Delivery_V0.1.zip"
+        }
+      ],
+      "members": 43,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/0a2912acc81c594b"
+    },
+    {
+      "archive_name": "received_relay_materials.zip",
+      "sha256": "3c7e523083a36a9d43660f5fd51853577e5180047fdc3a365e0bc25f6fac7f3c",
+      "size_bytes": 2559544,
+      "origins": [
+        {
+          "archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+          "member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/evidence/readonly_archives/received_relay_materials.zip"
+        },
+        {
+          "archive_sha256": "e9818b1abe21a7e1aa71f1b332ec849875386a04c7009c0294c68def0eeb4733",
+          "member": "files/048/relay-materials-1-3c7e523083.zip"
+        }
+      ],
+      "members": 37,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3c7e523083a36a9d"
+    },
+    {
+      "archive_name": "relay-materials-3-712e6357a7(1).zip",
+      "sha256": "712e6357a748863325f1c94a38e0970dea45b3559550a6a5b81d066e6fbb4641",
+      "size_bytes": 17766760,
+      "origins": [
+        {
+          "upload": "relay-materials-3-712e6357a7(1).zip"
+        }
+      ],
+      "members": 3,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/712e6357a7488633"
+    },
+    {
+      "archive_name": "relay-materials-4-279d81665e.zip",
+      "sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+      "size_bytes": 11848172,
+      "origins": [
+        {
+          "archive_sha256": "712e6357a748863325f1c94a38e0970dea45b3559550a6a5b81d066e6fbb4641",
+          "member": "files/001/relay-materials-4-279d81665e.zip"
+        }
+      ],
+      "members": 224,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/279d81665e8a347b"
+    },
+    {
+      "archive_name": "P10_S04_Probe_Report_V0.1.zip",
+      "sha256": "214d2600c67a9b5909542ad5f7737f29c6fe950e14addd8ab7b29f016b0990c2",
+      "size_bytes": 271956,
+      "origins": [
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/063/P10_S04_Probe_Report_V0.1.zip"
+        }
+      ],
+      "members": 57,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/214d2600c67a9b59"
+    },
+    {
+      "archive_name": "P14_BattleCore_V0.1.zip",
+      "sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+      "size_bytes": 3393475,
+      "origins": [
+        {
+          "archive_sha256": "279d81665e8a347b689639ca0922949f82467c7e40593bc0dc6ae488c67fa766",
+          "member": "files/202/P14_BattleCore_V0.1.zip"
+        },
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/upstream/archives/P14_BattleCore_V0.1.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/upstream/archives/P14_BattleCore_V0.1.zip"
+        }
+      ],
+      "members": 180,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/a439f32c482117e2"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3977b7a7bc0f5a7272616d5051662b58c34280f2186526f023b36c865871a688",
+      "size_bytes": 266976,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/author_001/executed_sources.zip"
+        }
+      ],
+      "members": 94,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3977b7a7bc0f5a72"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "cc9e0ea077804b9b2b8b9f46e5b327057b7ae7c21ecb0de94f225f5cff71fadf",
+      "size_bytes": 266945,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/author_002/executed_sources.zip"
+        }
+      ],
+      "members": 94,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/cc9e0ea077804b9b"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "2b1a9b53e2fd0c2c9b1c5819ead4c1b65a7aa37fe2202dfacfa152b40a6dbb99",
+      "size_bytes": 276864,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/author_003/executed_sources.zip"
+        }
+      ],
+      "members": 96,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/2b1a9b53e2fd0c2c"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "eea138e5a156d0ad12bb79c4de3a62d385052eb3ea6e009193b7b59123b9f39c",
+      "size_bytes": 279910,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/author_004/executed_sources.zip"
+        }
+      ],
+      "members": 98,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/eea138e5a156d0ad"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "a645d025811366a730f1bbeb1c3bcb3081faf2598e2725da6e60d7c40d9ea273",
+      "size_bytes": 292395,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/contracts_001/executed_sources.zip"
+        }
+      ],
+      "members": 100,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/a645d025811366a7"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "184fdd7c0831c287b253d13f68b8aa8272db691cfcf0af7c7ce143e9ab2800bc",
+      "size_bytes": 292790,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/contracts_002/executed_sources.zip"
+        }
+      ],
+      "members": 101,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/184fdd7c0831c287"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3caad5b36992704d6cd4d664f79fc34ecc7bdd7a6ef5910938484653e93497ee",
+      "size_bytes": 266976,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/demo_001/executed_sources.zip"
+        }
+      ],
+      "members": 94,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3caad5b36992704d"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "e644bd35751eea68a31084a41c1b10aa8112296b1351d02693ca1d844e26b789",
+      "size_bytes": 296449,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/preflight_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/replay_001/executed_sources.zip"
+        }
+      ],
+      "members": 104,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e644bd35751eea68"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "9eeabac7af6b51e7aedda0c4faaa530c7dfec0db264f41a72989406fe3847dea",
+      "size_bytes": 279910,
+      "origins": [
+        {
+          "archive_sha256": "a439f32c482117e29586f98350d63a0e2a1ddd7efd4c7578f3cd05a42b4f6068",
+          "member": "P14_BattleCore_V0.1/evidence/runs/samples_001/executed_sources.zip"
+        }
+      ],
+      "members": 98,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/9eeabac7af6b51e7"
+    },
+    {
+      "archive_name": "relay-materials-5-93fd453ebe.zip",
+      "sha256": "93fd453ebe8c5e578574871d1b8d0b3cae2ef2c2eb954109af5e14f5a8b03306",
+      "size_bytes": 5917291,
+      "origins": [
+        {
+          "archive_sha256": "712e6357a748863325f1c94a38e0970dea45b3559550a6a5b81d066e6fbb4641",
+          "member": "files/002/relay-materials-5-93fd453ebe.zip"
+        }
+      ],
+      "members": 66,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/93fd453ebe8c5e57"
+    },
+    {
+      "archive_name": "P15_DeckRuntime_V0.1.zip",
+      "sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+      "size_bytes": 5549301,
+      "origins": [
+        {
+          "archive_sha256": "93fd453ebe8c5e578574871d1b8d0b3cae2ef2c2eb954109af5e14f5a8b03306",
+          "member": "files/056/P15_DeckRuntime_V0.1.zip"
+        }
+      ],
+      "members": 190,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/f19cb1114015a2a2"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "19b0306864a0fab9515aeee1d029a5bd4e58c23ee11694a5413e52ecee5a2ce0",
+      "size_bytes": 148217,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/adapter_identity_001/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/19b0306864a0fab9"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "54620ea647bc4059a5b3707d1f5b9e4924a4843d6813ce9e3252b7b4d2462081",
+      "size_bytes": 148624,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/adapter_identity_002/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/54620ea647bc4059"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "bbf8e28345a41df2669885c20bb04f0214dcada65215d4004098c33bc71a9dd9",
+      "size_bytes": 121273,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/author_001/executed_sources.zip"
+        }
+      ],
+      "members": 65,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/bbf8e28345a41df2"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3ba0a35254e10ec88d026aa9eec82edf32a9bc3bc39f7b057b9465efded9c4be",
+      "size_bytes": 147339,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/author_002/executed_sources.zip"
+        }
+      ],
+      "members": 71,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3ba0a35254e10ec8"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "0aae6496a64156105395f2051c25559f5e4841ffed829db096d58ada045c9b57",
+      "size_bytes": 148624,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/author_003/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/0aae6496a6415610"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d7156e5a3628f1bfbc11c6e50e2e43ff95523706265fec73bb7012431bd13c62",
+      "size_bytes": 147339,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/contracts_001/executed_sources.zip"
+        }
+      ],
+      "members": 71,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d7156e5a3628f1bf"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "43398fb221ef895857aa565ba911a13f3ac3e0b923b8813cad0d191fffd8d9bd",
+      "size_bytes": 121273,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/demo_001/executed_sources.zip"
+        }
+      ],
+      "members": 65,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/43398fb221ef8958"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3dc162002d3d5a5ece285e8b616f07bf54db2868b45cc065a3b8ebc2219dda95",
+      "size_bytes": 102646,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/fixtures_001/executed_sources.zip"
+        }
+      ],
+      "members": 53,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3dc162002d3d5a5e"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "a4dba383ee545f64d37da53ee203be2c867f6ec6f74f1839f3a8b4804a500195",
+      "size_bytes": 148624,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/optional_schema_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/preflight_001/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/a4dba383ee545f64"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "e93c9139d315db3132fe47c7015c322761049284ca086ba8febc8f3263c8e434",
+      "size_bytes": 147339,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/replay_001/executed_sources.zip"
+        }
+      ],
+      "members": 71,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e93c9139d315db31"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "4f81e06d42274676a56b676ad77b3087569723ed1b233b46ac1691796c7dcad3",
+      "size_bytes": 150851,
+      "origins": [
+        {
+          "archive_sha256": "f19cb1114015a2a2f28f972bbda936ee3773f82d14cf90c81fde61c8ef38ea82",
+          "member": "P15_DeckRuntime_V0.1/evidence/runs/replay_002/executed_sources.zip"
+        }
+      ],
+      "members": 73,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/4f81e06d42274676"
+    },
+    {
+      "archive_name": "relay-materials-4-67e86dc529(1).zip",
+      "sha256": "67e86dc529e9d55d5a78e4cb7b2e80b0aa29369e377598846305826557ede7f6",
+      "size_bytes": 13502051,
+      "origins": [
+        {
+          "upload": "relay-materials-4-67e86dc529(1).zip"
+        }
+      ],
+      "members": 2,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/67e86dc529e9d55d"
+    },
+    {
+      "archive_name": "relay-materials-6-4a55082585.zip",
+      "sha256": "4a55082585f65926fdb55c92aa8d4a66184c74fa5f13c7d2cfc00c787b46cbe4",
+      "size_bytes": 13501268,
+      "origins": [
+        {
+          "archive_sha256": "67e86dc529e9d55d5a78e4cb7b2e80b0aa29369e377598846305826557ede7f6",
+          "member": "files/001/relay-materials-6-4a55082585.zip"
+        }
+      ],
+      "members": 47,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/4a55082585f65926"
+    },
+    {
+      "archive_name": "P16_EnemyAI_V0.1.zip",
+      "sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+      "size_bytes": 11197353,
+      "origins": [
+        {
+          "archive_sha256": "4a55082585f65926fdb55c92aa8d4a66184c74fa5f13c7d2cfc00c787b46cbe4",
+          "member": "files/001/P16_EnemyAI_V0.1.zip"
+        }
+      ],
+      "members": 195,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/6d535b2894cfbaa2"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "328322e5c5f8218e34dd324bf4a59dd8e7fd2c47f5d3a7f1d8d9c976d14f0e36",
+      "size_bytes": 385039,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/author_all_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/shared_contracts_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/upstream_p06_static_001/executed_sources.zip"
+        }
+      ],
+      "members": 107,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/328322e5c5f8218e"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "54039463114fbe4b71c44ffbc1b36f4c19cd16205dd8a0325336789323f5aac0",
+      "size_bytes": 219722,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/author_contract_001/executed_sources.zip"
+        }
+      ],
+      "members": 72,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/54039463114fbe4b"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "7bb3ec6c4a7426c1bd3603ec4bc522959707fa0ef1d16b25a64fb34d38fd4538",
+      "size_bytes": 399508,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/author_final_001/executed_sources.zip"
+        }
+      ],
+      "members": 115,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/7bb3ec6c4a7426c1"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d40a7997c3912c3a4599ed2fda60fd3cc4bfc016f6b136d3cf6a0462d6daee3c",
+      "size_bytes": 212967,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/author_initial_001/executed_sources.zip"
+        }
+      ],
+      "members": 69,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d40a7997c3912c3a"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "581a1ca0da0a8fdd9ca51de1e4a2ffc32966e64aa89b0676da58e73a9158f87d",
+      "size_bytes": 206082,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/content_load_001/executed_sources.zip"
+        }
+      ],
+      "members": 67,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/581a1ca0da0a8fdd"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "0688a197332028da96bbdabaef5b23ebb83050b68d424e7f5b139dca20e32ef5",
+      "size_bytes": 206147,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/content_load_002/executed_sources.zip"
+        }
+      ],
+      "members": 67,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/0688a197332028da"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "fe3795580af144fcd4168707e0bc0a0d219aaf4805f5d2eb29aa8f9ea5588ba1",
+      "size_bytes": 394115,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/demo_001/executed_sources.zip"
+        }
+      ],
+      "members": 114,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/fe3795580af144fc"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d15d8c73522e0f2e909bca167cf158cc26f8c6ad7a30b3ad750f5a5417d24cf0",
+      "size_bytes": 399508,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/demo_replay_001/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/preflight_001/executed_sources.zip"
+        }
+      ],
+      "members": 115,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d15d8c73522e0f2e"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "561dd6b803b0f3d5278bba8874c7ac2cecf36efc648639fc3d72bcb5e2247f08",
+      "size_bytes": 399467,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/malformed_ids_001/executed_sources.zip"
+        }
+      ],
+      "members": 115,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/561dd6b803b0f3d5"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "57f7cd140189deb8533656d6cc7537e308d09479371cca442b5fbd2f9ab11b64",
+      "size_bytes": 341315,
+      "origins": [
+        {
+          "archive_sha256": "6d535b2894cfbaa2dc52a829d2b4353ccc4c5c91c08fcbf0f5498d67e1fbf69d",
+          "member": "P16_EnemyAI_V0.1/evidence/runs/p06_projection_001/executed_sources.zip"
+        }
+      ],
+      "members": 103,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/57f7cd140189deb8"
+    },
+    {
+      "archive_name": "P17_CharacterPartyWallet_V0.1.zip",
+      "sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+      "size_bytes": 2129280,
+      "origins": [
+        {
+          "archive_sha256": "4a55082585f65926fdb55c92aa8d4a66184c74fa5f13c7d2cfc00c787b46cbe4",
+          "member": "files/038/P17_CharacterPartyWallet_V0.1.zip"
+        }
+      ],
+      "members": 206,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/339c492a8f4f3963"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "b02f3c03abca3134aed78f08ce75693cdbacd198c5c2cf1531ba88060b0db7d1",
+      "size_bytes": 144251,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/author_001/executed_sources.zip"
+        }
+      ],
+      "members": 97,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/b02f3c03abca3134"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "b49fa1e6ef5f35711fa7cb881e4c3a890330e3c66fbe246d2080402a9034a552",
+      "size_bytes": 149702,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/author_final/executed_sources.zip"
+        }
+      ],
+      "members": 103,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/b49fa1e6ef5f3571"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3bd8b9a1cc7b7fb75a2fe697d79479046e21505f89833da6f1b3f2cc5cf700fb",
+      "size_bytes": 145596,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/boundaries_001/executed_sources.zip"
+        }
+      ],
+      "members": 98,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3bd8b9a1cc7b7fb7"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "fd319b6697ead6dfb240141ec17b4c7e83a2b9b6c57e2f60def3056894cd62db",
+      "size_bytes": 145819,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/boundaries_002/executed_sources.zip"
+        }
+      ],
+      "members": 98,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/fd319b6697ead6df"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "af2250d96eadcaa9a6cef47bbdf028aab109abbb81b9ea64ab4aa5c48d4337c4",
+      "size_bytes": 174473,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/contracts_final/executed_sources.zip"
+        }
+      ],
+      "members": 116,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/af2250d96eadcaa9"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d94b72747524f86c09e6b2298db35e65abb5f37af8385dc35ac5010afbf2a0d2",
+      "size_bytes": 184658,
+      "origins": [
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/demo_cli_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/determinism_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/preflight_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "339c492a8f4f3963d0391e78eccb1d261a9b289bb12dc43349a22b581148daa4",
+          "member": "P17_CharacterPartyWallet_V0.1/evidence/runs/replay_final/executed_sources.zip"
+        }
+      ],
+      "members": 123,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d94b72747524f86c"
+    },
+    {
+      "archive_name": "relay-materials-5-1898cbbecd(1).zip",
+      "sha256": "1898cbbecdcbad05b464ec2fa1181b28973c5a49747115d0c199dd96bf5de0b7",
+      "size_bytes": 6698744,
+      "origins": [
+        {
+          "upload": "relay-materials-5-1898cbbecd(1).zip"
+        }
+      ],
+      "members": 2,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/1898cbbecdcbad05"
+    },
+    {
+      "archive_name": "relay-materials-7-9e66ba3f56.zip",
+      "sha256": "9e66ba3f56dd7cdf0d33b56541c983d152593dcfc543b8b1a846180c0a30dbb4",
+      "size_bytes": 6697962,
+      "origins": [
+        {
+          "archive_sha256": "1898cbbecdcbad05b464ec2fa1181b28973c5a49747115d0c199dd96bf5de0b7",
+          "member": "files/001/relay-materials-7-9e66ba3f56.zip"
+        }
+      ],
+      "members": 53,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/9e66ba3f56dd7cdf"
+    },
+    {
+      "archive_name": "P18_StageRuntime_V0.1.zip",
+      "sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+      "size_bytes": 4753471,
+      "origins": [
+        {
+          "archive_sha256": "9e66ba3f56dd7cdf0d33b56541c983d152593dcfc543b8b1a846180c0a30dbb4",
+          "member": "files/001/P18_StageRuntime_V0.1.zip"
+        }
+      ],
+      "members": 210,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/4657f199c36cc7ef"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "514d754ea54c1af8e7a6c63b45d0ba86f877768dcdb9b012e24479667b5cdca6",
+      "size_bytes": 356601,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/author_final/executed_sources.zip"
+        }
+      ],
+      "members": 125,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/514d754ea54c1af8"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "c26f945b1315b98abec89e9fcad2d21f197c74292ffe2922705336f9857e5bfd",
+      "size_bytes": 277136,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/author_initial/executed_sources.zip"
+        }
+      ],
+      "members": 100,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/c26f945b1315b98a"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "e631592e40ba9ceae0a21a78bce1d6ad8a973ddb474ea948a33cb5c09cda9870",
+      "size_bytes": 356601,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/contracts_final/executed_sources.zip"
+        }
+      ],
+      "members": 125,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/e631592e40ba9cea"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "d86ce351a8ab050790c5a9c70f8fc49633f5d9c99c733944dc17329eb93ffbb1",
+      "size_bytes": 356601,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/determinism_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/p07_replay_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/preflight_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/replay_demo_final/executed_sources.zip"
+        },
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/sources_final/executed_sources.zip"
+        }
+      ],
+      "members": 125,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/d86ce351a8ab0507"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "31ab050e20bd6c4ecd760e3ce3927386139ea27c97423b5d81ad5b0cbc7c7e44",
+      "size_bytes": 296179,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/export_samples/executed_sources.zip"
+        }
+      ],
+      "members": 113,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/31ab050e20bd6c4e"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "a2261a84b44076f0a0a1c2a71589ffc825189e1dce453dabece01f316dcce55b",
+      "size_bytes": 286782,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/native_boundary_initial/executed_sources.zip"
+        }
+      ],
+      "members": 105,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/a2261a84b44076f0"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "2bb3d36b256c655221a459d2feb5c1d93eeff8060a57373eb85008c31b9ff66b",
+      "size_bytes": 291731,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/p07_replay_initial/executed_sources.zip"
+        }
+      ],
+      "members": 107,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/2bb3d36b256c6552"
+    },
+    {
+      "archive_name": "executed_sources.zip",
+      "sha256": "3b2ee6b4a9cad7191b14ffc8f4dbb67f638455e2a779b61bac0b4ca0113899be",
+      "size_bytes": 281775,
+      "origins": [
+        {
+          "archive_sha256": "4657f199c36cc7ef62c43f1900f88ea04a8f9f42a732fdd5182a82febe39f297",
+          "member": "P18_StageRuntime_V0.1/evidence/runs/recovery_atomic_initial/executed_sources.zip"
+        }
+      ],
+      "members": 102,
+      "crc": "PASS",
+      "extracted_root": "work/inputs/3b2ee6b4a9cad719"
+    }
+  ],
+  "git_evidence": {
+    "roles_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "p22_fixed_commit": "0b3333a56f6359fd78b150efbb9429d3bb075ada",
+    "uploaded_blob_matches": [
+      {
+        "file": "P20_Chapters_1280(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Chapters_1280.png",
+        "sha256": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b",
+        "git_blob_sha1": "f4759e7a92a34b1685344c9c8823574dd37c181c"
+      },
+      {
+        "file": "P20_Growth_1280(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Growth_1280.png",
+        "sha256": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2",
+        "git_blob_sha1": "2afae353179cd094a977598d4092c0ebec790b59"
+      },
+      {
+        "file": "P20_Learning_Quarantine(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Learning_Quarantine.png",
+        "sha256": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20",
+        "git_blob_sha1": "237e8f2d606c35cf8aea2290e43f60923a0f2a86"
+      },
+      {
+        "file": "P20_Menu_1280(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Menu_1280.png",
+        "sha256": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141",
+        "git_blob_sha1": "baabac2fa2c34e1e7ab3b90d3d2ff4dd82555a13"
+      },
+      {
+        "file": "P20_Menu_390(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Menu_390.png",
+        "sha256": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b",
+        "git_blob_sha1": "f3d9617abeafffe86ac8a70f2f59d503486b0484"
+      },
+      {
+        "file": "P20_Migration_Failed(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Migration_Failed.png",
+        "sha256": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde",
+        "git_blob_sha1": "3ae9358f1183aff3bb91f123884b446fcdf3fc15"
+      },
+      {
+        "file": "P20_Party_1280(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Party_1280.png",
+        "sha256": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3",
+        "git_blob_sha1": "5457ca3bc2201100be9e0a4a29587caa730d8586"
+      },
+      {
+        "file": "P20_Restart_Pending(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Restart_Pending.png",
+        "sha256": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083",
+        "git_blob_sha1": "b043a0c518e3ae41fef1441378ced97e8dc2ac22"
+      },
+      {
+        "file": "P20_Settlement_1280(2).png",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/images/P20_Settlement_1280.png",
+        "sha256": "0ef60eefd142644a7872d9b0859f967ee98afe21ba824a8bd54d838d5140bb7a",
+        "git_blob_sha1": "81e6cee071e385a25664d30901a003e6c06cce48"
+      },
+      {
+        "file": "relay-materials-1-6e8f09abd0.zip",
+        "match": false,
+        "path": null,
+        "sha256": "6e8f09abd0d82ee9ab1a01ba2a2bbec182c4ae715a23034b9d879d65c8ba93bb",
+        "git_blob_sha1": "d3e3e6ffde8198e6620c6aefdf88ad9c4bb85346"
+      },
+      {
+        "file": "relay-materials-2-29da14dfaa(1).zip",
+        "match": true,
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/rccc97439-e925-491c-94ec-1759604ce458--P22｜内容Schema、引用校验与数据管线工程师/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/d9711c30-c7ec-46aa-b551-ee5c77d2a221/files/archives/relay-materials-2-29da14dfaa.zip",
+        "sha256": "29da14dfaad05c28c07ef6b2105cdc2d46a01a74519368b99a3933f08879410a",
+        "git_blob_sha1": "91757907271dc845fd646cd67444e5dd9a8a13cd"
+      },
+      {
+        "file": "relay-materials-2-f5272e0af1(1).zip",
+        "match": false,
+        "path": null,
+        "sha256": "f5272e0af1f51a99fa165112ec0d87a726332ca0103915e1df4feeb750a89a47",
+        "git_blob_sha1": "1243469ad99e4ccb1edd735c44651c8ab8ec9b11"
+      },
+      {
+        "file": "relay-materials-3-712e6357a7(1).zip",
+        "match": false,
+        "path": null,
+        "sha256": "712e6357a748863325f1c94a38e0970dea45b3559550a6a5b81d066e6fbb4641",
+        "git_blob_sha1": "f5eda04372152bbdbc629e9f3ce02a49bcc72a4a"
+      },
+      {
+        "file": "relay-materials-4-67e86dc529(1).zip",
+        "match": false,
+        "path": null,
+        "sha256": "67e86dc529e9d55d5a78e4cb7b2e80b0aa29369e377598846305826557ede7f6",
+        "git_blob_sha1": "0cbe9f8a57171e907b3d359dd5b8a9ab8cbadbe9"
+      },
+      {
+        "file": "relay-materials-5-1898cbbecd(1).zip",
+        "match": false,
+        "path": null,
+        "sha256": "1898cbbecdcbad05b464ec2fa1181b28973c5a49747115d0c199dd96bf5de0b7",
+        "git_blob_sha1": "5138243db7b09765a2167b2b395a7b27ab6d024d"
+      }
+    ],
+    "v6_direct_file_matches": [
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/README_第六轮交付说明V6.0.txt",
+        "match": false,
+        "path": null,
+        "sha256": "27cac3c0aee30e69ab04f1b84ec1cfa10adfe9646d10f76d97becebe8169ecb3",
+        "git_blob_sha1": "883fd939dc2f15f02c2e1ea8a68f0c2942e664b2"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/SHA256_MANIFEST.json",
+        "match": false,
+        "path": null,
+        "sha256": "4529976297f87737be4c52b3ddca99dd373284293929526e84f40f6ea1eb3d38",
+        "git_blob_sha1": "924117a7af35c42680a96d3511789c36bd66c59a"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_22个压力场景冻结用例V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "4b6585da29894dc7ef47cb49debfb62549553a64720bef047f2c35272364016c",
+        "git_blob_sha1": "2aa9c6d14f73212a28fab9a3f7d502d3f8af873c"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_26项问题最终责任状态V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "b067fdf4841d3ed8a0aa55b41c86aabb0988e20b14189853bcc0e7957874e07b",
+        "git_blob_sha1": "d70b7ec2c271c2de197bae3f2f6d8af531ca1abe"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_27项接口契约冻结修订V6.0.json",
+        "match": false,
+        "path": null,
+        "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+        "git_blob_sha1": "d99e956f36a76a154179b4e27668c9455464f40a"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_43岗位历次演变裁定表V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "1d481a6109932d2083504921e33804cdc8fc9cf01dda82381dc4927a3d4dbc6b",
+        "git_blob_sha1": "95b475326225a298e17f23e036e7d90af5c48772"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_43岗独立职责与激活状态V6.0.json",
+        "match": false,
+        "path": null,
+        "sha256": "1bf579a69dea55baeaf1b7569347bc20be62e6fd1cc8208ac236b7e1970ade05",
+        "git_blob_sha1": "da4f04fdeda5b7adf7c8699f3ad44fda2a7fe097"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_92项职责冻结映射V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "d87953e5f30ac144d43c521941e51fb32f23c44c347772bf817128c36829b58a",
+        "git_blob_sha1": "c61a5aae7485304e0591588bb0133a63f1c107ba"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_全部岗位职责_可复制版V6.0.txt",
+        "match": true,
+        "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+        "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "git_blob_sha1": "5b892ce93a38aa900fcec95d890e57f809a9c562"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_实施前待核验及阻塞清单V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "84e5ecb971633e7a1be93894292396789002907e7292a665dfcc10dbc510ec40",
+        "git_blob_sha1": "e5a18561d0bfbdc33b5df62eda41065c3b585b09"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+        "match": true,
+        "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+        "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+        "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_阶段与岗位激活计划V6.0.tsv",
+        "match": false,
+        "path": null,
+        "sha256": "2ed85ec79ad1b0da3724a793a3c66e576ecd9850ddbaddc7171142ed7df871d8",
+        "git_blob_sha1": "470df8e8480a2aa6d8f9d3466c1c9e8187eaaea6"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_静态自检程序V6.0.py",
+        "match": false,
+        "path": null,
+        "sha256": "174cb7868de7c8f5d52feee86a992b30b315f25748b9c05999ac19da2c263fd7",
+        "git_blob_sha1": "bfab1710123f933e6212c41ba4ae94f21eda9332"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_静态验收结果V6.0.txt",
+        "match": false,
+        "path": null,
+        "sha256": "ce82f3cff5c2abb15cbf134c034ce6b84b29f82f22a855c0544d392ae1ba921c",
+        "git_blob_sha1": "f1da12db7b04f75290a2b549b5e003c149fcb9b6"
+      },
+      {
+        "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_首批岗位启动任务单V6.0.txt",
+        "match": true,
+        "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_首批岗位启动任务单V6.0.txt",
+        "sha256": "16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8",
+        "git_blob_sha1": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+      }
+    ],
+    "p22_zip_git_blob_sha1": "6a27541c932aa772061ec36c1f7e4333dd05060f",
+    "p22_zip_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+    "binary_download_attempt": "GitHub UTF-8-only fetch refused binary V6 ZIP; no remote V6 ZIP rehash claimed. Role and report bytes independently matched fixed Git blobs; remaining V6 files are the verified attached P22 source copies."
+  },
+  "sources": [
+    {
+      "source_id": "SRC-V6-REPORT",
+      "owner": "V6",
+      "version": "V6.0",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-REPORT/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-V6-ROLES",
+      "owner": "V6",
+      "version": "V6.0",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-ROLES/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "git_blob_sha1": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-V6-IC",
+      "owner": "V6",
+      "version": "V6.0",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-IC/第六轮_27项接口契约冻结修订V6.0.json",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_27项接口契约冻结修订V6.0.json",
+      "size_bytes": 23619,
+      "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+      "git_blob_sha1": "d99e956f36a76a154179b4e27668c9455464f40a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-V6-RESPONSIBILITIES",
+      "owner": "V6",
+      "version": "V6.0",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-RESPONSIBILITIES/第六轮_92项职责冻结映射V6.0.tsv",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_92项职责冻结映射V6.0.tsv",
+      "size_bytes": 16164,
+      "sha256": "d87953e5f30ac144d43c521941e51fb32f23c44c347772bf817128c36829b58a",
+      "git_blob_sha1": "c61a5aae7485304e0591588bb0133a63f1c107ba",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P01-SCOPE",
+      "owner": "P01",
+      "version": "P01-REQ-V0.1",
+      "package_relative_path": "design/ux/evidence/upstream/P01/SRC-P01-SCOPE/prd_scope_v0.md",
+      "source_archive": "P01_S00_V6_完整交接包.zip",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_member": "spec/product/prd_scope_v0.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "git_blob_sha1": "28a9e453647478ef63fa51a8b4cdd0a258aa6047",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P01-REQ",
+      "owner": "P01",
+      "version": "P01-REQ-V0.1",
+      "package_relative_path": "design/ux/evidence/upstream/P01/SRC-P01-REQ/requirements_traceability.tsv",
+      "source_archive": "P01_S00_V6_完整交接包.zip",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_member": "spec/product/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "git_blob_sha1": "e2a396b1892eabb3fd1fa837e4cb073b90492055",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P01-BASELINE",
+      "owner": "P01",
+      "version": "P01-REQ-V0.1",
+      "package_relative_path": "design/ux/evidence/upstream/P01/SRC-P01-BASELINE/requirements_baseline_v6.txt",
+      "source_archive": "P01_S00_V6_完整交接包.zip",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_member": "spec/product/requirements_baseline_v6.txt",
+      "size_bytes": 6715,
+      "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1",
+      "git_blob_sha1": "3a52688c3690aca850e01bcba5fd8ab3f62c2e31",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P01-DECISIONS",
+      "owner": "P01",
+      "version": "P01-REQ-V0.1",
+      "package_relative_path": "design/ux/evidence/upstream/P01/SRC-P01-DECISIONS/decisions_pending.tsv",
+      "source_archive": "P01_S00_V6_完整交接包.zip",
+      "source_archive_sha256": "139034e2179fbe35c4ac5f3240b0df435b03b9a70f5507263ee97b7e8b022a89",
+      "archive_member": "planning/decisions/decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "git_blob_sha1": "dafa596d5342ba5d69e0c9c93defda0c65fec0f2",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P02-RULE",
+      "owner": "P02",
+      "version": "P02-BATTLE-0.1.0-draft",
+      "package_relative_path": "design/ux/evidence/upstream/P02/SRC-P02-RULE/battle_state_machine.md",
+      "source_archive": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "source_archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_member": "spec/battle/state_machine/battle_state_machine.md",
+      "size_bytes": 15376,
+      "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+      "git_blob_sha1": "97ca65e509f4cc34642d2386de1bb70aac86d89e",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P02-SEQUENCE",
+      "owner": "P02",
+      "version": "P02-BATTLE-0.1.0-draft",
+      "package_relative_path": "design/ux/evidence/upstream/P02/SRC-P02-SEQUENCE/turn_sequence.tsv",
+      "source_archive": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "source_archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_member": "spec/battle/state_machine/turn_sequence.tsv",
+      "size_bytes": 4734,
+      "sha256": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784",
+      "git_blob_sha1": "80ef6386110444e4052b976a38d5a8f9b5f94768",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P02-TERMINAL",
+      "owner": "P02",
+      "version": "P02-BATTLE-0.1.0-draft",
+      "package_relative_path": "design/ux/evidence/upstream/P02/SRC-P02-TERMINAL/terminal_phase_truth_table.tsv",
+      "source_archive": "P02_S01_战斗状态机与确定性结算规则_V0.1_完整交付包.zip",
+      "source_archive_sha256": "969c7e7688f795aaea80abddc0c4ed949f5f6b9d8588c2e787a0f9da1fb06501",
+      "archive_member": "spec/battle/resolution/terminal_phase_truth_table.tsv",
+      "size_bytes": 3644,
+      "sha256": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e",
+      "git_blob_sha1": "1c4de62538a9dbf84a82dbb5636a1c7b9e5f2ea2",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P08-POLICY",
+      "owner": "P08",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-POLICY/study_policy_draft.md",
+      "source_archive": "P08_Anki_Reward_Policy_V0.1.zip",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/spec/anki/reward_semantics/study_policy_draft.md",
+      "size_bytes": 18083,
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "git_blob_sha1": "442b9a8e89ca980417624da9a4d93d96af9a4eba",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P08-QUARANTINE",
+      "owner": "P08",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-QUARANTINE/quarantine_resolution_policy.md",
+      "source_archive": "P08_Anki_Reward_Policy_V0.1.zip",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/quarantine_resolution_policy.md",
+      "size_bytes": 7026,
+      "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+      "git_blob_sha1": "d045a742c49b2de0b2bcc549b2bc4f4422563a33",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P08-UNDO",
+      "owner": "P08",
+      "version": "P08-REWARD-POLICY/0.1.0-proposal",
+      "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-UNDO/undo_compensation_options.md",
+      "source_archive": "P08_Anki_Reward_Policy_V0.1.zip",
+      "source_archive_sha256": "c61826ec9af75cbd0a426f13b3f9c40f852f83f69c11093655fb4214419e612f",
+      "archive_member": "P08_Anki_Reward_Policy_V0.1/design/anki_rewards/undo_compensation_options.md",
+      "size_bytes": 8519,
+      "sha256": "2900f3cb73d56fc12a415f5f83dc0541661aa6ca1f1d07fa0613eeed8e09508c",
+      "git_blob_sha1": "57f9ce74dbc049df2917cff74a6d0f71682e5da5",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P13-PATH",
+      "owner": "P13",
+      "version": "P13-CLIENT-ARCH/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-PATH/actual_path_mapping.json",
+      "source_archive": "P13_ClientArchitecture_V0.1.zip",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "archive_member": "P13_ClientArchitecture_V0.1/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "git_blob_sha1": "83daa6f72b0970cba9db8fecfc3c98679608dee0",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P13-ENV",
+      "owner": "P13",
+      "version": "P13-CLIENT-ARCH/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-ENV/target_environment_requirements.json",
+      "source_archive": "P13_ClientArchitecture_V0.1.zip",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "archive_member": "P13_ClientArchitecture_V0.1/architecture/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "git_blob_sha1": "9e4e490f2152b3f1b40209a9fe9d922a05b2b0d4",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P13-DTO",
+      "owner": "P13",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-DTO/internal_dto.schema.json",
+      "source_archive": "P13_ClientArchitecture_V0.1.zip",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "archive_member": "P13_ClientArchitecture_V0.1/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+      "git_blob_sha1": "75eabe45da6d169f2e09a7dadf7236666c4ed14d",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P13-API",
+      "owner": "P13",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-API/internal_api_contracts.json",
+      "source_archive": "P13_ClientArchitecture_V0.1.zip",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "archive_member": "P13_ClientArchitecture_V0.1/contracts/internal/internal_api_contracts.json",
+      "size_bytes": 5900,
+      "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5",
+      "git_blob_sha1": "f1d85d8e1060163a9ca5c325132d2dd8e6277b25",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P13-SEMANTICS",
+      "owner": "P13",
+      "version": "YLTT-INTERNAL/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-SEMANTICS/contract_semantics.md",
+      "source_archive": "P13_ClientArchitecture_V0.1.zip",
+      "source_archive_sha256": "3324610eff8d923269cf784300187b1012fa38a4fffe0c158af2bd914c02b553",
+      "archive_member": "P13_ClientArchitecture_V0.1/contracts/internal/contract_semantics.md",
+      "size_bytes": 8986,
+      "sha256": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a",
+      "git_blob_sha1": "7091dedc10598b88b2f56f07fd7cd28d168350bc",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-API",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/P19_API.md",
+      "size_bytes": 6432,
+      "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+      "git_blob_sha1": "083dd2251dff1fbb385614db2ba9c5499c96d99a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-BINDING",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/battle_hud_state_binding.json",
+      "size_bytes": 15083,
+      "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+      "git_blob_sha1": "1e6b12cf730f96991f2d92df688ea56f6be30276",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-STATES",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/control_state_table.tsv",
+      "size_bytes": 2926,
+      "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+      "git_blob_sha1": "f0edaefb46e027f81cfe981c9891a331c56a8cf3",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-ADAPTER",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-ADAPTER/presentation_adapter_spec.md",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/presentation_adapter_spec.md",
+      "size_bytes": 3605,
+      "sha256": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+      "git_blob_sha1": "5b592d43b3e89786462ee11c7d7e429d88490b96",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-RFCS",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RFCS/interface_rfcs.json",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/interface_rfcs.json",
+      "size_bytes": 6409,
+      "sha256": "2c7f60d4d3e3d5add1c5b947279412786f604beb5ac814c3d3478ce72d9c3f74",
+      "git_blob_sha1": "12f55261bf16026a24917ce443bf52e8131e9066",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-CSS",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-CSS/battle.css",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/ui/battle/screens/battle.css",
+      "size_bytes": 14022,
+      "sha256": "6604bd34ab1492f40cac6eaecce4f8e46dd41f48b9d1bf2a30787eaf07e0b662",
+      "git_blob_sha1": "5ce048c860ee200340e0d9b546970faff9f68c00",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-HTML",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-HTML/index.html",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/ui/battle/screens/index.html",
+      "size_bytes": 4579,
+      "sha256": "e809e8d38945003e4236079985df03ad826f44a5497c94618d899ccfcedd1f4b",
+      "git_blob_sha1": "4c4dc30119f80514d93ffd4aede48c5247089628",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-RENDERER",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RENDERER/hud_renderer.mjs",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/ui/battle/widgets/hud_renderer.mjs",
+      "size_bytes": 12525,
+      "sha256": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44",
+      "git_blob_sha1": "eb317d92eab49d90d199727e847d7ca68fa17636",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-CONTROLLER",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-CONTROLLER/hud_controller.mjs",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/ui/battle/widgets/hud_controller.mjs",
+      "size_bytes": 15234,
+      "sha256": "34380c15c58f2f40e2269fbdf00a988aadaed553e2c0f1006e180ab51403a0b0",
+      "git_blob_sha1": "9428dca7cc2b6a044f490edd438a05aa2ae7d278",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P19-SHOT",
+      "owner": "P19",
+      "version": "P19-HUD/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-SHOT/P19_HUD_1280.png",
+      "source_archive": "P19_BattleHUD_V0.1.zip",
+      "source_archive_sha256": "bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093",
+      "archive_member": "P19_BattleHUD_V0.1/evidence/browser_final/P19_HUD_1280.png",
+      "size_bytes": 441243,
+      "sha256": "0187306ef56f7957b422e7aac855f5d6bb5b98572700ee947e0f692c1733b01b",
+      "git_blob_sha1": "38d083862a04b765b190901b0a1ef7443620b18a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-API",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/P20_API.md",
+      "size_bytes": 6722,
+      "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+      "git_blob_sha1": "bd798058a9978b649c38f2974415142d74a9ca50",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-FLOW",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/party_menu_flow.md",
+      "size_bytes": 5253,
+      "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+      "git_blob_sha1": "a413bb83a7b7b66cf66f8a8c1b49070f20b0545a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-LEARNING",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/learning_status_ui_tests.md",
+      "size_bytes": 4072,
+      "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+      "git_blob_sha1": "77df9b32b319dc290fc62cea8e935e1e8f754ba6",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-BINDING",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-BINDING/domain_api_mapping.json",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/domain_api_mapping.json",
+      "size_bytes": 11189,
+      "sha256": "efec2091cfb4a476490b4dc672403ae93e26934b70f2c121cc6e990ea2b74a04",
+      "git_blob_sha1": "6e97067b9172697c47042f2268739185f806171b",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-RFCS",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-RFCS/interface_rfcs.json",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/interface_rfcs.json",
+      "size_bytes": 6611,
+      "sha256": "e05866b92ef0a688eea157b01efeeab0520ff42feeab395aba7e508121ada928",
+      "git_blob_sha1": "9d6c0fb69899f66921c5cde76796964220d3c0a7",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-CSS",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-CSS/styles.css",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/ui/meta/styles.css",
+      "size_bytes": 18853,
+      "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a",
+      "git_blob_sha1": "aca4e4022c62054ef6f25c687a7f0287c2bce937",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-RENDERER",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-RENDERER/renderer.mjs",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/ui/meta/renderer.mjs",
+      "size_bytes": 19447,
+      "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602",
+      "git_blob_sha1": "6ff8dfa95ec56c62f9fcdae53d19c948e99987b9",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-CONTROLLER",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-CONTROLLER/controller.mjs",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/ui/meta/controller.mjs",
+      "size_bytes": 9577,
+      "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518",
+      "git_blob_sha1": "0d4e7a4192b5efeb9c9431767bc46085f69bdc78",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-MODEL",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-MODEL/model.mjs",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/ui/meta/model.mjs",
+      "size_bytes": 12128,
+      "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137",
+      "git_blob_sha1": "b7ea01bd5c87c3cdc4a90f01b3b5f7168d79e0ac",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-CHAPTERS_1280",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Chapters_1280.png",
+      "source_upload": "P20_Chapters_1280(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Chapters_1280.png",
+      "size_bytes": 153618,
+      "sha256": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-GROWTH_1280",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Growth_1280.png",
+      "source_upload": "P20_Growth_1280(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Growth_1280.png",
+      "size_bytes": 127255,
+      "sha256": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-LEARNING_QUARANTINE",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Learning_Quarantine.png",
+      "source_upload": "P20_Learning_Quarantine(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Learning_Quarantine.png",
+      "size_bytes": 93389,
+      "sha256": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-MENU_1280",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Menu_1280.png",
+      "source_upload": "P20_Menu_1280(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Menu_1280.png",
+      "size_bytes": 236583,
+      "sha256": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-MENU_390",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Menu_390.png",
+      "source_upload": "P20_Menu_390(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Menu_390.png",
+      "size_bytes": 136599,
+      "sha256": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-MIGRATION_FAILED",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Migration_Failed.png",
+      "source_upload": "P20_Migration_Failed(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Migration_Failed.png",
+      "size_bytes": 152232,
+      "sha256": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-PARTY_1280",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Party_1280.png",
+      "source_upload": "P20_Party_1280(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Party_1280.png",
+      "size_bytes": 182187,
+      "sha256": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-RESTART_PENDING",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Restart_Pending.png",
+      "source_upload": "P20_Restart_Pending(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Restart_Pending.png",
+      "size_bytes": 141542,
+      "sha256": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P20-SHOT-SETTLEMENT_1280",
+      "owner": "P20",
+      "version": "P20-METAUI/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P20/screenshots/P20_Settlement_1280.png",
+      "source_upload": "P20_Settlement_1280(2).png",
+      "source_archive": "P20_MetaUI_V0.1.zip",
+      "source_archive_sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513",
+      "archive_member": "P20_MetaUI_V0.1/evidence/browser_final/P20_Settlement_1280.png",
+      "size_bytes": 102991,
+      "sha256": "0ef60eefd142644a7872d9b0859f967ee98afe21ba824a8bd54d838d5140bb7a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P21-README",
+      "owner": "P21",
+      "version": "P21-PERSISTENCE/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-README/README.md",
+      "source_archive": "P21_LocalSave_V0.1.zip",
+      "source_archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "archive_member": "P21_LocalSave_V0.1/README.md",
+      "size_bytes": 8372,
+      "sha256": "023fe25b5428be1bf9c4efc40600ffaedc2af481f9ee7de33af464f339f83471",
+      "git_blob_sha1": "e0eef76aefdc5914e9f0ba147b0084a0cf9817d4",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P21-P20-RECOVERY",
+      "owner": "P21",
+      "version": "P21-PERSISTENCE/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md",
+      "source_archive": "P21_LocalSave_V0.1.zip",
+      "source_archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "archive_member": "P21_LocalSave_V0.1/handoff/P20_recovery_response.md",
+      "size_bytes": 3473,
+      "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+      "git_blob_sha1": "5ea42a663a2cba3368e31ef357a66e72b894359e",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P21-API",
+      "owner": "P21",
+      "version": "P21-PERSISTENCE/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-API/P21_API.md",
+      "source_archive": "P21_LocalSave_V0.1.zip",
+      "source_archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "archive_member": "P21_LocalSave_V0.1/P21_API.md",
+      "size_bytes": 13598,
+      "sha256": "4655e65b818851a383111a0bafac0b57bd41e90d99021a01324f22b137c6582b",
+      "git_blob_sha1": "eebba9c43b897fc95bc6a442c53abb6699200836",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P21-RFCS",
+      "owner": "P21",
+      "version": "P21-PERSISTENCE/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-RFCS/interface_rfcs.json",
+      "source_archive": "P21_LocalSave_V0.1.zip",
+      "source_archive_sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "archive_member": "P21_LocalSave_V0.1/interface_rfcs.json",
+      "size_bytes": 11028,
+      "sha256": "a9c2d419430c0bd59d7bd44d13661048a52bfe429da463db8f594c69264e070e",
+      "git_blob_sha1": "31efcd3ba4f2bf0244684eeda2480368838125bd",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P22-REGISTRY",
+      "owner": "P22",
+      "version": "P22-CONTENT/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P22/SRC-P22-REGISTRY/content_id_registry.tsv",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/content_id_registry.tsv",
+      "size_bytes": 27951,
+      "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+      "git_blob_sha1": "bc9d4116f7c0b4de569cae0ddef4a9c9d81e754a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P22-ID-POLICY",
+      "owner": "P22",
+      "version": "P22-CONTENT/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P22/SRC-P22-ID-POLICY/id_policy.json",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/schema/content/id_policy.json",
+      "size_bytes": 812,
+      "sha256": "f675ed7aaeb5dd24c772ef11b223e93f6da0e156848e3f9fa36b57d0acc1784a",
+      "git_blob_sha1": "c608bb6621ec4cc7f0d2008ee5ab18e2a2f30652",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P22-BINDINGS",
+      "owner": "P22",
+      "version": "P22-CONTENT/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P22/SRC-P22-BINDINGS/missing_bindings.tsv",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/missing_bindings.tsv",
+      "size_bytes": 5332,
+      "sha256": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e",
+      "git_blob_sha1": "6de0b669187d371e9a7ecb7477a92672f8fffd3b",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P22-PATH",
+      "owner": "P22",
+      "version": "P22-CONTENT/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P22/SRC-P22-PATH/actual_path_request.json",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/actual_path_request.json",
+      "size_bytes": 1180,
+      "sha256": "644b4412e5d590ce89d91ef061b123175ed06b558ec214bd5dbfe21857f42fcc",
+      "git_blob_sha1": "89252861526e253270323d3ead4c76a3abe941ac",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    },
+    {
+      "source_id": "SRC-P22-SPEC",
+      "owner": "P22",
+      "version": "P22-CONTENT/0.1.0-isolated",
+      "package_relative_path": "design/ux/evidence/upstream/P22/SRC-P22-SPEC/content_schema_spec.md",
+      "source_archive": "P22_ContentPipeline_V0.1.zip",
+      "source_archive_sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+      "archive_member": "P22_ContentPipeline_V0.1/schema/content/content_schema_spec.md",
+      "size_bytes": 8881,
+      "sha256": "295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d",
+      "git_blob_sha1": "0bfe323853a2fbfefe9b9ade6da7711511308c2a",
+      "receipt_status": "READ_BYTES_VERIFIED_FOR_DESIGN",
+      "modification_allowlist": []
+    }
+  ],
+  "absent_inputs": [
+    {
+      "owner": "P25",
+      "file": "approved_visual_baseline + typography/color tokens",
+      "status": "BLOCKED"
+    },
+    {
+      "owner": "P13",
+      "file": "P23 production actual_path_mapping + base_commit + write authorization",
+      "status": "BLOCKED"
+    },
+    {
+      "owner": "P34/P01",
+      "file": "target display resolution, scaling, input hardware and minimum supported window",
+      "status": "BLOCKED"
+    }
+  ],
+  "chat_requirement_origin": "Current user message; complete raw transport bytes unavailable, no fabricated full-message hash."
+}

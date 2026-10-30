@@ -1,0 +1,17 @@
+{
+  "static_validator": {
+    "python_min": "3.10",
+    "third_party": []
+  },
+  "optional_design_tools": {
+    "Pillow": "12.3.0",
+    "fontTools": "4.61.1",
+    "Brotli": "1.1.0"
+  },
+  "node_version": "v24.22.1",
+  "playwright_version": "1.62.1",
+  "browser": "153.0.8010.0",
+  "browser_source": "@sparticuz/chromium 153.0.0; registry integrity verified; browser binary not distributed",
+  "scope": "Author Linux SVG renderer only; not approved game engine or target OS",
+  "portable_render_note": "P23_PLAYWRIGHT_MODULE and P23_BROWSER_EXECUTABLE are optional overrides; local sandbox may require process permission. Do not bypass production access controls."
+}

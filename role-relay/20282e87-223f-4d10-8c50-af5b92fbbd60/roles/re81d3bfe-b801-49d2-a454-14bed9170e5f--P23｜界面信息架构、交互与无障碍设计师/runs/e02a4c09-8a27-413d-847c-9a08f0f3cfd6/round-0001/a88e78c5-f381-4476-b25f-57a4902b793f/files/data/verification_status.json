@@ -1,0 +1,72 @@
+{
+  "schema_version": "P23-VERIFICATION/0.1.0",
+  "task_id": "P23-S03-S06-UX-001",
+  "overall": "AUTHOR_DESIGN_DELIVERED_PRODUCTION_BLOCKED",
+  "layers": {
+    "design_author_review": "COMPLETED_AUTHOR_REVIEW",
+    "static_contract_validation": "PASS_AUTHOR_DESIGN_ONLY",
+    "rendered_wireframe_checks": "PASS_AUTHOR_STATIC_SVG_ONLY",
+    "upstream_ui_source_review": "COMPLETED_AUTHOR_READ_ONLY_REVIEW",
+    "game_unit_tests": "NOT_RUN",
+    "runtime_contract_acceptance": "NOT_RUN",
+    "target_engine_windows": "NOT_RUN",
+    "physical_gamepad": "NOT_RUN",
+    "screen_reader": "NOT_RUN",
+    "P32_independent": "NOT_RUN",
+    "P33_player_usability": "NOT_RUN",
+    "P25_style": "NOT_RUN",
+    "P37_license_review": "NOT_RUN",
+    "P35_independent_gate": "NOT_RUN",
+    "real_anki_e2e": "NOT_RUN",
+    "production_integration": "BLOCKED"
+  },
+  "counts": {
+    "anchors": 79,
+    "ui_states": 52,
+    "focus_rows": 52,
+    "acceptance_tasks": 31,
+    "sources": 56,
+    "ui_widgets": 79,
+    "wireframes": 18,
+    "typography_fixtures": 12,
+    "reduced_motion_cases": 13
+  },
+  "author_validation": {
+    "checks": 19,
+    "negative_probes": 9,
+    "passed": 28,
+    "failed": 0,
+    "exit_code": 0,
+    "evidence": "design/ux/evidence/author_validation/validation_results.json",
+    "manifest_check": "NOT_RUN_AT_PREPACK_BUILD_STAGE",
+    "final_archive_verification": "See external P23_delivery_receipt.json for final fresh-extract check including D19 manifest"
+  },
+  "render_validation": {
+    "boards": 18,
+    "pass": 18,
+    "failed": 0,
+    "text_nodes": 717,
+    "out_of_board_text_nodes": 0,
+    "fonts": 3,
+    "evidence": "design/ux/evidence/render_final/render_results.json"
+  },
+  "production_preflight": {
+    "result": "BLOCKED",
+    "exit_code": 3,
+    "evidence": "design/ux/evidence/production_preflight/preflight.json"
+  },
+  "font_validation": {
+    "result": "PASS_EXPECTED_MISSING_FIXTURE_ONLY",
+    "unexpected_missing": [],
+    "expected_missing": [
+      "U+20BB7",
+      "U+F0000"
+    ],
+    "evidence": "design/ux/evidence/glyph_coverage.json"
+  },
+  "known_prototype_limitations": [
+    "P19 pending is memory-only; full-page reload recovery BLOCKED",
+    "P19 query-original uses same-ID command resend, not read-only; domain dedup is required",
+    "P20 production lookup gateway not accepted"
+  ]
+}

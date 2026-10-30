@@ -1,0 +1,654 @@
+{
+  "version": "V6.0",
+  "count": 27,
+  "real_implementation_state": "NOT_RUN",
+  "contracts": [
+    {
+      "id": "IC-01",
+      "name": "需求→独立执行任务",
+      "owner": "P01",
+      "from": [
+        "用户"
+      ],
+      "to": [
+        "P02",
+        "P08",
+        "P13",
+        "P23",
+        "P25",
+        "P32",
+        "P35"
+      ],
+      "input": "原始问答/用户批准的范围更改",
+      "output": "RequirementRecord{requirement_id,source,evidence_level,version,acceptance,scope}",
+      "accept": "没有不具来源的确认需求；设计建议标PROPOSAL；每个需求有观察性验收",
+      "rework": "P01；用户决策待用户",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "所有需求按CONFIRMED_DIRECTION/PROPOSAL/PENDING_DECISION/OUT_OF_SCOPE分级；P01不替用户决策。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-02",
+      "name": "战斗规则→内部状态契约",
+      "owner": "P13",
+      "from": [
+        "P02"
+      ],
+      "to": [
+        "P14",
+        "P15",
+        "P16",
+        "P19",
+        "P29",
+        "P32"
+      ],
+      "input": "战斗状态机/规则真值表/动作语义",
+      "output": "BattleCommand/BattleState/BattleEvent版本化DTO与错误码",
+      "accept": "一次命令只有一个权威BattleState提交者P14；规则例子均能表达",
+      "rework": "DTO不符P13；规则歧义P02",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P02规则真值表+P13 DTO版本；所有BattleCommand读取固定revision；逻辑与演出完全分离。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-03",
+      "name": "卡牌/角色统一ID与内容Schema",
+      "owner": "P22",
+      "from": [
+        "P03",
+        "P04"
+      ],
+      "to": [
+        "P15",
+        "P17",
+        "P19",
+        "P20",
+        "P26",
+        "P30"
+      ],
+      "input": "候选卡牌和角色字段",
+      "output": "IDRegistry+CardRecord/CharacterRecord Schema及交叉引用结果",
+      "accept": "ID唯一且稳定；skill_id→card_id→character_id引用合法；版本可校验",
+      "rework": "Schema/ID P22；内容P03或P04",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P22统一card_id/character_id；P03与P04不能互相发明ID；S02提前交角色骨架。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-04",
+      "name": "卡牌内容→抽牌与合法性",
+      "owner": "P03",
+      "from": [
+        "P02",
+        "P04",
+        "P05",
+        "P08"
+      ],
+      "to": [
+        "P15",
+        "P22",
+        "P19"
+      ],
+      "input": "状态规则、角色定位和候选数值",
+      "output": "CardRecord{card_id,owner_character_id,cost,target,effect_code,params,asset_id}",
+      "accept": "卡牌效果码受P02支持、Schema可验证、三人队伍牌组可构建",
+      "rework": "P03内容，P22结构，P15执行",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P15只返回候选DeckPatch；P14提交费用变更；P05提供可复算数值测试向量。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-05",
+      "name": "出牌验证→战斗原子提交",
+      "owner": "P14",
+      "from": [
+        "P15",
+        "P19"
+      ],
+      "to": [
+        "P19",
+        "P29",
+        "P32"
+      ],
+      "input": "PlayCard{request_id,battle_id,expected_revision,card_instance_id,target}及P15候选DeckPatch",
+      "output": "单一提交{new_BattleState,event_seq[],revision}或无副作用错误",
+      "accept": "P15不预扣费；同request_id最多一次接受；P14拒绝则HP/牌堆/费用均不变",
+      "rework": "P15校验错误；P14部分提交/重复写",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "唯一状态与费用物理提交者P14。P15只做合法校验及候选，P16只提案；原矩阵014旧“扣除”词无效。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-06",
+      "name": "怪物定义→战斗AI与敌方卡面",
+      "owner": "P06",
+      "from": [
+        "P02",
+        "P05",
+        "P07"
+      ],
+      "to": [
+        "P16",
+        "P27",
+        "P22"
+      ],
+      "input": "战斗状态与章节难度建议",
+      "output": "EnemyRecord{enemy_id,behavior_ids,phase_ids,intent_codes,assets_refs}",
+      "accept": "所有阶段和招式合法、无无动作死局、阶段ID被美术与代码共用",
+      "rework": "P06机制，P27图片，P16决策",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P06敌人技能、意图和BOSS阶段数据受P22统一ID/引用校验。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-07",
+      "name": "敌方意图/阶段提议→权威结算",
+      "owner": "P14",
+      "from": [
+        "P16",
+        "P06",
+        "P02"
+      ],
+      "to": [
+        "P19",
+        "P29",
+        "P18"
+      ],
+      "input": "EnemyIntent/PhaseProposal+预期BattleState revision",
+      "output": "EnemyActionResolved/BossPhaseChanged/BattleEvent及唯一状态快照",
+      "accept": "敌方代码不直接扣HP；阶段只转换一次；意图与回放的动作一致",
+      "rework": "P16选择，P14执行，P02结算优先级",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P02冻结死亡/阶段/终局总序，P16只提EnemyIntent/PhaseProposal，P14一次提交。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-08",
+      "name": "战斗事件→UI状态与动画",
+      "owner": "P13",
+      "from": [
+        "P14"
+      ],
+      "to": [
+        "P19",
+        "P29",
+        "P28",
+        "P31"
+      ],
+      "input": "只读BattleEvent{battle_id,seq,type,revision,payload}",
+      "output": "事件字典/视图映射/序号与去重契约",
+      "accept": "同一seq动画可幂等重放；HP最终值只读来自快照；无动画结果一致",
+      "rework": "P13字典，P19状态显示，P29表现消费",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "BattleState唯一真实来源P14；P19/P29只消费快照与单调BattleEvent seq。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-09",
+      "name": "角色定义→立绘/技能/角色状态",
+      "owner": "P04",
+      "from": [
+        "P01",
+        "P05"
+      ],
+      "to": [
+        "P03",
+        "P17",
+        "P26",
+        "P20",
+        "P22"
+      ],
+      "input": "角色定位与养成范围",
+      "output": "CharacterRecord/character_id/角色卡组关联及美术约束",
+      "accept": "一个character_id贯穿原画、角色状态、专属卡牌和编队UI",
+      "rework": "P04数据定义，P26立绘，P17运行时",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P04角色结构提前S02；P26正式立绘映射同character_id、不同asset_id。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-10",
+      "name": "角色/编队领域状态→非战斗UI",
+      "owner": "P17",
+      "from": [
+        "P04",
+        "P05",
+        "P21"
+      ],
+      "to": [
+        "P15",
+        "P20",
+        "P32"
+      ],
+      "input": "角色拥有/升级/装备业务命令",
+      "output": "只读PartySnapshot/CharacterState/DomainError及候选事务",
+      "accept": "非法队伍/材料不足不改变余额；升级保存重载一致",
+      "rework": "P17领域，P20UI，P21存储",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P17 Party/Wallet领域事务，P20仅呈现只读状态，P21唯一落盘。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-11",
+      "name": "关卡设计→进度与解锁",
+      "owner": "P07",
+      "from": [
+        "P01",
+        "P04",
+        "P06",
+        "P05"
+      ],
+      "to": [
+        "P18",
+        "P20",
+        "P22"
+      ],
+      "input": "关卡节奏和角色经济约束",
+      "output": "StageRecord{stage_id,enemy_ids,unlock_rules,drop_id,first_clear_rule}",
+      "accept": "敌方ID和奖励ID存在；至少一条进入/胜负/奖励/解锁路径闭合",
+      "rework": "P07配置，P22校验，P18发放",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P07声明stage级永久首通键与battle级重复奖励键，两者不复用。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-12",
+      "name": "BOSS阶段→视觉形态/意图/受击",
+      "owner": "P16",
+      "from": [
+        "P06",
+        "P27",
+        "P28"
+      ],
+      "to": [
+        "P14",
+        "P19",
+        "P29"
+      ],
+      "input": "phase_id与行为状态、视觉锚点映射",
+      "output": "PhaseProposal及BossPhaseChanged关联的asset_id/anchor_id",
+      "accept": "同一阶段显示对应卡面；意图提前展示且切换时无重复伤害",
+      "rework": "P16意图/阶段，P27阶段图，P29切换动效",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "Boss阈值跳跃致死不允许重入阶段或重复敌回合；缺相应图仍能降级终局。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-13",
+      "name": "战斗终局→关卡领奖事务",
+      "owner": "P18",
+      "from": [
+        "P14"
+      ],
+      "to": [
+        "P17",
+        "P20",
+        "P21",
+        "P32"
+      ],
+      "input": "BattleResult{battle_id,terminal_revision,stage_id,outcome}",
+      "output": "StageProgressDelta+奖励WalletIntent+领取idempotency_key",
+      "accept": "同一战斗终局重复提交不重复发首通；非法关卡胜利不解锁",
+      "rework": "P18业务幂等，P21原子存储",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P18消费P14可信BattleResult，stage级首次奖励与重复掉落分域，和Wallet同事务。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-14",
+      "name": "Anki真实事件→跨进程封装",
+      "owner": "P12",
+      "from": [
+        "P10"
+      ],
+      "to": [
+        "P11",
+        "P38",
+        "P34"
+      ],
+      "input": "真实Hook脱敏字段探针与插件本地事件队列",
+      "output": "StudyEventEnvelope{protocol_version,message_id,event_id?,identity_status,kind,payload,correlation_id}",
+      "accept": "event_id来源实测且可靠；身份不可靠需可隔离，不擅自给奖；不假定Undo Hook存在",
+      "rework": "P10捕获/事件身份，P12封装与协议",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "Anki身份必须在明确目标版本做复习/Undo/重答/备份实测；不可证明则QUARANTINED而非自动授奖。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-15",
+      "name": "日语内容分类→学习收益映射",
+      "owner": "P09",
+      "from": [
+        "P10",
+        "P08"
+      ],
+      "to": [
+        "P11",
+        "P22"
+      ],
+      "input": "经授权的最小字段/用户覆写/未知标签",
+      "output": "LinguisticCategory{version,category,source,confidence_or_unknown}",
+      "accept": "空值、多义、整句可预测回退为UNKNOWN，不私自读取全部复习内容",
+      "rework": "P09语义，P10字段不足，P22数据结构",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "词性字段以实际最小权限可见内容为准；未知/多义回退UNKNOWN。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-16",
+      "name": "奖励政策→账本判定",
+      "owner": "P08",
+      "from": [
+        "P01",
+        "P09",
+        "P05",
+        "P10"
+      ],
+      "to": [
+        "P11",
+        "P17",
+        "P32"
+      ],
+      "input": "有效复习、四评分、撤销和限额的经批准真值表",
+      "output": "RewardPolicy{policy_version,eligibility,category_mapping,delta_rule,undo_rule}",
+      "accept": "全部四评分情况有确定语义，未冻结数值不得进入正式账本",
+      "rework": "P08奖励语义；P11实施偏差",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "四键及撤销权益原则由P08草拟，用户决策前不可冻结具体奖值。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-17",
+      "name": "学习事件→钱包/账本同事务",
+      "owner": "P11",
+      "from": [
+        "P10",
+        "P12",
+        "P08",
+        "P09",
+        "P17"
+      ],
+      "to": [
+        "P21",
+        "P12",
+        "P32"
+      ],
+      "input": "已证实事件/撤销链和RewardPolicy+P17钱包计算结果",
+      "output": "UnitOfWork{study_event_status,wallet_delta,idempotency_key,expected_revision}",
+      "accept": "账本记录与钱包变更不可部分成功；重复/重做/撤销权益净额可追溯",
+      "rework": "P11状态/去重，P17钱包，P21原子提交",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "StudyLedger+Wallet事务一次性提交，不允许学习账本和钱包不同步。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-18",
+      "name": "事务持久化→Anki ACK/重试",
+      "owner": "P12",
+      "from": [
+        "P11",
+        "P21"
+      ],
+      "to": [
+        "P10"
+      ],
+      "input": "P21持久化提交凭证及账本状态",
+      "output": "ACK_APPLIED/ACK_QUARANTINED/RETRY_LATER与状态查询",
+      "accept": "ACK_APPLIED仅在已授奖落盘；QUARANTINED明示未授奖；异常退出可重新查并安全重投",
+      "rework": "P12 ACK时机，P11状态输出，P21提交凭证",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "ACK_APPLIED仅在P21 durable commit成功后；ACK_QUARANTINED只表示隔离持久保存，需能查询/复核/拒绝。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-19",
+      "name": "统一持久化事务与领域边界",
+      "owner": "P21",
+      "from": [
+        "P11",
+        "P17",
+        "P18",
+        "P13"
+      ],
+      "to": [
+        "P11",
+        "P17",
+        "P18",
+        "P32"
+      ],
+      "input": "版本化领域Mutation和expected_revision",
+      "output": "AtomicCommit{commit_id,new_revision,checksum,status}或可重试冲突",
+      "accept": "全有或全无；崩溃、磁盘满、恢复、迁移无重复扣费/加钱",
+      "rework": "P21物理/并发；领域逻辑归请求方",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P21对IC-19唯一拥有权；必须加入P21完整契约列表；存档来源世代、迁移、恢复与读写兼容由P21验证。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-20",
+      "name": "共享权益钱包的来源和消耗",
+      "owner": "P17",
+      "from": [
+        "P11",
+        "P18",
+        "P05",
+        "P08"
+      ],
+      "to": [
+        "P21",
+        "P20",
+        "P32"
+      ],
+      "input": "StudyRewardIntent/StageRewardIntent/UpgradeSpendIntent",
+      "output": "WalletDelta{source_kind,source_id,resource_type,delta,precondition}",
+      "accept": "来源ID单次处理；并发升级/领奖余额不负或按明确债务政策处理",
+      "rework": "P17钱包规则，P11学习身份，P18关卡来源",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "共享Wallet业务源仅P17，固定计划路径runtime/meta/wallet/**，跨来源花费/收益由P21提交。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-21",
+      "name": "交互/中日排版→UI实现与素材",
+      "owner": "P23",
+      "from": [
+        "P01",
+        "P02",
+        "P08",
+        "P25"
+      ],
+      "to": [
+        "P19",
+        "P20",
+        "P24",
+        "P28"
+      ],
+      "input": "基础流程/设备约束/可访问性目标",
+      "output": "Wireframe+UIStateMap{screen_id,widget_id,states,focus,anchor_id}",
+      "accept": "无音频/减动效可操作；关键错误状态及安全区有定义",
+      "rework": "P23交互，P24素材，P19/P20代码",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P23拥有UX锚点合同，P19拥有战斗HUD最终状态，P24资产源，P29只经presentation_adapter插值。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-22",
+      "name": "美术源→资源映射与导入",
+      "owner": "P30",
+      "from": [
+        "P24",
+        "P26",
+        "P27",
+        "P28",
+        "P31",
+        "P22",
+        "P25",
+        "P37"
+      ],
+      "to": [
+        "P19",
+        "P20",
+        "P29",
+        "P36"
+      ],
+      "input": "可解码源导出、asset_id、使用授权和源sha",
+      "output": "AssetManifest{asset_id,content_ref,source_sha,runtime_path,variant,anchor,import_version}",
+      "accept": "导入路径唯一、hash可复现、角色/敌人阶段引用一致；占位有明显标记",
+      "rework": "P30导入，原美术返原制作岗，ID schema归P22",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P25 PREART视觉基准先于批量P26；P30占位导入先于S03；P37先审正式素材权利。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-23",
+      "name": "视觉特效设计→事件播放器",
+      "owner": "P29",
+      "from": [
+        "P28",
+        "P19",
+        "P23",
+        "P31",
+        "P14"
+      ],
+      "to": [
+        "P19",
+        "P32",
+        "P33"
+      ],
+      "input": "事件序列、特效映射、UI锚点/静音需求",
+      "output": "EventConsumer{last_seq,presentation_state}及降级路径",
+      "accept": "跳过/重复播放不变数值，动画补帧后显示终态与BattleSnapshot一致",
+      "rework": "P29播放，P28效果内容，P19锚点",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P29处理seq缺口/过期/取消快进，必须回归P14最新权威快照，不得修改P19业务状态。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-24",
+      "name": "可验证内容/资源→候选构建",
+      "owner": "P36",
+      "from": [
+        "P13",
+        "P22",
+        "P30",
+        "外部整合者"
+      ],
+      "to": [
+        "P32",
+        "P33",
+        "P34",
+        "P35",
+        "P40"
+      ],
+      "input": "已整合固定commit、数据资源manifest和依赖锁文件",
+      "output": "RC构建+BuildManifest{commit,inputs_sha,artifact_sha,platform,commands}",
+      "accept": "可在指定环境重建、校验hash、安装启动；无集成快照不得宣称RC可执行",
+      "rework": "P36构建配置；外部整合者负责跨模块合并",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P36 RC元组须同时绑定集成commit/client_sha/addon_sha/protocol/save_schema/content_manifest/OS+Anki/log sha。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-25",
+      "name": "模块交付→自动化与独立审查",
+      "owner": "P32",
+      "from": [
+        "P02",
+        "P08",
+        "P10",
+        "P11",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P21",
+        "P22"
+      ],
+      "to": [
+        "P35",
+        "P01"
+      ],
+      "input": "固定源sha、契约版本、独立测试夹具",
+      "output": "TestEvidence{test_id,scope,command,env,result,log_sha}",
+      "accept": "所有PASS有实际执行命令及日志；缺源码BLOCKED，未执行NOT_RUN",
+      "rework": "P32测试夹具；发现故障退回模块owner",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P32独立测试；每一PASS记录命令、退出码、环境、固定输入、原始日志hash。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-26",
+      "name": "RC→人工/环境回归→门禁",
+      "owner": "P35",
+      "from": [
+        "P36",
+        "P32",
+        "P33",
+        "P34"
+      ],
+      "to": [
+        "P01",
+        "P36"
+      ],
+      "input": "RC hash、自动化/人工E2E/环境测试证据",
+      "output": "GateDecision{gate,rc_sha,verdict,failed_cases,approvals}",
+      "accept": "每项PASS可复核且绑定同一RC hash；出现BLOCKED/关键FAIL不可放正式版",
+      "rework": "P35审查漏项，P36打包缺陷，各模块业务退其主责",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "P36先产RC，再P32/P33/P34及P37/P38对同元组验证，P35独立裁决，最后P36 GA。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    },
+    {
+      "id": "IC-27",
+      "name": "跨岗交付接收与最终集成边界",
+      "owner": "P01",
+      "from": [
+        "P01",
+        "P13",
+        "P35",
+        "P36",
+        "各岗位"
+      ],
+      "to": [
+        "各接收岗位",
+        "外部整合者",
+        "用户"
+      ],
+      "input": "统一交付manifest、路径/契约权限、评审结论",
+      "output": "HandoffReceipt{task_id,role_id,base_commit,sha,accepted_scope,integration_state}",
+      "accept": "已接收≠已集成≠已通过；无外部整合者G4/G5 BLOCKED；任何人不自行跨文件合并",
+      "rework": "P01交接漏记，P13合约冲突，外部整合者真实合并",
+      "disposition": "RETAIN_V3",
+      "v6_frozen_clarification": "EXT-INTEGRATOR由用户另任，未指派G4/G5 BLOCKED；同缺陷2轮无证据闭环交P01仲裁；不得作者自签审查。",
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION",
+      "implementation_verified": false
+    }
+  ]
+}

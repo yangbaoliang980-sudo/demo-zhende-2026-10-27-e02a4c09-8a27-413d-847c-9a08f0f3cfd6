@@ -1,0 +1,95 @@
+{
+  "version": "P23-BLOCKERS/0.1.0",
+  "items": [
+    {
+      "id": "BLK-01",
+      "followup_owner": "P13",
+      "missing": "实际工程路径与写授权",
+      "required_evidence": "actual_path_mapping with fixed real project commit; P23 design paths; allowlist/do_not_touch",
+      "status": "BLOCKED",
+      "blocked_claim": "所有正式工程写入、实际接入",
+      "rfc_id": "P23-RFC-001"
+    },
+    {
+      "id": "BLK-02",
+      "followup_owner": "P01",
+      "missing": "阶段范围与交互提案批准",
+      "required_evidence": "S03 receiver version; end-turn review scope; candidate layout adoption; MVP content counts decision",
+      "status": "BLOCKED",
+      "blocked_claim": "正式布局/交互基线冻结",
+      "rfc_id": "P23-RFC-003"
+    },
+    {
+      "id": "BLK-03",
+      "followup_owner": "P34",
+      "missing": "目标显示与执行环境",
+      "required_evidence": "engine/OS/build entry; display physical pixels; DPI/logical viewport; locale/input/device matrix with evidence",
+      "status": "BLOCKED",
+      "blocked_claim": "字号、截断、缩放与真机验收",
+      "rfc_id": "P23-RFC-003"
+    },
+    {
+      "id": "BLK-04",
+      "followup_owner": "P25",
+      "missing": "正式视觉基础",
+      "required_evidence": "versioned typography/color/portrait safe zones + editable asset handoff and hashes",
+      "status": "BLOCKED",
+      "blocked_claim": "正式美术/风格验收；低保真可继续",
+      "rfc_id": "P23-RFC-006"
+    },
+    {
+      "id": "BLK-05",
+      "followup_owner": "P13",
+      "missing": "权威敌方意图只读接口",
+      "required_evidence": "approved DTO/producer binding with snapshot revision/target semantics; P19 accepted usage",
+      "status": "BLOCKED",
+      "blocked_claim": "把候选/脚本意图称为权威预告",
+      "rfc_id": "P23-RFC-004"
+    },
+    {
+      "id": "BLK-06",
+      "followup_owner": "P13",
+      "missing": "P20 与 P21 正式适配",
+      "required_evidence": "outer intent to domain command mapping; lookup proof; accepted gateway; P20 durable capability; separately P19/P14/P21 production pending recovery, dedup retention, and identity continuity after full reload",
+      "status": "BLOCKED",
+      "blocked_claim": "未知操作正式恢复、真实余额证明",
+      "rfc_id": "P23-RFC-005"
+    },
+    {
+      "id": "BLK-07",
+      "followup_owner": "P29",
+      "missing": "表现锚点接口受理",
+      "required_evidence": "IC-23 accepted version preserving legacy ids/rects; source-card disappearance fallback",
+      "status": "BLOCKED",
+      "blocked_claim": "演出契约集成",
+      "rfc_id": "P23-RFC-002"
+    },
+    {
+      "id": "BLK-08",
+      "followup_owner": "P01",
+      "missing": "真实 Anki 奖励决策",
+      "required_evidence": "P08 policy decisions + P12/P11/P17/P21 end-to-end evidence on approved Anki environment",
+      "status": "BLOCKED",
+      "blocked_claim": "学习已正式入账的用户承诺",
+      "rfc_id": "P23-RFC-005"
+    },
+    {
+      "id": "BLK-09",
+      "followup_owner": "P35",
+      "missing": "独立证据门禁",
+      "required_evidence": "P32 independent result, P33 usability, P25 style/P37 license if applicable, reviewed candidate",
+      "status": "NOT_RUN",
+      "blocked_claim": "独立通过/发布结论",
+      "rfc_id": "P23-RFC-006"
+    },
+    {
+      "id": "BLK-10",
+      "followup_owner": "USER",
+      "missing": "整合人员指定",
+      "required_evidence": "explicitly authorized EXT-INTEGRATOR and integration scope",
+      "status": "BLOCKED",
+      "blocked_claim": "跨模块合并、整游戏发布",
+      "rfc_id": "P23-RFC-001"
+    }
+  ]
+}

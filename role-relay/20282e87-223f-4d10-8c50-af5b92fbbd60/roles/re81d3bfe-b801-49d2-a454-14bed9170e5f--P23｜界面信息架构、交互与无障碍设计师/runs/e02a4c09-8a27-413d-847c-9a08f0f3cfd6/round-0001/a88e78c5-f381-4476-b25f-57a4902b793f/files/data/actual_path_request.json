@@ -1,0 +1,46 @@
+{
+  "schema_version": "P23-ACTUAL-PATH-REQUEST/0.1.0",
+  "status": "BLOCKED_PRODUCTION_MAPPING",
+  "owner": "P23",
+  "task_id": "P23-S03-S06-UX-001",
+  "isolated_package_root": "P23_UX_Accessibility_V0.1",
+  "production_write_authorized": false,
+  "actual_game_commit": null,
+  "requested": [
+    {
+      "planning_glob": "design/ux/**",
+      "actual_production_path": null,
+      "write_allowed": false
+    },
+    {
+      "planning_glob": "design/accessibility/**",
+      "actual_production_path": null,
+      "write_allowed": false
+    }
+  ],
+  "mapping_authority": "P13",
+  "integration_authority": "USER_APPOINTED_EXT-INTEGRATOR",
+  "package_metadata_allowlist": [
+    "README.md",
+    "P23_delivery_report.md",
+    "source_input_receipt.json",
+    "actual_path_request.json",
+    "interface_rfcs.json",
+    "verification_status.json",
+    "delivery_manifest.json"
+  ],
+  "source_input_hashes": [
+    {
+      "source_id": "SRC-P13-PATH",
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-PATH/actual_path_mapping.json"
+    },
+    {
+      "source_id": "SRC-V6-ROLES",
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-ROLES/第六轮_全部岗位职责_可复制版V6.0.txt"
+    }
+  ],
+  "upstream_files_read_only": true,
+  "scope_note": "ux/wireframes/** is delivered as design/ux/wireframes/** inside isolated package; this is not an approved engine path."
+}

@@ -1,0 +1,2428 @@
+{
+  "schema_version": "P23-UX-ANCHOR/0.1.0-proposal",
+  "task_id": "P23-S03-S06-UX-001",
+  "owner": "P23",
+  "related_contracts": [
+    "IC-21",
+    "IC-23"
+  ],
+  "status": "AUTHOR_DESIGN_DELIVERED_RECEIVER_ACCEPTANCE_PENDING",
+  "runtime_implementation": "NOT_RUN",
+  "screens": [
+    "home",
+    "characters",
+    "party",
+    "growth",
+    "chapters",
+    "handoff",
+    "battle",
+    "settlement",
+    "learning"
+  ],
+  "anchors": [
+    {
+      "anchor_id": "ux.battle.heading",
+      "screen_id": "battle",
+      "kind": "heading",
+      "label_zh": "卡牌战斗",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.turn_number/phase/outcome",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#phase-label; #turn-label",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.status",
+      "screen_id": "battle",
+      "kind": "status",
+      "label_zh": "战斗状态",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "connection/stale/suspended/pending",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-RENDERER",
+          "sha256": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RENDERER/hud_renderer.mjs"
+        }
+      ],
+      "observed_selector": "#connection-banner",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.energy",
+      "screen_id": "battle",
+      "kind": "value",
+      "label_zh": "可用费用",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.energy",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#energy",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.party.{unit_key}",
+      "screen_id": "battle",
+      "kind": "unit",
+      "label_zh": "我方单位卡面",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.units[side=PLAYER]",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#party [data-unit-id]",
+      "instance_key": "base64url_utf8(unit_id)",
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": true,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.enemy.{unit_key}",
+      "screen_id": "battle",
+      "kind": "unit",
+      "label_zh": "敌方单位卡面",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.units[side=ENEMY]",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#enemies [data-unit-id]",
+      "instance_key": "base64url_utf8(unit_id)",
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": true,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.hp.{unit_key}",
+      "screen_id": "battle",
+      "kind": "value",
+      "label_zh": "生命与护盾",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.units[*].hp/max_hp/shield",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": ".hp-label; .shield-label",
+      "instance_key": "base64url_utf8(unit_id)",
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.intent.{unit_key}",
+      "screen_id": "battle",
+      "kind": "intent",
+      "label_zh": "敌方行动意图",
+      "implementation_owner": "P19",
+      "data_owner": "P13/P14/P16",
+      "source_field": "Context.intents[*] with battle/revision/snapshot binding; formal committed view MISSING",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": ".enemy-intent",
+      "instance_key": "base64url_utf8(unit_id)",
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.phase.{unit_key}",
+      "screen_id": "battle",
+      "kind": "value",
+      "label_zh": "Boss 当前阶段",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.boss_states[*].current_phase_id",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": ".status-list",
+      "instance_key": "base64url_utf8(unit_id)",
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.hand.{card_key}",
+      "screen_id": "battle",
+      "kind": "card",
+      "label_zh": "手牌实例",
+      "implementation_owner": "P19",
+      "data_owner": "P14/P15",
+      "source_field": "BattleSnapshot.zones.hand + Context.cards[*]",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#hand [data-card-id]",
+      "instance_key": "base64url_utf8(card_instance_id)",
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": true,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.piles",
+      "screen_id": "battle",
+      "kind": "value",
+      "label_zh": "牌堆数量",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.zones.draw/discard/exhaust",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#pile-counts",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.selection",
+      "screen_id": "battle",
+      "kind": "status",
+      "label_zh": "所选牌与目标",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "selectedCard/selectedTargets; never a submitted result",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-RENDERER",
+          "sha256": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RENDERER/hud_renderer.mjs"
+        }
+      ],
+      "observed_selector": "#selection-hint",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.card_details",
+      "screen_id": "battle",
+      "kind": "detail",
+      "label_zh": "卡牌完整效果与资格",
+      "implementation_owner": "P19",
+      "data_owner": "P15",
+      "source_field": "Context.cards description/cost/enabled/reason_code/allowed_target_sets",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.target_details",
+      "screen_id": "battle",
+      "kind": "detail",
+      "label_zh": "目标完整详情",
+      "implementation_owner": "P19",
+      "data_owner": "P14/P15",
+      "source_field": "unit snapshot + owner allowed_target_sets",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.command.play",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "确认出牌",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "view input eligibility; existing BattleCommand only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": "#play",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.command.end_turn",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "结束回合",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "view input eligibility; existing BattleCommand only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": "#end-turn",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.command.refresh",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "刷新状态",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "view input eligibility; existing BattleCommand only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": "#refresh",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.command.lookup",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "查询本次操作",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "P19 pending.command -> retryPending/sendPending; re-send identical command_id/expected_revision/payload; not read-only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": "#retry",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "No retained original command: do not create a replacement ID; full page reload recovery is unsupported in current P19 prototype and production remains BLOCKED.",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.command.cancel",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "取消选择",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "view input eligibility; existing BattleCommand only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.end_review",
+      "screen_id": "battle",
+      "kind": "detail",
+      "label_zh": "结束回合前确认",
+      "implementation_owner": "P19",
+      "data_owner": "P23",
+      "source_field": "local inline interaction proposal; no new domain command",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P02-RULE",
+          "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d",
+          "package_relative_path": "design/ux/evidence/upstream/P02/SRC-P02-RULE/battle_state_machine.md"
+        },
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.end_cancel",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "继续选择",
+      "implementation_owner": "P19",
+      "data_owner": "P23",
+      "source_field": "close local review",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.end_confirm",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "确认结束回合",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "existing END_TURN with retained original revision",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.log",
+      "screen_id": "battle",
+      "kind": "log",
+      "label_zh": "最近结算",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleCommitBatch.events; DAMAGE_APPLIED.hp_loss/absorbed",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#battle-log",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.outcome",
+      "screen_id": "battle",
+      "kind": "heading",
+      "label_zh": "战斗结果",
+      "implementation_owner": "P19",
+      "data_owner": "P14",
+      "source_field": "BattleSnapshot.outcome",
+      "authority": "P14_COMMITTED_SNAPSHOT",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": "#outcome",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.motion",
+      "screen_id": "battle",
+      "kind": "select",
+      "label_zh": "动态效果",
+      "implementation_owner": "P19",
+      "data_owner": "P19/P29",
+      "source_field": "presentation mode only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-ADAPTER",
+          "sha256": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-ADAPTER/presentation_adapter_spec.md"
+        }
+      ],
+      "observed_selector": "#motion-mode",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.skip_motion",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "跳过演出",
+      "implementation_owner": "P19",
+      "data_owner": "P19/P29",
+      "source_field": "presentation cancel epoch only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-ADAPTER",
+          "sha256": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-ADAPTER/presentation_adapter_spec.md"
+        }
+      ],
+      "observed_selector": "#skip-motion",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.home",
+      "screen_id": "home",
+      "kind": "navigation",
+      "label_zh": "旅团营地",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"home\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.home.heading",
+      "screen_id": "home",
+      "kind": "heading",
+      "label_zh": "旅团营地",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.characters",
+      "screen_id": "characters",
+      "kind": "navigation",
+      "label_zh": "角色档案",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"characters\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.characters.heading",
+      "screen_id": "characters",
+      "kind": "heading",
+      "label_zh": "角色档案",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.party",
+      "screen_id": "party",
+      "kind": "navigation",
+      "label_zh": "三人编队",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"party\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.party.heading",
+      "screen_id": "party",
+      "kind": "heading",
+      "label_zh": "三人编队",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.growth",
+      "screen_id": "growth",
+      "kind": "navigation",
+      "label_zh": "角色养成",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"growth\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.growth.heading",
+      "screen_id": "growth",
+      "kind": "heading",
+      "label_zh": "角色养成",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.chapters",
+      "screen_id": "chapters",
+      "kind": "navigation",
+      "label_zh": "章节远征",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"chapters\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.chapters.heading",
+      "screen_id": "chapters",
+      "kind": "heading",
+      "label_zh": "章节远征",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.settlement",
+      "screen_id": "settlement",
+      "kind": "navigation",
+      "label_zh": "战后结算",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"settlement\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.settlement.heading",
+      "screen_id": "settlement",
+      "kind": "heading",
+      "label_zh": "战后结算",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.nav.learning",
+      "screen_id": "learning",
+      "kind": "navigation",
+      "label_zh": "学习状态",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "local current page; no domain mutation",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": "nav [data-route=\"learning\"]",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.learning.heading",
+      "screen_id": "learning",
+      "kind": "heading",
+      "label_zh": "学习状态",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "page title",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.meta.wallet",
+      "screen_id": "home",
+      "kind": "value",
+      "label_zh": "可用资源与预留",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "View.wallet: P13 WalletSnapshot; absent != 0",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": ".wallet",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.meta.save_status",
+      "screen_id": "home",
+      "kind": "status",
+      "label_zh": "存档可操作状态",
+      "implementation_owner": "P20",
+      "data_owner": "P21",
+      "source_field": "View.save: SaveStatusView",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": ".health-row",
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.meta.pending",
+      "screen_id": "growth",
+      "kind": "status",
+      "label_zh": "原操作结果待确认",
+      "implementation_owner": "P20",
+      "data_owner": "P20/P21",
+      "source_field": "retained original intent + accepted lookup only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.meta.lookup",
+      "screen_id": "growth",
+      "kind": "button",
+      "label_zh": "查询原操作",
+      "implementation_owner": "P20",
+      "data_owner": "P20/P21",
+      "source_field": "lookup(original_intent); read-only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.meta.refresh",
+      "screen_id": "home",
+      "kind": "button",
+      "label_zh": "同步视图",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "read(); no resubmit",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false,
+      "repeated_on_screens": [
+        "home",
+        "characters",
+        "party",
+        "growth",
+        "chapters",
+        "handoff",
+        "settlement",
+        "learning"
+      ]
+    },
+    {
+      "anchor_id": "ux.characters.item.{character_key}",
+      "screen_id": "characters",
+      "kind": "button",
+      "label_zh": "角色详情",
+      "implementation_owner": "P20",
+      "data_owner": "P17/P04",
+      "source_field": "View.characters[*]",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "base64url_utf8(character_id)",
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.party.slot.{slot}",
+      "screen_id": "party",
+      "kind": "select",
+      "label_zh": "编队席位",
+      "implementation_owner": "P20",
+      "data_owner": "P20/P17",
+      "source_field": "local partyDraft + View.party; submitted order is separate",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "decimal slot 1..3",
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.party.draft_status",
+      "screen_id": "party",
+      "kind": "status",
+      "label_zh": "草稿与已保存状态",
+      "implementation_owner": "P20",
+      "data_owner": "P20/P17",
+      "source_field": "dirty draft versus authoritative View.party",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.party.save",
+      "screen_id": "party",
+      "kind": "button",
+      "label_zh": "保存三人编队",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "SET_PARTY ordered_character_ids; no UI state write",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.party.restore",
+      "screen_id": "party",
+      "kind": "button",
+      "label_zh": "恢复已保存编队",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "discard local draft only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.character.{character_key}",
+      "screen_id": "growth",
+      "kind": "button",
+      "label_zh": "选择养成角色",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "View.characters[*]",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "base64url_utf8(character_id)",
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.attributes",
+      "screen_id": "growth",
+      "kind": "value",
+      "label_zh": "当前属性",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "View.characters selected stats/level/xp_total",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.cost",
+      "screen_id": "growth",
+      "kind": "value",
+      "label_zh": "升级资格与费用",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "selected.level_action.available/reason/costs/requires_xp_total",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-RENDERER",
+          "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-RENDERER/renderer.mjs"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.upgrade",
+      "screen_id": "growth",
+      "kind": "button",
+      "label_zh": "确认升级",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "LEVEL_UP; character_id/from_rank/to_rank; no amount payload",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": "#upgrade",
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.dialog",
+      "screen_id": "growth",
+      "kind": "dialog",
+      "label_zh": "升级确认",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "existing level-dialog; proposed initial focus Cancel",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-RENDERER",
+          "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-RENDERER/renderer.mjs"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.dialog_cancel",
+      "screen_id": "growth",
+      "kind": "button",
+      "label_zh": "暂不升级",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "close dialog without command",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-RENDERER",
+          "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-RENDERER/renderer.mjs"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.growth.dialog_confirm",
+      "screen_id": "growth",
+      "kind": "button",
+      "label_zh": "确认升级并提交",
+      "implementation_owner": "P20",
+      "data_owner": "P17",
+      "source_field": "one LEVEL_UP request bound to current source view",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.chapters.stage.{stage_key}",
+      "screen_id": "chapters",
+      "kind": "button",
+      "label_zh": "查看关卡",
+      "implementation_owner": "P20",
+      "data_owner": "P18",
+      "source_field": "View.stage_details + stage_progress",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "base64url_utf8(stage_id)",
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.chapters.eligibility.{stage_key}",
+      "screen_id": "chapters",
+      "kind": "status",
+      "label_zh": "出战与首通资格",
+      "implementation_owner": "P20",
+      "data_owner": "P18",
+      "source_field": "owner entry eligibility + first_clear consumed/review",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "base64url_utf8(stage_id)",
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.chapters.enter.{stage_key}",
+      "screen_id": "chapters",
+      "kind": "button",
+      "label_zh": "准备出发",
+      "implementation_owner": "P20",
+      "data_owner": "P18",
+      "source_field": "ENTER_STAGE stage_id; existing trusted route pending",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": "base64url_utf8(stage_id)",
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.handoff.active_battle",
+      "screen_id": "handoff",
+      "kind": "status",
+      "label_zh": "已创建的活动战斗",
+      "implementation_owner": "P20",
+      "data_owner": "P18/P14",
+      "source_field": "existing active battle ref; no invented result",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.handoff.refresh",
+      "screen_id": "handoff",
+      "kind": "button",
+      "label_zh": "查询出战状态",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "read active reference only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.settlement.battle_result",
+      "screen_id": "settlement",
+      "kind": "heading",
+      "label_zh": "本场战斗结果",
+      "implementation_owner": "P20",
+      "data_owner": "P14/P18",
+      "source_field": "trusted immutable result reference; current P20 fixture is synthetic",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.settlement.reward_status",
+      "screen_id": "settlement",
+      "kind": "status",
+      "label_zh": "奖励处理结果",
+      "implementation_owner": "P20",
+      "data_owner": "P18/P17/P21",
+      "source_field": "View.settlement + consistent current wallet proof",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.settlement.claim",
+      "screen_id": "settlement",
+      "kind": "button",
+      "label_zh": "核对并领取关卡奖励",
+      "implementation_owner": "P20",
+      "data_owner": "P18",
+      "source_field": "CLAIM_STAGE_REWARD battle_id; never calculate reward",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.settlement.lookup",
+      "screen_id": "settlement",
+      "kind": "button",
+      "label_zh": "查询领取结果",
+      "implementation_owner": "P20",
+      "data_owner": "P20/P21",
+      "source_field": "lookup original intent only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.settlement.return",
+      "screen_id": "settlement",
+      "kind": "button",
+      "label_zh": "返回章节",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "navigation only; unresolved outcome retained",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.connection",
+      "screen_id": "learning",
+      "kind": "status",
+      "label_zh": "Anki 连接状态",
+      "implementation_owner": "P20",
+      "data_owner": "P12",
+      "source_field": "View.learning.connection; connected != applied",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-LEARNING",
+          "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.record",
+      "screen_id": "learning",
+      "kind": "status",
+      "label_zh": "学习记录处理状态",
+      "implementation_owner": "P20",
+      "data_owner": "P11",
+      "source_field": "View.learning.query status; presentation labels only",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P08-POLICY",
+          "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+          "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-POLICY/study_policy_draft.md"
+        },
+        {
+          "source_id": "SRC-P20-LEARNING",
+          "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.wallet_proof",
+      "screen_id": "learning",
+      "kind": "value",
+      "label_zh": "最近可核验余额",
+      "implementation_owner": "P20",
+      "data_owner": "P17/P21",
+      "source_field": "consistent wallet proof; not computed from pending count",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.reason",
+      "screen_id": "learning",
+      "kind": "detail",
+      "label_zh": "原因与下一步",
+      "implementation_owner": "P20",
+      "data_owner": "P11/P20",
+      "source_field": "known reason code -> versioned message; unknown code shows neutral fallback",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-LEARNING",
+          "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md"
+        },
+        {
+          "source_id": "SRC-P08-QUARANTINE",
+          "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+          "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-QUARANTINE/quarantine_resolution_policy.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": false,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.refresh",
+      "screen_id": "learning",
+      "kind": "button",
+      "label_zh": "重新查询状态",
+      "implementation_owner": "P20",
+      "data_owner": "P11",
+      "source_field": "query only; no award/release action",
+      "authority": "OWNER_READ_VIEW",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-LEARNING",
+          "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.learning.details",
+      "screen_id": "learning",
+      "kind": "button",
+      "label_zh": "查看记录详情",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "expand read-only diagnostics within same page",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.result_route",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "查看结算状态",
+      "implementation_owner": "P19",
+      "data_owner": "P13/P20",
+      "source_field": "trusted result navigation reference; formal route pending",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": true,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.battle.log_open",
+      "screen_id": "battle",
+      "kind": "button",
+      "label_zh": "查看完整记录",
+      "implementation_owner": "P19",
+      "data_owner": "P19",
+      "source_field": "expand existing log detail; no domain command",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.home.party_cta",
+      "screen_id": "home",
+      "kind": "button",
+      "label_zh": "整理三人编队",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "route party only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.home.chapters_cta",
+      "screen_id": "home",
+      "kind": "button",
+      "label_zh": "查看章节",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "route chapters only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.home.learning_cta",
+      "screen_id": "home",
+      "kind": "button",
+      "label_zh": "查看学习状态",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "route learning only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.home.chapter_summary_cta",
+      "screen_id": "home",
+      "kind": "button",
+      "label_zh": "打开章节摘要",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "route chapters only",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    },
+    {
+      "anchor_id": "ux.handoff.return",
+      "screen_id": "handoff",
+      "kind": "button",
+      "label_zh": "返回章节",
+      "implementation_owner": "P20",
+      "data_owner": "P20",
+      "source_field": "route chapters only; retain active battle reference",
+      "authority": "LOCAL_PRESENTATION_ONLY",
+      "source_input_hashes": [
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "observed_selector": null,
+      "instance_key": null,
+      "critical_text": false,
+      "focusable": true,
+      "presentation_geometry_only": false,
+      "production_accepted": false,
+      "fallback": "显示明确文字与最后已确认状态；缺少必要字段时禁止相应提交；不得由UI推算",
+      "rect_space": "viewport_logical_px",
+      "writes_business_state": false
+    }
+  ],
+  "identity_rules": {
+    "namespace": "ux.",
+    "content_id_registry": "P22 remains owner; UX IDs never replace content IDs",
+    "dynamic_key": "Unpadded base64url of exact UTF-8 instance id; reject empty/NUL; never use localized display text or hand position as persistent identity",
+    "entity_examples": {
+      "unit_id": "MOCK_ENEMY_001",
+      "card_instance_id": "fixture.card.01",
+      "scope": "DESIGN_FIXTURE_ONLY"
+    },
+    "reordering": "slot is identity only for party slot control; unit/card identity follows instance id across reorder",
+    "reuse": "do not reuse retired semantic anchor for another purpose",
+    "widget_uniqueness": "Distinct widgets on one screen have distinct fixed anchor IDs, even when they navigate to the same destination. Dynamic templates expand by instance key before binding. Text children may reference their parent semantic anchor without becoming a second geometry owner."
+  },
+  "geometry": {
+    "coordinate_space": "viewport logical pixels; CSS px in current browser reference; top-left origin; engine adapter must define matching logical unit",
+    "rect": [
+      "x",
+      "y",
+      "width",
+      "height"
+    ],
+    "position": "signed finite x/y; positive finite width/height; use visible clipped intersection",
+    "dpr": "do not multiply by devicePixelRatio twice; device pixel conversion belongs only at renderer boundary",
+    "refresh_on": [
+      "layout",
+      "scroll",
+      "resize",
+      "text scale",
+      "locale",
+      "modal",
+      "snapshot binding",
+      "orientation/change of active display"
+    ],
+    "lifetime": "P19 owns rect sampling; no stale rect reused across layout/visibility revision",
+    "missing_origin_after_commit": "skip flight if original hand card no longer has a valid current rect; retain hit/actual log only when valid; precommit origin geometry requires an accepted extension",
+    "missing_target": "skip presentation, keep current snapshot; never infer another target",
+    "safe_margins": "24 logical px at design reference, may reflow with actual target approval"
+  },
+  "compatibility": {
+    "p19_base_version": "P19-PRESENTATION/0.1.0-proposal",
+    "preserve_existing_payload": true,
+    "legacy_units_id": "original unit_id unchanged",
+    "legacy_cards_id": "original card_instance_id unchanged",
+    "current_fields": [
+      "id",
+      "x",
+      "y",
+      "width",
+      "height"
+    ],
+    "canonical_namespace_transport": "sidecar design map only; NOT inserted into closed P13 or current P19 payload",
+    "proposed_extension_rfc": "P23-RFC-002"
+  },
+  "presentation_permissions": {
+    "allowed": [
+      "read immutable events",
+      "read numeric geometry",
+      "create/remove own overlay",
+      "respect mode and epoch cancellation"
+    ],
+    "denied": [
+      "write hp",
+      "write shield",
+      "write energy",
+      "write hand/piles",
+      "change outcome",
+      "enable input",
+      "write wallet/ledger",
+      "emit BattleCommand",
+      "invoke domain ports"
+    ],
+    "data_channels": [
+      "P14 snapshot -> P19 final text/state",
+      "P14 committed events -> P29 decorative overlay",
+      "P23 geometry semantics -> P19 sampling -> P29 read-only numbers"
+    ]
+  },
+  "readability": {
+    "critical_text_no_ellipsis": true,
+    "body_min_logical_px": 18,
+    "critical_min_logical_px": 20,
+    "support_min_logical_px": 16,
+    "control_min_hit_px": [
+      44,
+      44
+    ],
+    "text_scale_candidates": [
+      1,
+      1.25,
+      1.5,
+      2
+    ],
+    "formal_target_resolution": null
+  },
+  "source_input_hashes": [
+    {
+      "source_id": "SRC-V6-IC",
+      "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-IC/第六轮_27项接口契约冻结修订V6.0.json"
+    },
+    {
+      "source_id": "SRC-V6-ROLES",
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-ROLES/第六轮_全部岗位职责_可复制版V6.0.txt"
+    },
+    {
+      "source_id": "SRC-P19-ADAPTER",
+      "sha256": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-ADAPTER/presentation_adapter_spec.md"
+    },
+    {
+      "source_id": "SRC-P19-BINDING",
+      "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+      "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+    },
+    {
+      "source_id": "SRC-P20-API",
+      "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+    },
+    {
+      "source_id": "SRC-P21-P20-RECOVERY",
+      "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+    }
+  ],
+  "recovery": {
+    "battle": {
+      "current_mode": "RESEND_ORIGINAL_COMMAND_IDEMPOTENT",
+      "read_only": false,
+      "preserve_fields": [
+        "command_id",
+        "expected_revision",
+        "payload"
+      ],
+      "current_owner_method": "P19 controller.retryPending -> sendPending",
+      "pending_storage": "MEMORY_ONLY",
+      "full_page_reload_recovery": "BLOCKED_PENDING_PRODUCTION_CONTRACT",
+      "production_owners": [
+        "P13",
+        "P14",
+        "P21"
+      ],
+      "rule": "Same complete original command only; at most one request in flight; no new identity; owner dedup prevents a second logical application. This may finish the originally authorized command if it was not applied."
+    },
+    "meta": {
+      "current_mode": "LOOKUP_ORIGINAL_OUTER_INTENT",
+      "read_only": true,
+      "production_gateway": "BLOCKED_P13_P20_P21_ACCEPTANCE"
+    },
+    "learning": {
+      "current_mode": "READ_ONLY_RECORD_QUERY",
+      "read_only": true
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "P13-INTERNAL-REGISTRY/0.1.0",
+  "contract_version": "YLTT-INTERNAL/0.1.0-isolated",
+  "task_id": "P13-S00-ARCH-001",
+  "release_scope": "FROZEN_FOR_ISOLATED_P13_TESTS_ONLY",
+  "production_authorized": false,
+  "independent_acceptance": "NOT_RUN",
+  "schema_file": "internal_dto.schema.json",
+  "semantics_file": "contract_semantics.md",
+  "compatibility": {
+    "accept_exact_versions": [
+      "YLTT-INTERNAL/0.1.0-isolated"
+    ],
+    "unknown_version": "REJECT",
+    "unknown_field": "REJECT",
+    "migration": "Explicit versioned adapter by original owner after RFC; never silently fall back",
+    "patch_policy": "Descriptions/test additions may use delivery patch; any accepted shape/semantic change requires a new wire contract version and golden vectors",
+    "upstream_P12_wire_unchanged": "YLTT-ANKI-TRANSPORT/0.1.0-isolated"
+  },
+  "interface_owners": {
+    "IC-02": "P13",
+    "IC-05": "P14",
+    "IC-08": "P13",
+    "IC-19": "P21",
+    "IC-25": "P32"
+  },
+  "state_writers": {
+    "BattleState": "P14",
+    "BattleState.energy": "P14",
+    "BattleState.zones": "P14",
+    "Wallet_business": "P17",
+    "StudyLedger_business": "P11",
+    "StageProgress_business": "P18",
+    "Game_physical_persistence": "P21",
+    "HUD_binding": "P19",
+    "Presentation_playback": "P29"
+  },
+  "dtos": [
+    {
+      "name": "BattleCommand",
+      "schema_ref": "#/$defs/BattleCommand",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleSnapshot",
+      "schema_ref": "#/$defs/BattleSnapshot",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleState",
+      "schema_ref": "#/$defs/BattleState",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleEvent",
+      "schema_ref": "#/$defs/BattleEvent",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleCommitBatch",
+      "schema_ref": "#/$defs/BattleCommitBatch",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleReply",
+      "schema_ref": "#/$defs/BattleReply",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "BattleResult",
+      "schema_ref": "#/$defs/BattleResult",
+      "shape_owner": "P13",
+      "domain_producer": "P14",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "DeckPatchCandidate",
+      "schema_ref": "#/$defs/DeckPatchCandidate",
+      "shape_owner": "P13",
+      "domain_producer": "P15",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "EnemyIntent",
+      "schema_ref": "#/$defs/EnemyIntent",
+      "shape_owner": "P13",
+      "domain_producer": "P16",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "PhaseProposal",
+      "schema_ref": "#/$defs/PhaseProposal",
+      "shape_owner": "P13",
+      "domain_producer": "P16",
+      "status": "FROZEN_ISOLATED"
+    },
+    {
+      "name": "PartySnapshot",
+      "schema_ref": "#/$defs/PartySnapshot",
+      "shape_owner": "P13",
+      "domain_producer": "P17",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "WalletSnapshot",
+      "schema_ref": "#/$defs/WalletSnapshot",
+      "shape_owner": "P13",
+      "domain_producer": "P17",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "WalletDeltaCandidate",
+      "schema_ref": "#/$defs/WalletDeltaCandidate",
+      "shape_owner": "P13",
+      "domain_producer": "P17",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "StudyStatusQuery",
+      "schema_ref": "#/$defs/StudyStatusQuery",
+      "shape_owner": "P13",
+      "domain_producer": "P11",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "CommitProofView",
+      "schema_ref": "#/$defs/CommitProofView",
+      "shape_owner": "P13",
+      "domain_producer": "P21",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "StudyStatusView",
+      "schema_ref": "#/$defs/StudyStatusView",
+      "shape_owner": "P13",
+      "domain_producer": "P11",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "AtomicCommitProposal",
+      "schema_ref": "#/$defs/AtomicCommitProposal",
+      "shape_owner": "P13",
+      "domain_producer": "P21",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "CommitLookupView",
+      "schema_ref": "#/$defs/CommitLookupView",
+      "shape_owner": "P13",
+      "domain_producer": "P21",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "StageProgressView",
+      "schema_ref": "#/$defs/StageProgressView",
+      "shape_owner": "P13",
+      "domain_producer": "P18",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "SaveStatusView",
+      "schema_ref": "#/$defs/SaveStatusView",
+      "shape_owner": "P13",
+      "domain_producer": "P21",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    },
+    {
+      "name": "AssetRef",
+      "schema_ref": "#/$defs/AssetRef",
+      "shape_owner": "P13",
+      "domain_producer": "P30",
+      "status": "ISOLATED_SHAPE_EXTERNAL_OWNER_RFC_PENDING"
+    }
+  ],
+  "binding_rule": "Provider authority comes from trusted composition and code ownership; a JSON role/owner/trusted flag never grants authority. These in-process guards are not a sandbox against malicious Python code.",
+  "source_of_truth": "P14 for battle; P17 for wallet business; P21 for storage proof. DTO validation is not proof of real Anki origin, durable commit, or awarded funds."
+}

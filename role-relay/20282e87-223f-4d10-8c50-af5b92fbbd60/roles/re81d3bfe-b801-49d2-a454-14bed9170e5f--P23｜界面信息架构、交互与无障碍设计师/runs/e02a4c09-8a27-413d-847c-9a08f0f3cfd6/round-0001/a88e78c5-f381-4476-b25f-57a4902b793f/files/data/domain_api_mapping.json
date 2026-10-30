@@ -1,0 +1,286 @@
+{
+  "schema_version": "P20-DOMAIN-MAPPING/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "related_contracts": [
+    "IC-10",
+    "IC-13",
+    "IC-21"
+  ],
+  "acceptance": "PREPARED_NOT_ACCEPTED",
+  "rows": [
+    {
+      "id": "P20-API-01",
+      "controls": [
+        "home.wallet",
+        "growth.balance",
+        "settlement.wallet"
+      ],
+      "owner": "P17",
+      "interface_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P17/character_party_runtime/service.py",
+        "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "MetaPlanner.wallet_snapshot",
+      "access": "READ_ONLY",
+      "binding": "wallet.profile_id/revision/resources from one immutable MetaSnapshot",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P13/P21 coherent read composition",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-02",
+      "controls": [
+        "characters.stats",
+        "growth.stats"
+      ],
+      "owner": "P17",
+      "interface_version": "P17-META/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P17/character_party_runtime/service.py",
+        "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "MetaPlanner.character_attributes",
+      "access": "READ_ONLY",
+      "binding": "character_id, source_revision and meta SHA; UI never computes attributes",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Formal display labels/assets and roster read projection",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-03",
+      "controls": [
+        "party.committed_slots",
+        "home.party"
+      ],
+      "owner": "P17",
+      "interface_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P17/character_party_runtime/service.py",
+        "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "MetaPlanner.party_snapshot",
+      "access": "READ_ONLY",
+      "binding": "P17 validates three owned distinct slots; view preserves state.party_slots order",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Accepted immutable party display DTO",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-04",
+      "controls": [
+        "growth.level_quote",
+        "growth.equipment_options"
+      ],
+      "owner": "P17",
+      "interface_version": "P17-META/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P17/character_party_runtime/content.py",
+        "sha256": "a3c04837bbe7d645f219c911a9e4482aa1f3a32f801b06347a1090e540cfc651"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "Catalog.cost / Catalog.equipment",
+      "access": "READ_ONLY",
+      "binding": "Exact configured costs and XP requirement; planner preview decides availability",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Accepted quote/read service; production catalog approval",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-05",
+      "controls": [
+        "party.save",
+        "growth.level_up",
+        "growth.set_equipment"
+      ],
+      "owner": "P17",
+      "interface_version": "P17-META/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P17/character_party_runtime/service.py",
+        "sha256": "e82a0c6dbcbee2a87880e3af2e64b5697a71c3ad61926ed50c5754480b03d1fa"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "command / MetaPlanner.plan / validate_for_commit",
+      "access": "UI_INTENT_TO_DOMAIN_SERVICE",
+      "binding": "Only IDs/ordered slots/rank range/equipment instances; candidate not success; exact revisions and hashes",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P13 command gateway and P21 physical commit",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-06",
+      "controls": [
+        "chapters.status",
+        "chapters.first_clear",
+        "chapters.review"
+      ],
+      "owner": "P18",
+      "interface_version": "P18-PROGRESS-VIEW/0.1.0-proposal",
+      "definition_source": {
+        "relative_path": "sources/P18/stage_runtime/projection.py",
+        "sha256": "eee49f368604cc1049b84e373d7bae6edf6310d4560c3d2e58fb8fdee0bee3df"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "progress_view",
+      "access": "READ_ONLY",
+      "binding": "stage revision/source_snapshot_sha256 and six statuses; preserve consumed separately",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P13 accepted extended progress DTO; do not downcast away quarantine",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-07",
+      "controls": [
+        "chapters.prepare",
+        "handoff.battle_id"
+      ],
+      "owner": "P18",
+      "interface_version": "P18-STAGES/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/stage_runtime/service.py",
+        "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "command(ENTER) / StagePlanner.plan",
+      "access": "UI_INTENT_TO_DOMAIN_SERVICE",
+      "binding": "UI passes stage_id; trusted coordinator supplies entry_ref/battle_id/seed",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P13/P18 trusted admission and P19 routing",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-08",
+      "controls": [
+        "settlement.claim",
+        "settlement.status"
+      ],
+      "owner": "P18",
+      "interface_version": "P18-STAGES/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/stage_runtime/service.py",
+        "sha256": "a39b772994d0796b112b621828d1c712c3957ca67f4095bbb87870982b7e3bad"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "command(SETTLE) / StagePlanner.lookup_terminal",
+      "access": "UI_INTENT_AND_READ_ONLY_LOOKUP",
+      "binding": "Only battle_id from UI; trusted coordinator resolves native result; no client reward amount",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P14 terminal proof and P21 atomic publication",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-09",
+      "controls": [
+        "settlement.joint_publication"
+      ],
+      "owner": "P18/P17/P21",
+      "interface_version": "P18-STAGES/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/stage_runtime/transactions.py",
+        "sha256": "f583cf6da8b5758fcec6a8c89c864bd8fdda037d15e223c5bbf4542ccd7ce9ce"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "prepare_atomic / validate_atomic",
+      "access": "TEST_COORDINATOR_ONLY",
+      "binding": "Fixture uses original P18 memory model to publish candidate; no P20 arithmetic",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Real P21 atomic transaction; fixture publisher cannot be promoted",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-10",
+      "controls": [
+        "home.learning",
+        "learning.query"
+      ],
+      "owner": "P11",
+      "interface_version": "ledger_runtime 0.1.0-isolated; Outcome proposal unaccepted",
+      "definition_source": {
+        "relative_path": "sources/P11/ledger_runtime/service.py",
+        "sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "StudyLedger.query(inbox_id)",
+      "access": "READ_ONLY",
+      "binding": "Original Outcome with state/reason/evidence_scope/receipt; no reward replay on refresh",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "P12 transport and trusted P21 commit proof",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-11",
+      "controls": [
+        "learning.transport",
+        "learning.pending_count"
+      ],
+      "owner": "P12/P11",
+      "interface_version": "P20-META-VIEW/0.1.0-proposal",
+      "definition_source": {
+        "relative_path": "ui/meta/model.mjs",
+        "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+      },
+      "source_kind": "P20_PROPOSAL_NOT_OWNER_API",
+      "symbol": "learningLabel / learning.connection",
+      "access": "UNBOUND_PROPOSAL",
+      "binding": "Connection vs ledger state separate; test fixture supplies metadata explicitly",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "No production transport API received",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-12",
+      "controls": [
+        "save_banner",
+        "all.mutation_enabled"
+      ],
+      "owner": "P21/P13",
+      "interface_version": "YLTT-INTERNAL/0.1.0-isolated",
+      "definition_source": {
+        "relative_path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+        "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+      },
+      "source_kind": "UPSTREAM_ORIGINAL",
+      "symbol": "SaveStatusView",
+      "access": "READ_ONLY",
+      "binding": "READY/READ_ONLY/MIGRATING/RECOVERY_REQUIRED/UNAVAILABLE; non-READY blocks mutation",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Real store/migration status producer absent",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    },
+    {
+      "id": "P20-API-13",
+      "controls": [
+        "pending.lookup",
+        "restart.recover"
+      ],
+      "owner": "P21/P13",
+      "interface_version": "P20-META-INTENT/0.1.0-proposal",
+      "definition_source": {
+        "relative_path": "ui/meta/controller.mjs",
+        "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+      },
+      "source_kind": "P20_PROPOSAL_NOT_OWNER_API",
+      "symbol": "lookup(original_intent)",
+      "access": "READ_ONLY_PROPOSAL",
+      "binding": "Same ID/payload/hash/binding; no new submit or new ID on UNKNOWN",
+      "production_status": "BLOCKED",
+      "missing_acceptance": "Durable receipt retention/absence proof and cross-session fence",
+      "fixture_adapter": "tests/meta_ui_unit/support/fixture_host.py"
+    }
+  ],
+  "domain_mutation_implementation_owner": [
+    "P17",
+    "P18",
+    "P21"
+  ],
+  "not_called_by_player_ui": [
+    "APPLY_GRANT",
+    "StudyLedger.receive",
+    "Anki API",
+    "P14 submit",
+    "save file writes"
+  ]
+}

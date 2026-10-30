@@ -1,0 +1,196 @@
+{
+  "version": "P23-LEARNING-UX/0.1.0-proposal",
+  "axes": [
+    "connection",
+    "ledger_record",
+    "wallet_proof"
+  ],
+  "entries": [
+    {
+      "ui_state_id": "L_DISCONNECTED",
+      "input_predicate": "connection disconnected; no record",
+      "label_zh": "Anki 未连接",
+      "body_zh": "连接恢复后可重新查询记录；已确认的游戏数据仍按当前视图显示。",
+      "non_color_cue": "断开链形 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_NO_RECORD",
+      "input_predicate": "connected; query absent",
+      "label_zh": "尚无可查询记录",
+      "body_zh": "连接可用；尚未取得可核验的学习记录。",
+      "non_color_cue": "空记录框 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_TRANSPORT_ONLY",
+      "input_predicate": "received/ack without applied proof",
+      "label_zh": "记录已接收，待核对",
+      "body_zh": "收到消息不代表奖励已入账。",
+      "non_color_cue": "收件框 + 待核对",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_QUARANTINED",
+      "input_predicate": "ledger QUARANTINED",
+      "label_zh": "待核对 · 已隔离",
+      "body_zh": "这条记录尚未计入可用奖励；无需改变 Anki 评分。",
+      "non_color_cue": "带暂停线的矩形 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_RECONCILIATION",
+      "input_predicate": "ledger PENDING_RECONCILIATION",
+      "label_zh": "记录待核对",
+      "body_zh": "正在核对记录与处理结果；请查看后续查询。",
+      "non_color_cue": "双框 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_REJECTED",
+      "input_predicate": "ledger REJECTED",
+      "label_zh": "本条记录未受理",
+      "body_zh": "查看原因；此状态不表示作弊，也不会由界面自动扣除资源。",
+      "non_color_cue": "带叉矩形 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_REVERTED",
+      "input_predicate": "ledger REVERTED",
+      "label_zh": "记录已撤回",
+      "body_zh": "撤回处理以已确认记录为准；当前可用资源请查看钱包。",
+      "non_color_cue": "回转箭头 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_APPLIED_SIMULATED",
+      "input_predicate": "APPLIED + P21_SIMULATOR/P21_SQLITE_ISOLATED",
+      "label_zh": "测试记录已处理",
+      "body_zh": "当前是隔离演练，不能作为正式学习收益。",
+      "non_color_cue": "条纹边框 + 演练",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_APPLIED_UNPROVEN",
+      "input_predicate": "APPLIED without accepted current proof",
+      "label_zh": "处理证明待核对",
+      "body_zh": "暂不能确认正式入账；请重新查询状态。",
+      "non_color_cue": "问号框 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_APPLIED_VERIFIED",
+      "input_predicate": "future accepted trusted gateway proof",
+      "label_zh": "已入账",
+      "body_zh": "处理已确认；可用资源以同一账户的当前钱包为准。",
+      "non_color_cue": "勾选框 + 已入账",
+      "formal_credit_label_allowed": true,
+      "current_execution_enabled": false,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "BLOCKED_PENDING_P13_P11_P17_P21_ACCEPTANCE"
+    },
+    {
+      "ui_state_id": "L_REDELIVERY",
+      "input_predicate": "pending transport queue > 0",
+      "label_zh": "等待补发",
+      "body_zh": "补发队列与奖励分别记录；待处理数量不是可用资源。",
+      "non_color_cue": "队列框 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    },
+    {
+      "ui_state_id": "L_LOOKUP_UNKNOWN",
+      "input_predicate": "query unavailable/identity mismatch",
+      "label_zh": "查询结果待确认",
+      "body_zh": "保留原记录，恢复连接后可再查询。",
+      "non_color_cue": "问号框 + 文字",
+      "formal_credit_label_allowed": false,
+      "current_execution_enabled": true,
+      "action": "read_only_query",
+      "ledger_enum_added": false,
+      "wallet_calculation": "NONE",
+      "formal_label_gate": "NOT_APPLICABLE"
+    }
+  ],
+  "forbidden": [
+    "infer reward from ACK",
+    "infer reward from connection",
+    "negative balance invention",
+    "manual force credit",
+    "prompt Easy for better loot",
+    "whole-wallet freeze from one quarantined record"
+  ],
+  "source_input_hashes": [
+    {
+      "source_id": "SRC-P08-POLICY",
+      "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e",
+      "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-POLICY/study_policy_draft.md"
+    },
+    {
+      "source_id": "SRC-P08-QUARANTINE",
+      "sha256": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d",
+      "package_relative_path": "design/ux/evidence/upstream/P08/SRC-P08-QUARANTINE/quarantine_resolution_policy.md"
+    },
+    {
+      "source_id": "SRC-P20-LEARNING",
+      "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+      "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-LEARNING/learning_status_ui_tests.md"
+    },
+    {
+      "source_id": "SRC-P21-P20-RECOVERY",
+      "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+      "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+    }
+  ]
+}

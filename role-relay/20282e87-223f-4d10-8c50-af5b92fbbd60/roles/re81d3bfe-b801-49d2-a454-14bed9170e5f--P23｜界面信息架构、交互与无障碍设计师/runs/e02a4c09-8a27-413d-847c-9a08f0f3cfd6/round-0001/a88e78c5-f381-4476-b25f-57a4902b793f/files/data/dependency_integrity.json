@@ -1,0 +1,30 @@
+{
+  "layer": "AUTHOR_DOWNLOADED_RENDERING_DEPENDENCIES_BYTE_CHECK",
+  "checks": [
+    {
+      "package": "@fontsource/noto-sans-jp",
+      "version": "5.3.1",
+      "registry_metadata_path": "design/ux/evidence/font_registry.json",
+      "tarball_url": "https://registry.npmjs.org/@fontsource/noto-sans-jp/-/noto-sans-jp-5.3.1.tgz",
+      "tarball_size_bytes": 82684375,
+      "tarball_sha256": "c49aebdeb73e95191af73119143cb00e6b5dd84f5bf1d03ebddacc8612fc55f9",
+      "integrity_expected": "sha512-9NNBB/M9PextLYVXGSfIaLZsPnrt5UDw8g2B6T0M775H2yb/oekApSjuS1XKOP7FPcMMEnTavR5rJGDM66qKtA==",
+      "integrity_computed": "sha512-9NNBB/M9PextLYVXGSfIaLZsPnrt5UDw8g2B6T0M775H2yb/oekApSjuS1XKOP7FPcMMEnTavR5rJGDM66qKtA==",
+      "result": "PASS",
+      "tarball_distributed": false
+    },
+    {
+      "package": "@sparticuz/chromium",
+      "version": "153.0.0",
+      "registry_metadata_path": "design/ux/evidence/browser_registry.json",
+      "tarball_url": "https://registry.npmjs.org/@sparticuz/chromium/-/chromium-153.0.0.tgz",
+      "tarball_size_bytes": 69995309,
+      "tarball_sha256": "20e5656fcdcf4118ede85edfb9d6bb9cc1bbb7ffb8b75622fffbcf36a835c3c0",
+      "integrity_expected": "sha512-jiGWqSvPMdu4+P9TilYqAR7yEGPEHINx+lCvE/NqNO/EHYzF/x1hUiI5T6ioVIt7dEy7n88byyT0vk+dnsgQwA==",
+      "integrity_computed": "sha512-jiGWqSvPMdu4+P9TilYqAR7yEGPEHINx+lCvE/NqNO/EHYzF/x1hUiI5T6ioVIt7dEy7n88byyT0vk+dnsgQwA==",
+      "result": "PASS",
+      "tarball_distributed": false
+    }
+  ],
+  "game_dependencies": false
+}

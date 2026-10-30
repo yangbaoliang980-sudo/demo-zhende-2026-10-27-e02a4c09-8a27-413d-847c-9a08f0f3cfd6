@@ -1,0 +1,599 @@
+{
+  "schema_version": "P23-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P23-S03-S06-UX-001",
+  "delivery_version": "P23-UX-A11Y/0.1.0-isolated",
+  "created_at_utc": "2026-10-30T11:30:20.362056+00:00",
+  "status": "AUTHOR_DESIGN_DELIVERED_PRODUCTION_INTEGRATION_BLOCKED",
+  "archive": {
+    "filename": "P23_UX_Accessibility_V0.1.zip",
+    "size_bytes": 9705884,
+    "sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+    "package_root": "P23_UX_Accessibility_V0.1",
+    "file_count": 172
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 5601,
+      "sha256": "8458c6a7203706f9dbbf8e8f9cfb880b56ec354961e18e70c874471058dd43d8"
+    },
+    {
+      "filename": "P23_delivery_report.md",
+      "package_relative_path": "P23_delivery_report.md",
+      "size_bytes": 5561,
+      "sha256": "322fb9ae2d90267badc9b94d582e5206e0667e8a67f773c8efddb0cd54eb9c9b"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "source_input_receipt.json",
+      "size_bytes": 131634,
+      "sha256": "9af27d7b9137a7ef69bc65f4ad72de27146f81606473ad7149d7f3e6cf499d7b"
+    },
+    {
+      "filename": "actual_path_request.json",
+      "package_relative_path": "actual_path_request.json",
+      "size_bytes": 1575,
+      "sha256": "1f04f11c9ca2db6ff823b8e39e4f6dfe7f9b4ece640addcabad684258d0bb7eb"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "interface_rfcs.json",
+      "size_bytes": 10634,
+      "sha256": "342c25da9223eacab24e254a16bc6e844261c3ed1ad30e4cf1b07335a7b38bfd"
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "size_bytes": 2336,
+      "sha256": "805c9bec9630978e1900e7b63223f22f8f082c39812e944a73b9cd90b212fa65"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "size_bytes": 433844,
+      "sha256": "5839c59c5c5857eed16fa198d778260ff56d7301c913e6547224fecccb62c467"
+    },
+    {
+      "filename": "ux_anchor_contract.json",
+      "package_relative_path": "design/ux/ux_anchor_contract.json",
+      "size_bytes": 93415,
+      "sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608"
+    },
+    {
+      "filename": "ui_state_map.json",
+      "package_relative_path": "design/ux/ui_state_map.json",
+      "size_bytes": 86849,
+      "sha256": "acb52d76a2ac26a02dcf0b214fd0cedd2b22da54745d9df75b02bff26bf53ec4"
+    },
+    {
+      "filename": "interaction_state_matrix.tsv",
+      "package_relative_path": "design/ux/interaction_state_matrix.tsv",
+      "size_bytes": 17564,
+      "sha256": "de01956efb62d3fe896680f56003eeba982af8f06f7e35bd4f660664802f44c2"
+    },
+    {
+      "filename": "keyboard_focus_matrix.tsv",
+      "package_relative_path": "design/ux/keyboard_focus_matrix.tsv",
+      "size_bytes": 45867,
+      "sha256": "6f97890dae51e4a1c42eee876da8060b83e6e8f0cb8748469688c835fc8b2eba"
+    },
+    {
+      "filename": "focus_graph.json",
+      "package_relative_path": "design/ux/focus_graph.json",
+      "size_bytes": 3825,
+      "sha256": "d47f44c257b09307a55f48207abf28b92b8f4d9ec47a6fa299deae51e6a29685"
+    },
+    {
+      "filename": "information_architecture.md",
+      "package_relative_path": "design/ux/information_architecture.md",
+      "size_bytes": 5546,
+      "sha256": "931f7e3df09a2a306b279c09f99b464dd008577e65a47107f77a3c6877098344"
+    },
+    {
+      "filename": "information_architecture.json",
+      "package_relative_path": "design/ux/information_architecture.json",
+      "size_bytes": 5713,
+      "sha256": "47371f85b2039a39d135f1e5f7566d6b1ce7ead53e13231fbb2f1bc9a370ef64"
+    },
+    {
+      "filename": "interaction_spec.md",
+      "package_relative_path": "design/ux/interaction_spec.md",
+      "size_bytes": 8868,
+      "sha256": "491e15fc912b2ba615751c6b8ff5d645b03a03bbe96635f9370650660aea8dd6"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "package_relative_path": "design/ux/integration_handoff.md",
+      "size_bytes": 5853,
+      "sha256": "76a7b43b9e9e9ce73efa52eb204ef302830645bd3103d3923736e332e599d3e6"
+    },
+    {
+      "filename": "author_walkthrough.md",
+      "package_relative_path": "design/ux/author_walkthrough.md",
+      "size_bytes": 5508,
+      "sha256": "5b0fa10dc4c053b1a7813df536f725f18382d4bdd1db96fc67d17bc19de1a0c1"
+    },
+    {
+      "filename": "blocker_register.json",
+      "package_relative_path": "design/ux/blocker_register.json",
+      "size_bytes": 3677,
+      "sha256": "07959a725220d21dfec2e1db20ae812b68aeb290ec5507d93e92cb0e3bcafeb4"
+    },
+    {
+      "filename": "anchor_compatibility.tsv",
+      "package_relative_path": "design/ux/anchor_compatibility.tsv",
+      "size_bytes": 2277,
+      "sha256": "e1b18451b439c2853a805f1b1909207669c17cc3bfce8bc48807c911d88cbf53"
+    },
+    {
+      "filename": "typography_accessibility_spec.md",
+      "package_relative_path": "design/accessibility/typography_accessibility_spec.md",
+      "size_bytes": 7400,
+      "sha256": "65c25aebd992553aca4c856acea83d081c8481597c653d8b3c05deb72a59d84b"
+    },
+    {
+      "filename": "reduced_motion_cases.md",
+      "package_relative_path": "design/accessibility/reduced_motion_cases.md",
+      "size_bytes": 5419,
+      "sha256": "5404d0590088cbd8af30cda3078cd28f35960909cd42ef098f015b82d537d08f"
+    },
+    {
+      "filename": "ux_acceptance_tasks.tsv",
+      "package_relative_path": "design/accessibility/ux_acceptance_tasks.tsv",
+      "size_bytes": 11543,
+      "sha256": "7f996795b9be99c57d30ef6e8b39f70781c129df98d32b99527c2124aa895ca5"
+    },
+    {
+      "filename": "accessibility_tokens.json",
+      "package_relative_path": "design/accessibility/accessibility_tokens.json",
+      "size_bytes": 2462,
+      "sha256": "7fde54f966f4c99b0fc7791b1589f283b193aa5266533f6c05b1e5f125e4103c"
+    },
+    {
+      "filename": "typography_test_strings.json",
+      "package_relative_path": "design/accessibility/typography_test_strings.json",
+      "size_bytes": 3040,
+      "sha256": "4c8f63a8c13ce39e591352adbdb2af727a8ca49ebcf37d83dbb32dc25fe89460"
+    },
+    {
+      "filename": "P23_wireframe_review.html",
+      "package_relative_path": "design/ux/P23_wireframe_review.html",
+      "size_bytes": 167416,
+      "sha256": "67489af7eef387da812ab48eff29309c413af242b2399204b45dff19565466e1"
+    },
+    {
+      "filename": "W01_Battle_Ready.png",
+      "package_relative_path": "design/ux/wireframes/W01_Battle_Ready.png",
+      "size_bytes": 193729,
+      "sha256": "f9a34b1feb53e7c250dcd5fc3f831c12385f63fd9d53c23f67eebed0dd134e2f"
+    },
+    {
+      "filename": "W02_Battle_Target.png",
+      "package_relative_path": "design/ux/wireframes/W02_Battle_Target.png",
+      "size_bytes": 197899,
+      "sha256": "4853f978c0336290368b49e2a7a495dfd3278a2a4098bf917f454282471a4784"
+    },
+    {
+      "filename": "W10_Learning_Quarantine.png",
+      "package_relative_path": "design/ux/wireframes/W10_Learning_Quarantine.png",
+      "size_bytes": 163357,
+      "sha256": "1d61a1870dbccfffb8fe348c0410c0d879d24926e11548a79967d935a4d75369"
+    },
+    {
+      "filename": "W16_Typography.png",
+      "package_relative_path": "design/ux/wireframes/W16_Typography.png",
+      "size_bytes": 150673,
+      "sha256": "581af344badcdfea8f77f8a063d5e119763072e6de89cf7ed54ec7104c6a98fb"
+    },
+    {
+      "filename": "W01_Battle_Ready.svg",
+      "package_relative_path": "design/ux/wireframes/W01_Battle_Ready.svg",
+      "size_bytes": 12817,
+      "sha256": "f37684e95f5f68981b1cd5401e306f7575b531643fcf293502de5d44a04562c7"
+    },
+    {
+      "filename": "W02_Battle_Target.svg",
+      "package_relative_path": "design/ux/wireframes/W02_Battle_Target.svg",
+      "size_bytes": 13052,
+      "sha256": "74d6e600e5937c928b45696e0913699f71b7de2308c2636c213f09a0308c3dc2"
+    },
+    {
+      "filename": "W10_Learning_Quarantine.svg",
+      "package_relative_path": "design/ux/wireframes/W10_Learning_Quarantine.svg",
+      "size_bytes": 8610,
+      "sha256": "5cedb0c2930b44a32db6e2fa8de3372a039171922285bf2039146e6bced8d925"
+    },
+    {
+      "filename": "W16_Typography.svg",
+      "package_relative_path": "design/ux/wireframes/W16_Typography.svg",
+      "size_bytes": 5130,
+      "sha256": "7266bf57ca738a43f014e6f77b8c835717a9c1d69909bfee763cb038a4871356"
+    }
+  ],
+  "export_count": 33,
+  "manifest": {
+    "package_relative_path": "delivery_manifest.json",
+    "size_bytes": 433844,
+    "sha256": "5839c59c5c5857eed16fa198d778260ff56d7301c913e6547224fecccb62c467",
+    "listed_file_count": 171,
+    "self_excluded": true
+  },
+  "integrity": {
+    "zip_crc": "PASS",
+    "archive_members_byte_equal_to_generation_directory": 172,
+    "exports_same_name_same_bytes_as_archive": 33,
+    "extracted_file_count": 172,
+    "package_unchanged_after_checks": true,
+    "filename_renames": []
+  },
+  "fresh_extraction_reproduction": {
+    "working_directory_relative": "P23_UX_Accessibility_V0.1",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "design/ux/validation/validate_design.py",
+      "--output",
+      "../fresh_validation"
+    ],
+    "exit_code": 0,
+    "stdout": "D01_SOURCE_BYTE_INTEGRITY: PASS\nD02_ANCHOR_ID_AUTHORITY_AND_LEGACY: PASS\nD03_FOCUS_GRAPH_AND_FALLBACKS: PASS\nD04_STATE_COMPLETENESS_AND_NOT_RUN: PASS\nD05_LEARNING_PROOF_SEPARATION: PASS\nD06_SOURCE_BINDINGS: PASS\nD07_SCREEN_WIDGET_STATE_ANCHOR_MAP: PASS\nD08_IA_EXISTING_SCOPE_AND_PATH: PASS\nD09_SVG_ANCHORS_HIT_AREAS_AND_PNGS: PASS\nD10_RENDER_PROVENANCE_AND_BOUNDS: PASS\nD11_LOW_FIDELITY_TOKEN_CONTRAST: PASS\nD12_MEASURABLE_UNRUN_ACCEPTANCE_TASKS: PASS\nD13_REQUIREMENT_TRACEABILITY: PASS\nD14_ISOLATED_WRITE_BOUNDARY: PASS\nD15_RFC_BASES_AND_NO_OVERWRITE: PASS\nD16_REQUIRED_ENTITY_DELIVERABLES: PASS\nD17_FONT_PROVENANCE_AND_EXPECTED_FALLBACK: PASS\nD18_LAYERED_CLAIM_BOUNDARY: PASS\nD20_BATTLE_RETRY_VERSUS_READ_ONLY_QUERY: PASS\nN01_DUPLICATE_ANCHOR_REJECTED: PASS\nN02_BUSINESS_WRITE_REJECTED: PASS\nN03_LEGACY_ID_REWRITE_REJECTED: PASS\nN04_QUARANTINE_CREDIT_REJECTED: PASS\nN05_UNACCEPTED_FORMAL_GATE_REJECTED: PASS\nN06_BROKEN_FOCUS_EDGE_REJECTED: PASS\nN07_MISSING_UNKNOWN_STATE_REJECTED: PASS\nN08_PATH_ESCAPE_REJECTED: PASS\nN09_BATTLE_RETRY_FALSE_READ_ONLY_REJECTED: PASS\nD19_MANIFEST_ALL_FILES: PASS\n{\"result\": \"PASS\", \"checks\": 20, \"negative_probes\": 9, \"passed\": 29, \"failed\": 0, \"layer\": \"AUTHOR_STATIC_DESIGN_VALIDATION\"}\n",
+    "stderr": "",
+    "result": {
+      "layer": "AUTHOR_STATIC_DESIGN_VALIDATION",
+      "game_ui_executed": false,
+      "independent_review": false,
+      "started_utc": "2026-10-30T11:30:20.200675+00:00",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "command": [
+        "design/ux/validation/validate_design.py",
+        "--output",
+        "../fresh_validation"
+      ],
+      "validator_sha256": "8ac59fb8ffbd6655a56780acda74c377ddaf4da8e42e472fd452e552972dcc99",
+      "checks": [
+        {
+          "id": "D01_SOURCE_BYTE_INTEGRITY",
+          "result": "PASS",
+          "detail": 56
+        },
+        {
+          "id": "D02_ANCHOR_ID_AUTHORITY_AND_LEGACY",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D03_FOCUS_GRAPH_AND_FALLBACKS",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D04_STATE_COMPLETENESS_AND_NOT_RUN",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D05_LEARNING_PROOF_SEPARATION",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D06_SOURCE_BINDINGS",
+          "result": "PASS",
+          "detail": 100
+        },
+        {
+          "id": "D07_SCREEN_WIDGET_STATE_ANCHOR_MAP",
+          "result": "PASS",
+          "detail": 79
+        },
+        {
+          "id": "D08_IA_EXISTING_SCOPE_AND_PATH",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D09_SVG_ANCHORS_HIT_AREAS_AND_PNGS",
+          "result": "PASS",
+          "detail": 18
+        },
+        {
+          "id": "D10_RENDER_PROVENANCE_AND_BOUNDS",
+          "result": "PASS",
+          "detail": {
+            "browser": "153.0.8010.0",
+            "boards": 18
+          }
+        },
+        {
+          "id": "D11_LOW_FIDELITY_TOKEN_CONTRAST",
+          "result": "PASS",
+          "detail": 6
+        },
+        {
+          "id": "D12_MEASURABLE_UNRUN_ACCEPTANCE_TASKS",
+          "result": "PASS",
+          "detail": 31
+        },
+        {
+          "id": "D13_REQUIREMENT_TRACEABILITY",
+          "result": "PASS",
+          "detail": 17
+        },
+        {
+          "id": "D14_ISOLATED_WRITE_BOUNDARY",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D15_RFC_BASES_AND_NO_OVERWRITE",
+          "result": "PASS",
+          "detail": 6
+        },
+        {
+          "id": "D16_REQUIRED_ENTITY_DELIVERABLES",
+          "result": "PASS",
+          "detail": 8
+        },
+        {
+          "id": "D17_FONT_PROVENANCE_AND_EXPECTED_FALLBACK",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D18_LAYERED_CLAIM_BOUNDARY",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D20_BATTLE_RETRY_VERSUS_READ_ONLY_QUERY",
+          "result": "PASS",
+          "detail": null
+        },
+        {
+          "id": "D19_MANIFEST_ALL_FILES",
+          "result": "PASS",
+          "detail": 171
+        }
+      ],
+      "negative_probes": [
+        {
+          "id": "N01_DUPLICATE_ANCHOR_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: duplicate anchor_id"
+        },
+        {
+          "id": "N02_BUSINESS_WRITE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: UX may not write business state"
+        },
+        {
+          "id": "N03_LEGACY_ID_REWRITE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: card id rewritten"
+        },
+        {
+          "id": "N04_QUARANTINE_CREDIT_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: false formal credit label"
+        },
+        {
+          "id": "N05_UNACCEPTED_FORMAL_GATE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: unproven production gate enabled"
+        },
+        {
+          "id": "N06_BROKEN_FOCUS_EDGE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: broken next focus edge"
+        },
+        {
+          "id": "N07_MISSING_UNKNOWN_STATE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: required exception state missing"
+        },
+        {
+          "id": "N08_PATH_ESCAPE_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: unsafe path: ../elsewhere"
+        },
+        {
+          "id": "N09_BATTLE_RETRY_FALSE_READ_ONLY_REJECTED",
+          "result": "PASS",
+          "detail": "ValueError: P19 same-ID command resend incorrectly marked read-only"
+        }
+      ],
+      "contrast": [
+        {
+          "id": "normal",
+          "ratio": 15.269885,
+          "minimum": 4.5
+        },
+        {
+          "id": "secondary",
+          "ratio": 7.940806,
+          "minimum": 4.5
+        },
+        {
+          "id": "surface_text",
+          "ratio": 13.858368,
+          "minimum": 4.5
+        },
+        {
+          "id": "disabled_reason",
+          "ratio": 6.753679,
+          "minimum": 4.5
+        },
+        {
+          "id": "focus_on_white",
+          "ratio": 5.984935,
+          "minimum": 3
+        },
+        {
+          "id": "outline",
+          "ratio": 5.190517,
+          "minimum": 3
+        }
+      ],
+      "manifest_check": "EXECUTED",
+      "summary": {
+        "checks": 20,
+        "negative_probes": 9,
+        "passed": 29,
+        "failed": 0
+      },
+      "counts": {
+        "anchors": 79,
+        "ui_states": 52,
+        "focus_rows": 52,
+        "wireframes": 18,
+        "acceptance_tasks": 31,
+        "fixed_sources": 56
+      },
+      "result": "PASS",
+      "ended_utc": "2026-10-30T11:30:20.271105+00:00"
+    },
+    "production_preflight_command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "design/ux/validation/validate_design.py",
+      "--preflight",
+      "--output",
+      "../fresh_preflight"
+    ],
+    "production_preflight_exit_code": 3,
+    "production_preflight_stdout": "PRODUCTION_READINESS: BLOCKED (exit 3)\n",
+    "production_preflight_stderr": "",
+    "production_preflight_result": {
+      "layer": "PRODUCTION_READINESS_PREFLIGHT",
+      "game_ui_executed": false,
+      "independent_review": false,
+      "started_utc": "2026-10-30T11:30:20.319576+00:00",
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "command": [
+        "design/ux/validation/validate_design.py",
+        "--preflight",
+        "--output",
+        "../fresh_preflight"
+      ],
+      "validator_sha256": "8ac59fb8ffbd6655a56780acda74c377ddaf4da8e42e472fd452e552972dcc99",
+      "checks": [],
+      "negative_probes": [],
+      "contrast": [],
+      "blockers": [
+        {
+          "id": "BLK-01",
+          "followup_owner": "P13",
+          "missing": "实际工程路径与写授权",
+          "required_evidence": "actual_path_mapping with fixed real project commit; P23 design paths; allowlist/do_not_touch",
+          "status": "BLOCKED",
+          "blocked_claim": "所有正式工程写入、实际接入",
+          "rfc_id": "P23-RFC-001"
+        },
+        {
+          "id": "BLK-02",
+          "followup_owner": "P01",
+          "missing": "阶段范围与交互提案批准",
+          "required_evidence": "S03 receiver version; end-turn review scope; candidate layout adoption; MVP content counts decision",
+          "status": "BLOCKED",
+          "blocked_claim": "正式布局/交互基线冻结",
+          "rfc_id": "P23-RFC-003"
+        },
+        {
+          "id": "BLK-03",
+          "followup_owner": "P34",
+          "missing": "目标显示与执行环境",
+          "required_evidence": "engine/OS/build entry; display physical pixels; DPI/logical viewport; locale/input/device matrix with evidence",
+          "status": "BLOCKED",
+          "blocked_claim": "字号、截断、缩放与真机验收",
+          "rfc_id": "P23-RFC-003"
+        },
+        {
+          "id": "BLK-04",
+          "followup_owner": "P25",
+          "missing": "正式视觉基础",
+          "required_evidence": "versioned typography/color/portrait safe zones + editable asset handoff and hashes",
+          "status": "BLOCKED",
+          "blocked_claim": "正式美术/风格验收；低保真可继续",
+          "rfc_id": "P23-RFC-006"
+        },
+        {
+          "id": "BLK-05",
+          "followup_owner": "P13",
+          "missing": "权威敌方意图只读接口",
+          "required_evidence": "approved DTO/producer binding with snapshot revision/target semantics; P19 accepted usage",
+          "status": "BLOCKED",
+          "blocked_claim": "把候选/脚本意图称为权威预告",
+          "rfc_id": "P23-RFC-004"
+        },
+        {
+          "id": "BLK-06",
+          "followup_owner": "P13",
+          "missing": "P20 与 P21 正式适配",
+          "required_evidence": "outer intent to domain command mapping; lookup proof; accepted gateway; P20 durable capability; separately P19/P14/P21 production pending recovery, dedup retention, and identity continuity after full reload",
+          "status": "BLOCKED",
+          "blocked_claim": "未知操作正式恢复、真实余额证明",
+          "rfc_id": "P23-RFC-005"
+        },
+        {
+          "id": "BLK-07",
+          "followup_owner": "P29",
+          "missing": "表现锚点接口受理",
+          "required_evidence": "IC-23 accepted version preserving legacy ids/rects; source-card disappearance fallback",
+          "status": "BLOCKED",
+          "blocked_claim": "演出契约集成",
+          "rfc_id": "P23-RFC-002"
+        },
+        {
+          "id": "BLK-08",
+          "followup_owner": "P01",
+          "missing": "真实 Anki 奖励决策",
+          "required_evidence": "P08 policy decisions + P12/P11/P17/P21 end-to-end evidence on approved Anki environment",
+          "status": "BLOCKED",
+          "blocked_claim": "学习已正式入账的用户承诺",
+          "rfc_id": "P23-RFC-005"
+        },
+        {
+          "id": "BLK-09",
+          "followup_owner": "P35",
+          "missing": "独立证据门禁",
+          "required_evidence": "P32 independent result, P33 usability, P25 style/P37 license if applicable, reviewed candidate",
+          "status": "NOT_RUN",
+          "blocked_claim": "独立通过/发布结论",
+          "rfc_id": "P23-RFC-006"
+        },
+        {
+          "id": "BLK-10",
+          "followup_owner": "USER",
+          "missing": "整合人员指定",
+          "required_evidence": "explicitly authorized EXT-INTEGRATOR and integration scope",
+          "status": "BLOCKED",
+          "blocked_claim": "跨模块合并、整游戏发布",
+          "rfc_id": "P23-RFC-001"
+        }
+      ],
+      "production_write_authorized": false,
+      "result": "BLOCKED",
+      "exit_code": 3,
+      "explanation": "This isolated package never grants production authorization; resolve the named owner evidence before integration."
+    }
+  },
+  "layer_boundary": {
+    "all_checks_in_this_receipt": "P23_AUTHOR_STATIC_DESIGN_AND_ARCHIVE_ONLY",
+    "P32": "NOT_RUN",
+    "P33": "NOT_RUN",
+    "P35": "NOT_RUN",
+    "P25": "NOT_RUN",
+    "P37": "NOT_RUN",
+    "physical_target_device": "NOT_RUN",
+    "real_Anki_E2E": "NOT_RUN",
+    "cross_module_integration": "BLOCKED"
+  },
+  "provenance": {
+    "source_input_receipt_package_path": "source_input_receipt.json",
+    "source_input_receipt_sha256": "9af27d7b9137a7ef69bc65f4ad72de27146f81606473ad7149d7f3e6cf499d7b",
+    "p22_fixed_commit": "0b3333a56f6359fd78b150efbb9429d3bb075ada",
+    "roles_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641"
+  },
+  "receipt_note": "Receipt is outside the ZIP to bind archive/manifest without a circular hash. Exports are exact unrenamed archive bytes. It does not confer production authorization."
+}

@@ -1,0 +1,42 @@
+{
+  "version": "P23-FONTS/0.1.0",
+  "fonts": [
+    {
+      "font_path": "design/accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "sha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "size_bytes": 1142552,
+      "license_path": "design/accessibility/fonts/NotoSC_LICENSE.txt",
+      "license_sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "source": "Verified P19 delivery font bytes; source archive bab95fd7337b10da4257c7171f0dc21eea14e830631d25da4cb65d7f55c23093; no asserted npm package version",
+      "version": "upstream P19 original bytes",
+      "usage": "DESIGN_PREVIEW_ONLY",
+      "P25_style": "NOT_RUN",
+      "P37_license_review": "NOT_RUN"
+    },
+    {
+      "font_path": "design/accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2",
+      "sha256": "5ae4b6b5f176a590babe96d6bb62ee8805f4ddf15877738eda807db1fa20f136",
+      "size_bytes": 1132964,
+      "license_path": "design/accessibility/fonts/NotoJP_LICENSE.txt",
+      "license_sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "source": "https://registry.npmjs.org/@fontsource/noto-sans-jp/-/noto-sans-jp-5.3.1.tgz; registry dist.integrity verified before extraction",
+      "version": "@fontsource/noto-sans-jp 5.3.1",
+      "usage": "DESIGN_PREVIEW_ONLY",
+      "P25_style": "NOT_RUN",
+      "P37_license_review": "NOT_RUN"
+    },
+    {
+      "font_path": "design/accessibility/fonts/DejaVuSans.ttf",
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "size_bytes": 759720,
+      "license_path": "design/accessibility/fonts/DejaVu_LICENSE.txt",
+      "license_sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "source": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf and /usr/share/doc/fonts-dejavu-core/copyright in author runtime",
+      "version": "system DejaVu font; exact version in bundled font name table",
+      "usage": "DESIGN_PREVIEW_ONLY",
+      "P25_style": "NOT_RUN",
+      "P37_license_review": "NOT_RUN"
+    }
+  ],
+  "policy": "Original unmodified bytes; included notices; production font selection/license gate pending."
+}

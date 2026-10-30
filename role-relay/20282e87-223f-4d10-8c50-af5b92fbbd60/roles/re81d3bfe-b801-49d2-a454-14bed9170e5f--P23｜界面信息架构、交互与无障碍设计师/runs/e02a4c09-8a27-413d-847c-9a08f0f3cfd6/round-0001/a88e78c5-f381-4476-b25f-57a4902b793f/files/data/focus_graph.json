@@ -1,0 +1,120 @@
+{
+  "version": "P23-FOCUS/0.1.0-proposal",
+  "groups": {
+    "battle": [
+      "ux.battle.command.refresh",
+      "ux.battle.motion",
+      "ux.battle.skip_motion",
+      "ux.battle.log_open",
+      "ux.battle.hand.{card_key}",
+      "ux.battle.card_details",
+      "ux.battle.enemy.{unit_key}",
+      "ux.battle.party.{unit_key}",
+      "ux.battle.target_details",
+      "ux.battle.command.cancel",
+      "ux.battle.command.play",
+      "ux.battle.command.end_turn"
+    ],
+    "home": [
+      "ux.home.party_cta",
+      "ux.home.chapters_cta",
+      "ux.home.learning_cta",
+      "ux.home.chapter_summary_cta"
+    ],
+    "characters": [
+      "ux.characters.item.{character_key}"
+    ],
+    "party": [
+      "ux.party.slot.{slot}",
+      "ux.party.restore",
+      "ux.party.save"
+    ],
+    "growth": [
+      "ux.growth.character.{character_key}",
+      "ux.meta.lookup",
+      "ux.growth.upgrade"
+    ],
+    "chapters": [
+      "ux.chapters.stage.{stage_key}",
+      "ux.chapters.enter.{stage_key}"
+    ],
+    "handoff": [
+      "ux.handoff.refresh",
+      "ux.handoff.return"
+    ],
+    "settlement": [
+      "ux.settlement.lookup",
+      "ux.settlement.claim",
+      "ux.settlement.return"
+    ],
+    "learning": [
+      "ux.learning.refresh",
+      "ux.learning.details"
+    ],
+    "growth_dialog": [
+      "ux.growth.dialog_cancel",
+      "ux.growth.dialog_confirm"
+    ],
+    "end_turn_review": [
+      "ux.battle.end_cancel",
+      "ux.battle.end_confirm"
+    ],
+    "battle_unknown": [
+      "ux.battle.command.lookup",
+      "ux.battle.command.refresh",
+      "ux.battle.log_open",
+      "ux.battle.motion"
+    ],
+    "global_meta_nav": [
+      "ux.nav.home",
+      "ux.nav.characters",
+      "ux.nav.party",
+      "ux.nav.growth",
+      "ux.nav.chapters",
+      "ux.nav.settlement",
+      "ux.nav.learning"
+    ],
+    "global_meta_toolbar": [
+      "ux.meta.refresh"
+    ],
+    "battle_terminal": [
+      "ux.battle.log_open",
+      "ux.battle.motion",
+      "ux.battle.result_route"
+    ],
+    "battle_log": [
+      "ux.battle.log"
+    ]
+  },
+  "modal_scopes": [
+    "growth_dialog"
+  ],
+  "inline_confirmation_scopes": [
+    "end_turn_review"
+  ],
+  "cycle_note": "JSON cycle means in-game focus loop; browser-level Tab must remain escapable. Only modal traps until Esc/cancel. Native select arrows follow platform; never override IME/composition.",
+  "global_rules": [
+    "no positive tabindex",
+    "focus visibility >=3px proposed outline",
+    "hover does not steal keyboard focus",
+    "window blur/hot-unplug never confirms",
+    "held key at focus transfer ignored until release",
+    "no single-letter global shortcuts",
+    "do not move focus merely because an announcement arrives",
+    "disable submit synchronously before send",
+    "do not skip inaccessible reason when disabled control is skipped"
+  ],
+  "composition": {
+    "meta_pages": "global_meta_nav -> global_meta_toolbar -> current screen local group; unknown adds meta.lookup near persistent banner; no Tab loop at browser boundary",
+    "battle": "active state chooses battle/battle_unknown/battle_terminal; log expansion is inline; growth_dialog is the only modal scope",
+    "conditional_controls": "skip absent/disabled action; retain adjacent reason/detail; pending lookup appears only with retained operation",
+    "gamepad_boundary": "end-to-start graph edge applies to in-game logical D-pad focus only, not mandatory browser Tab capture"
+  },
+  "scene_entry": {
+    "battle": "ux.battle.heading then first relevant visible control; pending -> lookup",
+    "meta": "page heading programmatic focus once after user navigation; never on passive refresh",
+    "growth_dialog": "ux.growth.dialog_cancel",
+    "end_turn_review": "ux.battle.end_cancel",
+    "terminal": "announce outcome once; do not trigger route automatically"
+  }
+}

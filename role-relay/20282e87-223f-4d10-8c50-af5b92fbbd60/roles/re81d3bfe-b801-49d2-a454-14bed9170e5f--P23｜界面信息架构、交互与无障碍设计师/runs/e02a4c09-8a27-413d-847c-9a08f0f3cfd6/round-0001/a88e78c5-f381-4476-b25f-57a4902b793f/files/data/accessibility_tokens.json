@@ -1,0 +1,102 @@
+{
+  "version": "P23-A11Y-TOKENS/0.1.0-proposal",
+  "target_approval": "P01/P34_PENDING",
+  "unit": "logical px, CSS px in author design viewer",
+  "type": {
+    "heading": 28,
+    "section": 22,
+    "critical": 20,
+    "body": 18,
+    "support": 16,
+    "line_height_body": 1.55,
+    "line_height_japanese": 1.6,
+    "ruby_ratio": 0.6,
+    "critical_ellipsis_allowed": false,
+    "font_autoshrink_allowed": false
+  },
+  "layout": {
+    "reference_viewport": [
+      1280,
+      720
+    ],
+    "secondary_candidates": [
+      [
+        1600,
+        900
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "safe_margin": 24,
+    "min_hit_width": 44,
+    "min_hit_height": 44,
+    "gap": 12,
+    "focus_outline": 3,
+    "focus_offset": 3,
+    "narrow_review_only": [
+      960,
+      720
+    ],
+    "390_screenshot_meaning": "upstream responsive stress evidence only; mobile scope not approved"
+  },
+  "colors": {
+    "paper": "#ffffff",
+    "surface": "#f2f4f7",
+    "ink": "#1b2635",
+    "secondary": "#445266",
+    "line": "#626e7d",
+    "focus": "#005fcc",
+    "disabled_text": "#445266",
+    "disabled_surface": "#e9edf2"
+  },
+  "contrast_pairs": [
+    {
+      "id": "normal",
+      "fg": "ink",
+      "bg": "paper",
+      "min_ratio": 4.5
+    },
+    {
+      "id": "secondary",
+      "fg": "secondary",
+      "bg": "paper",
+      "min_ratio": 4.5
+    },
+    {
+      "id": "surface_text",
+      "fg": "ink",
+      "bg": "surface",
+      "min_ratio": 4.5
+    },
+    {
+      "id": "disabled_reason",
+      "fg": "disabled_text",
+      "bg": "disabled_surface",
+      "min_ratio": 4.5
+    },
+    {
+      "id": "focus_on_white",
+      "fg": "focus",
+      "bg": "paper",
+      "min_ratio": 3
+    },
+    {
+      "id": "outline",
+      "fg": "line",
+      "bg": "paper",
+      "min_ratio": 3
+    }
+  ],
+  "motion": {
+    "normal": "P29 candidate, final state first",
+    "fast": "changes presentation only",
+    "reduced": "static final values + persistent result log; no travel/shake/flash/number tween",
+    "none": "all optional motion/audio/haptics off",
+    "os_preference": "if reduce is observed, choose reduced initially; explicit per-session normal override never automatic",
+    "fullscreen_flash_allowed": false,
+    "input_unlock_waits_for_animation": false
+  },
+  "standards_note": "WCAG 2.2 is a web reference, adapted as desktop design targets, not conformance certification. 44px/18px/20px are project proposals, not claimed AA minima."
+}

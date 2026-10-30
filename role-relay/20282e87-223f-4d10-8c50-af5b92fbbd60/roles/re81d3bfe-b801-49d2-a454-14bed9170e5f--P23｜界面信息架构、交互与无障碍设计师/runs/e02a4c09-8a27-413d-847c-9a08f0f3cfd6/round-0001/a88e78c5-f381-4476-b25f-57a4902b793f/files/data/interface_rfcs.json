@@ -1,0 +1,263 @@
+{
+  "task_id": "P23-S03-S06-UX-001",
+  "rfcs": [
+    {
+      "rfc_id": "P23-RFC-001",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P13",
+      "subject": "正式路径与UX静态工件落位",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-P13-PATH",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+          "package_relative_path": "design/ux/evidence/upstream/P13/SRC-P13-PATH/actual_path_mapping.json"
+        },
+        {
+          "source_id": "SRC-V6-ROLES",
+          "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+          "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-ROLES/第六轮_全部岗位职责_可复制版V6.0.txt"
+        }
+      ],
+      "p23_artifacts": [
+        "actual_path_request.json"
+      ],
+      "acceptance": [
+        "actual game fixed commit",
+        "two allowed actual design paths",
+        "write whitelist and do_not_touch",
+        "no cross-module merge by P23"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+          "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "rfc_id": "P23-RFC-002",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P29",
+      "subject": "IC-23锚点语义与P19现有坐标包兼容",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-P19-ADAPTER",
+          "sha256": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-ADAPTER/presentation_adapter_spec.md"
+        },
+        {
+          "source_id": "SRC-P19-RENDERER",
+          "sha256": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RENDERER/hud_renderer.mjs"
+        }
+      ],
+      "p23_artifacts": [
+        "design/ux/ux_anchor_contract.json",
+        "design/ux/anchor_compatibility.tsv"
+      ],
+      "acceptance": [
+        "preserve current units/cards ids and field shape",
+        "geometry refreshed by P19",
+        "missing hand origin skips flight",
+        "any precommit origin extension versioned before implementation"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22",
+          "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "rfc_id": "P23-RFC-003",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P01",
+      "subject": "候选1280×720布局与较大关键文字、结束回合确认",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-P01-SCOPE",
+          "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+          "package_relative_path": "design/ux/evidence/upstream/P01/SRC-P01-SCOPE/prd_scope_v0.md"
+        },
+        {
+          "source_id": "SRC-P19-CSS",
+          "sha256": "6604bd34ab1492f40cac6eaecce4f8e46dd41f48b9d1bf2a30787eaf07e0b662",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-CSS/battle.css"
+        },
+        {
+          "source_id": "SRC-P20-CSS",
+          "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-CSS/styles.css"
+        }
+      ],
+      "p23_artifacts": [
+        "design/ux/wireframes/",
+        "design/accessibility/accessibility_tokens.json"
+      ],
+      "acceptance": [
+        "confirm target viewport/DPI via P34",
+        "approve significant battle layout change and inline end-turn review",
+        "inform P19/P20/P25",
+        "no mobile or new navigation screen approval implied"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+          "6604bd34ab1492f40cac6eaecce4f8e46dd41f48b9d1bf2a30787eaf07e0b662",
+          "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "rfc_id": "P23-RFC-004",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P13",
+      "subject": "意图已提交视图及绑定状态",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-P19-BINDING",
+          "sha256": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-BINDING/battle_hud_state_binding.json"
+        },
+        {
+          "source_id": "SRC-P19-RFCS",
+          "sha256": "2c7f60d4d3e3d5add1c5b947279412786f604beb5ac814c3d3478ce72d9c3f74",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-RFCS/interface_rfcs.json"
+        }
+      ],
+      "p23_artifacts": [
+        "design/ux/ux_anchor_contract.json",
+        "design/ux/interaction_state_matrix.tsv"
+      ],
+      "acceptance": [
+        "P14/P16 provenance + battle/revision/snapshot scope",
+        "retain candidate vs unknown labels",
+        "base amount distinct actual hp loss",
+        "do not infer missing intent"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd",
+          "2c7f60d4d3e3d5add1c5b947279412786f604beb5ac814c3d3478ce72d9c3f74"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "rfc_id": "P23-RFC-005",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P13",
+      "subject": "原操作恢复与正式事务适配（P20/P21，以及P19持久恢复边界）",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-P20-API",
+          "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-API/P20_API.md"
+        },
+        {
+          "source_id": "SRC-P21-P20-RECOVERY",
+          "sha256": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "package_relative_path": "design/ux/evidence/upstream/P21/SRC-P21-P20-RECOVERY/P20_recovery_response.md"
+        },
+        {
+          "source_id": "SRC-P19-API",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-API/P19_API.md"
+        },
+        {
+          "source_id": "SRC-P19-CONTROLLER",
+          "sha256": "34380c15c58f2f40e2269fbdf00a988aadaed553e2c0f1006e180ab51403a0b0",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-CONTROLLER/hud_controller.mjs"
+        }
+      ],
+      "p23_artifacts": [
+        "design/ux/learning_status_mapping.json",
+        "design/ux/interaction_state_matrix.tsv"
+      ],
+      "acceptance": [
+        "formal APPLIED label gated on accepted trusted consistent view",
+        "outer request mapping persisted before economic request",
+        "same original request on lookup; no presumed retry on ABSENT",
+        "P21 isolated receipts remain test only",
+        "P19 current same-ID command resend is not read-only; production recovery and dedup retention after full page reload accepted separately by P13/P14/P21"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+          "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4",
+          "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c",
+          "34380c15c58f2f40e2269fbdf00a988aadaed553e2c0f1006e180ab51403a0b0"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "rfc_id": "P23-RFC-006",
+      "version": "0.1.0-proposal",
+      "contract_owner": "P23",
+      "subject": "IC-21焦点、键盘及手柄逻辑动作受理",
+      "base_source_hashes": [
+        {
+          "source_id": "SRC-V6-IC",
+          "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+          "package_relative_path": "design/ux/evidence/upstream/V6/SRC-V6-IC/第六轮_27项接口契约冻结修订V6.0.json"
+        },
+        {
+          "source_id": "SRC-P19-STATES",
+          "sha256": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "package_relative_path": "design/ux/evidence/upstream/P19/SRC-P19-STATES/control_state_table.tsv"
+        },
+        {
+          "source_id": "SRC-P20-FLOW",
+          "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+          "package_relative_path": "design/ux/evidence/upstream/P20/SRC-P20-FLOW/party_menu_flow.md"
+        }
+      ],
+      "p23_artifacts": [
+        "design/ux/keyboard_focus_matrix.tsv",
+        "design/ux/focus_graph.json"
+      ],
+      "acceptance": [
+        "P19/P20 implement in their files after path approval",
+        "P33 real hardware and screen-reader test",
+        "reason readable when submit disabled",
+        "selection never auto-submits"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "owner_decision": null,
+      "change_request": {
+        "base_sha256": [
+          "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+          "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8",
+          "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4"
+        ],
+        "incoming_p23_sha256_binding": "delivery_manifest.json",
+        "preserve_both": true,
+        "overwrite_allowed": false
+      }
+    }
+  ]
+}
