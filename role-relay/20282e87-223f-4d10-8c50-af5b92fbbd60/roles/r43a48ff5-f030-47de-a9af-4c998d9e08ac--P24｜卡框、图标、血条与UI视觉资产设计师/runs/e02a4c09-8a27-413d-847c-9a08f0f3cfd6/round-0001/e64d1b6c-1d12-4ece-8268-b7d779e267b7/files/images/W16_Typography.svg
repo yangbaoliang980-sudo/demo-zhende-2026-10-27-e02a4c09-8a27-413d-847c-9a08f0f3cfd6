@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="title desc" data-wireframe-id="W16_Typography" data-screen-id="battle">
+<title id="title">中日排版 / 缺字与长文样张</title><desc id="desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。此页是排版审查板，不是新增产品页面；日本语文案待双语人工审核。</desc>
+<defs><style>@font-face{font-family:P23SC;src:url(../../accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23JP;src:url(../../accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23Symbols;src:url(../../accessibility/fonts/DejaVuSans.ttf) format("truetype");font-weight:400}text{font-family:P23SC,P23JP,P23Symbols,sans-serif;font-weight:400}</style><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W16_Typography   中日排版 / 缺字与长文样张</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">此页是排版审查板，不是新增产品页面；日本语文案待双语人工审核。</text>
+<rect x="24" y="72" width="600" height="218" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="88.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">中文关键提示 · 20px</text>
+<text x="44" y="126" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动：攻击前排；基础 12 × 2 次。</text>
+<text x="44" y="158" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">实际掉血以结算为准。</text>
+<text x="44" y="217.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">关键数值、否定词与目标不使用省略号。</text>
+<rect x="648" y="72" width="608" height="218" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="666" y="88.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">日本語 · 20px</text>
+<text x="668" y="126" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">次の行動：前列を攻撃。基礎値 12 × 2 回。</text>
+<text x="668" y="158" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">実際の減少量は確定した結果を参照。</text>
+<text x="668" y="217.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">「確認しました」。対象（前列）を確認。</text>
+<rect x="24" y="316" width="1232" height="166" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="332.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">长名称与注音</text>
+<text x="44" y="372.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">星のあいだに置き忘れた観測記録と三度目の校閲</text>
+<text x="44" y="423.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">語彙（ごい） ／ 取り消す（とりけす）　　HP 128 / 160　　護盾 +8</text>
+<rect x="24" y="508" width="1232" height="224" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="524.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">缺字：明确替代，原文可查</text>
+<text x="44" y="564.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[缺字 U+20BB7] 野的记录　　[缺字 U+F0000]</text>
+<text x="44" y="612.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">本轮字体不包含这两个测试码位；保留原始 UTF-8 供详情查看，不擅自改成“吉”。</text>
+<text x="44" y="669.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">界面按语言切换字形；事件 ID、原始 Anki 文本和哈希不随显示层规范化。</text>
+</svg>

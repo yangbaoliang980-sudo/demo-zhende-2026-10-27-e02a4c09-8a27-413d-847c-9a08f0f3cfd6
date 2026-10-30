@@ -1,0 +1,71 @@
+{
+  "version": "P24-RFC-REGISTER/0.1.0",
+  "requests": [
+    {
+      "rfc_id": "P24-RFC-01",
+      "version": "0.1.0",
+      "owner": "P13",
+      "subject": "实际路径与隔离落位受理",
+      "related_contract": "IC-21",
+      "base_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    },
+    {
+      "rfc_id": "P24-RFC-02",
+      "version": "0.1.0",
+      "owner": "P23",
+      "subject": "原锚点的视觉组件映射与状态叠加",
+      "related_contract": "IC-21",
+      "base_sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    },
+    {
+      "rfc_id": "P24-RFC-03",
+      "version": "0.1.0",
+      "owner": "P22",
+      "subject": "p24.ui.* 候选 ID / 导出命名受理",
+      "related_contract": "IC-22",
+      "base_sha256": "f675ed7aaeb5dd24c772ef11b223e93f6da0e156848e3f9fa36b57d0acc1784a",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    },
+    {
+      "rfc_id": "P24-RFC-04",
+      "version": "0.1.0",
+      "owner": "P25",
+      "subject": "墨紫/浅金候选皮肤与字体/安全区审美复核",
+      "related_contract": "IC-21;IC-22",
+      "base_sha256": null,
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    },
+    {
+      "rfc_id": "P24-RFC-05",
+      "version": "0.1.0",
+      "owner": "P30",
+      "subject": "RGBA / 九宫格 / 导入字段受理",
+      "related_contract": "IC-22",
+      "base_sha256": null,
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    },
+    {
+      "rfc_id": "P24-RFC-06",
+      "version": "0.1.0",
+      "owner": "P37",
+      "subject": "原创图形和字体证据复核",
+      "related_contract": "IC-22",
+      "base_sha256": null,
+      "status": "PREPARED_NOT_SUBMITTED",
+      "approval": null,
+      "supersedes_upstream": false
+    }
+  ]
+}

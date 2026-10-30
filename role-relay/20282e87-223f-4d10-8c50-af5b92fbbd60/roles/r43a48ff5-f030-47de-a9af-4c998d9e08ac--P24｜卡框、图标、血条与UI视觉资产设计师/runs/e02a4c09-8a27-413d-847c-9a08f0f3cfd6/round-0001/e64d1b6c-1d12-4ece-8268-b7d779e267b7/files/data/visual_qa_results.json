@@ -1,0 +1,5406 @@
+{
+  "layer": "AUTHOR_STATIC_VISUAL_QA",
+  "game_runtime_executed": false,
+  "inkscape": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+  "fonts": [
+    {
+      "file": "DejaVuSans.ttf",
+      "sha256": "6dcaf7aeedf7ea5fb4ddfc47affba232be2e2147ab91441efd66becdb80840db",
+      "families": [
+        "DejaVu Sans"
+      ],
+      "weight_class": 400,
+      "glyph_count": 5918
+    },
+    {
+      "file": "noto-sans-jp-japanese-400-normal.ttf",
+      "sha256": "4c48fc57360169958503a7b48f80428e812718be695e45f16f14a65380e8aea2",
+      "families": [
+        "Noto Sans JP Thin"
+      ],
+      "weight_class": 400,
+      "glyph_count": 6886
+    },
+    {
+      "file": "noto-sans-sc-chinese-simplified-400-normal.ttf",
+      "sha256": "ae6605f0ebd59cbcdbf08edec023fcc3283956eef3447731365399ae0f480c8e",
+      "families": [
+        "Noto Sans SC Thin"
+      ],
+      "weight_class": 400,
+      "glyph_count": 7946
+    }
+  ],
+  "text_node_count": 305,
+  "boards": [
+    {
+      "preview_id": "P24_Component_States",
+      "source_sha256": "ff0c92c89e50f54a2e75b990a570690f26d2405818eea86425abdc8e08acc1ca",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Component_States.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:32.966383+00:00",
+      "exit_code": 0,
+      "text_count": 71,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "KOTODAMA BRIGADE   /   P24  ·  S03",
+          "bbox": [
+            41.616,
+            26.296,
+            244.864,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "组件状态 · 同一套视觉语言",
+          "bbox": [
+            41.344,
+            61.992,
+            395.424,
+            29.696
+          ],
+          "inside_board": true,
+          "font_size": 32.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "六种基础状态；冰蓝色焦点层独立叠加。所有标签均由界面层显示，切图本身不含文字。",
+          "bbox": [
+            40.792,
+            106.754,
+            689.454,
+            18.144
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "PLACEHOLDER · 待 P25 / P30 / P37 复核",
+          "bbox": [
+            1261.98,
+            26.496,
+            297.424,
+            16.368
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "01 / 07",
+          "bbox": [
+            1511.84,
+            1161.3,
+            47.408,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "默认",
+          "bbox": [
+            315.66,
+            161.22,
+            38.7,
+            18.38
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "悬停",
+          "bbox": [
+            535.7,
+            161.1,
+            38.32,
+            18.48
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "按下",
+          "bbox": [
+            755.6,
+            161.1,
+            38.32,
+            18.54
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "禁用",
+          "bbox": [
+            975.74,
+            161.18,
+            37.0,
+            18.52
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "选中",
+          "bbox": [
+            1195.9,
+            161.2,
+            37.14,
+            18.4
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "错误",
+          "bbox": [
+            1415.74,
+            161.2,
+            38.6,
+            18.46
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "主要按钮",
+          "bbox": [
+            41.12,
+            230.1,
+            78.06,
+            18.54
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "button.primary",
+          "bbox": [
+            41.472,
+            260.264,
+            112.512,
+            16.48
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "继续 / 確認",
+          "bbox": [
+            282.088,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "继续 / 確認",
+          "bbox": [
+            502.088,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "继续 / 確認",
+          "bbox": [
+            722.088,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "继续 / 確認",
+          "bbox": [
+            942.088,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "继续 / 確認",
+          "bbox": [
+            1162.09,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "继续 / 確認",
+          "bbox": [
+            1382.09,
+            235.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "次要按钮",
+          "bbox": [
+            40.84,
+            322.1,
+            78.34,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0020",
+          "text": "button.secondary",
+          "bbox": [
+            41.472,
+            352.264,
+            130.624,
+            16.48
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0021",
+          "text": "继续 / 確認",
+          "bbox": [
+            282.088,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0022",
+          "text": "继续 / 確認",
+          "bbox": [
+            502.088,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0023",
+          "text": "继续 / 確認",
+          "bbox": [
+            722.088,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0024",
+          "text": "继续 / 確認",
+          "bbox": [
+            942.088,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0025",
+          "text": "继续 / 確認",
+          "bbox": [
+            1162.09,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0026",
+          "text": "继续 / 確認",
+          "bbox": [
+            1382.09,
+            327.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0027",
+          "text": "导航按钮",
+          "bbox": [
+            41.24,
+            413.98,
+            77.94,
+            18.76
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0028",
+          "text": "button.navigation",
+          "bbox": [
+            41.472,
+            444.264,
+            130.88,
+            16.736
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0029",
+          "text": "继续 / 確認",
+          "bbox": [
+            292.088,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0030",
+          "text": "继续 / 確認",
+          "bbox": [
+            512.088,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0031",
+          "text": "继续 / 確認",
+          "bbox": [
+            732.088,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0032",
+          "text": "继续 / 確認",
+          "bbox": [
+            952.088,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0033",
+          "text": "继续 / 確認",
+          "bbox": [
+            1172.09,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0034",
+          "text": "继续 / 確認",
+          "bbox": [
+            1392.09,
+            419.772,
+            85.878,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0035",
+          "text": "手牌卡框",
+          "bbox": [
+            41.0,
+            518.14,
+            78.24,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0036",
+          "text": "frame.hand",
+          "bbox": [
+            40.528,
+            548.056,
+            84.4801,
+            13.152
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0037",
+          "text": "视觉占位",
+          "bbox": [
+            249.702,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0038",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            250.616,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0039",
+          "text": "视觉占位",
+          "bbox": [
+            469.702,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0040",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            470.616,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0041",
+          "text": "视觉占位",
+          "bbox": [
+            689.702,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0042",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            690.616,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0043",
+          "text": "视觉占位",
+          "bbox": [
+            909.702,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0044",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            910.616,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0045",
+          "text": "视觉占位",
+          "bbox": [
+            1129.7,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0046",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            1130.62,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0047",
+          "text": "视觉占位",
+          "bbox": [
+            1349.7,
+            527.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0048",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            1350.62,
+            563.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0049",
+          "text": "敌方卡框",
+          "bbox": [
+            40.84,
+            726.08,
+            78.4,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0050",
+          "text": "frame.enemy",
+          "bbox": [
+            40.528,
+            756.056,
+            97.7281,
+            16.688
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0051",
+          "text": "视觉占位",
+          "bbox": [
+            249.702,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0052",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            250.616,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0053",
+          "text": "视觉占位",
+          "bbox": [
+            469.702,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0054",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            470.616,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0055",
+          "text": "视觉占位",
+          "bbox": [
+            689.702,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0056",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            690.616,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0057",
+          "text": "视觉占位",
+          "bbox": [
+            909.702,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0058",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            910.616,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0059",
+          "text": "视觉占位",
+          "bbox": [
+            1129.7,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0060",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            1130.62,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0061",
+          "text": "视觉占位",
+          "bbox": [
+            1349.7,
+            735.754,
+            70.488,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0062",
+          "text": "PLACEHOLDER",
+          "bbox": [
+            1350.62,
+            771.064,
+            108.688,
+            12.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0063",
+          "text": "焦点不是选中；禁用也保留可读原因",
+          "bbox": [
+            40.744,
+            896.72,
+            381.336,
+            24.144
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0064",
+          "text": "查看详情",
+          "bbox": [
+            124.648,
+            975.826,
+            70.596,
+            16.65
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0065",
+          "text": "可操作 + 焦点",
+          "bbox": [
+            41.008,
+            1028.79,
+            106.164,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0066",
+          "text": "查看详情",
+          "bbox": [
+            614.648,
+            975.826,
+            70.596,
+            16.65
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0067",
+          "text": "已选中 + 焦点",
+          "bbox": [
+            531.674,
+            1028.79,
+            105.498,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0068",
+          "text": "查看详情",
+          "bbox": [
+            1104.65,
+            975.826,
+            70.596,
+            16.65
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0069",
+          "text": "禁用 + 原因详情可达",
+          "bbox": [
+            1020.67,
+            1028.83,
+            160.74,
+            16.704
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0070",
+          "text": "金色双框 + 勾号 = 已选中    /    冰蓝连续外框 = 当前输入焦点    /    虚线 + 斜杠 = 禁用",
+          "bbox": [
+            40.6,
+            1111.02,
+            671.04,
+            20.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Icons_Cost",
+      "source_sha256": "446ed210a3747078858108bd55e76dcf495cc78d73e315db7defffc3e418855d",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Icons_Cost.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:33.173536+00:00",
+      "exit_code": 0,
+      "text_count": 69,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "KOTODAMA BRIGADE   /   P24  ·  S03",
+          "bbox": [
+            41.616,
+            26.296,
+            244.864,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "图标与费用 · 形状也能传达含义",
+          "bbox": [
+            42.688,
+            61.992,
+            458.432,
+            29.76
+          ],
+          "inside_board": true,
+          "font_size": 32.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "24 个原创几何图标；32px / 64px 透明导出。图标必须配文字，不独自证明奖励到账。",
+          "bbox": [
+            40.72,
+            106.754,
+            668.106,
+            19.368
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "PLACEHOLDER · 待 P25 / P30 / P37 复核",
+          "bbox": [
+            1101.98,
+            26.496,
+            297.424,
+            16.368
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "02 / 07",
+          "bbox": [
+            1351.84,
+            1001.3,
+            47.408,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "攻击",
+          "bbox": [
+            58.64,
+            252.18,
+            38.1,
+            18.46
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "attack",
+          "bbox": [
+            58.944,
+            285.264,
+            44.848,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "护盾",
+          "bbox": [
+            286.76,
+            252.22,
+            38.46,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "shield",
+          "bbox": [
+            286.512,
+            285.264,
+            42.944,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "治疗",
+          "bbox": [
+            514.82,
+            252.12,
+            38.32,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "heal",
+          "bbox": [
+            515.472,
+            285.264,
+            29.664,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "增益",
+          "bbox": [
+            742.82,
+            252.16,
+            38.3,
+            18.38
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "buff",
+          "bbox": [
+            743.472,
+            285.056,
+            28.912,
+            13.152
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "费用",
+          "bbox": [
+            970.86,
+            252.2,
+            36.88,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "energy",
+          "bbox": [
+            970.832,
+            289.088,
+            50.016,
+            12.912
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "抽牌堆",
+          "bbox": [
+            1198.56,
+            252.14,
+            58.46,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "draw",
+          "bbox": [
+            1198.85,
+            285.264,
+            36.24,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "弃牌堆",
+          "bbox": [
+            58.8,
+            424.04,
+            58.22,
+            18.6
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "discard",
+          "bbox": [
+            58.848,
+            457.264,
+            52.336,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "移除区",
+          "bbox": [
+            286.66,
+            424.06,
+            58.38,
+            18.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0020",
+          "text": "remove",
+          "bbox": [
+            287.472,
+            461.088,
+            54.192,
+            9.12
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0021",
+          "text": "行动意图",
+          "bbox": [
+            514.5,
+            424.02,
+            77.84,
+            18.64
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0022",
+          "text": "intent",
+          "bbox": [
+            515.248,
+            457.6,
+            43.088,
+            12.608
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0023",
+          "text": "未知",
+          "bbox": [
+            742.68,
+            424.18,
+            37.48,
+            18.42
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0024",
+          "text": "unknown",
+          "bbox": [
+            743.344,
+            457.264,
+            67.552,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0025",
+          "text": "不可操作",
+          "bbox": [
+            970.88,
+            424.2,
+            78.36,
+            18.42
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0026",
+          "text": "locked",
+          "bbox": [
+            971.472,
+            457.264,
+            46.704,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0027",
+          "text": "已确认",
+          "bbox": [
+            1199.86,
+            424.14,
+            57.5,
+            18.48
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0028",
+          "text": "check",
+          "bbox": [
+            1198.83,
+            457.264,
+            42.736,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0029",
+          "text": "需要注意",
+          "bbox": [
+            59.3,
+            596.02,
+            77.36,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0030",
+          "text": "warning",
+          "bbox": [
+            58.432,
+            629.6,
+            60.112,
+            16.4
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0031",
+          "text": "操作错误",
+          "bbox": [
+            286.74,
+            596.2,
+            78.6,
+            18.46
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0032",
+          "text": "error",
+          "bbox": [
+            286.832,
+            633.088,
+            36.16,
+            9.12
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0033",
+          "text": "待核对",
+          "bbox": [
+            514.58,
+            596.12,
+            58.6,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0034",
+          "text": "pending",
+          "bbox": [
+            515.472,
+            629.264,
+            59.9521,
+            16.736
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0035",
+          "text": "连接可用",
+          "bbox": [
+            742.6,
+            596.2,
+            77.14,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0036",
+          "text": "connected",
+          "bbox": [
+            742.832,
+            629.264,
+            75.9681,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0037",
+          "text": "未连接",
+          "bbox": [
+            970.68,
+            596.2,
+            58.58,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0038",
+          "text": "disconnected",
+          "bbox": [
+            970.848,
+            629.264,
+            97.7601,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0039",
+          "text": "详情",
+          "bbox": [
+            1198.8,
+            596.14,
+            38.36,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0040",
+          "text": "details",
+          "bbox": [
+            1198.85,
+            629.264,
+            48.16,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0041",
+          "text": "目标",
+          "bbox": [
+            61.16,
+            768.2,
+            35.98,
+            18.38
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0042",
+          "text": "target",
+          "bbox": [
+            58.432,
+            802.864,
+            43.344,
+            15.136
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0043",
+          "text": "回合",
+          "bbox": [
+            287.64,
+            768.14,
+            37.74,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0044",
+          "text": "turn",
+          "bbox": [
+            286.432,
+            802.864,
+            29.936,
+            11.344
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0045",
+          "text": "学习记录",
+          "bbox": [
+            515.2,
+            768.02,
+            77.86,
+            18.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0046",
+          "text": "book",
+          "bbox": [
+            515.472,
+            801.264,
+            36.48,
+            12.944
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0047",
+          "text": "语法",
+          "bbox": [
+            742.9,
+            768.2,
+            37.92,
+            18.4
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0048",
+          "text": "grammar",
+          "bbox": [
+            742.816,
+            805.088,
+            67.84,
+            12.912
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0049",
+          "text": "整句",
+          "bbox": [
+            970.78,
+            768.2,
+            37.58,
+            18.465
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0050",
+          "text": "sentence",
+          "bbox": [
+            970.512,
+            802.864,
+            65.8881,
+            11.344
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0051",
+          "text": "资源",
+          "bbox": [
+            1198.98,
+            768.28,
+            38.36,
+            18.36
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0052",
+          "text": "currency",
+          "bbox": [
+            1198.83,
+            805.088,
+            64.208,
+            12.656
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0053",
+          "text": "费用徽章",
+          "bbox": [
+            40.946,
+            889.212,
+            85.976,
+            20.658
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0054",
+          "text": "2",
+          "bbox": [
+            244.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0055",
+          "text": "默认",
+          "bbox": [
+            232.594,
+            924.898,
+            34.83,
+            16.542
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0056",
+          "text": "2",
+          "bbox": [
+            404.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0057",
+          "text": "悬停",
+          "bbox": [
+            392.63,
+            924.79,
+            34.488,
+            16.632
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0058",
+          "text": "2",
+          "bbox": [
+            564.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0059",
+          "text": "按下",
+          "bbox": [
+            552.54,
+            924.79,
+            34.488,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0060",
+          "text": "2",
+          "bbox": [
+            724.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0061",
+          "text": "禁用",
+          "bbox": [
+            712.666,
+            924.862,
+            33.3,
+            16.668
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0062",
+          "text": "2",
+          "bbox": [
+            884.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0063",
+          "text": "选中",
+          "bbox": [
+            872.81,
+            924.88,
+            33.426,
+            16.56
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0064",
+          "text": "2",
+          "bbox": [
+            1044.3,
+            876.096,
+            11.16,
+            17.904
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0065",
+          "text": "错误",
+          "bbox": [
+            1032.67,
+            924.88,
+            34.74,
+            16.614
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0066",
+          "text": "?",
+          "bbox": [
+            1205.34,
+            875.712,
+            9.072,
+            18.6
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0067",
+          "text": "未知",
+          "bbox": [
+            1192.61,
+            924.862,
+            33.732,
+            16.578
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0068",
+          "text": "连接图标、记录状态和钱包证明分别展示；pending / unknown 不替换成成功勾号。",
+          "bbox": [
+            40.54,
+            979.79,
+            659.232,
+            19.71
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Battle_Target_1280",
+      "source_sha256": "623d4d73aeeb339e64823d745c54d53d8451432716f6c5fe362fa1ef72806722",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Battle_Target_1280.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:33.365678+00:00",
+      "exit_code": 0,
+      "text_count": 63,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "P24 / 战斗 · 目标确认",
+          "bbox": [
+            26.02,
+            12.74,
+            197.96,
+            20.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "PLACEHOLDER · 静态资产样例",
+          "bbox": [
+            961.616,
+            14.576,
+            227.088,
+            14.896
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "基于 P23 最终线框的视觉换肤；名称与数值为设计夹具；目标引擎与实际 DPI 未测试。",
+          "bbox": [
+            24.576,
+            783.528,
+            601.024,
+            16.128
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "P14 保持业务权威；P19/P20 负责文字与输入；P24 只提供视觉资产。",
+          "bbox": [
+            25.616,
+            814.528,
+            484.512,
+            16.416
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "卡牌战斗",
+          "bbox": [
+            25.456,
+            67.036,
+            109.004,
+            25.9
+          ],
+          "inside_board": true,
+          "font_size": 28.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "第 2 回合 · 你的回合",
+          "bbox": [
+            303.012,
+            72.77,
+            206.228,
+            20.372
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "可用费用 2",
+          "bbox": [
+            871.344,
+            72.96,
+            112.152,
+            22.2
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "动态效果：关闭",
+          "bbox": [
+            1108.97,
+            75.398,
+            123.462,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "已选：试验·锋刃　目标：演练敌方　费用：1　尚未提交",
+          "bbox": [
+            41.86,
+            132.62,
+            508.4,
+            18.68
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "锋刃位 A",
+          "bbox": [
+            38.68,
+            192.66,
+            75.88,
+            18.545
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "生命 10/10 护盾 3",
+          "bbox": [
+            39.08,
+            219.56,
+            154.58,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "守护位 B",
+          "bbox": [
+            39.16,
+            260.66,
+            75.56,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "生命 10/10 护盾 0",
+          "bbox": [
+            39.08,
+            287.56,
+            154.72,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "治愈位 C",
+          "bbox": [
+            38.82,
+            328.64,
+            75.7,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "生命 10/10 护盾 0",
+          "bbox": [
+            39.08,
+            355.56,
+            154.72,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "敌方",
+          "bbox": [
+            318.756,
+            224.612,
+            34.092,
+            16.704
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "卡面位",
+          "bbox": [
+            318.936,
+            251.594,
+            52.254,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "演练敌方",
+          "bbox": [
+            404.864,
+            204.816,
+            93.6,
+            22.272
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "生命 12 / 18",
+          "bbox": [
+            405.08,
+            244.56,
+            103.68,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "护盾 0",
+          "bbox": [
+            404.76,
+            276.82,
+            53.84,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0020",
+          "text": "[已选目标]",
+          "bbox": [
+            307.908,
+            331.72,
+            80.37,
+            18.18
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0021",
+          "text": "下一次行动",
+          "bbox": [
+            675.21,
+            202.858,
+            107.58,
+            20.35
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0022",
+          "text": "攻击前排　基础 1 × 1 次",
+          "bbox": [
+            674.768,
+            231.84,
+            262.44,
+            22.296
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0023",
+          "text": "目标：锋刃位 A",
+          "bbox": [
+            677.16,
+            272.66,
+            133.4,
+            18.545
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0024",
+          "text": "[候选预告] 尚未由核心确认。",
+          "bbox": [
+            675.908,
+            307.648,
+            218.538,
+            18.252
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0025",
+          "text": "基础值不是实际掉血；护盾与效果以结算为准。",
+          "bbox": [
+            674.648,
+            339.594,
+            365.598,
+            18.144
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0026",
+          "text": "最近结算",
+          "bbox": [
+            40.846,
+            411.63,
+            70.218,
+            16.668
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0027",
+          "text": "锋刃位 A：生命减少 0；护盾吸收 1。",
+          "bbox": [
+            190.68,
+            411.56,
+            314.06,
+            20.26
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0028",
+          "text": "这条文字来自已提交事件；关闭演出后仍然保留。",
+          "bbox": [
+            190.576,
+            438.496,
+            340.976,
+            16.16
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0029",
+          "text": "手牌（示例 5 张；不代表手牌上限）",
+          "bbox": [
+            24.9,
+            475.432,
+            274.644,
+            18.306
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0030",
+          "text": "抽牌堆 4　弃牌堆 1　移除 0",
+          "bbox": [
+            890.448,
+            475.512,
+            196.16,
+            14.912
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0031",
+          "text": "试验·锋刃",
+          "bbox": [
+            39.0,
+            520.66,
+            96.56,
+            18.545
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0032",
+          "text": "1",
+          "bbox": [
+            216.112,
+            523.528,
+            9.648,
+            17.592
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0033",
+          "text": "[攻击] 基础伤害 4",
+          "bbox": [
+            40.12,
+            555.68,
+            150.84,
+            20.32
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0034",
+          "text": "归属：锋刃位 A",
+          "bbox": [
+            39.456,
+            622.528,
+            107.792,
+            14.896
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0035",
+          "text": "[已选择]",
+          "bbox": [
+            39.696,
+            651.656,
+            55.44,
+            16.144
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0036",
+          "text": "试验·防护",
+          "bbox": [
+            288.0,
+            520.66,
+            97.5,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0037",
+          "text": "1",
+          "bbox": [
+            465.112,
+            523.528,
+            9.648,
+            17.592
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0038",
+          "text": "[防御] 护盾 4",
+          "bbox": [
+            289.12,
+            555.78,
+            110.84,
+            20.22
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0039",
+          "text": "归属：守护位 B",
+          "bbox": [
+            288.456,
+            622.528,
+            107.92,
+            14.896
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0040",
+          "text": "选择卡牌",
+          "bbox": [
+            287.72,
+            651.592,
+            62.592,
+            14.8
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0041",
+          "text": "试验·治疗",
+          "bbox": [
+            537.0,
+            520.66,
+            98.14,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0042",
+          "text": "1",
+          "bbox": [
+            714.112,
+            523.528,
+            9.648,
+            17.592
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0043",
+          "text": "[治疗] 恢复生命 3",
+          "bbox": [
+            538.12,
+            555.56,
+            150.34,
+            20.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0044",
+          "text": "归属：治愈位 C",
+          "bbox": [
+            537.456,
+            622.512,
+            107.76,
+            14.912
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0045",
+          "text": "选择卡牌",
+          "bbox": [
+            536.72,
+            651.592,
+            62.592,
+            14.8
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0046",
+          "text": "试验·增益",
+          "bbox": [
+            786.0,
+            520.66,
+            98.12,
+            18.48
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0047",
+          "text": "1",
+          "bbox": [
+            963.112,
+            523.528,
+            9.648,
+            17.592
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0048",
+          "text": "[增益] 效果说明需完整",
+          "bbox": [
+            787.12,
+            555.62,
+            195.12,
+            20.38
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0049",
+          "text": "可读",
+          "bbox": [
+            786.12,
+            585.8,
+            38.06,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0050",
+          "text": "归属：治愈位 C",
+          "bbox": [
+            786.456,
+            622.512,
+            107.76,
+            14.912
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0051",
+          "text": "选择卡牌",
+          "bbox": [
+            785.72,
+            651.592,
+            62.592,
+            14.8
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0052",
+          "text": "试验·重击",
+          "bbox": [
+            1035.0,
+            520.66,
+            97.74,
+            18.54
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0053",
+          "text": "3",
+          "bbox": [
+            1210.7,
+            523.216,
+            11.28,
+            18.216
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0054",
+          "text": "[攻击] 费用不足；查看",
+          "bbox": [
+            1036.12,
+            555.78,
+            194.7,
+            20.22
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0055",
+          "text": "详情",
+          "bbox": [
+            1034.8,
+            585.74,
+            38.36,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0056",
+          "text": "归属：锋刃位 A",
+          "bbox": [
+            1035.46,
+            622.528,
+            107.792,
+            14.896
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0057",
+          "text": "详情可读",
+          "bbox": [
+            1034.64,
+            651.592,
+            62.704,
+            14.848
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0058",
+          "text": "查看完整记录",
+          "bbox": [
+            60.648,
+            705.308,
+            106.506,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0059",
+          "text": "卡牌 / 目标详情",
+          "bbox": [
+            249.374,
+            705.416,
+            121.428,
+            18.396
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0060",
+          "text": "取消选择",
+          "bbox": [
+            807.684,
+            705.452,
+            70.848,
+            16.614
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0061",
+          "text": "确认出牌",
+          "bbox": [
+            971.63,
+            705.416,
+            70.596,
+            16.65
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0062",
+          "text": "结束回合",
+          "bbox": [
+            1142.54,
+            705.416,
+            70.902,
+            16.614
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Learning_Quarantine_1280",
+      "source_sha256": "40e433de72419f0ff85ba3d351bf515d99d6fe20cbf846f6dc29705bab65f047",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Learning_Quarantine_1280.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:33.596051+00:00",
+      "exit_code": 0,
+      "text_count": 35,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "P24 / 学习 · 待核对",
+          "bbox": [
+            26.02,
+            12.62,
+            177.78,
+            20.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "PLACEHOLDER · 静态资产样例",
+          "bbox": [
+            961.616,
+            14.576,
+            227.088,
+            14.896
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "基于 P23 最终线框的视觉换肤；名称与数值为设计夹具；目标引擎与实际 DPI 未测试。",
+          "bbox": [
+            24.576,
+            783.528,
+            601.024,
+            16.128
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "P14 保持业务权威；P19/P20 负责文字与输入；P24 只提供视觉资产。",
+          "bbox": [
+            25.616,
+            814.528,
+            484.512,
+            16.416
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "言灵旅团",
+          "bbox": [
+            25.512,
+            73.064,
+            108.136,
+            25.984
+          ],
+          "inside_board": true,
+          "font_size": 28.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "导航与内容分区",
+          "bbox": [
+            24.992,
+            114.464,
+            110.24,
+            15.008
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "旅团营地",
+          "bbox": [
+            74.54,
+            177.452,
+            70.812,
+            16.632
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "角色档案",
+          "bbox": [
+            75.008,
+            239.362,
+            70.488,
+            16.812
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "三人编队",
+          "bbox": [
+            75.17,
+            301.362,
+            70.362,
+            16.704
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "角色养成",
+          "bbox": [
+            75.008,
+            363.326,
+            70.254,
+            16.848
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "章节远征",
+          "bbox": [
+            74.846,
+            425.218,
+            70.47,
+            16.812
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "战后结算",
+          "bbox": [
+            75.476,
+            487.38,
+            69.588,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "学习状态",
+          "bbox": [
+            75.08,
+            549.308,
+            70.164,
+            16.686
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "[连接可用]",
+          "bbox": [
+            25.696,
+            634.64,
+            71.44,
+            16.16
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "Anki 状态单独显示",
+          "bbox": [
+            24.064,
+            658.576,
+            131.296,
+            14.768
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "学习状态",
+          "bbox": [
+            249.68,
+            74.868,
+            109.144,
+            25.956
+          ],
+          "inside_board": true,
+          "font_size": 28.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "可用资源 15（示例）",
+          "bbox": [
+            909.12,
+            72.48,
+            171.66,
+            19.04
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "预留 0 · 取自当前视图",
+          "bbox": [
+            908.608,
+            104.56,
+            161.696,
+            14.816
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "[待核对 · 已隔离]",
+          "bbox": [
+            268.332,
+            164.726,
+            174.086,
+            22.374
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "这条记录尚未计入可用奖励。你无需改变 Anki 评分。",
+          "bbox": [
+            266.72,
+            197.62,
+            456.08,
+            18.7
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0020",
+          "text": "连接",
+          "bbox": [
+            266.66,
+            288.88,
+            42.526,
+            20.284
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0021",
+          "text": "Anki 连接可用",
+          "bbox": [
+            266.08,
+            326.8,
+            123.04,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0022",
+          "text": "连接不代表入账",
+          "bbox": [
+            266.48,
+            369.64,
+            110.96,
+            14.8
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0023",
+          "text": "记录",
+          "bbox": [
+            609.012,
+            289.43,
+            41.954,
+            19.734
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0024",
+          "text": "待核对 · 已隔离",
+          "bbox": [
+            608.58,
+            326.66,
+            147.14,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0025",
+          "text": "本条尚未授奖",
+          "bbox": [
+            608.592,
+            369.592,
+            94.784,
+            14.784
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0026",
+          "text": "钱包",
+          "bbox": [
+            950.748,
+            288.77,
+            42.394,
+            20.262
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0027",
+          "text": "15（最近确认示例）",
+          "bbox": [
+            951.76,
+            326.48,
+            166.54,
+            19.04
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0028",
+          "text": "未计入隔离记录",
+          "bbox": [
+            950.544,
+            369.528,
+            110.704,
+            14.864
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0029",
+          "text": "接下来可以做什么",
+          "bbox": [
+            266.616,
+            446.88,
+            174.218,
+            20.372
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0030",
+          "text": "重新查询此记录的处理状态；保持正常复习即可。",
+          "bbox": [
+            267.04,
+            478.72,
+            425.9,
+            20.1
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0031",
+          "text": "技术编号、原始原因码与证明来源放在可展开的记录详情中。",
+          "bbox": [
+            266.666,
+            519.612,
+            473.58,
+            16.794
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0032",
+          "text": "重新查询状态",
+          "bbox": [
+            306.936,
+            613.398,
+            106.308,
+            16.596
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0033",
+          "text": "查看记录详情",
+          "bbox": [
+            548.648,
+            613.416,
+            106.596,
+            16.65
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0034",
+          "text": "状态更新后保留当前焦点，只读出有变化的一条摘要。",
+          "bbox": [
+            248.576,
+            676.558,
+            419.67,
+            17.208
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Geometry_SafeAreas",
+      "source_sha256": "b0c7ba0f5f25228e6c86882cc9bcf8e76f88894300a5f19e5a4298516d717e6c",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Geometry_SafeAreas.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:33.821344+00:00",
+      "exit_code": 0,
+      "text_count": 28,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "KOTODAMA BRIGADE   /   P24  ·  S03",
+          "bbox": [
+            41.616,
+            26.296,
+            244.864,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "安全区与层次 · 为文字和立绘留位置",
+          "bbox": [
+            42.208,
+            61.768,
+            522.368,
+            30.08
+          ],
+          "inside_board": true,
+          "font_size": 32.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "手牌框 236×174；敌方信息框 350×196；立绘窗口 78×92。红/青辅助线只出现在规范图。",
+          "bbox": [
+            40.9,
+            106.7,
+            724.338,
+            18.522
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "PLACEHOLDER · 待 P25 / P30 / P37 复核",
+          "bbox": [
+            1101.98,
+            26.496,
+            297.424,
+            16.368
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "05 / 07",
+          "bbox": [
+            1351.84,
+            961.296,
+            47.408,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "手牌框 · 逻辑 1×",
+          "bbox": [
+            41.1,
+            171.454,
+            175.978,
+            20.35
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "标题区",
+          "bbox": [
+            56.48,
+            247.2,
+            58.56,
+            18.38
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "规则文字独立显示",
+          "bbox": [
+            56.648,
+            290.754,
+            142.29,
+            16.704
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "归属 / 不可用原因",
+          "bbox": [
+            57.456,
+            336.576,
+            122.704,
+            16.288
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "敌方信息框 · 逻辑 1×",
+          "bbox": [
+            330.924,
+            171.3,
+            220.154,
+            20.526
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "立绘由 P27 提供",
+          "bbox": [
+            443.08,
+            248.08,
+            141.94,
+            18.54
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "生命 12 / 18",
+          "bbox": [
+            443.08,
+            282.96,
+            103.68,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "护盾 0",
+          "bbox": [
+            442.76,
+            317.22,
+            53.84,
+            18.44
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "外框不侵入标题、生命和意图。",
+          "bbox": [
+            350.684,
+            386.664,
+            239.562,
+            16.794
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "卡背 · 不承载未知牌面内容",
+          "bbox": [
+            761.144,
+            171.366,
+            271.832,
+            20.438
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "血条是切图层；生命数值来自权威视图",
+          "bbox": [
+            40.984,
+            454.552,
+            405.024,
+            24.312
+          ],
+          "inside_board": true,
+          "font_size": 24.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "生命 18 / 18",
+          "bbox": [
+            40.972,
+            498.664,
+            93.3121,
+            18.558
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "生命 12 / 18",
+          "bbox": [
+            385.972,
+            498.664,
+            93.3121,
+            18.558
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "生命 4 / 20（视觉夹具）",
+          "bbox": [
+            730.972,
+            498.592,
+            179.64,
+            18.63
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "生命 0 / 18 · 已倒下",
+          "bbox": [
+            1075.97,
+            498.664,
+            163.242,
+            18.558
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0020",
+          "text": "未知状态",
+          "bbox": [
+            40.68,
+            602.12,
+            78.48,
+            18.48
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0021",
+          "text": "生命未知；不显示假的填充百分比。",
+          "bbox": [
+            40.972,
+            672.664,
+            275.274,
+            18.234
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0022",
+          "text": "护盾独立显示",
+          "bbox": [
+            414.76,
+            602.08,
+            118.06,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0023",
+          "text": "护盾 3；不会把护盾并入生命最大值。",
+          "bbox": [
+            414.684,
+            672.664,
+            289.584,
+            18.234
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0024",
+          "text": "文本安全区：手牌内缩 14px；费用 40px 徽章中心只放当前值，不烘焙数字。",
+          "bbox": [
+            62.648,
+            763.628,
+            601.11,
+            19.494
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0025",
+          "text": "立绘安全区：窗口透明孔为 (8,8,62,76)；仅占位测量，最终人脸/发型裁切等待 P25。",
+          "bbox": [
+            62.972,
+            797.682,
+            660.888,
+            18.846
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0026",
+          "text": "外发切图：保持透明画布、原点和 pivot；不自动裁边、不旋转；Atlas 外扩由 P30 实测。",
+          "bbox": [
+            62.684,
+            831.754,
+            694.8,
+            19.368
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0027",
+          "text": "低生命颜色仅供表现层使用；P24 不定义生命阈值，不生成战斗计算或状态变化。",
+          "bbox": [
+            62.396,
+            865.664,
+            635.256,
+            18.234
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Typography_Scale",
+      "source_sha256": "37f70acfdfa0a78bcd63587f0e6f19bae9ba76d0fa698536075c5d6fb1303625",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Typography_Scale.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:34.011617+00:00",
+      "exit_code": 0,
+      "text_count": 20,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "KOTODAMA BRIGADE   /   P24  ·  S03",
+          "bbox": [
+            41.616,
+            26.296,
+            244.864,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "中日混排与字号 · 独立文字层",
+          "bbox": [
+            43.072,
+            61.896,
+            425.44,
+            29.952
+          ],
+          "inside_board": true,
+          "font_size": 32.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "正文 18px；关键状态 20px。此图另有 125% / 150% / 200% 静态像素密度导出。",
+          "bbox": [
+            40.936,
+            106.7,
+            630.738,
+            19.422
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "PLACEHOLDER · 待 P25 / P30 / P37 复核",
+          "bbox": [
+            941.984,
+            26.496,
+            297.424,
+            16.368
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "06 / 07",
+          "bbox": [
+            1191.84,
+            817.296,
+            47.408,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "中文 · 关键状态",
+          "bbox": [
+            66.112,
+            184.366,
+            160.82,
+            20.504
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "攻击前排　基础 12 × 2 次",
+          "bbox": [
+            64.64,
+            232.1,
+            229.8,
+            18.58
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "目标：锋刃位 A",
+          "bbox": [
+            67.16,
+            279.06,
+            133.4,
+            18.545
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "生命 128 / 160　护盾 +8",
+          "bbox": [
+            65.08,
+            325.96,
+            212.56,
+            20.62
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "日本語 · 重要情報",
+          "bbox": [
+            687.872,
+            184.52,
+            171.71,
+            20.284
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "前列を攻撃　基礎値 12 × 2 回",
+          "bbox": [
+            685.06,
+            232.1,
+            268.54,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "対象：前衛 A",
+          "bbox": [
+            684.64,
+            279.1,
+            115.92,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "HP 128 / 160　シールド +8",
+          "bbox": [
+            686.02,
+            327.12,
+            238.84,
+            19.46
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "长名称与括号读音（原 UTF-8 保持不变）",
+          "bbox": [
+            65.232,
+            429.168,
+            384.362,
+            20.944
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "星のあいだに置き忘れた観測記録と三度目の夜明",
+          "bbox": [
+            65.0,
+            474.18,
+            437.56,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "語彙（ごい） ／ 取り消す（とりけす）　「確認しました」",
+          "bbox": [
+            64.684,
+            516.592,
+            463.68,
+            17.136
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "待核对 · 已隔离",
+          "bbox": [
+            64.58,
+            612.06,
+            147.14,
+            18.56
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "该记录尚未计入可用奖励。连接可用不代表奖励已经到账。",
+          "bbox": [
+            64.828,
+            650.79,
+            455.418,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "缺字候选：[缺字 U+20BB7]　[缺字 U+F0000]；原字符仅留在原始测试夹具。",
+          "bbox": [
+            64.522,
+            689.754,
+            601.578,
+            18.306
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0019",
+          "text": "本图验证静态导出与字形覆盖；真实引擎塑形、200% 重排、键盘和屏幕阅读器测试均为 NOT_RUN。",
+          "bbox": [
+            40.592,
+            792.4,
+            704.272,
+            16.176
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "preview_id": "P24_Alpha_NineSlice",
+      "source_sha256": "93933b43596e07d1e4ada1b7bb0cce1cecc2dd5c8df8226dbad16e99ed8a6fb8",
+      "argv": [
+        "inkscape",
+        "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/boards/P24_Alpha_NineSlice.svg",
+        "--query-all"
+      ],
+      "start_utc": "2026-10-30T12:45:34.188655+00:00",
+      "exit_code": 0,
+      "text_count": 19,
+      "out_of_board": [],
+      "text_overlaps": [],
+      "texts": [
+        {
+          "id": "p24_text_0000",
+          "text": "KOTODAMA BRIGADE   /   P24  ·  S03",
+          "bbox": [
+            41.616,
+            26.296,
+            244.864,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0001",
+          "text": "透明通道与九宫格 · 保持边角不变",
+          "bbox": [
+            41.44,
+            61.832,
+            491.488,
+            29.984
+          ],
+          "inside_board": true,
+          "font_size": 32.0
+        },
+        {
+          "id": "p24_text_0002",
+          "text": "同一 PNG 在深色、浅色和棋盘背景下检查；所有组件导出为 RGBA8，保留未关联 alpha。",
+          "bbox": [
+            41.584,
+            106.7,
+            701.658,
+            19.422
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0003",
+          "text": "PLACEHOLDER · 待 P25 / P30 / P37 复核",
+          "bbox": [
+            1101.98,
+            26.496,
+            297.424,
+            16.368
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0004",
+          "text": "07 / 07",
+          "bbox": [
+            1351.84,
+            1001.3,
+            47.408,
+            15.568
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0005",
+          "text": "确认出牌",
+          "bbox": [
+            220.7,
+            347.14,
+            78.44,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0006",
+          "text": "深色基底",
+          "bbox": [
+            60.608,
+            387.512,
+            62.72,
+            14.832
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0007",
+          "text": "确认出牌",
+          "bbox": [
+            680.7,
+            347.14,
+            78.44,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0008",
+          "text": "浅色仅用于 alpha 检查",
+          "bbox": [
+            520.608,
+            387.448,
+            160.176,
+            17.216
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0009",
+          "text": "确认出牌",
+          "bbox": [
+            1140.7,
+            347.14,
+            78.44,
+            18.5
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        },
+        {
+          "id": "p24_text_0010",
+          "text": "棋盘格仅用于 alpha 检查",
+          "bbox": [
+            980.4,
+            387.4,
+            176.384,
+            17.264
+          ],
+          "inside_board": true,
+          "font_size": 16.0
+        },
+        {
+          "id": "p24_text_0011",
+          "text": "九宫格 1×：left / top / right / bottom = 24 / 18 / 24 / 18",
+          "bbox": [
+            40.748,
+            458.388,
+            549.077,
+            24.112
+          ],
+          "inside_board": true,
+          "font_size": 22.0
+        },
+        {
+          "id": "p24_text_0012",
+          "text": "确认 / 確認",
+          "bbox": [
+            87.07,
+            531.772,
+            85.896,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0013",
+          "text": "180 × 48 · 边角像素不缩放",
+          "bbox": [
+            257.584,
+            531.826,
+            225.972,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0014",
+          "text": "确认 / 確認",
+          "bbox": [
+            157.07,
+            650.772,
+            85.896,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0015",
+          "text": "320 × 48 · 边角像素不缩放",
+          "bbox": [
+            396.522,
+            650.826,
+            227.034,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0016",
+          "text": "确认 / 確認",
+          "bbox": [
+            317.07,
+            781.772,
+            85.896,
+            18.45
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0017",
+          "text": "640 × 72 · 边角像素不缩放",
+          "bbox": [
+            717.008,
+            781.826,
+            226.548,
+            16.758
+          ],
+          "inside_board": true,
+          "font_size": 18.0
+        },
+        {
+          "id": "p24_text_0018",
+          "text": "2× 边界乘 2；零生命不绘制 fill；未知生命用独立图纹和文字。文字永远不参与九宫格。",
+          "bbox": [
+            40.8,
+            926.96,
+            765.14,
+            20.26
+          ],
+          "inside_board": true,
+          "font_size": 20.0
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "missing_glyphs": [],
+  "fallback_glyphs": [],
+  "contrast_pairs": [
+    {
+      "id": "text_on_canvas",
+      "fg": "#F5F1E9",
+      "bg": "#121520",
+      "minimum": 4.5,
+      "ratio": 16.1558006496048,
+      "status": "PASS"
+    },
+    {
+      "id": "muted_on_canvas",
+      "fg": "#C0C9DA",
+      "bg": "#121520",
+      "minimum": 4.5,
+      "ratio": 10.927262709653139,
+      "status": "PASS"
+    },
+    {
+      "id": "text_on_surface",
+      "fg": "#F5F1E9",
+      "bg": "#202535",
+      "minimum": 4.5,
+      "ratio": 13.533154459774506,
+      "status": "PASS"
+    },
+    {
+      "id": "muted_on_surface",
+      "fg": "#C0C9DA",
+      "bg": "#202535",
+      "minimum": 4.5,
+      "ratio": 9.153389378810356,
+      "status": "PASS"
+    },
+    {
+      "id": "text_on_raised",
+      "fg": "#F5F1E9",
+      "bg": "#2B3045",
+      "minimum": 4.5,
+      "ratio": 11.568118303816656,
+      "status": "PASS"
+    },
+    {
+      "id": "muted_on_raised",
+      "fg": "#C0C9DA",
+      "bg": "#2B3045",
+      "minimum": 4.5,
+      "ratio": 7.8243022740716865,
+      "status": "PASS"
+    },
+    {
+      "id": "text_on_disabled",
+      "fg": "#F5F1E9",
+      "bg": "#353C50",
+      "minimum": 4.5,
+      "ratio": 9.741672742969111,
+      "status": "PASS"
+    },
+    {
+      "id": "muted_on_disabled",
+      "fg": "#C0C9DA",
+      "bg": "#353C50",
+      "minimum": 4.5,
+      "ratio": 6.588953379818705,
+      "status": "PASS"
+    },
+    {
+      "id": "button_ink_on_primary",
+      "fg": "#19192B",
+      "bg": "#D8BCF4",
+      "minimum": 4.5,
+      "ratio": 10.219456717613992,
+      "status": "PASS"
+    },
+    {
+      "id": "button_ink_on_hover",
+      "fg": "#19192B",
+      "bg": "#EBD5FF",
+      "minimum": 4.5,
+      "ratio": 12.749534404152966,
+      "status": "PASS"
+    },
+    {
+      "id": "button_ink_on_pressed",
+      "fg": "#19192B",
+      "bg": "#BDA1DE",
+      "minimum": 4.5,
+      "ratio": 7.666191286625991,
+      "status": "PASS"
+    },
+    {
+      "id": "button_ink_on_gold",
+      "fg": "#19192B",
+      "bg": "#E6BF7D",
+      "minimum": 4.5,
+      "ratio": 9.967371806714022,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#F5F1E9_on_#181D2B",
+      "fg": "#F5F1E9",
+      "bg": "#181D2B",
+      "minimum": 4.5,
+      "ratio": 14.919356976933134,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#C0C9DA_on_#181D2B",
+      "fg": "#C0C9DA",
+      "bg": "#181D2B",
+      "minimum": 4.5,
+      "ratio": 10.090972071386185,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#F5F1E9_on_#302B43",
+      "fg": "#F5F1E9",
+      "bg": "#302B43",
+      "minimum": 4.5,
+      "ratio": 12.008981001165843,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#C0C9DA_on_#302B43",
+      "fg": "#C0C9DA",
+      "bg": "#302B43",
+      "minimum": 4.5,
+      "ratio": 8.122487589507521,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#F5F1E9_on_#3C2837",
+      "fg": "#F5F1E9",
+      "bg": "#3C2837",
+      "minimum": 4.5,
+      "ratio": 12.02028980533562,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#C0C9DA_on_#3C2837",
+      "fg": "#C0C9DA",
+      "bg": "#3C2837",
+      "minimum": 4.5,
+      "ratio": 8.130136500061404,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#F5F1E9_on_#392F27",
+      "fg": "#F5F1E9",
+      "bg": "#392F27",
+      "minimum": 4.5,
+      "ratio": 11.579322790731542,
+      "status": "PASS"
+    },
+    {
+      "id": "text_#C0C9DA_on_#392F27",
+      "fg": "#C0C9DA",
+      "bg": "#392F27",
+      "minimum": 4.5,
+      "ratio": 7.831880627797463,
+      "status": "PASS"
+    },
+    {
+      "id": "disabled_label",
+      "fg": "#C7CFDE",
+      "bg": "#353C50",
+      "minimum": 4.5,
+      "ratio": 7.007020312915439,
+      "status": "PASS"
+    },
+    {
+      "id": "warning_label",
+      "fg": "#F3CD8D",
+      "bg": "#392F27",
+      "minimum": 4.5,
+      "ratio": 8.651659661599421,
+      "status": "PASS"
+    },
+    {
+      "id": "focus_edge_on_canvas",
+      "fg": "#97E2F6",
+      "bg": "#121520",
+      "minimum": 3,
+      "ratio": 12.588517086024208,
+      "status": "PASS"
+    },
+    {
+      "id": "focus_edge_on_surface",
+      "fg": "#97E2F6",
+      "bg": "#202535",
+      "minimum": 3,
+      "ratio": 10.544964612994495,
+      "status": "PASS"
+    },
+    {
+      "id": "focus_edge_on_raised",
+      "fg": "#97E2F6",
+      "bg": "#2B3045",
+      "minimum": 3,
+      "ratio": 9.013818508852895,
+      "status": "PASS"
+    },
+    {
+      "id": "focus_edge_on_disabled",
+      "fg": "#97E2F6",
+      "bg": "#353C50",
+      "minimum": 3,
+      "ratio": 7.5906614863016895,
+      "status": "PASS"
+    },
+    {
+      "id": "gold_edge_on_canvas",
+      "fg": "#E6BF7D",
+      "bg": "#121520",
+      "minimum": 3,
+      "ratio": 10.49801085571143,
+      "status": "PASS"
+    },
+    {
+      "id": "gold_edge_on_surface",
+      "fg": "#E6BF7D",
+      "bg": "#202535",
+      "minimum": 3,
+      "ratio": 8.793819972902899,
+      "status": "PASS"
+    },
+    {
+      "id": "gold_edge_on_raised",
+      "fg": "#E6BF7D",
+      "bg": "#2B3045",
+      "minimum": 3,
+      "ratio": 7.516942933842902,
+      "status": "PASS"
+    },
+    {
+      "id": "gold_edge_on_disabled",
+      "fg": "#E6BF7D",
+      "bg": "#353C50",
+      "minimum": 3,
+      "ratio": 6.330121819804674,
+      "status": "PASS"
+    },
+    {
+      "id": "line_edge_on_canvas",
+      "fg": "#8D9AB5",
+      "bg": "#121520",
+      "minimum": 3,
+      "ratio": 6.432439765068901,
+      "status": "PASS"
+    },
+    {
+      "id": "line_edge_on_surface",
+      "fg": "#8D9AB5",
+      "bg": "#202535",
+      "minimum": 3,
+      "ratio": 5.388231928697542,
+      "status": "PASS"
+    },
+    {
+      "id": "line_edge_on_raised",
+      "fg": "#8D9AB5",
+      "bg": "#2B3045",
+      "minimum": 3,
+      "ratio": 4.605851842218163,
+      "status": "PASS"
+    },
+    {
+      "id": "line_edge_on_disabled",
+      "fg": "#8D9AB5",
+      "bg": "#353C50",
+      "minimum": 3,
+      "ratio": 3.878651667547977,
+      "status": "PASS"
+    },
+    {
+      "id": "hp_fill_track",
+      "fg": "#9ADDB7",
+      "bg": "#101420",
+      "minimum": 3,
+      "ratio": 11.72435580364899,
+      "status": "PASS"
+    },
+    {
+      "id": "hp_low_track",
+      "fg": "#FFB9C2",
+      "bg": "#101420",
+      "minimum": 3,
+      "ratio": 11.348336341757022,
+      "status": "PASS"
+    },
+    {
+      "id": "shield_track",
+      "fg": "#97E2F6",
+      "bg": "#101420",
+      "minimum": 3,
+      "ratio": 12.708478080142003,
+      "status": "PASS"
+    }
+  ],
+  "nine_slice_cases": [
+    {
+      "asset_id": "p24.ui.button.primary.default",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.default",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.hover",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.hover",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.pressed",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.pressed",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.disabled",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.disabled",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.selected",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.selected",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.error",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.primary.error",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.default",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.default",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.hover",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.hover",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.pressed",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.pressed",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.disabled",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.disabled",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.selected",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.selected",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.error",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.secondary.error",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.default",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.default",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.hover",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.hover",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.pressed",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.pressed",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.disabled",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.disabled",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.selected",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.selected",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.error",
+      "target_size": [
+        96,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.button.navigation.error",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.default",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.default",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.hover",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.hover",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.pressed",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.pressed",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.disabled",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.disabled",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.selected",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.selected",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.error",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.hand.error",
+      "target_size": [
+        373,
+        198
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.default",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.default",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.hover",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.hover",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.pressed",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.pressed",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.disabled",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.disabled",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.selected",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.selected",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.error",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.frame.enemy.error",
+      "target_size": [
+        487,
+        220
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.default",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.default",
+      "target_size": [
+        377,
+        124
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.selected",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.selected",
+      "target_size": [
+        377,
+        124
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.error",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.error",
+      "target_size": [
+        377,
+        124
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.pending",
+      "target_size": [
+        96,
+        64
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.panel.surface.pending",
+      "target_size": [
+        377,
+        124
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.default",
+      "target_size": [
+        12,
+        12
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.default",
+      "target_size": [
+        447,
+        36
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.empty",
+      "target_size": [
+        12,
+        12
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.empty",
+      "target_size": [
+        447,
+        36
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.unknown",
+      "target_size": [
+        12,
+        12
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.bar.hp_track.unknown",
+      "target_size": [
+        447,
+        36
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.button.active",
+      "target_size": [
+        44,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.button.active",
+      "target_size": [
+        317,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.hand.active",
+      "target_size": [
+        44,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.hand.active",
+      "target_size": [
+        383,
+        208
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.enemy.active",
+      "target_size": [
+        44,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.enemy.active",
+      "target_size": [
+        497,
+        230
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.navigation.active",
+      "target_size": [
+        44,
+        44
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    },
+    {
+      "asset_id": "p24.ui.focus.navigation.active",
+      "target_size": [
+        337,
+        72
+      ],
+      "corners_unchanged": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "status": "PASS"
+    }
+  ],
+  "density_cases": [
+    {
+      "path": "art/ui/exports/previews/P24_Component_States.png",
+      "scale": 1,
+      "actual_size": [
+        1600,
+        1200
+      ],
+      "expected_size": [
+        1600,
+        1200
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Icons_Cost.png",
+      "scale": 1,
+      "actual_size": [
+        1440,
+        1040
+      ],
+      "expected_size": [
+        1440,
+        1040
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Battle_Target_1280.png",
+      "scale": 1,
+      "actual_size": [
+        1280,
+        856
+      ],
+      "expected_size": [
+        1280,
+        856
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Learning_Quarantine_1280.png",
+      "scale": 1,
+      "actual_size": [
+        1280,
+        856
+      ],
+      "expected_size": [
+        1280,
+        856
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Geometry_SafeAreas.png",
+      "scale": 1,
+      "actual_size": [
+        1440,
+        1000
+      ],
+      "expected_size": [
+        1440,
+        1000
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Typography_Scale.png",
+      "scale": 1,
+      "actual_size": [
+        1280,
+        856
+      ],
+      "expected_size": [
+        1280,
+        856
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Typography_Scale_125.png",
+      "scale": 1.25,
+      "actual_size": [
+        1600,
+        1070
+      ],
+      "expected_size": [
+        1600,
+        1070
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Typography_Scale_150.png",
+      "scale": 1.5,
+      "actual_size": [
+        1920,
+        1284
+      ],
+      "expected_size": [
+        1920,
+        1284
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Typography_Scale_200.png",
+      "scale": 2,
+      "actual_size": [
+        2560,
+        1712
+      ],
+      "expected_size": [
+        2560,
+        1712
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "art/ui/exports/previews/P24_Alpha_NineSlice.png",
+      "scale": 1,
+      "actual_size": [
+        1440,
+        1040
+      ],
+      "expected_size": [
+        1440,
+        1040
+      ],
+      "status": "PASS"
+    }
+  ],
+  "not_proven": [
+    "Target engine import",
+    "Target OS DPI",
+    "Dynamic line shaping and reflow",
+    "Player usability",
+    "Independent P25/P32/P35/P37 approval"
+  ],
+  "status": "PASS"
+}

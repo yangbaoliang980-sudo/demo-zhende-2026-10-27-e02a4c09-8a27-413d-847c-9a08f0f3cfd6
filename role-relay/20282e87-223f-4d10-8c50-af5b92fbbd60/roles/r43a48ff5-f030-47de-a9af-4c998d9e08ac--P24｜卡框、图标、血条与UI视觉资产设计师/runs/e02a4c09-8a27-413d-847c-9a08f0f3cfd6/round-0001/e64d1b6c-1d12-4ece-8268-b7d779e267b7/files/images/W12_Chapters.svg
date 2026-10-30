@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="title desc" data-wireframe-id="W12_Chapters" data-screen-id="chapters">
+<title id="title">章节 / 挑战与首通资格</title><desc id="desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。关卡状态按 P18 原视图显示；恢复冻结时入口禁用原因覆盖“可挑战”，但不改首通事实。</desc>
+<defs><style>@font-face{font-family:P23SC;src:url(../../accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23JP;src:url(../../accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23Symbols;src:url(../../accessibility/fonts/DejaVuSans.ttf) format("truetype");font-weight:400}text{font-family:P23SC,P23JP,P23Symbols,sans-serif;font-weight:400}</style><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W12_Chapters   章节 / 挑战与首通资格</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">关卡状态按 P18 原视图显示；恢复冻结时入口禁用原因覆盖“可挑战”，但不改首通事实。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.heading">章节远征</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="76" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.meta.save_status"/>
+<text x="266" y="162.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[存档需要核对] 可继续浏览，新的出战、消耗与领取已暂停。</text>
+<rect x="248" y="250" width="1008" height="194" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}"/>
+<text x="266" y="266.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">01 · 游离字屑</text>
+<text x="266" y="308.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.eligibility.{stage_key}">已通关　｜　首通资格：已使用</text>
+<text x="266" y="350.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">奖励预览仅供阅读；是否可领取以处理状态为准。</text>
+<rect x="1010" y="272" width="226" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}" data-control="true"/>
+<text x="1087.0" y="284.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看关卡</text>
+<rect x="1010" y="338" width="226" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.chapters.enter.{stage_key}" data-control="true"/>
+<text x="1087.0" y="350.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">准备出发</text>
+<text x="1010" y="395.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">存档待核对，暂停出战</text>
+<rect x="248" y="472" width="1008" height="194" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}"/>
+<text x="266" y="488.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">02 · 失序校勘者</text>
+<text x="266" y="530.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.eligibility.{stage_key}">已解锁　｜　首通资格：尚未使用</text>
+<text x="266" y="572.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">奖励预览仅供阅读；是否可领取以处理状态为准。</text>
+<rect x="1010" y="494" width="226" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}" data-control="true"/>
+<text x="1087.0" y="506.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看关卡</text>
+<rect x="1010" y="560" width="226" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.chapters.enter.{stage_key}" data-control="true"/>
+<text x="1087.0" y="572.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">准备出发</text>
+<text x="1010" y="617.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">存档待核对，暂停出战</text>
+<text x="248" y="710.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">不可用原因要留在按钮附近；不要同时显示 READY 与“暂停出战”。</text>
+</svg>

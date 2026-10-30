@@ -1,0 +1,107 @@
+[
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/README_第六轮交付说明V6.0.txt",
+    "match": false,
+    "path": null,
+    "sha256": "27cac3c0aee30e69ab04f1b84ec1cfa10adfe9646d10f76d97becebe8169ecb3",
+    "git_blob_sha1": "883fd939dc2f15f02c2e1ea8a68f0c2942e664b2"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/SHA256_MANIFEST.json",
+    "match": false,
+    "path": null,
+    "sha256": "4529976297f87737be4c52b3ddca99dd373284293929526e84f40f6ea1eb3d38",
+    "git_blob_sha1": "924117a7af35c42680a96d3511789c36bd66c59a"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_22个压力场景冻结用例V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "4b6585da29894dc7ef47cb49debfb62549553a64720bef047f2c35272364016c",
+    "git_blob_sha1": "2aa9c6d14f73212a28fab9a3f7d502d3f8af873c"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_26项问题最终责任状态V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "b067fdf4841d3ed8a0aa55b41c86aabb0988e20b14189853bcc0e7957874e07b",
+    "git_blob_sha1": "d70b7ec2c271c2de197bae3f2f6d8af531ca1abe"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_27项接口契约冻结修订V6.0.json",
+    "match": false,
+    "path": null,
+    "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+    "git_blob_sha1": "d99e956f36a76a154179b4e27668c9455464f40a"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_43岗位历次演变裁定表V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "1d481a6109932d2083504921e33804cdc8fc9cf01dda82381dc4927a3d4dbc6b",
+    "git_blob_sha1": "95b475326225a298e17f23e036e7d90af5c48772"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_43岗独立职责与激活状态V6.0.json",
+    "match": false,
+    "path": null,
+    "sha256": "1bf579a69dea55baeaf1b7569347bc20be62e6fd1cc8208ac236b7e1970ade05",
+    "git_blob_sha1": "da4f04fdeda5b7adf7c8699f3ad44fda2a7fe097"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_92项职责冻结映射V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "d87953e5f30ac144d43c521941e51fb32f23c44c347772bf817128c36829b58a",
+    "git_blob_sha1": "c61a5aae7485304e0591588bb0133a63f1c107ba"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_全部岗位职责_可复制版V6.0.txt",
+    "match": true,
+    "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+    "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+    "git_blob_sha1": "5b892ce93a38aa900fcec95d890e57f809a9c562"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_实施前待核验及阻塞清单V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "84e5ecb971633e7a1be93894292396789002907e7292a665dfcc10dbc510ec40",
+    "git_blob_sha1": "e5a18561d0bfbdc33b5df62eda41065c3b585b09"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+    "match": true,
+    "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+    "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+    "git_blob_sha1": "682a18f0c33ae24637e67cf19fec33df8142a0f7"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_阶段与岗位激活计划V6.0.tsv",
+    "match": false,
+    "path": null,
+    "sha256": "2ed85ec79ad1b0da3724a793a3c66e576ecd9850ddbaddc7171142ed7df871d8",
+    "git_blob_sha1": "470df8e8480a2aa6d8f9d3466c1c9e8187eaaea6"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_静态自检程序V6.0.py",
+    "match": false,
+    "path": null,
+    "sha256": "174cb7868de7c8f5d52feee86a992b30b315f25748b9c05999ac19da2c263fd7",
+    "git_blob_sha1": "bfab1710123f933e6212c41ba4ae94f21eda9332"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_静态验收结果V6.0.txt",
+    "match": false,
+    "path": null,
+    "sha256": "ce82f3cff5c2abb15cbf134c034ce6b84b29f82f22a855c0544d392ae1ba921c",
+    "git_blob_sha1": "f1da12db7b04f75290a2b549b5e003c149fcb9b6"
+  },
+  {
+    "file": "P22_ContentPipeline_V0.1/evidence/upstream/V6/第六轮_首批岗位启动任务单V6.0.txt",
+    "match": true,
+    "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_首批岗位启动任务单V6.0.txt",
+    "sha256": "16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8",
+    "git_blob_sha1": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+  }
+]

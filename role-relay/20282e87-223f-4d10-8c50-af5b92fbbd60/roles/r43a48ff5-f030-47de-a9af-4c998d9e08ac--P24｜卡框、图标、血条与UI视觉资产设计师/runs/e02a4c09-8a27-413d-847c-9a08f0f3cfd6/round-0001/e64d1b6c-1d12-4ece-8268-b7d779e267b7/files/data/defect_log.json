@@ -1,0 +1,186 @@
+{
+  "version": "P23-DEFECTS/0.1.0",
+  "items": [
+    {
+      "id": "UXD-001",
+      "summary": "关键字号低于本岗候选",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/author_iterations/001_critical_text/W01_Battle_Ready.svg",
+          "size_bytes": 12564,
+          "sha256": "24194530325a5129b582a952f5c4d8e3acf57be3f3567ad4e607f93c813d7d5e"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/001_critical_text/W01_before_review.png",
+          "size_bytes": 189108,
+          "sha256": "530b91593b8f948c167b28c76131782d9a29f3c375cd4c715459b29d738b67bb"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "UXD-002",
+      "summary": "学习页连接提示不一致",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/author_iterations/002_consistency/W10_Learning_Quarantine.svg",
+          "size_bytes": 8447,
+          "sha256": "69188a2955e2d1988ea5a3e2b79ba83219356e2805d2025d1d7e1176ab403830"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/002_consistency/W10_Learning_Quarantine.png",
+          "size_bytes": 163281,
+          "sha256": "c2c3264b1af20de47e8420201c730e47b7e46d5c173cd8582a7701e88a1cca7a"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "UXD-003",
+      "summary": "同页控件固定锚点重复",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/render_environment_004.json",
+          "size_bytes": 238457,
+          "sha256": "ba4faef8af3d943f54d6714b5b274104cc1ad52d7c99b46e7932175d929a16cb"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "UXD-004",
+      "summary": "CJK字库缺少界面符号",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/author_iterations/003_font_fallback/glyph_failure.json",
+          "size_bytes": 1910,
+          "sha256": "14a669c59d7e41094768bf600aadd8aa9fe88227d3b3185df261ae21b09d7f00"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/003_font_fallback/verify_glyphs_before.py",
+          "size_bytes": 3270,
+          "sha256": "fbfdc72833871f408bf314e8bb79a7d739f0e48169e101bf0aeb0e0f13209280"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "UXD-005",
+      "summary": "选中与焦点标记区分不足",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/author_iterations/004_focus_selection/W02_Battle_Target.svg",
+          "size_bytes": 12988,
+          "sha256": "c10701d3f5c6657abcf9bbbbb3f42d7a0e535e1a93a046d9bc0b05993b839dc9"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/004_focus_selection/W02_Battle_Target.png",
+          "size_bytes": 198128,
+          "sha256": "9a6caa2e8c2269810d0172eeb69f51014ff98d24159dd71fd609c3b48ae207bc"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "VAL-001",
+      "summary": "作者静态渲染器环境/加载失败",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_OR_VALIDATION_TOOL_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/render_environment_001.json",
+          "size_bytes": 631,
+          "sha256": "a164b6e5c63bc6b1c7941d415aad3cc8950f39c128b3b6e9d7be06124d4613d2"
+        },
+        {
+          "relative_path": "design/ux/evidence/render_environment_002.json",
+          "size_bytes": 631,
+          "sha256": "70da2871bace7299afe74384f6510a9619eb5c0e210dcfe0433e7779daccb448"
+        },
+        {
+          "relative_path": "design/ux/evidence/render_environment_003.json",
+          "size_bytes": 12225,
+          "sha256": "55cedb65d150d54b02d931712961f75b63c8098a04fa22de3d397aa72aa54579"
+        },
+        {
+          "relative_path": "design/ux/evidence/render_environment_004.json",
+          "size_bytes": 238457,
+          "sha256": "ba4faef8af3d943f54d6714b5b274104cc1ad52d7c99b46e7932175d929a16cb"
+        }
+      ],
+      "postfix_evidence": "design/ux/evidence/render_final/render_results.json; design/ux/evidence/glyph_coverage.json; final design contract/validator",
+      "game_runtime_failure_claim": false
+    },
+    {
+      "id": "UXD-006",
+      "summary": "P19 same-ID retry was incorrectly grouped with read-only lookup",
+      "unique_fix_owner": "P23",
+      "scope": "AUTHOR_DESIGN_BINDING_ONLY",
+      "status": "AUTHOR_FIXED",
+      "independent_retest": "NOT_RUN",
+      "independent_closure_P35": "NOT_RUN",
+      "original_evidence": [
+        {
+          "relative_path": "design/ux/evidence/author_iterations/005_battle_retry_semantics/ui_state_map.json",
+          "size_bytes": 86739,
+          "sha256": "cc326f1517762f9557e85b31c0790bba0f7e45b6c5f3c4c59b58b27c3af3521a"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/005_battle_retry_semantics/ux_anchor_contract.json",
+          "size_bytes": 92304,
+          "sha256": "886be72a63e0d62a663c1f6158d8cb3164bac013b78be023f385034d2250d326"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/005_battle_retry_semantics/interaction_spec.md",
+          "size_bytes": 7741,
+          "sha256": "26d8253c04ba0da237b0b974b93ccfd821ec480a53157b4b4a0ae5a4538961af"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/005_battle_retry_semantics/previous_structural_validation/execution_record.json",
+          "size_bytes": 1463,
+          "sha256": "00f8124b148e24172f9747688e5159807f7d715df97f1e8e57f6d8fa16198b76"
+        },
+        {
+          "relative_path": "design/ux/evidence/author_iterations/005_battle_retry_semantics/previous_structural_validation/validation_results.json",
+          "size_bytes": 4486,
+          "sha256": "2195630f1e199e374ae65a0a1e1a0011b71d9d296dbdc73c575c05ebc1d9a1c3"
+        }
+      ],
+      "postfix_evidence": "ux_anchor_contract.json recovery; ui_state_map; interaction_spec; N09 regression",
+      "game_runtime_failure_claim": false
+    }
+  ]
+}

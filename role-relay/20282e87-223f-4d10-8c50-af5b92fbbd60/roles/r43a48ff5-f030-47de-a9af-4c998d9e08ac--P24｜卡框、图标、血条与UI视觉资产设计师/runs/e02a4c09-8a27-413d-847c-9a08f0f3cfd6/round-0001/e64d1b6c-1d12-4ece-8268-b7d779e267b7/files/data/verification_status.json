@@ -1,0 +1,71 @@
+{
+  "version": "P24-VERIFICATION/0.1.0",
+  "task_id": "P24-S03-UI-ASSET-001",
+  "levels": [
+    {
+      "layer": "AUTHOR_DESIGN",
+      "status": "COMPLETED",
+      "scope": "P24 authored editable assets and inspected seven boards; not P25 approval"
+    },
+    {
+      "layer": "AUTHOR_STATIC_ASSET_VALIDATION",
+      "status": "PASS",
+      "scope": "18/18 categories; 9/9 negative cases expected rejection; exact final package recheck bound by external receipt"
+    },
+    {
+      "layer": "AUTHOR_STATIC_RENDER",
+      "status": "PASS",
+      "scope": "210 components plus 10 board PNGs were actually rendered"
+    },
+    {
+      "layer": "P25_STYLE_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "No independent style receipt"
+    },
+    {
+      "layer": "P37_LICENSE_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "No independent license receipt"
+    },
+    {
+      "layer": "P30_ENGINE_IMPORT",
+      "status": "NOT_RUN",
+      "scope": "Import protocol/engine missing"
+    },
+    {
+      "layer": "PRODUCTION_INTEGRATION_PREFLIGHT",
+      "status": "BLOCKED",
+      "scope": "See blocker_register.json"
+    },
+    {
+      "layer": "GAME_UNIT_TESTS",
+      "status": "NOT_RUN",
+      "scope": "No game implementation in this role"
+    },
+    {
+      "layer": "GAME_RUNTIME_CONTRACT_TESTS",
+      "status": "NOT_RUN",
+      "scope": "Static asset checks are not runtime contract tests"
+    },
+    {
+      "layer": "TARGET_OS_DPI_INPUT",
+      "status": "NOT_RUN",
+      "scope": "No target environment"
+    },
+    {
+      "layer": "ANKI_E2E",
+      "status": "NOT_RUN",
+      "scope": "No Anki access or integration"
+    },
+    {
+      "layer": "P32_INDEPENDENT_TEST",
+      "status": "NOT_RUN",
+      "scope": "Author cannot sign for P32"
+    },
+    {
+      "layer": "P35_ENGINEERING_RELEASE",
+      "status": "NOT_RUN",
+      "scope": "Author cannot sign for P35"
+    }
+  ]
+}

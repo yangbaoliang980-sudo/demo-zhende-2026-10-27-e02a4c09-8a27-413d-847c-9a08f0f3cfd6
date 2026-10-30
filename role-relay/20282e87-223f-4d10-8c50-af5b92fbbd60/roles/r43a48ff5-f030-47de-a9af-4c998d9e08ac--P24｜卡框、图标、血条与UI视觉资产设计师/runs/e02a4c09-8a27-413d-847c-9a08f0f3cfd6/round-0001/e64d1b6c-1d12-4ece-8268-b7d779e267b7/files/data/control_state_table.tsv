@@ -1,0 +1,17 @@
+state	condition	cards_targets	play	end_turn	refresh	retry	focus	text_without_audio	notes
+CONNECTING	no valid snapshot	disabled	disabled	disabled	enabled	hidden	initial status	等待快照；numeric —	NOT applicable
+PLAYER_READY_NO_SELECTION	valid snapshot+context	enabled per owner affordance	disabled	enabled	enabled	hidden	unchanged	选择卡牌与目标	original button semantics
+CARD_SELECTED	valid owner card	enabled per owner	disabled until exact target set	enabled	enabled	hidden	selected card or stable key	描边及文字提示目标	Esc clears selection
+TARGETS_COMPLETE	allowed_target_sets match	enabled per owner	enabled	enabled	enabled	hidden	selected target	确认出牌文字	owner target order preserved
+INSUFFICIENT_ENERGY	owner enabled=false reason	disabled for affected card	disabled for it	enabled if PLAYER_READY	enabled	hidden	skip disabled buttons	费用不足+visible cost	no local cost recomputation
+SENDING	pending state SENDING	disabled	disabled	disabled	disabled	hidden	status fallback if removed	等待操作结果	synchronous lock
+UNKNOWN	pending state UNKNOWN	disabled	disabled	disabled	enabled	enabled unless suspended	query button available	结果未知+same command ID held	repeat query while SENDING ignored
+DISCONNECTED	read failed; last snapshot stale	disabled	disabled	disabled	enabled	only if pending UNKNOWN	stable/fallback status	连接中断；旧状态明确标识	no speculative rollback
+CONTEXT_MISSING_OR_STALE	valid snapshot; no valid context	disabled	disabled	enabled only if ready without other locks	enabled	as pending state	status	卡牌待同步；意图尚未同步	valid HP always refreshes
+BACKGROUND	visibility hidden	disabled	disabled	disabled	as pending state	disabled	selection cleared	后台/恢复重新同步	cancel presentation epoch
+RESUMING	visible; fresh read pending	disabled	disabled	disabled	as pending state	only after visible+UNKNOWN	status	同步中	old async read cannot unlock
+ENEMY_OR_TRANSITION	phase not PLAYER_READY	disabled	disabled	disabled	enabled if not SENDING	as pending state	status	敌方回合或等待下一回合	UI emits no SYSTEM command
+TERMINAL_ABORTED_FAULTED	snapshot closed phase/outcome	disabled	disabled	disabled	enabled if not SENDING	as pending state	status	明确胜负/中止/异常+final values	never decide outcome from HP locally
+OWNER_REJECTED	BattleReply.REJECTED then successful read	per latest state	per latest selection; usually cleared	per latest state	enabled	hidden after known reply	status if replaced	owner error code text	no damage/energy mutation
+REDUCED_NONE_FAST_SKIP	any snapshot state	unchanged	unchanged	unchanged	unchanged	unchanged	preserved	完整数值与记录始终可见	only P29 mode/cancel changes
+KEY_REPEAT	Enter/Space repeat=true	no new gesture	no second command	no second command	same native controls	same native controls	preserved	same visible status	keydown prevents repeated activation

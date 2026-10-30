@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>言灵旅团 · P19 战斗界面验证</title>
+  <link rel="stylesheet" href="/ui/battle/widgets/fonts/font.css">
+  <link rel="stylesheet" href="/ui/battle/screens/battle.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">言</span><div><strong>言灵旅团</strong><small>战斗演练 / BATTLE STUDY</small></div></div>
+    <div class="scope-note"><span class="status-dot"></span>隔离验证<span class="scope-detail">测试角色与素材占位 · 未接入正式工程</span></div>
+    <div class="top-actions"><label>动态效果<select id="motion-mode"><option value="none">关闭</option><option value="reduced">减少</option><option value="normal">标准</option><option value="fast">快进</option></select></label><button class="quiet-button" id="skip-motion">跳过演出</button></div>
+  </header>
+  <main>
+    <section class="battle-heading" aria-label="回合状态">
+      <div><span class="eyebrow">ISOLATED TRAINING</span><h1>无声演练场</h1></div>
+      <div class="turn-heading"><span id="phase-label">正在连接</span><strong id="turn-label">第 — 回合</strong><small id="revision-label">等待快照</small></div>
+      <div class="energy-panel" aria-label="费用余额"><span>可用费用</span><strong id="energy">—</strong><small>由战斗快照更新</small></div>
+    </section>
+    <div id="connection-banner" class="notice" role="status" aria-live="polite">正在读取战斗状态…</div>
+    <section class="battle-layout" aria-label="战场">
+      <section class="party-column" aria-labelledby="party-title"><div class="section-label"><h2 id="party-title">我方编队</h2><span>三人队伍</span></div><div id="party" class="party-list"></div><p class="asset-note">头像使用文字占位，正式角色图待接入。</p></section>
+      <section class="enemy-column" aria-labelledby="enemy-title"><div class="arena-line"><span></span><h2 id="enemy-title">敌方目标</h2><span></span></div><div id="enemies" class="enemies"></div><div id="outcome" class="outcome" role="status" hidden></div></section>
+      <aside class="journal-column" aria-labelledby="journal-title"><div class="section-label"><h2 id="journal-title">结算记录</h2><span>无声可读</span></div><ol id="battle-log" class="battle-log"><li>数值将随已提交快照更新。</li></ol><div class="presentation-note" id="presentation-note">无动效模式 · 即时显示终态</div></aside>
+    </section>
+    <section class="hand-area" aria-labelledby="hand-title">
+      <div class="hand-heading"><div><h2 id="hand-title">手牌 <span id="hand-count">0</span></h2><p id="selection-hint">选择卡牌，再选择目标。</p></div><div id="pile-counts" class="pile-counts"></div></div>
+      <div id="hand" class="hand" role="group" aria-label="手牌列表"></div>
+      <div class="command-bar"><div class="input-feedback"><p id="input-status" role="status" aria-live="polite">等待战斗状态</p><p id="error-message" role="alert" hidden></p></div><div class="command-buttons"><button id="refresh" class="quiet-button">刷新状态</button><button id="retry" class="quiet-button" hidden>查询本次操作</button><button id="play" class="play-button" disabled>确认出牌</button><button id="end-turn" class="end-button" disabled>结束回合 <span aria-hidden="true">→</span></button></div></div>
+    </section>
+    <details class="test-notice"><summary>本验证界面的来源与边界</summary><p>状态由未修改的 P14 战斗核心提供，费用和目标可用性由未修改的 P15 计算。敌方行动为固定测试脚本，三人身份和卡牌数值来自上游测试配置。敌方意图在当前 DTO 中尚未作为正式状态提交，因此显示为“脚本测试预告”。没有持久存档、真实 Anki、正式美术或 P29 命中动画。</p><p>操作：点击手牌 → 点击允许的敌人或队友 → 确认出牌。键盘可使用 Tab、Enter；Esc 清除选择。关闭动画、减少效果和快进仅影响表现设置。</p><p>重新开始演练：停止并重新运行本地验证程序。本窗口共享一场内存战斗，不提供存档恢复。</p></details>
+  </main>
+  <footer><span>言灵旅团 · P19 / S03</span><span id="transport-label">本地验证台</span></footer>
+</div>
+<script type="module" src="/ui/battle/screens/app.mjs"></script>
+</body>
+</html>

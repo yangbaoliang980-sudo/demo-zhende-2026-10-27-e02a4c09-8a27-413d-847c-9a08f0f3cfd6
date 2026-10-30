@@ -1,0 +1,345 @@
+{
+  "schema_version": "P24-SOURCE-INPUTS/0.1.0",
+  "task_id": "P24-S03-UI-ASSET-001",
+  "files": [
+    {
+      "source_id": "P23_W01",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W01_Battle_Ready.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W01/W01_Battle_Ready.svg",
+      "size_bytes": 12817,
+      "sha256": "f37684e95f5f68981b1cd5401e306f7575b531643fcf293502de5d44a04562c7",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_W02",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W02_Battle_Target.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W02/W02_Battle_Target.svg",
+      "size_bytes": 13052,
+      "sha256": "74d6e600e5937c928b45696e0913699f71b7de2308c2636c213f09a0308c3dc2",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_W03",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W03_Battle_Unknown.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W03/W03_Battle_Unknown.svg",
+      "size_bytes": 12346,
+      "sha256": "870b26c6371a43ffe1277eda2e073ea52626486b11446e07a1506717f526f855",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_W10",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W10_Learning_Quarantine.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W10/W10_Learning_Quarantine.svg",
+      "size_bytes": 8610,
+      "sha256": "5cedb0c2930b44a32db6e2fa8de3372a039171922285bf2039146e6bced8d925",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_W16",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W16_Typography.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W16/W16_Typography.svg",
+      "size_bytes": 5130,
+      "sha256": "7266bf57ca738a43f014e6f77b8c835717a9c1d69909bfee763cb038a4871356",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_W17",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/wireframes/W17_Battle_Large_Text.svg",
+      "local_copy": "art/ui/evidence/upstream/P23_W17/W17_Battle_Large_Text.svg",
+      "size_bytes": 4593,
+      "sha256": "9b52fdc4001f473490f00958947ea9c5e319102e105f723e4e15395949912bea",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_STATES",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/ui_state_map.json",
+      "local_copy": "art/ui/evidence/upstream/P23_STATES/ui_state_map.json",
+      "size_bytes": 86849,
+      "sha256": "acb52d76a2ac26a02dcf0b214fd0cedd2b22da54745d9df75b02bff26bf53ec4",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_ANCHORS",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/ux_anchor_contract.json",
+      "local_copy": "art/ui/evidence/upstream/P23_ANCHORS/ux_anchor_contract.json",
+      "size_bytes": 93415,
+      "sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_TOKENS",
+      "original_member": "P23_UX_Accessibility_V0.1/design/accessibility/accessibility_tokens.json",
+      "local_copy": "art/ui/evidence/upstream/P23_TOKENS/accessibility_tokens.json",
+      "size_bytes": 2462,
+      "sha256": "7fde54f966f4c99b0fc7791b1589f283b193aa5266533f6c05b1e5f125e4103c",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_TYPOGRAPHY",
+      "original_member": "P23_UX_Accessibility_V0.1/design/accessibility/typography_accessibility_spec.md",
+      "local_copy": "art/ui/evidence/upstream/P23_TYPOGRAPHY/typography_accessibility_spec.md",
+      "size_bytes": 7400,
+      "sha256": "65c25aebd992553aca4c856acea83d081c8481597c653d8b3c05deb72a59d84b",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_FONT_PROVENANCE",
+      "original_member": "P23_UX_Accessibility_V0.1/design/accessibility/font_provenance.json",
+      "local_copy": "art/ui/evidence/upstream/P23_FONT_PROVENANCE/font_provenance.json",
+      "size_bytes": 2220,
+      "sha256": "eb0ae0774998e5e449b6c81e40ed0ef829ca936582a7f3b635bc5e2b09eab73f",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_STRINGS",
+      "original_member": "P23_UX_Accessibility_V0.1/design/accessibility/typography_test_strings.json",
+      "local_copy": "art/ui/evidence/upstream/P23_STRINGS/typography_test_strings.json",
+      "size_bytes": 3040,
+      "sha256": "4c8f63a8c13ce39e591352adbdb2af727a8ca49ebcf37d83dbb32dc25fe89460",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P23_INTERACTION",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/interaction_spec.md",
+      "local_copy": "art/ui/evidence/upstream/P23_INTERACTION/interaction_spec.md",
+      "size_bytes": 8868,
+      "sha256": "491e15fc912b2ba615751c6b8ff5d645b03a03bbe96635f9370650660aea8dd6",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P01_REQUIREMENTS",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P01/SRC-P01-REQ/requirements_traceability.tsv",
+      "local_copy": "art/ui/evidence/upstream/P01_REQUIREMENTS/requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P01_SCOPE",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P01/SRC-P01-SCOPE/prd_scope_v0.md",
+      "local_copy": "art/ui/evidence/upstream/P01_SCOPE/prd_scope_v0.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P13_PATH",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P13/SRC-P13-PATH/actual_path_mapping.json",
+      "local_copy": "art/ui/evidence/upstream/P13_PATH/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P13_ENV",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P13/SRC-P13-ENV/target_environment_requirements.json",
+      "local_copy": "art/ui/evidence/upstream/P13_ENV/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P22_ID",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P22/SRC-P22-ID-POLICY/id_policy.json",
+      "local_copy": "art/ui/evidence/upstream/P22_ID/id_policy.json",
+      "size_bytes": 812,
+      "sha256": "f675ed7aaeb5dd24c772ef11b223e93f6da0e156848e3f9fa36b57d0acc1784a",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P22_SCHEMA",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P22/SRC-P22-SPEC/content_schema_spec.md",
+      "local_copy": "art/ui/evidence/upstream/P22_SCHEMA/content_schema_spec.md",
+      "size_bytes": 8881,
+      "sha256": "295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P22_REGISTRY",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P22/SRC-P22-REGISTRY/content_id_registry.tsv",
+      "local_copy": "art/ui/evidence/upstream/P22_REGISTRY/content_id_registry.tsv",
+      "size_bytes": 27951,
+      "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "V6_INTERFACES",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/V6/SRC-V6-IC/第六轮_27项接口契约冻结修订V6.0.json",
+      "local_copy": "art/ui/evidence/upstream/V6_INTERFACES/第六轮_27项接口契约冻结修订V6.0.json",
+      "size_bytes": 23619,
+      "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "V6_ROLES",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/V6/SRC-V6-ROLES/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "local_copy": "art/ui/evidence/upstream/V6_ROLES/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P19_STYLE",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P19/SRC-P19-CSS/battle.css",
+      "local_copy": "art/ui/evidence/upstream/P19_STYLE/battle.css",
+      "size_bytes": 14022,
+      "sha256": "6604bd34ab1492f40cac6eaecce4f8e46dd41f48b9d1bf2a30787eaf07e0b662",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "P20_STYLE",
+      "original_member": "P23_UX_Accessibility_V0.1/design/ux/evidence/upstream/P20/SRC-P20-CSS/styles.css",
+      "local_copy": "art/ui/evidence/upstream/P20_STYLE/styles.css",
+      "size_bytes": 18853,
+      "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a",
+      "container_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "read_status": "READ",
+      "source_commit": "bc9aec3a300e1a39aafb3303754a00b8004bbde5",
+      "unchanged_copy": true
+    },
+    {
+      "source_id": "FONT_DejaVuSans",
+      "local_copy": "art/ui/source/fonts/DejaVuSans.ttf",
+      "size_bytes": 759720,
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_DejaVu_LICENSE",
+      "local_copy": "art/ui/source/fonts/DejaVu_LICENSE.txt",
+      "size_bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_NotoJP_LICENSE",
+      "local_copy": "art/ui/source/fonts/NotoJP_LICENSE.txt",
+      "size_bytes": 4314,
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_NotoJP_package",
+      "local_copy": "art/ui/source/fonts/NotoJP_package.json",
+      "size_bytes": 1488,
+      "sha256": "4dd11ac12e0c7f7c17f6e08566ca327e983ff7a7b0fa0b49a49e67d4dc258729",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_NotoSC_LICENSE",
+      "local_copy": "art/ui/source/fonts/NotoSC_LICENSE.txt",
+      "size_bytes": 4314,
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_noto-sans-jp-japanese-400-normal",
+      "local_copy": "art/ui/source/fonts/noto-sans-jp-japanese-400-normal.woff2",
+      "size_bytes": 1132964,
+      "sha256": "5ae4b6b5f176a590babe96d6bb62ee8805f4ddf15877738eda807db1fa20f136",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    },
+    {
+      "source_id": "FONT_noto-sans-sc-chinese-simplified-400-normal",
+      "local_copy": "art/ui/source/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "size_bytes": 1142552,
+      "sha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "unchanged_copy": true,
+      "read_status": "DECODED_OR_LICENSE_READ"
+    }
+  ],
+  "scope_note": "Read-only input snapshots; sources retain their original owners. Git tree matches are separately recorded.",
+  "missing": [
+    {
+      "owner": "P25",
+      "artifact": "fixed Art Bible / palette / approved crop guide"
+    },
+    {
+      "owner": "P30",
+      "artifact": "accepted IC-22 import schema / settings / engine version"
+    },
+    {
+      "owner": "P13",
+      "artifact": "actual_path_mapping with P24 entries and write authorization"
+    },
+    {
+      "owner": "P22",
+      "artifact": "accepted P24 resource IDs and export naming contract"
+    }
+  ]
+}

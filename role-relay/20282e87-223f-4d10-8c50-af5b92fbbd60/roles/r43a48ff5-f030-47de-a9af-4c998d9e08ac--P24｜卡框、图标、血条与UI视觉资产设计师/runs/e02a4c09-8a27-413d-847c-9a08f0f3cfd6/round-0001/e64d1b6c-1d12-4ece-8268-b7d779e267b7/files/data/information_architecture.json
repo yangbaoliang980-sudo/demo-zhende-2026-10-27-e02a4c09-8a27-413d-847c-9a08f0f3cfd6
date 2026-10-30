@@ -1,0 +1,202 @@
+{
+  "version": "P23-IA/0.1.0-proposal",
+  "screens": [
+    {
+      "screen_id": "home",
+      "label_zh": "旅团营地",
+      "implementation_owner": "P20",
+      "stage": "S06",
+      "existing_route": "home",
+      "purpose": "显示已保存编队、当前可用资源和学习摘要；导航无领域副作用",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "characters",
+      "label_zh": "角色档案",
+      "implementation_owner": "P20",
+      "stage": "S06",
+      "existing_route": "characters",
+      "purpose": "角色列表到单人养成；显示角色事实，不创建角色",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "party",
+      "label_zh": "三人编队",
+      "implementation_owner": "P20",
+      "stage": "S06",
+      "existing_route": "party",
+      "purpose": "草稿与已提交顺序分开；只在保存确认后采用新视图",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "growth",
+      "label_zh": "角色养成",
+      "implementation_owner": "P20",
+      "stage": "S06",
+      "existing_route": "growth",
+      "purpose": "属性、资格和费用来自同一视图；已有升级确认对话框",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "chapters",
+      "label_zh": "章节远征",
+      "implementation_owner": "P20",
+      "stage": "S07",
+      "existing_route": "chapters",
+      "purpose": "挑战状态、首通资格和奖励处理状态分开",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "handoff",
+      "label_zh": "出战交接",
+      "implementation_owner": "P20",
+      "stage": "S03/S07",
+      "existing_route": "handoff",
+      "purpose": "现存技术交接态；不新增常驻导航；真实进入 P19 的路由未接线",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "battle",
+      "label_zh": "卡牌战斗",
+      "implementation_owner": "P19",
+      "stage": "S03",
+      "existing_route": "battle",
+      "purpose": "卡牌、目标、回合、意图和结算记录；仅消费权威事实",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "settlement",
+      "label_zh": "战后结算",
+      "implementation_owner": "P20",
+      "stage": "S07",
+      "existing_route": "settlement",
+      "purpose": "战斗结果与奖励结果分别可见",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    },
+    {
+      "screen_id": "learning",
+      "label_zh": "学习状态",
+      "implementation_owner": "P20",
+      "stage": "S05/S08",
+      "existing_route": "learning",
+      "purpose": "连接、事件处理、钱包证明分别展示；操作只读",
+      "new_screen": false,
+      "status": "DESIGN_PROPOSAL_ON_EXISTING_SURFACE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "home",
+      "to": "learning",
+      "label": "查看学习状态",
+      "domain_effect": "NONE",
+      "note": "已有P20导航"
+    },
+    {
+      "from": "learning",
+      "to": "home",
+      "label": "返回营地",
+      "domain_effect": "NONE",
+      "note": "不通过查账授奖"
+    },
+    {
+      "from": "home",
+      "to": "characters",
+      "label": "查看角色",
+      "domain_effect": "NONE",
+      "note": "已有P20导航"
+    },
+    {
+      "from": "characters",
+      "to": "growth",
+      "label": "查看所选角色",
+      "domain_effect": "NONE",
+      "note": "已有P20导航"
+    },
+    {
+      "from": "home",
+      "to": "party",
+      "label": "调整编队",
+      "domain_effect": "NONE",
+      "note": "已有P20导航"
+    },
+    {
+      "from": "party",
+      "to": "chapters",
+      "label": "保存后查看章节",
+      "domain_effect": "SET_PARTY only on explicit save",
+      "note": "导航本身不保存"
+    },
+    {
+      "from": "growth",
+      "to": "chapters",
+      "label": "查看章节",
+      "domain_effect": "NONE",
+      "note": "养成完成由当前视图证明"
+    },
+    {
+      "from": "chapters",
+      "to": "handoff",
+      "label": "准备出发",
+      "domain_effect": "ENTER_STAGE",
+      "note": "领域受理后取得活动战斗引用"
+    },
+    {
+      "from": "handoff",
+      "to": "battle",
+      "label": "进入已创建战斗",
+      "domain_effect": "NO_NEW_BATTLE_COMMAND",
+      "note": "BLOCKED: P13/P19/P20 route acceptance"
+    },
+    {
+      "from": "battle",
+      "to": "settlement",
+      "label": "查看已提交战斗结果",
+      "domain_effect": "NONE",
+      "note": "BLOCKED: trusted P14 result reference"
+    },
+    {
+      "from": "settlement",
+      "to": "chapters",
+      "label": "返回章节",
+      "domain_effect": "NONE",
+      "note": "未知奖励查询不重领"
+    },
+    {
+      "from": "settlement",
+      "to": "growth",
+      "label": "查看养成",
+      "domain_effect": "NONE",
+      "note": "以最新钱包为准"
+    }
+  ],
+  "global_overlays": [
+    "read_only_recovery_banner",
+    "operation_pending_banner"
+  ],
+  "existing_dialogs": [
+    "P20 growth confirmation"
+  ],
+  "proposed_interaction_not_implemented": [
+    "battle end-turn inline review"
+  ],
+  "scope": [
+    "S03 priority",
+    "S05-S07 existing UI alignment only",
+    "S08 acceptance tasks only"
+  ],
+  "not_approved": [
+    "initial roster/deck/enemy counts",
+    "production engine/display",
+    "new settings page",
+    "equipment rollout"
+  ]
+}

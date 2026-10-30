@@ -1,0 +1,103 @@
+{
+  "layer": "AUTHOR_NEGATIVE_STATIC_VALIDATOR_TESTS",
+  "cases": [
+    {
+      "case": "duplicate_id",
+      "expected_error": "ID_DUP",
+      "observed_errors": [
+        "EXPORT_MANIFEST_COVERAGE",
+        "HASH_MISMATCH",
+        "ID_DUP",
+        "MATRIX_ASSET_COVERAGE",
+        "MATRIX_DANGLING",
+        "PREVIEW_ASSET_MISSING",
+        "SOURCE_METADATA_MISMATCH",
+        "SOURCE_RENDER_STALE"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "rgb_png",
+      "expected_error": "ALPHA_RGBA",
+      "observed_errors": [
+        "ALPHA_RGBA",
+        "HASH_MISMATCH",
+        "RENDER_EVIDENCE_STALE"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "wrong_size",
+      "expected_error": "PNG_SIZE",
+      "observed_errors": [
+        "HASH_MISMATCH",
+        "PNG_SIZE",
+        "RENDER_EVIDENCE_STALE"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "missing_state",
+      "expected_error": "STATES_INCOMPLETE",
+      "observed_errors": [
+        "COUNT_MISMATCH",
+        "EXPORT_MANIFEST_COVERAGE",
+        "HASH_MISMATCH",
+        "MATRIX_ASSET_COVERAGE",
+        "MATRIX_DANGLING",
+        "PREVIEW_ASSET_MISSING",
+        "STATES_INCOMPLETE"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "path_escape",
+      "expected_error": "PATH_OUTSIDE",
+      "observed_errors": [
+        "HASH_MISMATCH",
+        "PATH_OUTSIDE",
+        "PLACEHOLDER_FILENAME"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "promote_placeholder",
+      "expected_error": "PRODUCTION_FORBIDDEN",
+      "observed_errors": [
+        "HASH_MISMATCH",
+        "PRODUCTION_FORBIDDEN",
+        "SOURCE_METADATA_MISMATCH"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "bad_slice",
+      "expected_error": "NINE_SLICE_RANGE",
+      "observed_errors": [
+        "HASH_MISMATCH",
+        "NINE_SLICE_RANGE",
+        "SOURCE_METADATA_MISMATCH"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "tampered_bytes",
+      "expected_error": "HASH_MISMATCH",
+      "observed_errors": [
+        "HASH_MISMATCH",
+        "RENDER_EVIDENCE_STALE"
+      ],
+      "status": "EXPECTED_REJECTION"
+    },
+    {
+      "case": "low_contrast",
+      "expected_error": "CONTRAST_BELOW_TARGET",
+      "observed_errors": [
+        "CONTRAST_BELOW_TARGET",
+        "HASH_MISMATCH"
+      ],
+      "status": "EXPECTED_REJECTION"
+    }
+  ],
+  "status": "PASS"
+}

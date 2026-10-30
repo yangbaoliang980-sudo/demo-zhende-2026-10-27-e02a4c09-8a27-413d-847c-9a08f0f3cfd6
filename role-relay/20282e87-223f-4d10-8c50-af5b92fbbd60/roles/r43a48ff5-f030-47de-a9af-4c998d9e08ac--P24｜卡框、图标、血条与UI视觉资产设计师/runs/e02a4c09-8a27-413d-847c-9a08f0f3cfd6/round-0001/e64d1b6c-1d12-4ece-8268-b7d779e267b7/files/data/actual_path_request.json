@@ -1,0 +1,19 @@
+{
+  "version": "P24-PATH-REQUEST/0.1.0",
+  "task_id": "P24-S03-UI-ASSET-001",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "base_mapping_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+  "requested_owner": "P24",
+  "production_write_authorized": false,
+  "actual_game_repository": null,
+  "actual_game_commit": null,
+  "actual_production_paths": null,
+  "isolated_deliverable_root": "P24_UI_VisualAssets_V0.1",
+  "requested_design_paths": [
+    "art/ui/source/**",
+    "art/ui/exports/**"
+  ],
+  "supporting_files": "This isolated package contains supporting specifications, design tooling and validation evidence; these are not new production path claims.",
+  "merge_owner": "USER_DESIGNATED_EXT-INTEGRATOR",
+  "overwrite_existing": false
+}

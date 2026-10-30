@@ -1,0 +1,72 @@
+{
+  "request_url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/trees/8c370d731c323f86ff19642f4cc73f818498f641?recursive=1",
+  "tree_sha": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "truncated": false,
+  "entries_total": 170,
+  "relevant_entries": [
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/第六轮_游戏研发岗位体系最终冻结版V6.0_完整交付包.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5019ca0c83021bd0ea78b4e3de517991b67de531",
+      "size": 174352,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5019ca0c83021bd0ea78b4e3de517991b67de531"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8/第六轮_首批岗位启动任务单V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/682a18f0c33ae24637e67cf19fec33df8142a0f7"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b892ce93a38aa900fcec95d890e57f809a9c562",
+      "size": 178461,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/5b892ce93a38aa900fcec95d890e57f809a9c562"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682a18f0c33ae24637e67cf19fec33df8142a0f7",
+      "size": 226868,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/682a18f0c33ae24637e67cf19fec33df8142a0f7"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/documents/第六轮_首批岗位启动任务单V6.0.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52dc3b9e4cf3bdfd47c3dac24e313e12f1523955",
+      "size": 3841,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/52dc3b9e4cf3bdfd47c3dac24e313e12f1523955"
+    },
+    {
+      "path": "role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--第六轮｜最终研发组织架构与岗位职责冻结官/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "316f3700af673fa77b555ae249aa4d509b457477",
+      "size": 37716,
+      "url": "https://api.github.com/repos/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/git/blobs/316f3700af673fa77b555ae249aa4d509b457477"
+    }
+  ]
+}

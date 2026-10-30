@@ -1,0 +1,34 @@
+{
+  "P03_P04_compatibility_is_alias": false,
+  "asset_request_is_asset": false,
+  "automatic_renumbering": false,
+  "canonical_id": "PRESERVE_HISTORICAL_ID",
+  "case_policy": "EXACT_MATCH_REFERENCES_REJECT_CASE_COLLISION_WITHIN_KIND_SCOPE",
+  "global_reuse": "EXACT_GLOBAL_ID_MUST_NOT_CROSS_KIND",
+  "identity_key": [
+    "kind",
+    "scope",
+    "id"
+  ],
+  "implemented_syntax": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,159}$",
+  "lifecycle": [
+    "CANDIDATE",
+    "RELEASED",
+    "DEPRECATED",
+    "TOMBSTONE"
+  ],
+  "owner": "P22",
+  "production_promotion_implemented": false,
+  "registry_sort": [
+    "kind",
+    "scope",
+    "id"
+  ],
+  "released_delete_or_reuse_approval_owners": [
+    "P13",
+    "P21",
+    "P01"
+  ],
+  "scope": "CANDIDATE_COMPATIBILITY_NOT_FORMAL_RELEASE",
+  "version": "P22-ID-POLICY/0.1.0"
+}

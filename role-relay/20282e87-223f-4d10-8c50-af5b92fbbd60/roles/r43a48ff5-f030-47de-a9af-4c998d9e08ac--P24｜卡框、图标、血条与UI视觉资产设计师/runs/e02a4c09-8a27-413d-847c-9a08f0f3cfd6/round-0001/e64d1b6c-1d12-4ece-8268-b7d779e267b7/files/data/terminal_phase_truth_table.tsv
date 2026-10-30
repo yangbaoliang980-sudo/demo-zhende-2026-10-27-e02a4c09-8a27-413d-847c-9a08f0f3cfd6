@@ -1,0 +1,25 @@
+case_id	precondition	action_or_effect	post_death_alive_player	post_death_alive_enemy	pending_reactions	boss_alive	boss_threshold_crossed	previously_proposed	outcome	phase_proposal	canonical_command_result	binding	status
+TP-001	Player 3 alive enemy 1 alive	Damage nonlethal	3	1	0	NA	NO	NO	ONGOING	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-002	Player 3 alive enemy 1 alive	Last enemy killed	3	0	0	NO	NO	NO	WIN	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-003	Player 1 alive enemy 1 alive	Last player killed	0	1	0	NA	NO	NO	LOSS	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-004	Player 1 alive enemy 1 alive	Last enemy dies then death trigger kills last hero	0	0	0	NO	NO	NO	DRAW	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-005	Player 1 alive enemy 1 alive	Last enemy dead but death retaliate queued	1	0	1	NO	NO	NO	DEFER	NONE	NO_TERMINAL_YET	TECH_RULE	EXPECTED_ONLY
+TP-006	Boss 12/20 alive phase1; test threshold <=10	Boss hit 4 and stays at 8	3	1	0	YES	YES	NO	ONGOING	phase2	COMMIT	MOCK_THRESHOLD	EXPECTED_ONLY
+TP-007	Boss 12/20 alive phase1; test threshold <=10	Boss hit 12 and dies	3	0	0	NO	YES	NO	WIN	NONE	COMMIT	MOCK_THRESHOLD	EXPECTED_ONLY
+TP-008	Boss threshold crossed but hero last dies via reaction	Threshold crossed + retaliation terminal	0	1	0	YES	YES	NO	LOSS	NONE	COMMIT	MOCK_THRESHOLD	EXPECTED_ONLY
+TP-009	Boss living 8/20 phase1 already phase2 proposed	Healing then threshold recross	3	1	0	YES	YES	YES	ONGOING	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-010	All enemies dead and all party dead at start	SYSTEM_START	0	0	0	NO	NO	NO	DRAW	NONE	COMMIT	TECH_RULE	EXPECTED_ONLY
+TP-011	Enemy attack has no player target because all players dead	SYSTEM_ENEMY_ACTION	0	1	0	NA	NO	NO	LOSS	NONE	COMMIT_IF_ENTRY_ALLOWED_ELSE_REJECT	TECH_RULE	EXPECTED_ONLY
+TP-012	Player ready with 1 valid target	PLAY_CARD target E99	3	1	0	NA	NO	NO	UNCHANGED	NONE	REJECT_TARGET_INVALID	TECH_RULE	EXPECTED_ONLY
+TP-013	Energy 0 card cost 1	PLAY_CARD	3	1	0	NA	NO	NO	UNCHANGED	NONE	REJECT_ENERGY_INSUFFICIENT	TECH_RULE	EXPECTED_ONLY
+TP-014	Accepted card command already recorded	Same ID same command fingerprint	3	1	0	NA	NO	NO	UNCHANGED	NONE	DUPLICATE_NO_OP	TECH_RULE	EXPECTED_ONLY
+TP-015	Accepted card command already recorded	Same ID different command fingerprint	3	1	0	NA	NO	NO	UNCHANGED	NONE	REJECT_COMMAND_ID_COLLISION	TECH_RULE	EXPECTED_ONLY
+TP-016	ENEMY_READY after end turn	END_TURN new command ID	3	1	0	NA	NO	NO	UNCHANGED	NONE	REJECT_PHASE_INVALID	TECH_RULE	EXPECTED_ONLY
+TP-017	PLAYER_TURN_PENDING status DOT kills final player	SYSTEM_ENTER_PLAYER_TURN	0	1	0	NA	NO	NO	LOSS	NONE	COMMIT_NO_DRAW	TECH_RULE	EXPECTED_ONLY
+TP-018	PLAYER_TURN_PENDING no draw/discard	SYSTEM_ENTER_PLAYER_TURN draw 2	3	1	0	NA	NO	NO	ONGOING	NONE	COMMIT_WITH_DRAW_SHORTFALL	MOCK_DRAW_POLICY	EXPECTED_ONLY
+TP-019	PLAYER_TURN_PENDING discard 3 and draw empty	SYSTEM_ENTER_PLAYER_TURN shuffle then draw 1	3	1	0	NA	NO	NO	ONGOING	NONE	COMMIT_WITH_SHUFFLE	MOCK_DRAW_POLICY	EXPECTED_ONLY
+TP-020	Battle already WIN terminal	PLAY_CARD new ID	3	0	0	NO	NO	NO	UNCHANGED	NONE	REJECT_ALREADY_CLOSED	TECH_RULE	EXPECTED_ONLY
+TP-021	Battle currently ABORTED	Any new gameplay command	3	1	0	NA	NO	NO	UNCHANGED	NONE	REJECT_ALREADY_CLOSED	TECH_RULE	EXPECTED_ONLY
+TP-022	Reaction chain over 1024 without dedup stop	Resolve root and triggers	UNKNOWN	UNKNOWN	UNKNOWN	UNKNOWN	UNKNOWN	UNKNOWN	FAULTED	NONE	ROLLBACK_THEN_FAULT	SAFETY_LIMIT	EXPECTED_ONLY
+TP-023	Player alive enemy alive; animation off	Same command seed and start snapshot	3	1	0	NA	NO	NO	ONGOING	NONE	SAME_LOGIC_AS_ANIMATION_ON	TECH_RULE	EXPECTED_ONLY
+TP-024	All shield absorbs damage	Damage <= shield	3	1	0	NA	NO	NO	ONGOING	NONE	COMMIT_NO_HP_CHANGE	TECH_RULE	EXPECTED_ONLY

@@ -1,0 +1,68 @@
+{
+  "version": "P24-BLOCKERS/0.1.0",
+  "blockers": [
+    {
+      "id": "P24-B01",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "missing": "真实工程固定提交、P24 的 art/ui/source/** 和 art/ui/exports/** actual_path_mapping、写入白名单",
+      "observed": "P13-ACTUAL-PATH-MAPPING/0.1.0 中 P24 条目为 0，actual_game_commit=null，production_write_authorized=false",
+      "impact": "禁止覆盖/导入真实工程；本包仅新建隔离交付",
+      "evidence": "art/ui/evidence/upstream/P13_PATH/actual_path_mapping.json"
+    },
+    {
+      "id": "P24-B02",
+      "owner": "P25",
+      "status": "BLOCKED",
+      "missing": "固定版本 Art Bible、统一色板、正式字体方案、角色/敌人裁切安全区审定",
+      "observed": "本次附件及指定固定仓库树中未取得 P25 工件",
+      "impact": "全批保持 PLACEHOLDER；S08 正式视觉受阻",
+      "evidence": "art/ui/evidence/intake/github_tree_evidence.json"
+    },
+    {
+      "id": "P24-B03",
+      "owner": "P30",
+      "status": "BLOCKED",
+      "missing": "IC-22 实际导入协议、import_version、引擎版本、纹理/图集/字体设置、实际导入结果",
+      "observed": "P22 resource_manifest.json 记录 asset_count=0 / BLOCKED_MISSING_P30；未取得 P30 工件",
+      "impact": "可静态校验 PNG/SVG；不能宣称目标格式导入通过",
+      "evidence": "art/ui/evidence/intake/p22_resource_manifest.json"
+    },
+    {
+      "id": "P24-B04",
+      "owner": "P22",
+      "status": "BLOCKED",
+      "missing": "P24 临时 asset_id 和命名方案受理、正式 content_ref 绑定",
+      "observed": "已遵循 P22-ID-POLICY/0.1.0 字符集及精确引用约束；导出命名未获受理",
+      "impact": "p24.ui.* 仅本包候选 ID，不写已有注册表",
+      "evidence": "art/ui/evidence/upstream/P22_ID/id_policy.json"
+    },
+    {
+      "id": "P24-B05",
+      "owner": "P34",
+      "status": "BLOCKED",
+      "missing": "目标引擎/OS/DPI/显示分辨率与实际执行证据",
+      "observed": "P13 target_environment_requirements.json 目标字段为 null",
+      "impact": "100/125/150/200% 为静态渲染密度证据；目标屏与运行排版 NOT_RUN",
+      "evidence": "art/ui/evidence/upstream/P13_ENV/target_environment_requirements.json"
+    },
+    {
+      "id": "P24-B06",
+      "owner": "P37",
+      "status": "BLOCKED",
+      "missing": "本包原创图形、字体来源和随附许可的独立审核回执",
+      "observed": "字体原字节与许可已保留；本轮没有 P37 签署",
+      "impact": "不宣称已取得项目正式发行许可",
+      "evidence": "art/ui/source/fonts/"
+    },
+    {
+      "id": "P24-B07",
+      "owner": "P32/P35",
+      "status": "NOT_RUN",
+      "missing": "独立格式复验、工程放行回执",
+      "observed": "只有 P24 作者检查",
+      "impact": "作者验证不代签独立验收",
+      "evidence": "verification_status.json"
+    }
+  ]
+}

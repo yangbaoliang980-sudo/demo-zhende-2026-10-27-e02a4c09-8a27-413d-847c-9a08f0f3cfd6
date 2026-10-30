@@ -1,0 +1,445 @@
+family	visual_state	coverage	asset_id	reason	lifecycle	runtime_binding	owner
+button.primary	default	ASSET	p24.ui.button.primary.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	hover	ASSET	p24.ui.button.primary.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	pressed	ASSET	p24.ui.button.primary.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	disabled	ASSET	p24.ui.button.primary.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	selected	ASSET	p24.ui.button.primary.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	error	ASSET	p24.ui.button.primary.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.primary	focus	COMPOSITE_OVERLAY	p24.ui.focus.button.active	Independent focus overlay; selection and disabled reason remain visible.	PLACEHOLDER	NOT_RUN	P24
+button.primary	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.primary	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.primary	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.primary	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	default	ASSET	p24.ui.button.secondary.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	hover	ASSET	p24.ui.button.secondary.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	pressed	ASSET	p24.ui.button.secondary.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	disabled	ASSET	p24.ui.button.secondary.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	selected	ASSET	p24.ui.button.secondary.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	error	ASSET	p24.ui.button.secondary.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	focus	COMPOSITE_OVERLAY	p24.ui.focus.button.active	Independent focus overlay; selection and disabled reason remain visible.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.secondary	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	default	ASSET	p24.ui.button.navigation.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	hover	ASSET	p24.ui.button.navigation.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	pressed	ASSET	p24.ui.button.navigation.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	disabled	ASSET	p24.ui.button.navigation.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	selected	ASSET	p24.ui.button.navigation.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	error	ASSET	p24.ui.button.navigation.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	focus	COMPOSITE_OVERLAY	p24.ui.focus.navigation.active	Independent focus overlay; selection and disabled reason remain visible.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+button.navigation	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	default	ASSET	p24.ui.frame.hand.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	hover	ASSET	p24.ui.frame.hand.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	pressed	ASSET	p24.ui.frame.hand.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	disabled	ASSET	p24.ui.frame.hand.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	selected	ASSET	p24.ui.frame.hand.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	error	ASSET	p24.ui.frame.hand.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	focus	COMPOSITE_OVERLAY	p24.ui.focus.hand.active	Independent focus overlay; selection and disabled reason remain visible.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.hand	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	default	ASSET	p24.ui.frame.enemy.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	hover	ASSET	p24.ui.frame.enemy.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	pressed	ASSET	p24.ui.frame.enemy.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	disabled	ASSET	p24.ui.frame.enemy.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	selected	ASSET	p24.ui.frame.enemy.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	error	ASSET	p24.ui.frame.enemy.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	focus	COMPOSITE_OVERLAY	p24.ui.focus.enemy.active	Independent focus overlay; selection and disabled reason remain visible.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+frame.enemy	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	default	ASSET	p24.ui.card.back.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+card.back	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	disabled	ASSET	p24.ui.card.back.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+card.back	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.back	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	default	ASSET	p24.ui.card.art_window.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	disabled	ASSET	p24.ui.card.art_window.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	selected	ASSET	p24.ui.card.art_window.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+card.art_window	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	default	ASSET	p24.ui.panel.surface.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	selected	ASSET	p24.ui.panel.surface.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	error	ASSET	p24.ui.panel.surface.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	pending	ASSET	p24.ui.panel.surface.pending	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+panel.surface	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	default	ASSET	p24.ui.bar.hp_track.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	unknown	ASSET	p24.ui.bar.hp_track.unknown	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	empty	ASSET	p24.ui.bar.hp_track.empty	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_track	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	default	ASSET	p24.ui.bar.hp_fill.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	disabled	ASSET	p24.ui.bar.hp_fill.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.hp_fill	low	ASSET	p24.ui.bar.hp_fill.low	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	default	ASSET	p24.ui.bar.shield_fill.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+bar.shield_fill	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	default	ASSET	p24.ui.cost.badge.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	hover	ASSET	p24.ui.cost.badge.hover	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	pressed	ASSET	p24.ui.cost.badge.pressed	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	disabled	ASSET	p24.ui.cost.badge.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	selected	ASSET	p24.ui.cost.badge.selected	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	error	ASSET	p24.ui.cost.badge.error	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	unknown	ASSET	p24.ui.cost.badge.unknown	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+cost.badge	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	default	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.button	active	ASSET	p24.ui.focus.button.active	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	default	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.hand	active	ASSET	p24.ui.focus.hand.active	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	default	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.enemy	active	ASSET	p24.ui.focus.enemy.active	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	default	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	disabled	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+focus.navigation	active	ASSET	p24.ui.focus.navigation.active	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	default	ASSET	p24.ui.icon.attack.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	disabled	ASSET	p24.ui.icon.attack.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.attack	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	default	ASSET	p24.ui.icon.shield.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	disabled	ASSET	p24.ui.icon.shield.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.shield	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	default	ASSET	p24.ui.icon.heal.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	disabled	ASSET	p24.ui.icon.heal.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.heal	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	default	ASSET	p24.ui.icon.buff.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	disabled	ASSET	p24.ui.icon.buff.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.buff	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	default	ASSET	p24.ui.icon.energy.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	disabled	ASSET	p24.ui.icon.energy.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.energy	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	default	ASSET	p24.ui.icon.draw.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	disabled	ASSET	p24.ui.icon.draw.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.draw	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	default	ASSET	p24.ui.icon.discard.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	disabled	ASSET	p24.ui.icon.discard.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.discard	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	default	ASSET	p24.ui.icon.remove.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	disabled	ASSET	p24.ui.icon.remove.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.remove	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	default	ASSET	p24.ui.icon.intent.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	disabled	ASSET	p24.ui.icon.intent.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.intent	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	default	ASSET	p24.ui.icon.unknown.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	disabled	ASSET	p24.ui.icon.unknown.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.unknown	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	default	ASSET	p24.ui.icon.locked.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	disabled	ASSET	p24.ui.icon.locked.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.locked	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	default	ASSET	p24.ui.icon.check.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.check	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	disabled	ASSET	p24.ui.icon.check.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.check	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.check	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	default	ASSET	p24.ui.icon.warning.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	disabled	ASSET	p24.ui.icon.warning.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.warning	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	default	ASSET	p24.ui.icon.error.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.error	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	disabled	ASSET	p24.ui.icon.error.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.error	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.error	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	default	ASSET	p24.ui.icon.pending.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	disabled	ASSET	p24.ui.icon.pending.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.pending	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	default	ASSET	p24.ui.icon.connected.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	disabled	ASSET	p24.ui.icon.connected.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.connected	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	default	ASSET	p24.ui.icon.disconnected.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	disabled	ASSET	p24.ui.icon.disconnected.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.disconnected	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	default	ASSET	p24.ui.icon.details.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.details	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	disabled	ASSET	p24.ui.icon.details.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.details	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.details	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	default	ASSET	p24.ui.icon.target.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.target	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	disabled	ASSET	p24.ui.icon.target.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.target	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.target	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	default	ASSET	p24.ui.icon.turn.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	disabled	ASSET	p24.ui.icon.turn.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.turn	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	default	ASSET	p24.ui.icon.book.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.book	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	disabled	ASSET	p24.ui.icon.book.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.book	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.book	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	default	ASSET	p24.ui.icon.grammar.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	disabled	ASSET	p24.ui.icon.grammar.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.grammar	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	default	ASSET	p24.ui.icon.sentence.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	disabled	ASSET	p24.ui.icon.sentence.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.sentence	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	default	ASSET	p24.ui.icon.currency.default	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	hover	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	pressed	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	disabled	ASSET	p24.ui.icon.currency.disabled	Actual source and both density exports.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	selected	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	error	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	focus	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	pending	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	unknown	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	empty	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24
+icon.currency	low	NOT_APPLICABLE		Noninteractive graphic or state outside this visual family; do not infer a business transition.	PLACEHOLDER	NOT_RUN	P24

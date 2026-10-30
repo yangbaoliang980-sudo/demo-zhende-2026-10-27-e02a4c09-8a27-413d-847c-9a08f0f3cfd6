@@ -1,0 +1,118 @@
+{
+  "layer": "AUTHOR_STATIC_ASSET_VALIDATION",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "V01_IDENTITY",
+      "status": "PASS",
+      "detail": 105
+    },
+    {
+      "id": "V02_PLACEHOLDER_GUARD",
+      "status": "PASS",
+      "detail": "All assets explicitly placeholder; no production promotion"
+    },
+    {
+      "id": "V03_EDITABLE_SVG",
+      "status": "PASS",
+      "detail": 105
+    },
+    {
+      "id": "V04_PNG_DIMENSION_ALPHA",
+      "status": "PASS",
+      "detail": 210
+    },
+    {
+      "id": "V05_STATE_COVERAGE",
+      "status": "PASS",
+      "detail": {
+        "required_six_state_families": 6,
+        "matrix_rows": 444
+      }
+    },
+    {
+      "id": "V06_GEOMETRY_METADATA",
+      "status": "PASS",
+      "detail": "slice border / safe rect / reserved rect / no trim"
+    },
+    {
+      "id": "V07_FIXED_INPUT_HASHES",
+      "status": "PASS",
+      "detail": 31
+    },
+    {
+      "id": "V08_UPSTREAM_ANCHOR_BINDINGS",
+      "status": "PASS",
+      "detail": 79
+    },
+    {
+      "id": "V09_SAMPLE_LAYOUT_TEXT",
+      "status": "PASS",
+      "detail": 2
+    },
+    {
+      "id": "V10_PREVIEW_FILES",
+      "status": "PASS",
+      "detail": {
+        "boards": 7,
+        "pngs": 10
+      }
+    },
+    {
+      "id": "V11_CONTRAST",
+      "status": "PASS",
+      "detail": 37
+    },
+    {
+      "id": "V12_AUTHOR_VISUAL_EVIDENCE",
+      "status": "PASS",
+      "detail": {
+        "text_nodes": 305,
+        "nine_slice_cases": 82,
+        "scope": "recorded author QA, not independent runtime"
+      }
+    },
+    {
+      "id": "V13_RENDER_PROVENANCE",
+      "status": "PASS",
+      "detail": 220
+    },
+    {
+      "id": "V14_EXPORT_MANIFEST",
+      "status": "PASS",
+      "detail": 105
+    },
+    {
+      "id": "V15_DELIVERY_INTEGRITY",
+      "status": "PASS",
+      "detail": 426
+    },
+    {
+      "id": "V16_OWNERSHIP_GATE",
+      "status": "PASS",
+      "detail": "isolated P24 files; original snapshots read-only"
+    },
+    {
+      "id": "V17_OFFLINE_INDEX",
+      "status": "PASS",
+      "detail": "offline static image index"
+    },
+    {
+      "id": "V18_EVIDENCE_BOUNDARIES",
+      "status": "PASS",
+      "detail": "author and independent / runtime evidence separated"
+    }
+  ],
+  "counts": {
+    "assets": 105,
+    "component_pngs": 210,
+    "matrix_rows": 444,
+    "source_receipts": 31,
+    "preview_boards": 7,
+    "preview_pngs": 10,
+    "contrast_pairs": 37,
+    "manifest_files": 426
+  },
+  "errors": [],
+  "game_runtime_executed": false
+}

@@ -1,0 +1,19 @@
+{
+  "layer": "AUTHOR_STATIC_SVG_RENDER",
+  "game_ui_executed": false,
+  "start_utc": "2026-10-30T10:50:35.055Z",
+  "node": "v24.22.1",
+  "platform": "linux",
+  "argv": [
+    "--output",
+    "work/render_002",
+    "--publish-previews"
+  ],
+  "browser": "153.0.8010.0",
+  "cases": [],
+  "errors": [
+    "TimeoutError: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - taking page screenshot\u001b[22m\n\u001b[2m    - disabled all CSS animations\u001b[22m\n\u001b[2m  - waiting for fonts to load...\u001b[22m\n\u001b[2m  - fonts loaded\u001b[22m\n"
+  ],
+  "end_utc": "2026-10-30T10:51:05.370Z",
+  "result": "FAIL"
+}

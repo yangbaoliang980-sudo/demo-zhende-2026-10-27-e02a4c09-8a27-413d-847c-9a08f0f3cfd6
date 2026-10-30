@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="title desc" data-wireframe-id="W15_Handoff" data-screen-id="handoff">
+<title id="title">出战 / 已有战斗交接</title><desc id="desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。此态已存在于 P20；进入 P19 的真实路由等待 P13/P19/P20 受理，不在本岗接线。</desc>
+<defs><style>@font-face{font-family:P23SC;src:url(../../accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23JP;src:url(../../accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2) format("woff2");font-weight:400}@font-face{font-family:P23Symbols;src:url(../../accessibility/fonts/DejaVuSans.ttf) format("truetype");font-weight:400}text{font-family:P23SC,P23JP,P23Symbols,sans-serif;font-weight:400}</style><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W15_Handoff   出战 / 已有战斗交接</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">此态已存在于 P20；进入 P19 的真实路由等待 P13/P19/P20 受理，不在本岗接线。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">出战 / 已有战斗交接</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="226" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.handoff.active_battle"/>
+<text x="266" y="164.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已有一场战斗待继续</text>
+<text x="266" y="214.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">关卡与队伍采用出战时已提交的引用。</text>
+<text x="266" y="266.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">暂时无法接入战斗界面；请查询已创建战斗的状态。</text>
+<rect x="266" y="402" width="250" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.handoff.refresh" data-control="true"/>
+<text x="337.0" y="414.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查询出战状态</text>
+<rect x="261" y="397" width="260" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="540" y="402" width="200" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.handoff.return" data-control="true"/>
+<text x="604.0" y="414.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">返回章节</text>
+<rect x="248" y="498" width="1008" height="148" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="518.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">返回页面不会关闭这场战斗，也不会自动再创建一场。</text>
+<text x="266" y="572.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">正式接线后可进入已存在的 battle 引用，不能由 UI 生成胜负或奖励。</text>
+</svg>

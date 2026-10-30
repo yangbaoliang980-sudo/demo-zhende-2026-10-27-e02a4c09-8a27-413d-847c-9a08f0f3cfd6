@@ -1,0 +1,587 @@
+{
+  "schema_version": "P24-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P24-S03-UI-ASSET-001",
+  "version": "P24-UI-VISUAL/0.1.0-placeholder",
+  "archive": {
+    "filename": "P24_UI_VisualAssets_V0.1.zip",
+    "size_bytes": 5713964,
+    "sha256": "93362700482dd8628d0e54024df4c10b2667d938afbdfeae5a53054e06429ca9",
+    "package_root": "P24_UI_VisualAssets_V0.1",
+    "file_count": 436,
+    "crc": "PASS",
+    "all_members_equal_original_files": "PASS"
+  },
+  "manifest": {
+    "filename": "delivery_manifest.json",
+    "size_bytes": 1019413,
+    "sha256": "94540e7b529fd29205ca303a10edb68c06980fc541d649bdbee2e50b0e00fb36"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/README.md",
+      "size_bytes": 1357,
+      "sha256": "e1cb8b71d7da9fa55434ce70bb4911b986d643b221108b20b65e388200b3a921",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/README.md",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_delivery_report.md",
+      "package_relative_path": "P24_delivery_report.md",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/P24_delivery_report.md",
+      "size_bytes": 6221,
+      "sha256": "a1d3eaa18ad46b0d362b95791bfa5594b49ddc5d682e8f2a444bda57f518c5d0",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/P24_delivery_report.md",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "ui_asset_state_matrix.tsv",
+      "package_relative_path": "ui_asset_state_matrix.tsv",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/ui_asset_state_matrix.tsv",
+      "size_bytes": 65804,
+      "sha256": "9acd28bc61447e5a92bac07773fe0fca21ebf90bf040447481463af6cf0dacf8",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/ui_asset_state_matrix.tsv",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "ui_visual_export_manifest.json",
+      "package_relative_path": "ui_visual_export_manifest.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/ui_visual_export_manifest.json",
+      "size_bytes": 462552,
+      "sha256": "14daad1e5f7786801fa9d5bfd260b3e873e6634f3e69d2bd67497c22a532cf22",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/ui_visual_export_manifest.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/delivery_manifest.json",
+      "size_bytes": 1019413,
+      "sha256": "94540e7b529fd29205ca303a10edb68c06980fc541d649bdbee2e50b0e00fb36",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/delivery_manifest.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "source_input_receipt.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/source_input_receipt.json",
+      "size_bytes": 16573,
+      "sha256": "1dc3a3e2c052e030bed4fea900a4c32019f5b88923ee1f22e3e95110108a325c",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/source_input_receipt.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/verification_status.json",
+      "size_bytes": 1891,
+      "sha256": "d44c0caa761dda6d534aacc748c01a63f0e58fef99080c1d8e0fa8426aa5cb7d",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/verification_status.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "blocker_register.json",
+      "package_relative_path": "blocker_register.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/blocker_register.json",
+      "size_bytes": 2973,
+      "sha256": "5c4a57cccacd4d757f2733f94e447b1fd09695b7a38eaeb42dc34f538e2c07ba",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/blocker_register.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "interface_rfcs.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/interface_rfcs.json",
+      "size_bytes": 2147,
+      "sha256": "590f83d2e7299df348f2a409a8738a9cb22b1656e52c7218b1b093cbb8f3dfaa",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/interface_rfcs.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "actual_path_request.json",
+      "package_relative_path": "actual_path_request.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/actual_path_request.json",
+      "size_bytes": 766,
+      "sha256": "02e62d8f81c606102697d55eb25cd14ce8fe268a72e02d4f8464559b8cea854d",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/actual_path_request.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "ui_visual_spec.md",
+      "package_relative_path": "art/ui/spec/ui_visual_spec.md",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/spec/ui_visual_spec.md",
+      "size_bytes": 7809,
+      "sha256": "7ff80171dbd422bd94922b2e14745e25e1193f7efc882dabf1021a51d42d1755",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/spec/ui_visual_spec.md",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "package_relative_path": "art/ui/spec/integration_handoff.md",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/spec/integration_handoff.md",
+      "size_bytes": 3253,
+      "sha256": "a7486e129ecda3e228dce2a2b138ab1f52316028c6d24a32ba99e79b24e168b3",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/spec/integration_handoff.md",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "p30_import_proposal.json",
+      "package_relative_path": "art/ui/spec/p30_import_proposal.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/spec/p30_import_proposal.json",
+      "size_bytes": 1621,
+      "sha256": "f606545f5ca2c0863cb1f43f5658b5604a4c2d6116effe2c8e6f1a2cc640abf4",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/spec/p30_import_proposal.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "p23_asset_binding_candidates.json",
+      "package_relative_path": "art/ui/spec/p23_asset_binding_candidates.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/spec/p23_asset_binding_candidates.json",
+      "size_bytes": 72247,
+      "sha256": "d66ae303b8a2ec5e6f6b8dd1b12ff841b6af555801b3f44eded26adff732013a",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/spec/p23_asset_binding_candidates.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "asset_id_registration_candidates.tsv",
+      "package_relative_path": "art/ui/spec/asset_id_registration_candidates.tsv",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/spec/asset_id_registration_candidates.tsv",
+      "size_bytes": 17959,
+      "sha256": "75c655ab1f710bc2a2ea3f7e2ff93c1f9123718f9b0e4948fc4cac565698e49a",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/spec/asset_id_registration_candidates.tsv",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_preview_index.html",
+      "package_relative_path": "art/ui/P24_preview_index.html",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/P24_preview_index.html",
+      "size_bytes": 50390,
+      "sha256": "7149e2320dd1081c798facbd5174231f0d1f5cdfef5e7cb6c050d4e80dc576f1",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/P24_preview_index.html",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Component_States.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Component_States.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Component_States.png",
+      "size_bytes": 194471,
+      "sha256": "7b9a9155d48d9f545119ccd26d9eaee0a69ada6e4280752d369b3b0c7a991739",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Component_States.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Icons_Cost.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Icons_Cost.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Icons_Cost.png",
+      "size_bytes": 168421,
+      "sha256": "e48ae996871265a906c06bcda346190210cbdcaea6f520087d0631ac7fb5d5ac",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Icons_Cost.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Battle_Target_1280.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Battle_Target_1280.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Battle_Target_1280.png",
+      "size_bytes": 157134,
+      "sha256": "6d53dce8aab2b445941737d25e670644ddbdec74a24d57fa05691d6f334b62b1",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Battle_Target_1280.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Learning_Quarantine_1280.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Learning_Quarantine_1280.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Learning_Quarantine_1280.png",
+      "size_bytes": 120632,
+      "sha256": "f57bb522510883143d88739fe3ac6f4f3a0f3a6c0bea56ae58823e769d9fc497",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Learning_Quarantine_1280.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Geometry_SafeAreas.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Geometry_SafeAreas.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Geometry_SafeAreas.png",
+      "size_bytes": 145095,
+      "sha256": "fdd5c5abf2b55c6359f9d03f1edfde1fa0aaac0b1dbddff2e3dd20a8fd4fc121",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Geometry_SafeAreas.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Typography_Scale.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Typography_Scale.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Typography_Scale.png",
+      "size_bytes": 101190,
+      "sha256": "4e42a2accd1e52e09eaf491be0d4466117f186f8dcd9036e67230fa6450b8d26",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Typography_Scale.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "P24_Alpha_NineSlice.png",
+      "package_relative_path": "art/ui/exports/previews/P24_Alpha_NineSlice.png",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Alpha_NineSlice.png",
+      "size_bytes": 106688,
+      "sha256": "6a8bbb130cc7832e67886e23f311144127d3b5132f4b99dead7b4baa1e3ebf75",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/exports/previews/P24_Alpha_NineSlice.png",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "placeholder_ui_frame_hand_selected.svg",
+      "package_relative_path": "art/ui/source/components/placeholder_ui_frame_hand_selected.svg",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/source/components/placeholder_ui_frame_hand_selected.svg",
+      "size_bytes": 3544,
+      "sha256": "01869b00f4f8f545aa3cdad6cf5a03c72425e9a9aab7315fd533bf2209956f36",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/components/placeholder_ui_frame_hand_selected.svg",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "placeholder_ui_card_back_default.svg",
+      "package_relative_path": "art/ui/source/components/placeholder_ui_card_back_default.svg",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/source/components/placeholder_ui_card_back_default.svg",
+      "size_bytes": 3742,
+      "sha256": "c09ea8642003db2adbfebbb2e115b894ff29958b4bb05e2266889e4ff5891454",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/source/components/placeholder_ui_card_back_default.svg",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "visual_qa_results.json",
+      "package_relative_path": "art/ui/evidence/visual_qa/visual_qa_results.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/evidence/visual_qa/visual_qa_results.json",
+      "size_bytes": 115880,
+      "sha256": "c5859a0315b6585411f78b2e432705aab4b301657682a87a6937df8b74ad3e51",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/evidence/visual_qa/visual_qa_results.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "validation_results.json",
+      "package_relative_path": "art/ui/evidence/author_validation/validation_results.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/evidence/author_validation/validation_results.json",
+      "size_bytes": 2497,
+      "sha256": "3fde264e3f9be61e3ae1a926e4bd2cba4d842b933ddb2642d3931e9970ce2231",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/evidence/author_validation/validation_results.json",
+      "byte_match": "PASS"
+    },
+    {
+      "filename": "negative_results.json",
+      "package_relative_path": "art/ui/evidence/author_validation/negative_results.json",
+      "zip_member_path": "P24_UI_VisualAssets_V0.1/art/ui/evidence/author_validation/negative_results.json",
+      "size_bytes": 2487,
+      "sha256": "d6786d726ec569733bb6611017171a20e5c6fff651a547d7ed46dcbf04ee0f04",
+      "local_path": "/workspace/scratch/2208f444c661/output/P24_UI_VisualAssets_V0.1/art/ui/evidence/author_validation/negative_results.json",
+      "byte_match": "PASS"
+    }
+  ],
+  "export_count": 28,
+  "final_unpacked_runs": [
+    {
+      "mode": "static",
+      "argv": [
+        "python",
+        "-B",
+        "art/ui/validation/validate_assets.py",
+        "--output",
+        "/workspace/scratch/2208f444c661/work/final_static_001"
+      ],
+      "cwd": "/workspace/scratch/2208f444c661/work/final_unpacked_001/P24_UI_VisualAssets_V0.1",
+      "start_utc": "2026-10-30T12:54:29.594886+00:00",
+      "end_utc": "2026-10-30T12:54:30.195754+00:00",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"static_checks\": 18, \"passed_checks\": 18, \"counts\": {\"assets\": 105, \"component_pngs\": 210, \"matrix_rows\": 444, \"source_receipts\": 31, \"preview_boards\": 7, \"preview_pngs\": 10, \"contrast_pairs\": 37, \"manifest_files\": 435}, \"errors\": []}\n",
+      "stderr": "",
+      "result": {
+        "layer": "AUTHOR_STATIC_ASSET_VALIDATION",
+        "status": "PASS",
+        "checks": [
+          {
+            "id": "V01_IDENTITY",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V02_PLACEHOLDER_GUARD",
+            "status": "PASS",
+            "detail": "All assets explicitly placeholder; no production promotion"
+          },
+          {
+            "id": "V03_EDITABLE_SVG",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V04_PNG_DIMENSION_ALPHA",
+            "status": "PASS",
+            "detail": 210
+          },
+          {
+            "id": "V05_STATE_COVERAGE",
+            "status": "PASS",
+            "detail": {
+              "required_six_state_families": 6,
+              "matrix_rows": 444
+            }
+          },
+          {
+            "id": "V06_GEOMETRY_METADATA",
+            "status": "PASS",
+            "detail": "slice border / safe rect / reserved rect / no trim"
+          },
+          {
+            "id": "V07_FIXED_INPUT_HASHES",
+            "status": "PASS",
+            "detail": 31
+          },
+          {
+            "id": "V08_UPSTREAM_ANCHOR_BINDINGS",
+            "status": "PASS",
+            "detail": 79
+          },
+          {
+            "id": "V09_SAMPLE_LAYOUT_TEXT",
+            "status": "PASS",
+            "detail": 2
+          },
+          {
+            "id": "V10_PREVIEW_FILES",
+            "status": "PASS",
+            "detail": {
+              "boards": 7,
+              "pngs": 10
+            }
+          },
+          {
+            "id": "V11_CONTRAST",
+            "status": "PASS",
+            "detail": 37
+          },
+          {
+            "id": "V12_AUTHOR_VISUAL_EVIDENCE",
+            "status": "PASS",
+            "detail": {
+              "text_nodes": 305,
+              "nine_slice_cases": 82,
+              "scope": "recorded author QA, not independent runtime"
+            }
+          },
+          {
+            "id": "V13_RENDER_PROVENANCE",
+            "status": "PASS",
+            "detail": 220
+          },
+          {
+            "id": "V14_EXPORT_MANIFEST",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V15_DELIVERY_INTEGRITY",
+            "status": "PASS",
+            "detail": 435
+          },
+          {
+            "id": "V16_OWNERSHIP_GATE",
+            "status": "PASS",
+            "detail": "isolated P24 files; original snapshots read-only"
+          },
+          {
+            "id": "V17_OFFLINE_INDEX",
+            "status": "PASS",
+            "detail": "offline static image index"
+          },
+          {
+            "id": "V18_EVIDENCE_BOUNDARIES",
+            "status": "PASS",
+            "detail": "author and independent / runtime evidence separated"
+          }
+        ],
+        "counts": {
+          "assets": 105,
+          "component_pngs": 210,
+          "matrix_rows": 444,
+          "source_receipts": 31,
+          "preview_boards": 7,
+          "preview_pngs": 10,
+          "contrast_pairs": 37,
+          "manifest_files": 435
+        },
+        "errors": [],
+        "game_runtime_executed": false
+      },
+      "execution_record": {
+        "layer": "P24_AUTHOR_STATIC_ONLY",
+        "argv": [
+          "art/ui/validation/validate_assets.py",
+          "--output",
+          "/workspace/scratch/2208f444c661/work/final_static_001"
+        ],
+        "cwd": "/workspace/scratch/2208f444c661/work/final_unpacked_001/P24_UI_VisualAssets_V0.1",
+        "start_utc": "2026-10-30T12:54:29.645788+00:00",
+        "end_utc": "2026-10-30T12:54:30.184160+00:00",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "exit_code": 0,
+        "validator_sha256": "29be8fc83a731028da06d4fbb1723b913fe4fdf770419431d91e7aaabea2c2d4"
+      }
+    },
+    {
+      "mode": "preflight",
+      "argv": [
+        "python",
+        "-B",
+        "art/ui/validation/validate_assets.py",
+        "--output",
+        "/workspace/scratch/2208f444c661/work/final_preflight_001",
+        "--preflight"
+      ],
+      "cwd": "/workspace/scratch/2208f444c661/work/final_unpacked_001/P24_UI_VisualAssets_V0.1",
+      "start_utc": "2026-10-30T12:54:30.196072+00:00",
+      "end_utc": "2026-10-30T12:54:30.795590+00:00",
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "stdout": "{\"status\": \"BLOCKED\", \"static_checks\": 18, \"passed_checks\": 18, \"counts\": {\"assets\": 105, \"component_pngs\": 210, \"matrix_rows\": 444, \"source_receipts\": 31, \"preview_boards\": 7, \"preview_pngs\": 10, \"contrast_pairs\": 37, \"manifest_files\": 435}, \"errors\": []}\n",
+      "stderr": "",
+      "result": {
+        "layer": "AUTHOR_STATIC_ASSET_VALIDATION",
+        "status": "PASS",
+        "checks": [
+          {
+            "id": "V01_IDENTITY",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V02_PLACEHOLDER_GUARD",
+            "status": "PASS",
+            "detail": "All assets explicitly placeholder; no production promotion"
+          },
+          {
+            "id": "V03_EDITABLE_SVG",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V04_PNG_DIMENSION_ALPHA",
+            "status": "PASS",
+            "detail": 210
+          },
+          {
+            "id": "V05_STATE_COVERAGE",
+            "status": "PASS",
+            "detail": {
+              "required_six_state_families": 6,
+              "matrix_rows": 444
+            }
+          },
+          {
+            "id": "V06_GEOMETRY_METADATA",
+            "status": "PASS",
+            "detail": "slice border / safe rect / reserved rect / no trim"
+          },
+          {
+            "id": "V07_FIXED_INPUT_HASHES",
+            "status": "PASS",
+            "detail": 31
+          },
+          {
+            "id": "V08_UPSTREAM_ANCHOR_BINDINGS",
+            "status": "PASS",
+            "detail": 79
+          },
+          {
+            "id": "V09_SAMPLE_LAYOUT_TEXT",
+            "status": "PASS",
+            "detail": 2
+          },
+          {
+            "id": "V10_PREVIEW_FILES",
+            "status": "PASS",
+            "detail": {
+              "boards": 7,
+              "pngs": 10
+            }
+          },
+          {
+            "id": "V11_CONTRAST",
+            "status": "PASS",
+            "detail": 37
+          },
+          {
+            "id": "V12_AUTHOR_VISUAL_EVIDENCE",
+            "status": "PASS",
+            "detail": {
+              "text_nodes": 305,
+              "nine_slice_cases": 82,
+              "scope": "recorded author QA, not independent runtime"
+            }
+          },
+          {
+            "id": "V13_RENDER_PROVENANCE",
+            "status": "PASS",
+            "detail": 220
+          },
+          {
+            "id": "V14_EXPORT_MANIFEST",
+            "status": "PASS",
+            "detail": 105
+          },
+          {
+            "id": "V15_DELIVERY_INTEGRITY",
+            "status": "PASS",
+            "detail": 435
+          },
+          {
+            "id": "V16_OWNERSHIP_GATE",
+            "status": "PASS",
+            "detail": "isolated P24 files; original snapshots read-only"
+          },
+          {
+            "id": "V17_OFFLINE_INDEX",
+            "status": "PASS",
+            "detail": "offline static image index"
+          },
+          {
+            "id": "V18_EVIDENCE_BOUNDARIES",
+            "status": "PASS",
+            "detail": "author and independent / runtime evidence separated"
+          }
+        ],
+        "counts": {
+          "assets": 105,
+          "component_pngs": 210,
+          "matrix_rows": 444,
+          "source_receipts": 31,
+          "preview_boards": 7,
+          "preview_pngs": 10,
+          "contrast_pairs": 37,
+          "manifest_files": 435
+        },
+        "errors": [],
+        "game_runtime_executed": false
+      },
+      "execution_record": {
+        "layer": "P24_AUTHOR_STATIC_ONLY",
+        "argv": [
+          "art/ui/validation/validate_assets.py",
+          "--output",
+          "/workspace/scratch/2208f444c661/work/final_preflight_001",
+          "--preflight"
+        ],
+        "cwd": "/workspace/scratch/2208f444c661/work/final_unpacked_001/P24_UI_VisualAssets_V0.1",
+        "start_utc": "2026-10-30T12:54:30.255353+00:00",
+        "end_utc": "2026-10-30T12:54:30.782723+00:00",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "exit_code": 3,
+        "validator_sha256": "29be8fc83a731028da06d4fbb1723b913fe4fdf770419431d91e7aaabea2c2d4"
+      }
+    }
+  ],
+  "unpacked_file_set_and_hashes_unchanged": "PASS",
+  "original_package_file_set_sha256": "3d016b416c5f56df79a2257886f7a246e508b0e932557ab8aae9489a9c170607",
+  "receipt_policy": "External receipt is deliberately not archived because it binds the final ZIP. Every listed export is the same filename and bytes as its archive member. No circular/self hash claim.",
+  "independent_reviews": {
+    "P25": "NOT_RUN",
+    "P37": "NOT_RUN",
+    "P30_engine_import": "NOT_RUN",
+    "P32": "NOT_RUN",
+    "P35": "NOT_RUN"
+  },
+  "cross_module_integration": "NOT_RUN"
+}

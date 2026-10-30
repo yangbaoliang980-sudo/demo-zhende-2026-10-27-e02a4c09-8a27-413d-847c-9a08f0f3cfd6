@@ -1,0 +1,1180 @@
+<!doctype html><html lang="zh-Hans"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P23 线框审查册</title><style>@font-face{font-family:P23SC;src:url(../accessibility/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2)}@font-face{font-family:P23JP;src:url(../accessibility/fonts/noto-sans-jp-japanese-400-normal.woff2)}*{box-sizing:border-box}body{margin:0;padding:24px;background:#e9edf2;color:#1b2635;font:18px/1.6 P23SC,P23JP,sans-serif}header,nav,section{max-width:1280px;margin:0 auto 24px}h1{font-size:32px}h2{font-size:24px}p{max-width:80ch}nav{display:flex;flex-wrap:wrap;gap:12px}a{color:#124683;display:inline-block;min-height:44px;padding:9px 14px;background:white;border:1px solid #626e7d;border-radius:4px;text-decoration:underline}a:focus-visible{outline:3px solid #005fcc;outline-offset:3px}.plate{background:#fff;overflow:auto}svg{display:block;width:1280px;max-width:none}details{padding:16px;background:white;margin:10px 0}summary{cursor:pointer;min-height:44px}code{overflow-wrap:anywhere}@media print{body{padding:0;background:white}header,nav,.notes{display:none}section{break-after:page;page-break-after:always;margin:0}section>h2{display:none}.plate{overflow:visible}svg{width:100%;height:auto}a{border:0}}</style><header id="top"><h1>言灵旅团 · P23 线框审查册</h1><p>本文件是可搜索、可编辑 SVG 线框的离线阅读入口。图中数值与人物名均为走查夹具；不连接 Anki、钱包、战斗核心或存档。</p><p>优先看 W01–W06 战斗逐态；再看 W08–W13 的草稿、消耗与异常。方向键 / 手柄操作规则在 keyboard_focus_matrix.tsv；本册不模拟这些产品行为。</p></header><nav aria-label="线框目录">
+<a href="#W00_Information_Architecture">W00 主路径 / 信息架构</a>
+<a href="#W01_Battle_Ready">W01 战斗 / 可操作态</a>
+<a href="#W02_Battle_Target">W02 战斗 / 目标确认</a>
+<a href="#W03_Battle_Unknown">W03 战斗 / 原操作待确认</a>
+<a href="#W04_Battle_Intent_Missing">W04 战斗 / 意图与卡牌待同步</a>
+<a href="#W05_Battle_Result">W05 战斗 / 权威终局</a>
+<a href="#W06_Battle_End_Review">W06 战斗 / 结束回合确认提案</a>
+<a href="#W07_Camp">W07 营地 / 主路径</a>
+<a href="#W08_Party_Draft">W08 编队 / 草稿与已保存</a>
+<a href="#W09_Growth_Confirm">W09 养成 / 消耗确认</a>
+<a href="#W10_Learning_Quarantine">W10 学习 / 隔离与到账分离</a>
+<a href="#W11_Growth_Pending">W11 养成 / 重启后仍待确认</a>
+<a href="#W12_Chapters">W12 章节 / 挑战与首通资格</a>
+<a href="#W13_Settlement_Pending">W13 结算 / 胜利与奖励未知</a>
+<a href="#W14_Characters">W14 角色 / 档案入口</a>
+<a href="#W15_Handoff">W15 出战 / 已有战斗交接</a>
+<a href="#W16_Typography">W16 中日排版 / 缺字与长文样张</a>
+<a href="#W17_Battle_Large_Text">W17 战斗 / 大字滚动布局提案</a>
+</nav><main>
+<section id="W00_Information_Architecture" aria-labelledby="W00_Information_Architecture-heading"><h2 id="W00_Information_Architecture-heading">主路径 / 信息架构</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W00_Information_Architecture-title W00_Information_Architecture-desc" data-wireframe-id="W00_Information_Architecture" data-screen-id="home">
+<title id="W00_Information_Architecture-title">主路径 / 信息架构</title><desc id="W00_Information_Architecture-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。虚线为尚未接线的跨模块路径；回查学习与导航不产生奖励；无新常驻页面。</desc>
+<defs><marker id="W00_Information_Architecture-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W00_Information_Architecture   主路径 / 信息架构</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">虚线为尚未接线的跨模块路径；回查学习与导航不产生奖励；无新常驻页面。</text>
+<path d="M476 152 L308 152" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M760 152 L928 152" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M1070 218 L1070 318" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M610 218 L166 318" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M308 382 L476 382" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M928 382 L760 382" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M610 448 L166 548" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<path d="M308 612 L476 612" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)" stroke-dasharray="6 5"/>
+<path d="M760 612 L928 612" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)" stroke-dasharray="6 5"/>
+<path d="M1070 548 L760 448" fill="none" stroke="#626e7d" stroke-width="2" marker-end="url(#W00_Information_Architecture-arrow)"/>
+<rect x="24" y="88" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="42" y="106.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="42" y="154.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">连接 / 记录 / 钱包证明</text>
+<text x="42" y="189.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="476" y="88" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="494" y="106.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<text x="494" y="154.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已保存编队 / 当前资源</text>
+<text x="494" y="189.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="928" y="88" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="946" y="106.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<text x="946" y="154.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色事实 / 查看养成</text>
+<text x="946" y="189.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="24" y="318" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="42" y="336.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<text x="42" y="384.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">草稿 ≠ 已提交</text>
+<text x="42" y="419.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="476" y="318" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="494" y="336.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<text x="494" y="384.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">挑战 / 首通 / 待核对</text>
+<text x="494" y="419.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="928" y="318" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="946" y="336.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<text x="946" y="384.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">资格 / 消耗 / 原请求</text>
+<text x="946" y="419.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="24" y="548" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="42" y="566.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">出战交接</text>
+<text x="42" y="614.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已有战斗引用</text>
+<text x="42" y="649.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<rect x="476" y="548" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="494" y="566.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡牌战斗</text>
+<text x="494" y="614.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">出牌 / 意图 / 权威结果</text>
+<text x="494" y="649.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P19 / S03</text>
+<rect x="928" y="548" width="284" height="130" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2"/>
+<text x="946" y="566.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<text x="946" y="614.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战斗结果 ≠ 奖励结果</text>
+<text x="946" y="649.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P20 / 既有页面</text>
+<text x="24" y="712.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">主循环：检查状态 → 培养 / 编队 → 章节 → 战斗 → 结算；学习异常始终可独立查看。</text>
+</svg>
+</div><p class="notes">状态：M_READY。 <a href="wireframes/W00_Information_Architecture.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W01_Battle_Ready" aria-labelledby="W01_Battle_Ready-heading"><h2 id="W01_Battle_Ready-heading">战斗 / 可操作态</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W01_Battle_Ready-title W01_Battle_Ready-desc" data-wireframe-id="W01_Battle_Ready" data-screen-id="battle">
+<title id="W01_Battle_Ready-title">战斗 / 可操作态</title><desc id="W01_Battle_Ready-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W01_Battle_Ready-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W01_Battle_Ready   战斗 / 可操作态</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合 · 你的回合</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">先选卡牌 → 选目标 → 确认出牌</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 12 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<rect x="306" y="312" width="206.67" height="12" rx="0" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标详情可读；无须悬停</text>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="231.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排　基础 1 × 1 次</text>
+<text x="674" y="272.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="674" y="307.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[候选预告] 尚未由核心确认。</text>
+<text x="674" y="339.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">基础值不是实际掉血；护盾与效果以结算为准。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="24" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.log_open" data-control="true"/>
+<text x="60.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看完整记录</text>
+<rect x="220" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.card_details" data-control="true"/>
+<text x="248.4375" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡牌 / 目标详情</text>
+<rect x="772" y="692" width="142" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.cancel" data-control="true"/>
+<text x="807.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">取消选择</text>
+<rect x="930" y="692" width="154" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.play" data-control="true"/>
+<text x="971.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认出牌</text>
+<rect x="1100" y="692" width="156" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.end_turn" data-control="true"/>
+<text x="1142.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">结束回合</text>
+</svg>
+</div><p class="notes">状态：B_READY。 <a href="wireframes/W01_Battle_Ready.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W02_Battle_Target" aria-labelledby="W02_Battle_Target-heading"><h2 id="W02_Battle_Target-heading">战斗 / 目标确认</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W02_Battle_Target-title W02_Battle_Target-desc" data-wireframe-id="W02_Battle_Target" data-screen-id="battle">
+<title id="W02_Battle_Target-title">战斗 / 目标确认</title><desc id="W02_Battle_Target-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W02_Battle_Target-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W02_Battle_Target   战斗 / 目标确认</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合 · 你的回合</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已选：试验·锋刃　目标：演练敌方　费用：1　尚未提交</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 12 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<rect x="306" y="312" width="206.67" height="12" rx="0" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[已选目标]</text>
+<rect x="281" y="181" width="360" height="206" rx="6" fill="none" stroke="#1b2635" stroke-width="2" data-region="selection_indicator"/>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="231.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排　基础 1 × 1 次</text>
+<text x="674" y="272.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="674" y="307.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[候选预告] 尚未由核心确认。</text>
+<text x="674" y="339.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">基础值不是实际掉血；护盾与效果以结算为准。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="2" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[已选择]</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="24" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.log_open" data-control="true"/>
+<text x="60.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看完整记录</text>
+<rect x="220" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.card_details" data-control="true"/>
+<text x="248.4375" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡牌 / 目标详情</text>
+<rect x="772" y="692" width="142" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.cancel" data-control="true"/>
+<text x="807.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">取消选择</text>
+<rect x="930" y="692" width="154" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.command.play" data-control="true"/>
+<text x="971.0" y="704.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">确认出牌</text>
+<rect x="925" y="687" width="164" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="1100" y="692" width="156" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.end_turn" data-control="true"/>
+<text x="1142.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">结束回合</text>
+</svg>
+</div><p class="notes">状态：B_CARD_SELECTED, B_TARGET_COMPLETE。 <a href="wireframes/W02_Battle_Target.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W03_Battle_Unknown" aria-labelledby="W03_Battle_Unknown-heading"><h2 id="W03_Battle_Unknown-heading">战斗 / 原操作待确认</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W03_Battle_Unknown-title W03_Battle_Unknown-desc" data-wireframe-id="W03_Battle_Unknown" data-screen-id="battle">
+<title id="W03_Battle_Unknown-title">战斗 / 原操作待确认</title><desc id="W03_Battle_Unknown-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W03_Battle_Unknown-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W03_Battle_Unknown   战斗 / 原操作待确认</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合 · 你的回合</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[待确认] 本次出牌结果未知；请查询原操作，新的出牌已暂停。</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 12 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<rect x="306" y="312" width="206.67" height="12" rx="0" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标详情可读；无须悬停</text>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="231.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排　基础 1 × 1 次</text>
+<text x="674" y="272.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="674" y="307.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[候选预告] 尚未由核心确认。</text>
+<text x="674" y="339.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">基础值不是实际掉血；护盾与效果以结算为准。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="24" y="692" width="226" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.command.lookup" data-control="true"/>
+<text x="83.0" y="704.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查询本次操作</text>
+<rect x="19" y="687" width="236" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="266" y="692" width="176" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.refresh" data-control="true"/>
+<text x="318.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">刷新状态</text>
+<text x="474" y="706.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">保留原请求；查询不会创建第二次出牌。</text>
+</svg>
+</div><p class="notes">状态：B_UNKNOWN。 <a href="wireframes/W03_Battle_Unknown.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W04_Battle_Intent_Missing" aria-labelledby="W04_Battle_Intent_Missing-heading"><h2 id="W04_Battle_Intent_Missing-heading">战斗 / 意图与卡牌待同步</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W04_Battle_Intent_Missing-title W04_Battle_Intent_Missing-desc" data-wireframe-id="W04_Battle_Intent_Missing" data-screen-id="battle">
+<title id="W04_Battle_Intent_Missing-title">战斗 / 意图与卡牌待同步</title><desc id="W04_Battle_Intent_Missing-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W04_Battle_Intent_Missing-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W04_Battle_Intent_Missing   战斗 / 意图与卡牌待同步</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合 · 你的回合</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[信息未齐] 卡牌 / 意图尚未同步；生命与费用仍显示已确认状态。</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 12 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<rect x="306" y="312" width="206.67" height="12" rx="0" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标详情可读；无须悬停</text>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="232.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">意图尚未同步</text>
+<text x="674" y="277.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一步行动未知；不显示上回合预告。</text>
+<text x="674" y="320.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">仍按已有出牌 / 回合资格决定可操作性。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="24" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.log_open" data-control="true"/>
+<text x="60.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看完整记录</text>
+<rect x="220" y="692" width="180" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.card_details" data-control="true"/>
+<text x="248.4375" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡牌 / 目标详情</text>
+<rect x="772" y="692" width="142" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.cancel" data-control="true"/>
+<text x="807.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">取消选择</text>
+<rect x="930" y="692" width="154" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.play" data-control="true"/>
+<text x="971.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认出牌</text>
+<rect x="1100" y="692" width="156" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.end_turn" data-control="true"/>
+<text x="1142.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">结束回合</text>
+</svg>
+</div><p class="notes">状态：B_INTENT_MISSING, B_CARD_CONTEXT_MISSING。 <a href="wireframes/W04_Battle_Intent_Missing.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W05_Battle_Result" aria-labelledby="W05_Battle_Result-heading"><h2 id="W05_Battle_Result-heading">战斗 / 权威终局</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W05_Battle_Result-title W05_Battle_Result-desc" data-wireframe-id="W05_Battle_Result" data-screen-id="battle">
+<title id="W05_Battle_Result-title">战斗 / 权威终局</title><desc id="W05_Battle_Result-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W05_Battle_Result-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W05_Battle_Result   战斗 / 权威终局</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战斗已结束</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[战斗胜利] 结果已确认；奖励处理状态需在结算页另行核对。</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 0 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已倒下</text>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="236.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">本场战斗已结束</text>
+<text x="674" y="288.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">不再显示下一次攻击，也不自行切换 Boss 阶段。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<text x="24" y="698.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.outcome">胜利 ≠ 奖励已入账</text>
+<rect x="1020" y="692" width="236" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.result_route" data-control="true"/>
+<text x="1084.0" y="704.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查看结算状态</text>
+</svg>
+</div><p class="notes">状态：B_WIN。 <a href="wireframes/W05_Battle_Result.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W06_Battle_End_Review" aria-labelledby="W06_Battle_End_Review-heading"><h2 id="W06_Battle_End_Review-heading">战斗 / 结束回合确认提案</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W06_Battle_End_Review-title W06_Battle_End_Review-desc" data-wireframe-id="W06_Battle_End_Review" data-screen-id="battle">
+<title id="W06_Battle_End_Review-title">战斗 / 结束回合确认提案</title><desc id="W06_Battle_End_Review-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</desc>
+<defs><marker id="W06_Battle_End_Review-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W06_Battle_End_Review   战斗 / 结束回合确认提案</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P14 管终态；P19 管输入与文字；P29 仅管表现。示例预告不等于实际掉血。</text>
+<text x="24" y="66.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="302" y="72.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合 · 你的回合</text>
+<text x="870" y="72.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">可用费用 2</text>
+<rect x="1086" y="62" width="170" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.motion" data-control="true"/>
+<text x="1108.0" y="74.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">动态效果：关闭</text>
+<rect x="24" y="120" width="1232" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.status"/>
+<text x="40" y="132.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[确认结束] 当前选择尚未出牌。结束回合后进入敌方行动。</text>
+<rect x="24" y="186" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="192.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A</text>
+<text x="38" y="219.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 3</text>
+<rect x="24" y="254" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="260.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护位 B</text>
+<text x="38" y="287.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="24" y="322" width="242" height="60" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.party.{unit_key}" data-control="true"/>
+<text x="38" y="328.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">治愈位 C</text>
+<text x="38" y="355.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">生命 10/10 护盾 0</text>
+<rect x="286" y="186" width="350" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.enemy.{unit_key}"/>
+<rect x="306" y="202" width="78" height="92" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="318" y="224.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">敌方</text>
+<text x="318" y="251.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">卡面位</text>
+<text x="404" y="204.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">演练敌方</text>
+<text x="404" y="244.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.hp.{unit_key}">生命 12 / 18</text>
+<text x="404" y="276.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">护盾 0</text>
+<rect x="306" y="312" width="310" height="12" rx="0" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<rect x="306" y="312" width="206.67" height="12" rx="0" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="306" y="331.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标详情可读；无须悬停</text>
+<rect x="656" y="186" width="600" height="196" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="674" y="202.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="674" y="231.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排　基础 1 × 1 次</text>
+<text x="674" y="272.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="674" y="307.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[候选预告] 尚未由核心确认。</text>
+<text x="674" y="339.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">基础值不是实际掉血；护盾与效果以结算为准。</text>
+<rect x="24" y="398" width="1232" height="62" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.log"/>
+<text x="40" y="411.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">最近结算</text>
+<text x="190" y="411.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">锋刃位 A：生命减少 0；护盾吸收 1。</text>
+<text x="190" y="438.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条文字来自已提交事件；关闭演出后仍然保留。</text>
+<text x="24" y="475.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">手牌（示例 5 张；不代表手牌上限）</text>
+<text x="890" y="475.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">抽牌堆 4　弃牌堆 1　移除 0</text>
+<rect x="24" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="38" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃</text>
+<text x="214" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="38" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 基础伤害 4</text>
+<text x="38" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="38" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="273" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="287" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·防护</text>
+<text x="463" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="287" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[防御] 护盾 4</text>
+<text x="287" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：守护位 B</text>
+<text x="287" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="522" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="536" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·治疗</text>
+<text x="712" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="536" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[治疗] 恢复生命 3</text>
+<text x="536" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="536" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="771" y="506" width="236" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="785" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·增益</text>
+<text x="961" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">1</text>
+<text x="785" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[增益] 效果说明需完整</text>
+<text x="785" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可读</text>
+<text x="785" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：治愈位 C</text>
+<text x="785" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">选择卡牌</text>
+<rect x="1020" y="506" width="236" height="174" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="1034" y="520.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·重击</text>
+<text x="1210" y="520.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">3</text>
+<text x="1034" y="555.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[攻击] 费用不足；查看</text>
+<text x="1034" y="585.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情</text>
+<text x="1034" y="622.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">归属：锋刃位 A</text>
+<text x="1034" y="651.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">详情可读</text>
+<rect x="24" y="692" width="184" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.end_cancel" data-control="true"/>
+<text x="80.0" y="704.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">继续选择</text>
+<rect x="19" y="687" width="194" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<text x="232" y="706.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认前仍可查看敌方意图。</text>
+<rect x="1020" y="692" width="236" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.battle.end_confirm" data-control="true"/>
+<text x="1084.0" y="704.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">确认结束回合</text>
+</svg>
+</div><p class="notes">状态：B_END_REVIEW。 <a href="wireframes/W06_Battle_End_Review.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W07_Camp" aria-labelledby="W07_Camp-heading"><h2 id="W07_Camp-heading">营地 / 主路径</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W07_Camp-title W07_Camp-desc" data-wireframe-id="W07_Camp" data-screen-id="home">
+<title id="W07_Camp-title">营地 / 主路径</title><desc id="W07_Camp-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。沿用 P20 已有导航；Anki 断连不自动封锁已可用的游戏操作。</desc>
+<defs><marker id="W07_Camp-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W07_Camp   营地 / 主路径</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">沿用 P20 已有导航；Anki 断连不自动封锁已可用的游戏操作。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.home.heading">旅团营地</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="52" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.meta.save_status"/>
+<text x="266" y="162.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">存档可操作　｜　学习连接：未连接　｜　当前视图已确认</text>
+<rect x="248" y="222" width="1008" height="210" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="238.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">准备下一次出发</text>
+<text x="268" y="268.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">先确认已保存编队，再选择关卡。</text>
+<text x="268" y="309.0" font-size="18" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">角色立绘区域由美术岗位提供；本线框只标记空间与信息。</text>
+<rect x="268" y="360" width="220" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.home.party_cta" data-control="true"/>
+<text x="324.0" y="372.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">整理三人编队</text>
+<rect x="508" y="360" width="200" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.home.chapters_cta" data-control="true"/>
+<text x="572.0" y="372.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看章节</text>
+<text x="248" y="458.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">当前已保存编队</text>
+<rect x="248" y="498" width="324" height="94" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="515.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">01  璃火</text>
+<text x="266" y="553.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击 · 等级 1（示例）</text>
+<rect x="590" y="498" width="324" height="94" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="608" y="515.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">02  千澄</text>
+<text x="608" y="553.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">守护 · 等级 1（示例）</text>
+<rect x="932" y="498" width="324" height="94" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="950" y="515.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">03  羽铃</text>
+<text x="950" y="553.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">支援 · 等级 1（示例）</text>
+<rect x="248" y="616" width="488" height="126" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="632.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习记录</text>
+<text x="266" y="660.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">尚未取得可核验的学习记录。</text>
+<rect x="266" y="692" width="214" height="44" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.home.learning_cta" data-control="true"/>
+<text x="319.0" y="702.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看学习状态</text>
+<rect x="754" y="616" width="502" height="126" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="772" y="632.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节记录</text>
+<text x="772" y="660.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">挑战进度与首通资格分别读取。</text>
+<rect x="772" y="692" width="214" height="44" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.home.chapter_summary_cta" data-control="true"/>
+<text x="843.0" y="702.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">打开章节</text>
+</svg>
+</div><p class="notes">状态：M_READY, L_DISCONNECTED。 <a href="wireframes/W07_Camp.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W08_Party_Draft" aria-labelledby="W08_Party_Draft-heading"><h2 id="W08_Party_Draft-heading">编队 / 草稿与已保存</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W08_Party_Draft-title W08_Party_Draft-desc" data-wireframe-id="W08_Party_Draft" data-screen-id="party">
+<title id="W08_Party_Draft-title">编队 / 草稿与已保存</title><desc id="W08_Party_Draft-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。选择已占用角色时只交换草稿席位；保存成功须由新的已提交视图证明。</desc>
+<defs><marker id="W08_Party_Draft-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W08_Party_Draft   编队 / 草稿与已保存</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">选择已占用角色时只交换草稿席位；保存成功须由新的已提交视图证明。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.party.heading">三人编队</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="80" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.party.draft_status"/>
+<text x="266" y="165.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[尚未保存] 当前排列只保留在此页。</text>
+<text x="266" y="198.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">页面选择属于草稿；提交成功后才显示“编队已保存”。</text>
+<rect x="248" y="254" width="324" height="334" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="270.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">席位 01</text>
+<rect x="266" y="306" width="288" height="118" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="324" y="342.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色立绘区域</text>
+<rect x="266" y="444" width="288" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.party.slot.{slot}" data-control="true"/>
+<text x="347.9375" y="456.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">羽铃 · 支援  ▾</text>
+<rect x="261" y="439" width="298" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<text x="266" y="514.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1 · 属性来自角色视图</text>
+<text x="266" y="552.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">当前草稿选择</text>
+<rect x="590" y="254" width="324" height="334" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="608" y="270.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">席位 02</text>
+<rect x="608" y="306" width="288" height="118" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="666" y="342.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色立绘区域</text>
+<rect x="608" y="444" width="288" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.party.slot.{slot}" data-control="true"/>
+<text x="689.9375" y="456.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">千澄 · 守护  ▾</text>
+<text x="608" y="514.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1 · 属性来自角色视图</text>
+<text x="608" y="552.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">当前草稿选择</text>
+<rect x="932" y="254" width="324" height="334" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="950" y="270.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">席位 03</text>
+<rect x="950" y="306" width="288" height="118" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1008" y="342.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色立绘区域</text>
+<rect x="950" y="444" width="288" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.party.slot.{slot}" data-control="true"/>
+<text x="1031.9375" y="456.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">璃火 · 攻击  ▾</text>
+<text x="950" y="514.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1 · 属性来自角色视图</text>
+<text x="950" y="552.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">当前草稿选择</text>
+<text x="248" y="614.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已保存顺序：璃火 → 千澄 → 羽铃</text>
+<rect x="248" y="674" width="240" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.party.restore" data-control="true"/>
+<text x="305.0" y="686.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">恢复已保存编队</text>
+<rect x="1016" y="674" width="240" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.party.save" data-control="true"/>
+<text x="1082.0" y="686.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">保存三人编队</text>
+</svg>
+</div><p class="notes">状态：P_DIRTY, P_INVALID, P_SAVED。 <a href="wireframes/W08_Party_Draft.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W09_Growth_Confirm" aria-labelledby="W09_Growth_Confirm-heading"><h2 id="W09_Growth_Confirm-heading">养成 / 消耗确认</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W09_Growth_Confirm-title W09_Growth_Confirm-desc" data-wireframe-id="W09_Growth_Confirm" data-screen-id="growth">
+<title id="W09_Growth_Confirm-title">养成 / 消耗确认</title><desc id="W09_Growth_Confirm-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。这是 P20 已有升级确认框的焦点规范：默认取消；一次确认只提交一个原请求。</desc>
+<defs><marker id="W09_Growth_Confirm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W09_Growth_Confirm   养成 / 消耗确认</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">这是 P20 已有升级确认框的焦点规范：默认取消；一次确认只提交一个原请求。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.growth.heading">角色养成</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="174" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="164.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">璃火 · 当前等级 1</text>
+<text x="266" y="200.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.growth.attributes">生命 96　攻击 17　防御 5　支援 3</text>
+<text x="266" y="254.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">升级费用与资格来自 P17；不由界面重新计算。</text>
+<rect x="370" y="350" width="744" height="326" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="3" data-anchor-id="ux.growth.dialog"/>
+<text x="398" y="374.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认升级</text>
+<text x="398" y="422.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色：璃火　　等级：1 → 2</text>
+<text x="398" y="464.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.growth.cost">本次消耗：训练代币 4（示例）</text>
+<text x="398" y="504.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">提交后读取新的等级与钱包；等待中不重复提交。</text>
+<rect x="398" y="596" width="220" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.growth.dialog_cancel" data-control="true"/>
+<text x="472.0" y="608.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">暂不升级</text>
+<rect x="393" y="591" width="230" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="846" y="596" width="240" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.growth.dialog_confirm" data-control="true"/>
+<text x="903.0" y="608.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">确认升级并提交</text>
+<text x="248" y="708.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">键盘：Tab 在框内切换；Esc 关闭并回到触发按钮。</text>
+</svg>
+</div><p class="notes">状态：G_CONFIRM。 <a href="wireframes/W09_Growth_Confirm.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W10_Learning_Quarantine" aria-labelledby="W10_Learning_Quarantine-heading"><h2 id="W10_Learning_Quarantine-heading">学习 / 隔离与到账分离</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W10_Learning_Quarantine-title W10_Learning_Quarantine-desc" data-wireframe-id="W10_Learning_Quarantine" data-screen-id="learning">
+<title id="W10_Learning_Quarantine-title">学习 / 隔离与到账分离</title><desc id="W10_Learning_Quarantine-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。连接、账本状态、钱包证明是三条独立信息；查询只读，不包含强制入账按钮。</desc>
+<defs><marker id="W10_Learning_Quarantine-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W10_Learning_Quarantine   学习 / 隔离与到账分离</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">连接、账本状态、钱包证明是三条独立信息；查询只读，不包含强制入账按钮。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[连接可用]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.learning.heading">学习状态</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="100" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.learning.record"/>
+<text x="266" y="164.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[待核对 · 已隔离]</text>
+<text x="266" y="197.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">这条记录尚未计入可用奖励。你无需改变 Anki 评分。</text>
+<rect x="248" y="272" width="324" height="134" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.learning.connection"/>
+<text x="266" y="288.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">连接</text>
+<text x="266" y="326.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">Anki 连接可用</text>
+<text x="266" y="369.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">连接不代表入账</text>
+<rect x="590" y="272" width="324" height="134" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.learning.reason"/>
+<text x="608" y="288.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">记录</text>
+<text x="608" y="326.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">待核对 · 已隔离</text>
+<text x="608" y="369.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">本条尚未授奖</text>
+<rect x="932" y="272" width="324" height="134" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.learning.wallet_proof"/>
+<text x="950" y="288.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">钱包</text>
+<text x="950" y="326.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">15（最近确认示例）</text>
+<text x="950" y="369.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">未计入隔离记录</text>
+<rect x="248" y="430" width="1008" height="142" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="446.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">接下来可以做什么</text>
+<text x="266" y="478.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">重新查询此记录的处理状态；保持正常复习即可。</text>
+<text x="266" y="519.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">技术编号、原始原因码与证明来源放在可展开的记录详情中。</text>
+<rect x="248" y="600" width="224" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.learning.refresh" data-control="true"/>
+<text x="306.0" y="612.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">重新查询状态</text>
+<rect x="243" y="595" width="234" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="490" y="600" width="224" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.learning.details" data-control="true"/>
+<text x="548.0" y="612.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看记录详情</text>
+<text x="248" y="676.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">状态更新后保留当前焦点，只读出有变化的一条摘要。</text>
+</svg>
+</div><p class="notes">状态：L_QUARANTINED, L_APPLIED_UNPROVEN。 <a href="wireframes/W10_Learning_Quarantine.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W11_Growth_Pending" aria-labelledby="W11_Growth_Pending-heading"><h2 id="W11_Growth_Pending-heading">养成 / 重启后仍待确认</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W11_Growth_Pending-title W11_Growth_Pending-desc" data-wireframe-id="W11_Growth_Pending" data-screen-id="growth">
+<title id="W11_Growth_Pending-title">养成 / 重启后仍待确认</title><desc id="W11_Growth_Pending-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。P21 的隔离查询能力已交付；P20 ↔ P21 正式网关未受理，不可凭新空存档解除未决。</desc>
+<defs><marker id="W11_Growth_Pending-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W11_Growth_Pending   养成 / 重启后仍待确认</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">P21 的隔离查询能力已交付；P20 ↔ P21 正式网关未受理，不可凭新空存档解除未决。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.growth.heading">角色养成</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="146" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.meta.pending"/>
+<text x="266" y="165.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[上次操作结果待确认]</text>
+<text x="266" y="207.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">先查询原操作。刷新、返回或重启都不会发起第二次升级。</text>
+<rect x="266" y="240" width="220" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.meta.lookup" data-control="true"/>
+<text x="331.0" y="252.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查询原操作</text>
+<rect x="261" y="235" width="230" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="248" y="318" width="1008" height="266" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="334.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">璃火 · 最近已确认状态</text>
+<text x="266" y="370.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1　生命 96　攻击 17　防御 5</text>
+<text x="266" y="419.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下次等级与消耗预览仍可阅读，暂时不能再次提交。</text>
+<rect x="266" y="488" width="220" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.growth.upgrade" data-control="true"/>
+<text x="340.0" y="500.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认升级</text>
+<text x="514" y="500.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">不可用原因：请先核对上次操作结果。</text>
+<rect x="248" y="608" width="1008" height="132" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="624.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可继续浏览</text>
+<text x="266" y="655.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">页面导航不会清除原请求。技术编号保留在详情中，不代替说明文案。</text>
+</svg>
+</div><p class="notes">状态：M_UNKNOWN, M_RESTART_PENDING。 <a href="wireframes/W11_Growth_Pending.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W12_Chapters" aria-labelledby="W12_Chapters-heading"><h2 id="W12_Chapters-heading">章节 / 挑战与首通资格</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W12_Chapters-title W12_Chapters-desc" data-wireframe-id="W12_Chapters" data-screen-id="chapters">
+<title id="W12_Chapters-title">章节 / 挑战与首通资格</title><desc id="W12_Chapters-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。关卡状态按 P18 原视图显示；恢复冻结时入口禁用原因覆盖“可挑战”，但不改首通事实。</desc>
+<defs><marker id="W12_Chapters-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W12_Chapters   章节 / 挑战与首通资格</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">关卡状态按 P18 原视图显示；恢复冻结时入口禁用原因覆盖“可挑战”，但不改首通事实。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.heading">章节远征</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="76" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.meta.save_status"/>
+<text x="266" y="162.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[存档需要核对] 可继续浏览，新的出战、消耗与领取已暂停。</text>
+<rect x="248" y="250" width="1008" height="194" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}"/>
+<text x="266" y="266.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">01 · 游离字屑</text>
+<text x="266" y="308.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.eligibility.{stage_key}">已通关　｜　首通资格：已使用</text>
+<text x="266" y="350.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">奖励预览仅供阅读；是否可领取以处理状态为准。</text>
+<rect x="1010" y="272" width="226" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}" data-control="true"/>
+<text x="1087.0" y="284.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看关卡</text>
+<rect x="1010" y="338" width="226" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.chapters.enter.{stage_key}" data-control="true"/>
+<text x="1087.0" y="350.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">准备出发</text>
+<text x="1010" y="395.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">存档待核对，暂停出战</text>
+<rect x="248" y="472" width="1008" height="194" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}"/>
+<text x="266" y="488.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">02 · 失序校勘者</text>
+<text x="266" y="530.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.chapters.eligibility.{stage_key}">已解锁　｜　首通资格：尚未使用</text>
+<text x="266" y="572.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">奖励预览仅供阅读；是否可领取以处理状态为准。</text>
+<rect x="1010" y="494" width="226" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.chapters.stage.{stage_key}" data-control="true"/>
+<text x="1087.0" y="506.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看关卡</text>
+<rect x="1010" y="560" width="226" height="48" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.chapters.enter.{stage_key}" data-control="true"/>
+<text x="1087.0" y="572.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">准备出发</text>
+<text x="1010" y="617.0" font-size="16" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">存档待核对，暂停出战</text>
+<text x="248" y="710.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">不可用原因要留在按钮附近；不要同时显示 READY 与“暂停出战”。</text>
+</svg>
+</div><p class="notes">状态：C_LOCKED, M_SAVE_RECOVERY_REQUIRED。 <a href="wireframes/W12_Chapters.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W13_Settlement_Pending" aria-labelledby="W13_Settlement_Pending-heading"><h2 id="W13_Settlement_Pending-heading">结算 / 胜利与奖励未知</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W13_Settlement_Pending-title W13_Settlement_Pending-desc" data-wireframe-id="W13_Settlement_Pending" data-screen-id="settlement">
+<title id="W13_Settlement_Pending-title">结算 / 胜利与奖励未知</title><desc id="W13_Settlement_Pending-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。只接受 P14 权威战斗结果与 P18 处理状态；胜利、已消耗首通资格、已入账不能互相推导。</desc>
+<defs><marker id="W13_Settlement_Pending-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W13_Settlement_Pending   结算 / 胜利与奖励未知</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">只接受 P14 权威战斗结果与 P18 处理状态；胜利、已消耗首通资格、已入账不能互相推导。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.settlement.heading">战后结算</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="154" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.settlement.battle_result"/>
+<text x="266" y="164.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[战斗胜利]</text>
+<text x="266" y="206.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">本场结果已确认；不代表奖励已经入账。</text>
+<rect x="248" y="330" width="1008" height="170" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.settlement.reward_status"/>
+<text x="266" y="351.0" font-size="26" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[奖励结果待确认]</text>
+<text x="266" y="399.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">请查询本次领取结果。返回章节后仍保留原操作记录。</text>
+<text x="266" y="449.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">首通资格：以关卡当前记录为准；界面不再次计算或发放。</text>
+<rect x="248" y="534" width="250" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.settlement.lookup" data-control="true"/>
+<text x="319.0" y="546.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查询领取结果</text>
+<rect x="243" y="529" width="260" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="520" y="534" width="220" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.settlement.return" data-control="true"/>
+<text x="594.0" y="546.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">返回章节</text>
+<rect x="248" y="620" width="1008" height="120" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="636.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">原记录详情</text>
+<text x="266" y="667.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战斗编号、原请求编号、来源与处理原因可展开查看；主提示保持自然语言。</text>
+</svg>
+</div><p class="notes">状态：R_UNKNOWN, R_REVIEW。 <a href="wireframes/W13_Settlement_Pending.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W14_Characters" aria-labelledby="W14_Characters-heading"><h2 id="W14_Characters-heading">角色 / 档案入口</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W14_Characters-title W14_Characters-desc" data-wireframe-id="W14_Characters" data-screen-id="characters">
+<title id="W14_Characters-title">角色 / 档案入口</title><desc id="W14_Characters-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。角色总数未冻结；三席编队不等于只有三名角色。此处三项仅复用上游示例。</desc>
+<defs><marker id="W14_Characters-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W14_Characters   角色 / 档案入口</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">角色总数未冻结；三席编队不等于只有三名角色。此处三项仅复用上游示例。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.characters.heading">角色档案</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<text x="248" y="156.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看同伴的当前信息，再进入养成。</text>
+<rect x="248" y="214" width="324" height="442" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<rect x="266" y="232" width="288" height="180" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="324" y="298.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可编辑立绘区</text>
+<text x="266" y="442.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">璃火 · 攻击</text>
+<text x="266" y="487.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1（当前已确认）</text>
+<rect x="266" y="570" width="288" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.characters.item.{character_key}" data-control="true"/>
+<text x="374.0" y="582.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查看养成</text>
+<rect x="590" y="214" width="324" height="442" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<rect x="608" y="232" width="288" height="180" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="666" y="298.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可编辑立绘区</text>
+<text x="608" y="442.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">千澄 · 守护</text>
+<text x="608" y="487.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1（当前已确认）</text>
+<rect x="608" y="570" width="288" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.characters.item.{character_key}" data-control="true"/>
+<text x="716.0" y="582.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看养成</text>
+<rect x="932" y="214" width="324" height="442" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<rect x="950" y="232" width="288" height="180" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1008" y="298.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">可编辑立绘区</text>
+<text x="950" y="442.0" font-size="24" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">羽铃 · 支援</text>
+<text x="950" y="487.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">等级 1（当前已确认）</text>
+<rect x="950" y="570" width="288" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.characters.item.{character_key}" data-control="true"/>
+<text x="1058.0" y="582.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看养成</text>
+<text x="248" y="702.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">长名称保留详情入口；不得靠缩小到不可读来塞入卡面。</text>
+</svg>
+</div><p class="notes">状态：M_READY。 <a href="wireframes/W14_Characters.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W15_Handoff" aria-labelledby="W15_Handoff-heading"><h2 id="W15_Handoff-heading">出战 / 已有战斗交接</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W15_Handoff-title W15_Handoff-desc" data-wireframe-id="W15_Handoff" data-screen-id="handoff">
+<title id="W15_Handoff-title">出战 / 已有战斗交接</title><desc id="W15_Handoff-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。此态已存在于 P20；进入 P19 的真实路由等待 P13/P19/P20 受理，不在本岗接线。</desc>
+<defs><marker id="W15_Handoff-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W15_Handoff   出战 / 已有战斗交接</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">此态已存在于 P20；进入 P19 的真实路由等待 P13/P19/P20 受理，不在本岗接线。</text>
+<rect x="0" y="48" width="220" height="720" rx="0" fill="#f2f4f7" stroke="none" stroke-width="1"/>
+<line x1="220" y1="48" x2="220" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="72.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">言灵旅团</text>
+<text x="24" y="114.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">导航与内容分区</text>
+<rect x="24" y="164" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.home" data-control="true"/>
+<text x="74.0" y="176.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">旅团营地</text>
+<rect x="24" y="226" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.characters" data-control="true"/>
+<text x="74.0" y="238.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色档案</text>
+<rect x="24" y="288" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.party" data-control="true"/>
+<text x="74.0" y="300.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">三人编队</text>
+<rect x="24" y="350" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.growth" data-control="true"/>
+<text x="74.0" y="362.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">角色养成</text>
+<rect x="24" y="412" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.chapters" data-control="true"/>
+<text x="74.0" y="424.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">章节远征</text>
+<rect x="24" y="474" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.settlement" data-control="true"/>
+<text x="74.0" y="486.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">战后结算</text>
+<rect x="24" y="536" width="172" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.nav.learning" data-control="true"/>
+<text x="74.0" y="548.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">学习状态</text>
+<text x="24" y="634.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">[未连接]</text>
+<text x="24" y="658.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">Anki 状态单独显示</text>
+<text x="248" y="74.0" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">出战 / 已有战斗交接</text>
+<text x="908" y="72.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.meta.wallet">可用资源 15（示例）</text>
+<text x="908" y="104.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">预留 0 · 取自当前视图</text>
+<rect x="248" y="148" width="1008" height="226" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.handoff.active_battle"/>
+<text x="266" y="164.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">已有一场战斗待继续</text>
+<text x="266" y="214.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">关卡与队伍采用出战时已提交的引用。</text>
+<text x="266" y="266.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">暂时无法接入战斗界面；请查询已创建战斗的状态。</text>
+<rect x="266" y="402" width="250" height="48" rx="6" fill="#1b2635" stroke="#1b2635" stroke-width="2" data-anchor-id="ux.handoff.refresh" data-control="true"/>
+<text x="337.0" y="414.75" font-size="18" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">查询出战状态</text>
+<rect x="261" y="397" width="260" height="58" rx="9" fill="none" stroke="#005fcc" stroke-width="3" data-region="focus_indicator"/>
+<rect x="540" y="402" width="200" height="48" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.handoff.return" data-control="true"/>
+<text x="604.0" y="414.75" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">返回章节</text>
+<rect x="248" y="498" width="1008" height="148" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1"/>
+<text x="266" y="518.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">返回页面不会关闭这场战斗，也不会自动再创建一场。</text>
+<text x="266" y="572.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">正式接线后可进入已存在的 battle 引用，不能由 UI 生成胜负或奖励。</text>
+</svg>
+</div><p class="notes">状态：C_ACTIVE。 <a href="wireframes/W15_Handoff.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W16_Typography" aria-labelledby="W16_Typography-heading"><h2 id="W16_Typography-heading">中日排版 / 缺字与长文样张</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W16_Typography-title W16_Typography-desc" data-wireframe-id="W16_Typography" data-screen-id="battle">
+<title id="W16_Typography-title">中日排版 / 缺字与长文样张</title><desc id="W16_Typography-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。此页是排版审查板，不是新增产品页面；日本语文案待双语人工审核。</desc>
+<defs><marker id="W16_Typography-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W16_Typography   中日排版 / 缺字与长文样张</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">此页是排版审查板，不是新增产品页面；日本语文案待双语人工审核。</text>
+<rect x="24" y="72" width="600" height="218" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="88.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">中文关键提示 · 20px</text>
+<text x="44" y="126" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动：攻击前排；基础 12 × 2 次。</text>
+<text x="44" y="158" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">实际掉血以结算为准。</text>
+<text x="44" y="217.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">关键数值、否定词与目标不使用省略号。</text>
+<rect x="648" y="72" width="608" height="218" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="666" y="88.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">日本語 · 20px</text>
+<text x="668" y="126" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">次の行動：前列を攻撃。基礎値 12 × 2 回。</text>
+<text x="668" y="158" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">実際の減少量は確定した結果を参照。</text>
+<text x="668" y="217.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">「確認しました」。対象（前列）を確認。</text>
+<rect x="24" y="316" width="1232" height="166" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="332.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">长名称与注音</text>
+<text x="44" y="372.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">星のあいだに置き忘れた観測記録と三度目の校閲</text>
+<text x="44" y="423.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="ja" style="font-family:P23JP,P23SC,P23Symbols,sans-serif">語彙（ごい） ／ 取り消す（とりけす）　　HP 128 / 160　　護盾 +8</text>
+<rect x="24" y="508" width="1232" height="224" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1"/>
+<text x="42" y="524.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">缺字：明确替代，原文可查</text>
+<text x="44" y="564.0" font-size="22" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">[缺字 U+20BB7] 野的记录　　[缺字 U+F0000]</text>
+<text x="44" y="612.0" font-size="20" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">本轮字体不包含这两个测试码位；保留原始 UTF-8 供详情查看，不擅自改成“吉”。</text>
+<text x="44" y="669.0" font-size="18" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">界面按语言切换字形；事件 ID、原始 Anki 文本和哈希不随显示层规范化。</text>
+</svg>
+</div><p class="notes">状态：B_INTENT_CANDIDATE, L_QUARANTINED。 <a href="wireframes/W16_Typography.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+<section id="W17_Battle_Large_Text" aria-labelledby="W17_Battle_Large_Text-heading"><h2 id="W17_Battle_Large_Text-heading">战斗 / 大字滚动布局提案</h2><div class="plate"><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="856" viewBox="0 0 1280 856" role="img" aria-labelledby="W17_Battle_Large_Text-title W17_Battle_Large_Text-desc" data-wireframe-id="W17_Battle_Large_Text" data-screen-id="battle">
+<title id="W17_Battle_Large_Text-title">战斗 / 大字滚动布局提案</title><desc id="W17_Battle_Large_Text-desc">P23 可编辑低保真线框。设计夹具，数字和名称不构成正式玩法参数。本页示意 200% 文字重排，不是目标引擎缩放实测；一次展示较少卡片，完整内容可滚动。</desc>
+<defs><marker id="W17_Battle_Large_Text-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#626e7d"/></marker></defs>
+<rect x="0" y="0" width="1280" height="856" rx="6" fill="#ffffff" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1280" height="48" rx="6" fill="#1b2635" stroke="none" stroke-width="1"/>
+<text x="24" y="12.0" font-size="20" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">P23 / W17_Battle_Large_Text   战斗 / 大字滚动布局提案</text>
+<text x="960" y="14.0" font-size="16" fill="#ffffff" dominant-baseline="hanging" lang="zh-Hans">低保真设计 · 非正式UI</text>
+<line x1="0" y1="768" x2="1280" y2="768" stroke="#626e7d" stroke-width="1"/>
+<text x="24" y="783.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">设计夹具：数字 / 名称仅用于走查；1280×720 为候选逻辑画布，目标屏未冻结。</text>
+<text x="24" y="814.0" font-size="16" fill="#445266" dominant-baseline="hanging" lang="zh-Hans">本页示意 200% 文字重排，不是目标引擎缩放实测；一次展示较少卡片，完整内容可滚动。</text>
+<text x="24" y="66.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.heading">卡牌战斗</text>
+<text x="480" y="72.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">第 2 回合</text>
+<text x="930" y="72.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans" data-anchor-id="ux.battle.energy">费用 2</text>
+<rect x="24" y="142" width="1232" height="318" rx="6" fill="#f2f4f7" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.intent.{unit_key}"/>
+<text x="48" y="164.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">下一次行动</text>
+<text x="48" y="226.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击前排 · 基础 1 × 1 次</text>
+<text x="48" y="288.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">目标：锋刃位 A</text>
+<text x="48" y="358.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">候选预告；基础值不是实际掉血。</text>
+<rect x="24" y="484" width="1232" height="154" rx="6" fill="#ffffff" stroke="#626e7d" stroke-width="1" data-anchor-id="ux.battle.hand.{card_key}" data-control="true"/>
+<text x="48" y="506.0" font-size="40" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">试验·锋刃　费用 1</text>
+<text x="48" y="572.0" font-size="32" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">攻击 · 基础伤害 4　　向下滚动查看其他手牌</text>
+<rect x="24" y="670" width="320" height="72" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.log_open" data-control="true"/>
+<text x="100.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">查看完整记录</text>
+<rect x="744" y="670" width="244" height="72" rx="6" fill="#f2f4f7" stroke="#1b2635" stroke-width="1" stroke-dasharray="5 4" data-anchor-id="ux.battle.command.play" data-control="true"/>
+<text x="810.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">确认出牌</text>
+<rect x="1012" y="670" width="244" height="72" rx="6" fill="#ffffff" stroke="#1b2635" stroke-width="1" data-anchor-id="ux.battle.command.end_turn" data-control="true"/>
+<text x="1078.0" y="688.5" font-size="28" fill="#1b2635" dominant-baseline="hanging" lang="zh-Hans">结束回合</text>
+</svg>
+</div><p class="notes">状态：B_READY。 <a href="wireframes/W17_Battle_Large_Text.svg">打开可编辑 SVG</a> <a href="#top">回到目录</a></p></section>
+</main></html>
