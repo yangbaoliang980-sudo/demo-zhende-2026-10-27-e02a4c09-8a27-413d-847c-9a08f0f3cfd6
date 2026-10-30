@@ -1,0 +1,72 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "version": "P21-PERSISTENCE/0.1.0-isolated",
+  "production_authorized": false,
+  "blockers": [
+    {
+      "id": "P21-B01",
+      "owner": "P13",
+      "required_artifact": "真实工程固定提交、actual_path_mapping、P21实际路径及修改白名单",
+      "status": "BLOCKED",
+      "source_path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+      "source_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "id": "P21-B02",
+      "owner": "P13/P34",
+      "required_artifact": "目标Windows/引擎、文件系统、SQLite绑定、锁、flush和断电探针",
+      "status": "BLOCKED",
+      "source_path": "sources/P18/upstream/P13/architecture/target_environment_requirements.json",
+      "source_sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+    },
+    {
+      "id": "P21-B03",
+      "owner": "P11/P17/P13",
+      "required_artifact": "P11旧WalletDelta/source_after与P17来源批次模型的无损适配；真实composition root",
+      "status": "BLOCKED",
+      "source_path": "sources/P18/upstream/P17/P17_API.md",
+      "source_sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+    },
+    {
+      "id": "P21-B04",
+      "owner": "P10/P08/P12/P11",
+      "required_artifact": "真实Anki事件身份、批准奖励政策、正式传输与ACK绑定",
+      "status": "BLOCKED",
+      "source_path": "sources/P11/formal_prerequisites.json",
+      "source_sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+    },
+    {
+      "id": "P21-B05",
+      "owner": "P13/P20",
+      "required_artifact": "P20外层意图到P17/P18事务定位及哈希的持久映射、正式回复版本；UI不能直接接受durable=true",
+      "status": "BLOCKED",
+      "source_path": "sources/P20/P20_API.md",
+      "source_sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+    },
+    {
+      "id": "P21-B06",
+      "owner": "P01/P11/P17/P18/P36",
+      "required_artifact": "更旧备份/整盘回滚/跨设备恢复的外部连续性及领域对账；损失型激活需授权",
+      "status": "BLOCKED",
+      "source_path": "sources/P18/P18_API.md",
+      "source_sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "id": "P21-B07",
+      "owner": "P32/P33/P35",
+      "required_artifact": "同一交付SHA的独立自动化、人工目标机及独审回执",
+      "status": "NOT_RUN",
+      "source_path": null,
+      "source_sha256": null
+    },
+    {
+      "id": "P21-B08",
+      "owner": "用户指定EXT-INTEGRATOR",
+      "required_artifact": "跨模块合并授权、正式接线和目标MVP固定集成提交",
+      "status": "BLOCKED",
+      "source_path": null,
+      "source_sha256": null
+    }
+  ],
+  "not_a_blocker_for_isolated_delivery": "P21 real SQLite author tests and source delivery completed independently."
+}

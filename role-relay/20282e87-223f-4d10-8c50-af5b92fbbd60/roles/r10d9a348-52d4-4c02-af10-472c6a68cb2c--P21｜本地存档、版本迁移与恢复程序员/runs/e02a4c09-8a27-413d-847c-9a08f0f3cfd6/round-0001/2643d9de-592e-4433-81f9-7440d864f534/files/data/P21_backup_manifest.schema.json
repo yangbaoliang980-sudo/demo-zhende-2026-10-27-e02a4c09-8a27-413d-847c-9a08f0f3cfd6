@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:p21:P21_backup_manifest:0.1.0-isolated",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "P21-BACKUP/1"
+    },
+    "database_file": {
+      "const": "snapshot.sqlite3"
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 134217728
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "head": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "P21-CONTINUITY/1"
+        },
+        "store_instance": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        },
+        "continuity_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        },
+        "profile_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "state_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "chain_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "save_schema_version": {
+          "enum": [
+            1,
+            2
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "store_instance",
+        "continuity_ref",
+        "profile_id",
+        "sequence",
+        "state_sha256",
+        "chain_sha256",
+        "save_schema_version"
+      ],
+      "additionalProperties": false
+    },
+    "store_marker": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "P21-STORE-MARKER/1"
+        },
+        "mode": {
+          "const": "ISOLATED"
+        },
+        "store_instance": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        },
+        "continuity_ref": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        },
+        "profile_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+        }
+      },
+      "required": [
+        "schema_version",
+        "mode",
+        "store_instance",
+        "continuity_ref",
+        "profile_id"
+      ],
+      "additionalProperties": false
+    },
+    "authority": {
+      "const": false
+    },
+    "notice": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "database_file",
+    "size_bytes",
+    "sha256",
+    "head",
+    "store_marker",
+    "authority",
+    "notice"
+  ],
+  "additionalProperties": false
+}

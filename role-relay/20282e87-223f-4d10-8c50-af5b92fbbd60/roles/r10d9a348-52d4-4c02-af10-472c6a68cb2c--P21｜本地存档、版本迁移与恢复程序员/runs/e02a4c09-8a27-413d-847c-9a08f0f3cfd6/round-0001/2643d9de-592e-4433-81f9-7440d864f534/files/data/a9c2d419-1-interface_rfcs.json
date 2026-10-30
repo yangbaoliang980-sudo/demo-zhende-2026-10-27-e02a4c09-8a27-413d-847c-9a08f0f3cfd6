@@ -1,0 +1,264 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "version": "P21-PERSISTENCE/0.1.0-isolated",
+  "base_sources": [
+    {
+      "id": "V6",
+      "path": "sources/V6/v6_roles_github.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+    },
+    {
+      "id": "P13_PATHS",
+      "path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "id": "P13_DTO",
+      "path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+    },
+    {
+      "id": "P13_TARGET",
+      "path": "sources/P18/upstream/P13/architecture/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+    },
+    {
+      "id": "P11_PORTS",
+      "path": "sources/P11/ledger_runtime/ports.py",
+      "size_bytes": 1847,
+      "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+    },
+    {
+      "id": "P11_TYPES",
+      "path": "sources/P11/ledger_runtime/types.py",
+      "size_bytes": 7051,
+      "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+    },
+    {
+      "id": "P17_API",
+      "path": "sources/P18/upstream/P17/P17_API.md",
+      "size_bytes": 16158,
+      "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+    },
+    {
+      "id": "P18_API",
+      "path": "sources/P18/P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "id": "P20_API",
+      "path": "sources/P20/P20_API.md",
+      "size_bytes": 6722,
+      "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+    }
+  ],
+  "rfcs": [
+    {
+      "id": "P21-RFC-001",
+      "contract_owner": "P21",
+      "subject": "IC-19原子提交、永久回执、全记录CAS与一致读取",
+      "consulted_owners": [
+        "P13",
+        "P11",
+        "P17",
+        "P18"
+      ],
+      "requirements": [
+        "Store.execute_once(Request,pure_decide) puts owner snapshots, claims and receipts in one transaction",
+        "P13 projections are unchanged; candidate resolver is typed owner code, never arbitrary JSON",
+        "P21 accepts IC-19 only for this isolated version; no production or peer signature"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P21-RFC-002",
+      "contract_owner": "P17",
+      "subject": "P11/P17旧钱包模型无损对接",
+      "consulted_owners": [
+        "P11",
+        "P13",
+        "P21"
+      ],
+      "requirements": [
+        "Provide LegacyWalletBinding.project/materialize/validate preserving every source/history counter",
+        "Default is E_P11_P17_WALLET_BINDING_UNBOUND; no second runtime wallet",
+        "Synthetic binding exists only in tests; debt and reward eligibility unchanged"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P21-RFC-003",
+      "contract_owner": "P13",
+      "subject": "来源一致读取和P21内提交期重验",
+      "consulted_owners": [
+        "P17",
+        "P18",
+        "P14"
+      ],
+      "requirements": [
+        "Factories execute under the physical lock and BEGIN IMMEDIATE",
+        "Entry party_source_sha256 must match current meta record",
+        "Freeze external evidence per transaction; external process changes require owner-approved version/CAS"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P21-RFC-004",
+      "contract_owner": "P21",
+      "subject": "格式1→2、备份外水位、无损恢复",
+      "consulted_owners": [
+        "P11",
+        "P17",
+        "P18",
+        "P36"
+      ],
+      "requirements": [
+        "Migration transforms physical format only and preserves original domain bytes",
+        "Backup copy is review-only; no self-created authority can activate it",
+        "Exact-head recovery only; older restore remains blocked for owner reconciliation"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P21-RFC-005",
+      "contract_owner": "P13",
+      "subject": "P20未决操作与正式学习到账回复",
+      "consulted_owners": [
+        "P20",
+        "P11",
+        "P12",
+        "P21"
+      ],
+      "requirements": [
+        "Responds to P20-RFC-005 with persistent transaction lookup and P13 SaveStatusView/CommitLookupView",
+        "Outer UI intent/request hash correlation must be persisted in an accepted gateway contract; current UI is unchanged",
+        "Legacy P11 projection stays P21_SIMULATOR; P20 real-income branch remains BLOCKED"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P21-RFC-006",
+      "contract_owner": "P13",
+      "subject": "目标平台与长期容量",
+      "consulted_owners": [
+        "P21",
+        "P22",
+        "P34",
+        "P36"
+      ],
+      "requirements": [
+        "Current implementation requires probed POSIX runtime; Windows is explicitly E_PLATFORM_NOT_PROBED",
+        "Per document/receipt canonical JSON limit 1 MiB, full validation is linear in retained history",
+        "No pruning of receipts/first-clear tombstones; segmentation requires a versioned owner decision"
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "requested_version": "IC19-P21/0.1.0-isolated",
+      "base_hashes": [
+        "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+        "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+        "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac",
+        "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+        "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5",
+        "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149",
+        "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88",
+        "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889",
+        "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+      ],
+      "conflict_handling": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    }
+  ]
+}

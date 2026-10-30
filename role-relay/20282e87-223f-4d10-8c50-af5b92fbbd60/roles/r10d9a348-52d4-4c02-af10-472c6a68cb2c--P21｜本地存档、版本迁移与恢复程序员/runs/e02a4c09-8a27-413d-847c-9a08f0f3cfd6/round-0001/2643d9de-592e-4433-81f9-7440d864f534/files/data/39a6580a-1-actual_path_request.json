@@ -1,0 +1,71 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "version": "P21-PERSISTENCE/0.1.0-isolated",
+  "formal_status": "BLOCKED_NOT_MAPPED",
+  "source_mapping": {
+    "id": "P13_PATHS",
+    "path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+    "size_bytes": 16790,
+    "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+  },
+  "P13_received_rows": [
+    {
+      "owner": "P21",
+      "design_path": "runtime/persistence/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P21",
+      "design_path": "schema/save/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P21",
+      "design_path": "tests/save_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "actual_game_repository": null,
+  "actual_game_commit": null,
+  "production_write_authorized": false,
+  "isolated_output_root": "/workspace/scratch/ef3976254a8a/P21_LocalSave_V0.1",
+  "isolated_scope": "NEW_DELIVERABLE_ONLY_NO_EXISTING_ENGINE_OVERWRITE",
+  "isolated_authorization_basis": "Current user task explicitly permits independent isolated implementation when actual project/environment is unavailable.",
+  "requested_production_whitelist": [
+    "runtime/persistence/**",
+    "schema/save/**",
+    "tests/save_unit/**"
+  ],
+  "do_not_touch": [
+    "All original sources/** bytes",
+    "Anki databases/outbox",
+    "P11/P17/P18/P20 owned source",
+    "Any actual game repository"
+  ],
+  "authorized_isolated_support": [
+    "README.md",
+    "*.md",
+    "*.json",
+    "atomic_commit_tests.py",
+    "tools/**",
+    "recovery_logs/**",
+    "examples/**",
+    "evidence/**",
+    "handoff/**"
+  ]
+}

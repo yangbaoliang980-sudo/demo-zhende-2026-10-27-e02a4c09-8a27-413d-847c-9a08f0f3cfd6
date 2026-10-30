@@ -1,0 +1,121 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "version": "P21-PERSISTENCE/0.1.0-isolated",
+  "recipients": [
+    {
+      "owner": "P11",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "runtime/persistence/p21_persistence/adapters.py",
+        "P21_API.md",
+        "interface_rfcs.json"
+      ],
+      "requested_action": "接收原子端口；和P17裁定旧钱包无损绑定及origin新版本"
+    },
+    {
+      "owner": "P17",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "runtime/persistence/p21_persistence/adapters.py",
+        "tests/save_unit/test_contracts.py"
+      ],
+      "requested_action": "接收完整候选落盘与提交期重验；补齐LegacyWalletBinding"
+    },
+    {
+      "owner": "P18",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "runtime/persistence/p21_persistence/adapters.py",
+        "tests/save_unit/test_native_crash.py"
+      ],
+      "requested_action": "接收联合事务与首通数据库约束；确认入场meta哈希重验"
+    },
+    {
+      "owner": "P13",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "actual_path_request.json",
+        "interface_rfcs.json",
+        "P21_API.md"
+      ],
+      "requested_action": "授权真实路径、接受内部接线和P20操作定位合同"
+    },
+    {
+      "owner": "P20",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "P21_API.md",
+        "handoff/P20_recovery_response.md"
+      ],
+      "requested_action": "按正式合同接入查询/只读状态；保持真实已入账分支关闭直至门禁齐备"
+    },
+    {
+      "owner": "P32",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "atomic_commit_tests.py",
+        "recovery_logs/",
+        "disaster_simulation_report.md"
+      ],
+      "requested_action": "在同交付SHA独立复跑；复测7个作者缺陷并独立补充反例"
+    },
+    {
+      "owner": "P33",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "README.md",
+        "save_migration_plan.md",
+        "tools/save_tool.py"
+      ],
+      "requested_action": "目标桌面启动、断电、磁盘满和人工恢复验证"
+    },
+    {
+      "owner": "P34",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "environment_observed.json",
+        "tools/probe_environment.py",
+        "blockers.json"
+      ],
+      "requested_action": "提供目标平台探针与SQLite/锁/flush绑定"
+    },
+    {
+      "owner": "P35",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "verification_status.json",
+        "delivery_manifest.json",
+        "defect_log.json"
+      ],
+      "requested_action": "分层证据门禁；不得用作者测试替代独审"
+    },
+    {
+      "owner": "P36",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "save_migration_plan.md",
+        "schema/save/",
+        "tools/save_tool.py"
+      ],
+      "requested_action": "备份保留、无损恢复演练及旧备份对账"
+    },
+    {
+      "owner": "P01",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "blockers.json",
+        "interface_rfcs.json"
+      ],
+      "requested_action": "登记丢数据型修复与长周期容量决策"
+    },
+    {
+      "owner": "EXT-INTEGRATOR",
+      "status": "PREPARED_NOT_ACKNOWLEDGED",
+      "receive": [
+        "integration_handoff.md",
+        "runtime/persistence/"
+      ],
+      "requested_action": "仅在用户指定与授权后实施跨模块合并"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "P21-ENVIRONMENT-PROBE/1",
+  "observed_utc": "2026-10-30T06:50:11.171745+00:00",
+  "observed_host": {
+    "system": "Linux",
+    "release": "6.18.55",
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "os_name": "posix"
+  },
+  "checks": {
+    "directory_fsync": "PASS",
+    "posix_lock": "PASS",
+    "sqlite_journal_mode": "delete",
+    "sqlite_synchronous": 3,
+    "sqlite_foreign_keys": 1
+  },
+  "target_platform": {
+    "status": "BLOCKED",
+    "os": null,
+    "engine": null,
+    "actual_project": null
+  },
+  "Windows": "NOT_RUN",
+  "actual_power_cut": "NOT_RUN",
+  "Anki": "NOT_RUN",
+  "network_policy_snapshot": "UNAVAILABLE_IN_CURRENT_EXECUTOR",
+  "environment_status_tool": "NOT_EXPOSED",
+  "note": "Current Linux execution evidence only; not a P13/P34 target platform acceptance."
+}

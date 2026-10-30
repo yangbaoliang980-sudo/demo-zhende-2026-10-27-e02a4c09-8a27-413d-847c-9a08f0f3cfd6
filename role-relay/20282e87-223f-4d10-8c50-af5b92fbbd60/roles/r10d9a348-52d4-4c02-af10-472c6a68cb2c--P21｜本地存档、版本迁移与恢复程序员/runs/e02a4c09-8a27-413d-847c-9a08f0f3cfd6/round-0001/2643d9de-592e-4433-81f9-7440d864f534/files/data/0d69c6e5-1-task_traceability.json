@@ -1,0 +1,296 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "version": "P21-PERSISTENCE/0.1.0-isolated",
+  "requirements": [
+    "REQ-003",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-032",
+    "REQ-036"
+  ],
+  "interfaces": [
+    "IC-17",
+    "IC-18",
+    "IC-19",
+    "IC-20"
+  ],
+  "scope": [
+    "S05 physical transactions",
+    "S06 physical save migration",
+    "S07 progress+wallet atomicity"
+  ],
+  "production_paths": "BLOCKED",
+  "storage_choice": "SQLite DELETE journal + synchronous EXTRA, provisional for isolated observed POSIX host only",
+  "evidence_layers": {
+    "design": "AUTHOR_REVIEW",
+    "unit": "ACTUALLY_EXECUTED",
+    "contract": "ORIGINAL_CODE_WITH_NAMED_SYNTHETIC_PORTS",
+    "crash": "REAL_SUBPROCESS_SIGKILL",
+    "full_disk": "REAL_SQLITE_FULL_LIMIT_AND_INJECTED_OS_ENOSPC",
+    "target_machine": "NOT_RUN",
+    "Anki_E2E": "NOT_RUN"
+  },
+  "source_inputs": [
+    {
+      "id": "V6",
+      "path": "sources/V6/v6_roles_github.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+    },
+    {
+      "id": "P13_PATHS",
+      "path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "id": "P13_DTO",
+      "path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+      "size_bytes": 93217,
+      "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+    },
+    {
+      "id": "P13_TARGET",
+      "path": "sources/P18/upstream/P13/architecture/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+    },
+    {
+      "id": "P11_PORTS",
+      "path": "sources/P11/ledger_runtime/ports.py",
+      "size_bytes": 1847,
+      "sha256": "17862e953fd47296ac0cbe0fa9962f0ed8f7e3e203e02100c670872b6772d4d5"
+    },
+    {
+      "id": "P11_TYPES",
+      "path": "sources/P11/ledger_runtime/types.py",
+      "size_bytes": 7051,
+      "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+    },
+    {
+      "id": "P17_API",
+      "path": "sources/P18/upstream/P17/P17_API.md",
+      "size_bytes": 16158,
+      "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+    },
+    {
+      "id": "P18_API",
+      "path": "sources/P18/P18_API.md",
+      "size_bytes": 13324,
+      "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+    },
+    {
+      "id": "P20_API",
+      "path": "sources/P20/P20_API.md",
+      "size_bytes": 6722,
+      "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+    }
+  ],
+  "requirement_source": {
+    "id": "P01_REQUIREMENTS",
+    "path": "sources/P18/upstream/P01/spec/product/requirements_traceability.tsv",
+    "size_bytes": 17235,
+    "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+  },
+  "requirement_source_columns": [
+    "requirement_id",
+    "evidence_class",
+    "domain",
+    "normalized_requirement",
+    "source_id",
+    "source_anchor",
+    "source_exact_quote",
+    "quote_sha256",
+    "implementation_owner",
+    "independent_reviewer",
+    "stage",
+    "observable_acceptance",
+    "dependency",
+    "baseline_version"
+  ],
+  "original_requirement_rows": [
+    {
+      "requirement_id": "REQ-003",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "交付",
+      "normalized_requirement": "各启动岗位交付实体程序、素材、数据和测试证据而非纯方案。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "一.项目总目标",
+      "source_exact_quote": "本次任务的重点是实际研发与可验证的成果交付，不再重复进行岗位规划、无限细化需求或仅输出设计方案。",
+      "quote_sha256": "a0e86b15538be39798d8777b4125efe83aeef0f84fdb2f31e025021cee1d8d9d",
+      "implementation_owner": "P01",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S08",
+      "observable_acceptance": "每个启动task有实体文件、哈希、独立验证",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "治理",
+      "normalized_requirement": "单文件唯一修改owner，跨岗修改必须提接口变更申请。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "三.岗位执行原则",
+      "source_exact_quote": "不得擅自修改其他岗位负责的文件。",
+      "quote_sha256": "1cc7d2c44f087ad2e1f47d2bb67a98d7adbe7577eb46f07f0a7d3365041a5507",
+      "implementation_owner": "P01",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S08",
+      "observable_acceptance": "每条任务allowed_paths受P13映射/授权约束",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "治理",
+      "normalized_requirement": "Mock可用于隔离研发，但不得当作真实联动。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "三.岗位执行原则",
+      "source_exact_quote": "允许使用明确版本的接口Mock进行独立研发，但必须标明其不是真实集成。",
+      "quote_sha256": "9b9e1701a58498e3ec47ab32718c7f42e69368489a79009ea4a9b4c6b4b1fe19",
+      "implementation_owner": "P13",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S08",
+      "observable_acceptance": "测试证据标MOCK或REAL，真实集成需要双端产物",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "治理",
+      "normalized_requirement": "先核验历史工程，再考虑新开发。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "三.岗位执行原则",
+      "source_exact_quote": "优先复用实际存在并且经过检查的历史工程，禁止不经核验重复开发已经存在的模块。",
+      "quote_sha256": "a31eaafcd0f4a11688cfae47bbd7885fc454d450825dd5245cccaca7e4e1072b",
+      "implementation_owner": "P13",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00",
+      "observable_acceptance": "P13交工程清单、实测可用性与复用判定",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "钱包",
+      "normalized_requirement": "S05建设学习账本/奖励/通信/幂等/撤销事务。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "五.后续阶段目标",
+      "source_exact_quote": "S05：学习账本、奖励计算、本地通信、幂等与撤销事务。",
+      "quote_sha256": "72f4723e7ad85a2b1a9010032c5e4b15dac93646227b168e9d757bc901ee9023",
+      "implementation_owner": "P11",
+      "independent_reviewer": "P32/P35",
+      "stage": "S05",
+      "observable_acceptance": "事务与撤销用例通过后才能真授奖",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "成长",
+      "normalized_requirement": "S06实现三人编队、养成与存档。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "五.后续阶段目标",
+      "source_exact_quote": "S06：三人编队、角色养成和存档。",
+      "quote_sha256": "c599568b41cf3098c4f1488c6c7bcd4190f809259bfdcd5352e22b6de59b19c2",
+      "implementation_owner": "P17",
+      "independent_reviewer": "P32/P35",
+      "stage": "S06",
+      "observable_acceptance": "编队操作/养成/重启数据一致",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "推进",
+      "normalized_requirement": "S07实现章节/Boss及奖励防重复。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "五.后续阶段目标",
+      "source_exact_quote": "S07：章节关卡、BOSS阶段、首通奖励和重复领取防护。",
+      "quote_sha256": "92abcbb74037f0c1205c2f0700300ec1052150acb3d957b6c4bcd27cdcec771b",
+      "implementation_owner": "P18",
+      "independent_reviewer": "P32/P35",
+      "stage": "S07",
+      "observable_acceptance": "同stage重复胜利仅首通一次，Boss死亡终局唯一",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "整合",
+      "normalized_requirement": "外部整合人员未来由用户指定；不得由43岗代替。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "一.项目总目标",
+      "source_exact_quote": "跨岗位代码最终整合由我后续指定的独立整合人员负责。",
+      "quote_sha256": "a2cb2105b4d326b9f2f241dfb28c9d6340ee6dd1aff65e273f1d0f8000ca64bf",
+      "implementation_owner": "P01",
+      "independent_reviewer": "P32/P35",
+      "stage": "S08",
+      "observable_acceptance": "EXT-INTEGRATOR保持UNASSIGNED，G4/G5 BLOCKED",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "验证",
+      "normalized_requirement": "测试PASS须真运行；未运行NOT_RUN，关键证据缺失BLOCKED。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "六.每个岗位的强制交付要求",
+      "source_exact_quote": "只有真实执行过的测试才允许标记相应PASS；未运行标记NOT_RUN，缺关键证据标记BLOCKED。",
+      "quote_sha256": "6875230858273f321b16caf720d405aa008d2d0cc919d0a673d4c3d768f608fe",
+      "implementation_owner": "P35",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S10",
+      "observable_acceptance": "报告按设计/单元/契约/真机/E2E分级且有原始证据",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "收件",
+      "normalized_requirement": "每个岗位完整提供源码或可编辑素材、接口、集成说明供下游接收。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "一.项目总目标",
+      "source_exact_quote": "本次43个岗位不得擅自替代整合人员，但必须提供完整的接口、源码、素材和集成说明。",
+      "quote_sha256": "7261c4f6f5e72ede9d4597d4bf356d38c3dd49485df624f4c6f95c06bd3967a2",
+      "implementation_owner": "P01",
+      "independent_reviewer": "P32/P35",
+      "stage": "S00-S08",
+      "observable_acceptance": "交接台账含输入版本/输出ID/受领者/状态",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "evidence_class": "CONFIRMED_DIRECTION",
+      "domain": "工程",
+      "normalized_requirement": "程序岗位源码和测试优先于伪代码。",
+      "source_id": "USER_CURRENT_TASK_2026-10-27/原始需求",
+      "source_anchor": "六.每个岗位的强制交付要求",
+      "source_exact_quote": "程序岗位必须优先交付实际源码和测试，不得仅提供伪代码。",
+      "quote_sha256": "18c897ef1e4fe8c5f518284ecbe6d10d53b3aecb1b8f45cc21b382dbcd1feb5e",
+      "implementation_owner": "P14",
+      "independent_reviewer": "P32/P35",
+      "stage": "S01-S03",
+      "observable_acceptance": "下游提交源码/运行说明/实测单测结果",
+      "dependency": "NONE",
+      "baseline_version": "P01-REQ-V0.1"
+    }
+  ],
+  "acceptance_scope": "P21 physical portion only; no claim that whole S05/S06/S07 is complete"
+}

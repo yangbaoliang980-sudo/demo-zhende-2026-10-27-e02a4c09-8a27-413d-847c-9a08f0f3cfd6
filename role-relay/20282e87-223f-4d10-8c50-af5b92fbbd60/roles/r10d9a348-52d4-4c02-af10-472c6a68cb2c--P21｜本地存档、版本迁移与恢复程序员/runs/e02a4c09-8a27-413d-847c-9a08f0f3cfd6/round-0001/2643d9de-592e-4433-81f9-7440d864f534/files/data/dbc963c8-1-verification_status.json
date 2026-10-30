@@ -1,0 +1,105 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "delivery_version": "P21-PERSISTENCE/0.1.0-isolated",
+  "overall_status": "ISOLATED_PERSISTENCE_DELIVERED / PRODUCTION_INTEGRATION_BLOCKED",
+  "author_design_review": {
+    "status": "COMPLETED_AUTHOR_REVIEW",
+    "evidence": "author_review.md",
+    "independent_review": "NOT_RUN"
+  },
+  "author_full_suite": {
+    "status": "PASS",
+    "tests_run": 104,
+    "passed": 104,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "case_classes": {
+      "test_atomic.AtomicTests": 30,
+      "test_atomic.SerializationTests": 7,
+      "test_contracts.P11Contracts": 6,
+      "test_contracts.P17P18Contracts": 12,
+      "test_contracts.SourceImmutability": 2,
+      "test_core_envelope.EnvelopeRegression": 2,
+      "test_native_crash.NativeCrashTests": 7,
+      "test_recovery.CrashProcessTests": 12,
+      "test_recovery.MigrationTests": 4,
+      "test_recovery.RecoveryTests": 17,
+      "test_regressions.ReviewRegressions": 5
+    },
+    "receipt": "recovery_logs/author_final_002/run_receipt.json",
+    "results": "recovery_logs/author_final_002/test_results.json",
+    "execution_source_snapshot_sha256": "c62401d55ca088b030db82e23cc5e808e923633d7e4711f0bc2e124b8e86bc4e"
+  },
+  "author_original_contracts": {
+    "status": "PASS",
+    "case_count": 18,
+    "included_in_full_suite": true,
+    "scope": "Original P11/P17/P18/P13 code; synthetic event/policy/entry/battle ports; P11 legacy wallet binding only in tests"
+  },
+  "real_process_crash": {
+    "status": "PASS",
+    "case_count": 19,
+    "included_in_full_suite": true,
+    "mechanism": "SIGKILL, child exit -9",
+    "generic_commit_points": 8,
+    "migration_points": 4,
+    "native_owner_points": 7,
+    "physical_power_cut": "NOT_RUN"
+  },
+  "disk_full": {
+    "sqlite_full_max_page_count": "PASS",
+    "injected_os_ENOSPC_backup_and_anchor": "PASS",
+    "physical_volume_filled": "NOT_RUN",
+    "target_disk_fault_injection": "NOT_RUN"
+  },
+  "schema_oracle": {
+    "status": "PASS",
+    "checks": 25,
+    "schema_count": 4,
+    "validator": "jsonschema 4.23.0 Draft202012Validator",
+    "evidence": "recovery_logs/schema_oracle_001/schema_results.json"
+  },
+  "forensic_recovery_demo": {
+    "status": "PASS",
+    "evidence": "recovery_logs/forensic_demo_001/forensic_result.json",
+    "raw_original_files_preserved": true,
+    "awards_replayed": 0,
+    "scope": "New synthetic fixture, real files"
+  },
+  "source_integrity": {
+    "status": "PASS",
+    "original_files": 128,
+    "evidence": "source_input_receipt.json"
+  },
+  "input_verification": {
+    "status": "PASS",
+    "attachments": 14,
+    "unique_archives": 108,
+    "expanded_file_members": 8198,
+    "relay_checks": 787,
+    "failures": 0,
+    "evidence": "evidence/input_inventory.json"
+  },
+  "formal_preflight": {
+    "status": "BLOCKED",
+    "exit_code": 3,
+    "evidence": "recovery_logs/preflight_001"
+  },
+  "P11_native_P17_learning_wallet": "BLOCKED",
+  "P20_production_gateway": "BLOCKED",
+  "target_engine": "NOT_RUN",
+  "Windows": "NOT_RUN",
+  "real_Anki": "NOT_RUN",
+  "full_game_E2E": "NOT_RUN",
+  "P32_independent_test": "NOT_RUN",
+  "P33_manual_target_machine": "NOT_RUN",
+  "P35_independent_gate": "NOT_RUN",
+  "P25_style": "NOT_APPLICABLE_NO_NEW_VISUAL_ASSETS",
+  "P37_compliance_acceptance": "NOT_RUN",
+  "production_integration": "BLOCKED",
+  "cross_module_merge": "NOT_PERFORMED",
+  "formal_release": "NOT_PERFORMED",
+  "archive_verification_record": "P21_delivery_receipt.json outside ZIP contains final CRC, fresh extraction rerun and exports checks",
+  "repeated_runs": "Same cases rerun are not additional coverage; historical failures remain in recovery_logs."
+}

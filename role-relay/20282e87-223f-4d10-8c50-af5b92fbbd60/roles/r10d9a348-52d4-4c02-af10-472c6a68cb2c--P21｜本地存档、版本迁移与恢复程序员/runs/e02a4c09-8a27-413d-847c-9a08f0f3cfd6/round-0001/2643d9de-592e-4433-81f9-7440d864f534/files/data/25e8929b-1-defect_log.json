@@ -1,0 +1,90 @@
+{
+  "task_id": "P21-S05-S06-S07-SAVE-001",
+  "scope": "P21_AUTHOR_REVIEW_NOT_P35",
+  "defects": [
+    {
+      "id": "P21-DEF-001",
+      "title": "重复P17原文变更而复用自报哈希被误认作原成功请求",
+      "owner": "P21",
+      "regression_test": "test_regressions.ReviewRegressions.test_duplicate_p17_cannot_change_raw_request_and_reuse_claimed_hash",
+      "affected_path": "runtime/persistence/p21_persistence/adapters.py",
+      "fix": "在查重复前重算完整原命令哈希",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/review_counterexamples_001",
+      "retest_evidence": "recovery_logs/review_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-002",
+      "title": "重复P18原文变更而复用自报哈希被误认作原成功请求",
+      "owner": "P21",
+      "regression_test": "test_regressions.ReviewRegressions.test_duplicate_p18_cannot_change_raw_request_and_reuse_claimed_hash",
+      "affected_path": "runtime/persistence/p21_persistence/adapters.py",
+      "fix": "查重复前核验原文哈希、事务ID映射及P13投影类型",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/review_counterexamples_001",
+      "retest_evidence": "recovery_logs/review_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-003",
+      "title": "SQL已提交但COMMIT回传异常被误分为一般IO失败",
+      "owner": "P21",
+      "regression_test": "test_regressions.ReviewRegressions.test_commit_error_after_database_commit_must_be_unknown",
+      "affected_path": "runtime/persistence/p21_persistence/store.py",
+      "fix": "不可证明未提交时返回E_COMMIT_UNKNOWN，保留原事务查询",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/review_counterexamples_001",
+      "retest_evidence": "recovery_logs/review_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-004",
+      "title": "迁移审计行被删除未被校验发现",
+      "owner": "P21",
+      "regression_test": "test_regressions.ReviewRegressions.test_deleted_migration_audit_is_detected",
+      "affected_path": "runtime/persistence/p21_persistence/store.py",
+      "fix": "迁移回执与审计表双向一一匹配",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/review_counterexamples_001",
+      "retest_evidence": "recovery_logs/review_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-005",
+      "title": "畸形回执缺字段抛KeyError而未形成冻结错误",
+      "owner": "P21",
+      "regression_test": "test_regressions.ReviewRegressions.test_malformed_receipt_shape_freezes_with_typed_error",
+      "affected_path": "runtime/persistence/p21_persistence/store.py",
+      "fix": "封闭回执结构校验及结构损坏错误归一，冻结并复制证据",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/review_counterexamples_001",
+      "retest_evidence": "recovery_logs/review_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-006",
+      "title": "核心回调的非object结果能提交但无法重新校验",
+      "owner": "P21",
+      "regression_test": "test_core_envelope.EnvelopeRegression.test_non_object_result_rejected_before_any_commit",
+      "affected_path": "runtime/persistence/p21_persistence/store.py",
+      "fix": "在任何SQL写入前拒绝非dict的Mutation.result",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/envelope_counterexample_001",
+      "retest_evidence": "recovery_logs/envelope_fixed_001",
+      "independent_closure": "NOT_RUN"
+    },
+    {
+      "id": "P21-DEF-007",
+      "title": "保存标记畸形时异常绕过冻结与原件保全",
+      "owner": "P21",
+      "regression_test": "test_core_envelope.EnvelopeRegression.test_malformed_store_marker_freezes_and_preserves_source",
+      "affected_path": "runtime/persistence/p21_persistence/store.py",
+      "fix": "校验标记封闭形状，将标记读取纳入统一损坏冻结保护域",
+      "status": "FIXED_AUTHOR_RETEST_PASSED_INDEPENDENT_RETEST_NOT_RUN",
+      "failure_evidence": "recovery_logs/marker_counterexample_001",
+      "retest_evidence": "recovery_logs/author_final_002",
+      "independent_closure": "NOT_RUN"
+    }
+  ]
+}

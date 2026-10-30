@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:p21:P21_commit_receipt:0.1.0-isolated",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "P21-COMMIT-RECEIPT/1"
+    },
+    "transaction_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "kind": {
+      "enum": [
+        "CHARACTER_WALLET",
+        "STUDY_LEDGER_WALLET",
+        "STAGE_PROGRESS_WALLET",
+        "SCHEMA_MIGRATION"
+      ]
+    },
+    "store_instance": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "continuity_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "profile_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9007199254740991
+    },
+    "previous_chain_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "before_state_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "state_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "previous_schema_version": {
+      "enum": [
+        1,
+        2
+      ]
+    },
+    "save_schema_version": {
+      "enum": [
+        1,
+        2
+      ]
+    },
+    "document_heads": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "enum": [
+              "ledger",
+              "meta",
+              "stage"
+            ]
+          },
+          "owner": {
+            "enum": [
+              "P11",
+              "P17",
+              "P18"
+            ]
+          },
+          "schema_version": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "name",
+          "owner",
+          "schema_version",
+          "revision",
+          "sha256"
+        ],
+        "additionalProperties": false
+      },
+      "allOf": [
+        {
+          "contains": {
+            "properties": {
+              "name": {
+                "const": "ledger"
+              },
+              "owner": {
+                "const": "P11"
+              }
+            },
+            "required": [
+              "name",
+              "owner"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "name": {
+                "const": "meta"
+              },
+              "owner": {
+                "const": "P17"
+              }
+            },
+            "required": [
+              "name",
+              "owner"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "properties": {
+              "name": {
+                "const": "stage"
+              },
+              "owner": {
+                "const": "P18"
+              }
+            },
+            "required": [
+              "name",
+              "owner"
+            ]
+          },
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ]
+    },
+    "result": {
+      "type": "object"
+    },
+    "origin": {
+      "const": "P21_SQLITE_ISOLATED"
+    },
+    "durable": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "transaction_id",
+    "request_sha256",
+    "kind",
+    "store_instance",
+    "continuity_ref",
+    "profile_id",
+    "sequence",
+    "previous_chain_sha256",
+    "before_state_sha256",
+    "state_sha256",
+    "previous_schema_version",
+    "save_schema_version",
+    "document_heads",
+    "result",
+    "origin",
+    "durable"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:yltt:p21:P21_atomic_request:0.1.0-isolated",
+  "type": "object",
+  "properties": {
+    "transaction_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "request_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "kind": {
+      "enum": [
+        "CHARACTER_WALLET",
+        "STUDY_LEDGER_WALLET",
+        "STAGE_PROGRESS_WALLET"
+      ]
+    },
+    "expected_store_instance": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    },
+    "expected_continuity_ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/-]{0,255}$"
+    }
+  },
+  "required": [
+    "transaction_id",
+    "request_sha256",
+    "kind",
+    "expected_store_instance",
+    "expected_continuity_ref"
+  ],
+  "additionalProperties": false
+}
