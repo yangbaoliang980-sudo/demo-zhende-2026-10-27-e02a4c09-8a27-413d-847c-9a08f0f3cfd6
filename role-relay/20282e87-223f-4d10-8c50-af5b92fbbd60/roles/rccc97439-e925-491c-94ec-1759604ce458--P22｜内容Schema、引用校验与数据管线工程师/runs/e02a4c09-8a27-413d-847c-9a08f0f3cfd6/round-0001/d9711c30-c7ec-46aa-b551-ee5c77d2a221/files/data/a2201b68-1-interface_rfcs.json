@@ -1,0 +1,211 @@
+{
+  "rfcs": [
+    {
+      "base": {
+        "path": "evidence/upstream/P03/card_catalog.json",
+        "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e",
+        "status": "PINNED"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-03",
+      "contract_owner": "P22",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "接收稳定内容清单和有类型/作用域的 ID；不改变内部 DTO。",
+      "receivers": [
+        "P03",
+        "P04",
+        "P06",
+        "P07",
+        "P09",
+        "P13",
+        "P32"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC03-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "候选内容注册与本地校验契约",
+      "version": "0.1.0"
+    },
+    {
+      "base": {
+        "path": "evidence/upstream/P06/boss_phase_graph.json",
+        "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf",
+        "status": "PINNED"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-06",
+      "contract_owner": "P06",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "确认阶段/敌人绑定、行动循环与阶段转换的不同环策略。",
+      "receivers": [
+        "P14",
+        "P19",
+        "P22",
+        "P32"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC06-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "Boss 阶段与敌人行为引用约束",
+      "version": "0.1.0"
+    },
+    {
+      "base": {
+        "path": "evidence/upstream/P04/character_skeleton.json",
+        "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515",
+        "status": "PINNED"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-09",
+      "contract_owner": "P04",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "兼容槽位不改名不合并；完整养成原表固定哈希；6字节坏导出保留。",
+      "receivers": [
+        "P03",
+        "P17",
+        "P21",
+        "P22",
+        "P32"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC09-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "角色卡池兼容身份与养成表来源",
+      "version": "0.1.0"
+    },
+    {
+      "base": {
+        "path": "evidence/upstream/P07/stage_graph.json",
+        "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4",
+        "status": "PINNED"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-11",
+      "contract_owner": "P07",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "确认 canonical_stage_id 和首通历史保留；新 ID 不代表新领取资格。",
+      "receivers": [
+        "P18",
+        "P21",
+        "P22",
+        "P32"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC11-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "关卡 canonical 身份与奖励引用",
+      "version": "0.1.0"
+    },
+    {
+      "base": {
+        "path": null,
+        "sha256": null,
+        "status": "BLOCKED_MISSING_UPSTREAM"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-22",
+      "contract_owner": "P30",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "补交目录契约与素材；P22 asset Schema 仅为提案，无法替代许可/风格验收。",
+      "receivers": [
+        "P23",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29",
+        "P37",
+        "P22"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC22-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "资源目录及资产字节/回执字段",
+      "version": "0.1.0"
+    },
+    {
+      "base": {
+        "path": "evidence/upstream/P09/pos_mapping_rules.json",
+        "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab",
+        "status": "PINNED"
+      },
+      "change_whitelist": [
+        "schema/content/**",
+        "tools/content_validation/**",
+        "content/manifest/**"
+      ],
+      "contract": "IC-15",
+      "contract_owner": "P09",
+      "delete_or_reuse_issued_id_requires": [
+        "P13",
+        "P21",
+        "P01"
+      ],
+      "owner_acceptance": "NOT_RUN",
+      "production_applied": false,
+      "proposal": "补 formal_category_id/formal_resource_id 及固定来源；P22 不决定学习奖励数量。",
+      "receivers": [
+        "P08",
+        "P11",
+        "P22",
+        "P32"
+      ],
+      "requester": "P22",
+      "rfc_id": "P22-RFC-IC15-001",
+      "status": "PREPARED_NOT_SUBMITTED",
+      "title": "正式词性分类/资源绑定来源",
+      "version": "0.1.0"
+    }
+  ],
+  "version": "P22-RFC-BUNDLE/0.1.0"
+}

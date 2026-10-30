@@ -1,0 +1,78 @@
+{
+  "P25_art_style": "NOT_RUN",
+  "P32_independent": "NOT_RUN",
+  "P33_manual": "NOT_RUN",
+  "P35_independent_evidence_gate": "NOT_RUN",
+  "P37_compliance": "NOT_RUN",
+  "author_design_review": "COMPLETED_AUTHOR_REVIEW",
+  "author_tests": {
+    "errors": 0,
+    "failures": 0,
+    "passed": 109,
+    "skipped": 0,
+    "status": "PASS",
+    "tests_run": 109
+  },
+  "cross_module_integration": "NOT_RUN_WAIT_USER_EXT_INTEGRATOR",
+  "final_archive_reproduction": "SEE_EXTERNAL_P22_DELIVERY_RECEIPT",
+  "full_game_e2e": "NOT_RUN",
+  "independent_design_review": "NOT_RUN",
+  "overall": "ISOLATED_CONTENT_PIPELINE_DELIVERED",
+  "p21_prior_tests": "UPSTREAM_CLAIM_NOT_RERUN_OR_COUNTED",
+  "production": "BLOCKED",
+  "real_anki": "NOT_RUN",
+  "reference_summary": {
+    "blockers": 35,
+    "dangling_references": 0,
+    "definition_counts": {
+      "asset_request": 5,
+      "behavior_state": 18,
+      "card": 10,
+      "category": 8,
+      "chapter": 1,
+      "character": 7,
+      "effect": 10,
+      "enemy": 3,
+      "intent": 13,
+      "mapping_release": 1,
+      "phase": 3,
+      "phase_graph": 1,
+      "phase_transition": 2,
+      "progression_row": 21,
+      "reservation": 1,
+      "resource": 2,
+      "reward": 4,
+      "skill": 20,
+      "stage": 2,
+      "stage_edge": 1,
+      "status": 4
+    },
+    "duplicate_ids": 0,
+    "errors": 0,
+    "references_checked": 403,
+    "registered_assets": 0,
+    "registered_definitions": 137,
+    "validated_documents": 18
+  },
+  "schema_meta": {
+    "count": 32,
+    "status": "PASS"
+  },
+  "target_engine": "NOT_RUN",
+  "target_windows_device": "NOT_RUN",
+  "task_id": "P22-S00-S02-CONTENT-001",
+  "upstream_content_static_contract": {
+    "documents": 18,
+    "interfaces_accepted": "NOT_RUN",
+    "scope": "PINNED_CANDIDATE_SCHEMA_AND_REFERENCES_ONLY",
+    "status": "PASS"
+  },
+  "v6_mapping": {
+    "duties": 92,
+    "interfaces": 27,
+    "roles": 43,
+    "scope": "STATIC_MAPPING_ONLY",
+    "status": "PASS"
+  },
+  "version": "P22-CONTENT/0.1.0-isolated"
+}

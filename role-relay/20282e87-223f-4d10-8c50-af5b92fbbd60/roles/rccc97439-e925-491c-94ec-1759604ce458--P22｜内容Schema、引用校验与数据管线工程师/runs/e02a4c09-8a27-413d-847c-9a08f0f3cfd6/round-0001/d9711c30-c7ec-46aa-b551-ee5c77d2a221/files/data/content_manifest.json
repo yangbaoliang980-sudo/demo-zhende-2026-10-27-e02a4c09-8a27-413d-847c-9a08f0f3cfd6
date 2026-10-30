@@ -1,0 +1,119 @@
+{
+  "content_version": "P22-CANDIDATE/462752df8095022e741a2be1dc537e14ab123f32725cfa58e8087ff28cd6883d",
+  "documents": [
+    {
+      "format_version": "P03-CARDS-0.1.0-draft",
+      "owner": "P03",
+      "path": "evidence/upstream/P03/card_catalog.json",
+      "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e"
+    },
+    {
+      "format_version": "P03-CARDS-0.1.0-draft",
+      "owner": "P03",
+      "path": "evidence/upstream/P03/card_dictionary.tsv",
+      "sha256": "4928ad5d82fb6b18c3e01ce7968c2b010f668815c932d1775bee66c69e976bc6"
+    },
+    {
+      "format_version": "P03-CARDS-0.1.0-draft",
+      "owner": "P03",
+      "path": "evidence/upstream/P03/character_card_pool.tsv",
+      "sha256": "284199ae93a484e808d1546975b16cec4d14071d01f84c0b52865bf76d2db3e6"
+    },
+    {
+      "format_version": "P04-SKELETON-0.1.0-draft",
+      "owner": "P04",
+      "path": "evidence/upstream/P04/character_deck_contribution.tsv",
+      "sha256": "2d4d3e09557d801749d44a24c1da405351e28fcadf0c23be52f0c07088daa06a"
+    },
+    {
+      "format_version": "P04-SKELETON-0.1.0-draft",
+      "owner": "P04",
+      "path": "evidence/upstream/P04/character_skeleton.json",
+      "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515"
+    },
+    {
+      "format_version": "P04-SKELETON-0.1.0-draft",
+      "owner": "P04",
+      "path": "evidence/upstream/P04/progression_costs.tsv",
+      "sha256": "5c872fb5ac0a0834ecdfe270a6dd81a42c10aaecf8d58559b822b1fcdc4df41f"
+    },
+    {
+      "format_version": "P06-ENEMY-0.1.0-proposal",
+      "owner": "P06",
+      "path": "evidence/upstream/P06/asset_requests.tsv",
+      "sha256": "133d8b80dea66da8162bedaff3bacf4e2708545717bd6583ac19dbfe04fa7ddd"
+    },
+    {
+      "format_version": "P06-ENEMY-0.1.0-proposal",
+      "owner": "P06",
+      "path": "evidence/upstream/P06/boss_phase_graph.json",
+      "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+    },
+    {
+      "format_version": "P06-ENEMY-0.1.0-proposal",
+      "owner": "P06",
+      "path": "evidence/upstream/P06/enemy_specs.json",
+      "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+    },
+    {
+      "format_version": "P06-ENEMY-0.1.0-proposal",
+      "owner": "P06",
+      "path": "evidence/upstream/P06/intent_dictionary.tsv",
+      "sha256": "db64c4d509638bbf969d374ff905e5bc2d76afdd44218e99d4142d06074497bc"
+    },
+    {
+      "format_version": "P07-STAGES-0.1.0-proposal",
+      "owner": "P07",
+      "path": "evidence/upstream/P07/stage_content_catalog.json",
+      "sha256": "818726891190817d890e55b6b20e90426294be8da38414ec42527e4b63655f34"
+    },
+    {
+      "format_version": "P07-STAGES-0.1.0-proposal",
+      "owner": "P07",
+      "path": "evidence/upstream/P07/stage_graph.json",
+      "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+    },
+    {
+      "format_version": "P07-STAGES-0.1.0-proposal",
+      "owner": "P07",
+      "path": "evidence/upstream/P07/stage_rewards.tsv",
+      "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827"
+    },
+    {
+      "format_version": "P07-STAGES-0.1.0-proposal",
+      "owner": "P07",
+      "path": "evidence/upstream/P07/stage_table.tsv",
+      "sha256": "2e5d14c8f9a59189e0fc2f9e84e73b175cf24c0dfda07364e5b5ca08da59c651"
+    },
+    {
+      "format_version": "P09-POS-MAP/0.1.0-proposal",
+      "owner": "P09",
+      "path": "evidence/upstream/P09/category_dictionary.json",
+      "sha256": "877bfa21f32d6db822dae200dd8cbcf901d2acb9acbb8321f39e1e09d28aaf31"
+    },
+    {
+      "format_version": "P09-POS-MAP/0.1.0-proposal",
+      "owner": "P09",
+      "path": "evidence/upstream/P09/mapping_release_registry.json",
+      "sha256": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd"
+    },
+    {
+      "format_version": "P09-POS-MAP/0.1.0-proposal",
+      "owner": "P09",
+      "path": "evidence/upstream/P09/pos_mapping_rules.json",
+      "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab"
+    },
+    {
+      "format_version": "P09-POS-MAP/0.1.0-proposal",
+      "owner": "P09",
+      "path": "evidence/upstream/P09/resource_affinity_candidates.tsv",
+      "sha256": "657c33b528207e3f6f8beb230d5086bfb16df441b4df8b93af292e68855208f1"
+    }
+  ],
+  "lifecycle": "CANDIDATE",
+  "production_allowed": false,
+  "schema_version": "P22-CONTENT-MANIFEST/0.2.0",
+  "tags": [
+    "UPSTREAM_CANDIDATE_READONLY"
+  ]
+}

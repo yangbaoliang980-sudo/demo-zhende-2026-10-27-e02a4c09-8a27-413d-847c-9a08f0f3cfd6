@@ -1,0 +1,74 @@
+{
+  "defects": [
+    {
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN",
+      "fix": "Allow original ATTACK/DEFENSE/HEAL enum without source modification",
+      "id": "P22-DEFECT-001",
+      "reproduced_failure_path": "evidence/failures/author_001",
+      "retest": "evidence/author_final/author_tests/tests.json",
+      "status": "AUTHOR_FIXED_AUTHOR_RETESTED",
+      "summary": "P04 HEAL role incorrectly excluded by author Schema",
+      "unique_fix_owner": "P22"
+    },
+    {
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN",
+      "fix": "Recognize exact sentinel; retain missing asset blockers and reject claimed delivered hash",
+      "id": "P22-DEFECT-002",
+      "reproduced_failure_path": "evidence/failures/author_001",
+      "retest": "evidence/author_final/author_tests/tests.json",
+      "status": "AUTHOR_FIXED_AUTHOR_RETESTED",
+      "summary": "P06 NOT_RECEIVED sentinel incorrectly rejected as malformed hash",
+      "unique_fix_owner": "P22"
+    },
+    {
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN",
+      "fix": "Use declared 0..4294967295 seed range only",
+      "id": "P22-DEFECT-003",
+      "reproduced_failure_path": "evidence/failures/author_001",
+      "retest": "evidence/author_final/author_tests/tests.json",
+      "status": "AUTHOR_FIXED_AUTHOR_RETESTED",
+      "summary": "P06 uint32 RNG seed constrained to int31 by author Schema",
+      "unique_fix_owner": "P22"
+    },
+    {
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN",
+      "fix": "Classify from original P09 provenance; unpinned public reference remains BLOCKED",
+      "id": "P22-DEFECT-004",
+      "reproduced_failure_path": "evidence/failures/author_002",
+      "retest": "evidence/author_final/author_tests/tests.json",
+      "status": "AUTHOR_FIXED_AUTHOR_RETESTED",
+      "summary": "Two P09 public document source IDs treated as unknown game source bindings",
+      "unique_fix_owner": "P22"
+    },
+    {
+      "P32_retest": "NOT_RUN",
+      "P35_close": "NOT_RUN",
+      "fix": "Validate registry Schema/identity uniqueness and previous registry before mapping",
+      "id": "P22-DEFECT-005",
+      "reproduced_failure_path": "evidence/failures/author_003",
+      "retest": "evidence/author_final/author_tests/tests.json",
+      "status": "AUTHOR_FIXED_AUTHOR_RETESTED",
+      "summary": "Standalone id-map entry accepted duplicate registry definitions",
+      "unique_fix_owner": "P22"
+    }
+  ],
+  "review_hardening_not_claimed_as_historical_failed_tests": [
+    "Boss graph/enemy/HP binding",
+    "stage Boss membership",
+    "phase-local behavior edges",
+    "nonstatus phantom status rejection",
+    "undelivered asset hash rejection",
+    "deferred story IDs cannot silently bypass checks"
+  ],
+  "upstream_input_variant": {
+    "evidence": "evidence/intake/source_variants.json",
+    "owner": "P04",
+    "source_modified": false,
+    "status": "INCOMPLETE_HISTORICAL_EXPORT_PRESERVED_COMPLETE_ORIGINAL_SELECTED"
+  },
+  "version": "P22-DEFECT-LOG/0.1.0"
+}

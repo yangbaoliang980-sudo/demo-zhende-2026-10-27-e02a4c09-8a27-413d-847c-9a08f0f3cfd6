@@ -1,0 +1,1672 @@
+{
+  "archive": {
+    "file_format": "ZIP",
+    "filename": "P22_ContentPipeline_V0.1.zip",
+    "format_version": "P22-CONTENT/0.1.0-isolated",
+    "modify_whitelist": [],
+    "owner": "P22",
+    "recipients": [
+      "P03",
+      "P04",
+      "P06",
+      "P07",
+      "P09",
+      "P13",
+      "P30",
+      "P32",
+      "P36",
+      "P21",
+      "P33",
+      "P35"
+    ],
+    "sha256": "59823066d3449ec3fb88f08b61ff91ec93c23922bfe9965e9660f247a5f44cb8",
+    "size_bytes": 1537563,
+    "source_manifest_sha256": "7ccd26dfb7b5110a03a0cb021f3b8e587eef8913888c0323140233046a6c8663"
+  },
+  "archive_root": "P22_ContentPipeline_V0.1",
+  "cross_module_integration": "NOT_RUN_WAIT_USER_EXT_INTEGRATOR",
+  "delivery_version": "P22-CONTENT/0.1.0-isolated",
+  "exports": [
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/README.md",
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "sha256": "54e604b3c98dbc2df9bc4b1197298fde55a8dca85e5e8984919073a90f8e6a24",
+      "size_bytes": 7464
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+      "filename": "schema_linter.py",
+      "package_relative_path": "tools/content_validation/schema_linter.py",
+      "sha256": "76581d4f55fdf484810174bb421e902598abd7caff0acd8397f0ad578782b4e5",
+      "size_bytes": 4741
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/tools/content_validation/run_tests.py",
+      "filename": "run_tests.py",
+      "package_relative_path": "tools/content_validation/run_tests.py",
+      "sha256": "b088eeaa9ac8cdf661dcc003791ee04573b72b875894ea702c7d6385745d5f0b",
+      "size_bytes": 2004
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/tools/content_validation/verify_delivery.py",
+      "filename": "verify_delivery.py",
+      "package_relative_path": "tools/content_validation/verify_delivery.py",
+      "sha256": "332ab142e8e9dba588fb1ec32a8233a14709e9ac3fd4b2dc8e7aecffc391b903",
+      "size_bytes": 2209
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/tools/content_validation/reproduce.py",
+      "filename": "reproduce.py",
+      "package_relative_path": "tools/content_validation/reproduce.py",
+      "sha256": "fd85764055150bb46889b5df58b404ca50632e69acfd6e190e683eadfb3311db",
+      "size_bytes": 3878
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/requirements.txt",
+      "filename": "requirements.txt",
+      "package_relative_path": "requirements.txt",
+      "sha256": "87ad101e30f6dd0eda02992ad57331511f4e279eb6eaadf0ba1d5814685d8cfa",
+      "size_bytes": 133
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/content_id_registry.tsv",
+      "filename": "content_id_registry.tsv",
+      "package_relative_path": "content/manifest/content_id_registry.tsv",
+      "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+      "size_bytes": 27951
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/id_migration_map.tsv",
+      "filename": "id_migration_map.tsv",
+      "package_relative_path": "content/manifest/id_migration_map.tsv",
+      "sha256": "2a20c97bb4ba95665030e5a21ebab895acccec3465eec38d5e86a3de27e51fe8",
+      "size_bytes": 81
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/reference_check_log.txt",
+      "filename": "reference_check_log.txt",
+      "package_relative_path": "content/manifest/reference_check_log.txt",
+      "sha256": "dbf3b5dc841d81806a67702bb0ae69714041b2603b050a312e2afa35d023961b",
+      "size_bytes": 6426
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/reference_report.json",
+      "filename": "reference_report.json",
+      "package_relative_path": "content/manifest/reference_report.json",
+      "sha256": "75839e046e2a5b74833794977c698fcfb20ee0c55709365e7d5fce924ca5f597",
+      "size_bytes": 247905
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/content_manifest.json",
+      "filename": "content_manifest.json",
+      "package_relative_path": "content/manifest/content_manifest.json",
+      "sha256": "6d2366100f9c7844684f0aecbf66a7d50691c61923ea3c10ecdb60a29c623c9a",
+      "size_bytes": 4461
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/resource_manifest.json",
+      "filename": "resource_manifest.json",
+      "package_relative_path": "content/manifest/resource_manifest.json",
+      "sha256": "549218e2ada37338432c786eeec6cbdb90c6bc932164e1515c137c18f69040a1",
+      "size_bytes": 196
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/missing_bindings.tsv",
+      "filename": "missing_bindings.tsv",
+      "package_relative_path": "content/manifest/missing_bindings.tsv",
+      "sha256": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e",
+      "size_bytes": 5332
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/references.tsv",
+      "filename": "references.tsv",
+      "package_relative_path": "content/manifest/references.tsv",
+      "sha256": "10f253658a2bba58ed8f35833de2aed7756de8f3f923b52995514e579c0b4a1d",
+      "size_bytes": 75007
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/schema/content/content_schema_spec.md",
+      "filename": "content_schema_spec.md",
+      "package_relative_path": "schema/content/content_schema_spec.md",
+      "sha256": "295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d",
+      "size_bytes": 8881
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content_migration_plan.md",
+      "filename": "content_migration_plan.md",
+      "package_relative_path": "content_migration_plan.md",
+      "sha256": "02a374aa71a4fd104f9543ef3a8eed55982b4286e111eea89836b7cded49a3a9",
+      "size_bytes": 3264
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/integration_handoff.md",
+      "filename": "integration_handoff.md",
+      "package_relative_path": "integration_handoff.md",
+      "sha256": "2c6843eacaf5a3a50bff691eddd6a5fd9b2546e8dabf56c2649b87e1d0221732",
+      "size_bytes": 4463
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/interface_rfcs.json",
+      "filename": "interface_rfcs.json",
+      "package_relative_path": "content/manifest/interface_rfcs.json",
+      "sha256": "a2201b6891e147e1de11fcd580301537807270ee56ef6b1ba7e9d19825af776f",
+      "size_bytes": 5859
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/content/manifest/actual_path_request.json",
+      "filename": "actual_path_request.json",
+      "package_relative_path": "content/manifest/actual_path_request.json",
+      "sha256": "644b4412e5d590ce89d91ef061b123175ed06b558ec214bd5dbfe21857f42fcc",
+      "size_bytes": 1180
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/verification_status.json",
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "sha256": "7543396d26b7f2775ac7951f96db4cd24db2bd1e336dec35cdcab85871510a1c",
+      "size_bytes": 2012
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/defect_log.json",
+      "filename": "defect_log.json",
+      "package_relative_path": "defect_log.json",
+      "sha256": "eff58696380d5c1cc7a548c5b5df70fc1dfc852283f5d303ff9e46b41f616076",
+      "size_bytes": 3013
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/environment_observed.json",
+      "filename": "environment_observed.json",
+      "package_relative_path": "environment_observed.json",
+      "sha256": "ae4117bdeb1db0845e1a6f16d91e401f5c0b69dbe08e239a643a047ca9be0dda",
+      "size_bytes": 640
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/evidence/intake/source_input_receipt.json",
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "evidence/intake/source_input_receipt.json",
+      "sha256": "fd7d1416533eac23dba67f0727ebe224b5f2f6cfbc879b19aa2d60c1e1be263f",
+      "size_bytes": 711122
+    },
+    {
+      "archive_member": "P22_ContentPipeline_V0.1/delivery_manifest.json",
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "sha256": "7ccd26dfb7b5110a03a0cb021f3b8e587eef8913888c0323140233046a6c8663",
+      "size_bytes": 2276614
+    }
+  ],
+  "final_reproduction": {
+    "artifacts": [
+      {
+        "relative_path": "author_tests.stderr.txt",
+        "sha256": "bb16a8def722a6a065884b9d231b5f7fc8fb22f1bcb3ec1c523b6b0735c54400",
+        "size_bytes": 12341
+      },
+      {
+        "relative_path": "author_tests.stdout.txt",
+        "sha256": "317894f451fee07167249b74c871cc2d13cee65fddd2745b2bb2e25cbba0b2b4",
+        "size_bytes": 352
+      },
+      {
+        "relative_path": "formal_preflight.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "formal_preflight.stdout.txt",
+        "sha256": "592f3661b1e210934bbb52b17a7ff2c5d97808a03c7f50652c38bb3c04c69106",
+        "size_bytes": 899
+      },
+      {
+        "relative_path": "id_map/id_migration_check.json",
+        "sha256": "ddbf478d8c6290e8f83be8d1a436d1b5d1da7dbdcaf7bff21b6335838f16b4cc",
+        "size_bytes": 114
+      },
+      {
+        "relative_path": "id_map/report_complete.json",
+        "sha256": "272097a6ad4a088db0d741a88897510952def908a5da2468f75902c5bc425297",
+        "size_bytes": 223
+      },
+      {
+        "relative_path": "lint_a/content_id_registry.tsv",
+        "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+        "size_bytes": 27951
+      },
+      {
+        "relative_path": "lint_a/content_manifest.json",
+        "sha256": "6d2366100f9c7844684f0aecbf66a7d50691c61923ea3c10ecdb60a29c623c9a",
+        "size_bytes": 4461
+      },
+      {
+        "relative_path": "lint_a/missing_bindings.tsv",
+        "sha256": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e",
+        "size_bytes": 5332
+      },
+      {
+        "relative_path": "lint_a/reference_check_log.txt",
+        "sha256": "dbf3b5dc841d81806a67702bb0ae69714041b2603b050a312e2afa35d023961b",
+        "size_bytes": 6426
+      },
+      {
+        "relative_path": "lint_a/reference_report.json",
+        "sha256": "75839e046e2a5b74833794977c698fcfb20ee0c55709365e7d5fce924ca5f597",
+        "size_bytes": 247905
+      },
+      {
+        "relative_path": "lint_a/references.tsv",
+        "sha256": "10f253658a2bba58ed8f35833de2aed7756de8f3f923b52995514e579c0b4a1d",
+        "size_bytes": 75007
+      },
+      {
+        "relative_path": "lint_a/report_complete.json",
+        "sha256": "a23aeba022d769572a1a193355fa94ec2bac4c18692fd346ead09f0a8019b71f",
+        "size_bytes": 1349
+      },
+      {
+        "relative_path": "lint_a/resource_manifest.json",
+        "sha256": "549218e2ada37338432c786eeec6cbdb90c6bc932164e1515c137c18f69040a1",
+        "size_bytes": 196
+      },
+      {
+        "relative_path": "lint_a/v6_static_review.json",
+        "sha256": "5a5435e814e30b662a5780804a2e0107d7124a8a0d022577e976b44984ed6574",
+        "size_bytes": 5769
+      },
+      {
+        "relative_path": "lint_a.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "lint_a.stdout.txt",
+        "sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966",
+        "size_bytes": 899
+      },
+      {
+        "relative_path": "lint_b/content_id_registry.tsv",
+        "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+        "size_bytes": 27951
+      },
+      {
+        "relative_path": "lint_b/content_manifest.json",
+        "sha256": "6d2366100f9c7844684f0aecbf66a7d50691c61923ea3c10ecdb60a29c623c9a",
+        "size_bytes": 4461
+      },
+      {
+        "relative_path": "lint_b/missing_bindings.tsv",
+        "sha256": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e",
+        "size_bytes": 5332
+      },
+      {
+        "relative_path": "lint_b/reference_check_log.txt",
+        "sha256": "dbf3b5dc841d81806a67702bb0ae69714041b2603b050a312e2afa35d023961b",
+        "size_bytes": 6426
+      },
+      {
+        "relative_path": "lint_b/reference_report.json",
+        "sha256": "75839e046e2a5b74833794977c698fcfb20ee0c55709365e7d5fce924ca5f597",
+        "size_bytes": 247905
+      },
+      {
+        "relative_path": "lint_b/references.tsv",
+        "sha256": "10f253658a2bba58ed8f35833de2aed7756de8f3f923b52995514e579c0b4a1d",
+        "size_bytes": 75007
+      },
+      {
+        "relative_path": "lint_b/report_complete.json",
+        "sha256": "a23aeba022d769572a1a193355fa94ec2bac4c18692fd346ead09f0a8019b71f",
+        "size_bytes": 1349
+      },
+      {
+        "relative_path": "lint_b/resource_manifest.json",
+        "sha256": "549218e2ada37338432c786eeec6cbdb90c6bc932164e1515c137c18f69040a1",
+        "size_bytes": 196
+      },
+      {
+        "relative_path": "lint_b/v6_static_review.json",
+        "sha256": "5a5435e814e30b662a5780804a2e0107d7124a8a0d022577e976b44984ed6574",
+        "size_bytes": 5769
+      },
+      {
+        "relative_path": "lint_b.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "lint_b.stdout.txt",
+        "sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966",
+        "size_bytes": 899
+      },
+      {
+        "relative_path": "manifest_migration.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "manifest_migration.stdout.txt",
+        "sha256": "ab87338153be72bddf83dd646f6be35b607811f1a59cfb7be1c840ba3422b545",
+        "size_bytes": 1023
+      },
+      {
+        "relative_path": "metadata_migration/content_manifest.json",
+        "sha256": "383f72a77d46c00cba6392f8d1eb3b408bd1fead718203ee6d992d5fc29d7124",
+        "size_bytes": 394
+      },
+      {
+        "relative_path": "metadata_migration/migration_audit.json",
+        "sha256": "ab87338153be72bddf83dd646f6be35b607811f1a59cfb7be1c840ba3422b545",
+        "size_bytes": 1023
+      },
+      {
+        "relative_path": "metadata_migration/original_manifest.json",
+        "sha256": "34cdc0207918a1ea537fe95d869a076d02565c69be8e0b0a3fd372fc3d46d6de",
+        "size_bytes": 321
+      },
+      {
+        "relative_path": "metadata_migration/report_complete.json",
+        "sha256": "6f3c0be74b1f256f42de347828c67829a8894aa107a4c9a64eccc80624f5058d",
+        "size_bytes": 542
+      },
+      {
+        "relative_path": "negative_samples/negative_samples_result.json",
+        "sha256": "316984dcbb4357b0f0b02b9961f3aa422cd7588fd7199f6c6f7032e8e8477407",
+        "size_bytes": 5046
+      },
+      {
+        "relative_path": "negative_samples/report_complete.json",
+        "sha256": "ac498e00b58e7bca09cc447131f67d9727b24b61b9f050b4fbfc6b75ccc0e2b5",
+        "size_bytes": 229
+      },
+      {
+        "relative_path": "negative_samples.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "negative_samples.stdout.txt",
+        "sha256": "316984dcbb4357b0f0b02b9961f3aa422cd7588fd7199f6c6f7032e8e8477407",
+        "size_bytes": 5046
+      },
+      {
+        "relative_path": "preflight/content_id_registry.tsv",
+        "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805",
+        "size_bytes": 27951
+      },
+      {
+        "relative_path": "preflight/content_manifest.json",
+        "sha256": "6d2366100f9c7844684f0aecbf66a7d50691c61923ea3c10ecdb60a29c623c9a",
+        "size_bytes": 4461
+      },
+      {
+        "relative_path": "preflight/missing_bindings.tsv",
+        "sha256": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e",
+        "size_bytes": 5332
+      },
+      {
+        "relative_path": "preflight/reference_check_log.txt",
+        "sha256": "e66ab822d4a2e6958cb5dc12bf55397a00ca43d5e537f67e40420d4e094d99de",
+        "size_bytes": 6426
+      },
+      {
+        "relative_path": "preflight/reference_report.json",
+        "sha256": "9ef8d21a9136080179e51525ed2c5492449c7e99a5b917b0cccdb1a0b542bf04",
+        "size_bytes": 247906
+      },
+      {
+        "relative_path": "preflight/references.tsv",
+        "sha256": "10f253658a2bba58ed8f35833de2aed7756de8f3f923b52995514e579c0b4a1d",
+        "size_bytes": 75007
+      },
+      {
+        "relative_path": "preflight/report_complete.json",
+        "sha256": "c7956699e6bff00c9abfb063dce6c36e928bbf3dd337aef8ec97de7479a34bf2",
+        "size_bytes": 1349
+      },
+      {
+        "relative_path": "preflight/resource_manifest.json",
+        "sha256": "549218e2ada37338432c786eeec6cbdb90c6bc932164e1515c137c18f69040a1",
+        "size_bytes": 196
+      },
+      {
+        "relative_path": "preflight/v6_static_review.json",
+        "sha256": "5a5435e814e30b662a5780804a2e0107d7124a8a0d022577e976b44984ed6574",
+        "size_bytes": 5769
+      },
+      {
+        "relative_path": "real_id_map.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "real_id_map.stdout.txt",
+        "sha256": "ddbf478d8c6290e8f83be8d1a436d1b5d1da7dbdcaf7bff21b6335838f16b4cc",
+        "size_bytes": 114
+      },
+      {
+        "relative_path": "reproduction_receipt.json",
+        "sha256": "f1d9565c1ac7320a170d38d4cd4c033d3cc7ee4320da096b4c23b22b2a3657cc",
+        "size_bytes": 7806
+      },
+      {
+        "relative_path": "test_results.json",
+        "sha256": "6e45b1a5c81e07172fc76776cdeda6cf119e81adf8ab7ab526e7daa5517a6f5b",
+        "size_bytes": 13178
+      },
+      {
+        "relative_path": "verify_delivery.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_bytes": 0
+      },
+      {
+        "relative_path": "verify_delivery.stdout.txt",
+        "sha256": "3442659eea63b71488b46928cd7726af0e8fe1e9968d74ec1253a202ff983b70",
+        "size_bytes": 255
+      }
+    ],
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-B",
+      "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/reproduce.py",
+      "--output",
+      "/workspace/scratch/089de6a7352c/work/final_zip_replay/run"
+    ],
+    "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+    "exit_code": 0,
+    "raw_command_logs": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/verify_delivery.py"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "verify_delivery",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"manifest_entries\": 228,\n  \"package_files_including_manifest\": 229,\n  \"selected_upstream_files_unchanged\": 76,\n  \"selected_upstream_file_count\": 76,\n  \"errors\": [],\n  \"manifest_self_hash_binding\": \"EXTERNAL_P22_DELIVERY_RECEIPT\"\n}\n",
+        "stdout_sha256": "3442659eea63b71488b46928cd7726af0e8fe1e9968d74ec1253a202ff983b70"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/run_tests.py",
+          "--json-out",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/test_results.json"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "author_tests",
+        "stderr": "test_candidate_success_and_production_blocked_exit_codes (test_cli.CLITests.test_candidate_success_and_production_blocked_exit_codes) ... ok\ntest_dependency_failure_is_blocked (test_cli.CLITests.test_dependency_failure_is_blocked) ... ok\ntest_identical_reports_across_process_hash_seeds_and_output_paths (test_cli.CLITests.test_identical_reports_across_process_hash_seeds_and_output_paths) ... ok\ntest_input_tamper_never_reaches_reference_pass (test_cli.CLITests.test_input_tamper_never_reaches_reference_pass) ... ok\ntest_malformed_schema_fails_closed (test_cli.CLITests.test_malformed_schema_fails_closed) ... ok\ntest_manifest_migration_cli_preserves_original_bytes (test_cli.CLITests.test_manifest_migration_cli_preserves_original_bytes) ... ok\ntest_missing_source_is_reported_not_synthesized (test_cli.CLITests.test_missing_source_is_reported_not_synthesized) ... ok\ntest_negative_samples_cli (test_cli.CLITests.test_negative_samples_cli) ... ok\ntest_omitted_document_cannot_make_dataset_pass (test_cli.CLITests.test_omitted_document_cannot_make_dataset_pass) ... ok\ntest_optional_asset_catalog_is_read_and_hashed (test_cli.CLITests.test_optional_asset_catalog_is_read_and_hashed) ... ok\ntest_source_bytes_unchanged_after_cli (test_cli.CLITests.test_source_bytes_unchanged_after_cli) ... ok\ntest_art_request_without_id_cannot_claim_hash (test_content.ContentTests.test_art_request_without_id_cannot_claim_hash) ... ok\ntest_behavior_loop_is_legal (test_content.ContentTests.test_behavior_loop_is_legal) ... ok\ntest_behavior_state_is_scoped_to_enemy (test_content.ContentTests.test_behavior_state_is_scoped_to_enemy) ... ok\ntest_behavior_transition_cannot_skip_phase_owner (test_content.ContentTests.test_behavior_transition_cannot_skip_phase_owner) ... ok\ntest_boolean_is_not_integer_cost (test_content.ContentTests.test_boolean_is_not_integer_cost) ... ok\ntest_case_colliding_definition_rejected (test_content.ContentTests.test_case_colliding_definition_rejected) ... ok\ntest_character_signature_binding_mismatch (test_content.ContentTests.test_character_signature_binding_mismatch) ... ok\ntest_dangling_effect_reference (test_content.ContentTests.test_dangling_effect_reference) ... ok\ntest_deferred_story_ids_are_rejected_until_schema_extension (test_content.ContentTests.test_deferred_story_ids_are_rejected_until_schema_extension) ... ok\ntest_dictionary_mirror_cannot_drift (test_content.ContentTests.test_dictionary_mirror_cannot_drift) ... ok\ntest_duplicate_definition_rejected (test_content.ContentTests.test_duplicate_definition_rejected) ... ok\ntest_full_cross_reference_graph (test_content.ContentTests.test_full_cross_reference_graph) ... ok\ntest_linguistic_dictionary_mirror (test_content.ContentTests.test_linguistic_dictionary_mirror) ... ok\ntest_missing_art_is_blocked_not_approved (test_content.ContentTests.test_missing_art_is_blocked_not_approved) ... ok\ntest_missing_cost_points_to_field (test_content.ContentTests.test_missing_cost_points_to_field) ... ok\ntest_missing_enemy_skill_reference (test_content.ContentTests.test_missing_enemy_skill_reference) ... ok\ntest_missing_status_configuration (test_content.ContentTests.test_missing_status_configuration) ... ok\ntest_mock_flag_cannot_promote_content (test_content.ContentTests.test_mock_flag_cannot_promote_content) ... ok\ntest_negative_cost_rejected (test_content.ContentTests.test_negative_cost_rejected) ... ok\ntest_no_resource_cost_with_none_sentinel (test_content.ContentTests.test_no_resource_cost_with_none_sentinel) ... ok\ntest_nonstatus_effect_cannot_define_phantom_status (test_content.ContentTests.test_nonstatus_effect_cannot_define_phantom_status) ... ok\ntest_p04_compatibility_is_not_alias (test_content.ContentTests.test_p04_compatibility_is_not_alias) ... ok\ntest_phase_cycle_and_regression (test_content.ContentTests.test_phase_cycle_and_regression) ... ok\ntest_phase_graph_cannot_bind_another_enemy (test_content.ContentTests.test_phase_graph_cannot_bind_another_enemy) ... ok\ntest_phase_ranks_are_unique (test_content.ContentTests.test_phase_ranks_are_unique) ... ok\ntest_phase_threshold_mirror (test_content.ContentTests.test_phase_threshold_mirror) ... ok\ntest_received_18_documents_validate (test_content.ContentTests.test_received_18_documents_validate) ... ok\ntest_reference_documents_are_not_content_targets (test_content.ContentTests.test_reference_documents_are_not_content_targets) ... ok\ntest_regression_heal_role_uint32_and_missing_asset_marker (test_content.ContentTests.test_regression_heal_role_uint32_and_missing_asset_marker) ... ok\ntest_release_path_traversal (test_content.ContentTests.test_release_path_traversal) ... ok\ntest_release_registry_hash_pin (test_content.ContentTests.test_release_registry_hash_pin) ... ok\ntest_remote_schema_reference_does_not_fetch (test_content.ContentTests.test_remote_schema_reference_does_not_fetch) ... ok\ntest_reward_duplicate_component (test_content.ContentTests.test_reward_duplicate_component) ... ok\ntest_save_schema_not_in_content_bank (test_content.ContentTests.test_save_schema_not_in_content_bank) ... ok\ntest_signature_character_skill_mismatch (test_content.ContentTests.test_signature_character_skill_mismatch) ... ok\ntest_stage_canonical_key_cannot_be_rewritten (test_content.ContentTests.test_stage_canonical_key_cannot_be_rewritten) ... ok\ntest_stage_enemy_source_pin (test_content.ContentTests.test_stage_enemy_source_pin) ... ok\ntest_stage_graph_requires_admitted_boss_enemy (test_content.ContentTests.test_stage_graph_requires_admitted_boss_enemy) ... ok\ntest_stage_reward_display_mirror (test_content.ContentTests.test_stage_reward_display_mirror) ... ok\ntest_stage_unlock_cycle (test_content.ContentTests.test_stage_unlock_cycle) ... ok\ntest_stage_unlock_mirror (test_content.ContentTests.test_stage_unlock_mirror) ... ok\ntest_unknown_content_version_rejected (test_content.ContentTests.test_unknown_content_version_rejected) ... ok\ntest_unknown_effect_code_rejected (test_content.ContentTests.test_unknown_effect_code_rejected) ... ok\ntest_unknown_gameplay_field_rejected (test_content.ContentTests.test_unknown_gameplay_field_rejected) ... ok\ntest_unknown_linguistic_alias_target (test_content.ContentTests.test_unknown_linguistic_alias_target) ... ok\ntest_v6_43_92_27_is_static_only (test_content.ContentTests.test_v6_43_92_27_is_static_only) ... ok\ntest_versioned_negative_files_reject_expected_defects (test_content.ContentTests.test_versioned_negative_files_reject_expected_defects) ... ok\ntest_view_duplicate_is_not_a_new_definition (test_content.ContentTests.test_view_duplicate_is_not_a_new_definition) ... ok\ntest_actual_bytes_and_source_hash_verified (test_io_assets.AssetTests.test_actual_bytes_and_source_hash_verified) ... ok\ntest_approved_label_without_receipts_rejected (test_io_assets.AssetTests.test_approved_label_without_receipts_rejected) ... ok\ntest_asset_symlink_rejected (test_io_assets.AssetTests.test_asset_symlink_rejected) ... ok\ntest_bad_size_rejected (test_io_assets.AssetTests.test_bad_size_rejected) ... ok\ntest_case_colliding_paths_rejected (test_io_assets.AssetTests.test_case_colliding_paths_rejected) ... ok\ntest_changed_asset_hash_rejected (test_io_assets.AssetTests.test_changed_asset_hash_rejected) ... ok\ntest_duplicate_asset_id_rejected (test_io_assets.AssetTests.test_duplicate_asset_id_rejected) ... ok\ntest_missing_actual_asset_file_rejected (test_io_assets.AssetTests.test_missing_actual_asset_file_rejected) ... ok\ntest_placeholder_cannot_be_formal_asset (test_io_assets.AssetTests.test_placeholder_cannot_be_formal_asset) ... ok\ntest_receipt_bytes_still_do_not_replace_external_gate (test_io_assets.AssetTests.test_receipt_bytes_still_do_not_replace_external_gate) ... ok\ntest_resource_path_traversal_rejected (test_io_assets.AssetTests.test_resource_path_traversal_rejected) ... ok\ntest_duplicate_json_keys_rejected (test_io_assets.IOTests.test_duplicate_json_keys_rejected) ... ok\ntest_existing_output_never_overwritten (test_io_assets.IOTests.test_existing_output_never_overwritten) ... ok\ntest_interrupted_output_has_no_completion_marker (test_io_assets.IOTests.test_interrupted_output_has_no_completion_marker) ... ok\ntest_invalid_utf8_json_rejected (test_io_assets.IOTests.test_invalid_utf8_json_rejected) ... ok\ntest_new_output_complete_and_hash_verifiable (test_io_assets.IOTests.test_new_output_complete_and_hash_verifiable) ... ok\ntest_nonfinite_json_rejected (test_io_assets.IOTests.test_nonfinite_json_rejected) ... ok\ntest_output_in_package_blocked (test_io_assets.IOTests.test_output_in_package_blocked) ... ok\ntest_oversize_input_rejected (test_io_assets.IOTests.test_oversize_input_rejected) ... ok\ntest_path_escape_absolute_drive_and_backslash_rejected (test_io_assets.IOTests.test_path_escape_absolute_drive_and_backslash_rejected) ... ok\ntest_symlink_input_rejected (test_io_assets.IOTests.test_symlink_input_rejected) ... ok\ntest_tsv_boolean_not_truthy_string (test_io_assets.IOTests.test_tsv_boolean_not_truthy_string) ... ok\ntest_tsv_duplicate_header (test_io_assets.IOTests.test_tsv_duplicate_header) ... ok\ntest_tsv_integer_not_silently_coerced (test_io_assets.IOTests.test_tsv_integer_not_silently_coerced) ... ok\ntest_tsv_row_width_has_line_number (test_io_assets.IOTests.test_tsv_row_width_has_line_number) ... ok\ntest_alias_chain_preserves_original_first_clear_identity (test_migration.MigrationTests.test_alias_chain_preserves_original_first_clear_identity) ... ok\ntest_alias_cycle_rejected (test_migration.MigrationTests.test_alias_cycle_rejected) ... ok\ntest_alias_self_reference_rejected (test_migration.MigrationTests.test_alias_self_reference_rejected) ... ok\ntest_canonical_identity_cannot_be_forged (test_migration.MigrationTests.test_canonical_identity_cannot_be_forged) ... ok\ntest_case_collision_input_registry_rejected (test_migration.MigrationTests.test_case_collision_input_registry_rejected) ... ok\ntest_cross_kind_alias_rejected (test_migration.MigrationTests.test_cross_kind_alias_rejected) ... ok\ntest_default_annotation_does_not_mutate_validator_input (test_migration.MigrationTests.test_default_annotation_does_not_mutate_validator_input) ... ok\ntest_duplicate_input_registry_rejected_even_with_empty_map (test_migration.MigrationTests.test_duplicate_input_registry_rejected_even_with_empty_map) ... ok\ntest_duplicate_migration_origin_rejected (test_migration.MigrationTests.test_duplicate_migration_origin_rejected) ... ok\ntest_duplicate_previous_registry_rejected (test_migration.MigrationTests.test_duplicate_previous_registry_rejected) ... ok\ntest_empty_real_mapping_is_not_fabricated_history (test_migration.MigrationTests.test_empty_real_mapping_is_not_fabricated_history) ... ok\ntest_explicit_metadata_defaults_only (test_migration.MigrationTests.test_explicit_metadata_defaults_only) ... ok\ntest_external_approval_not_self_asserted (test_migration.MigrationTests.test_external_approval_not_self_asserted) ... ok\ntest_invalid_input_registry_schema_rejected (test_migration.MigrationTests.test_invalid_input_registry_schema_rejected) ... ok\ntest_issued_canonical_change_rejected (test_migration.MigrationTests.test_issued_canonical_change_rejected) ... ok\ntest_issued_id_removal_rejected (test_migration.MigrationTests.test_issued_id_removal_rejected) ... ok\ntest_migration_is_idempotent (test_migration.MigrationTests.test_migration_is_idempotent) ... ok\ntest_null_is_not_missing_default (test_migration.MigrationTests.test_null_is_not_missing_default) ... ok\ntest_original_identity_requires_tombstone (test_migration.MigrationTests.test_original_identity_requires_tombstone) ... ok\ntest_proposal_does_not_become_live_alias (test_migration.MigrationTests.test_proposal_does_not_become_live_alias) ... ok\ntest_required_data_never_filled (test_migration.MigrationTests.test_required_data_never_filled) ... ok\ntest_test_alias_is_not_production_alias (test_migration.MigrationTests.test_test_alias_is_not_production_alias) ... ok\ntest_tombstone_reuse_rejected (test_migration.MigrationTests.test_tombstone_reuse_rejected) ... ok\ntest_unknown_alias_target_rejected (test_migration.MigrationTests.test_unknown_alias_target_rejected) ... ok\ntest_unknown_version_has_no_best_effort_fallback (test_migration.MigrationTests.test_unknown_version_has_no_best_effort_fallback) ... ok\n\n----------------------------------------------------------------------\nRan 109 tests in 7.782s\n\nOK\n",
+        "stderr_sha256": "bb16a8def722a6a065884b9d231b5f7fc8fb22f1bcb3ec1c523b6b0735c54400",
+        "stdout": "{\n  \"scope\": \"P22_AUTHOR_TESTS_ONLY\",\n  \"tests_run\": 109,\n  \"passed\": 109,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"skipped\": 0,\n  \"status\": \"PASS\",\n  \"p32_independent\": \"NOT_RUN\",\n  \"p35_review\": \"NOT_RUN\",\n  \"environment\": {\n    \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\",\n    \"platform\": \"Linux-6.18.55-x86_64-with-glibc2.39\"\n  }\n}\n",
+        "stdout_sha256": "317894f451fee07167249b74c871cc2d13cee65fddd2745b2bb2e25cbba0b2b4"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "lint",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/lint_a"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "lint_a",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"exit_code\": 0,\n  \"production_gate\": \"BLOCKED\",\n  \"reference_status\": \"PASS\",\n  \"structural_status\": \"PASS\",\n  \"summary\": {\n    \"blockers\": 35,\n    \"dangling_references\": 0,\n    \"definition_counts\": {\n      \"asset_request\": 5,\n      \"behavior_state\": 18,\n      \"card\": 10,\n      \"category\": 8,\n      \"chapter\": 1,\n      \"character\": 7,\n      \"effect\": 10,\n      \"enemy\": 3,\n      \"intent\": 13,\n      \"mapping_release\": 1,\n      \"phase\": 3,\n      \"phase_graph\": 1,\n      \"phase_transition\": 2,\n      \"progression_row\": 21,\n      \"reservation\": 1,\n      \"resource\": 2,\n      \"reward\": 4,\n      \"skill\": 20,\n      \"stage\": 2,\n      \"stage_edge\": 1,\n      \"status\": 4\n    },\n    \"duplicate_ids\": 0,\n    \"errors\": 0,\n    \"references_checked\": 403,\n    \"registered_assets\": 0,\n    \"registered_definitions\": 137,\n    \"validated_documents\": 18\n  },\n  \"validator_version\": \"P22-CONTENT/0.1.0-isolated\"\n}\n",
+        "stdout_sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "lint",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/lint_b"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "lint_b",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"exit_code\": 0,\n  \"production_gate\": \"BLOCKED\",\n  \"reference_status\": \"PASS\",\n  \"structural_status\": \"PASS\",\n  \"summary\": {\n    \"blockers\": 35,\n    \"dangling_references\": 0,\n    \"definition_counts\": {\n      \"asset_request\": 5,\n      \"behavior_state\": 18,\n      \"card\": 10,\n      \"category\": 8,\n      \"chapter\": 1,\n      \"character\": 7,\n      \"effect\": 10,\n      \"enemy\": 3,\n      \"intent\": 13,\n      \"mapping_release\": 1,\n      \"phase\": 3,\n      \"phase_graph\": 1,\n      \"phase_transition\": 2,\n      \"progression_row\": 21,\n      \"reservation\": 1,\n      \"resource\": 2,\n      \"reward\": 4,\n      \"skill\": 20,\n      \"stage\": 2,\n      \"stage_edge\": 1,\n      \"status\": 4\n    },\n    \"duplicate_ids\": 0,\n    \"errors\": 0,\n    \"references_checked\": 403,\n    \"registered_assets\": 0,\n    \"registered_definitions\": 137,\n    \"validated_documents\": 18\n  },\n  \"validator_version\": \"P22-CONTENT/0.1.0-isolated\"\n}\n",
+        "stdout_sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "preflight",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/preflight"
+        ],
+        "exit_code": 3,
+        "expected_exit_code": 3,
+        "name": "formal_preflight",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"exit_code\": 3,\n  \"production_gate\": \"BLOCKED\",\n  \"reference_status\": \"PASS\",\n  \"structural_status\": \"PASS\",\n  \"summary\": {\n    \"blockers\": 35,\n    \"dangling_references\": 0,\n    \"definition_counts\": {\n      \"asset_request\": 5,\n      \"behavior_state\": 18,\n      \"card\": 10,\n      \"category\": 8,\n      \"chapter\": 1,\n      \"character\": 7,\n      \"effect\": 10,\n      \"enemy\": 3,\n      \"intent\": 13,\n      \"mapping_release\": 1,\n      \"phase\": 3,\n      \"phase_graph\": 1,\n      \"phase_transition\": 2,\n      \"progression_row\": 21,\n      \"reservation\": 1,\n      \"resource\": 2,\n      \"reward\": 4,\n      \"skill\": 20,\n      \"stage\": 2,\n      \"stage_edge\": 1,\n      \"status\": 4\n    },\n    \"duplicate_ids\": 0,\n    \"errors\": 0,\n    \"references_checked\": 403,\n    \"registered_assets\": 0,\n    \"registered_definitions\": 137,\n    \"validated_documents\": 18\n  },\n  \"validator_version\": \"P22-CONTENT/0.1.0-isolated\"\n}\n",
+        "stdout_sha256": "592f3661b1e210934bbb52b17a7ff2c5d97808a03c7f50652c38bb3c04c69106"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "negative-samples",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/negative_samples"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "negative_samples",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"cases\": [\n    {\n      \"case_id\": \"NEG-001\",\n      \"expected_code\": \"E_SCHEMA_REQUIRED\",\n      \"file\": \"tools/content_validation/fixtures/missing_card_cost.json\",\n      \"matching_diagnostics\": [\n        {\n          \"code\": \"E_SCHEMA_REQUIRED\",\n          \"file\": \"tools/content_validation/fixtures/missing_card_cost.json\",\n          \"message\": \"Required field is missing: cost\",\n          \"pointer\": \"/cards/0/cost\"\n        }\n      ],\n      \"observed_codes\": [\n        \"E_SCHEMA_REQUIRED\"\n      ],\n      \"sample_data_status\": \"REJECTED\",\n      \"sample_sha256\": \"75fc5152c1921d480edf19d4279aa850b9f4b3ccac50db02d59b0260fc4e5221\",\n      \"test_status\": \"PASS\",\n      \"validation_exit_code\": 2\n    },\n    {\n      \"case_id\": \"NEG-002\",\n      \"expected_code\": \"E_DUPLICATE_ID\",\n      \"file\": \"tools/content_validation/fixtures/duplicate_card_id.json\",\n      \"matching_diagnostics\": [\n        {\n          \"code\": \"E_DUPLICATE_ID\",\n          \"file\": \"tools/content_validation/fixtures/duplicate_card_id.json\",\n          \"first_definition\": {\n            \"canonical_id\": \"MOCK_P03_CARD_STRIKE\",\n            \"id\": \"MOCK_P03_CARD_STRIKE\",\n            \"kind\": \"card\",\n            \"lifecycle\": \"CANDIDATE\",\n            \"owner\": \"P03\",\n            \"pointer\": \"/cards/0/card_id\",\n            \"production_allowed\": false,\n            \"scope\": \"\",\n            \"source_path\": \"tools/content_validation/fixtures/duplicate_card_id.json\",\n            \"source_sha256\": \"6ee79bc9b1548e9263c3a9057228e26cb37b957dc7d56e6db1f469c0a3180ce7\"\n          },\n          \"message\": \"Duplicate definition of MOCK_P03_CARD_STRIKE\",\n          \"owner\": \"P03\",\n          \"pointer\": \"/cards/10/card_id\",\n          \"severity\": \"ERROR\"\n        }\n      ],\n      \"observed_codes\": [\n        \"B_ASSET_REQUEST_UNFULFILLED\",\n        \"B_CHARACTER_ART_UNBOUND\",\n        \"B_ENEMY_ART_UNBOUND\",\n        \"B_FORMAL_LINGUISTIC_BINDING\",\n        \"E_DUPLICATE_ID\",\n        \"E_SOURCE_BINDING\"\n      ],\n      \"sample_data_status\": \"REJECTED\",\n      \"sample_sha256\": \"6ee79bc9b1548e9263c3a9057228e26cb37b957dc7d56e6db1f469c0a3180ce7\",\n      \"test_status\": \"PASS\",\n      \"validation_exit_code\": 2\n    },\n    {\n      \"case_id\": \"NEG-003\",\n      \"expected_code\": \"E_CYCLE\",\n      \"file\": \"tools/content_validation/fixtures/cyclic_stage_graph.json\",\n      \"matching_diagnostics\": [\n        {\n          \"code\": \"E_CYCLE\",\n          \"cycle\": [\n            \"MOCK_P07_STAGE_001\",\n            \"MOCK_P07_STAGE_002\",\n            \"MOCK_P07_STAGE_001\"\n          ],\n          \"file\": \"tools/content_validation/fixtures/cyclic_stage_graph.json\",\n          \"message\": \"stage_unlocks cycle: MOCK_P07_STAGE_001 -> MOCK_P07_STAGE_002 -> MOCK_P07_STAGE_001\",\n          \"owner\": \"P07\",\n          \"pointer\": \"/stages\",\n          \"severity\": \"ERROR\"\n        }\n      ],\n      \"observed_codes\": [\n        \"B_ASSET_REQUEST_UNFULFILLED\",\n        \"B_CHARACTER_ART_UNBOUND\",\n        \"B_ENEMY_ART_UNBOUND\",\n        \"B_FORMAL_LINGUISTIC_BINDING\",\n        \"E_CYCLE\",\n        \"E_MIRROR_MISMATCH\"\n      ],\n      \"sample_data_status\": \"REJECTED\",\n      \"sample_sha256\": \"ca66ab7225013ed280741ebbd5465a0559729b9bb0f8f3ad5b36edd72542dc60\",\n      \"test_status\": \"PASS\",\n      \"validation_exit_code\": 2\n    },\n    {\n      \"case_id\": \"NEG-004\",\n      \"expected_code\": \"E_SCHEMA_PATTERN\",\n      \"file\": \"tools/content_validation/fixtures/bad_asset_path.json\",\n      \"matching_diagnostics\": [\n        {\n          \"code\": \"E_SCHEMA_PATTERN\",\n          \"message\": \"'../outside.bin' does not match '^(?!/)(?!.*\\\\\\\\\\\\\\\\)(?!.*(?:^|/)\\\\\\\\.\\\\\\\\.(?:/|$))(?!.*:)[^\\\\\\\\u0000-\\\\\\\\u001f]+$'\",\n          \"pointer\": \"/records/0/path\",\n          \"severity\": \"ERROR\"\n        }\n      ],\n      \"observed_codes\": [\n        \"E_SCHEMA_PATTERN\"\n      ],\n      \"sample_data_status\": \"REJECTED\",\n      \"sample_sha256\": \"5a6e6edcc5d7ff2e4bd2966301ac34ed3965304f5f16927b771f9e3eb4aec2d5\",\n      \"test_status\": \"PASS\",\n      \"validation_exit_code\": 2\n    },\n    {\n      \"case_id\": \"NEG-005\",\n      \"expected_code\": \"E_DANGLING_REFERENCE\",\n      \"file\": \"tools/content_validation/fixtures/dangling_effect.json\",\n      \"matching_diagnostics\": [\n        {\n          \"code\": \"E_DANGLING_REFERENCE\",\n          \"file\": \"tools/content_validation/fixtures/dangling_effect.json\",\n          \"message\": \"No registered target: TEST_P22_MISSING_EFFECT\",\n          \"owner\": \"P03\",\n          \"pointer\": \"/cards/0/effect_ids/0\",\n          \"severity\": \"ERROR\",\n          \"target_kind\": \"effect\",\n          \"target_scope\": \"\"\n        }\n      ],\n      \"observed_codes\": [\n        \"B_ASSET_REQUEST_UNFULFILLED\",\n        \"B_CHARACTER_ART_UNBOUND\",\n        \"B_ENEMY_ART_UNBOUND\",\n        \"B_FORMAL_LINGUISTIC_BINDING\",\n        \"E_DANGLING_REFERENCE\",\n        \"E_MIRROR_MISMATCH\",\n        \"E_SOURCE_BINDING\"\n      ],\n      \"sample_data_status\": \"REJECTED\",\n      \"sample_sha256\": \"68b7bc0544a3f62381242a50fb4c93390ea3541fee8b8e4c6e0740450615cb78\",\n      \"test_status\": \"PASS\",\n      \"validation_exit_code\": 2\n    }\n  ],\n  \"scope\": \"AUTHOR_NEGATIVE_TESTS_SYNTHETIC_COPIES\",\n  \"status\": \"PASS\"\n}\n",
+        "stdout_sha256": "316984dcbb4357b0f0b02b9961f3aa422cd7588fd7199f6c6f7032e8e8477407"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "migrate-manifest",
+          "--input",
+          "tools/content_validation/fixtures/manifest_v1.synthetic.json",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/metadata_migration"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "manifest_migration",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"changes\": [\n    {\n      \"field\": \"/lifecycle\",\n      \"operation\": \"ADD_EXPLICIT_METADATA_DEFAULT\",\n      \"value\": \"CANDIDATE\"\n    },\n    {\n      \"field\": \"/production_allowed\",\n      \"operation\": \"ADD_EXPLICIT_METADATA_DEFAULT\",\n      \"value\": false\n    },\n    {\n      \"field\": \"/tags\",\n      \"operation\": \"ADD_EXPLICIT_METADATA_DEFAULT\",\n      \"value\": []\n    }\n  ],\n  \"document_bytes_validation\": \"NOT_RUN_METADATA_ONLY_USE_LINT_FOR_DATA_BYTES\",\n  \"from\": \"P22-CONTENT-MANIFEST/0.1.0\",\n  \"id_rewrites\": 0,\n  \"migration_version\": \"P22-MANIFEST-MIGRATION/0.1.0\",\n  \"result_canonical_sha256\": \"fcd0264486a6349d574ec8a20c252f9e8518fdb360f4cea5720954c3bf3a3c54\",\n  \"save_files_touched\": 0,\n  \"scope\": \"P22_SYNTHETIC_METADATA_VERSIONS_NOT_HISTORICAL_GAME_SAVE\",\n  \"source_canonical_sha256\": \"38c711567323eca1c8d60ef8ea0321a108a33c7650e93d5b230ddbae4ba8060b\",\n  \"source_documents_changed\": 0,\n  \"source_raw_sha256\": \"34cdc0207918a1ea537fe95d869a076d02565c69be8e0b0a3fd372fc3d46d6de\",\n  \"to\": \"P22-CONTENT-MANIFEST/0.2.0\"\n}\n",
+        "stdout_sha256": "ab87338153be72bddf83dd646f6be35b607811f1a59cfb7be1c840ba3422b545"
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+          "id-map",
+          "--output",
+          "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/id_map"
+        ],
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "name": "real_id_map",
+        "stderr": "",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout": "{\n  \"aliases\": {},\n  \"issues\": [],\n  \"production_applied\": false,\n  \"save_files_touched\": 0,\n  \"status\": \"PASS\"\n}\n",
+        "stdout_sha256": "ddbf478d8c6290e8f83be8d1a436d1b5d1da7dbdcaf7bff21b6335838f16b4cc"
+      }
+    ],
+    "receipt": {
+      "deterministic_reports": true,
+      "environment": {
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "formal_gate": "BLOCKED",
+      "independent_tests": "NOT_RUN",
+      "package_files_checked": 229,
+      "package_unchanged": true,
+      "runs": [
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/verify_delivery.py"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "verify_delivery",
+          "started_utc": "2026-10-30T10:12:07.068297+00:00",
+          "stderr": "verify_delivery.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "verify_delivery.stdout.txt",
+          "stdout_sha256": "3442659eea63b71488b46928cd7726af0e8fe1e9968d74ec1253a202ff983b70"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/run_tests.py",
+            "--json-out",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/test_results.json"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "author_tests",
+          "started_utc": "2026-10-30T10:12:07.183453+00:00",
+          "stderr": "author_tests.stderr.txt",
+          "stderr_sha256": "bb16a8def722a6a065884b9d231b5f7fc8fb22f1bcb3ec1c523b6b0735c54400",
+          "stdout": "author_tests.stdout.txt",
+          "stdout_sha256": "317894f451fee07167249b74c871cc2d13cee65fddd2745b2bb2e25cbba0b2b4"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "lint",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/lint_a"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "lint_a",
+          "started_utc": "2026-10-30T10:12:15.106263+00:00",
+          "stderr": "lint_a.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "lint_a.stdout.txt",
+          "stdout_sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "lint",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/lint_b"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "lint_b",
+          "started_utc": "2026-10-30T10:12:15.548922+00:00",
+          "stderr": "lint_b.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "lint_b.stdout.txt",
+          "stdout_sha256": "5d602b6b1c7453d6bdc2b7b23a9c69bae9fd7aa36a94a804f037658698537966"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "preflight",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/preflight"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 3,
+          "expectation_met": true,
+          "expected_exit_code": 3,
+          "name": "formal_preflight",
+          "started_utc": "2026-10-30T10:12:15.977571+00:00",
+          "stderr": "formal_preflight.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "formal_preflight.stdout.txt",
+          "stdout_sha256": "592f3661b1e210934bbb52b17a7ff2c5d97808a03c7f50652c38bb3c04c69106"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "negative-samples",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/negative_samples"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "negative_samples",
+          "started_utc": "2026-10-30T10:12:16.408091+00:00",
+          "stderr": "negative_samples.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "negative_samples.stdout.txt",
+          "stdout_sha256": "316984dcbb4357b0f0b02b9961f3aa422cd7588fd7199f6c6f7032e8e8477407"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "migrate-manifest",
+            "--input",
+            "tools/content_validation/fixtures/manifest_v1.synthetic.json",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/metadata_migration"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "manifest_migration",
+          "started_utc": "2026-10-30T10:12:16.844612+00:00",
+          "stderr": "manifest_migration.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "manifest_migration.stdout.txt",
+          "stdout_sha256": "ab87338153be72bddf83dd646f6be35b607811f1a59cfb7be1c840ba3422b545"
+        },
+        {
+          "command": [
+            "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+            "-B",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1/tools/content_validation/schema_linter.py",
+            "id-map",
+            "--output",
+            "/workspace/scratch/089de6a7352c/work/final_zip_replay/run/id_map"
+          ],
+          "cwd": "/workspace/scratch/089de6a7352c/work/final_zip_replay/P22_ContentPipeline_V0.1",
+          "exit_code": 0,
+          "expectation_met": true,
+          "expected_exit_code": 0,
+          "name": "real_id_map",
+          "started_utc": "2026-10-30T10:12:17.272825+00:00",
+          "stderr": "real_id_map.stderr.txt",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "real_id_map.stdout.txt",
+          "stdout_sha256": "ddbf478d8c6290e8f83be8d1a436d1b5d1da7dbdcaf7bff21b6335838f16b4cc"
+        }
+      ],
+      "scope": "P22_AUTHOR_REPRODUCTION_NOT_P32_OR_P35",
+      "status": "PASS",
+      "target_engine_windows_anki_e2e": "NOT_RUN"
+    },
+    "started_utc": "2026-10-30T10:12:07.006487+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "verify_delivery 0 expected 0\nauthor_tests 0 expected 0\nlint_a 0 expected 0\nlint_b 0 expected 0\nformal_preflight 3 expected 3\nnegative_samples 0 expected 0\nmanifest_migration 0 expected 0\nreal_id_map 0 expected 0\n{\n  \"scope\": \"P22_AUTHOR_REPRODUCTION_NOT_P32_OR_P35\",\n  \"status\": \"PASS\",\n  \"package_unchanged\": true,\n  \"package_files_checked\": 229,\n  \"deterministic_reports\": true,\n  \"formal_gate\": \"BLOCKED\",\n  \"independent_tests\": \"NOT_RUN\",\n  \"target_engine_windows_anki_e2e\": \"NOT_RUN\"\n}\n",
+    "stdout_sha256": "9dc73822bfc17743f737916b103fb8d3c2d45a2ac6794efa12d592341fb71608",
+    "test_results": {
+      "cases": [
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_candidate_success_and_production_blocked_exit_codes"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_dependency_failure_is_blocked"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_identical_reports_across_process_hash_seeds_and_output_paths"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_input_tamper_never_reaches_reference_pass"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_malformed_schema_fails_closed"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_manifest_migration_cli_preserves_original_bytes"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_missing_source_is_reported_not_synthesized"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_negative_samples_cli"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_omitted_document_cannot_make_dataset_pass"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_optional_asset_catalog_is_read_and_hashed"
+        },
+        {
+          "status": "PASS",
+          "test": "test_cli.CLITests.test_source_bytes_unchanged_after_cli"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_art_request_without_id_cannot_claim_hash"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_behavior_loop_is_legal"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_behavior_state_is_scoped_to_enemy"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_behavior_transition_cannot_skip_phase_owner"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_boolean_is_not_integer_cost"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_case_colliding_definition_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_character_signature_binding_mismatch"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_dangling_effect_reference"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_deferred_story_ids_are_rejected_until_schema_extension"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_dictionary_mirror_cannot_drift"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_duplicate_definition_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_full_cross_reference_graph"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_linguistic_dictionary_mirror"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_missing_art_is_blocked_not_approved"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_missing_cost_points_to_field"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_missing_enemy_skill_reference"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_missing_status_configuration"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_mock_flag_cannot_promote_content"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_negative_cost_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_no_resource_cost_with_none_sentinel"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_nonstatus_effect_cannot_define_phantom_status"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_p04_compatibility_is_not_alias"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_phase_cycle_and_regression"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_phase_graph_cannot_bind_another_enemy"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_phase_ranks_are_unique"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_phase_threshold_mirror"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_received_18_documents_validate"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_reference_documents_are_not_content_targets"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_regression_heal_role_uint32_and_missing_asset_marker"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_release_path_traversal"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_release_registry_hash_pin"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_remote_schema_reference_does_not_fetch"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_reward_duplicate_component"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_save_schema_not_in_content_bank"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_signature_character_skill_mismatch"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_canonical_key_cannot_be_rewritten"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_enemy_source_pin"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_graph_requires_admitted_boss_enemy"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_reward_display_mirror"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_unlock_cycle"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_stage_unlock_mirror"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_unknown_content_version_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_unknown_effect_code_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_unknown_gameplay_field_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_unknown_linguistic_alias_target"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_v6_43_92_27_is_static_only"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_versioned_negative_files_reject_expected_defects"
+        },
+        {
+          "status": "PASS",
+          "test": "test_content.ContentTests.test_view_duplicate_is_not_a_new_definition"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_actual_bytes_and_source_hash_verified"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_approved_label_without_receipts_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_asset_symlink_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_bad_size_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_case_colliding_paths_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_changed_asset_hash_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_duplicate_asset_id_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_missing_actual_asset_file_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_placeholder_cannot_be_formal_asset"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_receipt_bytes_still_do_not_replace_external_gate"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.AssetTests.test_resource_path_traversal_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_duplicate_json_keys_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_existing_output_never_overwritten"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_interrupted_output_has_no_completion_marker"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_invalid_utf8_json_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_new_output_complete_and_hash_verifiable"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_nonfinite_json_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_output_in_package_blocked"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_oversize_input_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_path_escape_absolute_drive_and_backslash_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_symlink_input_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_tsv_boolean_not_truthy_string"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_tsv_duplicate_header"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_tsv_integer_not_silently_coerced"
+        },
+        {
+          "status": "PASS",
+          "test": "test_io_assets.IOTests.test_tsv_row_width_has_line_number"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_alias_chain_preserves_original_first_clear_identity"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_alias_cycle_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_alias_self_reference_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_canonical_identity_cannot_be_forged"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_case_collision_input_registry_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_cross_kind_alias_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_default_annotation_does_not_mutate_validator_input"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_duplicate_input_registry_rejected_even_with_empty_map"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_duplicate_migration_origin_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_duplicate_previous_registry_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_empty_real_mapping_is_not_fabricated_history"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_explicit_metadata_defaults_only"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_external_approval_not_self_asserted"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_invalid_input_registry_schema_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_issued_canonical_change_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_issued_id_removal_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_migration_is_idempotent"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_null_is_not_missing_default"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_original_identity_requires_tombstone"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_proposal_does_not_become_live_alias"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_required_data_never_filled"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_test_alias_is_not_production_alias"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_tombstone_reuse_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_unknown_alias_target_rejected"
+        },
+        {
+          "status": "PASS",
+          "test": "test_migration.MigrationTests.test_unknown_version_has_no_best_effort_fallback"
+        }
+      ],
+      "environment": {
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "errors": 0,
+      "failures": 0,
+      "p32_independent": "NOT_RUN",
+      "p35_review": "NOT_RUN",
+      "passed": 109,
+      "scope": "P22_AUTHOR_TESTS_ONLY",
+      "skipped": 0,
+      "status": "PASS",
+      "tests_run": 109
+    }
+  },
+  "format": "P22-DELIVERY-RECEIPT/0.1.0",
+  "independent_acceptance": {
+    "P25": "NOT_RUN",
+    "P32": "NOT_RUN",
+    "P33": "NOT_RUN",
+    "P35": "NOT_RUN",
+    "P37": "NOT_RUN",
+    "full_game_e2e": "NOT_RUN",
+    "real_anki": "NOT_RUN",
+    "target_engine": "NOT_RUN",
+    "target_windows": "NOT_RUN"
+  },
+  "input_evidence": {
+    "baseline_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "intake_sha256": "fd7d1416533eac23dba67f0727ebe224b5f2f6cfbc879b19aa2d60c1e1be263f",
+    "p21_archive": {
+      "git_blob_sha1": "c6b129b9f57bea97cba915c7c5c28d8edf2a9b1c",
+      "git_paths": [
+        "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r10d9a348-52d4-4c02-af10-472c6a68cb2c--P21｜本地存档、版本迁移与恢复程序员/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/2643d9de-592e-4433-81f9-7440d864f534/files/archives/P21_LocalSave_V0.1.zip"
+      ],
+      "sha256": "05ec1111199f90da2f3e3f814048256ef21264e6a229c4163113de51836f3f23",
+      "size_bytes": 4563265,
+      "status": "BYTE_MATCH"
+    },
+    "p21_commit": "775369b34f6691f864d1682a83af1e36f0bc1d81",
+    "scan_summary": {
+      "errors": 0,
+      "expanded_bytes_read": 383238720,
+      "members_read": 9684,
+      "relay_checks": 813,
+      "unique_archives": 120,
+      "upload_count": 15
+    },
+    "upload_git_binding_counts": {
+      "DIRECT_GIT_BLOB_MATCH": 10,
+      "REPACKAGED_CONTAINER_MEMBERS_VERIFIED": 5
+    },
+    "v6_download": {
+      "git_blob_sha1": "5019ca0c83021bd0ea78b4e3de517991b67de531",
+      "sha256": "2e90c8359a82ff9e0a984ce2ddad023a6f86bf92056bc5eae54aa7d7e2c198ce",
+      "size_bytes": 174352,
+      "url": "https://github.com/yangbaoliang980-sudo/juesedemo-2026-10-27-01b55988-26e9-4763-a710-e5ba81986b3c/blob/8c370d731c323f86ff19642f4cc73f818498f641/role-relay/524b4bc8-b32f-433f-88cf-1271e40396f6/roles/r6590e554-90db-462b-8f89-26ab2b25d4ea--%E7%AC%AC%E5%85%AD%E8%BD%AE%EF%BD%9C%E6%9C%80%E7%BB%88%E7%A0%94%E5%8F%91%E7%BB%84%E7%BB%87%E6%9E%B6%E6%9E%84%E4%B8%8E%E5%B2%97%E4%BD%8D%E8%81%8C%E8%B4%A3%E5%86%BB%E7%BB%93%E5%AE%98/runs/01b55988-26e9-4763-a710-e5ba81986b3c/round-0001/7218fc2f-4ec6-4448-9fc0-b2b26fad06f6/files/archives/%E7%AC%AC%E5%85%AD%E8%BD%AE_%E6%B8%B8%E6%88%8F%E7%A0%94%E5%8F%91%E5%B2%97%E4%BD%8D%E4%BD%93%E7%B3%BB%E6%9C%80%E7%BB%88%E5%86%BB%E7%BB%93%E7%89%88V6.0_%E5%AE%8C%E6%95%B4%E4%BA%A4%E4%BB%98%E5%8C%85.zip"
+    }
+  },
+  "manifest": {
+    "file_format": "JSON UTF-8",
+    "filename": "delivery_manifest.json",
+    "format_version": "P22-DELIVERY-MANIFEST/0.1.0",
+    "modify_whitelist": [
+      "delivery_manifest.json"
+    ],
+    "owner": "P22",
+    "package_relative_path": "delivery_manifest.json",
+    "recipients": [
+      "P03",
+      "P04",
+      "P06",
+      "P07",
+      "P09",
+      "P13",
+      "P30",
+      "P32",
+      "P36",
+      "P21",
+      "P33",
+      "P35"
+    ],
+    "sha256": "7ccd26dfb7b5110a03a0cb021f3b8e587eef8913888c0323140233046a6c8663",
+    "size_bytes": 2276614,
+    "source_input_hashes": [
+      {
+        "path": "evidence/upstream/P03/card_catalog.json",
+        "sha256": "f29c89dbc98eb4d4d048ed58ab03494abbf05a40edfcfa8ada5efc1b16ea829e"
+      },
+      {
+        "path": "evidence/upstream/P03/card_dictionary.tsv",
+        "sha256": "4928ad5d82fb6b18c3e01ce7968c2b010f668815c932d1775bee66c69e976bc6"
+      },
+      {
+        "path": "evidence/upstream/P03/character_card_pool.tsv",
+        "sha256": "284199ae93a484e808d1546975b16cec4d14071d01f84c0b52865bf76d2db3e6"
+      },
+      {
+        "path": "evidence/upstream/P04/character_skeleton.json",
+        "sha256": "39a7728a53165c9ef8953fa5b232efe900a5d1a4a6fd40ffe038581ea6c39515"
+      },
+      {
+        "path": "evidence/upstream/P04/progression_costs.tsv",
+        "sha256": "5c872fb5ac0a0834ecdfe270a6dd81a42c10aaecf8d58559b822b1fcdc4df41f"
+      },
+      {
+        "path": "evidence/upstream/P04/character_deck_contribution.tsv",
+        "sha256": "2d4d3e09557d801749d44a24c1da405351e28fcadf0c23be52f0c07088daa06a"
+      },
+      {
+        "path": "evidence/upstream/P06/enemy_specs.json",
+        "sha256": "bb2586b8fe86ff66810aca4304f675e72c418b4267717eff71a2e17feaff90e7"
+      },
+      {
+        "path": "evidence/upstream/P06/boss_phase_graph.json",
+        "sha256": "cf1e96d39a371ef4775a86e2505973968a2580be58a205739e4d5847d5972eaf"
+      },
+      {
+        "path": "evidence/upstream/P06/intent_dictionary.tsv",
+        "sha256": "db64c4d509638bbf969d374ff905e5bc2d76afdd44218e99d4142d06074497bc"
+      },
+      {
+        "path": "evidence/upstream/P06/asset_requests.tsv",
+        "sha256": "133d8b80dea66da8162bedaff3bacf4e2708545717bd6583ac19dbfe04fa7ddd"
+      },
+      {
+        "path": "evidence/upstream/P07/stage_graph.json",
+        "sha256": "7bb2dd80ec85fb236240d580380ed406c6673dd3badab32191daf29a6257d7f4"
+      },
+      {
+        "path": "evidence/upstream/P07/stage_content_catalog.json",
+        "sha256": "818726891190817d890e55b6b20e90426294be8da38414ec42527e4b63655f34"
+      },
+      {
+        "path": "evidence/upstream/P07/stage_rewards.tsv",
+        "sha256": "397a5d02985da3f0f4b769450e29907e1b6da9f4e0b6cfb36e441e4ed8d40827"
+      },
+      {
+        "path": "evidence/upstream/P07/stage_table.tsv",
+        "sha256": "2e5d14c8f9a59189e0fc2f9e84e73b175cf24c0dfda07364e5b5ca08da59c651"
+      },
+      {
+        "path": "evidence/upstream/P09/pos_mapping_rules.json",
+        "sha256": "1a99e192b608d158e2daf110bd5a5fd6d328e62184f9ec7038007a70265b87ab"
+      },
+      {
+        "path": "evidence/upstream/P09/category_dictionary.json",
+        "sha256": "877bfa21f32d6db822dae200dd8cbcf901d2acb9acbb8321f39e1e09d28aaf31"
+      },
+      {
+        "path": "evidence/upstream/P09/mapping_release_registry.json",
+        "sha256": "3271836d0e84dc393d28b1ebe41cdbc299ec53d39a34f0458b37c6630b500bfd"
+      },
+      {
+        "path": "evidence/upstream/P09/resource_affinity_candidates.tsv",
+        "sha256": "657c33b528207e3f6f8beb230d5086bfb16df441b4df8b93af292e68855208f1"
+      },
+      {
+        "path": "evidence/upstream/P01/requirements_traceability.tsv",
+        "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c"
+      },
+      {
+        "path": "evidence/upstream/P01/requirements_baseline_v6.txt",
+        "sha256": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1"
+      },
+      {
+        "path": "evidence/upstream/P01/prd_scope_v0.md",
+        "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f"
+      },
+      {
+        "path": "evidence/upstream/P01/decisions_pending.tsv",
+        "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4"
+      },
+      {
+        "path": "evidence/upstream/P03/interface_rfc_blockers.md",
+        "sha256": "6d2b319e10d9a1ba9ab7702e41dda946d19c0bd6e05e5231109bc1e631fb77e2"
+      },
+      {
+        "path": "evidence/upstream/P03/party_deck_rules.md",
+        "sha256": "a720f173654ad37b5d691559dd9206854ecf469d1c18883e53b8d7a78cd4bae6"
+      },
+      {
+        "path": "evidence/upstream/P03/card_keywords.md",
+        "sha256": "fef1ec36ba21005bbedcc3f123fb39be279b7837f43d0eff94a75a63010b451f"
+      },
+      {
+        "path": "evidence/upstream/P04/interface_rfc_and_blockers.md",
+        "sha256": "fbcb11f36ea376324a27bfc5f7a78a781f95730ba91d75d536aefaba151aa9ef"
+      },
+      {
+        "path": "evidence/upstream/P04/progression_semantics.md",
+        "sha256": "952eb1956a611d9ae8484f0db6649076dfb5667186766d0b3f4e0674de6d592c"
+      },
+      {
+        "path": "evidence/upstream/P06/interface_rfc_and_blockers.md",
+        "sha256": "c6467953c7857c3ed49f4f4fa02236ad6e2095c751d486f2b58dbce0652b66e4"
+      },
+      {
+        "path": "evidence/upstream/P06/content_format.md",
+        "sha256": "8da7447cbcc1a31bbc68136b1ff7851679af1c18a8b8988b24caadd9dc6bbe31"
+      },
+      {
+        "path": "evidence/upstream/P07/interface_rfc_and_blockers.md",
+        "sha256": "77a835355414a01de665f6ba66b2588c89a67e83fcfc1c1211961ed8be50d59b"
+      },
+      {
+        "path": "evidence/upstream/P07/content_format.md",
+        "sha256": "e11c531ee9373bccd3b1159e97e79b7862244afa562ffe3ea18b5d0f8bbceacc"
+      },
+      {
+        "path": "evidence/upstream/P07/first_clear_policy.md",
+        "sha256": "af618365ca6a875489589dfe20c9ae4be2c11f1569edb0251fc9e0c3eff3be1f"
+      },
+      {
+        "path": "evidence/upstream/P09/field_protocol_proposal.md",
+        "sha256": "9c0a1cbdb5b71eebdba4cc37fae114bb2287a4915e9531600e0ab76fb8159b19"
+      },
+      {
+        "path": "evidence/upstream/P09/classification_spec.md",
+        "sha256": "f1bc56097935f8165005c7768af4aa4c46956adada4496ea8f483d825f61f3dd"
+      },
+      {
+        "path": "evidence/upstream/P09/source_input_receipt.json",
+        "sha256": "c888781520c2b515c0336519f4726e3853a01e9061129e1ccd9361f52aee9b3e"
+      },
+      {
+        "path": "evidence/upstream/P09/formal_prerequisites.json",
+        "sha256": "30368c8678af30e43f1db8a86ab16523c062cab3ff9cef855e380331edb05b16"
+      },
+      {
+        "path": "evidence/upstream/P13/actual_path_mapping.json",
+        "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+      },
+      {
+        "path": "evidence/upstream/P13/authorization_basis.json",
+        "sha256": "762315a605d10d9436553d55a4cf21ab511c787c94f294852fce22b37feffe8a"
+      },
+      {
+        "path": "evidence/upstream/P13/target_environment_requirements.json",
+        "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+      },
+      {
+        "path": "evidence/upstream/P13/internal_dto.schema.json",
+        "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+      },
+      {
+        "path": "evidence/upstream/P13/internal_api_contracts.json",
+        "sha256": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5"
+      },
+      {
+        "path": "evidence/upstream/P13/AssetRef.json",
+        "sha256": "e4015231fdc178fee5c32ea0a01f4150d0a345b88b33615c39d6c930987cd699"
+      },
+      {
+        "path": "evidence/upstream/P13/code_layout.md",
+        "sha256": "d41c13f1183676cf3da00b2eb163c24f70bb136d717da9e601564f1a6018281f"
+      },
+      {
+        "path": "evidence/upstream/P21/P21_API.md",
+        "sha256": "4655e65b818851a383111a0bafac0b57bd41e90d99021a01324f22b137c6582b"
+      },
+      {
+        "path": "evidence/upstream/P21/save_migration_plan.md",
+        "sha256": "2bc0c67e03f21665cbe572aee25618e9cf016d5d309c8861fdb360b773e879f9"
+      },
+      {
+        "path": "evidence/upstream/P21/P21_save_head.schema.json",
+        "sha256": "2ebfd3df2e97dc54193f0d1c2932a45a25a785d23980358b356026ae37009cf0"
+      },
+      {
+        "path": "evidence/upstream/P21/physical_format.md",
+        "sha256": "5e5d7a02d92f1053e77f2004776ca2aac33e32e9ff2c7fa3adb2572e26a5e554"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_43岗位历次演变裁定表V6.0.tsv",
+        "sha256": "1d481a6109932d2083504921e33804cdc8fc9cf01dda82381dc4927a3d4dbc6b"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_全部岗位职责_可复制版V6.0.txt",
+        "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_27项接口契约冻结修订V6.0.json",
+        "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_92项职责冻结映射V6.0.tsv",
+        "sha256": "d87953e5f30ac144d43c521941e51fb32f23c44c347772bf817128c36829b58a"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_静态自检程序V6.0.py",
+        "sha256": "174cb7868de7c8f5d52feee86a992b30b315f25748b9c05999ac19da2c263fd7"
+      },
+      {
+        "path": "evidence/upstream/V6/SHA256_MANIFEST.json",
+        "sha256": "4529976297f87737be4c52b3ddca99dd373284293929526e84f40f6ea1eb3d38"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_首批岗位启动任务单V6.0.txt",
+        "sha256": "16c6500cdfd1b0ddead6bc2655e3a541f304029d4c8d461bfddcb2cea1b025b8"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_26项问题最终责任状态V6.0.tsv",
+        "sha256": "b067fdf4841d3ed8a0aa55b41c86aabb0988e20b14189853bcc0e7957874e07b"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_实施前待核验及阻塞清单V6.0.tsv",
+        "sha256": "84e5ecb971633e7a1be93894292396789002907e7292a665dfcc10dbc510ec40"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_43岗独立职责与激活状态V6.0.json",
+        "sha256": "1bf579a69dea55baeaf1b7569347bc20be62e6fd1cc8208ac236b7e1970ade05"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+        "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_22个压力场景冻结用例V6.0.tsv",
+        "sha256": "4b6585da29894dc7ef47cb49debfb62549553a64720bef047f2c35272364016c"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_阶段与岗位激活计划V6.0.tsv",
+        "sha256": "2ed85ec79ad1b0da3724a793a3c66e576ecd9850ddbaddc7171142ed7df871d8"
+      },
+      {
+        "path": "evidence/upstream/V6/README_第六轮交付说明V6.0.txt",
+        "sha256": "27cac3c0aee30e69ab04f1b84ec1cfa10adfe9646d10f76d97becebe8169ecb3"
+      },
+      {
+        "path": "evidence/upstream/V6/第六轮_静态验收结果V6.0.txt",
+        "sha256": "ce82f3cff5c2abb15cbf134c034ce6b84b29f82f22a855c0544d392ae1ba921c"
+      },
+      {
+        "path": "evidence/support/SRC-P02-RULE/battle_state_machine.md",
+        "sha256": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d"
+      },
+      {
+        "path": "evidence/support/SRC-P02-PRIORITY/effect_priority.tsv",
+        "sha256": "85867d50fd7ca02d00ef8630a9e201295739a55833207cc6ea4eac89774ccbc5"
+      },
+      {
+        "path": "evidence/support/SRC-P02-TRUTH/terminal_phase_truth_table.tsv",
+        "sha256": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e"
+      },
+      {
+        "path": "evidence/support/SRC-P02-RFC/interface_rfc_and_blockers.md",
+        "sha256": "d765d50ed708ffb4fb1526ca7d6e95a82863c322ad02543d12e3875552f62c22"
+      },
+      {
+        "path": "evidence/support/SRC-P05-PARAM/balance_parameters.tsv",
+        "sha256": "3adc64a511570385fcce3bc082bcbe0dda7d721425191d51c692b775fa715487"
+      },
+      {
+        "path": "evidence/support/SRC-P05-REPORT/balance_report.md",
+        "sha256": "7cd480be755a78f446fa2cddb59daa62854a62652b1a8c3c4ba72838e8c931db"
+      },
+      {
+        "path": "evidence/support/SRC-P05-BUDGET/stage_resource_budget.tsv",
+        "sha256": "d4849f7f8237eec1d359ae06d7a0689b3500552ed17dbd1bb67213b5f4f225d9"
+      },
+      {
+        "path": "evidence/support/SRC-P05-RFC/interface_rfc_blockers.md",
+        "sha256": "6ba91ea29b4adef4da2e59dfb2f8d52ea3feaddc7b697eff7c4a4d3ed554358a"
+      },
+      {
+        "path": "evidence/support/SRC-P06-BUDGET/budget_trace.tsv",
+        "sha256": "6351399de200a3072fab1f85a2a3c0dc9f2470f3bf507312a851d03a325d9c73"
+      },
+      {
+        "path": "evidence/support/SRC-P08-POLICY/study_policy_draft.md",
+        "sha256": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e"
+      },
+      {
+        "path": "evidence/support/SRC-P08-RESOURCES/p08_resource_mapping_candidates.tsv",
+        "sha256": "6b0bd706bb6bffcea14d1e85d0f9862cac515b840e0ae704b3cb9295619fe8a6"
+      },
+      {
+        "path": "evidence/support/SRC-P08-RFC/p08_interface_rfc.md",
+        "sha256": "b8bd20b65b1e976c1ee7a7a75b0784d7cfe4ef9bfe229bdf29c16d786a48912e"
+      },
+      {
+        "path": "evidence/support/SRC-P08-RECEIPT/p08_delivery_receipt.json",
+        "sha256": "e9673a528e697a51cdc55d683621cc08b53b9626834547e2ae5a966463459c24"
+      },
+      {
+        "path": "evidence/support/SRC-P08-SOURCE/p08_source_input_receipt.json",
+        "sha256": "06878cf96ef332619de530c1231d87c7b045016d7a21f2fca2d29cdffff643f1"
+      }
+    ],
+    "write_scope": "P22_ISOLATED_PACKAGE_ONLY_REGENERATE_FOR_ANY_NEW_VERSION"
+  },
+  "package_checks": {
+    "exports_count": 24,
+    "exports_names_and_bytes_match_archive": "PASS",
+    "fresh_extract_before_after_unchanged": true,
+    "fresh_lint_matches_packaged_report_and_registry": true,
+    "fresh_package_files_checked": 229,
+    "selected_upstream_files": 76,
+    "zip_crc": "PASS",
+    "zip_vs_source_every_byte": "PASS",
+    "zip_vs_source_member_count": 229
+  },
+  "production_gate": "BLOCKED",
+  "production_path_write": "NONE",
+  "result_summary": {
+    "blockers": 35,
+    "dangling_references": 0,
+    "definition_counts": {
+      "asset_request": 5,
+      "behavior_state": 18,
+      "card": 10,
+      "category": 8,
+      "chapter": 1,
+      "character": 7,
+      "effect": 10,
+      "enemy": 3,
+      "intent": 13,
+      "mapping_release": 1,
+      "phase": 3,
+      "phase_graph": 1,
+      "phase_transition": 2,
+      "progression_row": 21,
+      "reservation": 1,
+      "resource": 2,
+      "reward": 4,
+      "skill": 20,
+      "stage": 2,
+      "stage_edge": 1,
+      "status": 4
+    },
+    "duplicate_ids": 0,
+    "errors": 0,
+    "references_checked": 403,
+    "registered_assets": 0,
+    "registered_definitions": 137,
+    "validated_documents": 18
+  },
+  "self_hash_note": "Receipt is external to archive and intentionally not self-hashed.",
+  "source_mutation": "NONE",
+  "status": "ISOLATED_CONTENT_PIPELINE_DELIVERED",
+  "task_id": "P22-S00-S02-CONTENT-001"
+}

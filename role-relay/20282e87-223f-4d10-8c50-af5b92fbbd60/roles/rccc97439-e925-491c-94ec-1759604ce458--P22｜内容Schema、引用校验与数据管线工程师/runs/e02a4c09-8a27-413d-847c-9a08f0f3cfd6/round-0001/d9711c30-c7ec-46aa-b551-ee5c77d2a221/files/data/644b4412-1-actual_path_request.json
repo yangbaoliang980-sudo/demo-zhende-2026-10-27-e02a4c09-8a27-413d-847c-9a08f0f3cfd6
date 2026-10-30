@@ -1,0 +1,41 @@
+{
+  "actual_engine": null,
+  "actual_game_commit": null,
+  "actual_game_repository": null,
+  "base_path": "evidence/upstream/P13/actual_path_mapping.json",
+  "base_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+  "isolated_package_only": {
+    "author": "P22",
+    "authorization": "USER_CURRENT_TASK_NEW_ISOLATED_ARTIFACT",
+    "root": "P22_ContentPipeline_V0.1"
+  },
+  "owner": "P13",
+  "paths": [
+    {
+      "actual_production_path": null,
+      "design_path": "schema/content/**",
+      "requested_owner": "P22",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false
+    },
+    {
+      "actual_production_path": null,
+      "design_path": "tools/content_validation/**",
+      "requested_owner": "P22",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false
+    },
+    {
+      "actual_production_path": null,
+      "design_path": "content/manifest/**",
+      "requested_owner": "P22",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false
+    }
+  ],
+  "production_write_allowed": false,
+  "requester": "P22",
+  "status": "PREPARED_NOT_SUBMITTED",
+  "target_os": null,
+  "version": "P22-PATH-REQUEST/0.1.0"
+}

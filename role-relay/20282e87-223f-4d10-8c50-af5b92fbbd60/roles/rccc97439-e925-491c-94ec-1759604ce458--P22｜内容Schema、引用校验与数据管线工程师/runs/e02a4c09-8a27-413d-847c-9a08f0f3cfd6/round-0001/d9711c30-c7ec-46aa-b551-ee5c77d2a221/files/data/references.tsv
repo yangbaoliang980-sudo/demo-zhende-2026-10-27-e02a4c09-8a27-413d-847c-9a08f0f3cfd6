@@ -1,0 +1,404 @@
+file	pointer	target_kind	target_scope	target_id	relation	status	target_file	target_pointer
+evidence/upstream/P03/card_catalog.json	/cards/0/effect_ids/0	effect		MOCK_P03_EF_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/0/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/1/effect_ids/0	effect		MOCK_P03_EF_BARRIER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/1/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/2/effect_ids/0	effect		MOCK_P03_EF_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/2/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/3/effect_ids/0	effect		MOCK_P03_EF_EMBER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/3/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/4/effect_ids/0	effect		MOCK_P03_EF_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/4/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/4/owner_character_id	character		MOCK_P03_CHAR_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P03/card_catalog.json	/cards/4/skill_id	skill		MOCK_P03_SKILL_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P03/card_catalog.json	/cards/5/effect_ids/0	effect		MOCK_P03_EF_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/5/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/5/owner_character_id	character		MOCK_P03_CHAR_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P03/card_catalog.json	/cards/5/skill_id	skill		MOCK_P03_SKILL_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P03/card_catalog.json	/cards/6/effect_ids/0	effect		MOCK_P03_EF_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/6/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/6/owner_character_id	character		MOCK_P03_CHAR_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P03/card_catalog.json	/cards/6/skill_id	skill		MOCK_P03_SKILL_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P03/card_catalog.json	/cards/7/effect_ids/0	effect		MOCK_P03_EF_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/7/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/7/owner_character_id	character		MOCK_P03_CHAR_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/character_id
+evidence/upstream/P03/card_catalog.json	/cards/7/skill_id	skill		MOCK_P03_SKILL_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/3/skill_id
+evidence/upstream/P03/card_catalog.json	/cards/8/effect_ids/0	effect		MOCK_P03_EF_FOCUS	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/8/effect_id
+evidence/upstream/P03/card_catalog.json	/cards/9/effect_ids/0	effect		MOCK_P03_EF_FEEBLE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/9/effect_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/signature_card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/skill_id	skill		MOCK_P03_SKILL_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/signature_card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/skill_id	skill		MOCK_P03_SKILL_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/signature_card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/skill_id	skill		MOCK_P03_SKILL_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/signature_card_id	card		MOCK_P03_CARD_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/7/card_id
+evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/skill_id	skill		MOCK_P03_SKILL_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/3/skill_id
+evidence/upstream/P03/card_catalog.json	/skills/0/card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P03/card_catalog.json	/skills/0/character_id	character		MOCK_P03_CHAR_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P03/card_catalog.json	/skills/1/card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P03/card_catalog.json	/skills/1/character_id	character		MOCK_P03_CHAR_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P03/card_catalog.json	/skills/2/card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P03/card_catalog.json	/skills/2/character_id	character		MOCK_P03_CHAR_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P03/card_catalog.json	/skills/3/card_id	card		MOCK_P03_CARD_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/7/card_id
+evidence/upstream/P03/card_catalog.json	/skills/3/character_id	character		MOCK_P03_CHAR_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/character_id
+evidence/upstream/P03/card_dictionary.tsv	/0/card_id	card		MOCK_P03_CARD_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/0/card_id
+evidence/upstream/P03/card_dictionary.tsv	/0/effect_ids/0	effect		MOCK_P03_EF_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/0/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/1/card_id	card		MOCK_P03_CARD_BARRIER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/1/card_id
+evidence/upstream/P03/card_dictionary.tsv	/1/effect_ids/0	effect		MOCK_P03_EF_BARRIER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/1/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/2/card_id	card		MOCK_P03_CARD_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/2/card_id
+evidence/upstream/P03/card_dictionary.tsv	/2/effect_ids/0	effect		MOCK_P03_EF_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/2/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/3/card_id	card		MOCK_P03_CARD_EMBER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/3/card_id
+evidence/upstream/P03/card_dictionary.tsv	/3/effect_ids/0	effect		MOCK_P03_EF_EMBER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/3/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/4/card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P03/card_dictionary.tsv	/4/effect_ids/0	effect		MOCK_P03_EF_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/4/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/4/owner_character_id	character		MOCK_P03_CHAR_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P03/card_dictionary.tsv	/4/skill_id	skill		MOCK_P03_SKILL_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P03/card_dictionary.tsv	/5/card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P03/card_dictionary.tsv	/5/effect_ids/0	effect		MOCK_P03_EF_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/5/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/5/owner_character_id	character		MOCK_P03_CHAR_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P03/card_dictionary.tsv	/5/skill_id	skill		MOCK_P03_SKILL_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P03/card_dictionary.tsv	/6/card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P03/card_dictionary.tsv	/6/effect_ids/0	effect		MOCK_P03_EF_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/6/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/6/owner_character_id	character		MOCK_P03_CHAR_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P03/card_dictionary.tsv	/6/skill_id	skill		MOCK_P03_SKILL_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P03/card_dictionary.tsv	/7/card_id	card		MOCK_P03_CARD_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/7/card_id
+evidence/upstream/P03/card_dictionary.tsv	/7/effect_ids/0	effect		MOCK_P03_EF_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/7/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/7/owner_character_id	character		MOCK_P03_CHAR_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/character_id
+evidence/upstream/P03/card_dictionary.tsv	/7/skill_id	skill		MOCK_P03_SKILL_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/3/skill_id
+evidence/upstream/P03/card_dictionary.tsv	/8/card_id	card		MOCK_P03_CARD_FOCUS_DRAFT	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/8/card_id
+evidence/upstream/P03/card_dictionary.tsv	/8/effect_ids/0	effect		MOCK_P03_EF_FOCUS	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/8/effect_id
+evidence/upstream/P03/card_dictionary.tsv	/9/card_id	card		MOCK_P03_CARD_FEEBLE_DRAFT	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/9/card_id
+evidence/upstream/P03/card_dictionary.tsv	/9/effect_ids/0	effect		MOCK_P03_EF_FEEBLE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/effects/9/effect_id
+evidence/upstream/P03/character_card_pool.tsv	/0/character_id	character		MOCK_P03_CHAR_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P03/character_card_pool.tsv	/0/signature_card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P03/character_card_pool.tsv	/0/skill_id	skill		MOCK_P03_SKILL_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P03/character_card_pool.tsv	/1/character_id	character		MOCK_P03_CHAR_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P03/character_card_pool.tsv	/1/signature_card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P03/character_card_pool.tsv	/1/skill_id	skill		MOCK_P03_SKILL_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P03/character_card_pool.tsv	/2/character_id	character		MOCK_P03_CHAR_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P03/character_card_pool.tsv	/2/signature_card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P03/character_card_pool.tsv	/2/skill_id	skill		MOCK_P03_SKILL_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P03/character_card_pool.tsv	/3/character_id	character		MOCK_P03_CHAR_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/3/character_id
+evidence/upstream/P03/character_card_pool.tsv	/3/signature_card_id	card		MOCK_P03_CARD_D_BRAND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/7/card_id
+evidence/upstream/P03/character_card_pool.tsv	/3/skill_id	skill		MOCK_P03_SKILL_D	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/3/skill_id
+evidence/upstream/P04/character_deck_contribution.tsv	/0/p03_card_id	card		MOCK_P03_CARD_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/0/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/1/p03_card_id	card		MOCK_P03_CARD_BARRIER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/1/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/2/p03_card_id	card		MOCK_P03_CARD_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/2/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/3/p03_card_id	card		MOCK_P03_CARD_EMBER	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/3/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/4/p03_card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/4/p03_fixture_slot_id	character		MOCK_P03_CHAR_A	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P04/character_deck_contribution.tsv	/4/p03_skill_id	skill		MOCK_P03_SKILL_A	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P04/character_deck_contribution.tsv	/4/p04_character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/character_deck_contribution.tsv	/5/p03_card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/5/p03_fixture_slot_id	character		MOCK_P03_CHAR_B	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P04/character_deck_contribution.tsv	/5/p03_skill_id	skill		MOCK_P03_SKILL_B	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P04/character_deck_contribution.tsv	/5/p04_character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/character_deck_contribution.tsv	/6/p03_card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P04/character_deck_contribution.tsv	/6/p03_fixture_slot_id	character		MOCK_P03_CHAR_C	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P04/character_deck_contribution.tsv	/6/p03_skill_id	skill		MOCK_P03_SKILL_C	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P04/character_deck_contribution.tsv	/6/p04_character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/character_skeleton.json	/characters/0/p03_fixture_compatibility/p03_slot_character_id	character		MOCK_P03_CHAR_A	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/0/character_id
+evidence/upstream/P04/character_skeleton.json	/characters/0/p03_fixture_compatibility/signature_card_id	card		MOCK_P03_CARD_A_EDGE	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/4/card_id
+evidence/upstream/P04/character_skeleton.json	/characters/0/skill/p03_fixture_skill_id	skill		MOCK_P03_SKILL_A	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/0/skill_id
+evidence/upstream/P04/character_skeleton.json	/characters/1/p03_fixture_compatibility/p03_slot_character_id	character		MOCK_P03_CHAR_B	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/1/character_id
+evidence/upstream/P04/character_skeleton.json	/characters/1/p03_fixture_compatibility/signature_card_id	card		MOCK_P03_CARD_B_WALL	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/5/card_id
+evidence/upstream/P04/character_skeleton.json	/characters/1/skill/p03_fixture_skill_id	skill		MOCK_P03_SKILL_B	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/1/skill_id
+evidence/upstream/P04/character_skeleton.json	/characters/2/p03_fixture_compatibility/p03_slot_character_id	character		MOCK_P03_CHAR_C	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/fixture_only_character_slots/2/character_id
+evidence/upstream/P04/character_skeleton.json	/characters/2/p03_fixture_compatibility/signature_card_id	card		MOCK_P03_CARD_C_MEND	REFERENCE	RESOLVED	evidence/upstream/P03/card_catalog.json	/cards/6/card_id
+evidence/upstream/P04/character_skeleton.json	/characters/2/skill/p03_fixture_skill_id	skill		MOCK_P03_SKILL_C	COMPATIBILITY_NOT_IDENTITY	RESOLVED	evidence/upstream/P03/card_catalog.json	/skills/2/skill_id
+evidence/upstream/P04/progression_costs.tsv	/0/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/1/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/1/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/10/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/10/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/11/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/11/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/12/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/12/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/13/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/13/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/14/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/15/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/15/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/16/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/16/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/17/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/17/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/18/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/18/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/19/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/19/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/2/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/2/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/20/character_id	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P04/progression_costs.tsv	/20/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/3/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/3/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/4/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/4/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/5/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/5/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/6/character_id	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P04/progression_costs.tsv	/6/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/7/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/8/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/8/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P04/progression_costs.tsv	/9/character_id	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P04/progression_costs.tsv	/9/spend_resource	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P06/asset_requests.tsv	/0/enemy_id	enemy		MOCK_P06_ENEMY_001	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/0/enemy_id
+evidence/upstream/P06/asset_requests.tsv	/1/enemy_id	enemy		MOCK_P06_ENEMY_002	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/enemy_id
+evidence/upstream/P06/asset_requests.tsv	/2/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P06/asset_requests.tsv	/2/phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/asset_requests.tsv	/3/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P06/asset_requests.tsv	/3/phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/asset_requests.tsv	/4/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P06/asset_requests.tsv	/4/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/degraded_exit/first_skill_id	skill		MOCK_P06_SKILL_DEGRADED_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/12/skill_id
+evidence/upstream/P06/boss_phase_graph.json	/degraded_exit/then_skill_id	skill		MOCK_P06_SKILL_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/5/skill_id
+evidence/upstream/P06/boss_phase_graph.json	/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P06/boss_phase_graph.json	/initial_phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/0/asset_request_key	asset_request		P06_ART_BOSS_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/asset_requests.tsv	/2/request_key
+evidence/upstream/P06/boss_phase_graph.json	/phases/0/entry_wait_skill_id	skill		MOCK_P06_SKILL_ENTRY_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/10/skill_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/0/initial_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/state_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/1/asset_request_key	asset_request		P06_ART_BOSS_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/asset_requests.tsv	/3/request_key
+evidence/upstream/P06/boss_phase_graph.json	/phases/1/entry_wait_skill_id	skill		MOCK_P06_SKILL_ENTRY_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/10/skill_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/1/initial_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/state_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/2/asset_request_key	asset_request		P06_ART_BOSS_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/asset_requests.tsv	/4/request_key
+evidence/upstream/P06/boss_phase_graph.json	/phases/2/entry_wait_skill_id	skill		MOCK_P06_SKILL_ENTRY_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/10/skill_id
+evidence/upstream/P06/boss_phase_graph.json	/phases/2/initial_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/state_id
+evidence/upstream/P06/boss_phase_graph.json	/terminal_exits/0/from_phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/terminal_exits/1/from_phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/terminal_exits/2/from_phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/transitions/0/from_phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/transitions/0/to_phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/transitions/1/from_phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/boss_phase_graph.json	/transitions/1/to_phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/0/initial_state_id	behavior_state	MOCK_P06_ENEMY_001	N_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/0/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/0/states/0/next_state_id	behavior_state	MOCK_P06_ENEMY_001	N_STRIKE	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/0/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/0/states/0/skill_id	skill		MOCK_P06_SKILL_N_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/0/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/initial_state_id	behavior_state	MOCK_P06_ENEMY_002	E_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/0/next_state_id	behavior_state	MOCK_P06_ENEMY_002	E_CHARGE	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/states/1/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/0/skill_id	skill		MOCK_P06_SKILL_E_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/1/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/1/next_state_id	behavior_state	MOCK_P06_ENEMY_002	E_RELEASE	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/states/2/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/1/skill_id	skill		MOCK_P06_SKILL_E_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/2/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/2/next_state_id	behavior_state	MOCK_P06_ENEMY_002	E_RECOVER	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/states/3/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/2/skill_id	skill		MOCK_P06_SKILL_E_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/3/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/3/next_state_id	behavior_state	MOCK_P06_ENEMY_002	E_STRIKE	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/1/states/3/skill_id	skill		MOCK_P06_SKILL_E_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/4/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/degraded_basic_skill_id	skill		MOCK_P06_SKILL_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/5/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/initial_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_graph_id	phase_graph		MOCK_P06_GRAPH_001	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/graph_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_1	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_1	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_2	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_2	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_3	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:0	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/phase_initial_state_ids/MOCK_P06_PHASE_3	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:1	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/1/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/skill_id	skill		MOCK_P06_SKILL_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/5/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/1/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:2	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/2/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/1/phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/1/skill_id	skill		MOCK_P06_SKILL_B_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/7/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/10/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:3	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/11/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/10/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/10/skill_id	skill		MOCK_P06_SKILL_B_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/7/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/11/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:4	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/12/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/11/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/11/skill_id	skill		MOCK_P06_SKILL_B_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/8/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/12/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:0	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/12/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/12/skill_id	skill		MOCK_P06_SKILL_B_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/9/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/2/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:3	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/3/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/2/phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/2/skill_id	skill		MOCK_P06_SKILL_B_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/8/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/3/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_1:0	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/0/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/3/phase_id	phase		MOCK_P06_PHASE_1	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/0/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/3/skill_id	skill		MOCK_P06_SKILL_B_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/9/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:1	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/5/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/skill_id	skill		MOCK_P06_SKILL_B_SWEEP	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/6/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/5/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:2	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/6/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/5/phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/5/skill_id	skill		MOCK_P06_SKILL_B_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/7/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/6/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:3	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/7/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/6/phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/6/skill_id	skill		MOCK_P06_SKILL_B_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/8/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/7/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_2:0	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/4/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/7/phase_id	phase		MOCK_P06_PHASE_2	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/1/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/7/skill_id	skill		MOCK_P06_SKILL_B_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/9/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:1	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/9/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/8/skill_id	skill		MOCK_P06_SKILL_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/5/skill_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/9/next_state_id	behavior_state	MOCK_P06_ENEMY_003	MOCK_P06_PHASE_3:2	BEHAVIOR_CYCLE_ALLOWED	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/states/10/state_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/9/phase_id	phase		MOCK_P06_PHASE_3	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/phases/2/phase_id
+evidence/upstream/P06/enemy_specs.json	/enemies/2/states/9/skill_id	skill		MOCK_P06_SKILL_B_SWEEP	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/6/skill_id
+evidence/upstream/P06/enemy_specs.json	/skills/0/intent_id	intent		MOCK_P06_INTENT_N_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/0/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/1/intent_id	intent		MOCK_P06_INTENT_E_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/1/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/10/intent_id	intent		MOCK_P06_INTENT_ENTRY_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/10/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/11/intent_id	intent		MOCK_P06_INTENT_SAFE_SKIP	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/11/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/12/intent_id	intent		MOCK_P06_INTENT_DEGRADED_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/12/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/2/intent_id	intent		MOCK_P06_INTENT_E_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/2/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/3/intent_id	intent		MOCK_P06_INTENT_E_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/3/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/4/intent_id	intent		MOCK_P06_INTENT_E_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/4/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/5/intent_id	intent		MOCK_P06_INTENT_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/5/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/6/intent_id	intent		MOCK_P06_INTENT_B_SWEEP	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/6/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/7/intent_id	intent		MOCK_P06_INTENT_B_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/7/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/8/intent_id	intent		MOCK_P06_INTENT_B_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/8/intent_id
+evidence/upstream/P06/enemy_specs.json	/skills/9/intent_id	intent		MOCK_P06_INTENT_B_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/intent_dictionary.tsv	/9/intent_id
+evidence/upstream/P06/intent_dictionary.tsv	/0/skill_id	skill		MOCK_P06_SKILL_N_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/0/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/1/skill_id	skill		MOCK_P06_SKILL_E_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/1/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/10/skill_id	skill		MOCK_P06_SKILL_ENTRY_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/10/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/11/skill_id	skill		MOCK_P06_SKILL_SAFE_SKIP	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/11/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/12/skill_id	skill		MOCK_P06_SKILL_DEGRADED_WAIT	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/12/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/2/skill_id	skill		MOCK_P06_SKILL_E_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/2/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/3/skill_id	skill		MOCK_P06_SKILL_E_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/3/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/4/skill_id	skill		MOCK_P06_SKILL_E_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/4/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/5/skill_id	skill		MOCK_P06_SKILL_B_STRIKE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/5/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/6/skill_id	skill		MOCK_P06_SKILL_B_SWEEP	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/6/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/7/skill_id	skill		MOCK_P06_SKILL_B_CHARGE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/7/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/8/skill_id	skill		MOCK_P06_SKILL_B_RELEASE	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/8/skill_id
+evidence/upstream/P06/intent_dictionary.tsv	/9/skill_id	skill		MOCK_P06_SKILL_B_RECOVER	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/skills/9/skill_id
+evidence/upstream/P07/stage_content_catalog.json	/character_ids/0	character		MOCK_P04_CHAR_001	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/0/character_id
+evidence/upstream/P07/stage_content_catalog.json	/character_ids/1	character		MOCK_P04_CHAR_002	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/1/character_id
+evidence/upstream/P07/stage_content_catalog.json	/character_ids/2	character		MOCK_P04_CHAR_003	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/characters/2/character_id
+evidence/upstream/P07/stage_content_catalog.json	/resources/0/resource_id	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P07/stage_content_catalog.json	/resources/1/resource_id	resource		MOCK_P04_XP_TOTAL_PER_CHARACTER	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/xp_kind
+evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/0/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/1/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/2/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/3/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_content_catalog.json	/stage_ids/0	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_content_catalog.json	/stage_ids/1	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_graph.json	/chapter/completion_stage_ids/0	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_graph.json	/chapter/entry_stage_ids/0	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_graph.json	/reserved_entries/0/enemy_id	enemy		MOCK_P06_ENEMY_002	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/1/enemy_id
+evidence/upstream/P07/stage_graph.json	/stages/0/canonical_stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_graph.json	/stages/0/chapter_id	chapter		MOCK_P07_CHAPTER_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/chapter/chapter_id
+evidence/upstream/P07/stage_graph.json	/stages/0/enemy_refs/0/enemy_id	enemy		MOCK_P06_ENEMY_001	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/0/enemy_id
+evidence/upstream/P07/stage_graph.json	/stages/0/reward_ids/FIRST_CLEAR	reward		MOCK_P07_REWARD_001_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/0/reward_id
+evidence/upstream/P07/stage_graph.json	/stages/0/reward_ids/REPEAT_CLEAR	reward		MOCK_P07_REWARD_001_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/1/reward_id
+evidence/upstream/P07/stage_graph.json	/stages/1/boss_phase_graph_id	phase_graph		MOCK_P06_GRAPH_001	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/graph_id
+evidence/upstream/P07/stage_graph.json	/stages/1/canonical_stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_graph.json	/stages/1/chapter_id	chapter		MOCK_P07_CHAPTER_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/chapter/chapter_id
+evidence/upstream/P07/stage_graph.json	/stages/1/enemy_refs/0/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P07/stage_graph.json	/stages/1/reward_ids/FIRST_CLEAR	reward		MOCK_P07_REWARD_002_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/2/reward_id
+evidence/upstream/P07/stage_graph.json	/stages/1/reward_ids/REPEAT_CLEAR	reward		MOCK_P07_REWARD_002_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/3/reward_id
+evidence/upstream/P07/stage_graph.json	/stages/1/unlock_rule/requires_stage_ids/0	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_graph.json	/unlock_edges/0/from_stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_graph.json	/unlock_edges/0/to_stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/0/resource_id	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P07/stage_rewards.tsv	/0/reward_id	reward		MOCK_P07_REWARD_001_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/0/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/0/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/1/resource_id	resource		MOCK_P04_XP_TOTAL_PER_CHARACTER	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/xp_kind
+evidence/upstream/P07/stage_rewards.tsv	/1/reward_id	reward		MOCK_P07_REWARD_001_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/0/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/1/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/2/resource_id	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P07/stage_rewards.tsv	/2/reward_id	reward		MOCK_P07_REWARD_001_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/1/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/2/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/3/resource_id	resource		MOCK_P04_XP_TOTAL_PER_CHARACTER	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/xp_kind
+evidence/upstream/P07/stage_rewards.tsv	/3/reward_id	reward		MOCK_P07_REWARD_001_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/1/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/3/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/4/resource_id	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P07/stage_rewards.tsv	/4/reward_id	reward		MOCK_P07_REWARD_002_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/2/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/4/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/5/resource_id	resource		MOCK_P04_XP_TOTAL_PER_CHARACTER	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/xp_kind
+evidence/upstream/P07/stage_rewards.tsv	/5/reward_id	reward		MOCK_P07_REWARD_002_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/2/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/5/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/6/resource_id	resource		MOCK_P04_TRAINING_TOKEN	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/cost_resource
+evidence/upstream/P07/stage_rewards.tsv	/6/reward_id	reward		MOCK_P07_REWARD_002_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/3/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/6/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_rewards.tsv	/7/resource_id	resource		MOCK_P04_XP_TOTAL_PER_CHARACTER	REFERENCE	RESOLVED	evidence/upstream/P04/character_skeleton.json	/economy_fixture/xp_kind
+evidence/upstream/P07/stage_rewards.tsv	/7/reward_id	reward		MOCK_P07_REWARD_002_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/3/reward_id
+evidence/upstream/P07/stage_rewards.tsv	/7/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P07/stage_table.tsv	/0/chapter_id	chapter		MOCK_P07_CHAPTER_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/chapter/chapter_id
+evidence/upstream/P07/stage_table.tsv	/0/enemy_id	enemy		MOCK_P06_ENEMY_001	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/0/enemy_id
+evidence/upstream/P07/stage_table.tsv	/0/first_clear_reward_id	reward		MOCK_P07_REWARD_001_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/0/reward_id
+evidence/upstream/P07/stage_table.tsv	/0/repeat_reward_id	reward		MOCK_P07_REWARD_001_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/1/reward_id
+evidence/upstream/P07/stage_table.tsv	/0/stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_table.tsv	/1/boss_phase_graph_id	phase_graph		MOCK_P06_GRAPH_001	REFERENCE	RESOLVED	evidence/upstream/P06/boss_phase_graph.json	/graph_id
+evidence/upstream/P07/stage_table.tsv	/1/chapter_id	chapter		MOCK_P07_CHAPTER_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/chapter/chapter_id
+evidence/upstream/P07/stage_table.tsv	/1/enemy_id	enemy		MOCK_P06_ENEMY_003	REFERENCE	RESOLVED	evidence/upstream/P06/enemy_specs.json	/enemies/2/enemy_id
+evidence/upstream/P07/stage_table.tsv	/1/first_clear_reward_id	reward		MOCK_P07_REWARD_002_FIRST	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/2/reward_id
+evidence/upstream/P07/stage_table.tsv	/1/repeat_reward_id	reward		MOCK_P07_REWARD_002_REPEAT	REFERENCE	RESOLVED	evidence/upstream/P07/stage_content_catalog.json	/reward_bundles/3/reward_id
+evidence/upstream/P07/stage_table.tsv	/1/requires_stage_id	stage		MOCK_P07_STAGE_001	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/0/stage_id
+evidence/upstream/P07/stage_table.tsv	/1/stage_id	stage		MOCK_P07_STAGE_002	REFERENCE	RESOLVED	evidence/upstream/P07/stage_graph.json	/stages/1/stage_id
+evidence/upstream/P09/category_dictionary.json	/categories/0/code	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/category_dictionary.json	/categories/1/code	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/category_dictionary.json	/categories/2/code	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/category_dictionary.json	/categories/3/code	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/category_dictionary.json	/categories/4/code	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/category_dictionary.json	/categories/5/code	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/category_dictionary.json	/categories/6/code	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/category_dictionary.json	/categories/7/code	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/category_dictionary.json	/mapping_version	mapping_release		P09-POS-MAP/0.1.0-proposal	REFERENCE	RESOLVED	evidence/upstream/P09/mapping_release_registry.json	/releases/0/version
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/adj-i	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/adj-na	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/adv	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/adv.	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/adverb	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/grammar	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/i-adjective	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/i_adjective	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/n	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/n.	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/na-adjective	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/na_adjective	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/noun	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/sentence	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/unknown	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/v	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/v.	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/verb	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/い形容詞	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/な形容詞	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/イ形容詞	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/カ変動詞	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/サ変動詞	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/ナ形容詞	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/一段動詞	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/不明	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/五段動詞	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/例文全体	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/副	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/副詞	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/副词	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/动	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/动词	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/動	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/動詞	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/句型	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/名	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/名詞	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/名词	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形动	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形動	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形容动词	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形容動詞	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形容詞	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形容词	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/形状詞	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/整句	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/文全体	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/文型	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/文法	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/未分类	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/未分類	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/未知	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/pos_mapping_rules.json	/category_aliases/语法	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/動詞-一般/0	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-固有名詞-一般/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-サ変可能/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-サ変可能/1	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-サ変形状詞可能/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-サ変形状詞可能/1	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-サ変形状詞可能/2	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-一般/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-副詞可能/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-副詞可能/1	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-形状詞可能/0	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/名詞-普通名詞-形状詞可能/1	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/形容詞-一般/0	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/pos_mapping_rules.json	/compound_pos_labels/形状詞-一般/0	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/pos_mapping_rules.json	/mapping_version	mapping_release		P09-POS-MAP/0.1.0-proposal	REFERENCE	RESOLVED	evidence/upstream/P09/mapping_release_registry.json	/releases/0/version
+evidence/upstream/P09/pos_mapping_rules.json	/unknown_category	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/0/category	category	P09-POS-MAP/0.1.0-proposal	NOUN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/0/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/1/category	category	P09-POS-MAP/0.1.0-proposal	VERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/1/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/2/category	category	P09-POS-MAP/0.1.0-proposal	I_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/2/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/3/category	category	P09-POS-MAP/0.1.0-proposal	NA_ADJECTIVE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/3/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/4/category	category	P09-POS-MAP/0.1.0-proposal	ADVERB	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/4/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/5/category	category	P09-POS-MAP/0.1.0-proposal	GRAMMAR	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/5/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/6/category	category	P09-POS-MAP/0.1.0-proposal	SENTENCE	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/6/code
+evidence/upstream/P09/resource_affinity_candidates.tsv	/7/category	category	P09-POS-MAP/0.1.0-proposal	UNKNOWN	REFERENCE	RESOLVED	evidence/upstream/P09/pos_mapping_rules.json	/categories/7/code
