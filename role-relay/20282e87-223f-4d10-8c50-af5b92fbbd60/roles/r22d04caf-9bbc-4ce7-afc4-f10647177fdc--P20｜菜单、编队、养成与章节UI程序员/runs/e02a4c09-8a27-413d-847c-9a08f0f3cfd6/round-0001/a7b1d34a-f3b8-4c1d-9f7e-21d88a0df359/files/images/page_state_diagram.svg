@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="1060" viewBox="0 0 1160 1060">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8b82b5"/></marker></defs>
+<rect width="1160" height="1060" rx="24" fill="#14151f"/>
+<g font-family="Noto Sans SC,Microsoft YaHei,Arial,sans-serif" fill="#f4f1ff">
+<text x="52" y="58" font-size="28" font-weight="700">P20 · 非战斗页面状态图</text>
+<text x="52" y="92" font-size="15" fill="#b4aec7">0.1.0 隔离组件 / 正式战斗接线、存档与 Anki 联动仍待上游</text>
+<path d="M 575 218 V 258" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 575 342 V 402" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 440 300 H 185 V 402" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 710 300 H 965 V 402" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 185 486 V 546" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 575 486 V 546" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 575 630 V 690" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="594" y="665" fill="#c5bed8" font-size="13">领域入场确认</text>
+<path d="M 575 774 V 844" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="594" y="816" fill="#c5bed8" font-size="13">正式战斗返回待接线；演练用合成结果</text>
+<path d="M 440 886 H 350 V 280 H 440" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="268" y="780" fill="#c5bed8" font-size="13">返回首页</text>
+<path d="M 185 546 H 40 V 300 H 440" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 965 402 V 300 H 710" fill="none" stroke="#8b82b5" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="440" y="134" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="460" y="168" font-size="21" font-weight="600">启动与重新进入</text>
+<text x="460" y="195" font-size="13" fill="#c4bed4">读取一致视图；坏数据保留占位</text>
+<rect x="440" y="258" width="270" height="84" rx="14" fill="#352c50" stroke="#5b526e"/>
+<text x="460" y="292" font-size="21" font-weight="600">营地首页</text>
+<text x="460" y="319" font-size="13" fill="#c4bed4">钱包 / 已提交队伍 / 学习提示</text>
+<rect x="50" y="402" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="70" y="436" font-size="21" font-weight="600">角色列表</text>
+<text x="70" y="463" font-size="13" fill="#c4bed4">只读等级、定位与属性</text>
+<rect x="440" y="402" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="460" y="436" font-size="21" font-weight="600">三人编队</text>
+<text x="460" y="463" font-size="13" fill="#c4bed4">局部草稿 → 领域确认</text>
+<rect x="830" y="402" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="850" y="436" font-size="21" font-weight="600">学习状态</text>
+<text x="850" y="463" font-size="13" fill="#c4bed4">未连接 / 待核对 / 拒绝 / 测试记录</text>
+<rect x="50" y="546" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="70" y="580" font-size="21" font-weight="600">角色养成</text>
+<text x="70" y="607" font-size="13" fill="#c4bed4">升级确认；装备默认关闭</text>
+<rect x="440" y="546" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="460" y="580" font-size="21" font-weight="600">章节选择</text>
+<text x="460" y="607" font-size="13" fill="#c4bed4">原服务解锁状态与首通资格</text>
+<rect x="440" y="690" width="270" height="84" rx="14" fill="#222431" stroke="#5b526e"/>
+<text x="460" y="724" font-size="21" font-weight="600">出战交接</text>
+<text x="460" y="751" font-size="13" fill="#c4bed4">保留 active battle；没有战斗 UI</text>
+<rect x="440" y="844" width="270" height="84" rx="14" fill="#352c50" stroke="#5b526e"/>
+<text x="460" y="878" font-size="21" font-weight="600">战后结算</text>
+<text x="460" y="905" font-size="13" fill="#c4bed4">核对结果 → 单次领域领取</text>
+<text x="52" y="987" font-size="16" fill="#d5c9f2">所有页面：空数据可导航；存档异常、未决操作与断线时暂停变更。</text>
+<text x="52" y="1016" font-size="14" fill="#b4aec7">UNKNOWN → 查询原 ID / 原载荷；测试服务重启后保留未决记录，不自动再次扣款。</text>
+</g></svg>

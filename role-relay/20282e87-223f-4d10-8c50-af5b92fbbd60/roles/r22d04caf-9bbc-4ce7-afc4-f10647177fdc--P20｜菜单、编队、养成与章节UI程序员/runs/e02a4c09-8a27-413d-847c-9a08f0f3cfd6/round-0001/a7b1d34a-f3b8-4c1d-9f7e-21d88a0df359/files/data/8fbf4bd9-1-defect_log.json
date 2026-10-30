@@ -1,0 +1,150 @@
+{
+  "schema_version": "P20-DEFECTS/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "records": [
+    {
+      "id": "P20-D001",
+      "kind": "PRODUCT_PORT_DEFECT",
+      "status": "AUTHOR_FIXED_INDEPENDENT_RETEST_NOT_RUN",
+      "fix_owner": "P20",
+      "observed": "Browser first boot timed out waiting for wallet; UI displayed Illegal invocation when calling unbound native fetch.",
+      "reproduction": "Run the preserved source snapshot from evidence/runs/browser_001/executed_p20_sources.zip with its recorded browser command in a separate copy.",
+      "failure_evidence": [
+        {
+          "path": "evidence/browser_001/browser_results.json",
+          "size_bytes": 1426,
+          "sha256": "e99d3b3a18b8ef977a8f1378bc4d35df7e226f8cef35e75679b6df250ea30369"
+        },
+        {
+          "path": "evidence/browser_001/failure.png",
+          "size_bytes": 24557,
+          "sha256": "652cdf2a4f5729bb7365c90208ea91ff1314375d20acdff0e1e5ed5f2ff1f0a4"
+        },
+        {
+          "path": "evidence/runs/browser_001/run_receipt.json",
+          "size_bytes": 7120,
+          "sha256": "079abb91d2ca561dbbf94e320fdfc4b68055bb2ef6341d67ff5a6e06f19fb8c8"
+        }
+      ],
+      "root_cause": "HttpMetaPort stored native fetch without binding its receiver; Node fixture fetch did not expose browser receiver requirements.",
+      "change": "Bind default globalThis.fetch to globalThis; add a receiver-sensitive regression test.",
+      "changed_files": [
+        "ui/meta/port.mjs",
+        "tests/meta_ui_unit/model_controller.test.mjs"
+      ],
+      "author_retest": [
+        {
+          "path": "evidence/runs/author_final/run_receipt.json",
+          "size_bytes": 7561,
+          "sha256": "2de7dd3921caa14bc677a199aefa40337e0d73a43bbf84f3303472391ab9e21d"
+        },
+        {
+          "path": "evidence/browser_final/browser_results.json",
+          "size_bytes": 5695,
+          "sha256": "e4d301c773bf43f381ad3a1312a9c6ada2ad8163d371bdec165431ab9ba1421d"
+        }
+      ],
+      "independent_owner": "P32/P33",
+      "independent_status": "NOT_RUN",
+      "p35_close": "NOT_RUN"
+    },
+    {
+      "id": "P20-D002",
+      "kind": "AUTHOR_BROWSER_HARNESS_DEFECT",
+      "status": "AUTHOR_FIXED_INDEPENDENT_RETEST_NOT_RUN",
+      "fix_owner": "P20",
+      "observed": "Browser run 002 check 22 expected reset balance 15 but page still displayed prior snapshot balance 10; first 21 checks passed.",
+      "reproduction": "Use preserved source snapshot evidence/runs/browser_002/executed_p20_sources.zip and run its browser command.",
+      "failure_evidence": [
+        {
+          "path": "evidence/browser_002/browser_results.json",
+          "size_bytes": 4935,
+          "sha256": "02fbfe7cda3d95a49fbf6667de8bae3d3914c2e3465b8be83dc99684f30125f9"
+        },
+        {
+          "path": "evidence/runs/browser_002/run_receipt.json",
+          "size_bytes": 7120,
+          "sha256": "bf257d4fc823718671035a78c4f846c4bfa7ac412f2e0a494c20c87f751df4e7"
+        }
+      ],
+      "root_cause": "Fixture reset changed server state, while page.goto to the same document with a different hash did not reload the view. The test expected an unrequested server refresh.",
+      "change": "After explicit fixture reset, reload the document before waiting for the new view. Do not change wallet or navigation implementation to satisfy the assertion.",
+      "changed_files": [
+        "tools/browser_check.mjs"
+      ],
+      "author_retest": [
+        {
+          "path": "evidence/browser_003/browser_results.json",
+          "size_bytes": 5695,
+          "sha256": "dd2af94e8aec173a4ad1e9d8539485355745543954748c39da0f7df88ab75c94"
+        },
+        {
+          "path": "evidence/browser_final/browser_results.json",
+          "size_bytes": 5695,
+          "sha256": "e4d301c773bf43f381ad3a1312a9c6ada2ad8163d371bdec165431ab9ba1421d"
+        }
+      ],
+      "independent_owner": "P32",
+      "independent_status": "NOT_RUN",
+      "p35_close": "NOT_RUN"
+    },
+    {
+      "id": "P20-E001",
+      "kind": "EVIDENCE_QUALITY",
+      "status": "SUPERSEDED_WITH_FULL_CASE_OUTPUT",
+      "fix_owner": "P20",
+      "observed": "Initial Node default isolation output contained only one passing file-wrapper test. It was not admitted as evidence for individual cases.",
+      "evidence": [
+        {
+          "path": "evidence/runs/js_001/stdout.log",
+          "size_bytes": 179,
+          "sha256": "b7a357f514461b4ab95fc13443b59cf85d72540faad475cc1640c8f9dfc826a3"
+        },
+        {
+          "path": "evidence/runs/js_001/run_receipt.json",
+          "size_bytes": 6949,
+          "sha256": "2b1344b71910aeb94703dc5d23186c2a50b6fd2fba14ce7f8ee1b357ae815a32"
+        }
+      ],
+      "change": "Use --test-isolation=none and require a parsed per-case test count greater than one; actual final count is 106.",
+      "replacement": [
+        {
+          "path": "evidence/runs/author_final/stdout.log",
+          "size_bytes": 7611,
+          "sha256": "b1ac40c76c31acebd4dd6fed845000cf70a63ea78c6d86e23555e41604239fc7"
+        }
+      ],
+      "independent_status": "NOT_RUN"
+    },
+    {
+      "id": "P20-ENV001",
+      "kind": "ENVIRONMENT_INSTALL_FAILURE",
+      "status": "RESOLVED_WITH_APPROVED_TOOL_EXECUTION",
+      "fix_owner": "P20",
+      "observed": "Initial npm browser package installation failed under restricted execution (EPERM).",
+      "evidence": [
+        {
+          "path": "evidence/environment/npm_initial_failure.log",
+          "size_bytes": 1624,
+          "sha256": "8c3317f4f4904fd935dc04f63f29b9d37a4a03b609bc90c2075c9294fba7ac55"
+        }
+      ],
+      "resolution": "Reran browser dependency installation through the authorized escalation tool; success log and exact package lock preserved. No access controls were changed.",
+      "resolution_evidence": [
+        {
+          "path": "evidence/environment/npm_install.log",
+          "size_bytes": 332,
+          "sha256": "c17f10243a838df4a89e44dd5ddea69626c02584428463a0ebb777b06f5b9b12"
+        },
+        {
+          "path": "evidence/environment/browser_package-lock.json",
+          "size_bytes": 7685,
+          "sha256": "06d5e7e5b9fbbc8945a807748316ed1b8441be617bd5d5d0336e6d348b543243"
+        }
+      ],
+      "target_environment_acceptance": "NOT_RUN"
+    }
+  ],
+  "same_issue_no_new_evidence_twice": "NOT_TRIGGERED; D001 and D002 are distinct causes with separate failing source snapshots and successful retest evidence",
+  "open_production_issues": "blockers.json"
+}

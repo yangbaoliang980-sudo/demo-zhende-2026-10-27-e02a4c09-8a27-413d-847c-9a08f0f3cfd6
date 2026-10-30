@@ -1,0 +1,60 @@
+{
+  "schema_version": "P20-PATH-REQUEST/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "status": "BLOCKED_NOT_MAPPED",
+  "source_mapping": {
+    "relative_path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+    "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+  },
+  "original_p13_rows": [
+    {
+      "owner": "P20",
+      "design_path": "ui/meta/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    },
+    {
+      "owner": "P20",
+      "design_path": "tests/meta_ui_unit/**",
+      "isolated_relative_path": null,
+      "actual_production_path": null,
+      "scope": "PLANNED_NOT_ACTUAL",
+      "status": "BLOCKED_NOT_MAPPED",
+      "write_allowed": false,
+      "note": "Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite."
+    }
+  ],
+  "actual_game_repository": null,
+  "actual_game_commit": null,
+  "production_write_authorized": false,
+  "p13_authorization_received": false,
+  "isolated_delivery": {
+    "package_root": "P20_MetaUI_V0.1",
+    "authorization_basis": "USER_CURRENT_P20_TASK: explicit isolated development and actual downloadable artifacts",
+    "is_p13_mapping": false,
+    "new_owned_paths": [
+      "ui/meta/**",
+      "tests/meta_ui_unit/**",
+      "tools/**",
+      "run_ui.py",
+      "meta_ui_tests.py",
+      "start_windows*.cmd",
+      "P20 handoff metadata at package root"
+    ],
+    "original_copies": "sources/** and ui/meta/assets/fonts/** are immutable upstream bytes; do not edit"
+  },
+  "requested_owner": "P13",
+  "requested_evidence": [
+    "actual repository URL",
+    "fixed base commit",
+    "actual production paths",
+    "explicit write whitelist",
+    "approved engine/runtime and target OS",
+    "conflict owner and rollback evidence"
+  ],
+  "conflict_rule": "Preserve both base SHAs and ChangeRequest; never overwrite or merge another owner file."
+}

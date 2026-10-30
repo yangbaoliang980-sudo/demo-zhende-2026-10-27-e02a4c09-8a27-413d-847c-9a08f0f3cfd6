@@ -1,0 +1,174 @@
+{
+  "schema_version": "P20-VERIFICATION/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "version": "P20-METAUI/0.1.0-isolated",
+  "delivery_status": "ISOLATED_META_UI_DELIVERED",
+  "production_status": "BLOCKED",
+  "evidence_role": "P20_AUTHOR_ONLY",
+  "layers": [
+    {
+      "layer": "AUTHOR_DESIGN_REVIEW",
+      "status": "COMPLETED_AUTHOR_REVIEW",
+      "evidence": [
+        "author_review.md"
+      ],
+      "not_equivalent_to": [
+        "P23_ACCEPTANCE",
+        "P25_STYLE",
+        "P37_COMPLIANCE"
+      ]
+    },
+    {
+      "layer": "AUTHOR_JS_UNIT",
+      "status": "PASS",
+      "executed": 106,
+      "pass": 106,
+      "fail": 0,
+      "skip": 0,
+      "evidence": [
+        {
+          "path": "evidence/runs/author_final/stdout.log",
+          "size_bytes": 7611,
+          "sha256": "b1ac40c76c31acebd4dd6fed845000cf70a63ea78c6d86e23555e41604239fc7"
+        },
+        {
+          "path": "evidence/runs/author_final/run_receipt.json",
+          "size_bytes": 7561,
+          "sha256": "2de7dd3921caa14bc677a199aefa40337e0d73a43bbf84f3303472391ab9e21d"
+        }
+      ],
+      "command": [
+        "node",
+        "--test",
+        "--test-isolation=none",
+        "tests/meta_ui_unit/model_controller.test.mjs"
+      ]
+    },
+    {
+      "layer": "AUTHOR_ORIGINAL_DOMAIN_CONTRACT",
+      "status": "PASS",
+      "executed": 38,
+      "pass": 38,
+      "fail": 0,
+      "skip": 0,
+      "evidence": [
+        {
+          "path": "evidence/runs/author_final/stderr.log",
+          "size_bytes": 5462,
+          "sha256": "b58122816f68023d8c1de6da2fcae5f873f3f65a51e3b05c7bdac953e0c6337d"
+        },
+        {
+          "path": "evidence/runs/author_final/run_receipt.json",
+          "size_bytes": 7561,
+          "sha256": "2de7dd3921caa14bc677a199aefa40337e0d73a43bbf84f3303472391ab9e21d"
+        }
+      ],
+      "meaning": "Unchanged P13/P17/P18/P11 code with isolated test adapters; not production contract acceptance"
+    },
+    {
+      "layer": "AUTHOR_REAL_CHROMIUM_UI",
+      "status": "PASS",
+      "executed": 31,
+      "pass": 31,
+      "fail": 0,
+      "browser_version": "153.0.8010.0",
+      "evidence": [
+        {
+          "path": "evidence/browser_final/browser_results.json",
+          "size_bytes": 5695,
+          "sha256": "e4d301c773bf43f381ad3a1312a9c6ada2ad8163d371bdec165431ab9ba1421d"
+        },
+        {
+          "path": "evidence/runs/browser_final/run_receipt.json",
+          "size_bytes": 7599,
+          "sha256": "e376630c41e5f86fc78ecfa48616bb88f32b443ef092582fe5de9410a76d85f1"
+        }
+      ],
+      "meaning": "Actual DOM/HTTP/Linux browser; synthetic gameplay data; no real Anki or P19 integration",
+      "page_errors": 0,
+      "intentional_http_503": 3
+    },
+    {
+      "layer": "UPSTREAM_BYTES_UNCHANGED",
+      "status": "PASS",
+      "executed": 133,
+      "evidence": [
+        {
+          "path": "evidence/input_immutability_check.json",
+          "size_bytes": 49576,
+          "sha256": "93b4842d97dec78ebc92868c3c6cfb76f56f9a4a08ccdb6dfbda93c52b536c0a"
+        }
+      ],
+      "meaning": "7 uploaded archives + 126 copied originals"
+    },
+    {
+      "layer": "PRODUCTION_PREFLIGHT",
+      "status": "BLOCKED",
+      "exit_code": 3,
+      "evidence": [
+        {
+          "path": "evidence/runs/preflight_final/stdout.log",
+          "size_bytes": 3784,
+          "sha256": "429b3f51d5912a1f11213dc725470da39e264c3bb81843a0f4d69fcabed889e9"
+        },
+        {
+          "path": "evidence/runs/preflight_final/run_receipt.json",
+          "size_bytes": 7562,
+          "sha256": "9569e99d6cdfc5f86a0ad9d3abdda6b4815f22e5f39b6598d5b203f5446d9744"
+        }
+      ]
+    },
+    {
+      "layer": "P23_DESIGN_ACCEPTANCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P25_STYLE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P37_COMPLIANCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P32_INDEPENDENT_AUTOMATION",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P33_MANUAL_ACCEPTANCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "P35_INDEPENDENT_GATE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "TARGET_GAME_ENGINE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "WINDOWS_DEVICE",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "REAL_ANKI",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "PRODUCTION_SAVE_RESTART",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "FULL_GAME_E2E",
+      "status": "NOT_RUN"
+    },
+    {
+      "layer": "EXT_INTEGRATION",
+      "status": "NOT_RUN"
+    }
+  ],
+  "historical_failures_preserved": "defect_log.json",
+  "fresh_archive_replay": "See external P20_delivery_receipt.json; package bytes are frozen before re-extraction",
+  "non_additive_counts": "Repeated author runs and fresh archive reruns do not add new coverage counts",
+  "current_source_match": "Every source hash captured by final author/browser/preflight runs equals the delivered source at report creation."
+}

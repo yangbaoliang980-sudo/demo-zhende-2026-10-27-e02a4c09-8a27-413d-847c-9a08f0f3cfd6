@@ -1,0 +1,98 @@
+{
+  "schema_version": "P20-STAGE-UNLOCK-VIEWS/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "source": {
+    "relative_path": "sources/P18/stage_runtime/projection.py",
+    "sha256": "eee49f368604cc1049b84e373d7bae6edf6310d4560c3d2e58fb8fdee0bee3df"
+  },
+  "interface_version": "P18-PROGRESS-VIEW/0.1.0-proposal",
+  "renderer": "ui/meta/renderer.mjs",
+  "model": "ui/meta/model.mjs",
+  "authority": "P18; UI does not derive unlocks",
+  "states": [
+    {
+      "domain_status": "LOCKED",
+      "display_semantics": "未解锁",
+      "potential_enter_action": false,
+      "action_rule": "显示领域前置条件；禁用准备出发",
+      "first_clear_rule": "不改变"
+    },
+    {
+      "domain_status": "AVAILABLE",
+      "display_semantics": "可挑战",
+      "potential_enter_action": true,
+      "action_rule": "还须 action_enabled、无 active battle、存档 READY、无未决操作",
+      "first_clear_rule": "只显示尚未使用或已使用原字段"
+    },
+    {
+      "domain_status": "CLEARED",
+      "display_semantics": "已通关",
+      "potential_enter_action": true,
+      "action_rule": "允许原服务批准的重复挑战；不恢复首通资格",
+      "first_clear_rule": "保持原 first_clear_consumed"
+    },
+    {
+      "domain_status": "IN_PROGRESS",
+      "display_semantics": "进行中",
+      "potential_enter_action": false,
+      "action_rule": "查看出战记录/返回；不重复创建战斗",
+      "first_clear_rule": "保持原字段"
+    },
+    {
+      "domain_status": "REVIEW_REQUIRED",
+      "display_semantics": "进度待核对",
+      "potential_enter_action": false,
+      "action_rule": "保留首通消耗记录；不可把失效进度当未领取",
+      "first_clear_rule": "保持原字段，不能重新授首通"
+    },
+    {
+      "domain_status": "PENDING_RECONCILIATION",
+      "display_semantics": "结算已隔离",
+      "potential_enter_action": false,
+      "action_rule": "显示隔离；禁止入场/领取；等待领域查询",
+      "first_clear_rule": "保持原字段，不显示到账"
+    }
+  ],
+  "missing_data": {
+    "status": "PLACEHOLDER",
+    "wallet_display": "—",
+    "stage_progress": null,
+    "all_mutations": false
+  },
+  "binding_checks": [
+    "profile_id",
+    "stage revision",
+    "source_snapshot_sha256",
+    "stage_details id set equality",
+    "action requires unlocked/no review/no active battle"
+  ],
+  "first_clear_invariant": "first_clear_consumed, valid_confirmed_clear and review_required are independent facts; no client inference or reset",
+  "native_examples": [
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/demo.json",
+      "sha256": "b99c0a7544e36418141c14ae2df2f40ad45de45ac8cfab74dedf3d3a44832312"
+    },
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/active_battle.json",
+      "sha256": "1eb2984c4df29bca2a08382b2b4d17ebc3fc1e73d1815a0522f139848076e593"
+    },
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/settlement_pending.json",
+      "sha256": "d5b4f754814b7d662771df70847469a0ad3de8f9eae5071cb2120dcba9731aa6"
+    },
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/settlement_committed.json",
+      "sha256": "4de3c7450754a892f423e3f88488ad6aadd44d54987b162e44cb29fcc2df1c1c"
+    },
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/stage_review.json",
+      "sha256": "3f297e4d20c4c8473ec526551d9a322320f5640f7c2a3f34670b483c7ce84685"
+    },
+    {
+      "relative_path": "tests/meta_ui_unit/fixtures/unbound.json",
+      "sha256": "dc9bf8846bce27cf3211de6d8309c9e694b77b355ebc2c06e4f91a11d1e0f891"
+    }
+  ],
+  "production_status": "BLOCKED",
+  "independent_acceptance": "NOT_RUN"
+}

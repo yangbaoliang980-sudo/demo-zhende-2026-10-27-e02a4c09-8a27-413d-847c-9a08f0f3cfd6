@@ -1,0 +1,199 @@
+{
+  "schema_version": "P20-BLOCKERS/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "production_status": "BLOCKED",
+  "blockers": [
+    {
+      "id": "P20-B01",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "missing": [
+        "actual_path_mapping for ui/meta/**",
+        "actual_path_mapping for tests/meta_ui_unit/**",
+        "actual game repo/base commit/write whitelist"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P18/upstream/P13/architecture/actual_path_mapping.json",
+          "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+        }
+      ],
+      "isolated_action": "仅交付新隔离目录；正式覆盖禁用"
+    },
+    {
+      "id": "P20-B02",
+      "owner": "P13/P34",
+      "status": "BLOCKED",
+      "missing": [
+        "approved engine/runtime",
+        "target OS/device/build entry",
+        "target test environment evidence"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P18/upstream/P13/architecture/target_environment_requirements.json",
+          "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+        }
+      ],
+      "isolated_action": "本轮仅 Linux Python/Chromium；Windows/目标引擎 NOT_RUN"
+    },
+    {
+      "id": "P20-B03",
+      "owner": "P23",
+      "status": "BLOCKED",
+      "missing": [
+        "versioned menu/party/growth/stage/return user flows",
+        "navigation/anchors acceptance"
+      ],
+      "evidence": [],
+      "isolated_action": "P20 已实现并提供流程供受理，未冒充 P23 设计通过"
+    },
+    {
+      "id": "P20-B04",
+      "owner": "P24",
+      "status": "BLOCKED",
+      "missing": [
+        "versioned official component/art assets",
+        "editable source and license metadata"
+      ],
+      "evidence": [],
+      "isolated_action": "文字立绘占位明确标注；P25/P37 独立风格与合规 NOT_RUN"
+    },
+    {
+      "id": "P20-B05",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "missing": [
+        "accepted P20 coherent read view DTO",
+        "accepted command gateway/reply and error vocabulary",
+        "P17/P18/P11 owner acceptance"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "sources/P18/upstream/P17/P17_API.md",
+          "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+        },
+        {
+          "relative_path": "sources/P18/P18_API.md",
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        },
+        {
+          "relative_path": "sources/P11/interface_rfc.md",
+          "sha256": "f611928abe0e0fbea38e2003f1b8355b10c546dc0269d393492ead74cff96063"
+        }
+      ],
+      "isolated_action": "仅使用有版本提案，原接口字节未改"
+    },
+    {
+      "id": "P20-B06",
+      "owner": "P21",
+      "status": "BLOCKED",
+      "missing": [
+        "real SaveStatusView producer",
+        "durable atomic commit/lookup",
+        "request retention/continuity across restart and migration"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        }
+      ],
+      "isolated_action": "内存提交 durable=false；重启旧请求保持未决，未实现生产存档"
+    },
+    {
+      "id": "P20-B07",
+      "owner": "P11/P12/P21",
+      "status": "BLOCKED",
+      "missing": [
+        "real Anki/IPC connection and redelivery status read port",
+        "accepted trusted APPLIED proof bound to current wallet and identity"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P11/formal_prerequisites.json",
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        },
+        {
+          "relative_path": "sources/P11/ledger_runtime/service.py",
+          "sha256": "093b4312366d103081d6c55eeca1e278f8499c95acbc512cc8d700776aa4c7dd"
+        }
+      ],
+      "isolated_action": "模拟 APPLIED 显示测试记录已处理；正式已入账分支 BLOCKED"
+    },
+    {
+      "id": "P20-B08",
+      "owner": "P08/P01",
+      "status": "BLOCKED",
+      "missing": [
+        "approved production reward policy/version/SHA",
+        "approved content/equipment scope"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P11/sources/P08/formal_prerequisites.json",
+          "sha256": "0d682957a5913ddefb57e266337338f46753bb88f622d49bdb7818312353b3b6"
+        },
+        {
+          "relative_path": "sources/P18/upstream/P17/fixtures/equipment_test_only.json",
+          "sha256": "34953c7c212e8b09bd0a6ff1e0b33679b682051372d6d5510dd3fca493842c83"
+        }
+      ],
+      "isolated_action": "不从测试奖励或角色数推定正式范围；装备默认关闭"
+    },
+    {
+      "id": "P20-B09",
+      "owner": "P13/P19/P18",
+      "status": "BLOCKED",
+      "missing": [
+        "accepted stage admission to battle route",
+        "trusted terminal result lookup",
+        "scene return and active battle recovery"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P19/P19_API.md",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c"
+        },
+        {
+          "relative_path": "sources/P18/P18_API.md",
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        }
+      ],
+      "isolated_action": "仅交接页；测试工具注入合成终局，未运行或整合 P19"
+    },
+    {
+      "id": "P20-B10",
+      "owner": "P32/P33/P35",
+      "status": "NOT_RUN",
+      "missing": [
+        "P32 independent automation",
+        "P33 manual/target-device acceptance",
+        "P35 independent evidence gate"
+      ],
+      "evidence": [],
+      "isolated_action": "作者测试不替代独立门禁"
+    },
+    {
+      "id": "P20-B11",
+      "owner": "P01/USER/EXT-INTEGRATOR",
+      "status": "BLOCKED",
+      "missing": [
+        "explicit integrator appointment",
+        "authorized integration task and fixed input acceptance"
+      ],
+      "evidence": [
+        {
+          "relative_path": "sources/P18/upstream/P01/planning/handoffs/role_activation_register.tsv",
+          "sha256": "5bbb4eb565b2f6dd06bb68a0908b22e7b561061cb1c8afbd8c07dfac0cf6e862"
+        }
+      ],
+      "isolated_action": "EXT-INTEGRATOR 未指定；本岗不实施跨模块合并"
+    }
+  ],
+  "rework_rule": "同一问题连续两轮返工无新证据，保留两轮原始日志并升级 P01；当前历史缺陷均有新证据，不冒充独立关单。"
+}

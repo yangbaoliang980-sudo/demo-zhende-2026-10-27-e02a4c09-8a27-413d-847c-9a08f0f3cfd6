@@ -1,0 +1,1388 @@
+{
+  "schema_version": "P20-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "version": "P20-METAUI/0.1.0-isolated",
+  "archive": {
+    "filename": "P20_MetaUI_V0.1.zip",
+    "size_bytes": 6486161,
+    "sha256": "175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513"
+  },
+  "package_file_count": 270,
+  "manifest": {
+    "package_relative_path": "delivery_manifest.json",
+    "filename": "delivery_manifest.json",
+    "size_bytes": 242316,
+    "sha256": "4850893a89a9415a3933af89d8c263bf341b20a148964eb76016c6a7d22a73f7"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "size_bytes": 6812,
+      "sha256": "4a0b779bfcd33a928e890775155a6b0dc58b5b726b77f9e100a2036d9b0a136a",
+      "package_relative_path": "README.md"
+    },
+    {
+      "filename": "run_ui.py",
+      "size_bytes": 5138,
+      "sha256": "6e5aad0a7b2a3721dfb88473cc1cbebf57ba338925c621a89e1e920cf759c1b6",
+      "package_relative_path": "run_ui.py"
+    },
+    {
+      "filename": "meta_ui_tests.py",
+      "size_bytes": 1626,
+      "sha256": "f5d3e4d771d5de82fef1f109656aa3fb4ec1cffb061bc3af656da7ad6a56dd85",
+      "package_relative_path": "meta_ui_tests.py"
+    },
+    {
+      "filename": "party_menu_flow.md",
+      "size_bytes": 5253,
+      "sha256": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4",
+      "package_relative_path": "party_menu_flow.md"
+    },
+    {
+      "filename": "stage_unlock_views.json",
+      "size_bytes": 3674,
+      "sha256": "eadaf021331bc9bcfba6483987d400df4fb7c2b6c85d0abddf3cdbc8d2d37c7b",
+      "package_relative_path": "stage_unlock_views.json"
+    },
+    {
+      "filename": "learning_status_ui_tests.md",
+      "size_bytes": 4072,
+      "sha256": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707",
+      "package_relative_path": "learning_status_ui_tests.md"
+    },
+    {
+      "filename": "P20_API.md",
+      "size_bytes": 6722,
+      "sha256": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47",
+      "package_relative_path": "P20_API.md"
+    },
+    {
+      "filename": "domain_api_mapping.json",
+      "size_bytes": 11189,
+      "sha256": "efec2091cfb4a476490b4dc672403ae93e26934b70f2c121cc6e990ea2b74a04",
+      "package_relative_path": "domain_api_mapping.json"
+    },
+    {
+      "filename": "page_state_diagram.svg",
+      "size_bytes": 4696,
+      "sha256": "09369b5f65079715109793ed821d5fcec32cf7dcfffd00825f8dc01a056ec4a3",
+      "package_relative_path": "page_state_diagram.svg"
+    },
+    {
+      "filename": "page_state_diagram.mmd",
+      "size_bytes": 428,
+      "sha256": "f85d926fb2c2af3d77474668627a51167fcfec7ea073773687c9ad987567d6ed",
+      "package_relative_path": "page_state_diagram.mmd"
+    },
+    {
+      "filename": "integration_handoff.md",
+      "size_bytes": 5005,
+      "sha256": "c2c511aa8b310ea8ce989cca60f4768c91bd5c181e191299f4a68bc44a9f8fab",
+      "package_relative_path": "integration_handoff.md"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "size_bytes": 207659,
+      "sha256": "93159fecffaee1749440678ff261c98f1163ca218f23e2d15f7d1659cc702572",
+      "package_relative_path": "source_input_receipt.json"
+    },
+    {
+      "filename": "verification_status.json",
+      "size_bytes": 4979,
+      "sha256": "51ba4aa6b3d9d83a2a36b37f91dbba90bd7164be8c9e53857c1b9a4e539b40c3",
+      "package_relative_path": "verification_status.json"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "size_bytes": 242316,
+      "sha256": "4850893a89a9415a3933af89d8c263bf341b20a148964eb76016c6a7d22a73f7",
+      "package_relative_path": "delivery_manifest.json"
+    },
+    {
+      "filename": "blockers.json",
+      "size_bytes": 6871,
+      "sha256": "79ae38641dd948ff42e67f230591259f4f3fd32a65912c3f62face41ff8fe796",
+      "package_relative_path": "blockers.json"
+    },
+    {
+      "filename": "interface_rfcs.json",
+      "size_bytes": 6611,
+      "sha256": "e05866b92ef0a688eea157b01efeeab0520ff42feeab395aba7e508121ada928",
+      "package_relative_path": "interface_rfcs.json"
+    },
+    {
+      "filename": "defect_log.json",
+      "size_bytes": 6488,
+      "sha256": "8fbf4bd947b8095e4287e3489432d0a192a31d7d7350cb77284883a1cd5ce0d4",
+      "package_relative_path": "defect_log.json"
+    },
+    {
+      "filename": "downstream_receipts.json",
+      "size_bytes": 60156,
+      "sha256": "1b0e0f61f51789e25dcfe9f56baa9ae2181cf4f39a203b81c723d9fa0703e609",
+      "package_relative_path": "downstream_receipts.json"
+    },
+    {
+      "filename": "actual_path_request.json",
+      "size_bytes": 2188,
+      "sha256": "95a94dd5cea4620970c1d1be4c07c1d64368506a2d4cd5623a845f0437183e81",
+      "package_relative_path": "actual_path_request.json"
+    },
+    {
+      "filename": "P20_Menu_1280.png",
+      "size_bytes": 236583,
+      "sha256": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141",
+      "package_relative_path": "evidence/browser_final/P20_Menu_1280.png"
+    },
+    {
+      "filename": "P20_Party_1280.png",
+      "size_bytes": 182187,
+      "sha256": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3",
+      "package_relative_path": "evidence/browser_final/P20_Party_1280.png"
+    },
+    {
+      "filename": "P20_Growth_1280.png",
+      "size_bytes": 127255,
+      "sha256": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2",
+      "package_relative_path": "evidence/browser_final/P20_Growth_1280.png"
+    },
+    {
+      "filename": "P20_Chapters_1280.png",
+      "size_bytes": 153618,
+      "sha256": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b",
+      "package_relative_path": "evidence/browser_final/P20_Chapters_1280.png"
+    },
+    {
+      "filename": "P20_Settlement_1280.png",
+      "size_bytes": 102991,
+      "sha256": "0ef60eefd142644a7872d9b0859f967ee98afe21ba824a8bd54d838d5140bb7a",
+      "package_relative_path": "evidence/browser_final/P20_Settlement_1280.png"
+    },
+    {
+      "filename": "P20_Learning_Quarantine.png",
+      "size_bytes": 93389,
+      "sha256": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20",
+      "package_relative_path": "evidence/browser_final/P20_Learning_Quarantine.png"
+    },
+    {
+      "filename": "P20_Migration_Failed.png",
+      "size_bytes": 152232,
+      "sha256": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde",
+      "package_relative_path": "evidence/browser_final/P20_Migration_Failed.png"
+    },
+    {
+      "filename": "P20_Menu_390.png",
+      "size_bytes": 136599,
+      "sha256": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b",
+      "package_relative_path": "evidence/browser_final/P20_Menu_390.png"
+    },
+    {
+      "filename": "P20_Restart_Pending.png",
+      "size_bytes": 141542,
+      "sha256": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083",
+      "package_relative_path": "evidence/browser_final/P20_Restart_Pending.png"
+    }
+  ],
+  "integrity": {
+    "zip_crc": "PASS",
+    "source_vs_archive_files": 270,
+    "source_vs_archive": "PASS",
+    "standalone_export_count": 28,
+    "export_filename_and_bytes": "PASS",
+    "post_replay_archive_source_exports_recheck": "PASS"
+  },
+  "fresh_archive_replay": {
+    "status": "AUTHOR_TESTS_PASS_PRODUCTION_PREFLIGHT_BLOCKED",
+    "extracted_package_path": "/workspace/scratch/fc4d03cca626/fresh_extract_final/P20_MetaUI_V0.1",
+    "runs": [
+      {
+        "label": "archive_files",
+        "status": "PASS",
+        "execution": {
+          "schema_version": "P20-EXECUTION/0.1.0",
+          "layer": "AUTHOR_ONLY",
+          "command": [
+            "python",
+            "-B",
+            "tools/verify_delivery.py"
+          ],
+          "working_directory": "/workspace/scratch/fc4d03cca626/fresh_extract_final/P20_MetaUI_V0.1",
+          "started_utc": "2026-10-30T04:45:24.794258+00:00",
+          "finished_utc": "2026-10-30T04:45:24.874075+00:00",
+          "elapsed_seconds": 0.08,
+          "exit_code": 0,
+          "sources": [
+            {
+              "path": "meta_ui_tests.py",
+              "size_bytes": 1626,
+              "sha256": "f5d3e4d771d5de82fef1f109656aa3fb4ec1cffb061bc3af656da7ad6a56dd85"
+            },
+            {
+              "path": "run_ui.py",
+              "size_bytes": 5138,
+              "sha256": "6e5aad0a7b2a3721dfb88473cc1cbebf57ba338925c621a89e1e920cf759c1b6"
+            },
+            {
+              "path": "start_windows.cmd",
+              "size_bytes": 60,
+              "sha256": "73bfa62e706cb5865892725ec24999c70bf927399cab5ee82df620772354c605"
+            },
+            {
+              "path": "start_windows_unbound.cmd",
+              "size_bytes": 50,
+              "sha256": "a2f315b82147e7a4d5acdcd8c25f1cdcac32002c1226f833fbb0742ec6b591f8"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/active_battle.json",
+              "size_bytes": 5974,
+              "sha256": "1eb2984c4df29bca2a08382b2b4d17ebc3fc1e73d1815a0522f139848076e593"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/demo.json",
+              "size_bytes": 5835,
+              "sha256": "b99c0a7544e36418141c14ae2df2f40ad45de45ac8cfab74dedf3d3a44832312"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/empty.json",
+              "size_bytes": 3419,
+              "sha256": "04908e3021bd18c65ca1a076eb58484fd70c8640932a2623b66864bfe3338ba4"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/equipment.json",
+              "size_bytes": 7076,
+              "sha256": "18e0bac55d236f522c46430df6125d927608037280038d804999414a7e5a08c1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_applied.json",
+              "size_bytes": 6779,
+              "sha256": "caf111756e1ad57330c677b5a39365d8dd47ce6b4903ee7f6360b775f61e2a42"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_connected.json",
+              "size_bytes": 5832,
+              "sha256": "999d8dbaf9a49930e13b09ffa2625f4c504f00f584803adb6979516f82986157"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_disconnected.json",
+              "size_bytes": 5835,
+              "sha256": "d93dccce020affae1690aad0245e8082ea430206063602ac8b3ee92dab1a92d2"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_pending_reconciliation.json",
+              "size_bytes": 6807,
+              "sha256": "11c616e0937c2b0a590aaebe3d8afd366392611e74ad1328948581f2387e8487"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_quarantined.json",
+              "size_bytes": 6724,
+              "sha256": "ee0d1d6211ffef141d74ee82aad8b2303fde8bec1ede5ad5bd3658cd2f633e5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reconciling.json",
+              "size_bytes": 6143,
+              "sha256": "5b9d74b50da71e822a6e1a91bc4b89e2f72c551a5053f61e89b7c634a5841ea1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_redelivery.json",
+              "size_bytes": 6746,
+              "sha256": "f6e751b9a7b369d3ea3dd85c67318c5de4280c5bf033cc4422d599a5a3be760d"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_rejected.json",
+              "size_bytes": 6723,
+              "sha256": "24abdb81187667a9167d2e37f84aa0ef9663ba57ef4cfbe5115d2453340a3186"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reverted.json",
+              "size_bytes": 6781,
+              "sha256": "7105c4a44b5eee06d90fa87e9f8dbfb9ad18454c719ae3fdcc89daf6b3b28d5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_committed.json",
+              "size_bytes": 6900,
+              "sha256": "4de3c7450754a892f423e3f88488ad6aadd44d54987b162e44cb29fcc2df1c1c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_pending.json",
+              "size_bytes": 6374,
+              "sha256": "d5b4f754814b7d662771df70847469a0ad3de8f9eae5071cb2120dcba9731aa6"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/stage_review.json",
+              "size_bytes": 6948,
+              "sha256": "3f297e4d20c4c8473ec526551d9a322320f5640f7c2a3f34670b483c7ce84685"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/unbound.json",
+              "size_bytes": 1319,
+              "sha256": "dc9bf8846bce27cf3211de6d8309c9e694b77b355ebc2c06e4f91a11d1e0f891"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/upgrade_committed.json",
+              "size_bytes": 5849,
+              "sha256": "120ef2a9093d5ec83776d5faf92b4593bea6f008a9c5aaf8ea4fc854154f8378"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.html",
+              "size_bytes": 2018,
+              "sha256": "d2725860e922c714fe4519de5c535246fcf1902d1f2d0b0e61c252baf14f4c7a"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.mjs",
+              "size_bytes": 776,
+              "sha256": "cb7f7f9c8fb1f55dfa3fbb9cc9f398e9eba9201fbf1f324ee5e1496ad161f1b8"
+            },
+            {
+              "path": "tests/meta_ui_unit/model_controller.test.mjs",
+              "size_bytes": 20032,
+              "sha256": "e44b82be4d30b9ca903647ed7204bf509d419c38c71a50df232e0825de275b62"
+            },
+            {
+              "path": "tests/meta_ui_unit/support/fixture_host.py",
+              "size_bytes": 25439,
+              "sha256": "b9d1f8fd2efb4429b011771c60c18dc688f2dd2e87515623d58d3b641fa48502"
+            },
+            {
+              "path": "tests/meta_ui_unit/test_domain_contracts.py",
+              "size_bytes": 14407,
+              "sha256": "7dbb35840ef9bcb99b06b3549a5cb10abc2b1f43c6782ed65906950ee422881e"
+            },
+            {
+              "path": "tools/browser_check.mjs",
+              "size_bytes": 19055,
+              "sha256": "004507753485ed2acc6cd8f734285a8ba387197203c4796ac2d64a1ba590f1f9"
+            },
+            {
+              "path": "tools/generate_view_fixtures.py",
+              "size_bytes": 1870,
+              "sha256": "6c24426571cfcb60b239310538c6d851b49c36cf71c5c77da69fb9560c9620c2"
+            },
+            {
+              "path": "tools/preflight.py",
+              "size_bytes": 938,
+              "sha256": "40cbff20248363cf78ff60eb49dcaf07c20cccfd0ff8325d4a8679b008abcde5"
+            },
+            {
+              "path": "tools/record_run.py",
+              "size_bytes": 2445,
+              "sha256": "a477bf607d3732b51f20a52fc3d286a3dbf86388df16e3cd0f01f85063e896c0"
+            },
+            {
+              "path": "tools/verify_delivery.py",
+              "size_bytes": 1267,
+              "sha256": "5721c566a1706dd4ccb249e22293e72ef9826494337fad5431a2d188303eabec"
+            },
+            {
+              "path": "ui/meta/app.mjs",
+              "size_bytes": 3655,
+              "sha256": "c75e339a5f2b089d8bd6a777af9ab50c6d6a5eee7f98f6990ab4063cb42f7d62"
+            },
+            {
+              "path": "ui/meta/assets/fonts/package.json",
+              "size_bytes": 1488,
+              "sha256": "a22447ff56bc45bccdce140e3a5bc36f39de6750f8b54e3b7306ffe24613cc4a"
+            },
+            {
+              "path": "ui/meta/controller.mjs",
+              "size_bytes": 9577,
+              "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+            },
+            {
+              "path": "ui/meta/index.html",
+              "size_bytes": 1063,
+              "sha256": "260d623f318644c356c48f9ec2f8c935aa2a3c5d248c7db279ef26bf5db106b6"
+            },
+            {
+              "path": "ui/meta/model.mjs",
+              "size_bytes": 12128,
+              "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+            },
+            {
+              "path": "ui/meta/port.mjs",
+              "size_bytes": 983,
+              "sha256": "e268044440bbcf384657bd5117070c295e9cea9eb2fa29d2bd66dd29f3ad638a"
+            },
+            {
+              "path": "ui/meta/renderer.mjs",
+              "size_bytes": 19447,
+              "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602"
+            },
+            {
+              "path": "ui/meta/styles.css",
+              "size_bytes": 18853,
+              "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+            }
+          ],
+          "stdout_sha256": "acd5b83960151620f701d1bdd5777047763aa9ec6d3125f4096dcf3dc8ce3a4e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": "{\n  \"status\": \"PASS\",\n  \"verified_files\": 269,\n  \"manifest_self_binding\": \"EXTERNAL_DELIVERY_RECEIPT\",\n  \"failures\": []\n}\n",
+        "stderr": ""
+      },
+      {
+        "label": "archive_author",
+        "status": "PASS",
+        "execution": {
+          "schema_version": "P20-EXECUTION/0.1.0",
+          "layer": "AUTHOR_ONLY",
+          "command": [
+            "python",
+            "-B",
+            "meta_ui_tests.py"
+          ],
+          "working_directory": "/workspace/scratch/fc4d03cca626/fresh_extract_final/P20_MetaUI_V0.1",
+          "started_utc": "2026-10-30T04:45:24.799952+00:00",
+          "finished_utc": "2026-10-30T04:46:15.690911+00:00",
+          "elapsed_seconds": 50.891,
+          "exit_code": 0,
+          "sources": [
+            {
+              "path": "meta_ui_tests.py",
+              "size_bytes": 1626,
+              "sha256": "f5d3e4d771d5de82fef1f109656aa3fb4ec1cffb061bc3af656da7ad6a56dd85"
+            },
+            {
+              "path": "run_ui.py",
+              "size_bytes": 5138,
+              "sha256": "6e5aad0a7b2a3721dfb88473cc1cbebf57ba338925c621a89e1e920cf759c1b6"
+            },
+            {
+              "path": "start_windows.cmd",
+              "size_bytes": 60,
+              "sha256": "73bfa62e706cb5865892725ec24999c70bf927399cab5ee82df620772354c605"
+            },
+            {
+              "path": "start_windows_unbound.cmd",
+              "size_bytes": 50,
+              "sha256": "a2f315b82147e7a4d5acdcd8c25f1cdcac32002c1226f833fbb0742ec6b591f8"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/active_battle.json",
+              "size_bytes": 5974,
+              "sha256": "1eb2984c4df29bca2a08382b2b4d17ebc3fc1e73d1815a0522f139848076e593"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/demo.json",
+              "size_bytes": 5835,
+              "sha256": "b99c0a7544e36418141c14ae2df2f40ad45de45ac8cfab74dedf3d3a44832312"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/empty.json",
+              "size_bytes": 3419,
+              "sha256": "04908e3021bd18c65ca1a076eb58484fd70c8640932a2623b66864bfe3338ba4"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/equipment.json",
+              "size_bytes": 7076,
+              "sha256": "18e0bac55d236f522c46430df6125d927608037280038d804999414a7e5a08c1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_applied.json",
+              "size_bytes": 6779,
+              "sha256": "caf111756e1ad57330c677b5a39365d8dd47ce6b4903ee7f6360b775f61e2a42"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_connected.json",
+              "size_bytes": 5832,
+              "sha256": "999d8dbaf9a49930e13b09ffa2625f4c504f00f584803adb6979516f82986157"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_disconnected.json",
+              "size_bytes": 5835,
+              "sha256": "d93dccce020affae1690aad0245e8082ea430206063602ac8b3ee92dab1a92d2"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_pending_reconciliation.json",
+              "size_bytes": 6807,
+              "sha256": "11c616e0937c2b0a590aaebe3d8afd366392611e74ad1328948581f2387e8487"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_quarantined.json",
+              "size_bytes": 6724,
+              "sha256": "ee0d1d6211ffef141d74ee82aad8b2303fde8bec1ede5ad5bd3658cd2f633e5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reconciling.json",
+              "size_bytes": 6143,
+              "sha256": "5b9d74b50da71e822a6e1a91bc4b89e2f72c551a5053f61e89b7c634a5841ea1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_redelivery.json",
+              "size_bytes": 6746,
+              "sha256": "f6e751b9a7b369d3ea3dd85c67318c5de4280c5bf033cc4422d599a5a3be760d"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_rejected.json",
+              "size_bytes": 6723,
+              "sha256": "24abdb81187667a9167d2e37f84aa0ef9663ba57ef4cfbe5115d2453340a3186"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reverted.json",
+              "size_bytes": 6781,
+              "sha256": "7105c4a44b5eee06d90fa87e9f8dbfb9ad18454c719ae3fdcc89daf6b3b28d5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_committed.json",
+              "size_bytes": 6900,
+              "sha256": "4de3c7450754a892f423e3f88488ad6aadd44d54987b162e44cb29fcc2df1c1c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_pending.json",
+              "size_bytes": 6374,
+              "sha256": "d5b4f754814b7d662771df70847469a0ad3de8f9eae5071cb2120dcba9731aa6"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/stage_review.json",
+              "size_bytes": 6948,
+              "sha256": "3f297e4d20c4c8473ec526551d9a322320f5640f7c2a3f34670b483c7ce84685"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/unbound.json",
+              "size_bytes": 1319,
+              "sha256": "dc9bf8846bce27cf3211de6d8309c9e694b77b355ebc2c06e4f91a11d1e0f891"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/upgrade_committed.json",
+              "size_bytes": 5849,
+              "sha256": "120ef2a9093d5ec83776d5faf92b4593bea6f008a9c5aaf8ea4fc854154f8378"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.html",
+              "size_bytes": 2018,
+              "sha256": "d2725860e922c714fe4519de5c535246fcf1902d1f2d0b0e61c252baf14f4c7a"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.mjs",
+              "size_bytes": 776,
+              "sha256": "cb7f7f9c8fb1f55dfa3fbb9cc9f398e9eba9201fbf1f324ee5e1496ad161f1b8"
+            },
+            {
+              "path": "tests/meta_ui_unit/model_controller.test.mjs",
+              "size_bytes": 20032,
+              "sha256": "e44b82be4d30b9ca903647ed7204bf509d419c38c71a50df232e0825de275b62"
+            },
+            {
+              "path": "tests/meta_ui_unit/support/fixture_host.py",
+              "size_bytes": 25439,
+              "sha256": "b9d1f8fd2efb4429b011771c60c18dc688f2dd2e87515623d58d3b641fa48502"
+            },
+            {
+              "path": "tests/meta_ui_unit/test_domain_contracts.py",
+              "size_bytes": 14407,
+              "sha256": "7dbb35840ef9bcb99b06b3549a5cb10abc2b1f43c6782ed65906950ee422881e"
+            },
+            {
+              "path": "tools/browser_check.mjs",
+              "size_bytes": 19055,
+              "sha256": "004507753485ed2acc6cd8f734285a8ba387197203c4796ac2d64a1ba590f1f9"
+            },
+            {
+              "path": "tools/generate_view_fixtures.py",
+              "size_bytes": 1870,
+              "sha256": "6c24426571cfcb60b239310538c6d851b49c36cf71c5c77da69fb9560c9620c2"
+            },
+            {
+              "path": "tools/preflight.py",
+              "size_bytes": 938,
+              "sha256": "40cbff20248363cf78ff60eb49dcaf07c20cccfd0ff8325d4a8679b008abcde5"
+            },
+            {
+              "path": "tools/record_run.py",
+              "size_bytes": 2445,
+              "sha256": "a477bf607d3732b51f20a52fc3d286a3dbf86388df16e3cd0f01f85063e896c0"
+            },
+            {
+              "path": "tools/verify_delivery.py",
+              "size_bytes": 1267,
+              "sha256": "5721c566a1706dd4ccb249e22293e72ef9826494337fad5431a2d188303eabec"
+            },
+            {
+              "path": "ui/meta/app.mjs",
+              "size_bytes": 3655,
+              "sha256": "c75e339a5f2b089d8bd6a777af9ab50c6d6a5eee7f98f6990ab4063cb42f7d62"
+            },
+            {
+              "path": "ui/meta/assets/fonts/package.json",
+              "size_bytes": 1488,
+              "sha256": "a22447ff56bc45bccdce140e3a5bc36f39de6750f8b54e3b7306ffe24613cc4a"
+            },
+            {
+              "path": "ui/meta/controller.mjs",
+              "size_bytes": 9577,
+              "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+            },
+            {
+              "path": "ui/meta/index.html",
+              "size_bytes": 1063,
+              "sha256": "260d623f318644c356c48f9ec2f8c935aa2a3c5d248c7db279ef26bf5db106b6"
+            },
+            {
+              "path": "ui/meta/model.mjs",
+              "size_bytes": 12128,
+              "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+            },
+            {
+              "path": "ui/meta/port.mjs",
+              "size_bytes": 983,
+              "sha256": "e268044440bbcf384657bd5117070c295e9cea9eb2fa29d2bd66dd29f3ad638a"
+            },
+            {
+              "path": "ui/meta/renderer.mjs",
+              "size_bytes": 19447,
+              "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602"
+            },
+            {
+              "path": "ui/meta/styles.css",
+              "size_bytes": 18853,
+              "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+            }
+          ],
+          "stdout_sha256": "8aab5328868ae986c69a592d9585a917a93b4c143aebfc7b54bb0ed7483117d6",
+          "stderr_sha256": "bd30a53b142a202973823f8d799142c983d573fa9be0c7701d7c7d9cb96c8436"
+        },
+        "stdout": "✔ native owner fixture validates: active_battle.json (2.459091ms)\n✔ native owner fixture validates: demo.json (0.318618ms)\n✔ native owner fixture validates: empty.json (0.237388ms)\n✔ native owner fixture validates: equipment.json (0.346418ms)\n✔ native owner fixture validates: learning_applied.json (0.496399ms)\n✔ native owner fixture validates: learning_connected.json (0.280111ms)\n✔ native owner fixture validates: learning_disconnected.json (0.371856ms)\n✔ native owner fixture validates: learning_pending_reconciliation.json (0.280632ms)\n✔ native owner fixture validates: learning_quarantined.json (0.355492ms)\n✔ native owner fixture validates: learning_reconciling.json (0.471542ms)\n✔ native owner fixture validates: learning_redelivery.json (0.36117ms)\n✔ native owner fixture validates: learning_rejected.json (0.31328ms)\n✔ native owner fixture validates: learning_reverted.json (0.257438ms)\n✔ native owner fixture validates: settlement_committed.json (0.359858ms)\n✔ native owner fixture validates: settlement_pending.json (0.271679ms)\n✔ native owner fixture validates: stage_review.json (0.284848ms)\n✔ native owner fixture validates: unbound.json (0.173495ms)\n✔ native owner fixture validates: upgrade_committed.json (0.22507ms)\n✔ reject malformed binding: view version (1.320379ms)\n✔ reject malformed binding: production mode cannot be self enabled (0.185212ms)\n✔ reject malformed binding: unsafe revision (0.146215ms)\n✔ reject malformed binding: boolean sequence (0.126095ms)\n✔ reject malformed binding: null identity (0.105274ms)\n✔ reject malformed binding: source hash missing (0.14992ms)\n✔ reject malformed binding: save unknown state (0.10856ms)\n✔ reject malformed binding: save other store (0.100648ms)\n✔ reject malformed binding: wallet other player (1.700136ms)\n✔ reject malformed binding: wallet wrong revision (0.162729ms)\n✔ reject malformed binding: negative available (0.187285ms)\n✔ reject malformed binding: boolean reserved (0.158243ms)\n✔ reject malformed binding: duplicate resource (0.129169ms)\n✔ reject malformed binding: duplicate character (0.11597ms)\n✔ reject malformed binding: unknown character in party (0.161126ms)\n✔ reject malformed binding: duplicate party member (0.116952ms)\n✔ reject malformed binding: party count not three (0.151031ms)\n✔ reject malformed binding: party false validity (0.123822ms)\n✔ reject malformed binding: negative character stat (0.130993ms)\n✔ reject malformed binding: character stale source (0.122861ms)\n✔ reject malformed binding: level quote wrong rank (0.926201ms)\n✔ reject malformed binding: negative quote (0.203108ms)\n✔ reject malformed binding: stage source mismatch (0.152914ms)\n✔ reject malformed binding: stage other profile (0.129681ms)\n✔ reject malformed binding: stage unknown status (0.15714ms)\n✔ reject malformed binding: lock-unlocked conflict (0.157061ms)\n✔ reject malformed binding: locked button available (0.198892ms)\n✔ reject malformed binding: stage catalog drift (0.270127ms)\n✔ reject malformed binding: missing stage view with details (0.173785ms)\n✔ reject malformed binding: negative pending count (0.145664ms)\n✔ reject malformed binding: unknown connection (0.133135ms)\n✔ reject malformed binding: unbound data must be placeholders (0.150671ms)\n✔ view and nested records are detached and frozen (0.282856ms)\n✔ canonical hashing follows sorted keys and Unicode UTF-8 (13.133717ms)\n✔ learning status never promotes fixture to credited: applied (0.417133ms)\n✔ learning status never promotes fixture to credited: quarantined (0.14285ms)\n✔ learning status never promotes fixture to credited: pending_reconciliation (0.129971ms)\n✔ learning status never promotes fixture to credited: rejected (0.193314ms)\n✔ learning status never promotes fixture to credited: reverted (0.21833ms)\n✔ learning status never promotes fixture to credited: redelivery (0.113557ms)\n✔ learning status never promotes fixture to credited: reconciling (0.147316ms)\n✔ APPLIED with simulator durable receipt stays test-only (0.15005ms)\n✔ self-reported production receipt lacks accepted adapter proof (0.239011ms)\n✔ disconnected does not masquerade as rejected reward (0.078736ms)\n✔ quarantine, review and locked stage labels are distinct (0.25213ms)\n✔ unknown reason is preserved for receiver diagnosis (0.077654ms)\n✔ read-only navigation through every page emits no command (0.98096ms)\n✔ invalid route is rejected without changing location (0.289815ms)\n✔ Anki disconnected does not block unrelated menu play (0.311858ms)\n✔ empty and unbound retain navigation while action is blocked (0.329875ms)\n✔ party editing swaps occupied slots without changing snapshot (1.230086ms)\n✔ incomplete party cannot submit (0.378195ms)\n✔ draft reset restores domain order (0.27293ms)\n✔ double dispatch synchronous lock gives exactly one request (7.827675ms)\n✔ no optimistic balance changes while request is pending (6.148789ms)\n✔ save migration failure disables all mutations (0.437102ms)\n✔ read-only save disables mutations (0.318097ms)\n✔ response loss retains original full request in storage (0.675692ms)\n✔ lookup resolves without issuing a second mutation (2.519165ms)\n✔ reload restores pending intent and never auto-resubmits (1.201965ms)\n✔ successful known response clears persisted pending before next action (1.201028ms)\n✔ storage write failure blocks network submission (0.668091ms)\n✔ storage read corruption blocks changes without erasing evidence (0.32063ms)\n✔ storage remove failure retains unknown even after new snapshot (2.040487ms)\n✔ receipt request hash mismatch cannot clear pending (0.935834ms)\n✔ candidate is not a committed UI reply (0.703483ms)\n✔ formal receipt cannot be smuggled through fixture reply (1.229676ms)\n✔ unknown lookup remains locked and preserves request (0.903797ms)\n✔ absent lookup cannot be treated as safe replay (0.704966ms)\n✔ host restart cannot clear prior-instance unknown operation (0.981451ms)\n✔ restored pending tampering never sends lookup (0.684986ms)\n✔ old view cannot roll back displayed wallet (0.349584ms)\n✔ same sequence differing content fails closed (0.480996ms)\n✔ larger UI sequence cannot hide domain revision rollback (0.480175ms)\n✔ out-of-order read completion does not replace current view (0.31309ms)\n✔ disconnect keeps last snapshot marked noninteractive (0.360028ms)\n✔ reconnect clears old network error (0.554474ms)\n✔ background pause prevents stale actions until refreshed (0.786255ms)\n✔ navigation persists only UI preferences (0.376803ms)\n✔ party draft does not silently persist as saved domain state (0.348703ms)\n✔ locked stage and active battle cannot create admission (0.757382ms)\n✔ settlement page opening never claims (0.832237ms)\n✔ committed and quarantined settlement cannot be claimed (0.757833ms)\n✔ late action response does not hijack a newer navigation (6.248376ms)\n✔ disposed controller ignores read completion (0.330756ms)\n✔ HTTP port uses read-only lookup endpoint and preserves payload (0.328122ms)\n✔ HTTP error is not parsed as a committed result (0.223378ms)\n✔ native fetch retains global receiver in browser-compatible path (0.205862ms)\nℹ tests 106\nℹ suites 0\nℹ pass 106\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 105.735184\n{\"scope\": \"AUTHOR_ONLY\", \"results\": [{\"layer\": \"AUTHOR_JS_UNIT\", \"executed_tests\": 106, \"exit_code\": 0, \"status\": \"PASS\"}, {\"layer\": \"AUTHOR_NATIVE_CONTRACT\", \"executed_tests\": 38, \"exit_code\": 0, \"status\": \"PASS\"}]}\n",
+        "stderr": "test_active_battle_blocks_new_entry_and_meta_mutation (test_domain_contracts.DomainContractTests.test_active_battle_blocks_new_entry_and_meta_mutation) ... ok\ntest_character_attributes_match_original_owner (test_domain_contracts.DomainContractTests.test_character_attributes_match_original_owner) ... ok\ntest_default_equipment_closed (test_domain_contracts.DomainContractTests.test_default_equipment_closed) ... ok\ntest_default_is_unbound_without_fake_balance (test_domain_contracts.DomainContractTests.test_default_is_unbound_without_fake_balance) ... ok\ntest_duplicate_after_response_loss_queries_without_resubmit (test_domain_contracts.DomainContractTests.test_duplicate_after_response_loss_queries_without_resubmit) ... ok\ntest_duplicate_claim_new_id_no_extra_reward (test_domain_contracts.DomainContractTests.test_duplicate_claim_new_id_no_extra_reward) ... ok\ntest_empty_data_cannot_enter_or_equip (test_domain_contracts.DomainContractTests.test_empty_data_cannot_enter_or_equip) ... ok\ntest_entry_preserves_party_and_no_entry_debit (test_domain_contracts.DomainContractTests.test_entry_preserves_party_and_no_entry_debit) ... ok\ntest_equipment_instance_cannot_be_used_twice (test_domain_contracts.DomainContractTests.test_equipment_instance_cannot_be_used_twice) ... ok\ntest_first_clear_only_service_commit_unlocks (test_domain_contracts.DomainContractTests.test_first_clear_only_service_commit_unlocks) ... ok\ntest_forged_reward_amount_and_result_rejected_at_boundary (test_domain_contracts.DomainContractTests.test_forged_reward_amount_and_result_rejected_at_boundary) ... ok\ntest_learning_read_only_query_does_not_rerun_award (test_domain_contracts.DomainContractTests.test_learning_read_only_query_does_not_rerun_award) ... ok\ntest_locked_stage_cannot_enter (test_domain_contracts.DomainContractTests.test_locked_stage_cannot_enter) ... ok\ntest_loss_closes_attempt_without_reward (test_domain_contracts.DomainContractTests.test_loss_closes_attempt_without_reward) ... ok\ntest_new_id_cannot_repeat_same_upgrade (test_domain_contracts.DomainContractTests.test_new_id_cannot_repeat_same_upgrade) ... ok\ntest_p11_query_states_are_from_original_ledger_and_cannot_credit_meta_wallet (test_domain_contracts.DomainContractTests.test_p11_query_states_are_from_original_ledger_and_cannot_credit_meta_wallet) ... ok\ntest_p13_read_dtos_stay_exact (test_domain_contracts.DomainContractTests.test_p13_read_dtos_stay_exact) ... ok\ntest_parallel_different_ids_old_snapshot_no_double_debit (test_domain_contracts.DomainContractTests.test_parallel_different_ids_old_snapshot_no_double_debit) ... ok\ntest_parallel_duplicate_upgrade_exactly_once (test_domain_contracts.DomainContractTests.test_parallel_duplicate_upgrade_exactly_once) ... ok\ntest_party_duplicate_does_not_commit (test_domain_contracts.DomainContractTests.test_party_duplicate_does_not_commit) ... ok\ntest_party_missing_member_does_not_commit (test_domain_contracts.DomainContractTests.test_party_missing_member_does_not_commit) ... ok\ntest_party_order_is_preserved (test_domain_contracts.DomainContractTests.test_party_order_is_preserved) ... ok\ntest_progress_extended_view_not_lossy_p13_projection (test_domain_contracts.DomainContractTests.test_progress_extended_view_not_lossy_p13_projection) ... ok\ntest_queries_do_not_change_domain_state (test_domain_contracts.DomainContractTests.test_queries_do_not_change_domain_state) ... ok\ntest_restart_identity_fences_old_command_and_lookup (test_domain_contracts.DomainContractTests.test_restart_identity_fences_old_command_and_lookup) ... ok\ntest_review_keeps_consumed_first_clear_and_hides_reward (test_domain_contracts.DomainContractTests.test_review_keeps_consumed_first_clear_and_hides_reward) ... ok\ntest_revoked_prerequisite_quarantines_inflight_boss (test_domain_contracts.DomainContractTests.test_revoked_prerequisite_quarantines_inflight_boss) ... ok\ntest_same_id_duplicate_has_one_debit (test_domain_contracts.DomainContractTests.test_same_id_duplicate_has_one_debit) ... ok\ntest_same_id_modified_payload_is_collision (test_domain_contracts.DomainContractTests.test_same_id_modified_payload_is_collision) ... ok\ntest_save_migration_failure_blocks_consumption_and_navigation_is_read_only (test_domain_contracts.DomainContractTests.test_save_migration_failure_blocks_consumption_and_navigation_is_read_only) ... ok\ntest_second_battle_same_stage_no_first_clear_repeat (test_domain_contracts.DomainContractTests.test_second_battle_same_stage_no_first_clear_repeat) ... ok\ntest_stale_revision_request_rejected (test_domain_contracts.DomainContractTests.test_stale_revision_request_rejected) ... ok\ntest_test_equipment_changes_only_via_p17 (test_domain_contracts.DomainContractTests.test_test_equipment_changes_only_via_p17) ... ok\ntest_unbound_command_cannot_grant (test_domain_contracts.DomainContractTests.test_unbound_command_cannot_grant) ... ok\ntest_unknown_before_submission_stays_unknown (test_domain_contracts.DomainContractTests.test_unknown_before_submission_stays_unknown) ... ok\ntest_upgrade_uses_p17_amount_once (test_domain_contracts.DomainContractTests.test_upgrade_uses_p17_amount_once) ... ok\ntest_upstream_original_bytes (test_domain_contracts.DomainContractTests.test_upstream_original_bytes) ... ok\ntest_view_navigation_cannot_claim_reward (test_domain_contracts.DomainContractTests.test_view_navigation_cannot_claim_reward) ... ok\n\n----------------------------------------------------------------------\nRan 38 tests in 50.559s\n\nOK\n"
+      },
+      {
+        "label": "archive_browser",
+        "status": "PASS",
+        "execution": {
+          "schema_version": "P20-EXECUTION/0.1.0",
+          "layer": "AUTHOR_ONLY",
+          "command": [
+            "node",
+            "tools/browser_check.mjs",
+            "--out",
+            "/workspace/scratch/fc4d03cca626/fresh_verification/browser"
+          ],
+          "working_directory": "/workspace/scratch/fc4d03cca626/fresh_extract_final/P20_MetaUI_V0.1",
+          "started_utc": "2026-10-30T04:45:28.993118+00:00",
+          "finished_utc": "2026-10-30T04:45:54.304225+00:00",
+          "elapsed_seconds": 25.311,
+          "exit_code": 0,
+          "sources": [
+            {
+              "path": "meta_ui_tests.py",
+              "size_bytes": 1626,
+              "sha256": "f5d3e4d771d5de82fef1f109656aa3fb4ec1cffb061bc3af656da7ad6a56dd85"
+            },
+            {
+              "path": "run_ui.py",
+              "size_bytes": 5138,
+              "sha256": "6e5aad0a7b2a3721dfb88473cc1cbebf57ba338925c621a89e1e920cf759c1b6"
+            },
+            {
+              "path": "start_windows.cmd",
+              "size_bytes": 60,
+              "sha256": "73bfa62e706cb5865892725ec24999c70bf927399cab5ee82df620772354c605"
+            },
+            {
+              "path": "start_windows_unbound.cmd",
+              "size_bytes": 50,
+              "sha256": "a2f315b82147e7a4d5acdcd8c25f1cdcac32002c1226f833fbb0742ec6b591f8"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/active_battle.json",
+              "size_bytes": 5974,
+              "sha256": "1eb2984c4df29bca2a08382b2b4d17ebc3fc1e73d1815a0522f139848076e593"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/demo.json",
+              "size_bytes": 5835,
+              "sha256": "b99c0a7544e36418141c14ae2df2f40ad45de45ac8cfab74dedf3d3a44832312"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/empty.json",
+              "size_bytes": 3419,
+              "sha256": "04908e3021bd18c65ca1a076eb58484fd70c8640932a2623b66864bfe3338ba4"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/equipment.json",
+              "size_bytes": 7076,
+              "sha256": "18e0bac55d236f522c46430df6125d927608037280038d804999414a7e5a08c1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_applied.json",
+              "size_bytes": 6779,
+              "sha256": "caf111756e1ad57330c677b5a39365d8dd47ce6b4903ee7f6360b775f61e2a42"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_connected.json",
+              "size_bytes": 5832,
+              "sha256": "999d8dbaf9a49930e13b09ffa2625f4c504f00f584803adb6979516f82986157"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_disconnected.json",
+              "size_bytes": 5835,
+              "sha256": "d93dccce020affae1690aad0245e8082ea430206063602ac8b3ee92dab1a92d2"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_pending_reconciliation.json",
+              "size_bytes": 6807,
+              "sha256": "11c616e0937c2b0a590aaebe3d8afd366392611e74ad1328948581f2387e8487"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_quarantined.json",
+              "size_bytes": 6724,
+              "sha256": "ee0d1d6211ffef141d74ee82aad8b2303fde8bec1ede5ad5bd3658cd2f633e5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reconciling.json",
+              "size_bytes": 6143,
+              "sha256": "5b9d74b50da71e822a6e1a91bc4b89e2f72c551a5053f61e89b7c634a5841ea1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_redelivery.json",
+              "size_bytes": 6746,
+              "sha256": "f6e751b9a7b369d3ea3dd85c67318c5de4280c5bf033cc4422d599a5a3be760d"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_rejected.json",
+              "size_bytes": 6723,
+              "sha256": "24abdb81187667a9167d2e37f84aa0ef9663ba57ef4cfbe5115d2453340a3186"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reverted.json",
+              "size_bytes": 6781,
+              "sha256": "7105c4a44b5eee06d90fa87e9f8dbfb9ad18454c719ae3fdcc89daf6b3b28d5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_committed.json",
+              "size_bytes": 6900,
+              "sha256": "4de3c7450754a892f423e3f88488ad6aadd44d54987b162e44cb29fcc2df1c1c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_pending.json",
+              "size_bytes": 6374,
+              "sha256": "d5b4f754814b7d662771df70847469a0ad3de8f9eae5071cb2120dcba9731aa6"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/stage_review.json",
+              "size_bytes": 6948,
+              "sha256": "3f297e4d20c4c8473ec526551d9a322320f5640f7c2a3f34670b483c7ce84685"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/unbound.json",
+              "size_bytes": 1319,
+              "sha256": "dc9bf8846bce27cf3211de6d8309c9e694b77b355ebc2c06e4f91a11d1e0f891"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/upgrade_committed.json",
+              "size_bytes": 5849,
+              "sha256": "120ef2a9093d5ec83776d5faf92b4593bea6f008a9c5aaf8ea4fc854154f8378"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.html",
+              "size_bytes": 2018,
+              "sha256": "d2725860e922c714fe4519de5c535246fcf1902d1f2d0b0e61c252baf14f4c7a"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.mjs",
+              "size_bytes": 776,
+              "sha256": "cb7f7f9c8fb1f55dfa3fbb9cc9f398e9eba9201fbf1f324ee5e1496ad161f1b8"
+            },
+            {
+              "path": "tests/meta_ui_unit/model_controller.test.mjs",
+              "size_bytes": 20032,
+              "sha256": "e44b82be4d30b9ca903647ed7204bf509d419c38c71a50df232e0825de275b62"
+            },
+            {
+              "path": "tests/meta_ui_unit/support/fixture_host.py",
+              "size_bytes": 25439,
+              "sha256": "b9d1f8fd2efb4429b011771c60c18dc688f2dd2e87515623d58d3b641fa48502"
+            },
+            {
+              "path": "tests/meta_ui_unit/test_domain_contracts.py",
+              "size_bytes": 14407,
+              "sha256": "7dbb35840ef9bcb99b06b3549a5cb10abc2b1f43c6782ed65906950ee422881e"
+            },
+            {
+              "path": "tools/browser_check.mjs",
+              "size_bytes": 19055,
+              "sha256": "004507753485ed2acc6cd8f734285a8ba387197203c4796ac2d64a1ba590f1f9"
+            },
+            {
+              "path": "tools/generate_view_fixtures.py",
+              "size_bytes": 1870,
+              "sha256": "6c24426571cfcb60b239310538c6d851b49c36cf71c5c77da69fb9560c9620c2"
+            },
+            {
+              "path": "tools/preflight.py",
+              "size_bytes": 938,
+              "sha256": "40cbff20248363cf78ff60eb49dcaf07c20cccfd0ff8325d4a8679b008abcde5"
+            },
+            {
+              "path": "tools/record_run.py",
+              "size_bytes": 2445,
+              "sha256": "a477bf607d3732b51f20a52fc3d286a3dbf86388df16e3cd0f01f85063e896c0"
+            },
+            {
+              "path": "tools/verify_delivery.py",
+              "size_bytes": 1267,
+              "sha256": "5721c566a1706dd4ccb249e22293e72ef9826494337fad5431a2d188303eabec"
+            },
+            {
+              "path": "ui/meta/app.mjs",
+              "size_bytes": 3655,
+              "sha256": "c75e339a5f2b089d8bd6a777af9ab50c6d6a5eee7f98f6990ab4063cb42f7d62"
+            },
+            {
+              "path": "ui/meta/assets/fonts/package.json",
+              "size_bytes": 1488,
+              "sha256": "a22447ff56bc45bccdce140e3a5bc36f39de6750f8b54e3b7306ffe24613cc4a"
+            },
+            {
+              "path": "ui/meta/controller.mjs",
+              "size_bytes": 9577,
+              "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+            },
+            {
+              "path": "ui/meta/index.html",
+              "size_bytes": 1063,
+              "sha256": "260d623f318644c356c48f9ec2f8c935aa2a3c5d248c7db279ef26bf5db106b6"
+            },
+            {
+              "path": "ui/meta/model.mjs",
+              "size_bytes": 12128,
+              "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+            },
+            {
+              "path": "ui/meta/port.mjs",
+              "size_bytes": 983,
+              "sha256": "e268044440bbcf384657bd5117070c295e9cea9eb2fa29d2bd66dd29f3ad638a"
+            },
+            {
+              "path": "ui/meta/renderer.mjs",
+              "size_bytes": 19447,
+              "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602"
+            },
+            {
+              "path": "ui/meta/styles.css",
+              "size_bytes": 18853,
+              "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+            }
+          ],
+          "stdout_sha256": "7cdded982e8e01eda13cd53ec2de43fe2374fcbcbf4fa287cd83ed0b883af546",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": "PASS 01 boot shows fixture scope and real P17 read balance\nPASS 02 font loaded and desktop has no horizontal overflow\nPASS 03 all menu routes navigate without sending commands\nPASS 04 party swap and double click submit once\nPASS 05 page reload restores saved party and route\nPASS 06 keyboard Escape cancels upgrade without consumption\nPASS 07 visible upgrade binds P17 level and wallet result\nPASS 08 failed XP condition shows disabled upgrade\nPASS 09 committed response loss preserves original pending operation\nPASS 10 reload and lookup recover without second debit\nPASS 11 locked boss cannot send entry command\nPASS 12 entry goes to handoff without fake combat or debit\nPASS 13 return and reload preserve active battle navigation\nPASS 14 fixture battle return opens read-only settlement without reward\nPASS 15 claim uses P18 first-clear and P17 wallet exactly once\nPASS 16 revisiting settlement and home never reclaims reward\nPASS 17 original P11 APPLIED simulator never shows credited learning reward\nPASS 18 original P11 quarantine shows held status and no income\nPASS 19 rejection, redelivery and reconciliation are distinct UI states\nPASS 20 migration failure retains navigation and blocks mutations\nPASS 21 revoke first-clear preserves consumed key and shows review hold\nPASS 22 disconnected server preserves visible snapshot and locks actions\nPASS 23 empty data navigation does not invent characters or rewards\nPASS 24 unbound view uses placeholders and disabled commands\nPASS 25 test equipment selection invokes P17 and persists on reread\nPASS 26 browser back returns to prior page\nPASS 27 390px layout all menu routes fit horizontally\nPASS 28 768px and 1920px layouts fit horizontally\nPASS 29 cross-origin and unsupported commands rejected by test host\nPASS 30 result-loss followed by actual host restart remains fenced\nPASS 31 no unhandled JavaScript page errors\n{\"executed\":31,\"pass\":31,\"fail\":0}\n",
+        "stderr": ""
+      },
+      {
+        "label": "archive_preflight",
+        "status": "BLOCKED",
+        "execution": {
+          "schema_version": "P20-EXECUTION/0.1.0",
+          "layer": "AUTHOR_ONLY",
+          "command": [
+            "python",
+            "-B",
+            "tools/preflight.py"
+          ],
+          "working_directory": "/workspace/scratch/fc4d03cca626/fresh_extract_final/P20_MetaUI_V0.1",
+          "started_utc": "2026-10-30T04:45:24.808134+00:00",
+          "finished_utc": "2026-10-30T04:45:24.836961+00:00",
+          "elapsed_seconds": 0.029,
+          "exit_code": 3,
+          "sources": [
+            {
+              "path": "meta_ui_tests.py",
+              "size_bytes": 1626,
+              "sha256": "f5d3e4d771d5de82fef1f109656aa3fb4ec1cffb061bc3af656da7ad6a56dd85"
+            },
+            {
+              "path": "run_ui.py",
+              "size_bytes": 5138,
+              "sha256": "6e5aad0a7b2a3721dfb88473cc1cbebf57ba338925c621a89e1e920cf759c1b6"
+            },
+            {
+              "path": "start_windows.cmd",
+              "size_bytes": 60,
+              "sha256": "73bfa62e706cb5865892725ec24999c70bf927399cab5ee82df620772354c605"
+            },
+            {
+              "path": "start_windows_unbound.cmd",
+              "size_bytes": 50,
+              "sha256": "a2f315b82147e7a4d5acdcd8c25f1cdcac32002c1226f833fbb0742ec6b591f8"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/active_battle.json",
+              "size_bytes": 5974,
+              "sha256": "1eb2984c4df29bca2a08382b2b4d17ebc3fc1e73d1815a0522f139848076e593"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/demo.json",
+              "size_bytes": 5835,
+              "sha256": "b99c0a7544e36418141c14ae2df2f40ad45de45ac8cfab74dedf3d3a44832312"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/empty.json",
+              "size_bytes": 3419,
+              "sha256": "04908e3021bd18c65ca1a076eb58484fd70c8640932a2623b66864bfe3338ba4"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/equipment.json",
+              "size_bytes": 7076,
+              "sha256": "18e0bac55d236f522c46430df6125d927608037280038d804999414a7e5a08c1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_applied.json",
+              "size_bytes": 6779,
+              "sha256": "caf111756e1ad57330c677b5a39365d8dd47ce6b4903ee7f6360b775f61e2a42"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_connected.json",
+              "size_bytes": 5832,
+              "sha256": "999d8dbaf9a49930e13b09ffa2625f4c504f00f584803adb6979516f82986157"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_disconnected.json",
+              "size_bytes": 5835,
+              "sha256": "d93dccce020affae1690aad0245e8082ea430206063602ac8b3ee92dab1a92d2"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_pending_reconciliation.json",
+              "size_bytes": 6807,
+              "sha256": "11c616e0937c2b0a590aaebe3d8afd366392611e74ad1328948581f2387e8487"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_quarantined.json",
+              "size_bytes": 6724,
+              "sha256": "ee0d1d6211ffef141d74ee82aad8b2303fde8bec1ede5ad5bd3658cd2f633e5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reconciling.json",
+              "size_bytes": 6143,
+              "sha256": "5b9d74b50da71e822a6e1a91bc4b89e2f72c551a5053f61e89b7c634a5841ea1"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_redelivery.json",
+              "size_bytes": 6746,
+              "sha256": "f6e751b9a7b369d3ea3dd85c67318c5de4280c5bf033cc4422d599a5a3be760d"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_rejected.json",
+              "size_bytes": 6723,
+              "sha256": "24abdb81187667a9167d2e37f84aa0ef9663ba57ef4cfbe5115d2453340a3186"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/learning_reverted.json",
+              "size_bytes": 6781,
+              "sha256": "7105c4a44b5eee06d90fa87e9f8dbfb9ad18454c719ae3fdcc89daf6b3b28d5c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_committed.json",
+              "size_bytes": 6900,
+              "sha256": "4de3c7450754a892f423e3f88488ad6aadd44d54987b162e44cb29fcc2df1c1c"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/settlement_pending.json",
+              "size_bytes": 6374,
+              "sha256": "d5b4f754814b7d662771df70847469a0ad3de8f9eae5071cb2120dcba9731aa6"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/stage_review.json",
+              "size_bytes": 6948,
+              "sha256": "3f297e4d20c4c8473ec526551d9a322320f5640f7c2a3f34670b483c7ce84685"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/unbound.json",
+              "size_bytes": 1319,
+              "sha256": "dc9bf8846bce27cf3211de6d8309c9e694b77b355ebc2c06e4f91a11d1e0f891"
+            },
+            {
+              "path": "tests/meta_ui_unit/fixtures/upgrade_committed.json",
+              "size_bytes": 5849,
+              "sha256": "120ef2a9093d5ec83776d5faf92b4593bea6f008a9c5aaf8ea4fc854154f8378"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.html",
+              "size_bytes": 2018,
+              "sha256": "d2725860e922c714fe4519de5c535246fcf1902d1f2d0b0e61c252baf14f4c7a"
+            },
+            {
+              "path": "tests/meta_ui_unit/lab.mjs",
+              "size_bytes": 776,
+              "sha256": "cb7f7f9c8fb1f55dfa3fbb9cc9f398e9eba9201fbf1f324ee5e1496ad161f1b8"
+            },
+            {
+              "path": "tests/meta_ui_unit/model_controller.test.mjs",
+              "size_bytes": 20032,
+              "sha256": "e44b82be4d30b9ca903647ed7204bf509d419c38c71a50df232e0825de275b62"
+            },
+            {
+              "path": "tests/meta_ui_unit/support/fixture_host.py",
+              "size_bytes": 25439,
+              "sha256": "b9d1f8fd2efb4429b011771c60c18dc688f2dd2e87515623d58d3b641fa48502"
+            },
+            {
+              "path": "tests/meta_ui_unit/test_domain_contracts.py",
+              "size_bytes": 14407,
+              "sha256": "7dbb35840ef9bcb99b06b3549a5cb10abc2b1f43c6782ed65906950ee422881e"
+            },
+            {
+              "path": "tools/browser_check.mjs",
+              "size_bytes": 19055,
+              "sha256": "004507753485ed2acc6cd8f734285a8ba387197203c4796ac2d64a1ba590f1f9"
+            },
+            {
+              "path": "tools/generate_view_fixtures.py",
+              "size_bytes": 1870,
+              "sha256": "6c24426571cfcb60b239310538c6d851b49c36cf71c5c77da69fb9560c9620c2"
+            },
+            {
+              "path": "tools/preflight.py",
+              "size_bytes": 938,
+              "sha256": "40cbff20248363cf78ff60eb49dcaf07c20cccfd0ff8325d4a8679b008abcde5"
+            },
+            {
+              "path": "tools/record_run.py",
+              "size_bytes": 2445,
+              "sha256": "a477bf607d3732b51f20a52fc3d286a3dbf86388df16e3cd0f01f85063e896c0"
+            },
+            {
+              "path": "tools/verify_delivery.py",
+              "size_bytes": 1267,
+              "sha256": "5721c566a1706dd4ccb249e22293e72ef9826494337fad5431a2d188303eabec"
+            },
+            {
+              "path": "ui/meta/app.mjs",
+              "size_bytes": 3655,
+              "sha256": "c75e339a5f2b089d8bd6a777af9ab50c6d6a5eee7f98f6990ab4063cb42f7d62"
+            },
+            {
+              "path": "ui/meta/assets/fonts/package.json",
+              "size_bytes": 1488,
+              "sha256": "a22447ff56bc45bccdce140e3a5bc36f39de6750f8b54e3b7306ffe24613cc4a"
+            },
+            {
+              "path": "ui/meta/controller.mjs",
+              "size_bytes": 9577,
+              "sha256": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+            },
+            {
+              "path": "ui/meta/index.html",
+              "size_bytes": 1063,
+              "sha256": "260d623f318644c356c48f9ec2f8c935aa2a3c5d248c7db279ef26bf5db106b6"
+            },
+            {
+              "path": "ui/meta/model.mjs",
+              "size_bytes": 12128,
+              "sha256": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+            },
+            {
+              "path": "ui/meta/port.mjs",
+              "size_bytes": 983,
+              "sha256": "e268044440bbcf384657bd5117070c295e9cea9eb2fa29d2bd66dd29f3ad638a"
+            },
+            {
+              "path": "ui/meta/renderer.mjs",
+              "size_bytes": 19447,
+              "sha256": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602"
+            },
+            {
+              "path": "ui/meta/styles.css",
+              "size_bytes": 18853,
+              "sha256": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+            }
+          ],
+          "stdout_sha256": "429b3f51d5912a1f11213dc725470da39e264c3bb81843a0f4d69fcabed889e9",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": "{\n  \"task_id\": \"P20-S05-S06-S07-METAUI-001\",\n  \"production_status\": \"BLOCKED\",\n  \"isolated_ui\": \"IMPLEMENTED_SEE_AUTHOR_EVIDENCE\",\n  \"checks\": [\n    {\n      \"id\": \"P13_PATHS\",\n      \"status\": \"BLOCKED\",\n      \"evidence\": [\n        {\n          \"owner\": \"P20\",\n          \"design_path\": \"ui/meta/**\",\n          \"isolated_relative_path\": null,\n          \"actual_production_path\": null,\n          \"scope\": \"PLANNED_NOT_ACTUAL\",\n          \"status\": \"BLOCKED_NOT_MAPPED\",\n          \"write_allowed\": false,\n          \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n        },\n        {\n          \"owner\": \"P20\",\n          \"design_path\": \"tests/meta_ui_unit/**\",\n          \"isolated_relative_path\": null,\n          \"actual_production_path\": null,\n          \"scope\": \"PLANNED_NOT_ACTUAL\",\n          \"status\": \"BLOCKED_NOT_MAPPED\",\n          \"write_allowed\": false,\n          \"note\": \"Illustrative namespace; owner must provide actual base path and authorization. Not permission to create or overwrite.\"\n        }\n      ]\n    },\n    {\n      \"id\": \"P20-B01\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P13\",\n      \"missing\": [\n        \"actual_path_mapping for ui/meta/**\",\n        \"actual_path_mapping for tests/meta_ui_unit/**\",\n        \"actual game repo/base commit/write whitelist\"\n      ]\n    },\n    {\n      \"id\": \"P20-B02\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P13/P34\",\n      \"missing\": [\n        \"approved engine/runtime\",\n        \"target OS/device/build entry\",\n        \"target test environment evidence\"\n      ]\n    },\n    {\n      \"id\": \"P20-B03\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P23\",\n      \"missing\": [\n        \"versioned menu/party/growth/stage/return user flows\",\n        \"navigation/anchors acceptance\"\n      ]\n    },\n    {\n      \"id\": \"P20-B04\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P24\",\n      \"missing\": [\n        \"versioned official component/art assets\",\n        \"editable source and license metadata\"\n      ]\n    },\n    {\n      \"id\": \"P20-B05\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P13\",\n      \"missing\": [\n        \"accepted P20 coherent read view DTO\",\n        \"accepted command gateway/reply and error vocabulary\",\n        \"P17/P18/P11 owner acceptance\"\n      ]\n    },\n    {\n      \"id\": \"P20-B06\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P21\",\n      \"missing\": [\n        \"real SaveStatusView producer\",\n        \"durable atomic commit/lookup\",\n        \"request retention/continuity across restart and migration\"\n      ]\n    },\n    {\n      \"id\": \"P20-B07\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P11/P12/P21\",\n      \"missing\": [\n        \"real Anki/IPC connection and redelivery status read port\",\n        \"accepted trusted APPLIED proof bound to current wallet and identity\"\n      ]\n    },\n    {\n      \"id\": \"P20-B08\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P08/P01\",\n      \"missing\": [\n        \"approved production reward policy/version/SHA\",\n        \"approved content/equipment scope\"\n      ]\n    },\n    {\n      \"id\": \"P20-B09\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P13/P19/P18\",\n      \"missing\": [\n        \"accepted stage admission to battle route\",\n        \"trusted terminal result lookup\",\n        \"scene return and active battle recovery\"\n      ]\n    },\n    {\n      \"id\": \"P20-B10\",\n      \"status\": \"NOT_RUN\",\n      \"owner\": \"P32/P33/P35\",\n      \"missing\": [\n        \"P32 independent automation\",\n        \"P33 manual/target-device acceptance\",\n        \"P35 independent evidence gate\"\n      ]\n    },\n    {\n      \"id\": \"P20-B11\",\n      \"status\": \"BLOCKED\",\n      \"owner\": \"P01/USER/EXT-INTEGRATOR\",\n      \"missing\": [\n        \"explicit integrator appointment\",\n        \"authorized integration task and fixed input acceptance\"\n      ]\n    }\n  ]\n}\n",
+        "stderr": ""
+      }
+    ],
+    "author_test_summary": {
+      "scope": "AUTHOR_ONLY",
+      "results": [
+        {
+          "layer": "AUTHOR_JS_UNIT",
+          "executed_tests": 106,
+          "exit_code": 0,
+          "status": "PASS"
+        },
+        {
+          "layer": "AUTHOR_NATIVE_CONTRACT",
+          "executed_tests": 38,
+          "exit_code": 0,
+          "status": "PASS"
+        }
+      ]
+    },
+    "browser_results": {
+      "schema_version": "P20-BROWSER-EVIDENCE/0.1.0",
+      "scope": "AUTHOR_LINUX_CHROMIUM_ISOLATED_UI_NOT_P32_OR_GAME_E2E",
+      "browser_version": "153.0.8010.0",
+      "executable": "/tmp/p20_browser_bin/chromium",
+      "checks": [
+        {
+          "name": "01 boot shows fixture scope and real P17 read balance",
+          "status": "PASS",
+          "elapsed_ms": 536,
+          "detail": {
+            "balance": 15,
+            "origin": "P04_ORIGINAL_FIXTURE_PREFIX"
+          }
+        },
+        {
+          "name": "02 font loaded and desktop has no horizontal overflow",
+          "status": "PASS",
+          "elapsed_ms": 5
+        },
+        {
+          "name": "03 all menu routes navigate without sending commands",
+          "status": "PASS",
+          "elapsed_ms": 314
+        },
+        {
+          "name": "04 party swap and double click submit once",
+          "status": "PASS",
+          "elapsed_ms": 917
+        },
+        {
+          "name": "05 page reload restores saved party and route",
+          "status": "PASS",
+          "elapsed_ms": 631
+        },
+        {
+          "name": "06 keyboard Escape cancels upgrade without consumption",
+          "status": "PASS",
+          "elapsed_ms": 93
+        },
+        {
+          "name": "07 visible upgrade binds P17 level and wallet result",
+          "status": "PASS",
+          "elapsed_ms": 761
+        },
+        {
+          "name": "08 failed XP condition shows disabled upgrade",
+          "status": "PASS",
+          "elapsed_ms": 7
+        },
+        {
+          "name": "09 committed response loss preserves original pending operation",
+          "status": "PASS",
+          "elapsed_ms": 1144,
+          "detail": {
+            "request_id": "p20.e077f558-ffca-474b-9adb-cceed5a759e7",
+            "server_balance": 7
+          }
+        },
+        {
+          "name": "10 reload and lookup recover without second debit",
+          "status": "PASS",
+          "elapsed_ms": 678
+        },
+        {
+          "name": "11 locked boss cannot send entry command",
+          "status": "PASS",
+          "elapsed_ms": 368
+        },
+        {
+          "name": "12 entry goes to handoff without fake combat or debit",
+          "status": "PASS",
+          "elapsed_ms": 695
+        },
+        {
+          "name": "13 return and reload preserve active battle navigation",
+          "status": "PASS",
+          "elapsed_ms": 453
+        },
+        {
+          "name": "14 fixture battle return opens read-only settlement without reward",
+          "status": "PASS",
+          "elapsed_ms": 934
+        },
+        {
+          "name": "15 claim uses P18 first-clear and P17 wallet exactly once",
+          "status": "PASS",
+          "elapsed_ms": 1091
+        },
+        {
+          "name": "16 revisiting settlement and home never reclaims reward",
+          "status": "PASS",
+          "elapsed_ms": 832
+        },
+        {
+          "name": "17 original P11 APPLIED simulator never shows credited learning reward",
+          "status": "PASS",
+          "elapsed_ms": 734
+        },
+        {
+          "name": "18 original P11 quarantine shows held status and no income",
+          "status": "PASS",
+          "elapsed_ms": 401
+        },
+        {
+          "name": "19 rejection, redelivery and reconciliation are distinct UI states",
+          "status": "PASS",
+          "elapsed_ms": 1427
+        },
+        {
+          "name": "20 migration failure retains navigation and blocks mutations",
+          "status": "PASS",
+          "elapsed_ms": 1353
+        },
+        {
+          "name": "21 revoke first-clear preserves consumed key and shows review hold",
+          "status": "PASS",
+          "elapsed_ms": 717
+        },
+        {
+          "name": "22 disconnected server preserves visible snapshot and locks actions",
+          "status": "PASS",
+          "elapsed_ms": 1035
+        },
+        {
+          "name": "23 empty data navigation does not invent characters or rewards",
+          "status": "PASS",
+          "elapsed_ms": 293
+        },
+        {
+          "name": "24 unbound view uses placeholders and disabled commands",
+          "status": "PASS",
+          "elapsed_ms": 185
+        },
+        {
+          "name": "25 test equipment selection invokes P17 and persists on reread",
+          "status": "PASS",
+          "elapsed_ms": 4489
+        },
+        {
+          "name": "26 browser back returns to prior page",
+          "status": "PASS",
+          "elapsed_ms": 134
+        },
+        {
+          "name": "27 390px layout all menu routes fit horizontally",
+          "status": "PASS",
+          "elapsed_ms": 902
+        },
+        {
+          "name": "28 768px and 1920px layouts fit horizontally",
+          "status": "PASS",
+          "elapsed_ms": 288
+        },
+        {
+          "name": "29 cross-origin and unsupported commands rejected by test host",
+          "status": "PASS",
+          "elapsed_ms": 10
+        },
+        {
+          "name": "30 result-loss followed by actual host restart remains fenced",
+          "status": "PASS",
+          "elapsed_ms": 3175,
+          "detail": {
+            "scope": "REAL_TEST_HOST_RESTART_WITH_NEW_MEMORY_INSTANCE",
+            "restored_game_save": false,
+            "old_pending_preserved": true
+          }
+        },
+        {
+          "name": "31 no unhandled JavaScript page errors",
+          "status": "PASS",
+          "elapsed_ms": 2
+        }
+      ],
+      "summary": {
+        "executed": 31,
+        "pass": 31,
+        "fail": 0
+      },
+      "screenshots": [
+        "P20_Menu_1280.png",
+        "P20_Party_1280.png",
+        "P20_Growth_1280.png",
+        "P20_Chapters_1280.png",
+        "P20_Settlement_1280.png",
+        "P20_Learning_Quarantine.png",
+        "P20_Migration_Failed.png",
+        "P20_Menu_390.png",
+        "P20_Restart_Pending.png"
+      ],
+      "page_errors": [],
+      "console_errors": [
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+        "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+      ],
+      "http_error_responses": [
+        {
+          "url": "LOCALHOST/api/command",
+          "status": 503
+        },
+        {
+          "url": "LOCALHOST/api/view",
+          "status": 503
+        },
+        {
+          "url": "LOCALHOST/api/command",
+          "status": 503
+        }
+      ],
+      "fatal": null
+    },
+    "browser_server_log": "{\"url\": \"http://127.0.0.1:43767\", \"fixture\": true, \"durable\": false, \"production_integration\": \"BLOCKED\"}\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 503 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/lookup HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 503 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/fixture/trace HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 403 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 400 -\nP20_HTTP \"GET /sources/original_bytes.json HTTP/1.1\" 404 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/fixture HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/command HTTP/1.1\" 503 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\n{\"url\": \"http://127.0.0.1:43767\", \"fixture\": true, \"durable\": false, \"production_integration\": \"BLOCKED\"}\nP20_HTTP \"GET / HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/app.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/styles.css HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/assets/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2 HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/controller.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/port.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/renderer.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /ui/meta/model.mjs HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"GET /api/view HTTP/1.1\" 200 -\nP20_HTTP \"POST /api/lookup HTTP/1.1\" 200 -\n",
+    "screenshots": [
+      {
+        "filename": "P20_Menu_1280.png",
+        "size_bytes": 236583,
+        "sha256": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141"
+      },
+      {
+        "filename": "P20_Party_1280.png",
+        "size_bytes": 182187,
+        "sha256": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3"
+      },
+      {
+        "filename": "P20_Growth_1280.png",
+        "size_bytes": 127255,
+        "sha256": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2"
+      },
+      {
+        "filename": "P20_Chapters_1280.png",
+        "size_bytes": 153618,
+        "sha256": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b"
+      },
+      {
+        "filename": "P20_Settlement_1280.png",
+        "size_bytes": 103101,
+        "sha256": "2bf5d426271267c9dae50f62104dd27ad2122a3cf4ccc6dc7fec0985c20888b5"
+      },
+      {
+        "filename": "P20_Learning_Quarantine.png",
+        "size_bytes": 93389,
+        "sha256": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20"
+      },
+      {
+        "filename": "P20_Migration_Failed.png",
+        "size_bytes": 152232,
+        "sha256": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde"
+      },
+      {
+        "filename": "P20_Menu_390.png",
+        "size_bytes": 136599,
+        "sha256": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b"
+      },
+      {
+        "filename": "P20_Restart_Pending.png",
+        "size_bytes": 141542,
+        "sha256": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083"
+      }
+    ],
+    "file_immutability": {
+      "status": "PASS",
+      "file_count": 270,
+      "before_after_identical": true
+    },
+    "source_capture_match": "PASS; all executed P20 source hashes equal archived bytes",
+    "scope": "AUTHOR_ONLY; not P32/P33/P35 or real-game E2E"
+  },
+  "production_status": "BLOCKED",
+  "independent_gates": "NOT_RUN",
+  "created_utc": "2026-10-30T04:45:14.550216+00:00",
+  "completed_utc": "2026-10-30T04:46:19.209014+00:00",
+  "self_hash_policy": "No self-referential hash. Archive, manifest, exports and raw replay logs are bound here; receipt size/hash may be stated separately by sender."
+}

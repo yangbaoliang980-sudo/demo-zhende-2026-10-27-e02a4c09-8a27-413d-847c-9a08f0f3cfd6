@@ -1,0 +1,12 @@
+flowchart TD
+    Boot["启动 / 读取视图"] --> Home["营地首页"]
+    Home --> Characters["角色列表"]
+    Characters --> Growth["养成 / 升级与装备"]
+    Home --> Party["三人编队"]
+    Party --> Chapters["章节选择"]
+    Chapters --> Handoff["出战交接"]
+    Handoff --> Settlement["战后结算"]
+    Settlement --> Home
+    Home --> Learning["学习状态"]
+    Growth --> Home
+    Learning --> Home

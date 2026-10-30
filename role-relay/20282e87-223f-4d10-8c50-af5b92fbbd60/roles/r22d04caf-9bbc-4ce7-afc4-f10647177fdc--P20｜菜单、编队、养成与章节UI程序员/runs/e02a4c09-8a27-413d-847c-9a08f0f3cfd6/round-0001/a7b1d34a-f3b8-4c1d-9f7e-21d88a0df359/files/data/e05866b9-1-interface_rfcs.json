@@ -1,0 +1,211 @@
+{
+  "schema_version": "P20-RFCS/0.1.0",
+  "task_id": "P20-S05-S06-S07-METAUI-001",
+  "rfcs": [
+    {
+      "id": "P20-RFC-001",
+      "contract_owner": "P13",
+      "consulted_owners": [
+        "P17",
+        "P18",
+        "P11"
+      ],
+      "proposed_version": "P20-META-VIEW/0.1.0-proposal",
+      "subject": "一致只读组合视图",
+      "base_sources": [
+        {
+          "relative_path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "sources/P18/upstream/P17/P17_API.md",
+          "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+        },
+        {
+          "relative_path": "sources/P18/P18_API.md",
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        }
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "proposed_artifacts": [
+        "P20_API.md",
+        "domain_api_mapping.json",
+        "party_menu_flow.md"
+      ],
+      "acceptance_criteria": [
+        "same profile/store/continuity/revisions/content hashes",
+        "retain extended review/quarantine fields",
+        "explicit absent data; no fabricated zero wallet"
+      ],
+      "scope_change": "NONE_BY_P20",
+      "owner_decision": null,
+      "change_request_on_conflict": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P20-RFC-002",
+      "contract_owner": "P13",
+      "consulted_owners": [
+        "P17",
+        "P18",
+        "P21"
+      ],
+      "proposed_version": "P20-META-INTENT/0.1.0-proposal",
+      "subject": "领域命令与只读 lookup",
+      "base_sources": [
+        {
+          "relative_path": "sources/P18/upstream/P17/P17_API.md",
+          "sha256": "6c161c9941a507d7790ba39290356a1b568d5fece4e73ef4289651d141da7a88"
+        },
+        {
+          "relative_path": "sources/P18/P18_API.md",
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        }
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "proposed_artifacts": [
+        "P20_API.md",
+        "domain_api_mapping.json",
+        "party_menu_flow.md"
+      ],
+      "acceptance_criteria": [
+        "idempotency same ID/payload",
+        "candidate not committed",
+        "UNKNOWN disables new economic mutation",
+        "durable reply bound to authoritative store"
+      ],
+      "scope_change": "NONE_BY_P20",
+      "owner_decision": null,
+      "change_request_on_conflict": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P20-RFC-003",
+      "contract_owner": "P13",
+      "consulted_owners": [
+        "P11",
+        "P12",
+        "P21",
+        "P08"
+      ],
+      "proposed_version": "P20-LEARNING-PROOF/0.1.0-proposal",
+      "subject": "正式已入账的可信证明",
+      "base_sources": [
+        {
+          "relative_path": "sources/P11/ledger_runtime/types.py",
+          "sha256": "8fce4bba2296326913c23fe10bb77ff145ce85cd38f6a5c7c7e7581ea9b7a149"
+        },
+        {
+          "relative_path": "sources/P11/formal_prerequisites.json",
+          "sha256": "6aa337e0a9d224129e2253796d657baad0504addea829c599a9420c334854d5b"
+        }
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "proposed_artifacts": [
+        "P20_API.md",
+        "domain_api_mapping.json",
+        "party_menu_flow.md"
+      ],
+      "acceptance_criteria": [
+        "APPLIED alone insufficient",
+        "reject P21_SIMULATOR even durable=true",
+        "bind current account/collection/inbox/store/wallet/undo state",
+        "quarantine never credited"
+      ],
+      "scope_change": "NONE_BY_P20",
+      "owner_decision": null,
+      "change_request_on_conflict": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P20-RFC-004",
+      "contract_owner": "P13",
+      "consulted_owners": [
+        "P18",
+        "P19",
+        "P14"
+      ],
+      "proposed_version": "P20-SCENE-HANDOFF/0.1.0-proposal",
+      "subject": "入场与战斗返回只读引用",
+      "base_sources": [
+        {
+          "relative_path": "sources/P18/P18_API.md",
+          "sha256": "4720d87035024d6c6532ed1e0ca182118cbfb32b9e965d889ba35e2666a21889"
+        },
+        {
+          "relative_path": "sources/P19/P19_API.md",
+          "sha256": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c"
+        }
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "proposed_artifacts": [
+        "P20_API.md",
+        "domain_api_mapping.json",
+        "party_menu_flow.md"
+      ],
+      "acceptance_criteria": [
+        "one authoritative active battle",
+        "P20 no synthetic production result",
+        "return exposes lookup ref not reward amount",
+        "restart active battle route recovery"
+      ],
+      "scope_change": "NONE_BY_P20",
+      "owner_decision": null,
+      "change_request_on_conflict": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    },
+    {
+      "id": "P20-RFC-005",
+      "contract_owner": "P21",
+      "consulted_owners": [
+        "P13",
+        "P17",
+        "P18",
+        "P11"
+      ],
+      "proposed_version": "P20-PENDING-RECOVERY/0.1.0-proposal",
+      "subject": "持久未决请求恢复",
+      "base_sources": [
+        {
+          "relative_path": "sources/P18/upstream/P13/contracts/internal/internal_dto.schema.json",
+          "sha256": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+        },
+        {
+          "relative_path": "sources/P18/upstream/P17/wallet_delta_contract.json",
+          "sha256": "d0a84fbadd57cd04270a4c86c57e55c3229ea4c0f87d17a3c1bf2dc1fc2512ff"
+        }
+      ],
+      "status": "PREPARED_NOT_SUBMITTED",
+      "proposed_artifacts": [
+        "P20_API.md",
+        "domain_api_mapping.json",
+        "party_menu_flow.md"
+      ],
+      "acceptance_criteria": [
+        "atomic receipt/commit",
+        "retention and continuity policy",
+        "authoritative absence proof before resend",
+        "migration failure readonly navigation"
+      ],
+      "scope_change": "NONE_BY_P20",
+      "owner_decision": null,
+      "change_request_on_conflict": {
+        "preserve_base_sha": true,
+        "preserve_incoming_sha": true,
+        "overwrite_allowed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+# P20｜菜单、编队、养成与章节 UI 交付
+
+**已完成可运行的隔离非战斗 UI、领域数据绑定、操作防重与恢复保护，并交付源码、测试、页面状态图和交接文件。最终 ZIP 已在新解压目录复跑：106 项 JavaScript 单元测试、38 项原代码契约测试、31 项 Chromium 流程检查全部通过。**
+
+任务编号：`P20-S05-S06-S07-METAUI-001`
+交付版本：`P20-METAUI/0.1.0-isolated`
+当前状态：**ISOLATED_META_UI_DELIVERED / PRODUCTION_INTEGRATION_BLOCKED**
+
+正式接入仍缺少 P13 实际路径授权、P21 持久事务与恢复接口、P23/P24 正式工件、真实学习状态适配及目标环境。本次完成的是 **P20 隔离组件及作者验证**；P32 独测、P33 人工验收、P35 独审、真实 Anki 和整游戏 E2E 均未代签通过。
+
+## 一、完整成果下载
+
+| 文件 | 实际大小 | 内容 |
+| --- | --- | --- |
+| **P20_MetaUI_V0.1.zip** | **6,486,161 字节** | 270 个实体文件：可执行 UI、源码、测试、126 份未修改的上游原件、截图、历史失败证据与交接资料 |
+| **P20_delivery_receipt.json** | **84,682 字节** | ZIP、清单、28 个独立导出的实际大小与 SHA-256，以及新解压复跑的命令、原始输出、退出码与浏览器结果 |
+
+ZIP 的 SHA-256：
+
+纯文本
+
+`175c51607c175e483ec21e0000cbcc211407cffb09c8dc206648d867df187513`
+
+已实际完成 ZIP CRC 检查、**270 个包内文件与生成目录逐字节比对**、**28 个独立导出与包内对应文件同名同字节比对**，以及新解压目录运行前后的文件不变性检查。清单登记其余 269 个文件；清单自身与 ZIP 由包外交付回执绑定，避免循环哈希。
+
+### 必交文件与阅读入口
+
+**运行请使用完整 ZIP。** 单独下载的启动文件和测试入口依赖包内其他模块。
+
+| 文件 | 用途 |
+| --- | --- |
+| README.md | 启动、完整演练、验证命令与能力边界 |
+| run_ui.py | 本机隔离验证台启动入口 |
+| meta_ui_tests.py | 106 项单元测试与 38 项原代码契约测试入口 |
+| party_menu_flow.md | 页面路径、三人编队、未决请求与恢复规则 |
+| stage_unlock_views.json | 六类关卡状态、按钮条件、首通资格和隔离显示 |
+| learning_status_ui_tests.md | 学习状态映射、实际测试与正式到账阻塞 |
+| P20_API.md | 只读视图、操作意图、响应、查询与恢复接口提案 |
+| domain_api_mapping.json | 13 项控件/API 映射，含原文件 SHA-256 和 owner |
+| page_state_diagram.svg · page_state_diagram.mmd | 页面状态图及可编辑 Mermaid 源 |
+| integration_handoff.md | 下游接收、复跑和正式接线说明 |
+
+## 二、实际界面与已实现行为
+
+下图来自最终源码的实际 Chromium 运行截图。**角色使用明确的文字占位，未作为正式立绘或 P24 正式素材交付。**
+
+其他实际截图：
+
+- ：三人编队。
+- ：升级与资源消耗。
+- ：章节、解锁与首通预览。
+- ：战后结算。
+- ：学习记录隔离。
+- ：存档异常下的只读导航。
+- ：窄窗口布局。
+- ：测试服务重启后的未决操作保护。
+
+### 1. 首页、角色列表与三人编队
+
+已实现首页、角色列表和三席编队编辑。角色等级、属性、钱包和已提交队伍来自原 P17 数据。
+
+编队编辑使用页面局部草稿，选择已占用角色会交换席位；未满三人不能保存。保存后以领域服务返回的顺序重建界面，刷新页面可以恢复已保存编队。**导航和浏览角色不会触发授奖或消耗。**
+
+### 2. 升级与装备操作
+
+升级费用和累计经验条件读取原 P17 配置，操作提交给原 P17 计划与校验逻辑。UI 不计算成长属性、不直接扣款。
+
+装备入口保留，但**默认关闭**；仅在明确的 equipment 测试场景中启用原 P17 测试装备配置。正式装备范围仍等待 P01 和相关 owner 确认。
+
+### 3. 章节选择、出战交接和结算
+
+已实现以下页面路径：
+
+纯文本
+
+`启动 → 首页 → 三人编队 → 章节选择 → 出战交接 → 战后结算 → 首页`
+
+关卡页面直接使用 P18 的六类状态：
+
+| 领域状态 | 页面显示与处理 |
+| --- | --- |
+| LOCKED | 未解锁，不能入场 |
+| AVAILABLE | 可挑战，仍需满足领域资格 |
+| CLEARED | 已通关；重复挑战不恢复首通资格 |
+| IN_PROGRESS | 进行中，查看已有出战记录 |
+| REVIEW_REQUIRED | 进度待核对，保留原首通消耗记录 |
+| PENDING_RECONCILIATION | 结算已隔离，不显示为到账或可领取 |
+
+结算页只提交战斗引用，由原 P18/P17 逻辑处理结果与奖励。重新进入结算页、返回首页或重复点击，不会再次领取同一奖励。
+
+**出战交接与战后返回已在隔离台验证；中间的战斗结果由独立测试工具注入。没有运行、合并或改写 P19 战斗 HUD，也没有把合成终局称为真实战斗通过。** 数据来源和调用边界见 domain_api_mapping.json。
+
+### 4. 学习状态与“已入账”边界
+
+已实现未连接、连接可用、等待补发、待核对、隔离、拒绝、撤回及结果未知等提示。学习查询实际调用未修改的 P11 StudyLedger.query()；本轮事件和存储来自 P11 测试模型。
+
+对 P11 模拟器返回的 APPLIED，界面显示 **“测试记录已处理”**。即使模拟回执带有 durable=true，也不会显示为正式学习收益。
+
+**正式“已入账”分支当前为 BLOCKED。** 它需要 P11/P13/P21 接受并提供可信身份、持久提交证明和当前钱包的一致读取，不能仅凭一个状态字符串启用。隔离记录始终显示待核对，不增加 P17 可用余额。详细条件和测试对应关系见 learning_status_ui_tests.md。
+
+### 5. 防重、断线与重新进入
+
+发送操作前同步锁定输入，并先保存完整原意图、请求 ID、绑定版本和哈希。响应丢失后进入 UNKNOWN，暂停新的经济操作；查询复用原 ID、原载荷，不重新生成请求。
+
+实际浏览器已验证：
+
+- 双击只提交一次。
+- 升级已提交但响应丢失后，刷新并查询原操作，不发生第二次扣款。
+- 存档迁移异常时仍可切换页面，变更按钮保持关闭。
+- 空数据和未接入模式显示占位，不伪造角色、余额或关卡。
+- 测试服务进程真实重启后，旧未决请求继续保留，不能被新存储实例自动确认或重发。
+
+最后一项证明的是**未决操作保护**；正式 P21 存档恢复仍未验证。
+
+## 三、实际验证结果
+
+以下结果来自最终 ZIP 新解压目录的实际复跑，重复执行不累计为新增覆盖。
+
+| 验证层级 | 实际结果 | 证明范围 |
+| --- | --- | --- |
+| P20 作者设计复核 | COMPLETED_AUTHOR_REVIEW | 本岗页面、绑定、所有权与交付边界 |
+| JavaScript 单元测试 | **106 PASS，0 FAIL，0 skip** | 视图校验、输入防重、旧响应、恢复记录、学习状态等 |
+| Python 原代码契约测试 | **38 PASS，0 FAIL** | 原 P13/P17/P18/P11 调用、候选校验、防重及原件不变性 |
+| 真实 Chromium 检查 | **31 PASS，0 FAIL** | DOM、HTTP、实际控件操作、页面重载、服务重启和布局 |
+| ZIP／包内文件／独立导出 | **PASS** | 270 个文件、28 个导出一致 |
+| 新解压目录运行前后不变性 | **PASS** | 270 个文件未改变 |
+| 上游原件复核 | **133 PASS** | 7 个上传附件＋126 份随包原件 |
+| 正式接入前置检查 | **BLOCKED，exit 3** | 路径、正式接口、素材及环境尚未齐备 |
+| P23/P25/P37 设计、风格、合规受理 | **NOT_RUN** | 未代签 |
+| P32/P33/P35 独立门禁 | **NOT_RUN** | 作者测试不替代独测、人工和独审 |
+| 目标引擎、Windows、真实 Anki、正式存档恢复、整游戏 E2E | **NOT_RUN** | 未执行 |
+
+实际环境为 **Python 3.12.14、Node 24.22.1、Linux Chromium 153.0.8010.0**。浏览器检查覆盖 390、768、1280、1920 像素宽度；未处理的 JavaScript 页面异常为零。测试中保留了主动注入的响应丢失和断线 HTTP 503。
+
+两次浏览器失败及修复均保留：一次为原生 fetch 接收者绑定问题，一次为测试场景重置后未重新加载页面的测试工具问题。失败日志、失败时源码快照与后续通过记录均随包交付；独立复测和关单仍为 NOT_RUN。
+
+对应文件：verification_status.json、defect_log.json。新解压复跑的完整原始输出在主交付回执中。
+
+## 四、上游核验与正式接入阻塞
+
+本轮实际检查了收到的 **7 个附件、102 个去重 ZIP、7,577 个展开文件成员**，执行 **786 条 relay 清单校验，0 项失败**。7 个附件均与用户指定归档固定提交中的 Git blob 相符；选取的 126 份运行与审查原件按原字节随包保存。
+
+已核验的固定提交：
+
+- V6 职责仓库：`8c370d731c323f86ff19642f4cc73f818498f641`
+- 上游归档仓库：`1979821ec38f75098fef34ca9fdd493630a7b8bc`
+
+来源路径、原 ZIP 成员、Git blob SHA-1 与文件 SHA-256 分列记录在 source_input_receipt.json。
+
+原 P13 映射中，P20 的两条路径仍为 **actual_production_path=null、`write_allowed=false`**。本次仅新建隔离交付目录，没有覆盖正式工程。
+
+| 缺项 | 责任方与需要提供的工件 |
+| --- | --- |
+| 实际工程路径和修改权限 | **P13**：仓库、固定 base commit、实际路径、修改白名单 |
+| 目标运行与测试环境 | **P13/P34**：引擎、OS、设备和构建入口证据 |
+| 正式用户流程与组件素材 | **P23/P24**：固定版本工件；P25/P37 分别受理风格与合规 |
+| 组合读视图、操作网关及回执契约 | **P13/P17/P18/P11**：接受相应版本化接口 |
+| 持久事务、迁移与跨重启查询 | **P21**：真实提交、回执保留和恢复规则 |
+| 真实学习状态与到账证明 | **P11/P12/P21**：通信状态、补发查询与可信提交绑定 |
+| 正式奖励、内容与装备范围 | **P08/P01**：批准版本；测试内容不构成正式范围确认 |
+| 战斗入场及返回接线 | **P13/P18/P19**：受信任战斗引用和场景路由 |
+| 独立验收及最终合并 | **P32/P33/P35**；合并由用户指定 **EXT-INTEGRATOR** 执行 |
+
+已准备 **5 项版本化 RFC** 和 **17 个接收方的交接记录**。RFC 状态为 PREPARED_NOT_SUBMITTED，接收状态为 PREPARED_NOT_ACKNOWLEDGED。
+
+相关文件：actual_path_request.json、blockers.json、interface_rfcs.json、downstream_receipts.json、delivery_manifest.json。
+
+## 五、下一位直接复现
+
+完整解压后进入 P20_MetaUI_V0.1，执行：
+
+Bash
+
+```
+python -B tools/verify_delivery.py
+python -B meta_ui_tests.py
+python -B tools/preflight.py
+python -B run_ui.py --fixture
+```
+
+前三条在最终 ZIP 新目录中的实际退出码依次为 **0、0、3**。第三条的 BLOCKED 是正式接入依赖缺失的如实结果。
+
+启动后在本机浏览器打开：
+
+纯文本
+
+`http://127.0.0.1:8766`
+
+可操作演练路径为：**调整三人编队 → 升级 → 普通关入场 → 出战交接 → 测试工具注入结果 → 结算领取 → 返回菜单**。独立测试工具位于 /lab，页面内明确标注测试用途。
+
+不带 --fixture 启动时进入未接入模式，余额显示 —，领域变更关闭。UI 运行使用 Python 标准库和现代浏览器；中文字体已随包提供，Node 仅用于测试。Windows 启动脚本已提供，本轮 Windows 执行为 NOT_RUN。
+
+下一接收方可直接使用完整包进行 P23 流程受理、P32 自动化复测、P33 人工复核和 P35 证据审查；正式接线步骤与不可替代的 owner 工作已写入 integration_handoff.md。
+
+---
+
+## 本次归档的原始文件
+
+- [P20_MetaUI_V0.1.zip](files/archives/P20_MetaUI_V0.1.zip)
+- [P20_delivery_receipt.json](files/data/P20_delivery_receipt.json)
+- [4a0b779b-1-README.md](files/documents/4a0b779b-1-README.md)
+- [6e5aad0a-1-run_ui.py](files/code/6e5aad0a-1-run_ui.py)
+- [meta_ui_tests.py](files/code/meta_ui_tests.py)
+- [party_menu_flow.md](files/documents/party_menu_flow.md)
+- [stage_unlock_views.json](files/data/stage_unlock_views.json)
+- [learning_status_ui_tests.md](files/documents/learning_status_ui_tests.md)
+- [P20_API.md](files/documents/P20_API.md)
+- [domain_api_mapping.json](files/data/domain_api_mapping.json)
+- [page_state_diagram.svg](files/images/page_state_diagram.svg)
+- [page_state_diagram.mmd](files/other/page_state_diagram.mmd)
+- [c2c511aa-1-integration_handoff.md](files/documents/c2c511aa-1-integration_handoff.md)
+- [93159fec-1-source_input_receipt.json](files/data/93159fec-1-source_input_receipt.json)
+- [51ba4aa6-1-verification_status.json](files/data/51ba4aa6-1-verification_status.json)
+- [4850893a-1-delivery_manifest.json](files/data/4850893a-1-delivery_manifest.json)
+- [79ae3864-1-blockers.json](files/data/79ae3864-1-blockers.json)
+- [e05866b9-1-interface_rfcs.json](files/data/e05866b9-1-interface_rfcs.json)
+- [8fbf4bd9-1-defect_log.json](files/data/8fbf4bd9-1-defect_log.json)
+- [1b0e0f61-1-downstream_receipts.json](files/data/1b0e0f61-1-downstream_receipts.json)
+- [95a94dd5-1-actual_path_request.json](files/data/95a94dd5-1-actual_path_request.json)
+- [P20_Menu_1280.png](files/images/P20_Menu_1280.png)
+- [P20_Party_1280.png](files/images/P20_Party_1280.png)
+- [P20_Growth_1280.png](files/images/P20_Growth_1280.png)
+- [P20_Chapters_1280.png](files/images/P20_Chapters_1280.png)
+- [P20_Settlement_1280.png](files/images/P20_Settlement_1280.png)
+- [P20_Learning_Quarantine.png](files/images/P20_Learning_Quarantine.png)
+- [P20_Migration_Failed.png](files/images/P20_Migration_Failed.png)
+- [P20_Menu_390.png](files/images/P20_Menu_390.png)
+- [P20_Restart_Pending.png](files/images/P20_Restart_Pending.png)
+- [relay-materials-1-29da14dfaa.zip](files/archives/relay-materials-1-29da14dfaa.zip)
+- [relay-materials-2-359996fd72.zip](files/archives/relay-materials-2-359996fd72.zip)
+- [relay-materials-3-279d81665e.zip](files/archives/relay-materials-3-279d81665e.zip)
+- [relay-materials-4-93fd453ebe.zip](files/archives/relay-materials-4-93fd453ebe.zip)
+- [relay-materials-5-4a55082585.zip](files/archives/relay-materials-5-4a55082585.zip)
+- [relay-materials-6-9f558bb46d.zip](files/archives/relay-materials-6-9f558bb46d.zip)
+
