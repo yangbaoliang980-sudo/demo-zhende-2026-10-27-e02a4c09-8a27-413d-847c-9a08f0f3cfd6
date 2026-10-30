@@ -1,0 +1,776 @@
+{
+  "schema_version": "P25-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P25-PRE-S03-ART-001",
+  "style_version": "P25-ART-BIBLE/0.1.0",
+  "created_utc": "2026-10-30T13:47:59.017383+00:00",
+  "status": "AUTHOR_ART_DIRECTION_DELIVERED_FORMAL_SAMPLE_BLOCKED",
+  "archive": {
+    "filename": "P25_ArtDirection_V0.1.zip",
+    "size_bytes": 11709179,
+    "sha256": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8",
+    "package_root": "P25_ArtDirection_V0.1",
+    "file_count": 574,
+    "crc_result": "PASS",
+    "all_member_bytes_equal_working_delivery": "PASS"
+  },
+  "manifest": {
+    "package_relative_path": "delivery_manifest.json",
+    "size_bytes": 576453,
+    "sha256": "e4e0bd47a2cc2bf99f182927fa1cb91f61e1c4da5c46da2e211792f0a26a06e9",
+    "listed_file_count": 573
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 3455,
+      "sha256": "7fa74cd7a091b2ebe8041e9e20111364441b568f57d0b99c5ee3248d7ba5a8ac",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_delivery_report.md",
+      "package_relative_path": "P25_delivery_report.md",
+      "size_bytes": 11409,
+      "sha256": "e0996c3c49c79c2158cc0e3ad97d5178321f55c018fa754c0688530bc65d3d56",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_review_index.html",
+      "package_relative_path": "P25_review_index.html",
+      "size_bytes": 16758,
+      "sha256": "51081098829a9cd3d8158a83cb99739d77b2e2499a8a308a287ad898d2e470eb",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "style_bible.md",
+      "package_relative_path": "art_direction/style_bible.md",
+      "size_bytes": 15526,
+      "sha256": "b89e7779c11cea6b50a68a7922b2217178655fb8f0226200cc774d09c98d01b4",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "character_brief_template.md",
+      "package_relative_path": "art_direction/character_brief_template.md",
+      "size_bytes": 2934,
+      "sha256": "e59ca1d729dce9fa803fe4f1ff9b6aa04affda35cde398fd2fac98524f683b75",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "layer_export_spec.md",
+      "package_relative_path": "art_direction/layer_export_spec.md",
+      "size_bytes": 5697,
+      "sha256": "2014a62c84de4a76861659a6daf725f73fa6ede36a6b80cf55a0aa9fc4efaa69",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "sample_acceptance.tsv",
+      "package_relative_path": "art_direction/sample_acceptance.tsv",
+      "size_bytes": 9055,
+      "sha256": "3099f864a3d0ea864fde075779c27f0fb0d500b1f7268976cb8dd9f8664aeb2a",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "crop_profiles.json",
+      "package_relative_path": "art_direction/crop_profiles.json",
+      "size_bytes": 4331,
+      "sha256": "0dedd53d4f44e7d041f6e601b37efc1acd8089e09813799354e34e984a70e4fe",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "palette.json",
+      "package_relative_path": "art_direction/palette.json",
+      "size_bytes": 3853,
+      "sha256": "1d8ee1083dbe575a13e8cf0f47484c211ac4f8819f8e9e687f24441483093a29",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "sample_submission_template.json",
+      "package_relative_path": "art_direction/sample_submission_template.json",
+      "size_bytes": 1390,
+      "sha256": "902ecb0d915669a5d6a7cd80c3814f13842f5d9f3051939d22de701eb6dd58f5",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "character_source_template.ora",
+      "package_relative_path": "art_direction/templates/character_source_template.ora",
+      "size_bytes": 6928,
+      "sha256": "30bddf1581af798b4a3d7ad63de93baaa4bf29ee2b56b0fab4d074779dc37e0c",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P24_review.md",
+      "package_relative_path": "asset_visual_reviews/P24_review.md",
+      "size_bytes": 5612,
+      "sha256": "cf27c77c3075c77814bd7f1aa98ef19797d696d0195b9ff37947b6429dafc16b",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P24_asset_reviews.tsv",
+      "package_relative_path": "asset_visual_reviews/P24_asset_reviews.tsv",
+      "size_bytes": 77771,
+      "sha256": "7751cc1db11a865fc83185817003b021cfeffc3fef1ede3f771cef38b3de6b39",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "issue_register.tsv",
+      "package_relative_path": "asset_visual_reviews/issue_register.tsv",
+      "size_bytes": 2516,
+      "sha256": "6d276628fc76ae92bb1ccf200fc14bb09004a8c223de8ed5086c0d34965c9786",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "sample_gate.json",
+      "package_relative_path": "asset_visual_reviews/sample_gate.json",
+      "size_bytes": 773,
+      "sha256": "1fc5274b71d614c98ee08e47bf2ca185fb70e271c39dd7046354d334beeafa53",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "formal_asset_register.json",
+      "package_relative_path": "asset_visual_reviews/formal_asset_register.json",
+      "size_bytes": 522,
+      "sha256": "24abf8353a9c36e257ee06a21bb8f5996f27b2e828077271515c249842afcbee",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "source_input_receipt.json",
+      "size_bytes": 12726,
+      "sha256": "ae31f38d034fd306fb02963cdfd566daf2d068203708230cdee5e4efd7ba1aff",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "size_bytes": 576453,
+      "sha256": "e4e0bd47a2cc2bf99f182927fa1cb91f61e1c4da5c46da2e211792f0a26a06e9",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "verification_status.json",
+      "package_relative_path": "verification_status.json",
+      "size_bytes": 3045,
+      "sha256": "bab6db4c1067866fc3f94e7eb1462e0f2a6dc2a52e65df01a0eb377b10b7e059",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Style_Reference.png",
+      "package_relative_path": "art_direction/boards/P25_Style_Reference.png",
+      "size_bytes": 197517,
+      "sha256": "d61b5e537ce28a4a8e2cd8efcc5c8fee7032a70ff33ff3524abd010e4f3f4d6c",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Style_Reference.svg",
+      "package_relative_path": "art_direction/boards/P25_Style_Reference.svg",
+      "size_bytes": 10930,
+      "sha256": "def48cb2e61fc9c719eb2b5fa93b18dbaa1a4a09d75843571fc851cf3b3968f1",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Proportion_Crop.png",
+      "package_relative_path": "art_direction/boards/P25_Proportion_Crop.png",
+      "size_bytes": 225693,
+      "sha256": "12192b42dfde95cadea4f796f61fb9bfd4b77505c5a360adb278d6ccd2586893",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Proportion_Crop.svg",
+      "package_relative_path": "art_direction/boards/P25_Proportion_Crop.svg",
+      "size_bytes": 8209,
+      "sha256": "430941c51da4cfe691338ddca206e14cc713cf71e27f5e93cb28d98c456201e8",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Layer_Alpha.png",
+      "package_relative_path": "art_direction/boards/P25_Layer_Alpha.png",
+      "size_bytes": 277182,
+      "sha256": "e4562da318aa85ccb6428b1efec3406b4b43e5350470a26b5ca7e71bc7be95f3",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_Layer_Alpha.svg",
+      "package_relative_path": "art_direction/boards/P25_Layer_Alpha.svg",
+      "size_bytes": 13421,
+      "sha256": "76984aa9a76451681f8cdf98b4a89c7dab11b7413f030b0c0170b07ee01ef3f6",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_P24_Contact_01.png",
+      "package_relative_path": "asset_visual_reviews/boards/P25_P24_Contact_01.png",
+      "size_bytes": 259012,
+      "sha256": "2690585606ad62321ba5d1be7f5c897f45abc1fd5fc88eb573b91238b93c3bca",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_P24_Contact_02.png",
+      "package_relative_path": "asset_visual_reviews/boards/P25_P24_Contact_02.png",
+      "size_bytes": 211211,
+      "sha256": "40a324504d3a0b809435acdb5b3096503d25731ccbe7d3ab724828851a1687a9",
+      "same_basename_and_bytes_as_zip_member": true
+    },
+    {
+      "filename": "P25_P24_Contact_03.png",
+      "package_relative_path": "asset_visual_reviews/boards/P25_P24_Contact_03.png",
+      "size_bytes": 185574,
+      "sha256": "89641c26d25ef254f22900e5f0cc55ebb8cfde37855213bc57bf5c6528212c44",
+      "same_basename_and_bytes_as_zip_member": true
+    }
+  ],
+  "export_count": 28,
+  "final_extraction_reverification": {
+    "verified_file_count": 574,
+    "before_after_file_set_and_sha256_unchanged": true,
+    "unmodified_original_p24_files_checked_against_input_zip": 436,
+    "runs": [
+      {
+        "mode": "static",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "validation/validate_p25.py",
+          "--output",
+          "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/static"
+        ],
+        "cwd": "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/extracted/P25_ArtDirection_V0.1",
+        "expected_exit_code": 0,
+        "actual_exit_code": 0,
+        "expectation_met": true,
+        "stdout": "{\"status\": \"PASS\", \"passed\": 19, \"failed\": 0, \"exit_code\": 0, \"output\": \"/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/static\"}\n",
+        "stderr": "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/extracted/P25_ArtDirection_V0.1/validation/validate_p25.py:164: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  reg=im.crop((x+12,y+12,x+286,y+144));different=sum(c!=(32,37,53) for c in reg.getdata())\n",
+        "result": {
+          "validator_version": "P25-VALIDATOR/0.1.0",
+          "validator_sha256": "e46f31b27f71e5e739d63c6ea3180d49ffaaf1ec3fec47c78e8d3835e8520a38",
+          "layer": "P25_AUTHOR_STATIC_VALIDATION",
+          "status": "PASS",
+          "mode": "static",
+          "started_utc": "2026-10-30T13:47:54.694647+00:00",
+          "finished_utc": "2026-10-30T13:47:56.992083+00:00",
+          "python_version": "3.12.14",
+          "checks": [
+            {
+              "id": "P25-V01_REQUIRED_ARTIFACTS",
+              "status": "PASS",
+              "detail": {
+                "required_files": 19
+              }
+            },
+            {
+              "id": "P25-V02_DELIVERY_INTEGRITY",
+              "status": "PASS",
+              "detail": {
+                "listed_files": 573,
+                "excluded": "delivery_manifest.json"
+              }
+            },
+            {
+              "id": "P25-V03_INPUT_RECEIPTS",
+              "status": "PASS",
+              "detail": {
+                "direct_inputs": 23
+              }
+            },
+            {
+              "id": "P25-V04_P24_IMMUTABLE_SNAPSHOT",
+              "status": "PASS",
+              "detail": {
+                "files": 436,
+                "hash_verified_entries": 435
+              }
+            },
+            {
+              "id": "P25-V05_REVIEW_COVERAGE",
+              "status": "PASS",
+              "detail": {
+                "review_rows": 105
+              }
+            },
+            {
+              "id": "P25-V06_PNG_DIMENSION_ALPHA",
+              "status": "PASS",
+              "detail": {
+                "rgba8_pngs": 210
+              }
+            },
+            {
+              "id": "P25-V07_TRANSPARENT_WINDOWS",
+              "status": "PASS",
+              "detail": 6
+            },
+            {
+              "id": "P25-V08_NO_PLACEHOLDER_PROMOTION",
+              "status": "PASS",
+              "detail": "105 placeholders remain placeholders; formal assets=0; one-sample and batch gates closed"
+            },
+            {
+              "id": "P25-V09_CROP_BOUNDS",
+              "status": "PASS",
+              "detail": {
+                "bounded_profiles": 8,
+                "hand_art_slot": "UNAPPROVED"
+              }
+            },
+            {
+              "id": "P25-V10_SAMPLE_EVIDENCE_TRUTH",
+              "status": "PASS",
+              "detail": {
+                "criteria": 42,
+                "actual_character_review": "NOT_RUN"
+              }
+            },
+            {
+              "id": "P25-V11_RENDER_PROVENANCE",
+              "status": "PASS",
+              "detail": {
+                "pairs": 7,
+                "scope": "specification diagrams and contact sheets, not game runtime"
+              }
+            },
+            {
+              "id": "P25-V12_VISIBLE_CONTACT_CELLS",
+              "status": "PASS",
+              "detail": {
+                "nonempty_cells": 105,
+                "minimum_visible_pixels": 127
+              }
+            },
+            {
+              "id": "P25-V13_TEXT_BOUNDS",
+              "status": "PASS",
+              "detail": {
+                "recorded_inkscape_measurements": 349,
+                "out_of_bounds": 0,
+                "limitation": "bounding rectangles do not prove every pair of text nodes is non-overlapping"
+              }
+            },
+            {
+              "id": "P25-V14_ORA_TEMPLATE_STRUCTURE",
+              "status": "PASS",
+              "detail": {
+                "groups": 10,
+                "empty_drawing_layers": 9,
+                "guide_layers": 1,
+                "native_gui_open": "NOT_RUN"
+              }
+            },
+            {
+              "id": "P25-V15_AUTHORITY_BOUNDARY",
+              "status": "PASS",
+              "detail": "P13 production_write_authorized=false; local RFC files are not submissions"
+            },
+            {
+              "id": "P25-V16_MEASUREMENT_EVIDENCE",
+              "status": "PASS",
+              "detail": {
+                "recorded_contrast_pairs": 37,
+                "actual_pngs_without_srgb_or_icc": 210,
+                "hp_pixels": 203
+              }
+            },
+            {
+              "id": "P25-V17_ATTACHMENT_PROVENANCE",
+              "status": "PASS",
+              "detail": {
+                "read_and_hashed": 12,
+                "exact_p23_member_matches": 11,
+                "separate_byte_version": 1
+              }
+            },
+            {
+              "id": "P25-V18_OFFLINE_REVIEW_INDEX",
+              "status": "PASS",
+              "detail": {
+                "local_links": 41
+              }
+            },
+            {
+              "id": "P25-V19_VALIDATION_LAYER_BOUNDARIES",
+              "status": "PASS",
+              "detail": {
+                "unperformed_layers_separated": 9,
+                "formal_art_gate": "BLOCKED"
+              }
+            }
+          ],
+          "passed": 19,
+          "failed": 0,
+          "formal_gate": "NOT_EVALUATED_BY_STATIC_PASS",
+          "game_runtime_executed": false,
+          "exit_code": 0
+        }
+      },
+      {
+        "mode": "formal_preflight",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "validation/validate_p25.py",
+          "--preflight",
+          "--output",
+          "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/formal"
+        ],
+        "cwd": "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/extracted/P25_ArtDirection_V0.1",
+        "expected_exit_code": 3,
+        "actual_exit_code": 3,
+        "expectation_met": true,
+        "stdout": "{\"status\": \"BLOCKED\", \"passed\": 19, \"failed\": 0, \"exit_code\": 3, \"output\": \"/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/formal\"}\n",
+        "stderr": "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/extracted/P25_ArtDirection_V0.1/validation/validate_p25.py:164: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.\n  reg=im.crop((x+12,y+12,x+286,y+144));different=sum(c!=(32,37,53) for c in reg.getdata())\n",
+        "result": {
+          "validator_version": "P25-VALIDATOR/0.1.0",
+          "validator_sha256": "e46f31b27f71e5e739d63c6ea3180d49ffaaf1ec3fec47c78e8d3835e8520a38",
+          "layer": "P25_AUTHOR_STATIC_VALIDATION",
+          "status": "BLOCKED",
+          "mode": "formal_preflight",
+          "started_utc": "2026-10-30T13:47:57.061944+00:00",
+          "finished_utc": "2026-10-30T13:47:58.864690+00:00",
+          "python_version": "3.12.14",
+          "checks": [
+            {
+              "id": "P25-V01_REQUIRED_ARTIFACTS",
+              "status": "PASS",
+              "detail": {
+                "required_files": 19
+              }
+            },
+            {
+              "id": "P25-V02_DELIVERY_INTEGRITY",
+              "status": "PASS",
+              "detail": {
+                "listed_files": 573,
+                "excluded": "delivery_manifest.json"
+              }
+            },
+            {
+              "id": "P25-V03_INPUT_RECEIPTS",
+              "status": "PASS",
+              "detail": {
+                "direct_inputs": 23
+              }
+            },
+            {
+              "id": "P25-V04_P24_IMMUTABLE_SNAPSHOT",
+              "status": "PASS",
+              "detail": {
+                "files": 436,
+                "hash_verified_entries": 435
+              }
+            },
+            {
+              "id": "P25-V05_REVIEW_COVERAGE",
+              "status": "PASS",
+              "detail": {
+                "review_rows": 105
+              }
+            },
+            {
+              "id": "P25-V06_PNG_DIMENSION_ALPHA",
+              "status": "PASS",
+              "detail": {
+                "rgba8_pngs": 210
+              }
+            },
+            {
+              "id": "P25-V07_TRANSPARENT_WINDOWS",
+              "status": "PASS",
+              "detail": 6
+            },
+            {
+              "id": "P25-V08_NO_PLACEHOLDER_PROMOTION",
+              "status": "PASS",
+              "detail": "105 placeholders remain placeholders; formal assets=0; one-sample and batch gates closed"
+            },
+            {
+              "id": "P25-V09_CROP_BOUNDS",
+              "status": "PASS",
+              "detail": {
+                "bounded_profiles": 8,
+                "hand_art_slot": "UNAPPROVED"
+              }
+            },
+            {
+              "id": "P25-V10_SAMPLE_EVIDENCE_TRUTH",
+              "status": "PASS",
+              "detail": {
+                "criteria": 42,
+                "actual_character_review": "NOT_RUN"
+              }
+            },
+            {
+              "id": "P25-V11_RENDER_PROVENANCE",
+              "status": "PASS",
+              "detail": {
+                "pairs": 7,
+                "scope": "specification diagrams and contact sheets, not game runtime"
+              }
+            },
+            {
+              "id": "P25-V12_VISIBLE_CONTACT_CELLS",
+              "status": "PASS",
+              "detail": {
+                "nonempty_cells": 105,
+                "minimum_visible_pixels": 127
+              }
+            },
+            {
+              "id": "P25-V13_TEXT_BOUNDS",
+              "status": "PASS",
+              "detail": {
+                "recorded_inkscape_measurements": 349,
+                "out_of_bounds": 0,
+                "limitation": "bounding rectangles do not prove every pair of text nodes is non-overlapping"
+              }
+            },
+            {
+              "id": "P25-V14_ORA_TEMPLATE_STRUCTURE",
+              "status": "PASS",
+              "detail": {
+                "groups": 10,
+                "empty_drawing_layers": 9,
+                "guide_layers": 1,
+                "native_gui_open": "NOT_RUN"
+              }
+            },
+            {
+              "id": "P25-V15_AUTHORITY_BOUNDARY",
+              "status": "PASS",
+              "detail": "P13 production_write_authorized=false; local RFC files are not submissions"
+            },
+            {
+              "id": "P25-V16_MEASUREMENT_EVIDENCE",
+              "status": "PASS",
+              "detail": {
+                "recorded_contrast_pairs": 37,
+                "actual_pngs_without_srgb_or_icc": 210,
+                "hp_pixels": 203
+              }
+            },
+            {
+              "id": "P25-V17_ATTACHMENT_PROVENANCE",
+              "status": "PASS",
+              "detail": {
+                "read_and_hashed": 12,
+                "exact_p23_member_matches": 11,
+                "separate_byte_version": 1
+              }
+            },
+            {
+              "id": "P25-V18_OFFLINE_REVIEW_INDEX",
+              "status": "PASS",
+              "detail": {
+                "local_links": 41
+              }
+            },
+            {
+              "id": "P25-V19_VALIDATION_LAYER_BOUNDARIES",
+              "status": "PASS",
+              "detail": {
+                "unperformed_layers_separated": 9,
+                "formal_art_gate": "BLOCKED"
+              }
+            }
+          ],
+          "passed": 19,
+          "failed": 0,
+          "formal_gate": {
+            "version": "P25-SAMPLE-GATE/0.1.0",
+            "task_id": "P25-PRE-S03-ART-001",
+            "style_version": "P25-ART-BIBLE/0.1.0",
+            "status": "BLOCKED",
+            "sample_received": false,
+            "sample_id": null,
+            "p25_character_aesthetic_review": "NOT_RUN",
+            "editable_source_open_test": "NOT_RUN",
+            "cross_character_enemy_comparison": "NOT_RUN",
+            "p37_review": "NOT_RUN",
+            "p30_import": "NOT_RUN",
+            "p35_review": "NOT_RUN",
+            "p01_quantity_approval": "NOT_RECEIVED",
+            "formal_asset_count": 0,
+            "mass_production_allowed": false,
+            "production_allowed": false,
+            "blocker_ids": [
+              "P25-RV-001",
+              "P25-RV-006",
+              "P25-RV-007"
+            ],
+            "minimum_required_next": "one genuine P26 character sample and same-version evidence; UI placeholders and geometry templates are not substitutes"
+          },
+          "game_runtime_executed": false,
+          "exit_code": 3
+        }
+      },
+      {
+        "mode": "empty_template",
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+          "-B",
+          "validation/inspect_sample.py",
+          "--submission",
+          "art_direction/sample_submission_template.json",
+          "--base",
+          ".",
+          "--output",
+          "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/empty_template"
+        ],
+        "cwd": "/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/extracted/P25_ArtDirection_V0.1",
+        "expected_exit_code": 3,
+        "actual_exit_code": 3,
+        "expectation_met": true,
+        "stdout": "{\"status\": \"BLOCKED\", \"exit_code\": 3, \"output\": \"/workspace/scratch/ecfc95d554d0/work_p25/final_zip_verification/empty_template\"}\n",
+        "stderr": "",
+        "result": {
+          "tool_version": "P25-SAMPLE-INSPECTOR/0.1.0",
+          "layer": "SUBMISSION_TECHNICAL_PRECHECK_ONLY",
+          "submission_sha256": "902ecb0d915669a5d6a7cd80c3814f13842f5d9f3051939d22de701eb6dd58f5",
+          "status": "BLOCKED",
+          "checks": [
+            {
+              "id": "SAMPLE_LIFECYCLE",
+              "status": "BLOCKED",
+              "detail": "TEMPLATE_NOT_ART"
+            },
+            {
+              "id": "SAMPLE_ID",
+              "status": "BLOCKED",
+              "detail": null
+            },
+            {
+              "id": "CHARACTER_ID",
+              "status": "BLOCKED",
+              "detail": null
+            },
+            {
+              "id": "NO_AUTOMATED_PROMOTION",
+              "status": "PASS",
+              "detail": "Production flags must remain false in an unaudited candidate."
+            },
+            {
+              "id": "STYLE_VERSION",
+              "status": "PASS",
+              "detail": "P25-ART-BIBLE/0.1.0"
+            },
+            {
+              "id": "SOURCE_BYTES",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "SOURCE_APPLICATION",
+              "status": "BLOCKED",
+              "detail": null
+            },
+            {
+              "id": "SOURCE_APPLICATION_VERSION",
+              "status": "BLOCKED",
+              "detail": null
+            },
+            {
+              "id": "EDITABLE_OPEN_EVIDENCE",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "LAYERS_MANIFEST",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "REQUIRED_stand_export",
+              "status": "BLOCKED",
+              "detail": "Actual export missing"
+            },
+            {
+              "id": "REQUIRED_avatar",
+              "status": "BLOCKED",
+              "detail": "Actual export missing"
+            },
+            {
+              "id": "REQUIRED_portrait_review",
+              "status": "BLOCKED",
+              "detail": "Actual export missing"
+            },
+            {
+              "id": "REQUIRED_characters_w14_crop",
+              "status": "BLOCKED",
+              "detail": "Actual export missing"
+            },
+            {
+              "id": "REQUIRED_party_w08_crop",
+              "status": "BLOCKED",
+              "detail": "Actual export missing"
+            },
+            {
+              "id": "P04_BRIEF",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "INPUT_p01_scope",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "INPUT_p23_safe_area",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "INPUT_p13_actual_path_mapping",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "INPUT_p37_permission_receipt",
+              "status": "BLOCKED",
+              "detail": "No actual file reference"
+            },
+            {
+              "id": "TARGET_ENVIRONMENT",
+              "status": "BLOCKED",
+              "detail": "Engine/OS/version/resolution/DPI must be recorded; this does not execute a target-device test."
+            }
+          ],
+          "counts": {
+            "PASS": 2,
+            "FAIL": 0,
+            "BLOCKED": 19
+          },
+          "formal_gate": "BLOCKED_NOT_AUTHORIZED_BY_THIS_TOOL",
+          "aesthetic_review": "NOT_RUN",
+          "native_editor_open_by_tool": "NOT_RUN",
+          "permission_review": "NOT_RUN",
+          "game_runtime_executed": false,
+          "mass_production_allowed": false,
+          "executed_at_utc": "2026-10-30T13:47:58.940936+00:00",
+          "tool_sha256": "8807df82bd5357651277eb3302a14b984653572d767ccb8db3c97cdd97106bad",
+          "exit_code": 3
+        }
+      }
+    ]
+  },
+  "source_archives": [
+    {
+      "filename": "relay-materials-1-3abf4e28cc.zip",
+      "size_bytes": 18373963,
+      "sha256": "3abf4e28ccf466b9bba173a4f36d69ec85fec48e8855263954bd5f74e292afca"
+    },
+    {
+      "filename": "relay-materials-2-109da0d9cd.zip",
+      "size_bytes": 8609940,
+      "sha256": "109da0d9cdcf11af7216415bdf65626466baa6c1ec893ea4d1dbfe594ddf1f92"
+    }
+  ],
+  "responsibility_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "handoff_commit": "6cce8c021a2ed5508f46dc2d0e7ec71202f74b99",
+  "formal_asset_count": 0,
+  "mass_production_allowed": false,
+  "production_write_authorized": false,
+  "game_runtime_executed": false,
+  "independent_reviews": {
+    "P32": "NOT_RUN",
+    "P35": "NOT_RUN",
+    "P37": "NOT_RUN"
+  },
+  "receipt_location": "outside archive to avoid circular hashing",
+  "scope_note": "Final ZIP static validation PASS proves only this artifact package. Formal preflight and empty-template precheck intentionally remain BLOCKED. No real character has been approved."
+}

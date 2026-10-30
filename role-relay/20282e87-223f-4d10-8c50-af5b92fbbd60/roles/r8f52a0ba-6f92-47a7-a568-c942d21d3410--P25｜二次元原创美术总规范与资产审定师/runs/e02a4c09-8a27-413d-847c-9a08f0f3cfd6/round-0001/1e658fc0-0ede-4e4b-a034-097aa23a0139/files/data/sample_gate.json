@@ -1,0 +1,24 @@
+{
+  "version": "P25-SAMPLE-GATE/0.1.0",
+  "task_id": "P25-PRE-S03-ART-001",
+  "style_version": "P25-ART-BIBLE/0.1.0",
+  "status": "BLOCKED",
+  "sample_received": false,
+  "sample_id": null,
+  "p25_character_aesthetic_review": "NOT_RUN",
+  "editable_source_open_test": "NOT_RUN",
+  "cross_character_enemy_comparison": "NOT_RUN",
+  "p37_review": "NOT_RUN",
+  "p30_import": "NOT_RUN",
+  "p35_review": "NOT_RUN",
+  "p01_quantity_approval": "NOT_RECEIVED",
+  "formal_asset_count": 0,
+  "mass_production_allowed": false,
+  "production_allowed": false,
+  "blocker_ids": [
+    "P25-RV-001",
+    "P25-RV-006",
+    "P25-RV-007"
+  ],
+  "minimum_required_next": "one genuine P26 character sample and same-version evidence; UI placeholders and geometry templates are not substitutes"
+}

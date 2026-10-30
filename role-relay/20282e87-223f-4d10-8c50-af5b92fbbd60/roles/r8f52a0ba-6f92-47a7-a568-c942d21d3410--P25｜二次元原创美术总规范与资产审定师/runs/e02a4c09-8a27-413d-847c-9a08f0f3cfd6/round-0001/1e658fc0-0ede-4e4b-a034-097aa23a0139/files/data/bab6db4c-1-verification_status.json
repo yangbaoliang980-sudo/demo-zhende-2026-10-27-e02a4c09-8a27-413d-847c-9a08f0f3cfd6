@@ -1,0 +1,102 @@
+{
+  "version": "P25-VERIFICATION/0.1.0",
+  "task_id": "P25-PRE-S03-ART-001",
+  "layers": [
+    {
+      "layer": "P25_ART_DIRECTION_DOCUMENTS",
+      "status": "DELIVERED",
+      "scope": "Bible、可编辑规范图、模板和42项标准；不是角色成稿"
+    },
+    {
+      "layer": "P25_P24_VISUAL_REVIEW",
+      "status": "ACCEPTED_FOR_S03_PLACEHOLDER_VISUAL_USE",
+      "scope": "P24 105项组件；正式版仍BLOCKED"
+    },
+    {
+      "layer": "P24_STATIC_VALIDATOR_RERUN",
+      "status": "PASS",
+      "scope": "本轮实际复跑18/18；原始结果位于evidence/p24_recheck"
+    },
+    {
+      "layer": "P25_AUTHOR_STATIC_VALIDATION",
+      "status": "PASS",
+      "scope": "构建阶段19/19；最终ZIP解压复验以包外回执为准",
+      "evidence": "asset_visual_reviews/evidence/author_static_check/validation_results.json"
+    },
+    {
+      "layer": "P25_AUTHOR_NEGATIVE_VALIDATION",
+      "status": "PASS",
+      "scope": "9/9按预期拒绝；损坏素材没有被标成合格",
+      "evidence": "asset_visual_reviews/evidence/negative_checks/negative_results.json"
+    },
+    {
+      "layer": "P25_DOCUMENT_RENDER",
+      "status": "PASS",
+      "scope": "7对SVG/PNG，105格切图显示，349个文字边界无画布越界"
+    },
+    {
+      "layer": "CHARACTER_AESTHETIC_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "未收到P26角色原稿与导出"
+    },
+    {
+      "layer": "CHARACTER_NATIVE_EDITOR_OPEN",
+      "status": "NOT_RUN",
+      "scope": "空白ORA只检查容器；没有绘图应用打开证据"
+    },
+    {
+      "layer": "GAME_UNIT",
+      "status": "NOT_RUN",
+      "scope": "没有执行游戏程序单元测试"
+    },
+    {
+      "layer": "GAME_CONTRACT",
+      "status": "NOT_RUN",
+      "scope": "没有执行运行契约测试"
+    },
+    {
+      "layer": "TARGET_DEVICE",
+      "status": "NOT_RUN",
+      "scope": "目标OS/引擎/DPI证据不足"
+    },
+    {
+      "layer": "ANKI_E2E",
+      "status": "NOT_RUN",
+      "scope": "没有真实Anki或端到端执行"
+    },
+    {
+      "layer": "P32_INDEPENDENT_TEST",
+      "status": "NOT_RUN",
+      "scope": "等待独立岗位"
+    },
+    {
+      "layer": "P35_INDEPENDENT_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "等待独立岗位"
+    },
+    {
+      "layer": "P37_PERMISSION_REVIEW",
+      "status": "NOT_RUN",
+      "scope": "P25不自签许可"
+    },
+    {
+      "layer": "P30_ENGINE_IMPORT",
+      "status": "NOT_RUN",
+      "scope": "未受理实际导入版本"
+    },
+    {
+      "layer": "FORMAL_ART_GATE",
+      "status": "BLOCKED",
+      "scope": "真实单人样本、映射和独立证据未齐；批量制作禁止"
+    },
+    {
+      "layer": "P25_SPECIFICATION_FONT_COVERAGE",
+      "status": "PASS",
+      "scope": "本轮7张SVG的409个可见码点无缺字；不证明所有字体或目标引擎导入",
+      "evidence": "asset_visual_reviews/evidence/font_coverage.json"
+    }
+  ],
+  "production_allowed": false,
+  "mass_production_allowed": false,
+  "integration_performed": false
+}

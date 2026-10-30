@@ -1,0 +1,60 @@
+{
+  "schema_version": "P25-SAMPLE-SUBMISSION/0.1.0",
+  "lifecycle": "TEMPLATE_NOT_ART",
+  "sample_id": null,
+  "character_id": null,
+  "style_version": "P25-ART-BIBLE/0.1.0",
+  "p04_brief": {
+    "path": null,
+    "sha256": null,
+    "version": null
+  },
+  "source": {
+    "path": null,
+    "sha256": null,
+    "size_bytes": null,
+    "format": null,
+    "application": null,
+    "application_version": null,
+    "editable_open_evidence": null,
+    "layers_manifest": null
+  },
+  "exports": [],
+  "required_variants": [
+    "stand_export",
+    "avatar",
+    "portrait_review",
+    "characters_w14_crop",
+    "party_w08_crop"
+  ],
+  "reviews": {
+    "p25": null,
+    "p37": null,
+    "p30": null,
+    "p35": null
+  },
+  "production_allowed": false,
+  "mass_production_allowed": false,
+  "instruction": "Replace nulls with actual evidence. This template and blank ORA are not samples. Technical validation never grants aesthetic or legal approval.",
+  "requirements": [
+    "REQ-004",
+    "REQ-022",
+    "REQ-037"
+  ],
+  "input_refs": {
+    "p01_scope": null,
+    "p23_safe_area": null,
+    "p13_actual_path_mapping": null,
+    "p37_permission_receipt": null
+  },
+  "target_environment": {
+    "engine": null,
+    "engine_version": null,
+    "os": null,
+    "os_version": null,
+    "logical_resolution": null,
+    "dpi_scale": null,
+    "evidence": null
+  },
+  "modification_allowlist": []
+}

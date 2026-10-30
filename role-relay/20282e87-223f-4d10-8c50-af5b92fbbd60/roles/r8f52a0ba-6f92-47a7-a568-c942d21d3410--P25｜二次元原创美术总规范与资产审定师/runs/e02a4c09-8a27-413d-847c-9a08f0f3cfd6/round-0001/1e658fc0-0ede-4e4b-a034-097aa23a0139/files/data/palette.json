@@ -1,0 +1,169 @@
+{
+  "version": "P25-ART-BIBLE/0.1.0",
+  "status": "P25_BASELINE_FIXED_FOR_SINGLE_SAMPLE",
+  "ui_basis": "P24 existing palette visually accepted for S03 placeholders; no asset lifecycle promotion",
+  "character_palette_status": "Author direction for sample production; identity/hair/eye colors remain P04/P26 briefs",
+  "tokens": [
+    {
+      "id": "ui.canvas",
+      "label_zh": "页面基底",
+      "hex": "#121520",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.surface",
+      "label_zh": "信息底板",
+      "hex": "#202535",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.raised",
+      "label_zh": "悬停底板",
+      "hex": "#2B3045",
+      "scope": "UI",
+      "basis": "P24_ASSET_CATALOG"
+    },
+    {
+      "id": "ui.text",
+      "label_zh": "正文",
+      "hex": "#F5F1E9",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.muted",
+      "label_zh": "辅助文字",
+      "hex": "#C0C9DA",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.primary",
+      "label_zh": "主要操作",
+      "hex": "#D8BCF4",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.ink",
+      "label_zh": "浅底按钮字",
+      "hex": "#19192B",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.selected",
+      "label_zh": "选中标记",
+      "hex": "#E6BF7D",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.focus",
+      "label_zh": "输入焦点",
+      "hex": "#97E2F6",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.hp",
+      "label_zh": "生命填充",
+      "hex": "#9ADDB7",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.hp_low",
+      "label_zh": "低生命候选",
+      "hex": "#FFB9C2",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.pending",
+      "label_zh": "待核对",
+      "hex": "#F3CD8D",
+      "scope": "UI",
+      "basis": "P24_STYLE"
+    },
+    {
+      "id": "ui.line",
+      "label_zh": "组件边界",
+      "hex": "#8D9AB5",
+      "scope": "UI",
+      "basis": "P24_ASSET_CATALOG"
+    },
+    {
+      "id": "art.line",
+      "label_zh": "有色深线",
+      "hex": "#3B334B",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.paper",
+      "label_zh": "服装浅面",
+      "hex": "#F3EBE0",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.violet",
+      "label_zh": "墨紫布料",
+      "hex": "#71608E",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.shadow",
+      "label_zh": "冷紫阴影",
+      "hex": "#A79AB9",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.brass",
+      "label_zh": "哑金扣件",
+      "hex": "#C6A56C",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.skin_base",
+      "label_zh": "肤色示意",
+      "hex": "#F2D4C3",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.skin_shadow",
+      "label_zh": "肤影示意",
+      "hex": "#D8A7AA",
+      "scope": "ART_GUIDE",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.warm_accent",
+      "label_zh": "暖色角色候选",
+      "hex": "#D6909E",
+      "scope": "OPTIONAL_CHARACTER_ACCENT",
+      "basis": "P25_DECISION"
+    },
+    {
+      "id": "art.cool_accent",
+      "label_zh": "冷色角色候选",
+      "hex": "#75ABB8",
+      "scope": "OPTIONAL_CHARACTER_ACCENT",
+      "basis": "P25_DECISION"
+    }
+  ],
+  "semantic_color_is_not_sufficient": true,
+  "font_visual_selection": [
+    "Noto Sans SC",
+    "Noto Sans JP",
+    "DejaVu Sans fallback"
+  ],
+  "font_license_approval": "P37_NOT_RUN"
+}

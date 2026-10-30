@@ -1,0 +1,9 @@
+issue_id	type	repair_owner	status	observed_gap	closure_standard	requirement_ids	base_sha256	review_round	failed_rework_rounds	receiver_ack	engineering_bug_claim
+P25-RV-001	MISSING_SUBMISSION	P26	BLOCKED	未收到单角色原生分层源/透明导出/原型绑定	提交一名真实角色完整样本，按42条标准实审；几何指南或空白ORA不能代替	REQ-004;REQ-022;REQ-037	NONE	1	0	NOT_RECEIVED	False
+P25-RV-002	MISSING_SUBMISSION	P27	BLOCKED	未收到普通怪/Boss原稿与enemy/phase绑定	提交一个已指定敌方样本、源导出/阶段绑定/命中锚点后再评；不擅扩敌人数量	REQ-007;REQ-009	NONE	1	0	NOT_RECEIVED	False
+P25-RV-003	MISSING_SUBMISSION	P28	BLOCKED	未收到特效作品/无动效对照	提交实际轻量表现样本；原图和文字不被遮挡，减动效保留权威状态；时序由P28/P29负责	REQ-008;REQ-024	NONE	1	0	NOT_RECEIVED	False
+P25-RV-004	FORMAL_REVIEW_HOLD	P24	BLOCKED	当前资产明确PLACEHOLDER，未与正式角色/敌人并排复核	S03可保留现有皮肤；S08交正式版并与已审角色同屏复核，刷新版本哈希与P37/P30证据	REQ-004;REQ-030	14daad1e5f7786801fa9d5bfd260b3e873e6634f3e69d2bd67497c22a532cf22	1	0	NOT_RECEIVED	False
+P25-RV-005	CONTRACT_REQUEST	P23	BLOCKED	手牌没有插画窗口；小窗与横窗不能证明完整原画展示	先以P25裁切配置做专用变体；若需要新增/扩大窗口，IC-21受理明确矩形和不遮字证据	REQ-004;REQ-035	222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608	1	0	NOT_RECEIVED	False
+P25-RV-006	MISSING_INDEPENDENT_REVIEW	P37	BLOCKED	未收到正式素材来源/许可用途审查	对同版源/字体/参考材料出具独立回执；P25不得代签发行合法性	REQ-022;REQ-037	NONE	1	0	NOT_RECEIVED	False
+P25-RV-007	MISSING_MAPPING	P13	BLOCKED	现有actual_path_mapping没有P25条目和生产路径	补真实工程固定提交、P25实际映射与写入白名单；不得覆盖式合并	REQ-015;REQ-029	388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f	1	0	NOT_RECEIVED	False
+P25-RV-008	DOCUMENTATION_CLARIFICATION	P24	OPEN_FOR_FORMAL_VERSION	210 PNG只含dpi信息，未嵌入sRGB/ICC；制作意图与实物元数据需分开记录	后续清单明确intended_color_space=sRGB、embedded_profile=null或真实值；由P30记录引擎sRGB解释。此项不证明像素颜色错误，不要求改像素才能S03占位使用。	REQ-030;REQ-035	14daad1e5f7786801fa9d5bfd260b3e873e6634f3e69d2bd67497c22a532cf22	1	0	NOT_RECEIVED	False

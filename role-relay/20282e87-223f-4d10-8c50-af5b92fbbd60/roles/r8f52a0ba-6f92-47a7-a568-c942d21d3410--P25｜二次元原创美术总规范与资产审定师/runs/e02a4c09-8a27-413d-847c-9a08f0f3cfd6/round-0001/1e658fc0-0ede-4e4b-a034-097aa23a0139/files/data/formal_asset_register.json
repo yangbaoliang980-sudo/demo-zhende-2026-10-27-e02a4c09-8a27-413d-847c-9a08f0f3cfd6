@@ -1,0 +1,20 @@
+{
+  "version": "P25-FORMAL-ASSETS/0.1.0",
+  "style_version": "P25-ART-BIBLE/0.1.0",
+  "formal_asset_count": 0,
+  "assets": [],
+  "reason": "No actual P26/P27/P28 production submission or P37 permission review; P24 remains placeholder.",
+  "required_future_record": [
+    "asset_id",
+    "source_path",
+    "source_sha256",
+    "export_paths_and_hashes",
+    "style_version",
+    "p25_review_id",
+    "issues",
+    "p37_receipt",
+    "p30_import_receipt",
+    "p35_review_receipt"
+  ],
+  "mass_production_allowed": false
+}

@@ -1,0 +1,319 @@
+{
+  "schema_version": "P25-INPUT/0.1.0",
+  "task_id": "P25-PRE-S03-ART-001",
+  "retrieved_at_utc": "2026-10-30T13:22:08.193084+00:00",
+  "role_fixed_commit": "8c370d731c323f86ff19642f4cc73f818498f641",
+  "handoff_fixed_commit": "6cce8c021a2ed5508f46dc2d0e7ec71202f74b99",
+  "sources": [
+    {
+      "source_id": "V6_ROLES",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/078/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/V6_ROLES/第六轮_全部岗位职责_可复制版V6.0.txt",
+      "size_bytes": 178461,
+      "sha256": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f",
+      "version": "V6.0",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "V6_REPORT",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/076/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/V6_REPORT/第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "size_bytes": 226868,
+      "sha256": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d",
+      "version": "V6.0",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "V6_IC",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/075/第六轮_27项接口契约冻结修订V6.0.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/V6_IC/第六轮_27项接口契约冻结修订V6.0.json",
+      "size_bytes": 23619,
+      "sha256": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43",
+      "version": "V6.0",
+      "receivers": [
+        "P25",
+        "P30",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P01_REQ",
+      "original_local_path": "work_p25/p01_requirements_traceability.tsv",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P01_REQ/p01_requirements_traceability.tsv",
+      "size_bytes": 17235,
+      "sha256": "912173b7e7469d7c124714d7908f5d82313cb950954ca7bb4c1883d4d4ae168c",
+      "version": "P01-REQ-V0.1",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P01_PRD",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/041/prd_scope_v0.md",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P01_PRD/prd_scope_v0.md",
+      "size_bytes": 2828,
+      "sha256": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f",
+      "version": "P01 PRD v0.1",
+      "receivers": [
+        "P25",
+        "P26"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P01_DECISIONS",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/040/decisions_pending.tsv",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P01_DECISIONS/decisions_pending.tsv",
+      "size_bytes": 3021,
+      "sha256": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4",
+      "version": "P01 v0.1",
+      "receivers": [
+        "P25",
+        "P01"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P13_PATH",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/051/actual_path_mapping.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P13_PATH/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "version": "P13-ACTUAL-PATH-MAPPING/0.1.0",
+      "receivers": [
+        "P25",
+        "P13"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P13_TARGET",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/050/target_environment_requirements.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P13_TARGET/target_environment_requirements.json",
+      "size_bytes": 1143,
+      "sha256": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda",
+      "version": "P13 v0.1",
+      "receivers": [
+        "P25",
+        "P34"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P22_ID",
+      "original_local_path": "work_p25/relay-materials-1-3abf4e28cc/files/072/id_policy.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P22_ID/id_policy.json",
+      "size_bytes": 812,
+      "sha256": "f675ed7aaeb5dd24c772ef11b223e93f6da0e156848e3f9fa36b57d0acc1784a",
+      "version": "upstream exact bytes",
+      "receivers": [
+        "P25",
+        "P22"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P23_ANCHOR",
+      "original_local_path": "work_p25/nested/P23_UX_Accessibility_V0.1/P23_UX_Accessibility_V0.1/design/ux/ux_anchor_contract.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P23_ANCHOR/ux_anchor_contract.json",
+      "size_bytes": 93415,
+      "sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608",
+      "version": "P23-UX-ANCHOR/0.1.0-proposal",
+      "receivers": [
+        "P25",
+        "P23"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P23_TOKENS",
+      "original_local_path": "work_p25/nested/P23_UX_Accessibility_V0.1/P23_UX_Accessibility_V0.1/design/accessibility/accessibility_tokens.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P23_TOKENS/accessibility_tokens.json",
+      "size_bytes": 2462,
+      "sha256": "7fde54f966f4c99b0fc7791b1589f283b193aa5266533f6c05b1e5f125e4103c",
+      "version": "P23-A11Y-TOKENS/0.1.0-proposal",
+      "receivers": [
+        "P25",
+        "P24",
+        "P28"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P23_W02",
+      "original_local_path": "work_p25/nested/P23_UX_Accessibility_V0.1/P23_UX_Accessibility_V0.1/design/ux/wireframes/W02_Battle_Target.svg",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P23_W02/W02_Battle_Target.svg",
+      "size_bytes": 13052,
+      "sha256": "74d6e600e5937c928b45696e0913699f71b7de2308c2636c213f09a0308c3dc2",
+      "version": "P23 final W02",
+      "receivers": [
+        "P25",
+        "P24"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P23_W08",
+      "original_local_path": "work_p25/nested/P23_UX_Accessibility_V0.1/P23_UX_Accessibility_V0.1/design/ux/wireframes/W08_Party_Draft.svg",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P23_W08/W08_Party_Draft.svg",
+      "size_bytes": 9536,
+      "sha256": "ac7181e6d4f9472c17e523aad52fa2218c5bf52958d484aee27e32d26783205f",
+      "version": "P23 final W08",
+      "receivers": [
+        "P25",
+        "P26"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P23_W14",
+      "original_local_path": "work_p25/nested/P23_UX_Accessibility_V0.1/P23_UX_Accessibility_V0.1/design/ux/wireframes/W14_Characters.svg",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P23_W14/W14_Characters.svg",
+      "size_bytes": 8185,
+      "sha256": "a06c67b85437b0aadf63025d91b53a97c40520eed5088e65442dd4a8a3efd13d",
+      "version": "P23 final W14",
+      "receivers": [
+        "P25",
+        "P26"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_RECEIPT",
+      "original_local_path": "work_p25/relay-materials-2-109da0d9cd/files/012/P24_delivery_receipt.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P24_RECEIPT/P24_delivery_receipt.json",
+      "size_bytes": 24347,
+      "sha256": "8b2953e061ca351ea1b0b7498dcef701aa1be65c53bd9a7d69d212b1701b3c74",
+      "version": "P24-DELIVERY-RECEIPT/0.1.0",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_MANIFEST",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/ui_visual_export_manifest.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P24_MANIFEST/ui_visual_export_manifest.json",
+      "size_bytes": 462552,
+      "sha256": "14daad1e5f7786801fa9d5bfd260b3e873e6634f3e69d2bd67497c22a532cf22",
+      "version": "P24-EXPORT-MANIFEST/0.1.0",
+      "receivers": [
+        "P25",
+        "P30"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_STYLE",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/spec/ui_visual_spec.md",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/sources/P24_STYLE/ui_visual_spec.md",
+      "size_bytes": 7809,
+      "sha256": "7ff80171dbd422bd94922b2e14745e25e1193f7efc882dabf1021a51d42d1755",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P26",
+        "P27",
+        "P28"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_P24_DELIVERY_REPORT",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/P24_delivery_report.md",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/P24_delivery_report.md",
+      "size_bytes": 6221,
+      "sha256": "a1d3eaa18ad46b0d362b95791bfa5594b49ddc5d682e8f2a444bda57f518c5d0",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_ASSET_CATALOG",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/asset_catalog.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/art/ui/asset_catalog.json",
+      "size_bytes": 285051,
+      "sha256": "07fc06522c5f1cc4ae8cd273a0a134725c67940911db3cd8546773f4c93be566",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_CONTRAST_CASES",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/spec/contrast_cases.json",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/art/ui/spec/contrast_cases.json",
+      "size_bytes": 6433,
+      "sha256": "04a2daa9ffadaedb6afc3f6dde00b7e735ca72eb83aeb2d3a4862dba2e46e1c3",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_NOTO_SANS_SC_CHINESE_SIMPLIFIED_400_NORMAL",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/source/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/art/ui/source/fonts/noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "size_bytes": 1142552,
+      "sha256": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_NOTO_SANS_JP_JAPANESE_400_NORMAL",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/source/fonts/noto-sans-jp-japanese-400-normal.woff2",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/art/ui/source/fonts/noto-sans-jp-japanese-400-normal.woff2",
+      "size_bytes": 1132964,
+      "sha256": "5ae4b6b5f176a590babe96d6bb62ee8805f4ddf15877738eda807db1fa20f136",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    },
+    {
+      "source_id": "P24_DEJAVUSANS",
+      "original_local_path": "work_p25/nested/P24_UI_VisualAssets_V0.1/P24_UI_VisualAssets_V0.1/art/ui/source/fonts/DejaVuSans.ttf",
+      "package_relative_path": "asset_visual_reviews/evidence/upstream/P24/art/ui/source/fonts/DejaVuSans.ttf",
+      "size_bytes": 759720,
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "version": "P24-UI-VISUAL/0.1.0-placeholder",
+      "receivers": [
+        "P25",
+        "P35"
+      ],
+      "read_only": true
+    }
+  ],
+  "missing_material_owners": [
+    "P26",
+    "P27",
+    "P28",
+    "P37"
+  ],
+  "limitation": "Missing means not in the supplied bytes or inspected fixed tree; not a claim about other repositories or devices."
+}

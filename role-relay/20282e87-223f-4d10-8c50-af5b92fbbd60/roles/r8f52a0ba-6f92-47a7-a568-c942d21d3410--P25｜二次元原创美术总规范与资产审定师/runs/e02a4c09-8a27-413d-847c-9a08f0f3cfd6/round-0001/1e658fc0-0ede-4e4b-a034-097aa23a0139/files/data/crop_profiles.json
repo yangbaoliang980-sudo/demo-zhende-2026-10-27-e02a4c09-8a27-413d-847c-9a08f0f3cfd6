@@ -1,0 +1,207 @@
+{
+  "version": "P25-CROP/0.1.0",
+  "coordinate_space": "image pixel coordinates, top-left origin, rectangles x/y/width/height; normalized rectangles relative to canvas",
+  "rounding": "final export integer pixels; no automatic trim",
+  "layout_canvas_px": [
+    1280,
+    856
+  ],
+  "actual_ui_rect_px": [
+    0,
+    48,
+    1280,
+    720
+  ],
+  "viewport_transform": "viewport_y = artboard_y - 48",
+  "reference_layout_only": true,
+  "profiles": [
+    {
+      "id": "stand_master",
+      "purpose": "可编辑完整角色母版",
+      "canvas_px": [
+        2048,
+        3072
+      ],
+      "density": 1,
+      "mandatory_subject_rect_px": [
+        102,
+        123,
+        1844,
+        2765
+      ],
+      "face_priority_rect_normalized": [
+        0.23,
+        0.06,
+        0.54,
+        0.28
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.94
+      ],
+      "edge_guard_px": 24,
+      "binding_status": "P25_AUTHORING_PROFILE_NOT_RUNTIME_SLOT",
+      "production_allowed": false
+    },
+    {
+      "id": "stand_export",
+      "purpose": "透明立绘审查导出",
+      "canvas_px": [
+        1024,
+        1536
+      ],
+      "density": 1,
+      "mandatory_subject_rect_px": [
+        51,
+        62,
+        922,
+        1382
+      ],
+      "pivot_normalized": [
+        0.5,
+        0.94
+      ],
+      "edge_guard_px": 12,
+      "binding_status": "P25_AUTHORING_PROFILE_NOT_RUNTIME_SLOT",
+      "production_allowed": false
+    },
+    {
+      "id": "avatar",
+      "purpose": "独立头像审查导出",
+      "canvas_px": [
+        512,
+        512
+      ],
+      "density": 1,
+      "mandatory_subject_rect_px": [
+        26,
+        26,
+        460,
+        460
+      ],
+      "face_priority_rect_normalized": [
+        0.16,
+        0.15,
+        0.68,
+        0.7
+      ],
+      "edge_guard_px": 8,
+      "binding_status": "P25_AUTHORING_PROFILE_NOT_RUNTIME_SLOT",
+      "production_allowed": false
+    },
+    {
+      "id": "portrait_review",
+      "purpose": "3:4半身卡面审查页",
+      "canvas_px": [
+        768,
+        1024
+      ],
+      "density": 1,
+      "mandatory_subject_rect_px": [
+        38,
+        51,
+        692,
+        922
+      ],
+      "edge_guard_px": 8,
+      "binding_status": "REVIEW_ONLY_NOT_HAND_CARD_BINDING",
+      "production_allowed": false
+    },
+    {
+      "id": "enemy_window_1x",
+      "purpose": "P24敌方小窗容器",
+      "canvas_px": [
+        78,
+        92
+      ],
+      "visible_aperture_px": [
+        8,
+        8,
+        62,
+        76
+      ],
+      "critical_feature_rect_px": [
+        12,
+        12,
+        54,
+        68
+      ],
+      "density": 1,
+      "binding_status": "P24_PLACEHOLDER_GEOMETRY_P23_P30_ACCEPTANCE_PENDING",
+      "production_allowed": false
+    },
+    {
+      "id": "enemy_window_2x",
+      "purpose": "P24敌方小窗容器2倍密度",
+      "canvas_px": [
+        156,
+        184
+      ],
+      "visible_aperture_px": [
+        16,
+        16,
+        124,
+        152
+      ],
+      "critical_feature_rect_px": [
+        24,
+        24,
+        108,
+        136
+      ],
+      "density": 2,
+      "binding_status": "P24_PLACEHOLDER_GEOMETRY_P23_P30_ACCEPTANCE_PENDING",
+      "production_allowed": false
+    },
+    {
+      "id": "characters_w14_crop",
+      "purpose": "P23档案横向审查裁切",
+      "canvas_px": [
+        576,
+        360
+      ],
+      "logical_slot_px": [
+        288,
+        180
+      ],
+      "density": 2,
+      "safe_rect_px": [
+        24,
+        16,
+        528,
+        328
+      ],
+      "binding_status": "P23_STATIC_W14_RECT_NOT_RUNTIME_CONTRACT",
+      "production_allowed": false
+    },
+    {
+      "id": "party_w08_crop",
+      "purpose": "P23编队横向审查裁切",
+      "canvas_px": [
+        576,
+        236
+      ],
+      "logical_slot_px": [
+        288,
+        118
+      ],
+      "density": 2,
+      "safe_rect_px": [
+        24,
+        16,
+        528,
+        204
+      ],
+      "binding_status": "P23_STATIC_W08_RECT_NOT_RUNTIME_CONTRACT",
+      "production_allowed": false
+    }
+  ],
+  "hand_frame": {
+    "size_px": [
+      236,
+      174
+    ],
+    "art_slot": null,
+    "instruction": "P24 hand frame is text-first; no approved portrait subrect. Do not stretch a 3:4 illustration into this rectangle. IC-21 change requires P23 acceptance."
+  }
+}

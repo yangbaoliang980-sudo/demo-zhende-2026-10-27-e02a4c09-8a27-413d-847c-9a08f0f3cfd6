@@ -1,0 +1,43 @@
+criterion_id	category	severity	criterion	method_and_acceptance	evidence_required	repair_owner	sample_id	author_selfcheck	p25_review_status	actual_evidence	rework_round	style_version
+P25-SA-FILE-01	输入	HARD	单角色源文件与导出实际存在	实际读取/解码源与导出，绑定SHA-256	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-FILE-02	输入	HARD	角色ID/设定/版本对应	与P04原型和P22受理ID逐项核对	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-FILE-03	输入	HARD	明确一个样本且不冒批量已批	检查样本身份与P01范围批准记录	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-SRC-01	可编辑	HARD	真实分层原稿，不是单图装容器	原软件打开并切换脸/发/衣/道具层，保留记录	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-SRC-02	可编辑	HARD	表情局部可修改	修改眉眼嘴之一，重导出并核对脸型	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-SRC-03	可编辑	HARD	主色与背景可独立调整	修改发色或服装主色并隐藏背景，不破坏其他部位	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-SRC-04	可编辑	HARD	原应用和版本/层树记录完整	核对应用版本、layers.json和实际打开证据	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-ANAT-01	结构	HARD	头颈肩结构连续	100%对照颅底、颈根、锁骨、肩线	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-ANAT-02	结构	HARD	肢体数量与连接合理	逐侧检查肩肘腕/髋膝踝，不多肢或断肢	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-ANAT-03	结构	HARD	手指与掌面合理	检查可见手指和遮挡关系；无粘连/多指/反掌	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-ANAT-04	结构	HARD	手腕—袖口—手连续	局部100%检查关节与服装遮挡	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-ANAT-05	结构	HARD	持物接触、重心与受力清楚	检查握持点和重心；无道具时说明N/A	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-FACE-01	脸部	HARD	双眼视线一致	主视线落在同一目标；故意表情须说明	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-FACE-02	脸部	HARD	正侧面与差分身份一致	同源裁切并排核对眼距、发际、脸型	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-FACE-03	脸部	MAJOR	五官不过度拥挤或漂浮	按构成线和实际姿态审查；不机械套比例	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-01	风格	MAJOR	6.0—6.5头身或经说明的偏离	中立量尺与透视结构说明	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-02	风格	MAJOR	清线与外内线层级一致	母版100%及50%审查导出比较	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-03	风格	MAJOR	发束与服装有主次	缩略图保留大轮廓，细节不压过脸	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-04	风格	MAJOR	主光和高光方向一致	眼、发、金属与投影在同一光源下解释	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-05	风格	MAJOR	布/纸/金属的材质区分	对照材质格，不全部塑料高光	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-06	风格	MAJOR	主辅色与UI相容	墨紫底与浅底并排，人物不融入面板	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-STYLE-07	风格	HARD	原始设定与参考来源可追溯	记录实际参考和创作/编辑过程，送P37	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-01	裁切	HARD	完整母版无关键部位截断	颅顶、手、主要道具、脚底在允许范围内	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-02	裁切	HARD	立绘导出尺寸与比例正确	1024x1536；不拉伸；记录母版映射	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-03	裁切	HARD	头像眼口与主发型完整	512正方形及128/64实看	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-04	裁切	HARD	档案横向变体可辨识	576x360，对应P23 288x180逻辑窗口	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-05	裁切	HARD	编队横向变体可辨识	576x236，对应P23 288x118逻辑窗口	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-06	裁切	HARD	半身审查图不冒手牌绑定	768x1024审查图；手牌窗口未受理须BLOCKED	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-07	裁切	HARD	框与状态保留区不遮关键特征	叠加真实P24选中/焦点框后保留证据	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-CROP-08	裁切	MAJOR	同版本各裁切身份稳定	完整/半身/头像/横向同屏比较	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-01	导出	HARD	PNG真实解码且RGBA8	读取IHDR/实际像素，不凭文件扩展名	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-02	导出	HARD	既有透明区也有非透明主体	alpha不全0/全255；背景层关闭	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-03	导出	HARD	无烘焙棋盘/白边/黑边	浅深棋盘合成逐边检查；不能只测alpha	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-04	导出	HARD	颜色元数据如实记录	sRGB/ICC存在与否及实际信息一致	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-05	导出	HARD	源导出一一对应且版本一致	清单的source_sha256等于实际源，尺寸/哈希一致	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PNG-06	导出	HARD	同画布、原点与锚点	差分不自动trim，pivot空间明确	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-UI-01	适配	HARD	关键文字与图片分离	名字、生命、费用、状态不能烘焙进角色	fixed file/version/hash + observation record	P26	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-UI-02	适配	MAJOR	字符轮廓与敌/UI语言相容	同一版并排角色、敌、UI；敌未到则该项BLOCKED	fixed file/version/hash + observation record	P25	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-RIGHTS-01	许可	HARD	P37独立证据与用途范围	核对同版许可审查回执；P25不能代签	fixed file/version/hash + observation record	P37	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-IMPORT-01	导入	HARD	P30同源导入结果	实际引擎版本、runtime_path、import_version和日志	fixed file/version/hash + observation record	P30	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-PROCESS-01	流程	HARD	P35独立流程复核	同包版本、缺陷关闭和证据可追溯	fixed file/version/hash + observation record	P35	NOT_RECEIVED	NOT_RUN	NOT_RUN	NONE	0	P25-ART-BIBLE/0.1.0
+P25-SA-BATCH-01	扩量	HARD	一人审定且数量经P01确认	P25单人结论+P37证据+P01数量记录；否则不量产	fixed file/version/hash + observation record	P01	NOT_RECEIVED	NOT_RUN	BLOCKED	NONE	0	P25-ART-BIBLE/0.1.0
