@@ -1,0 +1,208 @@
+{
+  "schema_version": "P26-PORTRAIT-EXPORT-MANIFEST/0.1.0-provisional",
+  "task_id": "P26-PRE-S03-SAMPLE-001",
+  "style_version": "P25-ART-BIBLE/0.1.0",
+  "candidate_ref": "candidate.p26.a.provisional",
+  "canonical_character_id": null,
+  "canonical_content_id_status": "BLOCKED_P04_P22_NOT_RECEIVED",
+  "assets": [
+    {
+      "asset_id": "candidate.p26.a.stand",
+      "variant": "stand_export",
+      "relative_path": "exports/candidate_a_stand_1024x1536.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 281033,
+        "sha256": "e23c042b5d0a75e4eaca677f004a49689a91da5dc82209738019fd961587f7e1",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 1213497,
+          "partial_pixels": 34660,
+          "opaque_pixels": 324707
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.avatar",
+      "variant": "avatar",
+      "relative_path": "exports/candidate_a_avatar_512.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 105638,
+        "sha256": "d4014a814b488249e0058f979f89db2398d955444d3df19b5f10f7cc43447002",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          512,
+          512
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 154010,
+          "partial_pixels": 4515,
+          "opaque_pixels": 103619
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.portrait_review",
+      "variant": "portrait_review",
+      "relative_path": "exports/candidate_a_portrait_review_768x1024.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 225765,
+        "sha256": "d1d5704fda713a9afc6b72a0a197e47f308d25c1ae5abe126a0949e3baff81f6",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          768,
+          1024
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 505813,
+          "partial_pixels": 14945,
+          "opaque_pixels": 265674
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.w14",
+      "variant": "characters_w14_crop",
+      "relative_path": "exports/candidate_a_w14_profile_576x360.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 73516,
+        "sha256": "c14521ddf78084194203e7408bb1b69ddfd009bef2959be0f9ef1576bc032337",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          576,
+          360
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 156268,
+          "partial_pixels": 4954,
+          "opaque_pixels": 46138
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.w08",
+      "variant": "party_w08_crop",
+      "relative_path": "exports/candidate_a_w08_party_576x236.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 52601,
+        "sha256": "294719fba96a481b18e0e7919bee4fde075ac4726e64d8a94c0ed06d7218d6ad",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          576,
+          236
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 104125,
+          "partial_pixels": 4043,
+          "opaque_pixels": 27768
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.enemy_window_preview",
+      "variant": "enemy_window_2x_review_only",
+      "relative_path": "exports/candidate_a_enemy_window_156x184.png",
+      "source_path": "source/candidate_a_master_layers.svg",
+      "source_sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af",
+      "export": {
+        "size_bytes": 26194,
+        "sha256": "3e798d7fd2b4dbfc3c71592f50e34eb126fcdb3ace59ce373ee533ab40989699",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          156,
+          184
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 14327,
+          "partial_pixels": 1444,
+          "opaque_pixels": 12933
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    },
+    {
+      "asset_id": "candidate.p26.a.expression_calm",
+      "variant": "expression_variant",
+      "relative_path": "exports/candidate_a_expression_calm_1024x1536.png",
+      "source_path": "source/candidate_a_expression_calm_layers.svg",
+      "source_sha256": "a8c3880a30f4b86483fc2555935107e7e20ce9d7d66d438f25a98b433c354b21",
+      "export": {
+        "size_bytes": 194849,
+        "sha256": "878502e03bd5ac3c211e0ec82ff00f7cf647e356119c3a28e3b64f604f1071ad",
+        "format": "PNG",
+        "mode": "RGBA",
+        "dimensions": [
+          1024,
+          1536
+        ],
+        "alpha": {
+          "min": 0,
+          "max": 255,
+          "zero_pixels": 1218981,
+          "partial_pixels": 24404,
+          "opaque_pixels": 329479
+        },
+        "icc_profile_embedded": false,
+        "srgb_chunk_present": false
+      },
+      "status": "PROVISIONAL_NOT_REGISTERED",
+      "production_allowed": false
+    }
+  ],
+  "runtime_binding": null,
+  "note": "Asset IDs are local provisional identifiers only; P22 has not registered them."
+}

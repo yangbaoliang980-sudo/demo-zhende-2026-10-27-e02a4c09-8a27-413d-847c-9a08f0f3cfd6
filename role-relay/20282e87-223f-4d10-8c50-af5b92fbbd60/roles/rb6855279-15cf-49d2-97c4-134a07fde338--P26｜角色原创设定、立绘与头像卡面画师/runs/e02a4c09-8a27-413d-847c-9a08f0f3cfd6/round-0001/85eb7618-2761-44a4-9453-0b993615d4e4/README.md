@@ -1,0 +1,135 @@
+# P26｜原创角色设定、立绘与头像卡面交付
+
+本轮按 P26 的职责执行，不接管其他岗位，也不进行跨模块整合。
+
+首先冻结本轮美术制作基准：
+
+- 采用 P25 `P25-ART-BIBLE/0.1.0`。
+- 人物正面中立姿态以 6.0～6.5 头身为基准。
+- 采用二维清晰线稿、两段式主阴影、低纹理材质。
+- 保持墨紫、奶白、淡金、冰蓝的整体视觉语言。
+- 角色原稿必须保留可编辑分层结构。
+- 立绘、头像、半身像和卡面必须通过同一个 `character_id` 关联不同 `asset_id`。
+- P24 的现有界面资产仍然属于 PLACEHOLDER，不能把界面示例中的人物名称直接认定为正式角色设定。
+
+重要边界： P25 已经明确要求先完成一个角色的真实样本审定，再扩大到三人。因此，本轮优先制作一名完整候选角色，不会用三张低质量占位图冒充三名正式角色。
+
+## 一、实际交付文件
+
+隔离包已生成并完成校验
+ 
+正式美术验收未通过门禁
+
+P26 Candidate A｜单角色候选样本 V0.1
+
+本轮制作的原创矢量角色草案，非正式角色定稿。
+
+完整 ZIP
+
+3,308,109 bytes
+
+下载完整交付包
+下载独立交付回执 JSON
+
+关键成果单独下载
+
+- 可编辑 SVG 母版
+- ORA 分层互通文件
+- 2048×3072 完整母版 PNG
+- 1024×1536 透明立绘
+- 512×512 头像
+- 768×1024 半身审查图
+- W14 档案裁切
+- W08 编队裁切
+- 平静表情变体
+- 关键部位审查图
+- 逐件导出清单
+
+## 二、实际制作结果
+
+| 项目 | 结果 |
+| --- | --- |
+| 原创候选角色 | 1 名 |
+| 可编辑 SVG 主源 | 已生成 |
+| 命名分层 | 10 组 |
+| ORA 互通文件 | 已生成 |
+| 透明 PNG 导出 | 已生成 |
+| 头像和裁切变体 | 已生成 |
+| SHA-256 清单 | 已生成 |
+| 三人正式立绘 | 未制作 |
+
+本轮采用的是可编辑矢量绘制方案。需要说明，这还不是达到商业发行要求的精修立绘，尤其头发细节、手指、服装褶皱还需要进一步人工精修。
+
+## 三、实际测试结果
+
+PASS
+ 隔离交付包静态验证：46 项文件，退出码 0。
+
+PASS
+ ZIP CRC 检查及 47 个包内文件逐字节复核。
+
+PASS
+ PNG 解码、RGBA、透明度检查、SVG XML 和 ORA 结构检查。
+
+以下项目没有冒充通过：
+
+| 验收项目 | 状态 |
+| --- | --- |
+| 原生绘图软件打开和修改 | NOT_RUN |
+| P04 人设一致性 | BLOCKED |
+| P22 正式 ID 注册 | BLOCKED |
+| P25 审美复核 | NOT_RUN |
+| P37 版权许可复核 | NOT_RUN |
+| P30 引擎实际导入 | NOT_RUN |
+| P35 独立审查 | NOT_RUN |
+
+## 四、下一步必须解决的上游问题
+
+我实际检查了你提供的 P25、P23、P24 文件以及 GitHub 的 V6 岗位职责。
+
+现在有三个关键问题：
+
+1. P04： 没有收到正式的 `character_skeleton.json` 或固定版本角色原型。因此我没有擅自确定 Candidate A 的正式姓名、职业、性格和身份。
+2. P22： 没有收到正式角色 ID 注册回执，因此本包中的 asset_id 都是临时标识。
+3. P13： 已收到的路径映射没有 P26 的生产路径授权，真实工程路径仍然为空。本轮只能隔离交付，不能写入游戏工程。
+
+因此，本轮正式资产登记仍为 0，不能启动三人批量量产。
+
+本轮交接结论： 已有真实可下载的原创视觉草案、矢量源、分层互通文件和透明导出，下一步应由 P04/P22 完成人设与 ID 绑定，再交 P25、P37、P30、P35 分别验收。
+
+没有修改你的 GitHub 正式工程，也没有擅自执行跨岗位整合。
+
+---
+
+## 本次归档的原始文件
+
+- [P26_delivery_receipt.json](files/data/P26_delivery_receipt.json)
+- [candidate_a_master_layers.svg](files/images/candidate_a_master_layers.svg)
+- [candidate_a_stand_master_2048x3072.png](files/images/candidate_a_stand_master_2048x3072.png)
+- [candidate_a_stand_1024x1536.png](files/images/candidate_a_stand_1024x1536.png)
+- [candidate_a_avatar_512.png](files/images/candidate_a_avatar_512.png)
+- [candidate_a_portrait_review_768x1024.png](files/images/candidate_a_portrait_review_768x1024.png)
+- [candidate_a_w14_profile_576x360.png](files/images/candidate_a_w14_profile_576x360.png)
+- [candidate_a_w08_party_576x236.png](files/images/candidate_a_w08_party_576x236.png)
+- [candidate_a_expression_calm_1024x1536.png](files/images/candidate_a_expression_calm_1024x1536.png)
+- [candidate_a_key_parts_review.png](files/images/candidate_a_key_parts_review.png)
+- [portrait_export_manifest.json](files/data/portrait_export_manifest.json)
+- [P26_CandidateA_Isolated_V0.1.zip](files/archives/P26_CandidateA_Isolated_V0.1.zip)
+- [candidate_a_layers_interchange.ora](files/other/candidate_a_layers_interchange.ora)
+- [candidate_a_enemy_window_156x184.png](files/images/candidate_a_enemy_window_156x184.png)
+- [P25_Style_Reference.png](files/images/P25_Style_Reference.png)
+- [P25_Proportion_Crop.png](files/images/P25_Proportion_Crop.png)
+- [P25_Layer_Alpha.png](files/images/P25_Layer_Alpha.png)
+- [P25_P24_Contact_01.png](files/images/P25_P24_Contact_01.png)
+- [P25_P24_Contact_02.png](files/images/P25_P24_Contact_02.png)
+- [P25_P24_Contact_03.png](files/images/P25_P24_Contact_03.png)
+- [P23_wireframe_contact_sheet.png](files/images/P23_wireframe_contact_sheet.png)
+- [W01_before_review.png](files/images/W01_before_review.png)
+- [P19_HUD_1280.png](files/images/P19_HUD_1280.png)
+- [P20_Chapters_1280.png](files/images/P20_Chapters_1280.png)
+- [P20_Growth_1280.png](files/images/P20_Growth_1280.png)
+- [P20_Learning_Quarantine.png](files/images/P20_Learning_Quarantine.png)
+- [relay-materials-1-ca6ada3652.zip](files/archives/relay-materials-1-ca6ada3652.zip)
+- [relay-materials-2-166c0973a2.zip](files/archives/relay-materials-2-166c0973a2.zip)
+- [relay-materials-3-1c81a8a0fa.zip](files/archives/relay-materials-3-1c81a8a0fa.zip)
+

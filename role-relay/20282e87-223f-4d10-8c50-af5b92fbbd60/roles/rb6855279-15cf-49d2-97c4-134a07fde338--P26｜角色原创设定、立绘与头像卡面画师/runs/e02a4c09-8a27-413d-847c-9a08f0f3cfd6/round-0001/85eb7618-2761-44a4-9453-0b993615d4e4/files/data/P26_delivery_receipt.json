@@ -1,0 +1,100 @@
+{
+  "schema_version": "P26-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P26-PRE-S03-SAMPLE-001",
+  "status": "ISOLATED_VISUAL_DRAFT_DELIVERED_CANONICAL_BINDING_BLOCKED",
+  "archive": {
+    "filename": "P26_CandidateA_Isolated_V0.1.zip",
+    "size_bytes": 3308109,
+    "sha256": "ced39ec428a74983969092a447f6a100fff4b9e770b095136d1d4842c9b98f9d",
+    "member_count": 47,
+    "crc_test": "PASS",
+    "all_member_bytes_match": "PASS"
+  },
+  "exports": [
+    {
+      "filename": "candidate_a_master_layers.svg",
+      "package_relative_path": "source/candidate_a_master_layers.svg",
+      "size_bytes": 9221,
+      "sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af"
+    },
+    {
+      "filename": "candidate_a_layers_interchange.ora",
+      "package_relative_path": "source/candidate_a_layers_interchange.ora",
+      "size_bytes": 927662,
+      "sha256": "7d5721b50c27b6ec630a81a2ba43580096ccec716abe966dcb24e94d680074d3"
+    },
+    {
+      "filename": "candidate_a_stand_master_2048x3072.png",
+      "package_relative_path": "exports/candidate_a_stand_master_2048x3072.png",
+      "size_bytes": 460298,
+      "sha256": "ef5231271ee8fc0046255f465da0f88edc5a5dfe3f548e2110a34496f49350e0"
+    },
+    {
+      "filename": "candidate_a_stand_1024x1536.png",
+      "package_relative_path": "exports/candidate_a_stand_1024x1536.png",
+      "size_bytes": 281033,
+      "sha256": "e23c042b5d0a75e4eaca677f004a49689a91da5dc82209738019fd961587f7e1"
+    },
+    {
+      "filename": "candidate_a_avatar_512.png",
+      "package_relative_path": "exports/candidate_a_avatar_512.png",
+      "size_bytes": 105638,
+      "sha256": "d4014a814b488249e0058f979f89db2398d955444d3df19b5f10f7cc43447002"
+    },
+    {
+      "filename": "candidate_a_portrait_review_768x1024.png",
+      "package_relative_path": "exports/candidate_a_portrait_review_768x1024.png",
+      "size_bytes": 225765,
+      "sha256": "d1d5704fda713a9afc6b72a0a197e47f308d25c1ae5abe126a0949e3baff81f6"
+    },
+    {
+      "filename": "candidate_a_w14_profile_576x360.png",
+      "package_relative_path": "exports/candidate_a_w14_profile_576x360.png",
+      "size_bytes": 73516,
+      "sha256": "c14521ddf78084194203e7408bb1b69ddfd009bef2959be0f9ef1576bc032337"
+    },
+    {
+      "filename": "candidate_a_w08_party_576x236.png",
+      "package_relative_path": "exports/candidate_a_w08_party_576x236.png",
+      "size_bytes": 52601,
+      "sha256": "294719fba96a481b18e0e7919bee4fde075ac4726e64d8a94c0ed06d7218d6ad"
+    },
+    {
+      "filename": "candidate_a_enemy_window_156x184.png",
+      "package_relative_path": "exports/candidate_a_enemy_window_156x184.png",
+      "size_bytes": 26194,
+      "sha256": "3e798d7fd2b4dbfc3c71592f50e34eb126fcdb3ace59ce373ee533ab40989699"
+    },
+    {
+      "filename": "candidate_a_expression_calm_1024x1536.png",
+      "package_relative_path": "exports/candidate_a_expression_calm_1024x1536.png",
+      "size_bytes": 194849,
+      "sha256": "878502e03bd5ac3c211e0ec82ff00f7cf647e356119c3a28e3b64f604f1071ad"
+    },
+    {
+      "filename": "portrait_export_manifest.json",
+      "package_relative_path": "exports/portrait_export_manifest.json",
+      "size_bytes": 6772,
+      "sha256": "985529820a9cd0f9e9bd930b3b4d8cc83588d95cb75d14e361e96f3c63214fc0"
+    },
+    {
+      "filename": "candidate_a_key_parts_review.png",
+      "package_relative_path": "evidence/candidate_a_key_parts_review.png",
+      "size_bytes": 245964,
+      "sha256": "f91b663881c8a31cb4c6ec3e6521b1244017fd262fd4ce9ef9db114d6a4eaa9e"
+    }
+  ],
+  "verification": {
+    "command": "python -B tools/verify_delivery.py",
+    "exit_code": 0,
+    "stdout": "PASS: 46 manifest files; PNG decode/mode/alpha; SVG XML; ORA structure."
+  },
+  "formal_asset_count": 0,
+  "mass_production_allowed": false,
+  "production_allowed": false,
+  "notes": [
+    "Exports are byte-identical to same-named members in the ZIP.",
+    "Receipt is external to ZIP to avoid circular hashing.",
+    "P04/P22 identity binding, P13 production path authorization, P25/P37/P30/P35 reviews remain blocked or not run."
+  ]
+}
