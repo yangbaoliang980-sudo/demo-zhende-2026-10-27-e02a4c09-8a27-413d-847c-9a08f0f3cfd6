@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+ <linearGradient id="armor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D8BCF4"/><stop offset=".5" stop-color="#71608E"/><stop offset="1" stop-color="#3B334B"/></linearGradient>
+ <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F3EBE0"/><stop offset="1" stop-color="#A79AB9"/></linearGradient>
+</defs>
+<!-- trailing mantle -->
+<path d="M360 400 Q235 520 240 760 L120 900 Q300 890 400 810 L620 840 Q760 930 900 850 L770 710 Q800 540 660 400Z" fill="#71608E" stroke="#3B334B" stroke-width="28" stroke-linejoin="round"/>
+<path d="M275 720 Q430 800 735 720" fill="none" stroke="#D8BCF4" stroke-width="14"/>
+<!-- legs -->
+<path d="M400 690 L350 890 L450 920 L515 730 M620 690 L675 900 L770 880 L710 660" fill="#3B334B" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<path d="M350 890 L450 920 M675 900 L770 880" stroke="#E6BF7D" stroke-width="16"/>
+<!-- torso angular armor -->
+<path d="M350 390 L675 390 L735 665 Q530 760 290 665Z" fill="url(#cloth)" stroke="#3B334B" stroke-width="28" stroke-linejoin="round"/>
+<path d="M365 420 L510 480 L660 420 L620 640 L405 640Z" fill="url(#armor)" stroke="#3B334B" stroke-width="18" stroke-linejoin="round"/>
+<path d="M510 480 L510 665" stroke="#E6BF7D" stroke-width="16"/>
+<!-- arms -->
+<path d="M350 430 Q245 450 225 600 L300 665 L390 535 M675 430 Q785 450 800 600 L720 665 L650 535" fill="url(#armor)" stroke="#3B334B" stroke-width="26" stroke-linejoin="round"/>
+<path d="M225 600 L300 665 M800 600 L720 665" stroke="#E6BF7D" stroke-width="14"/>
+<!-- head + split crown -->
+<path d="M370 330 Q390 180 510 175 Q650 180 670 330 L630 450 Q510 520 390 450Z" fill="url(#armor)" stroke="#3B334B" stroke-width="28"/>
+<path d="M420 245 L340 125 L455 195 M600 245 L690 115 L575 195" fill="#D8BCF4" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<path d="M510 190 L510 420" stroke="#C6A56C" stroke-width="12"/>
+<!-- face mask -->
+<path d="M425 320 Q510 280 595 320 L575 405 Q510 450 445 405Z" fill="#F3EBE0" stroke="#3B334B" stroke-width="18"/>
+<path d="M450 350 L495 350 M525 350 L570 350" stroke="#3B334B" stroke-width="16" stroke-linecap="round"/>
+<path d="M485 390 L510 405 L535 390" fill="none" stroke="#C6A56C" stroke-width="12"/>
+<!-- shoulders -->
+<path d="M330 430 Q245 360 205 435 L260 535 L365 500 M690 430 Q780 360 820 435 L760 535 L655 500" fill="#A79AB9" stroke="#3B334B" stroke-width="24"/>
+<path d="M245 445 L300 480 M780 445 L725 480" stroke="#E6BF7D" stroke-width="12"/>
+<!-- emblem -->
+<path d="M510 540 L560 600 L510 660 L460 600Z" fill="#E6BF7D" stroke="#3B334B" stroke-width="18"/>
+<path d="M510 565 L510 635" stroke="#F5F1E9" stroke-width="8"/>
+</svg>

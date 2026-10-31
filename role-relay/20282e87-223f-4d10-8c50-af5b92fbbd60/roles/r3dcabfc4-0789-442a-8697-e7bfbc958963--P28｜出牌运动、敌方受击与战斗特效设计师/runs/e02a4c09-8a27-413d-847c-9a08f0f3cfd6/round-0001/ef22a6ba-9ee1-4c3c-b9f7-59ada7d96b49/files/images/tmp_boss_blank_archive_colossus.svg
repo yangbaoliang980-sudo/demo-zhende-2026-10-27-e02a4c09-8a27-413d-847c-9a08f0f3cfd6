@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+ <radialGradient id="core"><stop stop-color="#F5F1E9"/><stop offset=".35" stop-color="#D8BCF4"/><stop offset="1" stop-color="#71608E"/></radialGradient>
+ <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A79AB9"/><stop offset=".45" stop-color="#71608E"/><stop offset="1" stop-color="#3B334B"/></linearGradient>
+</defs>
+<!-- floating lower shards -->
+<path d="M260 720 L170 860 L310 825 L355 950 L455 830 M765 710 L855 860 L715 825 L675 950 L570 830" fill="#71608E" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<!-- halo rings -->
+<ellipse cx="512" cy="480" rx="400" ry="300" fill="none" stroke="#C6A56C" stroke-width="20" transform="rotate(-12 512 480)"/>
+<ellipse cx="512" cy="480" rx="330" ry="245" fill="none" stroke="#D8BCF4" stroke-width="14" transform="rotate(15 512 480)"/>
+<!-- main monolith body -->
+<path d="M512 125 L760 260 L850 520 L720 800 L512 900 L300 800 L175 520 L265 260Z" fill="url(#stone)" stroke="#3B334B" stroke-width="32" stroke-linejoin="round"/>
+<path d="M512 170 L700 285 L770 520 L670 745 L512 825 L350 745 L250 520 L320 285Z" fill="none" stroke="#D8BCF4" stroke-width="16"/>
+<!-- crown / page horns -->
+<path d="M355 260 Q250 105 190 155 Q230 310 390 370 M670 260 Q775 105 835 155 Q795 310 635 370" fill="#F3EBE0" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<path d="M440 205 Q512 50 584 205 L560 320 L464 320Z" fill="#E6BF7D" stroke="#3B334B" stroke-width="20"/>
+<!-- mask face -->
+<path d="M340 400 Q512 320 684 400 L655 590 Q512 710 369 590Z" fill="#F3EBE0" stroke="#3B334B" stroke-width="24"/>
+<path d="M395 470 Q455 420 495 470 L450 510Z M530 470 Q575 420 630 470 L575 510Z" fill="#3B334B"/>
+<path d="M430 465 L465 470 M560 470 L600 465" stroke="#E6BF7D" stroke-width="12" stroke-linecap="round"/>
+<path d="M475 565 Q512 600 550 565" fill="none" stroke="#3B334B" stroke-width="16" stroke-linecap="round"/>
+<!-- central core -->
+<circle cx="512" cy="735" r="82" fill="url(#core)" stroke="#3B334B" stroke-width="22"/>
+<path d="M512 675 L565 735 L512 795 L459 735Z" fill="#E6BF7D" stroke="#3B334B" stroke-width="14"/>
+<!-- side runic plates -->
+<path d="M220 520 L300 460 L320 600 L245 650Z M804 520 L724 460 L704 600 L779 650Z" fill="#D8BCF4" stroke="#3B334B" stroke-width="16"/>
+<path d="M260 550 L295 580 M764 550 L729 580" stroke="#3B334B" stroke-width="12"/>
+</svg>

@@ -1,0 +1,109 @@
+{
+  "schema_version": "P28-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P28-S03-VFX-001",
+  "version": "P28-BATTLE-MOTION/0.1.0-isolated",
+  "status": "ISOLATED_DESIGN_AND_FX_PROTOTYPES_DELIVERED",
+  "exports": [
+    {
+      "filename": "fx_card_trail.svg",
+      "package_relative_path": "art/fx/source/fx_card_trail.svg",
+      "size_bytes": 431,
+      "sha256": "8406fed85da4c435f72cd0e95c1699ea3fad993a4de543083c3ba3f13159363b"
+    },
+    {
+      "filename": "fx_death_dissolve.svg",
+      "package_relative_path": "art/fx/source/fx_death_dissolve.svg",
+      "size_bytes": 537,
+      "sha256": "070a1029203deabaa4a2155c37f2ff5af4c98a9ee1ef8492540e695156bef7b9"
+    },
+    {
+      "filename": "fx_guard_arc.svg",
+      "package_relative_path": "art/fx/source/fx_guard_arc.svg",
+      "size_bytes": 304,
+      "sha256": "581d0906560f0ea2eec2613bea210de5d5a3fea58e58d9f91cbaf7d183297db4"
+    },
+    {
+      "filename": "fx_heal_cross.svg",
+      "package_relative_path": "art/fx/source/fx_heal_cross.svg",
+      "size_bytes": 318,
+      "sha256": "074a86a88dbf81401996888379c62f375d0bbca2c5c25b13460de4cd34a7a750"
+    },
+    {
+      "filename": "fx_impact_burst.svg",
+      "package_relative_path": "art/fx/source/fx_impact_burst.svg",
+      "size_bytes": 456,
+      "sha256": "ade704f77b92ba964508ca0143f0e22ae3c567af4bdd45d7d515cf1fac3232b6"
+    },
+    {
+      "filename": "fx_shield_ring.svg",
+      "package_relative_path": "art/fx/source/fx_shield_ring.svg",
+      "size_bytes": 278,
+      "sha256": "256e068d5b5989746eca76c6f04a399de74a3f1e3f2f6e4d0572a4de9fb502b3"
+    },
+    {
+      "filename": "fx_status_spark.svg",
+      "package_relative_path": "art/fx/source/fx_status_spark.svg",
+      "size_bytes": 272,
+      "sha256": "36de4594b1a55faadbf3cd11204e833ff53e3d79d71a97389bd4ef9c85096e3d"
+    },
+    {
+      "filename": "fx_card_trail.png",
+      "package_relative_path": "art/fx/exports/fx_card_trail.png",
+      "size_bytes": 5732,
+      "sha256": "4645dae58ab23d8e61a81ddcb90329eb052c55a6710cf177877a5b45c27bf52c"
+    },
+    {
+      "filename": "fx_death_dissolve.png",
+      "package_relative_path": "art/fx/exports/fx_death_dissolve.png",
+      "size_bytes": 11937,
+      "sha256": "2622ebcba71db54354645020a9989681ca0b616d506e4c068193be4db2c08182"
+    },
+    {
+      "filename": "fx_guard_arc.png",
+      "package_relative_path": "art/fx/exports/fx_guard_arc.png",
+      "size_bytes": 6562,
+      "sha256": "debc666c895941cccb27f13d22a22475eaa22dc2bb88eef99ccc082c63b207ea"
+    },
+    {
+      "filename": "fx_heal_cross.png",
+      "package_relative_path": "art/fx/exports/fx_heal_cross.png",
+      "size_bytes": 8055,
+      "sha256": "2cf016addffad607bbe4b1987021987b1b9b4816935381c5fff820fe3134c5bd"
+    },
+    {
+      "filename": "fx_impact_burst.png",
+      "package_relative_path": "art/fx/exports/fx_impact_burst.png",
+      "size_bytes": 18128,
+      "sha256": "ac55ec03275255958e857863f8b1aba5a917c8c11cdb3c435012887c59f695f7"
+    },
+    {
+      "filename": "fx_shield_ring.png",
+      "package_relative_path": "art/fx/exports/fx_shield_ring.png",
+      "size_bytes": 12403,
+      "sha256": "8daea81ea7f78f2667ce37c7a634d7b27fcc18cbf8a42830b12302f00a8a2433"
+    },
+    {
+      "filename": "fx_status_spark.png",
+      "package_relative_path": "art/fx/exports/fx_status_spark.png",
+      "size_bytes": 7172,
+      "sha256": "7dbce35aac3ea5a78d842117f90ac93a1de7f9f9a53781e0d7560cd429ec62c0"
+    }
+  ],
+  "archive": {
+    "filename": "P28_BattleMotion_V0.1.zip",
+    "size_bytes": 84978,
+    "sha256": "70504816a22e74c1dbf2a55b4f28ecad8fd5b9f555c031f1f155719be51a23f1"
+  },
+  "manifest_file_count": 23,
+  "zip_crc": "PASS",
+  "static_validation": "PASS",
+  "P02_event_contract": "BLOCKED_DRAFT_ONLY",
+  "P06_binding": "BLOCKED_MISSING_SOURCE",
+  "P13_path_authorization": "BLOCKED",
+  "P29_player_contract": "BLOCKED",
+  "P25_review": "NOT_RUN",
+  "P30_import": "NOT_RUN",
+  "P32_tests": "NOT_RUN",
+  "P35_review": "NOT_RUN",
+  "P37_license_review": "NOT_RUN"
+}
