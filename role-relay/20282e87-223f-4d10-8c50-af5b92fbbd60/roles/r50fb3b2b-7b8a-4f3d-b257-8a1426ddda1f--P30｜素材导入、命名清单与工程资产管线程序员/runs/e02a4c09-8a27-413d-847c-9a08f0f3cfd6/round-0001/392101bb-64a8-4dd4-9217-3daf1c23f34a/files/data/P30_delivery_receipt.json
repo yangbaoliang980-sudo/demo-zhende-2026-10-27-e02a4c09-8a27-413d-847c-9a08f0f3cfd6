@@ -1,0 +1,341 @@
+{
+  "schema_version": "P30-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P30-S03-ASSET-IMPORT-001",
+  "version": "P30-ASSET-IMPORT/0.1.0-isolated",
+  "status": "ISOLATED_PLACEHOLDER_IMPORT_DELIVERED",
+  "archive": {
+    "filename": "P30_AssetImport_V0.1.zip",
+    "size_bytes": 2219970,
+    "sha256": "bee6f98469f325e29ffd15d73ca136c696ccd61316cd0e828b82a59027b7baff",
+    "zip_crc": "PASS"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 3361,
+      "sha256": "a819dff2237380a4cd85ab964c893a329b9bee2b8308bdea0a4f7c24e908316d"
+    },
+    {
+      "filename": "candidate_a_avatar_512.png",
+      "package_relative_path": "assets/imported/candidate_a_avatar_512.png",
+      "size_bytes": 105638,
+      "sha256": "d4014a814b488249e0058f979f89db2398d955444d3df19b5f10f7cc43447002"
+    },
+    {
+      "filename": "candidate_a_master_layers.svg",
+      "package_relative_path": "assets/imported/candidate_a_master_layers.svg",
+      "size_bytes": 9221,
+      "sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af"
+    },
+    {
+      "filename": "candidate_a_stand_1024x1536.png",
+      "package_relative_path": "assets/imported/candidate_a_stand_1024x1536.png",
+      "size_bytes": 281033,
+      "sha256": "e23c042b5d0a75e4eaca677f004a49689a91da5dc82209738019fd961587f7e1"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus.svg",
+      "package_relative_path": "assets/imported/tmp_boss_blank_archive_colossus.svg",
+      "size_bytes": 2457,
+      "sha256": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_1024.png",
+      "package_relative_path": "assets/imported/tmp_boss_blank_archive_colossus_1024.png",
+      "size_bytes": 165696,
+      "sha256": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_512.png",
+      "package_relative_path": "assets/imported/tmp_boss_blank_archive_colossus_512.png",
+      "size_bytes": 123927,
+      "sha256": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer.svg",
+      "package_relative_path": "assets/imported/tmp_common_paper_gnawer.svg",
+      "size_bytes": 3153,
+      "sha256": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_1024.png",
+      "package_relative_path": "assets/imported/tmp_common_paper_gnawer_1024.png",
+      "size_bytes": 117151,
+      "sha256": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_512.png",
+      "package_relative_path": "assets/imported/tmp_common_paper_gnawer_512.png",
+      "size_bytes": 91497,
+      "sha256": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb"
+    },
+    {
+      "filename": "tmp_elite_margin_warden.svg",
+      "package_relative_path": "assets/imported/tmp_elite_margin_warden.svg",
+      "size_bytes": 2757,
+      "sha256": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_1024.png",
+      "package_relative_path": "assets/imported/tmp_elite_margin_warden_1024.png",
+      "size_bytes": 128084,
+      "sha256": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_512.png",
+      "package_relative_path": "assets/imported/tmp_elite_margin_warden_512.png",
+      "size_bytes": 90537,
+      "sha256": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917"
+    },
+    {
+      "filename": "asset_import_log.txt",
+      "package_relative_path": "assets/manifest/asset_import_log.txt",
+      "size_bytes": 152,
+      "sha256": "f771ac5edc215df2a32536b03097e80c55c2c1e42b57f4aae3d7d6e269291466"
+    },
+    {
+      "filename": "asset_manifest.json",
+      "package_relative_path": "assets/manifest/asset_manifest.json",
+      "size_bytes": 16087,
+      "sha256": "dc191c83ad7947aa2a5dba4b5d7e072c4d40253c4efd6a5e16b54b54c4f79ac7"
+    },
+    {
+      "filename": "broken_asset_fixtures.json",
+      "package_relative_path": "assets/manifest/broken_asset_fixtures.json",
+      "size_bytes": 1376,
+      "sha256": "53949cb943afad6ab635957c2ea79f5de329934cd1608d6fa15908b799ba2ef9"
+    },
+    {
+      "filename": "import_run.txt",
+      "package_relative_path": "assets/manifest/import_run.txt",
+      "size_bytes": 233,
+      "sha256": "2d08d7f0012b01c0bd4d4630dfc0239917427a45768f661da46637ec5f699bf5"
+    },
+    {
+      "filename": "import_spec.json",
+      "package_relative_path": "assets/manifest/import_spec.json",
+      "size_bytes": 11385,
+      "sha256": "6560f31d43cdec9411307d20da3462728e872d4b1675d4b77569ee54c89b1207"
+    },
+    {
+      "filename": "intake_exclusions.json",
+      "package_relative_path": "assets/manifest/intake_exclusions.json",
+      "size_bytes": 2655,
+      "sha256": "74caa05f14485ce9c6d9e9141c400f53091015e4a5a3defa9915eec53aa00e03"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "size_bytes": 12023,
+      "sha256": "1ae4233ad11b337ff647d2f84bcfa9249cb8992df7a6d6cd8a68ce0be58492ea"
+    },
+    {
+      "filename": "delivery_manifest.sha256.tsv",
+      "package_relative_path": "delivery_manifest.sha256.tsv",
+      "size_bytes": 5522,
+      "sha256": "2e4525750cbed6304b194c9f583eee32cb3b26a49ee79b737522b8f5a5de797c"
+    },
+    {
+      "filename": "P13_actual_path_mapping.json",
+      "package_relative_path": "evidence/upstream/P13_actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "filename": "P22_content_id_registry.tsv",
+      "package_relative_path": "evidence/upstream/P22_content_id_registry.tsv",
+      "size_bytes": 27951,
+      "sha256": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805"
+    },
+    {
+      "filename": "P22_content_schema_spec.md",
+      "package_relative_path": "evidence/upstream/P22_content_schema_spec.md",
+      "size_bytes": 8881,
+      "sha256": "295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d"
+    },
+    {
+      "filename": "P24_P30_import_proposal.json",
+      "package_relative_path": "evidence/upstream/P24_P30_import_proposal.json",
+      "size_bytes": 1621,
+      "sha256": "f606545f5ca2c0863cb1f43f5658b5604a4c2d6116effe2c8e6f1a2cc640abf4"
+    },
+    {
+      "filename": "P24_actual_path_request.json",
+      "package_relative_path": "evidence/upstream/P24_actual_path_request.json",
+      "size_bytes": 766,
+      "sha256": "02e62d8f81c606102697d55eb25cd14ce8fe268a72e02d4f8464559b8cea854d"
+    },
+    {
+      "filename": "P24_asset_id_registration_candidates.tsv",
+      "package_relative_path": "evidence/upstream/P24_asset_id_registration_candidates.tsv",
+      "size_bytes": 17959,
+      "sha256": "75c655ab1f710bc2a2ea3f7e2ff93c1f9123718f9b0e4948fc4cac565698e49a"
+    },
+    {
+      "filename": "P24_verification_status.json",
+      "package_relative_path": "evidence/upstream/P24_verification_status.json",
+      "size_bytes": 1891,
+      "sha256": "d44c0caa761dda6d534aacc748c01a63f0e58fef99080c1d8e0fa8426aa5cb7d"
+    },
+    {
+      "filename": "P26_delivery_receipt.json",
+      "package_relative_path": "evidence/upstream/P26_delivery_receipt.json",
+      "size_bytes": 4062,
+      "sha256": "a851ff9dfdaf5c51f7f6a157a55537e2d50954bd98e6794e4112623dcd2b1173"
+    },
+    {
+      "filename": "P27_delivery_receipt.json",
+      "package_relative_path": "evidence/upstream/P27_delivery_receipt.json",
+      "size_bytes": 4622,
+      "sha256": "55dd57a150f8e02c38ec1e889667e4cf862963bee1695bd4219e8425841c595a"
+    },
+    {
+      "filename": "P27_delivery_report.md",
+      "package_relative_path": "evidence/upstream/P27_delivery_report.md",
+      "size_bytes": 7497,
+      "sha256": "e28796240a74e3ba708932c8471da3dcf37bb56995826732ea8e93f1e70d750c"
+    },
+    {
+      "filename": "enemy_export_manifest.json",
+      "package_relative_path": "evidence/upstream/enemy_export_manifest.json",
+      "size_bytes": 12146,
+      "sha256": "a70fbd51541367e19e8024588e9d3615bb3402f64b6811b0543fd369ca38cf6a"
+    },
+    {
+      "filename": "enemy_phase_asset_map.json",
+      "package_relative_path": "evidence/upstream/enemy_phase_asset_map.json",
+      "size_bytes": 2619,
+      "sha256": "8e50ed2dcc4172290d027d91fcb865f7d92dfabdafd8472a709a07f4aef78b47"
+    },
+    {
+      "filename": "candidate_a_avatar_512.png",
+      "package_relative_path": "staging/upstream/P26/candidate_a_avatar_512.png",
+      "size_bytes": 105638,
+      "sha256": "d4014a814b488249e0058f979f89db2398d955444d3df19b5f10f7cc43447002"
+    },
+    {
+      "filename": "candidate_a_master_layers.svg",
+      "package_relative_path": "staging/upstream/P26/candidate_a_master_layers.svg",
+      "size_bytes": 9221,
+      "sha256": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af"
+    },
+    {
+      "filename": "candidate_a_stand_1024x1536.png",
+      "package_relative_path": "staging/upstream/P26/candidate_a_stand_1024x1536.png",
+      "size_bytes": 281033,
+      "sha256": "e23c042b5d0a75e4eaca677f004a49689a91da5dc82209738019fd961587f7e1"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus.svg",
+      "package_relative_path": "staging/upstream/P27/tmp_boss_blank_archive_colossus.svg",
+      "size_bytes": 2457,
+      "sha256": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_1024.png",
+      "package_relative_path": "staging/upstream/P27/tmp_boss_blank_archive_colossus_1024.png",
+      "size_bytes": 165696,
+      "sha256": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_512.png",
+      "package_relative_path": "staging/upstream/P27/tmp_boss_blank_archive_colossus_512.png",
+      "size_bytes": 123927,
+      "sha256": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer.svg",
+      "package_relative_path": "staging/upstream/P27/tmp_common_paper_gnawer.svg",
+      "size_bytes": 3153,
+      "sha256": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_1024.png",
+      "package_relative_path": "staging/upstream/P27/tmp_common_paper_gnawer_1024.png",
+      "size_bytes": 117151,
+      "sha256": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_512.png",
+      "package_relative_path": "staging/upstream/P27/tmp_common_paper_gnawer_512.png",
+      "size_bytes": 91497,
+      "sha256": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb"
+    },
+    {
+      "filename": "tmp_elite_margin_warden.svg",
+      "package_relative_path": "staging/upstream/P27/tmp_elite_margin_warden.svg",
+      "size_bytes": 2757,
+      "sha256": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_1024.png",
+      "package_relative_path": "staging/upstream/P27/tmp_elite_margin_warden_1024.png",
+      "size_bytes": 128084,
+      "sha256": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_512.png",
+      "package_relative_path": "staging/upstream/P27/tmp_elite_margin_warden_512.png",
+      "size_bytes": 90537,
+      "sha256": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917"
+    },
+    {
+      "filename": "test_asset_importer.py",
+      "package_relative_path": "tests/test_asset_importer.py",
+      "size_bytes": 3120,
+      "sha256": "eed76ea5bbff2bbe118223dec787df94a4616f6f4e0d25c23440d557785ae961"
+    },
+    {
+      "filename": "test_run.txt",
+      "package_relative_path": "tests/test_run.txt",
+      "size_bytes": 913,
+      "sha256": "878c57a2f98b88fe6f84befa051686b1d0101dfa571e173de501bff3fdb223d3"
+    },
+    {
+      "filename": "asset_importer.cpython-313.pyc",
+      "package_relative_path": "tools/asset_import/__pycache__/asset_importer.cpython-313.pyc",
+      "size_bytes": 11029,
+      "sha256": "2a00c459129f88ba8dcef99f5e945b7f1610c6f3ee0ac970d84d06e89035aec0"
+    },
+    {
+      "filename": "asset_importer.py",
+      "package_relative_path": "tools/asset_import/asset_importer.py",
+      "size_bytes": 6437,
+      "sha256": "4876270fdece6cf4b536d2023de8e2b5da3baa00bcd5e175ffb2cccd8d538826"
+    }
+  ],
+  "verification": {
+    "importer": {
+      "command": "python -S tools/asset_import/asset_importer.py --root .",
+      "exit_code": 0,
+      "status": "PASS",
+      "asset_count": 12,
+      "error_count": 0
+    },
+    "unit_tests": {
+      "command": "python -S tests/test_asset_importer.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "passed": 8,
+      "failed": 0
+    },
+    "png_decode_and_metadata": "PASS for imported PNGs",
+    "svg_xml_and_active_content_check": "PASS for imported SVGs",
+    "byte_preservation": "PASS; imported copies SHA-256 match staged source bytes",
+    "reproducible_manifest": "PASS for same inputs and spec",
+    "unity_engine_import": "NOT_RUN",
+    "P22_acceptance": "BLOCKED",
+    "P13_production_path_authorization": "BLOCKED",
+    "P25_style_review": "NOT_RUN",
+    "P37_license_review": "NOT_RUN",
+    "P32_independent_test": "NOT_RUN",
+    "P35_independent_review": "NOT_RUN"
+  },
+  "production_allowed": false,
+  "notes": [
+    "All 12 assets are PLACEHOLDER with package-local temporary IDs; none is APPROVED.",
+    "No game project path was modified. P13 mapping says P30 production paths are PLANNED_NOT_ACTUAL / BLOCKED_NOT_MAPPED.",
+    "P24 and P28 assets were not imported as runtime assets due to incomplete registration/approval or missing original editable source files."
+  ]
+}

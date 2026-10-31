@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F3EBE0"/><stop offset=".55" stop-color="#D8C8C2"/><stop offset="1" stop-color="#A79AB9"/></linearGradient>
+ <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F5F1E9"/><stop offset="1" stop-color="#D8BCF4"/></linearGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A79AB9"/><stop offset="1" stop-color="#71608E"/></linearGradient>
+</defs>
+<!-- tail and feet -->
+<path d="M280 700 Q190 740 210 830 Q250 850 315 790" fill="none" stroke="#3B334B" stroke-width="24" stroke-linecap="round"/>
+<path d="M280 700 Q190 740 210 830 Q250 850 315 790" fill="none" stroke="#C6A56C" stroke-width="8" stroke-linecap="round"/>
+<path d="M360 760 L330 890 Q360 925 440 900 L460 770 M590 770 L610 900 Q680 925 710 890 L660 750" fill="#71608E" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<path d="M330 890 Q390 915 440 900 M610 900 Q665 918 710 890" fill="none" stroke="#E6BF7D" stroke-width="12"/>
+<!-- squat body -->
+<path d="M255 560 Q240 420 330 350 Q420 280 565 320 Q725 300 780 430 Q830 565 730 745 Q630 820 390 790 Q260 760 255 560Z" fill="url(#body)" stroke="#3B334B" stroke-width="28" stroke-linejoin="round"/>
+<path d="M300 570 Q330 430 430 400 Q570 360 700 435 Q760 535 700 680 Q600 760 400 725 Q310 700 300 570Z" fill="url(#purple)" opacity=".82"/>
+<!-- book shell on back -->
+<path d="M315 390 Q365 230 510 220 Q665 205 760 350 L720 440 Q570 385 360 455Z" fill="url(#paper)" stroke="#3B334B" stroke-width="24" stroke-linejoin="round"/>
+<path d="M520 228 Q500 325 520 415" fill="none" stroke="#A79AB9" stroke-width="16"/>
+<path d="M360 350 Q445 280 500 280 M555 275 Q655 280 710 355" fill="none" stroke="#C6A56C" stroke-width="12" stroke-linecap="round"/>
+<!-- ears / horns -->
+<path d="M300 440 Q205 350 165 405 Q210 490 315 500Z" fill="#D8BCF4" stroke="#3B334B" stroke-width="22"/>
+<path d="M735 435 Q820 335 865 400 Q825 490 730 500Z" fill="#D8BCF4" stroke="#3B334B" stroke-width="22"/>
+<!-- face plate -->
+<path d="M360 485 Q505 420 660 485 Q675 610 515 660 Q370 620 360 485Z" fill="#F3CFC4" stroke="#3B334B" stroke-width="22"/>
+<!-- eyes -->
+<path d="M405 525 Q455 485 495 525 Q450 565 405 525Z M535 525 Q585 485 635 525 Q585 565 535 525Z" fill="#F5F1E9" stroke="#3B334B" stroke-width="14"/>
+<circle cx="458" cy="526" r="20" fill="#C6A56C"/><circle cx="585" cy="526" r="20" fill="#C6A56C"/>
+<circle cx="463" cy="522" r="8" fill="#3B334B"/><circle cx="590" cy="522" r="8" fill="#3B334B"/>
+<path d="M490 590 Q520 610 550 590" fill="none" stroke="#3B334B" stroke-width="12" stroke-linecap="round"/>
+<!-- paper tusks -->
+<path d="M370 600 Q350 685 405 665 L425 625 M635 600 Q675 680 705 640 L675 600" fill="#F5F1E9" stroke="#3B334B" stroke-width="14" stroke-linejoin="round"/>
+<!-- small runes -->
+<path d="M490 700 L520 670 L550 700 L520 730Z" fill="#E6BF7D" stroke="#3B334B" stroke-width="12"/>
+<path d="M410 740 Q520 775 630 740" fill="none" stroke="#D8BCF4" stroke-width="12" stroke-linecap="round"/>
+</svg>
