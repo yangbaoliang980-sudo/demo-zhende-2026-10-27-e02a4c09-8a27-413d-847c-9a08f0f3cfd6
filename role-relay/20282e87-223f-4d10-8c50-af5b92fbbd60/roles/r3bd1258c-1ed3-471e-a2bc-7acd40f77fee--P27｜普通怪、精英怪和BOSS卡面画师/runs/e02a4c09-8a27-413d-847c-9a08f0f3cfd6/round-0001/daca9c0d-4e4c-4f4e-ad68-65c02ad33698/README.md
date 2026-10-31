@@ -1,0 +1,157 @@
+# P27｜普通怪、精英怪和 BOSS 卡面画师
+
+本轮按 P27 独立岗位执行。工作范围是敌方原创视觉资产、卡面、阶段差分、受击锚点及资源映射，不接管 P06 的敌人机制，也不执行跨岗位整合。
+
+目前已确认两项重要边界：
+
+1. 已收到 P26 的真实 SVG、PNG、ORA 等素材，以及四个接力 ZIP。可以利用这些文件核验美术风格和历史交付，但不能把 P26 的角色立绘直接当成敌人素材。
+2. P06 提供的 SHA-256 声明目前还不能证明原件已经取得。必须从实际文件中找到对应 ZIP，核验大小和 SHA-256 后，才能绑定正式敌人 ID、BOSS 阶段和行动意图。
+
+本轮会优先完成不依赖 P06 的隔离视觉成果。正式生产素材、正式阶段映射和引擎导入不会提前宣称通过。
+
+## 上游文件核验结果
+
+已经从嵌套压缩包中实际提取到两份关键资料：
+
+| 上游 | 实际结果 |
+| --- | --- |
+| P23 | 已取得<br> 9,705,884 bytes，SHA-256 已计算 |
+| P25 | 已取得<br> 11,709,179 bytes，SHA-256 已计算 |
+| P06 | 未取得<br> 当前四个接力压缩包及其嵌套包中未找到原件 |
+
+P23 的锚点契约明确：敌方单位展示由 P19 负责，战斗状态由 P14 提供权威数据；P27 不能自行决定运行时血量、行动意图或命中逻辑。
+
+P25 的规范也明确要求敌我等级通过主体轮廓和识别物区分。因此，本轮采用三个不同的外形方向，而不是简单地给同一个怪物换颜色。
+
+## 一、实际美术成果
+
+已生成并通过静态校验
+
+![千棘海刺 - 洛克王国:手游WIKI_BWIKI_哔哩哔哩](files/images/%E5%8D%83%E6%A3%98%E6%B5%B7%E5%88%BA%20-%20%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD_%E6%89%8B%E6%B8%B8WIKI_BWIKI_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9.jpg)
+
+本轮完成三种原创视觉方向：
+
+| 类别 | 临时名称 | 主要识别特征 |
+| --- | --- | --- |
+| 普通怪 | 纸页啃噬兽 | 低矮体型、书页甲壳、琥珀眼 |
+| 精英怪 | 断章巡猎者 | 直立体型、分叉冠角、肩甲 |
+| BOSS | 空白典藏巨像 | 大型碑体、双层环、中央核心 |
+
+以上名称和 ID 均为本轮临时视觉标识，不是正式游戏内容 ID。
+
+另外制作了两张审查图：
+
+- 三类敌人剪影对比图
+- 敌方卡面构图与 UI 安全区研究图
+
+第二张图将意图/状态与 HP/护盾放在独立区域，避免把业务文字烘焙进怪物原画。具体运行时坐标仍须 P23/P19 确认。
+
+## 二、完整交付文件
+
+P27 完整交付包 V0.1
+
+ZIP · 约 1.42 MB · 33 项清单文件
+
+已校验
+
+下载完整 ZIP 交付包
+
+交付回执
+
+下载 P27_delivery_receipt.json
+
+包含实际文件大小、SHA-256、ZIP 哈希和独立导出文件对应关系。
+
+关键文件也可以单独下载：
+
+| 文件 | 下载 |
+| --- | --- |
+| 交付报告 | P27_delivery_report.md |
+| 敌人阶段素材映射 | enemy_phase_asset_map.json |
+| 受击锚点表 | enemy_anchors.tsv |
+| 导出哈希清单 | enemy_export_manifest.json |
+| 阻塞登记 | blocker_register.json |
+| 上游输入回执 | source_input_receipt.json |
+| 构图与锚点规范 | visual_composition_and_anchor_spec.md |
+
+三套独立原稿与透明导出：
+
+- 普通怪：SVG 源文件 · 1024 PNG · 512 PNG
+- 精英怪：SVG 源文件 · 1024 PNG · 512 PNG
+- BOSS：SVG 源文件 · 1024 PNG · 512 PNG
+
+单独下载的素材与 ZIP 内对应文件保持相同文件名和原字节。
+
+## 三、测试结果与遗留门禁
+
+| 验收项目 | 状态 |
+| --- | --- |
+| 33 项交付清单文件大小及 SHA-256 | PASS |
+| SVG XML 解析 | PASS |
+| PNG 解码及 RGBA | PASS |
+| PNG 分辨率检查 | PASS |
+| 完整 ZIP CRC | PASS |
+| P06 正式机制绑定 | BLOCKED |
+| BOSS 阶段差分 | BLOCKED |
+| P22 正式 ID 注册 | BLOCKED |
+| P25 审美复核 | NOT_RUN |
+| P37 许可复核 | NOT_RUN |
+| P30 引擎导入 | NOT_RUN |
+| P35 独立审查 | NOT_RUN |
+
+这里需要特别说明：我完成的是实际 SVG/PNG 制作和静态文件验证，不是游戏引擎导入测试。
+
+## 四、下一步交接要求
+
+目前真正影响 P27 正式完成的主要是两个问题：
+
+1. P06： 补交原始 `P06_Enemy_Delivery_V0.1.zip`，必须核对 168593 字节和指定 SHA-256。取得后再绑定正式敌人、阶段和意图。
+2. P13： 提供 P27 实际工程路径映射和写入白名单。在此之前，所有素材留在隔离交付包。
+
+本轮没有直接修改 GitHub 正式工程，也没有替你执行跨岗位合并。交付包可以交给接力台按配置归档。
+
+P27 当前结论：隔离视觉成果已交付，正式生产验收尚未完成。
+
+拿到 P06 原始 ZIP 后，下一步就是核对机制、补齐正式 ID 和 BOSS 阶段素材，而不是重新画这三张草稿。
+
+---
+
+## 本次归档的原始文件
+
+- [dc95f384-1-source_input_receipt.json](files/data/dc95f384-1-source_input_receipt.json)
+- [千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg](files/images/%E5%8D%83%E6%A3%98%E6%B5%B7%E5%88%BA%20-%20%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD_%E6%89%8B%E6%B8%B8WIKI_BWIKI_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9.jpg)
+- [P27_silhouette_review_board.png](files/images/P27_silhouette_review_board.png)
+- [P27_card_layout_studies.png](files/images/P27_card_layout_studies.png)
+- [P27_delivery_report.md](files/documents/P27_delivery_report.md)
+- [enemy_phase_asset_map.json](files/data/enemy_phase_asset_map.json)
+- [enemy_anchors.tsv](files/data/enemy_anchors.tsv)
+- [enemy_export_manifest.json](files/data/enemy_export_manifest.json)
+- [blocker_register.json](files/data/blocker_register.json)
+- [visual_composition_and_anchor_spec.md](files/documents/visual_composition_and_anchor_spec.md)
+- [tmp_common_paper_gnawer.svg](files/images/tmp_common_paper_gnawer.svg)
+- [tmp_common_paper_gnawer_1024.png](files/images/tmp_common_paper_gnawer_1024.png)
+- [tmp_common_paper_gnawer_512.png](files/images/tmp_common_paper_gnawer_512.png)
+- [tmp_elite_margin_warden.svg](files/images/tmp_elite_margin_warden.svg)
+- [tmp_elite_margin_warden_1024.png](files/images/tmp_elite_margin_warden_1024.png)
+- [tmp_elite_margin_warden_512.png](files/images/tmp_elite_margin_warden_512.png)
+- [tmp_boss_blank_archive_colossus.svg](files/images/tmp_boss_blank_archive_colossus.svg)
+- [tmp_boss_blank_archive_colossus_1024.png](files/images/tmp_boss_blank_archive_colossus_1024.png)
+- [tmp_boss_blank_archive_colossus_512.png](files/images/tmp_boss_blank_archive_colossus_512.png)
+- [P27_delivery_receipt.json](files/data/P27_delivery_receipt.json)
+- [candidate_a_master_layers.svg](files/images/candidate_a_master_layers.svg)
+- [candidate_a_stand_master_2048x3072.png](files/images/candidate_a_stand_master_2048x3072.png)
+- [candidate_a_stand_1024x1536.png](files/images/candidate_a_stand_1024x1536.png)
+- [candidate_a_avatar_512.png](files/images/candidate_a_avatar_512.png)
+- [candidate_a_portrait_review_768x1024.png](files/images/candidate_a_portrait_review_768x1024.png)
+- [candidate_a_w14_profile_576x360.png](files/images/candidate_a_w14_profile_576x360.png)
+- [candidate_a_w08_party_576x236.png](files/images/candidate_a_w08_party_576x236.png)
+- [candidate_a_expression_calm_1024x1536.png](files/images/candidate_a_expression_calm_1024x1536.png)
+- [candidate_a_key_parts_review.png](files/images/candidate_a_key_parts_review.png)
+- [candidate_a_enemy_window_156x184.png](files/images/candidate_a_enemy_window_156x184.png)
+- [P25_Style_Reference.png](files/images/P25_Style_Reference.png)
+- [P25_Proportion_Crop.png](files/images/P25_Proportion_Crop.png)
+- [relay-materials-1-2220058619.zip](files/archives/relay-materials-1-2220058619.zip)
+- [relay-materials-2-ca6ada3652.zip](files/archives/relay-materials-2-ca6ada3652.zip)
+- [relay-materials-3-166c0973a2.zip](files/archives/relay-materials-3-166c0973a2.zip)
+- [relay-materials-4-1c81a8a0fa.zip](files/archives/relay-materials-4-1c81a8a0fa.zip)
+

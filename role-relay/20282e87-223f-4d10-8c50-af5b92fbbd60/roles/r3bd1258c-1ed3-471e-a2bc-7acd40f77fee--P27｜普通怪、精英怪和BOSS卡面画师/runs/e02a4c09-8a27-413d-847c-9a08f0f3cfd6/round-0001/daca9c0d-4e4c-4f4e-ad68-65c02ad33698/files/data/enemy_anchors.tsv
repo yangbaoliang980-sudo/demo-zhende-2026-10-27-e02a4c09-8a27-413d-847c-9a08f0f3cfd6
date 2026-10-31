@@ -1,0 +1,7 @@
+temporary_visual_id	anchor_name	x_norm	y_norm	anchor_role	status	notes
+tmp.common.paper_gnawer	candidate_hit_center	0.500	0.560	visual_center	PROPOSAL_NOT_RUNTIME	Confirm with P06 target body and P28 impact presentation.
+tmp.common.paper_gnawer	face_focus	0.500	0.515	recognition_focus	VISUAL_GUIDE	Eyes and face are primary read at reduced scale.
+tmp.elite.margin_warden	candidate_hit_center	0.500	0.570	visual_center	PROPOSAL_NOT_RUNTIME	Upper torso center; confirm against actual P06 size and P28 impact.
+tmp.elite.margin_warden	face_focus	0.500	0.355	recognition_focus	VISUAL_GUIDE	Mask and split crown form the primary recognition cluster.
+tmp.boss.blank_archive_colossus	candidate_hit_center	0.500	0.625	visual_center	PROPOSAL_NOT_RUNTIME	Core-adjacent body center; no boss phase or damage anchor semantics asserted.
+tmp.boss.blank_archive_colossus	face_focus	0.500	0.470	recognition_focus	VISUAL_GUIDE	Mask and page-crown silhouette remain readable at small scale.

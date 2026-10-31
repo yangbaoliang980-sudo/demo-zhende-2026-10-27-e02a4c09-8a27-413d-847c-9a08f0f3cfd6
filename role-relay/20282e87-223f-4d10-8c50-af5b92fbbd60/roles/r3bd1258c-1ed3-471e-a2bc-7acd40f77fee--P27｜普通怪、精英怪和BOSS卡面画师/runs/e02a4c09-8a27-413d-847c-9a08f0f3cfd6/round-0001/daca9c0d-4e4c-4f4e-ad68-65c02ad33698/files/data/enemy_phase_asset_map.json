@@ -1,0 +1,64 @@
+{
+  "schema_version": "P27-ENEMY-PHASE-ASSET-MAP/0.1.0-isolated",
+  "task_id": "P27-S03-ENEMY-VISUAL-001",
+  "status": "ISOLATED_VISUAL_DRAFTS_ONLY_P06_BINDING_BLOCKED",
+  "production_allowed": false,
+  "source_inputs": {
+    "P23": {
+      "version": "P23-UX-ANCHOR/0.1.0-proposal",
+      "archive_sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "archive_size_bytes": 9705884
+    },
+    "P25": {
+      "version": "P25-ART-BIBLE/0.1.0",
+      "archive_sha256": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8",
+      "archive_size_bytes": 11709179
+    }
+  },
+  "entries": [
+    {
+      "temporary_visual_id": "tmp.common.paper_gnawer",
+      "enemy_id": null,
+      "enemy_class_proposal": "COMMON",
+      "phase_id": null,
+      "intent_enum": null,
+      "asset_id": "tmp.enemy.paper_gnawer.main",
+      "source": "art/enemies/source/tmp_common_paper_gnawer.svg",
+      "export": "art/enemies/exports/tmp_common_paper_gnawer_1024.png",
+      "binding_status": "BLOCKED_P06_SOURCE_NOT_RECEIVED",
+      "formal_registration": "NOT_REGISTERED"
+    },
+    {
+      "temporary_visual_id": "tmp.elite.margin_warden",
+      "enemy_id": null,
+      "enemy_class_proposal": "ELITE",
+      "phase_id": null,
+      "intent_enum": null,
+      "asset_id": "tmp.enemy.margin_warden.main",
+      "source": "art/enemies/source/tmp_elite_margin_warden.svg",
+      "export": "art/enemies/exports/tmp_elite_margin_warden_1024.png",
+      "binding_status": "BLOCKED_P06_SOURCE_NOT_RECEIVED",
+      "formal_registration": "NOT_REGISTERED"
+    },
+    {
+      "temporary_visual_id": "tmp.boss.blank_archive_colossus",
+      "enemy_id": null,
+      "enemy_class_proposal": "BOSS",
+      "phase_id": null,
+      "intent_enum": null,
+      "asset_id": "tmp.enemy.blank_archive_colossus.main",
+      "source": "art/enemies/source/tmp_boss_blank_archive_colossus.svg",
+      "export": "art/enemies/exports/tmp_boss_blank_archive_colossus_1024.png",
+      "phase_assets": [],
+      "binding_status": "BLOCKED_P06_SOURCE_NOT_RECEIVED",
+      "formal_registration": "NOT_REGISTERED",
+      "phase_visuals": "NOT_CREATED; do not invent phase count or conditions"
+    }
+  ],
+  "notes": [
+    "Temporary visual IDs are package-local labels, not P22 registered content IDs.",
+    "P06 archive and its required three data files were not found in the received nested relay ZIP inventory.",
+    "No formal enemy_id, phase_id, intent enum or phase count is inferred.",
+    "Three concepts are isolated visual studies only; P01 quantity approval and P13 production path authorization remain absent."
+  ]
+}

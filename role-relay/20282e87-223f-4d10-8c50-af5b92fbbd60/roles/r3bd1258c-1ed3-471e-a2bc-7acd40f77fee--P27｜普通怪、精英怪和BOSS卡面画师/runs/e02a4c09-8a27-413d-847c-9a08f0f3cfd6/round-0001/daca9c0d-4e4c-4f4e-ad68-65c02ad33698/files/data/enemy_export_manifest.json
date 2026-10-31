@@ -1,0 +1,355 @@
+{
+  "schema_version": "P27-ENEMY-EXPORT-MANIFEST/0.1.0-isolated",
+  "task_id": "P27-S03-ENEMY-VISUAL-001",
+  "version": "P27-ENEMY-VISUAL/0.1.0-isolated",
+  "status": "ISOLATED_VISUAL_DRAFTS_ONLY",
+  "listed_file_count": 33,
+  "source_input_hashes": [
+    {
+      "source_id": "P23_ARCHIVE",
+      "size_bytes": 9705884,
+      "sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "version": "P23-UX-ANCHOR/0.1.0-proposal"
+    },
+    {
+      "source_id": "P25_ARCHIVE",
+      "size_bytes": 11709179,
+      "sha256": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8",
+      "version": "P25-ART-BIBLE/0.1.0"
+    }
+  ],
+  "assets": [
+    {
+      "temporary_visual_id": "tmp.common.paper_gnawer",
+      "source": {
+        "relative_path": "art/enemies/source/tmp_common_paper_gnawer.svg",
+        "size_bytes": 3153,
+        "sha256": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02",
+        "format": "image/svg+xml",
+        "format_version": "SVG 1.1"
+      },
+      "exports": [
+        {
+          "relative_path": "art/enemies/exports/tmp_common_paper_gnawer_1024.png",
+          "size_bytes": 117151,
+          "sha256": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "alpha": "straight/unassociated RGBA"
+        },
+        {
+          "relative_path": "art/enemies/exports/tmp_common_paper_gnawer_512.png",
+          "size_bytes": 91497,
+          "sha256": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            512,
+            512
+          ],
+          "alpha": "straight/unassociated RGBA"
+        }
+      ],
+      "production_registration": "NOT_REGISTERED",
+      "receiver": "P25/P19/P28/P30/P35",
+      "modification_allowlist": []
+    },
+    {
+      "temporary_visual_id": "tmp.elite.margin_warden",
+      "source": {
+        "relative_path": "art/enemies/source/tmp_elite_margin_warden.svg",
+        "size_bytes": 2757,
+        "sha256": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178",
+        "format": "image/svg+xml",
+        "format_version": "SVG 1.1"
+      },
+      "exports": [
+        {
+          "relative_path": "art/enemies/exports/tmp_elite_margin_warden_1024.png",
+          "size_bytes": 128084,
+          "sha256": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "alpha": "straight/unassociated RGBA"
+        },
+        {
+          "relative_path": "art/enemies/exports/tmp_elite_margin_warden_512.png",
+          "size_bytes": 90537,
+          "sha256": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            512,
+            512
+          ],
+          "alpha": "straight/unassociated RGBA"
+        }
+      ],
+      "production_registration": "NOT_REGISTERED",
+      "receiver": "P25/P19/P28/P30/P35",
+      "modification_allowlist": []
+    },
+    {
+      "temporary_visual_id": "tmp.boss.blank_archive_colossus",
+      "source": {
+        "relative_path": "art/enemies/source/tmp_boss_blank_archive_colossus.svg",
+        "size_bytes": 2457,
+        "sha256": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8",
+        "format": "image/svg+xml",
+        "format_version": "SVG 1.1"
+      },
+      "exports": [
+        {
+          "relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_1024.png",
+          "size_bytes": 165696,
+          "sha256": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "alpha": "straight/unassociated RGBA"
+        },
+        {
+          "relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_512.png",
+          "size_bytes": 123927,
+          "sha256": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081",
+          "format": "image/png",
+          "format_version": "PNG RGBA8",
+          "dimensions": [
+            512,
+            512
+          ],
+          "alpha": "straight/unassociated RGBA"
+        }
+      ],
+      "production_registration": "NOT_REGISTERED",
+      "receiver": "P25/P19/P28/P30/P35",
+      "modification_allowlist": []
+    }
+  ],
+  "files": [
+    {
+      "relative_path": "source_input_receipt.json",
+      "size_bytes": 2194,
+      "sha256": "dc95f384c1bc6d7fb3eef855ceb662b7b597cf9de754beaadf4afa5cbbcce0f4",
+      "format": "json"
+    },
+    {
+      "relative_path": "enemy_anchors.tsv",
+      "size_bytes": 972,
+      "sha256": "5f7ab83d7f984506b7e641ac57a510d532e9ed47b28a0ac660e2963dfab11bc7",
+      "format": "tsv"
+    },
+    {
+      "relative_path": "blocker_register.json",
+      "size_bytes": 2365,
+      "sha256": "14e15e814a2b77e0c07da5abc6521ec17458f94f6b4d9321f45dc80669add4bb",
+      "format": "json"
+    },
+    {
+      "relative_path": "P27_delivery_report.md",
+      "size_bytes": 7497,
+      "sha256": "e28796240a74e3ba708932c8471da3dcf37bb56995826732ea8e93f1e70d750c",
+      "format": "md"
+    },
+    {
+      "relative_path": "enemy_phase_asset_map.json",
+      "size_bytes": 2619,
+      "sha256": "8e50ed2dcc4172290d027d91fcb865f7d92dfabdafd8472a709a07f4aef78b47",
+      "format": "json"
+    },
+    {
+      "relative_path": "README.md",
+      "size_bytes": 2977,
+      "sha256": "5ade090c4916c32b9668a9beb2fc0de08251386a54217b24089ebfff2be5b8cf",
+      "format": "md"
+    },
+    {
+      "relative_path": "docs/visual_composition_and_anchor_spec.md",
+      "size_bytes": 2122,
+      "sha256": "df6352238c6d61786b7e2b5f13f6697764e41e6813f7b39033a8ff2e35ffe6ca",
+      "format": "md"
+    },
+    {
+      "relative_path": "validation/validate_delivery.py",
+      "size_bytes": 1508,
+      "sha256": "e894c85b06a8b004f93e87b30966a790718644bfd9278fc47cc31fbaf12d85c2",
+      "format": "py"
+    },
+    {
+      "relative_path": "art/enemies/source/tmp_common_paper_gnawer.svg",
+      "size_bytes": 3153,
+      "sha256": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02",
+      "format": "svg"
+    },
+    {
+      "relative_path": "art/enemies/source/tmp_elite_margin_warden.svg",
+      "size_bytes": 2757,
+      "sha256": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178",
+      "format": "svg"
+    },
+    {
+      "relative_path": "art/enemies/source/tmp_boss_blank_archive_colossus.svg",
+      "size_bytes": 2457,
+      "sha256": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8",
+      "format": "svg"
+    },
+    {
+      "relative_path": "art/enemies/exports/P27_card_layout_studies.png",
+      "size_bytes": 307617,
+      "sha256": "d18929c5b61e7210c41543232358377c47779a5680cb669006bb49c389f23111",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_512.png",
+      "size_bytes": 123927,
+      "sha256": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_elite_margin_warden_1024.png",
+      "size_bytes": 128084,
+      "sha256": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_1024.png",
+      "size_bytes": 165696,
+      "sha256": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_common_paper_gnawer_1024.png",
+      "size_bytes": 117151,
+      "sha256": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_common_paper_gnawer_512.png",
+      "size_bytes": 91497,
+      "sha256": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/tmp_elite_margin_warden_512.png",
+      "size_bytes": 90537,
+      "sha256": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917",
+      "format": "png"
+    },
+    {
+      "relative_path": "art/enemies/exports/P27_silhouette_review_board.png",
+      "size_bytes": 361826,
+      "sha256": "90f7aefc76e9a7838bd9a8b4d0b81b4cebc8a415083eb2d6c577e292668a91f4",
+      "format": "png"
+    },
+    {
+      "relative_path": "evidence/upstream/P23/ux_anchor_contract.json",
+      "size_bytes": 93415,
+      "sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P23/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P23/P23_delivery_report.md",
+      "size_bytes": 5561,
+      "sha256": "322fb9ae2d90267badc9b94d582e5206e0667e8a67f773c8efddb0cd54eb9c9b",
+      "format": "md"
+    },
+    {
+      "relative_path": "evidence/upstream/P23/blocker_register.json",
+      "size_bytes": 3677,
+      "sha256": "07959a725220d21dfec2e1db20ae812b68aeb290ec5507d93e92cb0e3bcafeb4",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P23/verification_status.json",
+      "size_bytes": 2336,
+      "sha256": "805c9bec9630978e1900e7b63223f22f8f082c39812e944a73b9cd90b212fa65",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/ux_anchor_contract.json",
+      "size_bytes": 93415,
+      "sha256": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/style_bible.md",
+      "size_bytes": 15526,
+      "sha256": "b89e7779c11cea6b50a68a7922b2217178655fb8f0226200cc774d09c98d01b4",
+      "format": "md"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/blocker_register.json",
+      "size_bytes": 2972,
+      "sha256": "2cc28d48a5ec366e1b9abc56ca20a68367307cb059d305a9ae764d4c02e8d320",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/P25_delivery_report.md",
+      "size_bytes": 11409,
+      "sha256": "e0996c3c49c79c2158cc0e3ad97d5178321f55c018fa754c0688530bc65d3d56",
+      "format": "md"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/palette.json",
+      "size_bytes": 3853,
+      "sha256": "1d8ee1083dbe575a13e8cf0f47484c211ac4f8819f8e9e687f24441483093a29",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/verification_status.json",
+      "size_bytes": 3045,
+      "sha256": "bab6db4c1067866fc3f94e7eb1462e0f2a6dc2a52e65df01a0eb377b10b7e059",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/crop_profiles.json",
+      "size_bytes": 4331,
+      "sha256": "0dedd53d4f44e7d041f6e601b37efc1acd8089e09813799354e34e984a70e4fe",
+      "format": "json"
+    },
+    {
+      "relative_path": "evidence/upstream/P25/formal_asset_register.json",
+      "size_bytes": 522,
+      "sha256": "24abf8353a9c36e257ee06a21bb8f5996f27b2e828077271515c249842afcbee",
+      "format": "json"
+    }
+  ],
+  "production_allowed": false,
+  "actual_production_path": null,
+  "receivers": [
+    "P19",
+    "P25",
+    "P28",
+    "P30",
+    "P35"
+  ],
+  "modification_allowlist": [
+    {
+      "role": "P27",
+      "scope": "Only files inside this isolated P27 package; no game project path is authorized."
+    }
+  ]
+}

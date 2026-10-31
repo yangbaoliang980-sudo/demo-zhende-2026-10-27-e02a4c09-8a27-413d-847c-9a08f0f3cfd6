@@ -1,0 +1,79 @@
+{
+  "schema_version": "P27-BLOCKERS/0.1.0",
+  "task_id": "P27-S03-ENEMY-VISUAL-001",
+  "blockers": [
+    {
+      "id": "P27-BLK-P06-001",
+      "owner": "P06 / relay handoff",
+      "status": "BLOCKED",
+      "missing": [
+        "P06_Enemy_Delivery_V0.1.zip",
+        "enemy_specs.json",
+        "intent_dictionary.tsv",
+        "boss_phase_graph.json"
+      ],
+      "claimed_archive": {
+        "size_bytes": 168593,
+        "sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7"
+      },
+      "closure": "Receive original archive and independently verify exact byte size and SHA-256 before parsing."
+    },
+    {
+      "id": "P27-BLK-P13-002",
+      "owner": "P13",
+      "status": "BLOCKED",
+      "missing": [
+        "actual P27 production path mapping",
+        "explicit write allowlist",
+        "actual game repository and fixed commit"
+      ],
+      "closure": "Provide P27 mapping and authorization; do not overwrite existing project files."
+    },
+    {
+      "id": "P27-BLK-P22-003",
+      "owner": "P22",
+      "status": "BLOCKED",
+      "missing": [
+        "formal enemy asset ID registration/receipt"
+      ],
+      "closure": "Register asset IDs after P06 identity mapping and P22 validation."
+    },
+    {
+      "id": "P27-BLK-P25-004",
+      "owner": "P25",
+      "status": "NOT_RUN",
+      "missing": [
+        "same-version visual review"
+      ],
+      "closure": "Review exact SVG/PNG hashes and card-size crops."
+    },
+    {
+      "id": "P27-BLK-P37-005",
+      "owner": "P37",
+      "status": "NOT_RUN",
+      "missing": [
+        "independent rights/license review"
+      ],
+      "closure": "Review original sources and any third-party inputs; issue independent receipt."
+    },
+    {
+      "id": "P27-BLK-P30-006",
+      "owner": "P30",
+      "status": "NOT_RUN",
+      "missing": [
+        "target engine import evidence"
+      ],
+      "closure": "Import exact files into approved target engine and return import receipt."
+    },
+    {
+      "id": "P27-BLK-P35-007",
+      "owner": "P35",
+      "status": "NOT_RUN",
+      "missing": [
+        "independent engineering review"
+      ],
+      "closure": "Review this same version and all verification evidence."
+    }
+  ],
+  "no_fabrication_policy": "No formal enemy_id, phase_id, intent enum, phase count, runtime hitbox, or boss phase art was fabricated."
+}

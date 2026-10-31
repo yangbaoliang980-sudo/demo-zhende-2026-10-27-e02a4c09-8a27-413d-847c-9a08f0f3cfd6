@@ -1,0 +1,65 @@
+{
+  "schema_version": "P27-INPUT-RECEIPT/0.1.0",
+  "task_id": "P27-S03-ENEMY-VISUAL-001",
+  "inputs": [
+    {
+      "filename": "relay-materials-1-db0f4fc066.zip",
+      "size_bytes": 7425682,
+      "sha256": "db0f4fc06605c3572365d879893b9ff388da95d0fbf46d09aabd854cc6a45cef",
+      "zip_test": null,
+      "role": "relay transport archive"
+    },
+    {
+      "filename": "relay-materials-2-3448ba68fd.zip",
+      "size_bytes": 12572377,
+      "sha256": "3448ba68fd562af19f9178c2093f5c968028da090b4f7211350534533a1549ca",
+      "zip_test": null,
+      "role": "relay transport archive"
+    },
+    {
+      "filename": "relay-materials-3-9ddc1a2bc6.zip",
+      "size_bytes": 15634808,
+      "sha256": "9ddc1a2bc6c39e71d0f4e466179c4c25ce98589eefaf8cd5a99166700eee8153",
+      "zip_test": null,
+      "role": "relay transport archive"
+    },
+    {
+      "filename": "relay-materials-4-e6160242d1.zip",
+      "size_bytes": 6652787,
+      "sha256": "e6160242d1a07e44c5d2c15e31c8f3a8ca09b5913f030b8889b8c325829e7590",
+      "zip_test": null,
+      "role": "relay transport archive"
+    }
+  ],
+  "verified_upstream_archives": [
+    {
+      "filename": "P23_UX_Accessibility_V0.1.zip",
+      "size_bytes": 9705884,
+      "sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "zip_test": null,
+      "version": "P23-UX-ANCHOR/0.1.0-proposal"
+    },
+    {
+      "filename": "P25_ArtDirection_V0.1.zip",
+      "size_bytes": 11709179,
+      "sha256": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8",
+      "zip_test": null,
+      "version": "P25-ART-BIBLE/0.1.0"
+    }
+  ],
+  "P06_search_result": {
+    "filename": "P06_Enemy_Delivery_V0.1.zip",
+    "found": false,
+    "claimed_size_bytes": 168593,
+    "claimed_sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+    "verified_size_bytes": null,
+    "verified_sha256": null,
+    "status": "BLOCKED"
+  },
+  "scope_note": "Searched all files and nested ZIPs in the four received relay-materials archives. No P06 package or its three required data files were found.",
+  "nested_archive_integrity": {
+    "archive_count": 11,
+    "all_testzip_clean": true,
+    "bad_archives": []
+  }
+}

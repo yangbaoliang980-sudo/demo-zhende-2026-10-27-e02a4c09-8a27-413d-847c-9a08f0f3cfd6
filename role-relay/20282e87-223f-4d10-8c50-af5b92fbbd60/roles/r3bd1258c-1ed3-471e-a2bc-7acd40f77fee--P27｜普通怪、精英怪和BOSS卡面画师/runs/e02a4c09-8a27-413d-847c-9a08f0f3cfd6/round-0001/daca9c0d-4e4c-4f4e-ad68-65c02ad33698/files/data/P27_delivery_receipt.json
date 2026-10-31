@@ -1,0 +1,119 @@
+{
+  "schema_version": "P27-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P27-S03-ENEMY-VISUAL-001",
+  "version": "P27-ENEMY-VISUAL/0.1.0-isolated",
+  "status": "ISOLATED_VISUAL_DRAFT_DELIVERED_P06_BINDING_BLOCKED",
+  "archive": {
+    "filename": "P27_Enemy_Visual_Draft_V0.1.zip",
+    "size_bytes": 1420581,
+    "sha256": "87fd9c1072e55387c9ffcfacf9de73a56d63e34a113cbc9cd5e771c4df627efe",
+    "zip_test": null
+  },
+  "exports": [
+    {
+      "filename": "tmp_common_paper_gnawer.svg",
+      "package_relative_path": "art/enemies/source/tmp_common_paper_gnawer.svg",
+      "size_bytes": 3153,
+      "sha256": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_1024.png",
+      "package_relative_path": "art/enemies/exports/tmp_common_paper_gnawer_1024.png",
+      "size_bytes": 117151,
+      "sha256": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa"
+    },
+    {
+      "filename": "tmp_common_paper_gnawer_512.png",
+      "package_relative_path": "art/enemies/exports/tmp_common_paper_gnawer_512.png",
+      "size_bytes": 91497,
+      "sha256": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb"
+    },
+    {
+      "filename": "tmp_elite_margin_warden.svg",
+      "package_relative_path": "art/enemies/source/tmp_elite_margin_warden.svg",
+      "size_bytes": 2757,
+      "sha256": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_1024.png",
+      "package_relative_path": "art/enemies/exports/tmp_elite_margin_warden_1024.png",
+      "size_bytes": 128084,
+      "sha256": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b"
+    },
+    {
+      "filename": "tmp_elite_margin_warden_512.png",
+      "package_relative_path": "art/enemies/exports/tmp_elite_margin_warden_512.png",
+      "size_bytes": 90537,
+      "sha256": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus.svg",
+      "package_relative_path": "art/enemies/source/tmp_boss_blank_archive_colossus.svg",
+      "size_bytes": 2457,
+      "sha256": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_1024.png",
+      "package_relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_1024.png",
+      "size_bytes": 165696,
+      "sha256": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b"
+    },
+    {
+      "filename": "tmp_boss_blank_archive_colossus_512.png",
+      "package_relative_path": "art/enemies/exports/tmp_boss_blank_archive_colossus_512.png",
+      "size_bytes": 123927,
+      "sha256": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081"
+    },
+    {
+      "filename": "P27_silhouette_review_board.png",
+      "package_relative_path": "art/enemies/exports/P27_silhouette_review_board.png",
+      "size_bytes": 361826,
+      "sha256": "90f7aefc76e9a7838bd9a8b4d0b81b4cebc8a415083eb2d6c577e292668a91f4"
+    },
+    {
+      "filename": "P27_card_layout_studies.png",
+      "package_relative_path": "art/enemies/exports/P27_card_layout_studies.png",
+      "size_bytes": 307617,
+      "sha256": "d18929c5b61e7210c41543232358377c47779a5680cb669006bb49c389f23111"
+    }
+  ],
+  "verification": {
+    "manifest_file_count": 33,
+    "manifest_match_count": 33,
+    "missing": [],
+    "mismatches": [],
+    "source_relay_archive_count": 11,
+    "source_relay_archives_crc_clean": true,
+    "svg_xml": "PASS",
+    "png_decode_rgba": "PASS",
+    "png_dimensions": "PASS",
+    "local_validator_exit_code": 0,
+    "local_validator_stdout": "PASS: 33 package files verified; SVG/PNG structural checks passed."
+  },
+  "upstream": {
+    "P23": {
+      "size_bytes": 9705884,
+      "sha256": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d",
+      "manifest": "171/171 matched",
+      "status": "VERIFIED"
+    },
+    "P25": {
+      "size_bytes": 11709179,
+      "sha256": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8",
+      "manifest": "435/435 matched",
+      "status": "VERIFIED"
+    },
+    "P06": {
+      "claimed_size_bytes": 168593,
+      "claimed_sha256": "0a2912acc81c594bba6fb93bd631ef77c412769adb2ad68f553914a44e1c1ce7",
+      "verified_original_found": false,
+      "status": "BLOCKED"
+    }
+  },
+  "production_write_authorized": false,
+  "formal_enemy_id_phase_id_intent_binding": "BLOCKED",
+  "p25_review": "NOT_RUN",
+  "p37_rights_review": "NOT_RUN",
+  "p30_engine_import": "NOT_RUN",
+  "p35_independent_review": "NOT_RUN"
+}
