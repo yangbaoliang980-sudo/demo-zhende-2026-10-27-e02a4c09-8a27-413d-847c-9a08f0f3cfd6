@@ -1,0 +1,126 @@
+{
+  "validation": "PASS",
+  "checks": "WAV decode via stdlib wave; PCM metadata; source/export byte equality",
+  "audio_files": [
+    {
+      "filename": "card_flight_whoosh.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 18522
+      },
+      "duration_seconds": 0.42,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "impact_hit.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 9702
+      },
+      "duration_seconds": 0.22,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "shield_block.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 14994
+      },
+      "duration_seconds": 0.34,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "heal_chime.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 21168
+      },
+      "duration_seconds": 0.48,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "status_buff_spark.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 13671
+      },
+      "duration_seconds": 0.31,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "victory_sting.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 31752
+      },
+      "duration_seconds": 0.72,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "defeat_sting.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 31752
+      },
+      "duration_seconds": 0.72,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "reward_chime.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 17640
+      },
+      "duration_seconds": 0.4,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "error_tick.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 7056
+      },
+      "duration_seconds": 0.16,
+      "source_export_byte_match": true
+    },
+    {
+      "filename": "ui_click.wav",
+      "metadata": {
+        "channels": 1,
+        "sample_width": 2,
+        "sample_rate": 44100,
+        "frames": 2425
+      },
+      "duration_seconds": 0.055,
+      "source_export_byte_match": true
+    }
+  ],
+  "not_run": [
+    "LUFS/RMS calibration",
+    "true peak measurement",
+    "Unity/engine import",
+    "P29 playback integration",
+    "P32 independent tests",
+    "P35 review",
+    "P37 license review",
+    "real device playback"
+  ]
+}

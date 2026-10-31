@@ -1,0 +1,3781 @@
+{
+  "version": 1,
+  "presetId": "20282e87-223f-4d10-8c50-af5b92fbbd60",
+  "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "roleKey": "r83766a9e-8aa3-4c9d-aa70-98fdd11b0ac4",
+  "roleName": "P31｜音效反馈与基础配乐素材师",
+  "round": 1,
+  "handoffToken": "5c3425cd-ac0f-40a5-893b-b91fe4b28686",
+  "materials": {
+    "assets": [
+      {
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "name": "P31_delivery_receipt.json",
+        "kind": "file",
+        "size": 7757,
+        "type": "application/json",
+        "sourceUrls": [
+          "blob:https://chatgpt.com/0fc71d61-bd1b-4c3a-a3e7-562bf436cd6e",
+          "https://chatgpt.com/backend-api/estuary/content?id=file_00000000f9308206bb4672710d2f581b&ts=498186&p=fs&cid=1&sig=db72692ef0527f87aa12152b7b876b6f759c386b30c8fdb9b773d16d07c6f606&v=0"
+        ],
+        "downloadAttempt": {
+          "context": "page-main",
+          "elapsedMs": 30,
+          "expectedBytes": 0,
+          "fullRestarts": 0,
+          "nativeAbortAt": null,
+          "nativeAborted": false,
+          "origin": "https://chatgpt.com",
+          "receivedBytes": 7757,
+          "resumeAttempts": 0,
+          "stage": "bytes-received"
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_delivery_receipt.json",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_delivery_receipt.json",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated.zip",
+            "kind": "reply"
+          }
+        ],
+        "kind": "file",
+        "size": 566453,
+        "type": "application/zip",
+        "sourceUrls": [
+          "https://chatgpt.com/c/6ae63681-3948-83ea-9ae2-93f89dfc31a4"
+        ],
+        "presentation": false
+      },
+      {
+        "name": "31596fa4-1-README.md",
+        "size": 1574,
+        "type": "text/markdown",
+        "hash": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/README.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/README.md",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "README.md",
+          "exportName": "README.md",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/README.md",
+            "kind": "reply"
+          }
+        ],
+        "mergeOriginalName": "README.md"
+      },
+      {
+        "name": "card_flight_whoosh.wav",
+        "size": 37088,
+        "type": "application/octet-stream",
+        "hash": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/card_flight_whoosh.wav",
+          "exportName": "card_flight_whoosh.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "defeat_sting.wav",
+        "size": 63548,
+        "type": "application/octet-stream",
+        "hash": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/defeat_sting.wav",
+          "exportName": "defeat_sting.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "error_tick.wav",
+        "size": 14156,
+        "type": "application/octet-stream",
+        "hash": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/error_tick.wav",
+          "exportName": "error_tick.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "heal_chime.wav",
+        "size": 42380,
+        "type": "application/octet-stream",
+        "hash": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/heal_chime.wav",
+          "exportName": "heal_chime.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "impact_hit.wav",
+        "size": 19448,
+        "type": "application/octet-stream",
+        "hash": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/impact_hit.wav",
+          "exportName": "impact_hit.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "reward_chime.wav",
+        "size": 35324,
+        "type": "application/octet-stream",
+        "hash": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/reward_chime.wav",
+          "exportName": "reward_chime.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "shield_block.wav",
+        "size": 30032,
+        "type": "application/octet-stream",
+        "hash": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/shield_block.wav",
+          "exportName": "shield_block.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "status_buff_spark.wav",
+        "size": 27386,
+        "type": "application/octet-stream",
+        "hash": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/status_buff_spark.wav",
+          "exportName": "status_buff_spark.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "ui_click.wav",
+        "size": 4894,
+        "type": "application/octet-stream",
+        "hash": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/ui_click.wav",
+          "exportName": "ui_click.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "victory_sting.wav",
+        "size": 63548,
+        "type": "application/octet-stream",
+        "hash": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio/source/victory_sting.wav",
+          "exportName": "victory_sting.wav",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "audio_event_map.tsv",
+        "size": 1833,
+        "type": "application/octet-stream",
+        "hash": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio_event_map.tsv",
+          "exportName": "audio_event_map.tsv",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "audio_license_ledger.tsv",
+        "size": 2589,
+        "type": "application/octet-stream",
+        "hash": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "audio_license_ledger.tsv",
+          "exportName": "audio_license_ledger.tsv",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "8e11f2a0-1-delivery_manifest.json",
+        "size": 4624,
+        "type": "application/json",
+        "hash": "8e11f2a0a4bcde843334b498ab532959927afaeeabf3a471f2de39c3bb975a4d",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "delivery_manifest.json",
+          "exportName": "delivery_manifest.json",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+            "kind": "reply"
+          }
+        ],
+        "mergeOriginalName": "delivery_manifest.json"
+      },
+      {
+        "name": "mixing_and_fallback_checklist.md",
+        "size": 1025,
+        "type": "text/markdown",
+        "hash": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "design/audio/mixing_and_fallback_checklist.md",
+          "exportName": "mixing_and_fallback_checklist.md",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "audio_validation.json",
+        "size": 2920,
+        "type": "application/json",
+        "hash": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "evidence/audio_validation.json",
+          "exportName": "audio_validation.json",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "name": "generate_sfx.py",
+        "size": 2389,
+        "type": "application/octet-stream",
+        "hash": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21",
+        "kind": "file",
+        "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+        "sourceUrls": [],
+        "derivedFromZip": {
+          "name": "P31_AudioFeedback_V0.1_isolated.zip",
+          "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "entryPath": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+          "crcVerified": true
+        },
+        "receiptProof": {
+          "name": "P31_delivery_receipt.json",
+          "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+          "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+          "packagePath": "tools/generate_sfx.py",
+          "exportName": "generate_sfx.py",
+          "hashVerified": true
+        },
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+            "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+            "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+            "path": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+            "kind": "reply"
+          }
+        ]
+      },
+      {
+        "hash": "750f5de150af1160314623e47cdc7fd0f9d48e040250bf16b818b82381ba8a00",
+        "name": "ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+            "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+            "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+            "path": "ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 83097,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/tM67B1R4uOUqGhFBPcIPhb0RjwCGsU9zGNpLmIkCoUeEeqPmHO_a9eOyyXJ-6KEPvttEYGK426cz-D6-OlEe3J-CtpBYtLqCgJJlbMBRUouhdN6SLcZcPe2FXNowc4kBvchAIK-cBZWDNr3GD4Kv5Wu7JQShXReSKkHVVxBEahw?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "a0ae5ed4d57a4f2dbe83bc5c31c5898d0d1c5269daf17625bed5038af7631d97",
+        "name": "InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+            "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+            "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+            "path": "InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 154978,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/NZfku1FIYuGrEFKhvltVO1tnsDxqxUE27pFa-_cu_pS79NGqr-IS57_F4OA8KZL1idIrVDmA950re4g-vCCp05yK_4vKD8_X2Ic2AGYCsMv8PNTgAtyg02az93vNUI79Li5NSXBr2RAYyzPtKhIM_V8k2zK-VD_LTLHKhKNGwu4?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "14e9d4afa11416d8c151ef47efdd1406a715bc72a2f4d1f1ab9c564e468a8948",
+        "name": "エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+            "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+            "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+            "path": "エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 58205,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/uzqlDh6ZYyzgQe24HGxLjTlhA1hdaUCCntGINnHocMC-GV67H-tTcoWR5MEJ-fvrCTow3GqmJ-_hY6I_N9W_I6IJHmM4vu2uvZG_mYIVKp9Gt9Moe_WpJ3nuiZJk0xmTcqQxAovtUfE0xaAKYG8UsZNdlbLkAlhm_rbRuytgOOc?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "602323c48646b4e68814cdb0c50e624c4e52d0ef362c570c51964eab6fa389b7",
+        "name": "Glowing arrow creating a neon light speed trail.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Glowing arrow creating a neon light speed trail.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Glowing arrow creating a neon light speed trail.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 64696,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/M65F6Erp4TLwD2Eudqdql234_NgBpYRSh7pzEWXo1isD6_a39diqqHEsQcqvE6Q5MLlXomhOzhZ6l3YDeO9PIKLBYP9Z7YMkF8Kcun5jslp-AWgat900VuWaRlM4Ew05plgdZHAda7KbXz--bMI7FkORwJNKxI1shZkeTQ69KFjnwwe-wWGvaINA16ADVW2q?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "1083d27e74538c7695025ea327e44da9c8026762cc7fc91478490a5b61fad962",
+        "name": "50 Hit Impact VFX.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "50 Hit Impact VFX.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "50 Hit Impact VFX.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 23656,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/-bZrvFrutCV8dWOafu1bbc7GWoMV6_jSaTzUWuk1H17wkKSlxe01NdiN1KxCVFzmDfeTVdUBoLmtFRHl3J1wXzALRzWEpzM9R4AWAoS8L07omX027tkHDuvyOWLgEKLxH2dwvq8RiIem4wu7orh84dVWpiJ_61RnzC2Ftcl-ABY?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "e0d0cd843526d61265a1b41b766ff2784e126843f1375e0917bbeae6abaf2250",
+        "name": "VFX Area of Effect.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "VFX Area of Effect.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "VFX Area of Effect.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 30057,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/PyhLylnNhRhgkDT_H6_ii6EUxmH1Iwjc4KgCoNHluL4bvpNVpPwxKQJQiPO40g9ZzvQs4mx6vW4IEY0VYsfLVy9Zt1S0Bx-LYOclP0X_g9NEXPcMKuG9t91GDRhZ8dg9_6-JHcbtdttNAIzPNWw48e5hizgTR_zneyS-aRtSEjc?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "02d48f279857c070a31b9a02bdad3b14bf2445098e0ee8cc50f59ed7f4320d95",
+        "name": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 18059,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/NEsyB8qS-7nFqpne0MBcgRhBeMy-K7PG_G96L7fhtlOo_jYC0rFJG9q-ZNpH7WJTmV5pZ3PRq8gJSs4guDU_bPS7CpJqvHP587DQAO8otIiqHCtuMoSG5I2McmzYXXnTN10c0Is0r0Y-Y81uwaa5tXZ9YFMsbSehlYGRBovoZio?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "2ea9e357ad5fba56b05285aedc2d2ba5d99bf9d5d4f424d095064dd0293721e0",
+        "name": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 50263,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/5afFRMxTRKGtKD21ZGMRVj-G0MtszYg2UBMG9l7C3Iddb5WjUFBA8vSF_tU96Se0n_cObaV7-6x5syA2z-ZdWBD871r5RonTx3DSnz5eiXmWZ_Gc7-EDu7YTmFHtmAchNfoSk1PnNDhNixAJ0HqXA0-sbTtC4InPlJprqdrrKoQ?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "be3824f5ae1a148949f8a6b17de602afb99abdc3f2a45c6b81f850ec6cada20b",
+        "name": "Purple Shard Cascade.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Purple Shard Cascade.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+            "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+            "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+            "path": "Purple Shard Cascade.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 103394,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/BK-0jgpj_6cUXc7OmD5zkxfA4it6oFK9HoQqQa7HHEbieAblZyo38p5wBuMflsL_TuSWYHkXSJ7uRJAbdOMVtT-CK36frDuIo7x2aaaPFS-JZbLHswiUkHojsiyHdy07pXqQ79T0NpDJ_Q7LjkBLlxO35BesAe-T_GvEfL6cNPPlyrupOHRHTER4AG1Sx9Ii?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "4e0376c480c4b7bb3a565552027cd64a1096d6a6b2a70baaf7298b0ba33f1deb",
+        "name": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+            "kind": "reply"
+          }
+        ],
+        "kind": "image",
+        "size": 68084,
+        "type": "image/jpeg",
+        "sourceUrls": [
+          "https://images.openai.com/static-rsc-4/dvooR-VAKqy2QsobmnAXOLWvr6S50pPd5e0io6EHBW98l9-9tIhRz37V2Z6r5oSFYnfgPtoOp_tM9-h_4KxoTNzJIr3JLYBUFnj0bq5cF1I0-BXPSXsYVZv9ec5yZqi-wQxu6xOhvkAhyliTqOW3cs0BvjF-gSS1YBU59AkM2Z8?purpose=inline"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "90f7aefc76e9a7838bd9a8b4d0b81b4cebc8a415083eb2d6c577e292668a91f4",
+        "name": "P27_silhouette_review_board.png",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "P27_silhouette_review_board.png",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "P27_silhouette_review_board.png",
+            "kind": "reply"
+          }
+        ],
+        "kind": "file",
+        "size": 361826,
+        "type": "image/png",
+        "sourceUrls": [
+          "https://chatgpt.com/backend-api/estuary/content?id=file_000000001c0081fabfe8126bb735a967&ts=498182&p=fs&cid=1&sig=00864f74d024e7a918448bf3312589a4a46e0c8b0d2cfd9f9fd554555845b0bb&v=0"
+        ],
+        "presentation": false
+      },
+      {
+        "hash": "d18929c5b61e7210c41543232358377c47779a5680cb669006bb49c389f23111",
+        "name": "P27_card_layout_studies.png",
+        "origins": [
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "P27_card_layout_studies.png",
+            "kind": "reply"
+          },
+          {
+            "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+            "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+            "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+            "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+            "path": "P27_card_layout_studies.png",
+            "kind": "reply"
+          }
+        ],
+        "kind": "file",
+        "size": 307617,
+        "type": "image/png",
+        "sourceUrls": [
+          "https://chatgpt.com/backend-api/estuary/content?id=file_00000000761881fab6ee26802144b597&ts=498182&p=fs&cid=1&sig=c71d88321d14a7812578c5be2e16fd55d5f72789c08eb30363af6756ae9c61e6&v=0"
+        ],
+        "presentation": false
+      },
+      {
+        "name": "relay-materials-1-ff9ef2a651.zip",
+        "size": 10078920,
+        "hash": "ff9ef2a651f01a9122e18ce619742db3d20a4378c21e5b261e0239aa3e18dcb0",
+        "type": "application/zip",
+        "kind": "file",
+        "transport": {
+          "kind": "relay-package",
+          "version": 1,
+          "originalCount": 51
+        }
+      },
+      {
+        "name": "relay-materials-2-ca6ada3652.zip",
+        "size": 12571594,
+        "hash": "ca6ada36524e1ced7e255411770bde62ec9495067e3fcd541d85093790893c69",
+        "type": "application/zip",
+        "kind": "file",
+        "transport": {
+          "kind": "relay-package",
+          "version": 1,
+          "originalCount": 30
+        }
+      },
+      {
+        "name": "relay-materials-3-166c0973a2.zip",
+        "size": 15634025,
+        "hash": "166c0973a2bce0e524d8f3e4a26774c5f2551dccd13a908364b14ee45b2e4a51",
+        "type": "application/zip",
+        "kind": "file",
+        "transport": {
+          "kind": "relay-package",
+          "version": 1,
+          "originalCount": 132
+        }
+      },
+      {
+        "name": "relay-materials-4-1c81a8a0fa.zip",
+        "size": 6652005,
+        "hash": "1c81a8a0fad4e19cf257018077cf99fae77c373a5597efd2257d6cf396623d58",
+        "type": "application/zip",
+        "kind": "file",
+        "transport": {
+          "kind": "relay-package",
+          "version": 1,
+          "originalCount": 30
+        }
+      }
+    ],
+    "complete": true,
+    "issues": [],
+    "issueDetails": []
+  },
+  "coverage": {
+    "kind": "readable-dom",
+    "complete": false,
+    "message": "仅返回本次提交后可读取的最终回答正文，不包含历史回答或附件文件内部内容。"
+  },
+  "completion": "ui-controls-and-stable-text",
+  "fileRecovery": {
+    "downloadJournal": {
+      "signature": "[\"下载交付回执：下载文字没有绑定可读取的原文件地址或文件卡片，需要恢复原文件入口\",\"下载完整音效包：下载文字没有绑定可读取的原文件地址或文件卡片，需要恢复原文件入口\"]",
+      "attempts": 3,
+      "at": 1793473499954,
+      "phase": "refresh-original-entry",
+      "verifiedFiles": 19,
+      "issues": [
+        "下载交付回执：下载文字没有绑定可读取的原文件地址或文件卡片，需要恢复原文件入口",
+        "下载完整音效包：下载文字没有绑定可读取的原文件地址或文件卡片，需要恢复原文件入口"
+      ]
+    },
+    "nativeArchiveRecovery": {
+      "sourceUrl": "https://chatgpt.com/c/6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+      "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+      "archive": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "size": 566453,
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "type": "application/zip",
+        "kind": "file"
+      },
+      "receiptHash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+      "verifiedExports": [
+        {
+          "name": "README.md",
+          "size": 1574,
+          "hash": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c"
+        },
+        {
+          "name": "card_flight_whoosh.wav",
+          "size": 37088,
+          "hash": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec"
+        },
+        {
+          "name": "defeat_sting.wav",
+          "size": 63548,
+          "hash": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44"
+        },
+        {
+          "name": "error_tick.wav",
+          "size": 14156,
+          "hash": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed"
+        },
+        {
+          "name": "heal_chime.wav",
+          "size": 42380,
+          "hash": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191"
+        },
+        {
+          "name": "impact_hit.wav",
+          "size": 19448,
+          "hash": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc"
+        },
+        {
+          "name": "reward_chime.wav",
+          "size": 35324,
+          "hash": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e"
+        },
+        {
+          "name": "shield_block.wav",
+          "size": 30032,
+          "hash": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931"
+        },
+        {
+          "name": "status_buff_spark.wav",
+          "size": 27386,
+          "hash": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb"
+        },
+        {
+          "name": "ui_click.wav",
+          "size": 4894,
+          "hash": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d"
+        },
+        {
+          "name": "victory_sting.wav",
+          "size": 63548,
+          "hash": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262"
+        },
+        {
+          "name": "audio_event_map.tsv",
+          "size": 1833,
+          "hash": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac"
+        },
+        {
+          "name": "audio_license_ledger.tsv",
+          "size": 2589,
+          "hash": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4"
+        },
+        {
+          "name": "delivery_manifest.json",
+          "size": 4624,
+          "hash": "8e11f2a0a4bcde843334b498ab532959927afaeeabf3a471f2de39c3bb975a4d"
+        },
+        {
+          "name": "mixing_and_fallback_checklist.md",
+          "size": 1025,
+          "hash": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf"
+        },
+        {
+          "name": "audio_validation.json",
+          "size": 2920,
+          "hash": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7"
+        },
+        {
+          "name": "generate_sfx.py",
+          "size": 2389,
+          "hash": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21"
+        }
+      ],
+      "strategy": "VERIFIED_NATIVE_DOWNLOAD_CACHE"
+    }
+  },
+  "materialLineage": {
+    "version": 1,
+    "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+    "outputIdentified": true,
+    "outputs": [
+      {
+        "name": "P31_delivery_receipt.json",
+        "path": "P31_delivery_receipt.json",
+        "size": 7757,
+        "sha256": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2"
+      },
+      {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "path": "P31_AudioFeedback_V0.1_isolated.zip",
+        "size": 566453,
+        "sha256": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a"
+      },
+      {
+        "name": "README.md",
+        "path": "P31_AudioFeedback_V0.1_isolated/README.md",
+        "size": 1574,
+        "sha256": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c"
+      },
+      {
+        "name": "card_flight_whoosh.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+        "size": 37088,
+        "sha256": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec"
+      },
+      {
+        "name": "defeat_sting.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+        "size": 63548,
+        "sha256": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44"
+      },
+      {
+        "name": "error_tick.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+        "size": 14156,
+        "sha256": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed"
+      },
+      {
+        "name": "heal_chime.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+        "size": 42380,
+        "sha256": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191"
+      },
+      {
+        "name": "impact_hit.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+        "size": 19448,
+        "sha256": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc"
+      },
+      {
+        "name": "reward_chime.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+        "size": 35324,
+        "sha256": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e"
+      },
+      {
+        "name": "shield_block.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+        "size": 30032,
+        "sha256": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931"
+      },
+      {
+        "name": "status_buff_spark.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+        "size": 27386,
+        "sha256": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb"
+      },
+      {
+        "name": "ui_click.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+        "size": 4894,
+        "sha256": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d"
+      },
+      {
+        "name": "victory_sting.wav",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+        "size": 63548,
+        "sha256": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262"
+      },
+      {
+        "name": "audio_event_map.tsv",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+        "size": 1833,
+        "sha256": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac"
+      },
+      {
+        "name": "audio_license_ledger.tsv",
+        "path": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+        "size": 2589,
+        "sha256": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4"
+      },
+      {
+        "name": "delivery_manifest.json",
+        "path": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+        "size": 4624,
+        "sha256": "8e11f2a0a4bcde843334b498ab532959927afaeeabf3a471f2de39c3bb975a4d"
+      },
+      {
+        "name": "mixing_and_fallback_checklist.md",
+        "path": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+        "size": 1025,
+        "sha256": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf"
+      },
+      {
+        "name": "audio_validation.json",
+        "path": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+        "size": 2920,
+        "sha256": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7"
+      },
+      {
+        "name": "generate_sfx.py",
+        "path": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+        "size": 2389,
+        "sha256": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21"
+      }
+    ],
+    "upstream": [
+      {
+        "nodeId": "r1-g30-direct",
+        "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+        "commit": "734ed3c316ee039cb144608a92dd051fe29141a8",
+        "path": "role-relay/20282e87-223f-4d10-8c50-af5b92fbbd60/roles/r50fb3b2b-7b8a-4f3d-b257-8a1426ddda1f--P30｜素材导入、命名清单与工程资产管线程序员/runs/e02a4c09-8a27-413d-847c-9a08f0f3cfd6/round-0001/392101bb-64a8-4dd4-9217-3daf1c23f34a",
+        "snapshotHash": "359c6efd0fe6c6e809b41974a842dc272fd5b51861491941897ae50cfbf1fc5f"
+      }
+    ],
+    "transportPackages": [
+      {
+        "name": "relay-materials-1-ff9ef2a651.zip",
+        "path": "relay-materials-1-ff9ef2a651.zip",
+        "size": 10078920,
+        "sha256": "ff9ef2a651f01a9122e18ce619742db3d20a4378c21e5b261e0239aa3e18dcb0"
+      },
+      {
+        "name": "relay-materials-2-ca6ada3652.zip",
+        "path": "relay-materials-2-ca6ada3652.zip",
+        "size": 12571594,
+        "sha256": "ca6ada36524e1ced7e255411770bde62ec9495067e3fcd541d85093790893c69"
+      },
+      {
+        "name": "relay-materials-3-166c0973a2.zip",
+        "path": "relay-materials-3-166c0973a2.zip",
+        "size": 15634025,
+        "sha256": "166c0973a2bce0e524d8f3e4a26774c5f2551dccd13a908364b14ee45b2e4a51"
+      },
+      {
+        "name": "relay-materials-4-1c81a8a0fa.zip",
+        "path": "relay-materials-4-1c81a8a0fa.zip",
+        "size": 6652005,
+        "sha256": "1c81a8a0fad4e19cf257018077cf99fae77c373a5597efd2257d6cf396623d58"
+      }
+    ]
+  },
+  "transportDiagnostics": {
+    "inputBytes": 47189444,
+    "inputFiles": 35,
+    "wrappersExpanded": 4,
+    "duplicateBytes": 0,
+    "wrapperBytes": 44936544,
+    "logicalBytes": 52926285,
+    "logicalFiles": 274,
+    "workBytes": 50673385,
+    "compressedBytes": 47189444,
+    "fileCount": 35,
+    "limits": {
+      "version": 2,
+      "source": "program-safety-budget",
+      "archiveEnvelopeBytes": 268435456,
+      "archiveEntries": 200,
+      "captureBudgetBytes": 83886080,
+      "compressionTargetBytes": 83886080,
+      "downloadFileBytes": 67108864,
+      "internalCollectionBytes": 268435456,
+      "internalChunkBytes": 262144,
+      "uploadPlanningCount": 20,
+      "packageTargetBytes": 18874368,
+      "normalizationBytes": 268435456,
+      "normalizationWorkBytes": 536870912,
+      "normalizationEntries": 10000,
+      "normalizationDepth": 16
+    }
+  },
+  "logicalInventory": [
+    {
+      "name": "P31_delivery_receipt.json",
+      "size": 7757,
+      "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2"
+    },
+    {
+      "name": "ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg",
+      "size": 83097,
+      "hash": "750f5de150af1160314623e47cdc7fd0f9d48e040250bf16b818b82381ba8a00"
+    },
+    {
+      "name": "InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg",
+      "size": 154978,
+      "hash": "a0ae5ed4d57a4f2dbe83bc5c31c5898d0d1c5269daf17625bed5038af7631d97"
+    },
+    {
+      "name": "エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg",
+      "size": 58205,
+      "hash": "14e9d4afa11416d8c151ef47efdd1406a715bc72a2f4d1f1ab9c564e468a8948"
+    },
+    {
+      "name": "Glowing arrow creating a neon light speed trail.jpg",
+      "size": 64696,
+      "hash": "602323c48646b4e68814cdb0c50e624c4e52d0ef362c570c51964eab6fa389b7"
+    },
+    {
+      "name": "50 Hit Impact VFX.jpg",
+      "size": 23656,
+      "hash": "1083d27e74538c7695025ea327e44da9c8026762cc7fc91478490a5b61fad962"
+    },
+    {
+      "name": "VFX Area of Effect.jpg",
+      "size": 30057,
+      "hash": "e0d0cd843526d61265a1b41b766ff2784e126843f1375e0917bbeae6abaf2250"
+    },
+    {
+      "name": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+      "size": 18059,
+      "hash": "02d48f279857c070a31b9a02bdad3b14bf2445098e0ee8cc50f59ed7f4320d95"
+    },
+    {
+      "name": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+      "size": 50263,
+      "hash": "2ea9e357ad5fba56b05285aedc2d2ba5d99bf9d5d4f424d095064dd0293721e0"
+    },
+    {
+      "name": "Purple Shard Cascade.jpg",
+      "size": 103394,
+      "hash": "be3824f5ae1a148949f8a6b17de602afb99abdc3f2a45c6b81f850ec6cada20b"
+    },
+    {
+      "name": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+      "size": 68084,
+      "hash": "4e0376c480c4b7bb3a565552027cd64a1096d6a6b2a70baaf7298b0ba33f1deb"
+    },
+    {
+      "name": "P27_silhouette_review_board.png",
+      "size": 361826,
+      "hash": "90f7aefc76e9a7838bd9a8b4d0b81b4cebc8a415083eb2d6c577e292668a91f4"
+    },
+    {
+      "name": "P27_card_layout_studies.png",
+      "size": 307617,
+      "hash": "d18929c5b61e7210c41543232358377c47779a5680cb669006bb49c389f23111"
+    },
+    {
+      "name": "P30_delivery_receipt.json",
+      "size": 14061,
+      "hash": "24ed54a488c4741851100a647948d87023626109e4cdfb22b13582cbe75d1089"
+    },
+    {
+      "name": "tmp_common_paper_gnawer.svg",
+      "size": 3153,
+      "hash": "9cca077d01dc7a8c237fa3099b19f20db2387bb30c7fe599cf6068b8a32f6a02"
+    },
+    {
+      "name": "tmp_common_paper_gnawer_1024.png",
+      "size": 117151,
+      "hash": "19ea6e65374ef62e228044f0fe960f6a2970d1610f47f36966ac7c2a69821aaa"
+    },
+    {
+      "name": "tmp_common_paper_gnawer_512.png",
+      "size": 91497,
+      "hash": "4b090711f4ebc786e7634ecd701774712ba43b282d04773e490f818459b325fb"
+    },
+    {
+      "name": "P29_BattleAnimationPlayer_V0.1.zip",
+      "size": 29729,
+      "hash": "53ca6ac114efe9d9debf6001ee19ca06b84a69ac3c8f7d0846ea6dd99b7bf429"
+    },
+    {
+      "name": "P29_delivery_receipt.json",
+      "size": 1369,
+      "hash": "eaee703e30e557dda58026c745957252672d306853e6acc8e93c53d785e62d22"
+    },
+    {
+      "name": "battle_effect_player_tests.py",
+      "size": 3921,
+      "hash": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    },
+    {
+      "name": "sequence_gap_cases.json",
+      "size": 996,
+      "hash": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "name": "f7dc55f0-1-delivery_manifest.json",
+      "sourceName": "delivery_manifest.json",
+      "size": 3395,
+      "hash": "f7dc55f067f2025477e3f80ff13feca0e8647c2894ea5b0917349966711894e5"
+    },
+    {
+      "name": "test_run.txt",
+      "size": 1655,
+      "hash": "f1c63d068e5a9f304d8a46f316d917efa10537b874a2b3ab93ecee08ae77df3a"
+    },
+    {
+      "name": "P28_delivery_receipt.json",
+      "size": 3982,
+      "hash": "fa7066e43089e5a56b7425898a698ee6dcf4405356073d65aa08367a4ab515d0"
+    },
+    {
+      "name": "tmp_elite_margin_warden.svg",
+      "size": 2757,
+      "hash": "cf0f5a0ef4d48459d9fb948974558fa903867c7519dc04bc16974ca35bc8a178"
+    },
+    {
+      "name": "tmp_elite_margin_warden_1024.png",
+      "size": 128084,
+      "hash": "d46371e1f289b878aeaef5cedfb0abee5e903a56632df3b0ab12e54457ded59b"
+    },
+    {
+      "name": "tmp_elite_margin_warden_512.png",
+      "size": 90537,
+      "hash": "0c64363d4da962f1958a02c333522206a405749b9438f8755f4bbaab4fbf2917"
+    },
+    {
+      "name": "tmp_boss_blank_archive_colossus.svg",
+      "size": 2457,
+      "hash": "f0905928ce7b3611d3282f58b570969876159f230dabfa760ef2a4c33812d7a8"
+    },
+    {
+      "name": "tmp_boss_blank_archive_colossus_1024.png",
+      "size": 165696,
+      "hash": "e855d4fc4d22c6e0c3177a3073923f0e26f804d3e0f5ff77f488556b074f063b"
+    },
+    {
+      "name": "tmp_boss_blank_archive_colossus_512.png",
+      "size": 123927,
+      "hash": "67f5dc44b4d207982d1b3a019ff085107f815217ee219cffe9279cc3f1a94081"
+    },
+    {
+      "name": "dc95f384-1-source_input_receipt.json",
+      "sourceName": "source_input_receipt.json",
+      "size": 2194,
+      "hash": "dc95f384c1bc6d7fb3eef855ceb662b7b597cf9de754beaadf4afa5cbbcce0f4"
+    },
+    {
+      "name": "P27_delivery_report.md",
+      "size": 7497,
+      "hash": "e28796240a74e3ba708932c8471da3dcf37bb56995826732ea8e93f1e70d750c"
+    },
+    {
+      "name": "enemy_phase_asset_map.json",
+      "size": 2619,
+      "hash": "8e50ed2dcc4172290d027d91fcb865f7d92dfabdafd8472a709a07f4aef78b47"
+    },
+    {
+      "name": "enemy_anchors.tsv",
+      "size": 972,
+      "hash": "5f7ab83d7f984506b7e641ac57a510d532e9ed47b28a0ac660e2963dfab11bc7"
+    },
+    {
+      "name": "enemy_export_manifest.json",
+      "size": 12146,
+      "hash": "a70fbd51541367e19e8024588e9d3615bb3402f64b6811b0543fd369ca38cf6a"
+    },
+    {
+      "name": "blocker_register.json",
+      "size": 2365,
+      "hash": "14e15e814a2b77e0c07da5abc6521ec17458f94f6b4d9321f45dc80669add4bb"
+    },
+    {
+      "name": "visual_composition_and_anchor_spec.md",
+      "size": 2122,
+      "hash": "df6352238c6d61786b7e2b5f13f6697764e41e6813f7b39033a8ff2e35ffe6ca"
+    },
+    {
+      "name": "P27_delivery_receipt.json",
+      "size": 4622,
+      "hash": "55dd57a150f8e02c38ec1e889667e4cf862963bee1695bd4219e8425841c595a"
+    },
+    {
+      "name": "candidate_a_master_layers.svg",
+      "size": 9221,
+      "hash": "2d47a90e641dc96dde650091015d51e16ad76c7d84388b2e8e7aaa3b4e2461af"
+    },
+    {
+      "name": "candidate_a_stand_master_2048x3072.png",
+      "size": 460298,
+      "hash": "ef5231271ee8fc0046255f465da0f88edc5a5dfe3f548e2110a34496f49350e0"
+    },
+    {
+      "name": "candidate_a_stand_1024x1536.png",
+      "size": 281033,
+      "hash": "e23c042b5d0a75e4eaca677f004a49689a91da5dc82209738019fd961587f7e1"
+    },
+    {
+      "name": "candidate_a_avatar_512.png",
+      "size": 105638,
+      "hash": "d4014a814b488249e0058f979f89db2398d955444d3df19b5f10f7cc43447002"
+    },
+    {
+      "name": "candidate_a_portrait_review_768x1024.png",
+      "size": 225765,
+      "hash": "d1d5704fda713a9afc6b72a0a197e47f308d25c1ae5abe126a0949e3baff81f6"
+    },
+    {
+      "name": "candidate_a_w14_profile_576x360.png",
+      "size": 73516,
+      "hash": "c14521ddf78084194203e7408bb1b69ddfd009bef2959be0f9ef1576bc032337"
+    },
+    {
+      "name": "candidate_a_w08_party_576x236.png",
+      "size": 52601,
+      "hash": "294719fba96a481b18e0e7919bee4fde075ac4726e64d8a94c0ed06d7218d6ad"
+    },
+    {
+      "name": "candidate_a_expression_calm_1024x1536.png",
+      "size": 194849,
+      "hash": "878502e03bd5ac3c211e0ec82ff00f7cf647e356119c3a28e3b64f604f1071ad"
+    },
+    {
+      "name": "candidate_a_key_parts_review.png",
+      "size": 245964,
+      "hash": "f91b663881c8a31cb4c6ec3e6521b1244017fd262fd4ce9ef9db114d6a4eaa9e"
+    },
+    {
+      "name": "candidate_a_enemy_window_156x184.png",
+      "size": 26194,
+      "hash": "3e798d7fd2b4dbfc3c71592f50e34eb126fcdb3ace59ce373ee533ab40989699"
+    },
+    {
+      "name": "P25_Style_Reference.png",
+      "size": 197517,
+      "hash": "d61b5e537ce28a4a8e2cd8efcc5c8fee7032a70ff33ff3524abd010e4f3f4d6c"
+    },
+    {
+      "name": "P25_Proportion_Crop.png",
+      "size": 225693,
+      "hash": "12192b42dfde95cadea4f796f61fb9bfd4b77505c5a360adb278d6ccd2586893"
+    },
+    {
+      "name": "P26_delivery_receipt.json",
+      "size": 4062,
+      "hash": "a851ff9dfdaf5c51f7f6a157a55537e2d50954bd98e6794e4112623dcd2b1173"
+    },
+    {
+      "name": "portrait_export_manifest.json",
+      "size": 6772,
+      "hash": "985529820a9cd0f9e9bd930b3b4d8cc83588d95cb75d14e361e96f3c63214fc0"
+    },
+    {
+      "name": "P26_CandidateA_Isolated_V0.1.zip",
+      "size": 3308109,
+      "hash": "ced39ec428a74983969092a447f6a100fff4b9e770b095136d1d4842c9b98f9d"
+    },
+    {
+      "name": "candidate_a_layers_interchange.ora",
+      "size": 927662,
+      "hash": "7d5721b50c27b6ec630a81a2ba43580096ccec716abe966dcb24e94d680074d3"
+    },
+    {
+      "name": "P25_Layer_Alpha.png",
+      "size": 277182,
+      "hash": "e4562da318aa85ccb6428b1efec3406b4b43e5350470a26b5ca7e71bc7be95f3"
+    },
+    {
+      "name": "P25_P24_Contact_01.png",
+      "size": 259012,
+      "hash": "2690585606ad62321ba5d1be7f5c897f45abc1fd5fc88eb573b91238b93c3bca"
+    },
+    {
+      "name": "P25_P24_Contact_02.png",
+      "size": 211211,
+      "hash": "40a324504d3a0b809435acdb5b3096503d25731ccbe7d3ab724828851a1687a9"
+    },
+    {
+      "name": "P25_P24_Contact_03.png",
+      "size": 185574,
+      "hash": "89641c26d25ef254f22900e5f0cc55ebb8cfde37855213bc57bf5c6528212c44"
+    },
+    {
+      "name": "P23_wireframe_contact_sheet.png",
+      "size": 1228370,
+      "hash": "fe382f0604d13fb23d730caafcd96bf6de86a7d37dd7f77340653102ea01722e"
+    },
+    {
+      "name": "W01_before_review.png",
+      "size": 189108,
+      "hash": "530b91593b8f948c167b28c76131782d9a29f3c375cd4c715459b29d738b67bb"
+    },
+    {
+      "name": "P19_HUD_1280.png",
+      "size": 441243,
+      "hash": "0187306ef56f7957b422e7aac855f5d6bb5b98572700ee947e0f692c1733b01b"
+    },
+    {
+      "name": "P20_Chapters_1280.png",
+      "size": 153618,
+      "hash": "40221c1ddabaadd72603003852000621f1f8194e9eb530ee056deb93fd21da7b"
+    },
+    {
+      "name": "P20_Growth_1280.png",
+      "size": 127255,
+      "hash": "32f8e94e64fa9d7df67a4582491e2d264ffe95932738685af4bf2af81a8669d2"
+    },
+    {
+      "name": "P20_Learning_Quarantine.png",
+      "size": 93389,
+      "hash": "f28334bb8cb6f5bef670e9cc6008e11f4ea6a5dbd6797a586e83c062afcd3d20"
+    },
+    {
+      "name": "P25_ArtDirection_V0.1.zip",
+      "size": 11709179,
+      "hash": "2c37b323e337f8b0cedd888bb828314aa99320f5b3eb268b2a0107878e31cce8"
+    },
+    {
+      "name": "P25_delivery_receipt.json",
+      "size": 28675,
+      "hash": "fb8183696483345e55d12fcbdb469d28f1c41f58490c580a6c8e6d86ec68e7cb"
+    },
+    {
+      "name": "README.md",
+      "size": 3455,
+      "hash": "7fa74cd7a091b2ebe8041e9e20111364441b568f57d0b99c5ee3248d7ba5a8ac"
+    },
+    {
+      "name": "P25_delivery_report.md",
+      "size": 11409,
+      "hash": "e0996c3c49c79c2158cc0e3ad97d5178321f55c018fa754c0688530bc65d3d56"
+    },
+    {
+      "name": "P25_review_index.html",
+      "size": 16758,
+      "hash": "51081098829a9cd3d8158a83cb99739d77b2e2499a8a308a287ad898d2e470eb"
+    },
+    {
+      "name": "style_bible.md",
+      "size": 15526,
+      "hash": "b89e7779c11cea6b50a68a7922b2217178655fb8f0226200cc774d09c98d01b4"
+    },
+    {
+      "name": "character_brief_template.md",
+      "size": 2934,
+      "hash": "e59ca1d729dce9fa803fe4f1ff9b6aa04affda35cde398fd2fac98524f683b75"
+    },
+    {
+      "name": "layer_export_spec.md",
+      "size": 5697,
+      "hash": "2014a62c84de4a76861659a6daf725f73fa6ede36a6b80cf55a0aa9fc4efaa69"
+    },
+    {
+      "name": "sample_acceptance.tsv",
+      "size": 9055,
+      "hash": "3099f864a3d0ea864fde075779c27f0fb0d500b1f7268976cb8dd9f8664aeb2a"
+    },
+    {
+      "name": "crop_profiles.json",
+      "size": 4331,
+      "hash": "0dedd53d4f44e7d041f6e601b37efc1acd8089e09813799354e34e984a70e4fe"
+    },
+    {
+      "name": "palette.json",
+      "size": 3853,
+      "hash": "1d8ee1083dbe575a13e8cf0f47484c211ac4f8819f8e9e687f24441483093a29"
+    },
+    {
+      "name": "sample_submission_template.json",
+      "size": 1390,
+      "hash": "902ecb0d915669a5d6a7cd80c3814f13842f5d9f3051939d22de701eb6dd58f5"
+    },
+    {
+      "name": "character_source_template.ora",
+      "size": 6928,
+      "hash": "30bddf1581af798b4a3d7ad63de93baaa4bf29ee2b56b0fab4d074779dc37e0c"
+    },
+    {
+      "name": "P24_review.md",
+      "size": 5612,
+      "hash": "cf27c77c3075c77814bd7f1aa98ef19797d696d0195b9ff37947b6429dafc16b"
+    },
+    {
+      "name": "P24_asset_reviews.tsv",
+      "size": 77771,
+      "hash": "7751cc1db11a865fc83185817003b021cfeffc3fef1ede3f771cef38b3de6b39"
+    },
+    {
+      "name": "issue_register.tsv",
+      "size": 2516,
+      "hash": "6d276628fc76ae92bb1ccf200fc14bb09004a8c223de8ed5086c0d34965c9786"
+    },
+    {
+      "name": "sample_gate.json",
+      "size": 773,
+      "hash": "1fc5274b71d614c98ee08e47bf2ca185fb70e271c39dd7046354d334beeafa53"
+    },
+    {
+      "name": "formal_asset_register.json",
+      "size": 522,
+      "hash": "24abf8353a9c36e257ee06a21bb8f5996f27b2e828077271515c249842afcbee"
+    },
+    {
+      "name": "ae31f38d-1-source_input_receipt.json",
+      "sourceName": "source_input_receipt.json",
+      "size": 12726,
+      "hash": "ae31f38d034fd306fb02963cdfd566daf2d068203708230cdee5e4efd7ba1aff"
+    },
+    {
+      "name": "e4e0bd47-1-delivery_manifest.json",
+      "sourceName": "delivery_manifest.json",
+      "size": 576453,
+      "hash": "e4e0bd47a2cc2bf99f182927fa1cb91f61e1c4da5c46da2e211792f0a26a06e9"
+    },
+    {
+      "name": "bab6db4c-1-verification_status.json",
+      "sourceName": "verification_status.json",
+      "size": 3045,
+      "hash": "bab6db4c1067866fc3f94e7eb1462e0f2a6dc2a52e65df01a0eb377b10b7e059"
+    },
+    {
+      "name": "P25_Style_Reference.svg",
+      "size": 10930,
+      "hash": "def48cb2e61fc9c719eb2b5fa93b18dbaa1a4a09d75843571fc851cf3b3968f1"
+    },
+    {
+      "name": "P25_Proportion_Crop.svg",
+      "size": 8209,
+      "hash": "430941c51da4cfe691338ddca206e14cc713cf71e27f5e93cb28d98c456201e8"
+    },
+    {
+      "name": "P25_Layer_Alpha.svg",
+      "size": 13421,
+      "hash": "76984aa9a76451681f8cdf98b4a89c7dab11b7413f030b0c0170b07ee01ef3f6"
+    },
+    {
+      "name": "P20_Menu_1280.png",
+      "size": 236583,
+      "hash": "c95c1c3f98d106af6ac6672755dd772885a6d46701c755b1072020db7e2aa141"
+    },
+    {
+      "name": "P20_Menu_390.png",
+      "size": 136599,
+      "hash": "920ec98c897e2fe5b36707beb9c60ebceb9517668fb14da3487af313cf54249b"
+    },
+    {
+      "name": "P20_Migration_Failed.png",
+      "size": 152232,
+      "hash": "d4816d046b2b81831548704220e670fd4849cc39a0e64cd4122d25e81e981cde"
+    },
+    {
+      "name": "P20_Party_1280.png",
+      "size": 182187,
+      "hash": "e0cbb9d9f4ed1f8ab7a01ebefcc2951caf163908c1ad9f5b974ffb576cd3d3e3"
+    },
+    {
+      "name": "P20_Restart_Pending.png",
+      "size": 141542,
+      "hash": "4003d02e16ab8f99a7e7808182881b0db4cbc66f6a18f2d134f58fa113d65083"
+    },
+    {
+      "name": "P20_Settlement_1280.png",
+      "size": 102991,
+      "hash": "0ef60eefd142644a7872d9b0859f967ee98afe21ba824a8bd54d838d5140bb7a"
+    },
+    {
+      "name": "P23_UX_Accessibility_V0.1.zip",
+      "size": 9705884,
+      "hash": "6ac0dd8506586f1310addcb5a94c4bae23fb776ab18072b3d93f261dab005b4d"
+    },
+    {
+      "name": "P23_delivery_report.md",
+      "size": 5561,
+      "hash": "322fb9ae2d90267badc9b94d582e5206e0667e8a67f773c8efddb0cd54eb9c9b"
+    },
+    {
+      "name": "accessibility_tokens.json",
+      "size": 2462,
+      "hash": "7fde54f966f4c99b0fc7791b1589f283b193aa5266533f6c05b1e5f125e4103c"
+    },
+    {
+      "name": "external_references.json",
+      "size": 1294,
+      "hash": "d3e2c7610080891568284e27f9db67e68226ddc6fe92e96f4d9a7eb36cf52262"
+    },
+    {
+      "name": "font_provenance.json",
+      "size": 2220,
+      "hash": "eb0ae0774998e5e449b6c81e40ed0ef829ca936582a7f3b635bc5e2b09eab73f"
+    },
+    {
+      "name": "DejaVuSans.ttf",
+      "size": 759720,
+      "hash": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+    },
+    {
+      "name": "DejaVu_LICENSE.txt",
+      "size": 3859,
+      "hash": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "name": "NotoJP_LICENSE.txt",
+      "size": 4314,
+      "hash": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+    },
+    {
+      "name": "NotoJP_package.json",
+      "size": 1488,
+      "hash": "4dd11ac12e0c7f7c17f6e08566ca327e983ff7a7b0fa0b49a49e67d4dc258729"
+    },
+    {
+      "name": "NotoSC_LICENSE.txt",
+      "size": 4314,
+      "hash": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+    },
+    {
+      "name": "noto-sans-jp-japanese-400-normal.woff2",
+      "size": 1132964,
+      "hash": "5ae4b6b5f176a590babe96d6bb62ee8805f4ddf15877738eda807db1fa20f136"
+    },
+    {
+      "name": "noto-sans-sc-chinese-simplified-400-normal.woff2",
+      "size": 1142552,
+      "hash": "95e3633b6a98f764ba3adfb54504a0cd4799328c009adf9081d6c1850f9c4c78"
+    },
+    {
+      "name": "reduced_motion_cases.md",
+      "size": 5419,
+      "hash": "5404d0590088cbd8af30cda3078cd28f35960909cd42ef098f015b82d537d08f"
+    },
+    {
+      "name": "typography_accessibility_spec.md",
+      "size": 7400,
+      "hash": "65c25aebd992553aca4c856acea83d081c8481597c653d8b3c05deb72a59d84b"
+    },
+    {
+      "name": "typography_test_strings.json",
+      "size": 3040,
+      "hash": "4c8f63a8c13ce39e591352adbdb2af727a8ca49ebcf37d83dbb32dc25fe89460"
+    },
+    {
+      "name": "ux_acceptance_tasks.tsv",
+      "size": 11543,
+      "hash": "7f996795b9be99c57d30ef6e8b39f70781c129df98d32b99527c2124aa895ca5"
+    },
+    {
+      "name": "P23_wireframe_review.html",
+      "size": 167416,
+      "hash": "67489af7eef387da812ab48eff29309c413af242b2399204b45dff19565466e1"
+    },
+    {
+      "name": "anchor_compatibility.tsv",
+      "size": 2277,
+      "hash": "e1b18451b439c2853a805f1b1909207669c17cc3bfce8bc48807c911d88cbf53"
+    },
+    {
+      "name": "author_walkthrough.md",
+      "size": 5508,
+      "hash": "5b0fa10dc4c053b1a7813df536f725f18382d4bdd1db96fc67d17bc19de1a0c1"
+    },
+    {
+      "name": "defect_log.json",
+      "size": 8098,
+      "hash": "7fc02d490f0e373d9b2d72f014fd65276feb5f046bed59a5f763292a160f4d9f"
+    },
+    {
+      "name": "glyph_failure.json",
+      "size": 1910,
+      "hash": "14a669c59d7e41094768bf600aadd8aa9fe88227d3b3185df261ae21b09d7f00"
+    },
+    {
+      "name": "verify_glyphs_before.py",
+      "size": 3270,
+      "hash": "fbfdc72833871f408bf314e8bb79a7d739f0e48169e101bf0aeb0e0f13209280"
+    },
+    {
+      "name": "browser_registry.json",
+      "size": 2869,
+      "hash": "283f102493f9ae014a2944fe3833fb4f35abd968d865317783ca7d0faca661cb"
+    },
+    {
+      "name": "dependency_integrity.json",
+      "size": 1512,
+      "hash": "d89269c100a25aedbd2d58f34aeb3aaee7d11530996cbbfe324f409114512fec"
+    },
+    {
+      "name": "environment_observed.json",
+      "size": 1390,
+      "hash": "0f74679bcc16bed9c637b24afbd1cf2b09897971a13f286f26cd53bea403ca4a"
+    },
+    {
+      "name": "font_registry.json",
+      "size": 2619,
+      "hash": "bd9255a305942a76a64036f77b60380e24a8eb7ba4647e42b7b9f19b4362b2ec"
+    },
+    {
+      "name": "generator_reproduction.json",
+      "size": 5119,
+      "hash": "5af77c74fadac801667c5bab6cb92135470dcc83e4d5da4b0a840423e780e627"
+    },
+    {
+      "name": "glyph_coverage.json",
+      "size": 2101,
+      "hash": "3fe68c1662f05569190969c3ab54c1ef51b3bca6fedc1e919495b3a981c37a43"
+    },
+    {
+      "name": "intake_relay_checks.tsv",
+      "size": 207257,
+      "hash": "c9f8882361e98dd28098e842b4ff2cfec36638c8a22b27e2c1445b5375679d82"
+    },
+    {
+      "name": "p22_tree_evidence.json",
+      "size": 28280,
+      "hash": "d7547d5d13de4895a2bb3fb19ccebae16688fe69ece78518c0bc814eada15f60"
+    },
+    {
+      "name": "preflight.json",
+      "size": 4402,
+      "hash": "ca2db3df19a540573be951aa1f5abacb5be5c210aefbf7f0c48c7058de0c144b"
+    },
+    {
+      "name": "render_environment_001.json",
+      "size": 631,
+      "hash": "a164b6e5c63bc6b1c7941d415aad3cc8950f39c128b3b6e9d7be06124d4613d2"
+    },
+    {
+      "name": "render_environment_002.json",
+      "size": 631,
+      "hash": "70da2871bace7299afe74384f6510a9619eb5c0e210dcfe0433e7779daccb448"
+    },
+    {
+      "name": "render_environment_003.json",
+      "size": 12225,
+      "hash": "55cedb65d150d54b02d931712961f75b63c8098a04fa22de3d397aa72aa54579"
+    },
+    {
+      "name": "render_environment_004.json",
+      "size": 238457,
+      "hash": "ba4faef8af3d943f54d6714b5b274104cc1ad52d7c99b46e7932175d929a16cb"
+    },
+    {
+      "name": "render_results.json",
+      "size": 251119,
+      "hash": "e2bc5c56bb9056fd7406d60d922fc952a1cebec32059a523283d9a0f3f7ca027"
+    },
+    {
+      "name": "roles_tree_evidence.json",
+      "size": 5607,
+      "hash": "e3eba1c0d935dddb423aeab6af74fdabc47ba655402209452c4c57834865d6e1"
+    },
+    {
+      "name": "upload_git_matches.json",
+      "size": 6292,
+      "hash": "48581f030fa83a5e4a7ff4d2335b0b0dc4f5391b2c0a7aee5b68aae1ed1cd463"
+    },
+    {
+      "name": "requirements_baseline_v6.txt",
+      "size": 6715,
+      "hash": "1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1"
+    },
+    {
+      "name": "decisions_pending.tsv",
+      "size": 3021,
+      "hash": "3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4"
+    },
+    {
+      "name": "prd_scope_v0.md",
+      "size": 2828,
+      "hash": "1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f"
+    },
+    {
+      "name": "battle_state_machine.md",
+      "size": 15376,
+      "hash": "384767d480d3d6aaf802dbfa9fef78cb8aabee8c7e047c271bb677a459aaf02d"
+    },
+    {
+      "name": "turn_sequence.tsv",
+      "size": 4734,
+      "hash": "215d65ac2344549fb063b4600d21f7760de4fc0eb7372cf668f15863367af784"
+    },
+    {
+      "name": "terminal_phase_truth_table.tsv",
+      "size": 3644,
+      "hash": "94e9e05bd20ed0ea8c3f715ab86fcac7197c2ffa3908c1f57d1950e6836f2d9e"
+    },
+    {
+      "name": "study_policy_draft.md",
+      "size": 18083,
+      "hash": "5ec407f7cd01f281034a56d44ca667f5b1f9719b580102b2d1e4e30d1fbe722e"
+    },
+    {
+      "name": "quarantine_resolution_policy.md",
+      "size": 7026,
+      "hash": "cfaf7395ab7121053273390076f2a12a6520a678f429fe8f7b65255481ecf34d"
+    },
+    {
+      "name": "undo_compensation_options.md",
+      "size": 8519,
+      "hash": "2900f3cb73d56fc12a415f5f83dc0541661aa6ca1f1d07fa0613eeed8e09508c"
+    },
+    {
+      "name": "internal_api_contracts.json",
+      "size": 5900,
+      "hash": "43abff6b119067ee8cb6267acffa4615df54b23066f98a771b0a966b6c3791f5"
+    },
+    {
+      "name": "internal_dto.schema.json",
+      "size": 93217,
+      "hash": "b7ae37c97bcf144a79302afcc3f9896878219db7f9de9a67be88040904f94dac"
+    },
+    {
+      "name": "target_environment_requirements.json",
+      "size": 1143,
+      "hash": "af8d551266351579a34f83bdb9c2093bcb098a2097a3ca7ee83dd7dd5b9ecbda"
+    },
+    {
+      "name": "actual_path_mapping.json",
+      "size": 16790,
+      "hash": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "name": "contract_semantics.md",
+      "size": 8986,
+      "hash": "842b32e63bca527c2304484e25e2cac8027e306e932c326dd088658dbd36e20a"
+    },
+    {
+      "name": "presentation_adapter_spec.md",
+      "size": 3605,
+      "hash": "8e943b391165d1d7466fe75803ddd5fe678f15df03720a2aec6f284cd1e47c22"
+    },
+    {
+      "name": "P19_API.md",
+      "size": 6432,
+      "hash": "55ab3bcd09cea7206f4084b7c2cfa6dc538a52f3bc0270f9353ad8a975168b7c"
+    },
+    {
+      "name": "battle_hud_state_binding.json",
+      "size": 15083,
+      "hash": "379db6eadbd96d8eaac68a8d5c5e8f60446de1679f95fa50379ed91dbd076efd"
+    },
+    {
+      "name": "hud_controller.mjs",
+      "size": 15234,
+      "hash": "34380c15c58f2f40e2269fbdf00a988aadaed553e2c0f1006e180ab51403a0b0"
+    },
+    {
+      "name": "battle.css",
+      "size": 14022,
+      "hash": "6604bd34ab1492f40cac6eaecce4f8e46dd41f48b9d1bf2a30787eaf07e0b662"
+    },
+    {
+      "name": "index.html",
+      "size": 4579,
+      "hash": "e809e8d38945003e4236079985df03ad826f44a5497c94618d899ccfcedd1f4b"
+    },
+    {
+      "name": "hud_renderer.mjs",
+      "size": 12525,
+      "hash": "176858108e4c829e5e74b68ed30fc23f17279fe4bdc963035e6b6110051cef44"
+    },
+    {
+      "name": "control_state_table.tsv",
+      "size": 2926,
+      "hash": "18021e5c259771c69c87222c5070973c1aede6e1c6c0f7daac82374ecb42e9d8"
+    },
+    {
+      "name": "P20_API.md",
+      "size": 6722,
+      "hash": "faa2adaa768a8355cecab14055ebdcd06a9dc68b51f8dd51ba1afadd120b8e47"
+    },
+    {
+      "name": "domain_api_mapping.json",
+      "size": 11189,
+      "hash": "efec2091cfb4a476490b4dc672403ae93e26934b70f2c121cc6e990ea2b74a04"
+    },
+    {
+      "name": "controller.mjs",
+      "size": 9577,
+      "hash": "da8bb7826232b645d05f41496fa225ef902960dbbbca2f41f7b90aab2081f518"
+    },
+    {
+      "name": "styles.css",
+      "size": 18853,
+      "hash": "98129bbb593d2ce74289837a696a4ead060551590e28a8950c0e2853ac19f50a"
+    },
+    {
+      "name": "party_menu_flow.md",
+      "size": 5253,
+      "hash": "6b3c9e424ec27e17b7097c7fd94088ecafaad12a35348ffcf4c09df6eee781d4"
+    },
+    {
+      "name": "learning_status_ui_tests.md",
+      "size": 4072,
+      "hash": "d85d193302ce49cdb439ccab72b13f9fa8b20d64cdd2da3e7b76a67b0cc80707"
+    },
+    {
+      "name": "model.mjs",
+      "size": 12128,
+      "hash": "3d9ea9b124eb26daeca7bd8275eb364a7af89aec32a4d0ebf02ed76a71cd3137"
+    },
+    {
+      "name": "renderer.mjs",
+      "size": 19447,
+      "hash": "307ebf317b0f402bf265e16352f9159ec98c24320e6830770278a3768053f602"
+    },
+    {
+      "name": "P21_API.md",
+      "size": 13598,
+      "hash": "4655e65b818851a383111a0bafac0b57bd41e90d99021a01324f22b137c6582b"
+    },
+    {
+      "name": "P20_recovery_response.md",
+      "size": 3473,
+      "hash": "bb0da7476d6f1dd92b43e7ef9cd0cc3b0256d60567c3275cec2f348684c2f3f4"
+    },
+    {
+      "name": "missing_bindings.tsv",
+      "size": 5332,
+      "hash": "7ea5ac0925eb6d700c7708f55398c18715f2668c7d91ffbed59d0598e8b1fc2e"
+    },
+    {
+      "name": "id_policy.json",
+      "size": 812,
+      "hash": "f675ed7aaeb5dd24c772ef11b223e93f6da0e156848e3f9fa36b57d0acc1784a"
+    },
+    {
+      "name": "content_id_registry.tsv",
+      "size": 27951,
+      "hash": "b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805"
+    },
+    {
+      "name": "content_schema_spec.md",
+      "size": 8881,
+      "hash": "295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d"
+    },
+    {
+      "name": "第六轮_27项接口契约冻结修订V6.0.json",
+      "size": 23619,
+      "hash": "fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43"
+    },
+    {
+      "name": "第六轮_游戏研发岗位体系最终冻结版V6.0.txt",
+      "size": 226868,
+      "hash": "4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d"
+    },
+    {
+      "name": "第六轮_92项职责冻结映射V6.0.tsv",
+      "size": 16164,
+      "hash": "d87953e5f30ac144d43c521941e51fb32f23c44c347772bf817128c36829b58a"
+    },
+    {
+      "name": "第六轮_全部岗位职责_可复制版V6.0.txt",
+      "size": 178461,
+      "hash": "8f1bbafd1175e853a19e164789991942d78932bb43f1853dc8e16ba376997e5f"
+    },
+    {
+      "name": "v6_git_matches.json",
+      "size": 5405,
+      "hash": "255f2a25d560037b2518d4b6641b1db9b2c53ce18b0854a160fdeae5fb73db7c"
+    },
+    {
+      "name": "focus_graph.json",
+      "size": 3825,
+      "hash": "d47f44c257b09307a55f48207abf28b92b8f4d9ec47a6fa299deae51e6a29685"
+    },
+    {
+      "name": "information_architecture.json",
+      "size": 5713,
+      "hash": "47371f85b2039a39d135f1e5f7566d6b1ce7ead53e13231fbb2f1bc9a370ef64"
+    },
+    {
+      "name": "information_architecture.md",
+      "size": 5546,
+      "hash": "931f7e3df09a2a306b279c09f99b464dd008577e65a47107f77a3c6877098344"
+    },
+    {
+      "name": "interaction_state_matrix.tsv",
+      "size": 17564,
+      "hash": "de01956efb62d3fe896680f56003eeba982af8f06f7e35bd4f660664802f44c2"
+    },
+    {
+      "name": "keyboard_focus_matrix.tsv",
+      "size": 45867,
+      "hash": "6f97890dae51e4a1c42eee876da8060b83e6e8f0cb8748469688c835fc8b2eba"
+    },
+    {
+      "name": "learning_status_mapping.json",
+      "size": 7630,
+      "hash": "ddfdaf8a7fba9afeae459212e71f0cc9a6631e71663b0375eb400a0ea937c24d"
+    },
+    {
+      "name": "readonly_upstream_review.tsv",
+      "size": 1816,
+      "hash": "91e1890d0fc61ce54bc48ded9b85dce20b22479eb0836c1b3ef0cd42f884ee06"
+    },
+    {
+      "name": "generate_wireframes.py",
+      "size": 31502,
+      "hash": "3924e00d9ea3199f1f3daa20edf4a93c09e80fae21b24e8bd0bd75a8c46a00e8"
+    },
+    {
+      "name": "render_wireframes.mjs",
+      "size": 5750,
+      "hash": "787f58fff755187899de9e3b05a930904d223f15d2240a8013f95dab57e7e01e"
+    },
+    {
+      "name": "runtime_requirements.json",
+      "size": 666,
+      "hash": "cb81774641cd090523d22143314738a46538f1d2ec970ac31156c8925b794767"
+    },
+    {
+      "name": "validate_design.py",
+      "size": 25552,
+      "hash": "8ac59fb8ffbd6655a56780acda74c377ddaf4da8e42e472fd452e552972dcc99"
+    },
+    {
+      "name": "verify_glyphs.py",
+      "size": 3308,
+      "hash": "4cba6f75485bcfa35d350ca949e1b21a622ee940c785baf8f191507c21667541"
+    },
+    {
+      "name": "wireframe_catalog.json",
+      "size": 243166,
+      "hash": "1b2c38857d03f96897b7a00265262e5b78fcf0aa9bac15bf1f9d4e95a21b6963"
+    },
+    {
+      "name": "W00_Information_Architecture.png",
+      "size": 133126,
+      "hash": "2b5d985b9fd3674d1787e0221b0f3cb58c7f01228c255897bdddb3802fc36ba5"
+    },
+    {
+      "name": "W00_Information_Architecture.svg",
+      "size": 7692,
+      "hash": "f0384c90c760e8a6f930fc3a089b5da73673e772700f53ffd5e8cb06f816a064"
+    },
+    {
+      "name": "W03_Battle_Unknown.png",
+      "size": 196770,
+      "hash": "f41547e11114a47dd2051b44c6888885383ec1eb6e1f0c799870d99b28d0410f"
+    },
+    {
+      "name": "W03_Battle_Unknown.svg",
+      "size": 12346,
+      "hash": "870b26c6371a43ffe1277eda2e073ea52626486b11446e07a1506717f526f855"
+    },
+    {
+      "name": "W04_Battle_Intent_Missing.png",
+      "size": 191180,
+      "hash": "d4a6d7219befd1751825c03fbe59d96a0b9d13800a9ef6188f7da486a8e178b4"
+    },
+    {
+      "name": "W04_Battle_Intent_Missing.svg",
+      "size": 12859,
+      "hash": "c7927652a34b1eb3f43402de3c38f9746e48200f53d0e7d5254d7b7ae54dd233"
+    },
+    {
+      "name": "W05_Battle_Result.png",
+      "size": 176561,
+      "hash": "2770cb60c04ebab9c1db7a74b53a2040e065cdf19ccea1e13aafb2edd0a69aa1"
+    },
+    {
+      "name": "W05_Battle_Result.svg",
+      "size": 11498,
+      "hash": "23da2d5dec5d4caedbe485336fad8bba0b032cbd231361549348b810ce39aaee"
+    },
+    {
+      "name": "W06_Battle_End_Review.png",
+      "size": 201142,
+      "hash": "c89d5923518fd51214bb19e24afd66589c8634bad2def4cf21215b51e4583dbd"
+    },
+    {
+      "name": "W06_Battle_End_Review.svg",
+      "size": 12242,
+      "hash": "1ceca3a24a1099592c062fac793ecc5b9ed0548272309a5f075ff6d818a4edfc"
+    },
+    {
+      "name": "W07_Camp.png",
+      "size": 150085,
+      "hash": "9ed040ddba5ff31552e02ac0fbe91678ef189b009963fcdcb1c256f05ef8cd7d"
+    },
+    {
+      "name": "W07_Camp.svg",
+      "size": 9010,
+      "hash": "cb89cfdae9c8cc2a65183aa73bdae2dc4464fcbc98433de8487db6bd360da1cf"
+    },
+    {
+      "name": "W08_Party_Draft.png",
+      "size": 136251,
+      "hash": "575e799aaa809b4df4768384185574d5f8dc5ab8c9f36f923186e052bf90ddcd"
+    },
+    {
+      "name": "W08_Party_Draft.svg",
+      "size": 9536,
+      "hash": "ac7181e6d4f9472c17e523aad52fa2218c5bf52958d484aee27e32d26783205f"
+    },
+    {
+      "name": "W09_Growth_Confirm.png",
+      "size": 142154,
+      "hash": "fa4c77391c9dfcb7069710888e353d9759bb0263f5b463d1ab64e539018b784c"
+    },
+    {
+      "name": "W09_Growth_Confirm.svg",
+      "size": 7348,
+      "hash": "6cd8b5e2e2f40bd7ac018c148bb6d04b31b10d3bdcbfbccbc8074a8bbe629840"
+    },
+    {
+      "name": "W11_Growth_Pending.png",
+      "size": 155852,
+      "hash": "23fd18b0bb853df446212b02e8f1da27aa4d669cd2d2eccb0289d752e96f53f6"
+    },
+    {
+      "name": "W11_Growth_Pending.svg",
+      "size": 7473,
+      "hash": "e004f8fb0fc650ecacc7cf767ecdf6c16b438291226c65a0021ac89ba9856f5c"
+    },
+    {
+      "name": "W12_Chapters.png",
+      "size": 163936,
+      "hash": "f85139e9ff7ed4b0fd4ee4c2bec6fa1b422ac5cde3f258814ffe54b4564c5a64"
+    },
+    {
+      "name": "W12_Chapters.svg",
+      "size": 8484,
+      "hash": "1b597f0b83c07277714776d238ea91aff121b8d34df5cc9899a9c716e355479e"
+    },
+    {
+      "name": "W13_Settlement_Pending.png",
+      "size": 148362,
+      "hash": "92274bae7c00cde4435d2c8214b6b9e27d8a112c60fa3e9ae48108bf30a96578"
+    },
+    {
+      "name": "W13_Settlement_Pending.svg",
+      "size": 7397,
+      "hash": "e45bcb911582df535ce6f0954677cb70a60704ce19d9704fb06875fe0dffcef2"
+    },
+    {
+      "name": "W14_Characters.png",
+      "size": 120503,
+      "hash": "bccb46ca29fbc7e4196238687e7a7187b2b2143bf66eff86017a0647323ecf3d"
+    },
+    {
+      "name": "W14_Characters.svg",
+      "size": 8185,
+      "hash": "a06c67b85437b0aadf63025d91b53a97c40520eed5088e65442dd4a8a3efd13d"
+    },
+    {
+      "name": "W15_Handoff.png",
+      "size": 133335,
+      "hash": "007ff229c53c7e4062b509882137967983e64fdad7b9be6f57deb28e73ae61a2"
+    },
+    {
+      "name": "W15_Handoff.svg",
+      "size": 6888,
+      "hash": "68d0f377334f56a9fcdaa2e09658b6647ac1c2d52264796db1d8cb7b285cc714"
+    },
+    {
+      "name": "W16_Typography.png",
+      "size": 150673,
+      "hash": "581af344badcdfea8f77f8a063d5e119763072e6de89cf7ed54ec7104c6a98fb"
+    },
+    {
+      "name": "W16_Typography.svg",
+      "size": 5130,
+      "hash": "7266bf57ca738a43f014e6f77b8c835717a9c1d69909bfee763cb038a4871356"
+    },
+    {
+      "name": "W17_Battle_Large_Text.png",
+      "size": 116638,
+      "hash": "13d9c182956e0499f9adbed1a9e18447cd372e16a09ee6fdd5a23a3f3a3e9d6a"
+    },
+    {
+      "name": "W17_Battle_Large_Text.svg",
+      "size": 4593,
+      "hash": "9b52fdc4001f473490f00958947ea9c5e319102e105f723e4e15395949912bea"
+    },
+    {
+      "name": "P23_delivery_receipt.json",
+      "size": 22288,
+      "hash": "b07638466bbbce8b5d59c2ae50732af6fcd6474779e11c3a71a0813f1c8d515e"
+    },
+    {
+      "name": "ux_anchor_contract.json",
+      "size": 93415,
+      "hash": "222038121f1d9cb689338fee258100ee70f6ce9e8c11309f33e38ac30a8b2608"
+    },
+    {
+      "name": "ui_state_map.json",
+      "size": 86849,
+      "hash": "acb52d76a2ac26a02dcf0b214fd0cedd2b22da54745d9df75b02bff26bf53ec4"
+    },
+    {
+      "name": "interaction_spec.md",
+      "size": 8868,
+      "hash": "491e15fc912b2ba615751c6b8ff5d645b03a03bbe96635f9370650660aea8dd6"
+    },
+    {
+      "name": "W01_Battle_Ready.png",
+      "size": 193729,
+      "hash": "f9a34b1feb53e7c250dcd5fc3f831c12385f63fd9d53c23f67eebed0dd134e2f"
+    },
+    {
+      "name": "W02_Battle_Target.png",
+      "size": 197899,
+      "hash": "4853f978c0336290368b49e2a7a495dfd3278a2a4098bf917f454282471a4784"
+    },
+    {
+      "name": "W10_Learning_Quarantine.png",
+      "size": 163357,
+      "hash": "1d61a1870dbccfffb8fe348c0410c0d879d24926e11548a79967d935a4d75369"
+    },
+    {
+      "name": "W01_Battle_Ready.svg",
+      "size": 12817,
+      "hash": "f37684e95f5f68981b1cd5401e306f7575b531643fcf293502de5d44a04562c7"
+    },
+    {
+      "name": "W02_Battle_Target.svg",
+      "size": 13052,
+      "hash": "74d6e600e5937c928b45696e0913699f71b7de2308c2636c213f09a0308c3dc2"
+    },
+    {
+      "name": "W10_Learning_Quarantine.svg",
+      "size": 8610,
+      "hash": "5cedb0c2930b44a32db6e2fa8de3372a039171922285bf2039146e6bced8d925"
+    },
+    {
+      "name": "P24_UI_VisualAssets_V0.1.zip",
+      "size": 5713964,
+      "hash": "93362700482dd8628d0e54024df4c10b2667d938afbdfeae5a53054e06429ca9"
+    },
+    {
+      "name": "e1cb8b71-1-README.md",
+      "sourceName": "README.md",
+      "size": 1357,
+      "hash": "e1cb8b71d7da9fa55434ce70bb4911b986d643b221108b20b65e388200b3a921"
+    },
+    {
+      "name": "ui_visual_export_manifest.json",
+      "size": 462552,
+      "hash": "14daad1e5f7786801fa9d5bfd260b3e873e6634f3e69d2bd67497c22a532cf22"
+    },
+    {
+      "name": "placeholder_ui_frame_hand_selected.svg",
+      "size": 3544,
+      "hash": "01869b00f4f8f545aa3cdad6cf5a03c72425e9a9aab7315fd533bf2209956f36"
+    },
+    {
+      "name": "placeholder_ui_card_back_default.svg",
+      "size": 3742,
+      "hash": "c09ea8642003db2adbfebbb2e115b894ff29958b4bb05e2266889e4ff5891454"
+    },
+    {
+      "name": "P24_Learning_Quarantine_1280.png",
+      "size": 120632,
+      "hash": "f57bb522510883143d88739fe3ac6f4f3a0f3a6c0bea56ae58823e769d9fc497"
+    },
+    {
+      "name": "P24_Geometry_SafeAreas.png",
+      "size": 145095,
+      "hash": "fdd5c5abf2b55c6359f9d03f1edfde1fa0aaac0b1dbddff2e3dd20a8fd4fc121"
+    },
+    {
+      "name": "P24_Typography_Scale.png",
+      "size": 101190,
+      "hash": "4e42a2accd1e52e09eaf491be0d4466117f186f8dcd9036e67230fa6450b8d26"
+    },
+    {
+      "name": "visual_qa_results.json",
+      "size": 115880,
+      "hash": "c5859a0315b6585411f78b2e432705aab4b301657682a87a6937df8b74ad3e51"
+    },
+    {
+      "name": "validation_results.json",
+      "size": 2497,
+      "hash": "3fde264e3f9be61e3ae1a926e4bd2cba4d842b933ddb2642d3931e9970ce2231"
+    },
+    {
+      "name": "5c4a57cc-1-blocker_register.json",
+      "sourceName": "blocker_register.json",
+      "size": 2973,
+      "hash": "5c4a57cccacd4d757f2733f94e447b1fd09695b7a38eaeb42dc34f538e2c07ba"
+    },
+    {
+      "name": "P24_delivery_receipt.json",
+      "size": 24347,
+      "hash": "8b2953e061ca351ea1b0b7498dcef701aa1be65c53bd9a7d69d212b1701b3c74"
+    },
+    {
+      "name": "P24_delivery_report.md",
+      "size": 6221,
+      "hash": "a1d3eaa18ad46b0d362b95791bfa5594b49ddc5d682e8f2a444bda57f518c5d0"
+    },
+    {
+      "name": "ui_asset_state_matrix.tsv",
+      "size": 65804,
+      "hash": "9acd28bc61447e5a92bac07773fe0fca21ebf90bf040447481463af6cf0dacf8"
+    },
+    {
+      "name": "delivery_manifest.json",
+      "size": 1019413,
+      "hash": "94540e7b529fd29205ca303a10edb68c06980fc541d649bdbee2e50b0e00fb36"
+    },
+    {
+      "name": "source_input_receipt.json",
+      "size": 16573,
+      "hash": "1dc3a3e2c052e030bed4fea900a4c32019f5b88923ee1f22e3e95110108a325c"
+    },
+    {
+      "name": "verification_status.json",
+      "size": 1891,
+      "hash": "d44c0caa761dda6d534aacc748c01a63f0e58fef99080c1d8e0fa8426aa5cb7d"
+    },
+    {
+      "name": "interface_rfcs.json",
+      "size": 2147,
+      "hash": "590f83d2e7299df348f2a409a8738a9cb22b1656e52c7218b1b093cbb8f3dfaa"
+    },
+    {
+      "name": "actual_path_request.json",
+      "size": 766,
+      "hash": "02e62d8f81c606102697d55eb25cd14ce8fe268a72e02d4f8464559b8cea854d"
+    },
+    {
+      "name": "ui_visual_spec.md",
+      "size": 7809,
+      "hash": "7ff80171dbd422bd94922b2e14745e25e1193f7efc882dabf1021a51d42d1755"
+    },
+    {
+      "name": "integration_handoff.md",
+      "size": 3253,
+      "hash": "a7486e129ecda3e228dce2a2b138ab1f52316028c6d24a32ba99e79b24e168b3"
+    },
+    {
+      "name": "p30_import_proposal.json",
+      "size": 1621,
+      "hash": "f606545f5ca2c0863cb1f43f5658b5604a4c2d6116effe2c8e6f1a2cc640abf4"
+    },
+    {
+      "name": "p23_asset_binding_candidates.json",
+      "size": 72247,
+      "hash": "d66ae303b8a2ec5e6f6b8dd1b12ff841b6af555801b3f44eded26adff732013a"
+    },
+    {
+      "name": "asset_id_registration_candidates.tsv",
+      "size": 17959,
+      "hash": "75c655ab1f710bc2a2ea3f7e2ff93c1f9123718f9b0e4948fc4cac565698e49a"
+    },
+    {
+      "name": "P24_preview_index.html",
+      "size": 50390,
+      "hash": "7149e2320dd1081c798facbd5174231f0d1f5cdfef5e7cb6c050d4e80dc576f1"
+    },
+    {
+      "name": "P24_Component_States.png",
+      "size": 194471,
+      "hash": "7b9a9155d48d9f545119ccd26d9eaee0a69ada6e4280752d369b3b0c7a991739"
+    },
+    {
+      "name": "P24_Icons_Cost.png",
+      "size": 168421,
+      "hash": "e48ae996871265a906c06bcda346190210cbdcaea6f520087d0631ac7fb5d5ac"
+    },
+    {
+      "name": "P24_Battle_Target_1280.png",
+      "size": 157134,
+      "hash": "6d53dce8aab2b445941737d25e670644ddbdec74a24d57fa05691d6f334b62b1"
+    },
+    {
+      "name": "P24_Alpha_NineSlice.png",
+      "size": 106688,
+      "hash": "6a8bbb130cc7832e67886e23f311144127d3b5132f4b99dead7b4baa1e3ebf75"
+    },
+    {
+      "name": "negative_results.json",
+      "size": 2487,
+      "hash": "d6786d726ec569733bb6611017171a20e5c6fff651a547d7ed46dcbf04ee0f04"
+    },
+    {
+      "name": "P31_AudioFeedback_V0.1_isolated.zip",
+      "size": 566453,
+      "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a"
+    },
+    {
+      "name": "31596fa4-1-README.md",
+      "sourceName": "README.md",
+      "size": 1574,
+      "hash": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c"
+    },
+    {
+      "name": "card_flight_whoosh.wav",
+      "size": 37088,
+      "hash": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec"
+    },
+    {
+      "name": "defeat_sting.wav",
+      "size": 63548,
+      "hash": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44"
+    },
+    {
+      "name": "error_tick.wav",
+      "size": 14156,
+      "hash": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed"
+    },
+    {
+      "name": "heal_chime.wav",
+      "size": 42380,
+      "hash": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191"
+    },
+    {
+      "name": "impact_hit.wav",
+      "size": 19448,
+      "hash": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc"
+    },
+    {
+      "name": "reward_chime.wav",
+      "size": 35324,
+      "hash": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e"
+    },
+    {
+      "name": "shield_block.wav",
+      "size": 30032,
+      "hash": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931"
+    },
+    {
+      "name": "status_buff_spark.wav",
+      "size": 27386,
+      "hash": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb"
+    },
+    {
+      "name": "ui_click.wav",
+      "size": 4894,
+      "hash": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d"
+    },
+    {
+      "name": "victory_sting.wav",
+      "size": 63548,
+      "hash": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262"
+    },
+    {
+      "name": "audio_event_map.tsv",
+      "size": 1833,
+      "hash": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac"
+    },
+    {
+      "name": "audio_license_ledger.tsv",
+      "size": 2589,
+      "hash": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4"
+    },
+    {
+      "name": "8e11f2a0-1-delivery_manifest.json",
+      "sourceName": "delivery_manifest.json",
+      "size": 4624,
+      "hash": "8e11f2a0a4bcde843334b498ab532959927afaeeabf3a471f2de39c3bb975a4d"
+    },
+    {
+      "name": "mixing_and_fallback_checklist.md",
+      "size": 1025,
+      "hash": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf"
+    },
+    {
+      "name": "audio_validation.json",
+      "size": 2920,
+      "hash": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7"
+    },
+    {
+      "name": "generate_sfx.py",
+      "size": 2389,
+      "hash": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21"
+    }
+  ],
+  "snapshotHash": "7d341f62cd45a9d31f6b9d16c3f2e64f7328016900195c344aba8b6193a953e0",
+  "answerBlob": "513347418c2be5eceb3fbd7c1f0a9eee662f16e5",
+  "answerHash": "931d8067a9717cda2203990cf97ee66bd7fb69d9d0bd66c023282cee50fbc7b1",
+  "presentation": {
+    "name": "answer-r83766a9e-8aa3-4c9d-aa70-5c3425cd-ac0f-40a5-893b-b91fe4b28686.md",
+    "readmeBlob": "a707871e3c3fc1a1ec83a7fe592c41f8b26bc12a",
+    "readmeHash": "b35408c109d57eb1024675bd120aea78c253a99032cbeb6bf8315080ef82e83f",
+    "htmlBlob": "a59ab18b809c7a63e7176f702fbd612ab04c0ca9",
+    "htmlHash": "af3624c474ffa7282ecc2d109e6274849331e9660c1dda3f51273b1c4bdf7da5"
+  },
+  "files": [
+    {
+      "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+      "name": "P31_delivery_receipt.json",
+      "kind": "file",
+      "size": 7757,
+      "type": "application/json",
+      "sourceUrls": [
+        "blob:https://chatgpt.com/0fc71d61-bd1b-4c3a-a3e7-562bf436cd6e",
+        "https://chatgpt.com/backend-api/estuary/content?id=file_00000000f9308206bb4672710d2f581b&ts=498186&p=fs&cid=1&sig=db72692ef0527f87aa12152b7b876b6f759c386b30c8fdb9b773d16d07c6f606&v=0"
+      ],
+      "downloadAttempt": {
+        "context": "page-main",
+        "elapsedMs": 30,
+        "expectedBytes": 0,
+        "fullRestarts": 0,
+        "nativeAbortAt": null,
+        "nativeAborted": false,
+        "origin": "https://chatgpt.com",
+        "receivedBytes": 7757,
+        "resumeAttempts": 0,
+        "stage": "bytes-received"
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_delivery_receipt.json",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_delivery_receipt.json",
+          "kind": "reply"
+        }
+      ],
+      "blob": "1446082d5a671a3bb5e789c79f48eed5ef50281e",
+      "path": "files/data/P31_delivery_receipt.json"
+    },
+    {
+      "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+      "name": "P31_AudioFeedback_V0.1_isolated.zip",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated.zip",
+          "kind": "reply"
+        }
+      ],
+      "kind": "file",
+      "size": 566453,
+      "type": "application/zip",
+      "sourceUrls": [
+        "https://chatgpt.com/c/6ae63681-3948-83ea-9ae2-93f89dfc31a4"
+      ],
+      "presentation": false,
+      "blob": "aefd77efeb77e3cd480f840714a867afdee77605",
+      "path": "files/archives/P31_AudioFeedback_V0.1_isolated.zip"
+    },
+    {
+      "name": "31596fa4-1-README.md",
+      "size": 1574,
+      "type": "text/markdown",
+      "hash": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/README.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/README.md",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "README.md",
+        "exportName": "README.md",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/README.md",
+          "kind": "reply"
+        }
+      ],
+      "mergeOriginalName": "README.md",
+      "blob": "dfc1ecec875cb20d0ae2652a51173fb3da7faa4f",
+      "path": "files/documents/31596fa4-1-README.md"
+    },
+    {
+      "name": "card_flight_whoosh.wav",
+      "size": 37088,
+      "type": "application/octet-stream",
+      "hash": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/card_flight_whoosh.wav",
+        "exportName": "card_flight_whoosh.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/card_flight_whoosh.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "6d525e222db3cc6d38c8279ad9366acbc863213a",
+      "path": "files/other/card_flight_whoosh.wav"
+    },
+    {
+      "name": "defeat_sting.wav",
+      "size": 63548,
+      "type": "application/octet-stream",
+      "hash": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/defeat_sting.wav",
+        "exportName": "defeat_sting.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/defeat_sting.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "4808b14249d27e3225facd02020f4fd4d50b2131",
+      "path": "files/other/defeat_sting.wav"
+    },
+    {
+      "name": "error_tick.wav",
+      "size": 14156,
+      "type": "application/octet-stream",
+      "hash": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/error_tick.wav",
+        "exportName": "error_tick.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/error_tick.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "211caf586750a280ad07b6f191a94b085d8bca45",
+      "path": "files/other/error_tick.wav"
+    },
+    {
+      "name": "heal_chime.wav",
+      "size": 42380,
+      "type": "application/octet-stream",
+      "hash": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/heal_chime.wav",
+        "exportName": "heal_chime.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/heal_chime.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "5863359694f14b2360974bf9738a35845845e1e7",
+      "path": "files/other/heal_chime.wav"
+    },
+    {
+      "name": "impact_hit.wav",
+      "size": 19448,
+      "type": "application/octet-stream",
+      "hash": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/impact_hit.wav",
+        "exportName": "impact_hit.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/impact_hit.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "c7e3b883e0e0e66c5b29ebb7f2930d851d63fd1b",
+      "path": "files/other/impact_hit.wav"
+    },
+    {
+      "name": "reward_chime.wav",
+      "size": 35324,
+      "type": "application/octet-stream",
+      "hash": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/reward_chime.wav",
+        "exportName": "reward_chime.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/reward_chime.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "0e3b82f724da32939f5be23a1b4629ca1fe66a7d",
+      "path": "files/other/reward_chime.wav"
+    },
+    {
+      "name": "shield_block.wav",
+      "size": 30032,
+      "type": "application/octet-stream",
+      "hash": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/shield_block.wav",
+        "exportName": "shield_block.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/shield_block.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "5bd6ba93214e64c86ab5fbada0015d09461653ff",
+      "path": "files/other/shield_block.wav"
+    },
+    {
+      "name": "status_buff_spark.wav",
+      "size": 27386,
+      "type": "application/octet-stream",
+      "hash": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/status_buff_spark.wav",
+        "exportName": "status_buff_spark.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/status_buff_spark.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "8b9accfe6fc1ac320c6181c9d3ba68bbd230fc0f",
+      "path": "files/other/status_buff_spark.wav"
+    },
+    {
+      "name": "ui_click.wav",
+      "size": 4894,
+      "type": "application/octet-stream",
+      "hash": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/ui_click.wav",
+        "exportName": "ui_click.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/ui_click.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "8d78af7ced3b819659599af10b3ea40de2577212",
+      "path": "files/other/ui_click.wav"
+    },
+    {
+      "name": "victory_sting.wav",
+      "size": 63548,
+      "type": "application/octet-stream",
+      "hash": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio/source/victory_sting.wav",
+        "exportName": "victory_sting.wav",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio/source/victory_sting.wav",
+          "kind": "reply"
+        }
+      ],
+      "blob": "a4ba14b7886e147d80a3f02ade47f4ffe06bb751",
+      "path": "files/other/victory_sting.wav"
+    },
+    {
+      "name": "audio_event_map.tsv",
+      "size": 1833,
+      "type": "application/octet-stream",
+      "hash": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio_event_map.tsv",
+        "exportName": "audio_event_map.tsv",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio_event_map.tsv",
+          "kind": "reply"
+        }
+      ],
+      "blob": "a324597cf7ea367af5800ed342ec25d884632853",
+      "path": "files/data/audio_event_map.tsv"
+    },
+    {
+      "name": "audio_license_ledger.tsv",
+      "size": 2589,
+      "type": "application/octet-stream",
+      "hash": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "audio_license_ledger.tsv",
+        "exportName": "audio_license_ledger.tsv",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/audio_license_ledger.tsv",
+          "kind": "reply"
+        }
+      ],
+      "blob": "89e53d7bfb979f5dd8f689126b72dc8f38b9278e",
+      "path": "files/data/audio_license_ledger.tsv"
+    },
+    {
+      "name": "8e11f2a0-1-delivery_manifest.json",
+      "size": 4624,
+      "type": "application/json",
+      "hash": "8e11f2a0a4bcde843334b498ab532959927afaeeabf3a471f2de39c3bb975a4d",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "delivery_manifest.json",
+        "exportName": "delivery_manifest.json",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/delivery_manifest.json",
+          "kind": "reply"
+        }
+      ],
+      "mergeOriginalName": "delivery_manifest.json",
+      "blob": "626230e9809baf22629fce0f84c63d41748551e6",
+      "path": "files/data/8e11f2a0-1-delivery_manifest.json"
+    },
+    {
+      "name": "mixing_and_fallback_checklist.md",
+      "size": 1025,
+      "type": "text/markdown",
+      "hash": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "design/audio/mixing_and_fallback_checklist.md",
+        "exportName": "mixing_and_fallback_checklist.md",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/design/audio/mixing_and_fallback_checklist.md",
+          "kind": "reply"
+        }
+      ],
+      "blob": "00aaa798060303a26ee1d5289eff99a36986a4db",
+      "path": "files/documents/mixing_and_fallback_checklist.md"
+    },
+    {
+      "name": "audio_validation.json",
+      "size": 2920,
+      "type": "application/json",
+      "hash": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "evidence/audio_validation.json",
+        "exportName": "audio_validation.json",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/evidence/audio_validation.json",
+          "kind": "reply"
+        }
+      ],
+      "blob": "fc87c6af0e9283070a03cc047176461da94200ce",
+      "path": "files/data/audio_validation.json"
+    },
+    {
+      "name": "generate_sfx.py",
+      "size": 2389,
+      "type": "application/octet-stream",
+      "hash": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21",
+      "kind": "file",
+      "zipEntryPath": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+      "sourceUrls": [],
+      "derivedFromZip": {
+        "name": "P31_AudioFeedback_V0.1_isolated.zip",
+        "hash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "entryPath": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+        "crcVerified": true
+      },
+      "receiptProof": {
+        "name": "P31_delivery_receipt.json",
+        "hash": "efcdb6bba8f19fe06b5e5a7c6157051740de694198249cea001ea6171796ffc2",
+        "archiveHash": "b168e14220973e0a027103d7e2b4cb5bc9b856f0497b20b92ff8756d6bb4037a",
+        "packagePath": "tools/generate_sfx.py",
+        "exportName": "generate_sfx.py",
+        "hashVerified": true
+      },
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P31｜音效反馈与基础配乐素材师 · 原文件补读",
+          "handoffToken": "0a270f0d-2833-4ebc-a8eb-2d214ecc92ab",
+          "conversationId": "6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+          "path": "P31_AudioFeedback_V0.1_isolated/tools/generate_sfx.py",
+          "kind": "reply"
+        }
+      ],
+      "blob": "1b4f9141447abb5c3a032b12b9d422a1a890865f",
+      "path": "files/code/generate_sfx.py"
+    },
+    {
+      "hash": "750f5de150af1160314623e47cdc7fd0f9d48e040250bf16b818b82381ba8a00",
+      "name": "ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+          "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+          "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+          "path": "ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 83097,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/tM67B1R4uOUqGhFBPcIPhb0RjwCGsU9zGNpLmIkCoUeEeqPmHO_a9eOyyXJ-6KEPvttEYGK426cz-D6-OlEe3J-CtpBYtLqCgJJlbMBRUouhdN6SLcZcPe2FXNowc4kBvchAIK-cBZWDNr3GD4Kv5Wu7JQShXReSKkHVVxBEahw?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "b005550be92b91e300f7e458337500eac818d345",
+      "path": "files/images/ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg"
+    },
+    {
+      "hash": "a0ae5ed4d57a4f2dbe83bc5c31c5898d0d1c5269daf17625bed5038af7631d97",
+      "name": "InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+          "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+          "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+          "path": "InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 154978,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/NZfku1FIYuGrEFKhvltVO1tnsDxqxUE27pFa-_cu_pS79NGqr-IS57_F4OA8KZL1idIrVDmA950re4g-vCCp05yK_4vKD8_X2Ic2AGYCsMv8PNTgAtyg02az93vNUI79Li5NSXBr2RAYyzPtKhIM_V8k2zK-VD_LTLHKhKNGwu4?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "bf43164356d47d68d761e01647ca9fa51a18b65f",
+      "path": "files/images/InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg"
+    },
+    {
+      "hash": "14e9d4afa11416d8c151ef47efdd1406a715bc72a2f4d1f1ab9c564e468a8948",
+      "name": "エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P30｜素材导入、命名清单与工程资产管线程序员",
+          "handoffToken": "392101bb-64a8-4dd4-9217-3daf1c23f34a",
+          "conversationId": "6ae633d8-b9a8-83ea-9213-d04412089db1",
+          "path": "エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 58205,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/uzqlDh6ZYyzgQe24HGxLjTlhA1hdaUCCntGINnHocMC-GV67H-tTcoWR5MEJ-fvrCTow3GqmJ-_hY6I_N9W_I6IJHmM4vu2uvZG_mYIVKp9Gt9Moe_WpJ3nuiZJk0xmTcqQxAovtUfE0xaAKYG8UsZNdlbLkAlhm_rbRuytgOOc?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "ca72ef0c949971c4f96297f6f26367ff21d55a32",
+      "path": "files/images/エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg"
+    },
+    {
+      "hash": "602323c48646b4e68814cdb0c50e624c4e52d0ef362c570c51964eab6fa389b7",
+      "name": "Glowing arrow creating a neon light speed trail.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Glowing arrow creating a neon light speed trail.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Glowing arrow creating a neon light speed trail.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 64696,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/M65F6Erp4TLwD2Eudqdql234_NgBpYRSh7pzEWXo1isD6_a39diqqHEsQcqvE6Q5MLlXomhOzhZ6l3YDeO9PIKLBYP9Z7YMkF8Kcun5jslp-AWgat900VuWaRlM4Ew05plgdZHAda7KbXz--bMI7FkORwJNKxI1shZkeTQ69KFjnwwe-wWGvaINA16ADVW2q?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "6b040b3cd90219ea0c9da410280c98828b718866",
+      "path": "files/images/Glowing arrow creating a neon light speed trail.jpg"
+    },
+    {
+      "hash": "1083d27e74538c7695025ea327e44da9c8026762cc7fc91478490a5b61fad962",
+      "name": "50 Hit Impact VFX.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "50 Hit Impact VFX.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "50 Hit Impact VFX.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 23656,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/-bZrvFrutCV8dWOafu1bbc7GWoMV6_jSaTzUWuk1H17wkKSlxe01NdiN1KxCVFzmDfeTVdUBoLmtFRHl3J1wXzALRzWEpzM9R4AWAoS8L07omX027tkHDuvyOWLgEKLxH2dwvq8RiIem4wu7orh84dVWpiJ_61RnzC2Ftcl-ABY?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "25ec97e48e664503924959a4283dee283cecaa06",
+      "path": "files/images/50 Hit Impact VFX.jpg"
+    },
+    {
+      "hash": "e0d0cd843526d61265a1b41b766ff2784e126843f1375e0917bbeae6abaf2250",
+      "name": "VFX Area of Effect.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "VFX Area of Effect.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "VFX Area of Effect.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 30057,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/PyhLylnNhRhgkDT_H6_ii6EUxmH1Iwjc4KgCoNHluL4bvpNVpPwxKQJQiPO40g9ZzvQs4mx6vW4IEY0VYsfLVy9Zt1S0Bx-LYOclP0X_g9NEXPcMKuG9t91GDRhZ8dg9_6-JHcbtdttNAIzPNWw48e5hizgTR_zneyS-aRtSEjc?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "3c87deddff00a6f69db6cc0cf84842af03be695c",
+      "path": "files/images/VFX Area of Effect.jpg"
+    },
+    {
+      "hash": "02d48f279857c070a31b9a02bdad3b14bf2445098e0ee8cc50f59ed7f4320d95",
+      "name": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 18059,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/NEsyB8qS-7nFqpne0MBcgRhBeMy-K7PG_G96L7fhtlOo_jYC0rFJG9q-ZNpH7WJTmV5pZ3PRq8gJSs4guDU_bPS7CpJqvHP587DQAO8otIiqHCtuMoSG5I2McmzYXXnTN10c0Is0r0Y-Y81uwaa5tXZ9YFMsbSehlYGRBovoZio?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "6cd0b702a9074b07a53f6d90f54442bb670d703a",
+      "path": "files/images/Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg"
+    },
+    {
+      "hash": "2ea9e357ad5fba56b05285aedc2d2ba5d99bf9d5d4f424d095064dd0293721e0",
+      "name": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 50263,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/5afFRMxTRKGtKD21ZGMRVj-G0MtszYg2UBMG9l7C3Iddb5WjUFBA8vSF_tU96Se0n_cObaV7-6x5syA2z-ZdWBD871r5RonTx3DSnz5eiXmWZ_Gc7-EDu7YTmFHtmAchNfoSk1PnNDhNixAJ0HqXA0-sbTtC4InPlJprqdrrKoQ?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "c19cf3b469306702bd15541ee7f20d568388a42a",
+      "path": "files/images/Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg"
+    },
+    {
+      "hash": "be3824f5ae1a148949f8a6b17de602afb99abdc3f2a45c6b81f850ec6cada20b",
+      "name": "Purple Shard Cascade.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Purple Shard Cascade.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P28｜出牌运动、敌方受击与战斗特效设计师 · 原文件补读",
+          "handoffToken": "f29b6fe5-448b-4c52-8ba7-338116e1ae43",
+          "conversationId": "6ae609a7-757c-83ea-9e5e-14524e6774ff",
+          "path": "Purple Shard Cascade.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 103394,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/BK-0jgpj_6cUXc7OmD5zkxfA4it6oFK9HoQqQa7HHEbieAblZyo38p5wBuMflsL_TuSWYHkXSJ7uRJAbdOMVtT-CK36frDuIo7x2aaaPFS-JZbLHswiUkHojsiyHdy07pXqQ79T0NpDJ_Q7LjkBLlxO35BesAe-T_GvEfL6cNPPlyrupOHRHTER4AG1Sx9Ii?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "bb9450f4e839e5eee15ee640e864e512c23a2af9",
+      "path": "files/images/Purple Shard Cascade.jpg"
+    },
+    {
+      "hash": "4e0376c480c4b7bb3a565552027cd64a1096d6a6b2a70baaf7298b0ba33f1deb",
+      "name": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg",
+          "kind": "reply"
+        }
+      ],
+      "kind": "image",
+      "size": 68084,
+      "type": "image/jpeg",
+      "sourceUrls": [
+        "https://images.openai.com/static-rsc-4/dvooR-VAKqy2QsobmnAXOLWvr6S50pPd5e0io6EHBW98l9-9tIhRz37V2Z6r5oSFYnfgPtoOp_tM9-h_4KxoTNzJIr3JLYBUFnj0bq5cF1I0-BXPSXsYVZv9ec5yZqi-wQxu6xOhvkAhyliTqOW3cs0BvjF-gSS1YBU59AkM2Z8?purpose=inline"
+      ],
+      "presentation": false,
+      "blob": "3211da228d5dc0326725163ef50cfe16d6a574cc",
+      "path": "files/images/千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg"
+    },
+    {
+      "hash": "90f7aefc76e9a7838bd9a8b4d0b81b4cebc8a415083eb2d6c577e292668a91f4",
+      "name": "P27_silhouette_review_board.png",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "P27_silhouette_review_board.png",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "P27_silhouette_review_board.png",
+          "kind": "reply"
+        }
+      ],
+      "kind": "file",
+      "size": 361826,
+      "type": "image/png",
+      "sourceUrls": [
+        "https://chatgpt.com/backend-api/estuary/content?id=file_000000001c0081fabfe8126bb735a967&ts=498182&p=fs&cid=1&sig=00864f74d024e7a918448bf3312589a4a46e0c8b0d2cfd9f9fd554555845b0bb&v=0"
+      ],
+      "presentation": false,
+      "blob": "6c7b6427f19a188cb86e910663c775e95b4a2bd1",
+      "path": "files/images/P27_silhouette_review_board.png"
+    },
+    {
+      "hash": "d18929c5b61e7210c41543232358377c47779a5680cb669006bb49c389f23111",
+      "name": "P27_card_layout_studies.png",
+      "origins": [
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "P27_card_layout_studies.png",
+          "kind": "reply"
+        },
+        {
+          "runId": "e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+          "roleName": "P27｜普通怪、精英怪和BOSS卡面画师 · 原文件补读",
+          "handoffToken": "e60d383d-d4c1-4b1b-9636-f187f6d0ac8c",
+          "conversationId": "6ae5f635-9df8-83ea-9dff-8937e7e9226b",
+          "path": "P27_card_layout_studies.png",
+          "kind": "reply"
+        }
+      ],
+      "kind": "file",
+      "size": 307617,
+      "type": "image/png",
+      "sourceUrls": [
+        "https://chatgpt.com/backend-api/estuary/content?id=file_00000000761881fab6ee26802144b597&ts=498182&p=fs&cid=1&sig=c71d88321d14a7812578c5be2e16fd55d5f72789c08eb30363af6756ae9c61e6&v=0"
+      ],
+      "presentation": false,
+      "blob": "a1f26ae037fa77fc574fada92661ce75349fc0e4",
+      "path": "files/images/P27_card_layout_studies.png"
+    },
+    {
+      "name": "relay-materials-1-ff9ef2a651.zip",
+      "size": 10078920,
+      "hash": "ff9ef2a651f01a9122e18ce619742db3d20a4378c21e5b261e0239aa3e18dcb0",
+      "type": "application/zip",
+      "kind": "file",
+      "transport": {
+        "kind": "relay-package",
+        "version": 1,
+        "originalCount": 51
+      },
+      "blob": "d301dea7a4764b7881e5ca0285eefc86c66f7474",
+      "path": "files/archives/relay-materials-1-ff9ef2a651.zip"
+    },
+    {
+      "name": "relay-materials-2-ca6ada3652.zip",
+      "size": 12571594,
+      "hash": "ca6ada36524e1ced7e255411770bde62ec9495067e3fcd541d85093790893c69",
+      "type": "application/zip",
+      "kind": "file",
+      "transport": {
+        "kind": "relay-package",
+        "version": 1,
+        "originalCount": 30
+      },
+      "blob": "9c59a01d07f729a82b28bf24a38edd77bf188141",
+      "path": "files/archives/relay-materials-2-ca6ada3652.zip"
+    },
+    {
+      "name": "relay-materials-3-166c0973a2.zip",
+      "size": 15634025,
+      "hash": "166c0973a2bce0e524d8f3e4a26774c5f2551dccd13a908364b14ee45b2e4a51",
+      "type": "application/zip",
+      "kind": "file",
+      "transport": {
+        "kind": "relay-package",
+        "version": 1,
+        "originalCount": 132
+      },
+      "blob": "5e42e7f732b26479bac2d5c6a81faa7c33a7d3a8",
+      "path": "files/archives/relay-materials-3-166c0973a2.zip"
+    },
+    {
+      "name": "relay-materials-4-1c81a8a0fa.zip",
+      "size": 6652005,
+      "hash": "1c81a8a0fad4e19cf257018077cf99fae77c373a5597efd2257d6cf396623d58",
+      "type": "application/zip",
+      "kind": "file",
+      "transport": {
+        "kind": "relay-package",
+        "version": 1,
+        "originalCount": 30
+      },
+      "blob": "cd14faeb0406e8ea56a71e0ca5ededadbb20b702",
+      "path": "files/archives/relay-materials-4-1c81a8a0fa.zip"
+    }
+  ],
+  "createdAt": "2026-10-31T19:07:01.000Z",
+  "sourceUrl": "https://chatgpt.com/c/6ae63681-3948-83ea-9ae2-93f89dfc31a4",
+  "format": "role-relay-archive",
+  "schemaVersion": 1
+}

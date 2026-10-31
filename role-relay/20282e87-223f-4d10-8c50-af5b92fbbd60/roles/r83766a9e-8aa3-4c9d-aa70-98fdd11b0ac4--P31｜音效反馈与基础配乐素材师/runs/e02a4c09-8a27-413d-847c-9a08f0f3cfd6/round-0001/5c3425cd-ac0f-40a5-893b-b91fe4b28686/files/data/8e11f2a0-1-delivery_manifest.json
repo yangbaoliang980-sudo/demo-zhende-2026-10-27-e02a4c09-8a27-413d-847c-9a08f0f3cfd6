@@ -1,0 +1,140 @@
+{
+  "schema_version": "P31-MANIFEST/0.1.0",
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 1574,
+      "sha256": "31596fa40c7434d1bf90650fd2392d16cb56d2ce90fd0c9f37f62170cc1e615c"
+    },
+    {
+      "path": "audio/exports/card_flight_whoosh.wav",
+      "size_bytes": 37088,
+      "sha256": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec"
+    },
+    {
+      "path": "audio/exports/defeat_sting.wav",
+      "size_bytes": 63548,
+      "sha256": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44"
+    },
+    {
+      "path": "audio/exports/error_tick.wav",
+      "size_bytes": 14156,
+      "sha256": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed"
+    },
+    {
+      "path": "audio/exports/heal_chime.wav",
+      "size_bytes": 42380,
+      "sha256": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191"
+    },
+    {
+      "path": "audio/exports/impact_hit.wav",
+      "size_bytes": 19448,
+      "sha256": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc"
+    },
+    {
+      "path": "audio/exports/reward_chime.wav",
+      "size_bytes": 35324,
+      "sha256": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e"
+    },
+    {
+      "path": "audio/exports/shield_block.wav",
+      "size_bytes": 30032,
+      "sha256": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931"
+    },
+    {
+      "path": "audio/exports/status_buff_spark.wav",
+      "size_bytes": 27386,
+      "sha256": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb"
+    },
+    {
+      "path": "audio/exports/ui_click.wav",
+      "size_bytes": 4894,
+      "sha256": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d"
+    },
+    {
+      "path": "audio/exports/victory_sting.wav",
+      "size_bytes": 63548,
+      "sha256": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262"
+    },
+    {
+      "path": "audio/source/card_flight_whoosh.wav",
+      "size_bytes": 37088,
+      "sha256": "3f18cee566f86a5f135169b76c16549bb2f2c012228add6fe0221efd9f1f87ec"
+    },
+    {
+      "path": "audio/source/defeat_sting.wav",
+      "size_bytes": 63548,
+      "sha256": "35865af541ff072e8a4a67910323c91dbb74fac9b21fa0350bbd153ade8f1c44"
+    },
+    {
+      "path": "audio/source/error_tick.wav",
+      "size_bytes": 14156,
+      "sha256": "49f01b7acbf0091d5f508e8da08d3f9ebc4ad5b00bf14e5075e5a9735e4933ed"
+    },
+    {
+      "path": "audio/source/heal_chime.wav",
+      "size_bytes": 42380,
+      "sha256": "e1ec7a64ba4079d958fb083ad080a753b32c90fb548858fcf26e8108de335191"
+    },
+    {
+      "path": "audio/source/impact_hit.wav",
+      "size_bytes": 19448,
+      "sha256": "5b7f8af31f10ba058d895c28b2a811d8578786162656e6c57af884ac738714dc"
+    },
+    {
+      "path": "audio/source/reward_chime.wav",
+      "size_bytes": 35324,
+      "sha256": "6b0cc6f5b145e7068babfb3abf42967339a474d08b07e1288e62f1f9288c7a7e"
+    },
+    {
+      "path": "audio/source/shield_block.wav",
+      "size_bytes": 30032,
+      "sha256": "dfd20d0468ba36bd8dd23dbf5fa2ff275796278f2ccc7936c78761dae8a01931"
+    },
+    {
+      "path": "audio/source/status_buff_spark.wav",
+      "size_bytes": 27386,
+      "sha256": "cd649aae6e3390ed6c4ba1625a80d38295d466bb853ceb56c6faa0b4cb0abadb"
+    },
+    {
+      "path": "audio/source/ui_click.wav",
+      "size_bytes": 4894,
+      "sha256": "d6c5c79fa1ab048bddc6fbcfbbef468f090ea1fdaacaf4ab62939fa48651460d"
+    },
+    {
+      "path": "audio/source/victory_sting.wav",
+      "size_bytes": 63548,
+      "sha256": "9258944fde9b151af65a071078ec0aa0e00e5003d237640b0715bc0ea2f52262"
+    },
+    {
+      "path": "audio_event_map.tsv",
+      "size_bytes": 1833,
+      "sha256": "b286bdf889faeef61ab72e67686deff8ca1601707e6cdca356a80d3d5b02f6ac"
+    },
+    {
+      "path": "audio_license_ledger.tsv",
+      "size_bytes": 2589,
+      "sha256": "9818d4b492e73733211193fa997e6d21e9b33396f1e137432feb765529a8fda4"
+    },
+    {
+      "path": "delivery_manifest.json",
+      "size_bytes": 4462,
+      "sha256": "d0b4effa0892ae9d06a384facd112a02b9d563e480e0a0a67a3c56f09b13c18c"
+    },
+    {
+      "path": "design/audio/mixing_and_fallback_checklist.md",
+      "size_bytes": 1025,
+      "sha256": "6d04371701abf06fdc5ff9904f21251a395720da7916600f866fde60dde2dfaf"
+    },
+    {
+      "path": "evidence/audio_validation.json",
+      "size_bytes": 2920,
+      "sha256": "9eb7187e7be802e88432eb2e4a6a911515a2005da7578a992e03da54130f1cf7"
+    },
+    {
+      "path": "tools/generate_sfx.py",
+      "size_bytes": 2389,
+      "sha256": "581137371a13ae7aa46f0aa458739f9e69f5b0a1fcb5b6628be84fe7a0412c21"
+    }
+  ]
+}

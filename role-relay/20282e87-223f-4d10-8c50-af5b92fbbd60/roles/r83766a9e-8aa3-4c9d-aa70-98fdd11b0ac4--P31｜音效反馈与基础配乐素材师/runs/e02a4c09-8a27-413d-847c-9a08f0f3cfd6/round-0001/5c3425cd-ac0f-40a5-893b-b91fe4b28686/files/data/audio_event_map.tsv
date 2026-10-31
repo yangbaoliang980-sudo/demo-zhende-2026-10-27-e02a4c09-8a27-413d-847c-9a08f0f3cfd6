@@ -1,0 +1,14 @@
+event_type_or_ui_event	asset_filename	trigger_condition	duration_seconds	binding_status	notes
+CARD_MOVED	card_flight_whoosh.wav	card movement cue	0.42	PROPOSAL_ONLY	P13 isolated DTO only; P02/P28 production binding blocked
+DAMAGE_APPLIED	impact_hit.wav	when hp_loss > 0	0.22	PROPOSAL_ONLY	P13 isolated DTO only; P28 timing source absent
+DAMAGE_APPLIED	shield_block.wav	when absorbed > 0 and hp_loss = 0	0.34	PROPOSAL_ONLY	conditional interpretation requires P02/P29 confirmation
+SHIELD_CHANGED	shield_block.wav	shield gain/change cue	0.34	PROPOSAL_ONLY	isolated schema; event semantics require producer confirmation
+HEAL_APPLIED	heal_chime.wav	heal applied cue	0.48	PROPOSAL_ONLY	P13 isolated DTO only; P28 timing source absent
+STATUS_CHANGED	status_buff_spark.wav	positive status cue only	0.31	PROPOSAL_ONLY	status polarity/stack semantics require P02/P06
+BATTLE_FINISHED	victory_sting.wav	if outcome = WIN	0.72	PROPOSAL_ONLY	outcome payload requires frozen producer confirmation
+BATTLE_FINISHED	defeat_sting.wav	if outcome = LOSS or DRAW	0.72	PROPOSAL_ONLY	outcome payload requires frozen producer confirmation
+UNIT_DIED	impact_hit.wav	death cue not separately mixed in v0.1	0.22	PROPOSAL_ONLY	reuse candidate only; P28 death timeline absent
+DRAW_SHORTFALL	error_tick.wav	draw shortfall cue	0.16	PROPOSAL_ONLY	event in isolated schema; production producer binding blocked
+BATTLE_FAULTED	error_tick.wav	fault cue; never imply loss/reward	0.16	PROPOSAL_ONLY	fault semantics from P02 draft; production producer binding blocked
+UI_CLICK	ui_click.wav	manual UI click	0.055	BLOCKED_NO_BATTLEEVENT	P31 contract requires BattleEvent; P19 UI input/click contract not supplied
+REWARD_GRANTED	reward_chime.wav	reward granted cue	0.40	BLOCKED_NO_FROZEN_EVENT	no frozen reward BattleEvent supplied; do not bind to BATTLE_FINISHED
