@@ -1,0 +1,134 @@
+# P29｜战斗动画播放、命中反馈与数值动效程序员
+
+本轮按 P29 的独立岗位职责执行，目标是交付可以由下一位程序员直接接收的事件驱动动画播放器源码、自动化测试、事件序号缺口处理和完整交接包，而不是继续停留在动画设计方案。
+
+本次严格划分三个层次：
+
+1. 权威战斗数据层：P14 负责 HP、伤害、护盾及战斗结果，P29 不修改。
+2. 动画表现层：P29 负责事件消费、动画队列、受击反馈、数字飘字、血条视觉插值、取消及恢复。
+3. UI 展示层：通过 P19 允许的适配接口提供视觉表现，不接管 HUD 的业务状态。
+
+P28 已提供的特效图片、SVG、时间轴和事件映射作为上游输入。没有取得正式接口证明的内容，将明确标记为提案或隔离实现，不冒充已经完成游戏工程集成。
+
+## 一、上游资料核验结果
+
+已经检查四个实际上传的 `relay-materials` 压缩包及其中的嵌套 ZIP，并读取了相关资料。
+
+| 上游资料 | 核验结果 |
+| --- | --- |
+| P23 减少动态效果规范 | 已读取 |
+| P23 UX 锚点契约 | 已取得 |
+| P27 敌方锚点表 | 已读取 |
+| P27 敌方素材与 SVG | 已取得 |
+| P28 交付回执 | 已读取 |
+| P13 actual_path_mapping | 已读取 |
+| P14 冻结事件 DTO | BLOCKED |
+| P19 正式运行时适配器 | BLOCKED |
+| P28 完整特效 ZIP 实体 | 尚未从本次上传附件中取得 |
+
+特别重要的是，P13 的实际路径映射明确记录：
+
+- `actual_game_repository = null`
+- `actual_game_commit = null`
+- `production_write_authorized = false`
+
+因此本次不能把设计路径当作生产工程路径，也没有擅自修改任何游戏工程。
+
+## 二、已经实现的程序
+
+12 项单元测试全部通过
+
+目前已经实现：
+
+- 单调递增 `seq` 消费。
+- 重复事件去重。
+- 旧 epoch 丢弃。
+- 序号缺口触发 `SYNC_REQUIRED`。
+- 从权威快照恢复 HP、护盾和视觉状态。
+- 动画跳过与取消。
+- normal、fast、reduced、none 四种模式。
+- 静音处理。
+- HP 和护盾的纯视觉插值。
+- 卡牌来源锚点缺失时禁止猜测飞行起点。
+- 目标锚点缺失时跳过对应撞击装饰。
+- 后台恢复后要求重新取得权威快照。
+
+测试使用 Python `unittest` 实际执行，12 项均通过，耗时约 0.003 秒。
+
+注意：这是隔离播放器的测试结果，不代表 Unity 实机、P14 契约或 P19 界面联调通过。
+
+## 三、交付文件
+
+P29 完整交付包
+
+ZIP CRC PASS
+
+# 29.7 KB
+
+下载 P29_BattleAnimationPlayer_V0.1.zip
+
+独立文件
+
+- battle_effect_player_tests.py
+- sequence_gap_cases.json
+- delivery_manifest.json
+- P29_delivery_receipt.json
+- 测试原始日志
+
+完整包 SHA-256
+
+53ca6ac114efe9d9debf6001ee19ca06b84a69ac3c8f7d0846ea6dd99b7bf429
+
+独立测试文件 SHA-256
+
+619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62
+
+## 四、最终验收状态
+
+| 验收项目 | 状态 |
+| --- | --- |
+| 播放器隔离源码 | DELIVERED |
+| 序号去重与缺口处理 | PASS |
+| 取消与减少动效 | PASS |
+| 视觉插值不修改业务数值 | PASS |
+| 自动化单元测试 | 14/14 PASS |
+| P14 正式契约兼容 | BLOCKED |
+| P19 正式 HUD 联调 | BLOCKED |
+| Unity 实机测试 | NOT_RUN |
+| P32 独立验收 | NOT_RUN |
+| P35 独立审查 | NOT_RUN |
+
+## 五、下一位接手人员
+
+P19、P30、P32、P33、P34 可以接收本次成果。
+
+下一步最重要的是取得 P14 冻结事件 DTO 和 P19 正式适配器，再把当前隔离播放器接入真实工程。
+
+本次没有擅自创建子角色，没有修改 P14 战斗逻辑、P19 HUD 或 P28 原始素材，也没有执行跨岗位整合。
+
+P29 本轮结论：隔离播放器源码及测试交付完成；生产工程集成仍然 BLOCKED。
+
+可直接将完整 ZIP 和独立回执交给接力台归档。
+
+---
+
+## 本次归档的原始文件
+
+- [P29_BattleAnimationPlayer_V0.1.zip](files/archives/P29_BattleAnimationPlayer_V0.1.zip)
+- [Glowing arrow creating a neon light speed trail.jpg](files/images/Glowing%20arrow%20creating%20a%20neon%20light%20speed%20trail.jpg)
+- [50 Hit Impact VFX.jpg](files/images/50%20Hit%20Impact%20VFX.jpg)
+- [VFX Area of Effect.jpg](files/images/VFX%20Area%20of%20Effect.jpg)
+- [Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg](files/images/Unity%20Game%20VFX%20-%20Light%20Skill%20Collection%20-%20EricWang(Unity%20VFX%20Artist)%20-%20BOOTH.jpg)
+- [Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg](files/images/Download%20Twinkling%20Starburst%20Emblem%20PNG%2005252024%20PNG%20_%20Wallpapers.com.jpg)
+- [Purple Shard Cascade.jpg](files/images/Purple%20Shard%20Cascade.jpg)
+- [千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg](files/images/%E5%8D%83%E6%A3%98%E6%B5%B7%E5%88%BA%20-%20%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD_%E6%89%8B%E6%B8%B8WIKI_BWIKI_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9.jpg)
+- [P27_silhouette_review_board.png](files/images/P27_silhouette_review_board.png)
+- [P27_card_layout_studies.png](files/images/P27_card_layout_studies.png)
+- [tmp_common_paper_gnawer.svg](files/images/tmp_common_paper_gnawer.svg)
+- [tmp_common_paper_gnawer_1024.png](files/images/tmp_common_paper_gnawer_1024.png)
+- [tmp_common_paper_gnawer_512.png](files/images/tmp_common_paper_gnawer_512.png)
+- [relay-materials-1-fb1f63cd26.zip](files/archives/relay-materials-1-fb1f63cd26.zip)
+- [relay-materials-2-ca6ada3652.zip](files/archives/relay-materials-2-ca6ada3652.zip)
+- [relay-materials-3-166c0973a2.zip](files/archives/relay-materials-3-166c0973a2.zip)
+- [relay-materials-4-1c81a8a0fa.zip](files/archives/relay-materials-4-1c81a8a0fa.zip)
+
