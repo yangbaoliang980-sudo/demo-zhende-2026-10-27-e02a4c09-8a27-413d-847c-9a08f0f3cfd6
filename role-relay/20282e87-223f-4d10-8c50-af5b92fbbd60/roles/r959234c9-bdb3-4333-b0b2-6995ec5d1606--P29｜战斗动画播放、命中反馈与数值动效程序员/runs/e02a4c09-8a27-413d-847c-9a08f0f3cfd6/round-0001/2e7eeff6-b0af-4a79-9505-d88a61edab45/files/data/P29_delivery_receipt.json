@@ -1,0 +1,40 @@
+{
+  "schema_version": "P29-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P29-S03-ANIMATION-PLAYER-001",
+  "version": "P29-BATTLE-ANIMATION-PLAYER/0.1.0-isolated",
+  "status": "ISOLATED_IMPLEMENTATION_DELIVERED_PRODUCTION_INTEGRATION_BLOCKED",
+  "exports": [
+    {
+      "filename": "battle_effect_player_tests.py",
+      "package_relative_path": "P29_BattleAnimationPlayer_V0.1/battle_effect_player_tests.py",
+      "size_bytes": 3921,
+      "sha256": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    }
+  ],
+  "archive": {
+    "filename": "P29_BattleAnimationPlayer_V0.1.zip",
+    "size_bytes": 29729,
+    "sha256": "53ca6ac114efe9d9debf6001ee19ca06b84a69ac3c8f7d0846ea6dd99b7bf429"
+  },
+  "test_summary": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests": 14,
+    "passed": 14,
+    "failed": 0,
+    "status": "PASS",
+    "evidence": "docs/test_run.txt"
+  },
+  "gates": {
+    "P14_contract": "BLOCKED_NO_FROZEN_DTO",
+    "P19_adapter": "BLOCKED_NO_PRODUCTION_ADAPTER",
+    "P13_production_path": "BLOCKED_PRODUCTION_WRITE_NOT_AUTHORIZED",
+    "engine_import": "NOT_RUN",
+    "P32_independent_test": "NOT_RUN",
+    "P35_review": "NOT_RUN",
+    "P37_license_review": "NOT_RUN",
+    "real_device": "NOT_RUN",
+    "E2E": "NOT_RUN"
+  },
+  "source_input_receipt": "docs/source_input_receipt.json",
+  "manifest": "delivery_manifest.json"
+}
