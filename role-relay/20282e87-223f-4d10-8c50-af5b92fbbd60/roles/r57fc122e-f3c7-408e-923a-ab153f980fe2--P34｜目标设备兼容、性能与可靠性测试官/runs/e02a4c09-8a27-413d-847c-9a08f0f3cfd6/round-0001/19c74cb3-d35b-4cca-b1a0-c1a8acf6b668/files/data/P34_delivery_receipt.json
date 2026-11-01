@@ -1,0 +1,74 @@
+{
+  "schema_version": "P34-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P34-S00-S04-S08-ENV-PERF-001",
+  "status": "ISOLATED_EVIDENCE_PACK_DELIVERED_TARGET_RUNTIME_BLOCKED",
+  "archive": {
+    "filename": "P34_Compatibility_Performance_V0.1.zip",
+    "size_bytes": 9762,
+    "sha256": "0629974b17742575078f3a82230f21ff9a4aca6968df05ed5875e4c4571f8663"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 2023,
+      "sha256": "71ea64d238559ffb411ef1fd524f396c63e7e0eb96b8796e35a78f77a559b7ee"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "size_bytes": 3896,
+      "sha256": "56706915c7bcff336cc9e0e7766cd2c0069089007c37b70688e0b0db2c8dbe9a"
+    },
+    {
+      "filename": "compat_matrix.tsv",
+      "package_relative_path": "qa/compat_matrix.tsv",
+      "size_bytes": 455,
+      "sha256": "cd6e198a89f60902d2968f5dfe87f992a047be7b640ce5bafbbadc51d57ec968"
+    },
+    {
+      "filename": "environment_inventory.tsv",
+      "package_relative_path": "qa/environment_inventory.tsv",
+      "size_bytes": 1249,
+      "sha256": "67298effa2c31507f9ef2b6e814199da6700413ccdffcb06b2d2e5016f528c5b"
+    },
+    {
+      "filename": "perf_log_template.tsv",
+      "package_relative_path": "qa/perf_logs/perf_log_template.tsv",
+      "size_bytes": 428,
+      "sha256": "3402b1912956f1c1d6ada209fe5737394f0f7b46a9cf837aa89018a115bf81d0"
+    },
+    {
+      "filename": "P34_environment_performance_report.md",
+      "package_relative_path": "reports/environment/P34_environment_performance_report.md",
+      "size_bytes": 4172,
+      "sha256": "5207c71491a1a082fc1002ee268ec1fe6dce89fd4fa1c1c2a41c447f60def2c5"
+    },
+    {
+      "filename": "source_evidence_manifest.json",
+      "package_relative_path": "source_evidence_manifest.json",
+      "size_bytes": 1989,
+      "sha256": "e7ba7a9a82757a805fa522ca1ae042a849537b61060f173385b7108135b9be46"
+    },
+    {
+      "filename": "collect_windows_environment.ps1",
+      "package_relative_path": "tools/collect_windows_environment.ps1",
+      "size_bytes": 3133,
+      "sha256": "9c5dccf6370e4da29ad3eed907e19fed4662aef0624262773ab87719c1564210"
+    },
+    {
+      "filename": "sample_process_resources.ps1",
+      "package_relative_path": "tools/sample_process_resources.ps1",
+      "size_bytes": 1612,
+      "sha256": "89d4fb18c487c629169e9e02838323a9bb1f78dc463dc7c232b4a007214be7c6"
+    }
+  ],
+  "verification": {
+    "zip_crc": "PASS",
+    "archive_members_byte_equal_to_source": 9,
+    "member_count": 9,
+    "mismatches": []
+  },
+  "target_runtime_tests": "NOT_RUN",
+  "production_write_authorized": false
+}
