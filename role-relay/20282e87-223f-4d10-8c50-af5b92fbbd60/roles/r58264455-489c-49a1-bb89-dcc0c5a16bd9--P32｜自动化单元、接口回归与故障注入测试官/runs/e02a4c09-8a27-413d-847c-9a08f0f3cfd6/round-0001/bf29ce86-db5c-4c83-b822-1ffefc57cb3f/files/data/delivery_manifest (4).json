@@ -1,0 +1,101 @@
+{
+  "schema_version": "P29-DELIVERY-MANIFEST/0.1.0",
+  "task_id": "P29-S03-ANIMATION-PLAYER-001",
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 2245,
+      "sha256": "17d6c03d7c1140fc6b84755ea30e32da796323602352abb30a6182cc1fe33c4b"
+    },
+    {
+      "path": "battle_effect_player_tests.py",
+      "size_bytes": 3921,
+      "sha256": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    },
+    {
+      "path": "contracts/adapter_contract.proposal.json",
+      "size_bytes": 1861,
+      "sha256": "959dd33000e2a9ea35c7216ce9d0a6c3f97b2cc6f98e3b1bc019313c48b56d2e"
+    },
+    {
+      "path": "contracts/event_to_presentation.json",
+      "size_bytes": 1614,
+      "sha256": "4016ee993a4716070680c9f450293d440052143732664c8817bfc3e9f9d1a97b"
+    },
+    {
+      "path": "contracts/sequence_gap_cases.json",
+      "size_bytes": 996,
+      "sha256": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "path": "docs/README.md",
+      "size_bytes": 2802,
+      "sha256": "4dfed272761344cb65d00beaa0a0ff648eea9cd3ff16f2b88fa248e906fb67aa"
+    },
+    {
+      "path": "docs/source_input_receipt.json",
+      "size_bytes": 1718,
+      "sha256": "9e06db32afd6e1f49bbef2ab5e0f3a6e72402bc8d96657d2cf6f97eeca7659d2"
+    },
+    {
+      "path": "docs/test_run.txt",
+      "size_bytes": 1655,
+      "sha256": "f1c63d068e5a9f304d8a46f316d917efa10537b874a2b3ab93ecee08ae77df3a"
+    },
+    {
+      "path": "docs/validation_status.md",
+      "size_bytes": 999,
+      "sha256": "b10654d6767b81e19af365a90a6214be5c0654b530ef452341fc1474d11e0a1e"
+    },
+    {
+      "path": "runtime/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/__pycache__/__init__.cpython-313.pyc",
+      "size_bytes": 157,
+      "sha256": "64aecb8d2ae95a025defab7f1b28f804ecf24e71e8a6e802a0ffdcb3c6967d1e"
+    },
+    {
+      "path": "runtime/animation/__init__.py",
+      "size_bytes": 39,
+      "sha256": "85b7783c059fc91d351b20f8b57a7facb246250668c404a59fc9aea5854bc86d"
+    },
+    {
+      "path": "runtime/animation/__pycache__/__init__.cpython-313.pyc",
+      "size_bytes": 212,
+      "sha256": "5db3433ae4ad1444a9fdb298b270339d004aa2f6fbbbc0d4b7534236a1464212"
+    },
+    {
+      "path": "runtime/animation/__pycache__/battle_animation_player.cpython-313.pyc",
+      "size_bytes": 13612,
+      "sha256": "962bb445670c775a7e6cc0511657774671ac4c59a5cc5ae52a3615808c7a77e5"
+    },
+    {
+      "path": "runtime/animation/battle_animation_player.py",
+      "size_bytes": 6311,
+      "sha256": "b381d15bc21f069e9b6e8f6d4910656705789f76f7c64780a694df68867a7bc9"
+    },
+    {
+      "path": "sequence_gap_cases.json",
+      "size_bytes": 996,
+      "sha256": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "path": "tests/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/__pycache__/test_battle_animation_player.cpython-313.pyc",
+      "size_bytes": 14490,
+      "sha256": "8c58dbbef40fc9f4e7c493668acccfb41554daa319e56b5c2042f8b487cb71b6"
+    },
+    {
+      "path": "tests/test_battle_animation_player.py",
+      "size_bytes": 3921,
+      "sha256": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    }
+  ]
+}

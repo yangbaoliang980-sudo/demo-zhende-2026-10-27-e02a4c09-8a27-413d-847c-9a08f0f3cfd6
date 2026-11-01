@@ -1,0 +1,107 @@
+{
+  "schema_version": "P32-TEST-PLAN/0.1.0",
+  "task_id": "P32-S00-S03-QA-001",
+  "target": "P29 isolated BattleAnimationPlayer V0.1",
+  "immutable_target_fixture": "target_fixture/runtime/animation/battle_animation_player.py",
+  "test_matrix": [
+    {
+      "id": "ANIM-SEQ-001",
+      "area": "animation sequence",
+      "case": "contiguous sequence accepted",
+      "status": "PASS",
+      "execution": "P32 test 001"
+    },
+    {
+      "id": "ANIM-SEQ-002",
+      "area": "animation sequence",
+      "case": "sequence gap does not advance cursor",
+      "status": "PASS",
+      "execution": "P32 test 002"
+    },
+    {
+      "id": "ANIM-SEQ-003",
+      "area": "animation sequence",
+      "case": "duplicate event_id with later seq rejected",
+      "status": "PASS",
+      "execution": "P32 test 003"
+    },
+    {
+      "id": "ANIM-BATTLE-001",
+      "area": "battle identity",
+      "case": "foreign battle event rejected pending sync",
+      "status": "PASS",
+      "execution": "P32 test 004"
+    },
+    {
+      "id": "ANIM-SKIP-001",
+      "area": "animation cancellation",
+      "case": "repeated skip has one logical cancellation",
+      "status": "FAIL",
+      "execution": "P32 test 005",
+      "defect": "P32-DEF-001"
+    },
+    {
+      "id": "ANIM-INPUT-001",
+      "area": "input validation",
+      "case": "bool seq rejected as invalid",
+      "status": "FAIL",
+      "execution": "P32 test 006",
+      "defect": "P32-DEF-002"
+    },
+    {
+      "id": "ANIM-SNAPSHOT-001",
+      "area": "snapshot recovery",
+      "case": "snapshot replaces HP/shield visual baseline and sequence cursor",
+      "status": "PASS",
+      "execution": "P32 test 007"
+    },
+    {
+      "id": "COST-ATOMIC-001",
+      "area": "cost atomicity",
+      "status": "BLOCKED",
+      "reason": "P14/P15 frozen runtime contract and executable target absent"
+    },
+    {
+      "id": "ANKI-IDENTITY-UNDO-001",
+      "area": "Anki identity/Undo",
+      "status": "BLOCKED",
+      "reason": "target Anki environment and P10 real capability evidence absent"
+    },
+    {
+      "id": "SAVE-MIGRATION-001",
+      "area": "save migration",
+      "status": "BLOCKED",
+      "reason": "P21 runtime artifact and fixtures absent"
+    },
+    {
+      "id": "STAGE-FIRST-CLEAR-001",
+      "area": "first clear",
+      "status": "BLOCKED",
+      "reason": "P18/P21 executable runtime and fixtures absent"
+    },
+    {
+      "id": "BOSS-LETHAL-001",
+      "area": "Boss lethal resolution",
+      "status": "BLOCKED",
+      "reason": "P14/P16 runtime fixture absent"
+    },
+    {
+      "id": "BUILD-CLIENT-ANKI-001",
+      "area": "dual endpoint build hashes",
+      "status": "BLOCKED",
+      "reason": "no candidate build artifacts or dual endpoint hash tuple"
+    },
+    {
+      "id": "UNITY-IMPORT-001",
+      "area": "Unity import",
+      "status": "NOT_RUN",
+      "reason": "Unity project/engine version unavailable"
+    },
+    {
+      "id": "REAL_ANKI_E2E-001",
+      "area": "real Anki E2E",
+      "status": "NOT_RUN",
+      "reason": "Anki desktop not available in this execution environment"
+    }
+  ]
+}

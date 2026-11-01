@@ -1,0 +1,10 @@
+case_id	contract	evidence	status	result
+ANIM-SEQ-001	P29 sequence contract	P32 test 001	PASS	contiguous seq 1 queued
+ANIM-SEQ-002	P29 sequence gap contract	P32 test 002	PASS	gap returns SYNC_REQUIRED; cursor unchanged
+ANIM-SEQ-003	event identity idempotency	P32 test 003	PASS	reused event_id at later seq rejected
+ANIM-BATTLE-001	battle identity	P32 test 004	PASS	foreign battle id rejected
+ANIM-SKIP-001	skip idempotency	P32 test 005	FAIL	three skip calls emit three CANCEL_DECORATION commands; P29 owner to fix
+ANIM-INPUT-001	sequence input validation	P32 test 006	FAIL	seq=True accepted as QUEUED; bool must be rejected
+ANIM-SNAPSHOT-001	authoritative snapshot recovery	P32 test 007	PASS	HP/shield baseline and next sequence reset
+P13-PROD-PATH	production path mapping	static inspection	BLOCKED	P13 mapping says actual_game_repository=null and production_write_authorized=false
+P29-ADAPTER	frozen P14/P19 adapter contract	static inspection	BLOCKED	P29 adapter contract is PROPOSAL_NOT_FROZEN

@@ -1,0 +1,32 @@
+{
+  "task_id": "P32-S00-S03-QA-001",
+  "version": "P32-QA-AUTOMATION/0.1.0-isolated",
+  "execution_timestamp_local": "2026-11-01T03:09+08:00",
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "executable": "/opt/pyvenv/bin/python",
+  "source_repository": "yangbaoliang980-sudo/demo-zhende-2026-10-27-e02a4c09-8a27-413d-847c-9a08f0f3cfd6",
+  "source_ref": "ac2877e103680f903a4f4c2a3f38aef899c9e39d",
+  "source_artifact": "P29_BattleAnimationPlayer_V0.1.zip",
+  "source_artifact_size_bytes": 29729,
+  "source_artifact_sha256": "53ca6ac114efe9d9debf6001ee19ca06b84a69ac3c8f7d0846ea6dd99b7bf429",
+  "source_module_sha256": "b381d15bc21f069e9b6e8f6d4910656705789f76f7c64780a694df68867a7bc9",
+  "P13_mapping_sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+  "source_game_commit": null,
+  "source_game_commit_status": "BLOCKED_NO_ACTUAL_GAME_REPOSITORY_OR_COMMIT_IN_P13_MAPPING",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "cwd": "target_fixture",
+      "exit_code": 0,
+      "result": "PASS 14/14"
+    },
+    {
+      "command": "python -m unittest discover -s tests/automated -v",
+      "cwd": ".",
+      "exit_code": 1,
+      "result": "FAIL 5 PASS / 2 FAIL"
+    }
+  ],
+  "scope_note": "Isolated Python presentation fixture only; no Unity import, actual game client, Anki, Windows build, real adapter or E2E."
+}

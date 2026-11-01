@@ -1,0 +1,49 @@
+{
+  "schema_version": "P32-FAULT-SCENARIOS/0.1",
+  "scenarios": [
+    {
+      "id": "FI-ANIM-001",
+      "scenario": "repeat skip 3 times",
+      "status": "EXECUTED_FAIL",
+      "observed": "3 CANCEL_DECORATION outputs",
+      "defect": "P32-DEF-001"
+    },
+    {
+      "id": "FI-ANIM-002",
+      "scenario": "boolean seq input",
+      "status": "EXECUTED_FAIL",
+      "observed": "True accepted as integer sequence",
+      "defect": "P32-DEF-002"
+    },
+    {
+      "id": "FI-ANIM-003",
+      "scenario": "sequence gap",
+      "status": "EXECUTED_PASS",
+      "observed": "SYNC_REQUIRED; cursor unchanged"
+    },
+    {
+      "id": "FI-ANIM-004",
+      "scenario": "duplicate event id with next sequence",
+      "status": "EXECUTED_PASS",
+      "observed": "DUPLICATE; cursor unchanged"
+    },
+    {
+      "id": "FI-ANKI-001",
+      "scenario": "Anki Undo/replay after restore",
+      "status": "BLOCKED",
+      "observed": "No real Anki event source or generation fixture"
+    },
+    {
+      "id": "FI-SAVE-001",
+      "scenario": "process termination during save transaction",
+      "status": "BLOCKED",
+      "observed": "No P21 runtime"
+    },
+    {
+      "id": "FI-NET-001",
+      "scenario": "IPC disconnect and message reorder",
+      "status": "BLOCKED",
+      "observed": "No P12 transport adapter"
+    }
+  ]
+}

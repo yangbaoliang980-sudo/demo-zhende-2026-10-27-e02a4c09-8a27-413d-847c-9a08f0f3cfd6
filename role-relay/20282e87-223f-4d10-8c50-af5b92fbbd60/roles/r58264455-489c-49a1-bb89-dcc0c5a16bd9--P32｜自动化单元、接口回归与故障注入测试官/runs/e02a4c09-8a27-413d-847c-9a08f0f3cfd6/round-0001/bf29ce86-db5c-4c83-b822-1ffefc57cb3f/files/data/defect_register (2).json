@@ -1,0 +1,27 @@
+{
+  "schema_version": "P32-DEFECT-REGISTER/0.1",
+  "defects": [
+    {
+      "id": "P32-DEF-001",
+      "severity": "P1",
+      "owner": "P29",
+      "title": "skip_epoch is not idempotent at command boundary",
+      "repro": "recover_from_snapshot(...); call skip_epoch() three times; count commands with kind CANCEL_DECORATION",
+      "expected": "One logical cancellation for repeated skip within the same visual epoch.",
+      "actual": "Three CANCEL_DECORATION commands emitted.",
+      "evidence": "tests/automated/test_p29_presentation_contract.py::test_005_skip_is_idempotent_one_logical_cancel",
+      "repair_scope": "P29 runtime only; P32 does not modify it."
+    },
+    {
+      "id": "P32-DEF-002",
+      "severity": "P2",
+      "owner": "P29",
+      "title": "boolean accepted as integer event sequence",
+      "repro": "recover_from_snapshot(...); consume event dict with seq=True",
+      "expected": "ConsumeStatus.INVALID; bool is not a valid sequence number.",
+      "actual": "ConsumeStatus.QUEUED.",
+      "evidence": "tests/automated/test_p29_presentation_contract.py::test_006_boolean_sequence_is_invalid_counterexample",
+      "repair_scope": "P29 BattleEvent.parse validation only; P32 does not modify it."
+    }
+  ]
+}

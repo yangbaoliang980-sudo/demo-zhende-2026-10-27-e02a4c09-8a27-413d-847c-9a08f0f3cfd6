@@ -1,0 +1,201 @@
+{
+  "archive": {
+    "filename": "P32_QA_Automation_V0.1.zip",
+    "size_bytes": 32234,
+    "sha256": "3AF676707ABF50630A436B0BD66DC7E3A6332640F77FE668D8A83AE43D5CB312"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "P32_QA_Automation_V0.1/README.md",
+      "size_bytes": 1284,
+      "sha256": "239b78258742a85d0cd439799f62732b3b0acd9d7f4fd0a4842ba1e67f64b080"
+    },
+    {
+      "filename": "contract_results.tsv",
+      "package_relative_path": "P32_QA_Automation_V0.1/contract_results.tsv",
+      "size_bytes": 1005,
+      "sha256": "b409bdc14312cd7832ee8fd2982c356c13d417c3690813d228f73ffab9abd1d7"
+    },
+    {
+      "filename": "coverage_gaps.tsv",
+      "package_relative_path": "P32_QA_Automation_V0.1/coverage_gaps.tsv",
+      "size_bytes": 1225,
+      "sha256": "a02254c32777b26f1855f93b0cdd762e725545f6d0968200af9bb075892f5478"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/delivery_manifest.json",
+      "size_bytes": 5509,
+      "sha256": "a5e163d7691a74432244200ff07368d7b865d1c20dc699f53e792c82ed0f2d6c"
+    },
+    {
+      "filename": "P13_actual_path_mapping.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/evidence/upstream/P13_actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f"
+    },
+    {
+      "filename": "P29_adapter_contract.proposal.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/evidence/upstream/P29_adapter_contract.proposal.json",
+      "size_bytes": 1861,
+      "sha256": "959dd33000e2a9ea35c7216ce9d0a6c3f97b2cc6f98e3b1bc019313c48b56d2e"
+    },
+    {
+      "filename": "P29_delivery_receipt.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/evidence/upstream/P29_delivery_receipt.json",
+      "size_bytes": 1378,
+      "sha256": "53a3cc437194e3131a5037fdf83589f5127192f1442a429277a6785ae19d6bbb"
+    },
+    {
+      "filename": "P29_sequence_gap_cases.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/evidence/upstream/P29_sequence_gap_cases.json",
+      "size_bytes": 996,
+      "sha256": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "filename": "defect_register.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/reports/qa_automation/defect_register.json",
+      "size_bytes": 1240,
+      "sha256": "3e962534b526f3a577f7a49a1c5fe7825f7a161e64e5e82182b64c107331740f"
+    },
+    {
+      "filename": "execution_environment.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/reports/qa_automation/execution_environment.json",
+      "size_bytes": 1459,
+      "sha256": "43f74918258c17c9a4a8a423adcaac17657e306090d4b4a9c84a3d5fac5a03f4"
+    },
+    {
+      "filename": "P29_upstream_baseline.log",
+      "package_relative_path": "P32_QA_Automation_V0.1/reports/qa_automation/test_logs/P29_upstream_baseline.log",
+      "size_bytes": 2719,
+      "sha256": "d7097bed44f3e6762326f1ee90637ac34d561a6064ed5f308daf1f49677f2067"
+    },
+    {
+      "filename": "P32_independent_contract_run.log",
+      "package_relative_path": "P32_QA_Automation_V0.1/reports/qa_automation/test_logs/P32_independent_contract_run.log",
+      "size_bytes": 4045,
+      "sha256": "6e528f9d6b48af77fe1884eb513a85d47e0480fed6de6f17e7761469cc9f58d7"
+    },
+    {
+      "filename": "P29_delivery_receipt.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/P29_delivery_receipt.json",
+      "size_bytes": 1378,
+      "sha256": "53a3cc437194e3131a5037fdf83589f5127192f1442a429277a6785ae19d6bbb"
+    },
+    {
+      "filename": "README.md",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/README.md",
+      "size_bytes": 2245,
+      "sha256": "17d6c03d7c1140fc6b84755ea30e32da796323602352abb30a6182cc1fe33c4b"
+    },
+    {
+      "filename": "battle_effect_player_tests.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/battle_effect_player_tests.py",
+      "size_bytes": 3921,
+      "sha256": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    },
+    {
+      "filename": "adapter_contract.proposal.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/contracts/adapter_contract.proposal.json",
+      "size_bytes": 1861,
+      "sha256": "959dd33000e2a9ea35c7216ce9d0a6c3f97b2cc6f98e3b1bc019313c48b56d2e"
+    },
+    {
+      "filename": "event_to_presentation.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/contracts/event_to_presentation.json",
+      "size_bytes": 1614,
+      "sha256": "4016ee993a4716070680c9f450293d440052143732664c8817bfc3e9f9d1a97b"
+    },
+    {
+      "filename": "sequence_gap_cases.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/contracts/sequence_gap_cases.json",
+      "size_bytes": 996,
+      "sha256": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/delivery_manifest.json",
+      "size_bytes": 3395,
+      "sha256": "f7dc55f067f2025477e3f80ff13feca0e8647c2894ea5b0917349966711894e5"
+    },
+    {
+      "filename": "README.md",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/docs/README.md",
+      "size_bytes": 2802,
+      "sha256": "4dfed272761344cb65d00beaa0a0ff648eea9cd3ff16f2b88fa248e906fb67aa"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/docs/source_input_receipt.json",
+      "size_bytes": 1718,
+      "sha256": "9e06db32afd6e1f49bbef2ab5e0f3a6e72402bc8d96657d2cf6f97eeca7659d2"
+    },
+    {
+      "filename": "test_run.txt",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/docs/test_run.txt",
+      "size_bytes": 1655,
+      "sha256": "f1c63d068e5a9f304d8a46f316d917efa10537b874a2b3ab93ecee08ae77df3a"
+    },
+    {
+      "filename": "validation_status.md",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/docs/validation_status.md",
+      "size_bytes": 999,
+      "sha256": "b10654d6767b81e19af365a90a6214be5c0654b530ef452341fc1474d11e0a1e"
+    },
+    {
+      "filename": "__init__.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/runtime/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "filename": "__init__.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/runtime/animation/__init__.py",
+      "size_bytes": 39,
+      "sha256": "85b7783c059fc91d351b20f8b57a7facb246250668c404a59fc9aea5854bc86d"
+    },
+    {
+      "filename": "battle_animation_player.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/runtime/animation/battle_animation_player.py",
+      "size_bytes": 6311,
+      "sha256": "b381d15bc21f069e9b6e8f6d4910656705789f76f7c64780a694df68867a7bc9"
+    },
+    {
+      "filename": "sequence_gap_cases.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/sequence_gap_cases.json",
+      "size_bytes": 996,
+      "sha256": "2cb9bd4c91e6a7709eb0fc67e0fc4125418b6d28925c81fdc340df3b6f099952"
+    },
+    {
+      "filename": "__init__.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/tests/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "filename": "test_battle_animation_player.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/target_fixture/tests/test_battle_animation_player.py",
+      "size_bytes": 3921,
+      "sha256": "619a05c07d79afa3892d709e603745363f9c8098ee8314babb1a424ea87b7e62"
+    },
+    {
+      "filename": "test_plan.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/test_plan.json",
+      "size_bytes": 3084,
+      "sha256": "8ce458d81b8384a40fabeb31b3c38c1f943c0d18c72dc3cbbec7184fcc55fc48"
+    },
+    {
+      "filename": "test_p29_presentation_contract.py",
+      "package_relative_path": "P32_QA_Automation_V0.1/tests/automated/test_p29_presentation_contract.py",
+      "size_bytes": 2741,
+      "sha256": "b95f5aeb785e76287a9a99619d7a376b417005ce74b13029ba33a577e164f1eb"
+    },
+    {
+      "filename": "fault_scenarios.json",
+      "package_relative_path": "P32_QA_Automation_V0.1/tests/fault_injection/fault_scenarios.json",
+      "size_bytes": 1320,
+      "sha256": "270890a70745dafd56e78185d7761a6fe5cba4526d3db42cb96d29ffaece7d23"
+    }
+  ]
+}

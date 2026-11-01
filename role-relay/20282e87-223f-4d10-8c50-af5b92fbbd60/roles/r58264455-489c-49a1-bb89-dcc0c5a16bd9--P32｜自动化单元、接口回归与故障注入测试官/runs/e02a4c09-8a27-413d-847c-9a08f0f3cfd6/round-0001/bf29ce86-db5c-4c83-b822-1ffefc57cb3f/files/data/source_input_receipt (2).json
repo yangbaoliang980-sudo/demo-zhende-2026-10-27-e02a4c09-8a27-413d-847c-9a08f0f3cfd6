@@ -1,0 +1,54 @@
+{
+  "schema_version": "P29-SOURCE-INPUT-RECEIPT/0.1.0",
+  "task_id": "P29-S03-ANIMATION-PLAYER-001",
+  "inputs": [
+    {
+      "name": "P28_delivery_receipt.json",
+      "size_bytes": 3982,
+      "sha256": "fa7066e43089e5a56b7425898a698ee6dcf4405356073d65aa08367a4ab515d0",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "P27_enemy_anchors.tsv",
+      "size_bytes": 972,
+      "sha256": "5f7ab83d7f984506b7e641ac57a510d532e9ed47b28a0ac660e2963dfab11bc7",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "P23_reduced_motion_cases.md",
+      "size_bytes": 5419,
+      "sha256": "5404d0590088cbd8af30cda3078cd28f35960909cd42ef098f015b82d537d08f",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "P13_actual_path_mapping.json",
+      "size_bytes": 16790,
+      "sha256": "388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "relay-materials-1.zip",
+      "size_bytes": 9860545,
+      "sha256": "c7fec8a67674fe31772e2303e1ecdf38605966ed49fe27a6a0ce2c2d050da162",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "relay-materials-2.zip",
+      "size_bytes": 12572377,
+      "sha256": "2e9842b8754cf6071d12788044e282aa99d3ed64bdb97dabd6e373fb23fd5bff",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "relay-materials-3.zip",
+      "size_bytes": 15634808,
+      "sha256": "742e5f424048577ad1eda5c5c96d0fad01e97a81a270f824272c22c9bf7bd419",
+      "status": "READ_AND_HASHED"
+    },
+    {
+      "name": "relay-materials-4.zip",
+      "size_bytes": 6652787,
+      "sha256": "d74af05e17fdf03dbe3f5a32dbe19df706027120a5ef5f4793f23d09922a5d4c",
+      "status": "READ_AND_HASHED"
+    }
+  ]
+}

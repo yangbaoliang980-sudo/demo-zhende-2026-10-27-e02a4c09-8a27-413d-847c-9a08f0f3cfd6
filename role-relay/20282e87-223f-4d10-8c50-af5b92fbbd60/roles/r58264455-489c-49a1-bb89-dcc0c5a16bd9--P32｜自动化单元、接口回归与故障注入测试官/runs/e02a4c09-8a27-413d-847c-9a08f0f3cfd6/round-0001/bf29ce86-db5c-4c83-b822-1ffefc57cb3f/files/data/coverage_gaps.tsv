@@ -1,0 +1,10 @@
+area	coverage	status	missing_evidence	responsible_owner
+COST	P14/P15 atomic fee transaction	BLOCKED	Need frozen P14 DTO, P15 action contract, executable fixture and hashes	P14/P15
+ANKI_IDENTITY_UNDO	Anki event identity, repeat, Undo, backup generation	BLOCKED	Need P10 real target probe logs and P12 protocol version; no mock may be promoted to E2E	P10/P12
+SAVE_MIGRATION	P21 migration/crash recovery	BLOCKED	Need P21 executable module and migration fixtures	P21
+FIRST_CLEAR	P18 stage-scoped first-clear duplicate protection	BLOCKED	Need P18 StageProgress contract and P21 transaction adapter fixture	P18/P21
+BOSS_LETHAL	Boss phase/death/outcome ordering	BLOCKED	Need P14/P16 authoritative runtime and fixed-seed cases	P14/P16
+ANIMATION_SEQ	P29 event presentation sequencing	PARTIAL	Isolated P29 Python fixture tested; 2 failures reported; no Unity adapter	P29
+BUILD_HASH_PAIR	Client + Anki plugin build version/hash parity	BLOCKED	Need both candidate artifacts, version metadata and build logs	P36/P12
+UNITY_IMPORT	Unity import/playmode	NOT_RUN	No real Unity project or engine build supplied	P13/P36
+REAL_ANKI_E2E	Anki desktop end-to-end	NOT_RUN	No target Anki installation or executable probe session	P10/P12/P33

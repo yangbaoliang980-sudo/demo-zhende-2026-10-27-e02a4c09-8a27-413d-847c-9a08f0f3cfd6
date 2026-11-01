@@ -1,0 +1,16 @@
+{
+  "schema_version": "P29-EVENT-PRESENTATION-MAP/0.1.0-proposal",
+  "status": "PROPOSAL_NOT_FROZEN",
+  "mapping": [
+    {"event_type":"CARD_PLAYED","effect":"card_travel","duration_ms":260,"requires":["source_rect","target_rect"],"fallback":"card_arrive_without_travel"},
+    {"event_type":"DAMAGE_APPLIED","effect":"impact","duration_ms":90,"requires":["target_rect"],"fallback":"impact_without_anchor"},
+    {"event_type":"SHIELD_ABSORBED","effect":"shield_absorb","duration_ms":180,"requires":["shield_absorbed"],"fallback":"static_result_log"},
+    {"event_type":"HEAL_APPLIED","effect":"heal","duration_ms":240,"requires":["amount"],"fallback":"static_result_log"},
+    {"event_type":"STATUS_APPLIED","effect":"status_fly_in","duration_ms":220,"requires":["status_id"],"fallback":"static_status_label"},
+    {"event_type":"ENTITY_DEFEATED","effect":"death_dissolve","duration_ms":360,"requires":["target_id"],"fallback":"show_authoritative_terminal_state"},
+    {"event_type":"ENEMY_INTENT_REVEALED","effect":"intent_emphasis","duration_ms":160,"requires":["target_id"],"fallback":"static_intent_label"},
+    {"event_type":"BATTLE_FINISHED","effect":"battle_finished","duration_ms":0,"requires":["authoritative_snapshot"],"fallback":"show_authoritative_terminal_state"},
+    {"event_type":"AUDIO_CUE","effect":"audio","duration_ms":0,"requires":["cue"],"fallback":"silent"}
+  ],
+  "timing_source": "P28 handoff text: card travel 260ms, hit 90ms, shield 180ms, heal 240ms, status 220ms, death 360ms, intent emphasis 160ms. P28 states these are recommendations for P29 adaptation, not frozen engine values."
+}

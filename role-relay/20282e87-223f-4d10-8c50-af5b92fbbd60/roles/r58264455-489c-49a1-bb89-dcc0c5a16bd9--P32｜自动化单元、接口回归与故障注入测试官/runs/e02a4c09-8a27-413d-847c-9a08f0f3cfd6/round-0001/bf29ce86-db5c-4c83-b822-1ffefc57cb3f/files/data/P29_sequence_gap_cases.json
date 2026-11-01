@@ -1,0 +1,12 @@
+{
+  "schema_version": "P29-SEQ-GAP-CASES/0.1.0",
+  "cases": [
+    {"id":"SEQ-01","last_seq":10,"received_seq":12,"expected":"SYNC_REQUIRED","action":"stop consuming; request latest authoritative snapshot; do not synthesize seq 11"},
+    {"id":"SEQ-02","last_seq":10,"received_seq":10,"expected":"DUPLICATE","action":"ignore event"},
+    {"id":"SEQ-03","last_seq":10,"received_seq":9,"expected":"DUPLICATE","action":"ignore old event"},
+    {"id":"SEQ-04","epoch":3,"received_epoch":2,"expected":"STALE_EPOCH","action":"discard stale visual event"},
+    {"id":"SEQ-05","epoch":3,"received_epoch":4,"expected":"SYNC_REQUIRED","action":"require new authoritative snapshot before accepting new epoch"},
+    {"id":"SEQ-06","lifecycle":"background_resume","expected":"snapshot_required","action":"cancel decoration and reset visual state from latest snapshot"},
+    {"id":"SEQ-07","skip_calls":3,"expected":"one logical cancellation","action":"idempotent visual cancellation; no domain command"}
+  ]
+}

@@ -1,0 +1,19 @@
+test_background_requires_snapshot (test_battle_animation_player.PlayerTests.test_background_requires_snapshot) ... ok
+test_fast_collapses (test_battle_animation_player.PlayerTests.test_fast_collapses) ... ok
+test_gap_no_advance (test_battle_animation_player.PlayerTests.test_gap_no_advance) ... ok
+test_hp_interpolation_is_visual_only (test_battle_animation_player.PlayerTests.test_hp_interpolation_is_visual_only) ... ok
+test_invalid_event (test_battle_animation_player.PlayerTests.test_invalid_event) ... ok
+test_missing_anchors_do_not_guess (test_battle_animation_player.PlayerTests.test_missing_anchors_do_not_guess) ... ok
+test_muted_audio (test_battle_animation_player.PlayerTests.test_muted_audio) ... ok
+test_order_duplicate (test_battle_animation_player.PlayerTests.test_order_duplicate) ... ok
+test_reduced_mode_flushes_pending_facts (test_battle_animation_player.PlayerTests.test_reduced_mode_flushes_pending_facts) ... ok
+test_reduced_none_preserve_result_only (test_battle_animation_player.PlayerTests.test_reduced_none_preserve_result_only) ... ok
+test_skip_flushes_committed_result_facts (test_battle_animation_player.PlayerTests.test_skip_flushes_committed_result_facts) ... ok
+test_skip_idempotent_preserves_snapshot (test_battle_animation_player.PlayerTests.test_skip_idempotent_preserves_snapshot) ... ok
+test_snapshot_recovery_discards_queue (test_battle_animation_player.PlayerTests.test_snapshot_recovery_discards_queue) ... ok
+test_stale_and_future_epoch (test_battle_animation_player.PlayerTests.test_stale_and_future_epoch) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK

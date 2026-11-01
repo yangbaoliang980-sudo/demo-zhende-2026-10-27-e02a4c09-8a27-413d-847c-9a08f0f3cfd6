@@ -1,0 +1,23 @@
+{
+  "schema_version": "P29-PRESENTATION-ADAPTER/0.1.0-proposal",
+  "status": "PROPOSAL_NOT_FROZEN",
+  "ownership": {
+    "P14": "authoritative battle state, HP, shield, damage, outcome and event sequence",
+    "P19": "HUD state, input, viewport anchors and UI lifecycle",
+    "P29": "decorative event consumer, animation cancellation, presentation-only interpolation and audio cue dispatch"
+  },
+  "event_required_fields": ["seq", "event_id", "event_type", "battle_id", "epoch"],
+  "event_optional_fields": ["payload"],
+  "snapshot_required_fields": ["battle_id", "hp", "shield", "outcome", "revision"],
+  "snapshot_recovery": "On sequence gap, future epoch, resume or stale visual state, stop queue consumption and request the latest P14 snapshot through the host adapter. Replace presentation baseline; do not synthesize or replay missing events.",
+  "presentation_anchor_policy": "Use only current P19 sampled source_rect/target_rect. Never infer coordinates from hand index, enemy_id or P27 visual-center proposal.",
+  "provisional_event_aliases": ["CARD_PLAYED", "CARD_COMMITTED", "DAMAGE_APPLIED", "SHIELD_ABSORBED", "HEAL_APPLIED", "STATUS_APPLIED", "STATUS_REMOVED", "ENTITY_DEFEATED", "ENEMY_INTENT_REVEALED", "BATTLE_FINISHED", "AUDIO_CUE"],
+  "modes": {
+    "normal": "play optional decoration and always publish committed result facts",
+    "fast": "collapse decoration to terminal cue; no domain state change",
+    "reduced": "no travel, movement, shake, flash or scrolling numbers; static result facts only",
+    "none": "same persistent information as reduced, no optional animation/audio",
+    "skip": "cancel current visual epoch idempotently; preserve result log and domain state"
+  },
+  "non_goals": ["no HP writes", "no damage calculation", "no battle command emission", "no HUD business state writes", "no persistent preference storage"]
+}
