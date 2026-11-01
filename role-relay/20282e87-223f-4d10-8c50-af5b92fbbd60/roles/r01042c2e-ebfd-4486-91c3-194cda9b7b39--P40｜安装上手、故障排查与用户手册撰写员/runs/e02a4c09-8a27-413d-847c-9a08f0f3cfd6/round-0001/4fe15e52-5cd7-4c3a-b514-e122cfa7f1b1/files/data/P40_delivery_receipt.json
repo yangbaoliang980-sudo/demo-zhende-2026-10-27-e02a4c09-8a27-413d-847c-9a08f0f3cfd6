@@ -1,0 +1,157 @@
+{
+  "schema_version": "P40-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P40-S08-USERDOC-001",
+  "role": "P40｜安装上手、故障排查与用户手册撰写员",
+  "delivery_version": "P40-USERDOCS/0.1.0-pre-RC",
+  "status": "ISOLATED_DOCUMENTATION_PREPARED_RC_BLOCKED",
+  "archive": {
+    "filename": "P40_UserDocs_V0.1.zip",
+    "size_bytes": 30175,
+    "sha256": "bbcd4bea52805bb1bc1ff2dc9c1ca93299d69e954b12f22f0d08b0a377cf0da9"
+  },
+  "exports": [
+    {
+      "filename": "README.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/README.txt",
+      "size_bytes": 2983,
+      "sha256": "13d8ca1a90a105ba5ca90a4f9a7d8a3232eb5024beda6419299095387d20e8a8"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "P40_UserDocs_V0.1/delivery_manifest.json",
+      "size_bytes": 9120,
+      "sha256": "fb3074aeb302231d4ae96d6df50598bc37e80fee3b2d3853c2afa008bb969f92"
+    },
+    {
+      "filename": "anki_addon_guide.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/anki_addon_guide.txt",
+      "size_bytes": 5169,
+      "sha256": "1aa9aa611e3afd3ef9ff5a45fae11c6cae078db4f48fa9e825932485182c95cf"
+    },
+    {
+      "filename": "known_limits.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/known_limits.txt",
+      "size_bytes": 3592,
+      "sha256": "eace5b53297e8c99a8b8316a13ccd7250e5fd23061afe623f4a35f8f155f461b"
+    },
+    {
+      "filename": "recovery_guide.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/recovery_guide.txt",
+      "size_bytes": 5808,
+      "sha256": "0aba57d50bdd33f3b0f38582268c5f57e17fe8eac3d5976928424f0040cde062"
+    },
+    {
+      "filename": "diagnostic_decision_tree.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/troubleshooting/diagnostic_decision_tree.txt",
+      "size_bytes": 1798,
+      "sha256": "ac97a445fa5ed2b39e1cf7e104c492dffb72d7e5542df7779143f3f4dfeb340a"
+    },
+    {
+      "filename": "error_index.tsv",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/troubleshooting/error_index.tsv",
+      "size_bytes": 5150,
+      "sha256": "5c30658fe6567d3bdab85ba4d88a46372bc28d3497767ccbd3a30b36c4aa5950"
+    },
+    {
+      "filename": "support_report_template.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/troubleshooting/support_report_template.txt",
+      "size_bytes": 1100,
+      "sha256": "3e1deea5baa6e79b099e898fcb388dd2a3c6d990ad87b14ab34b5e768c070d37"
+    },
+    {
+      "filename": "quick_start.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/user/quick_start.txt",
+      "size_bytes": 1377,
+      "sha256": "3acf7d7a2d37a77ed3ee71fd6e77ca2ceb8e664e3a60631333b39af63d3bb789"
+    },
+    {
+      "filename": "rc_binding_template.tsv",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/user/rc_binding_template.tsv",
+      "size_bytes": 1059,
+      "sha256": "ce4130e4906fc94521c21f19ff06533e22b7174ef3b03887d25e3b47bd1d579d"
+    },
+    {
+      "filename": "verify_delivery.py",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/user/verify_delivery.py",
+      "size_bytes": 1873,
+      "sha256": "db77a447b7d5da43faf9be67e1d44588674596dedd0d8420d5afbfc01f2195ab"
+    },
+    {
+      "filename": "version_scope_matrix.tsv",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/user/version_scope_matrix.tsv",
+      "size_bytes": 876,
+      "sha256": "7fe2a85185a873dd62dfadf394a613aec712445701c3b4e4a9f92f1925dd9ed6"
+    },
+    {
+      "filename": "user_install_guide.txt",
+      "package_relative_path": "P40_UserDocs_V0.1/docs/user_install_guide.txt",
+      "size_bytes": 5048,
+      "sha256": "ce0e8b6a326aa6542cb637bf4831496f825f57bfa53c37d22e099cd0407a82b4"
+    },
+    {
+      "filename": "P33_replay_steps.tsv",
+      "package_relative_path": "P40_UserDocs_V0.1/evidence/P33_replay_steps.tsv",
+      "size_bytes": 2694,
+      "sha256": "936f3d04c8fc07e11ba1579b81b953ccad595e43228fc021baed05027b76b0f0"
+    },
+    {
+      "filename": "blocker_register.tsv",
+      "package_relative_path": "P40_UserDocs_V0.1/evidence/blocker_register.tsv",
+      "size_bytes": 1389,
+      "sha256": "57e7ab70bcb855462c68a147486b425405daa868a3ebfa6bfa263b738c917061"
+    },
+    {
+      "filename": "document_validation.json",
+      "package_relative_path": "P40_UserDocs_V0.1/evidence/document_validation.json",
+      "size_bytes": 1089,
+      "sha256": "aab147e110cc0029af17536195236d90a627c1196e191e8bcbae44e7424dbdd6"
+    },
+    {
+      "filename": "source_input_receipt.json",
+      "package_relative_path": "P40_UserDocs_V0.1/evidence/source_input_receipt.json",
+      "size_bytes": 7709,
+      "sha256": "042b72a4502ac1d97ad21e68ec50b457cdd040415c926a4a8272647fee1948ec"
+    }
+  ],
+  "verification": {
+    "zip_crc": "PASS",
+    "zip_members_byte_equal_to_individual_exports": 17,
+    "zip_member_count": 17,
+    "mismatches": [],
+    "author_document_manifest_check_stdout": "PASS: document file integrity 16/16; RC/WINDOWS/Anki tests NOT_RUN; P33/P35 NOT_RUN",
+    "author_document_manifest_check_exit_code": 0,
+    "fresh_unpack_integrity_exit_code": 0,
+    "fresh_unpack_integrity_stdout": "PASS: document file integrity 16/16; RC/WINDOWS/Anki tests NOT_RUN; P33/P35 NOT_RUN"
+  },
+  "test_status": {
+    "author_docs_integrity": "PASS",
+    "game_installation_windows": "NOT_RUN",
+    "Anki_addon_real": "NOT_RUN",
+    "actual_rewards": "NOT_RUN",
+    "P33_manual_same_RC": "NOT_RUN",
+    "P35_independent_release_gate": "NOT_RUN"
+  },
+  "missing_release_evidence": [
+    "P36 RC installer",
+    "P10 installable addon",
+    "P12 production interface/ACK contract",
+    "P21 Windows validated production recovery",
+    "P34 target compatibility matrix",
+    "P13 production actual_path_mapping",
+    "P33 step-by-step screenshots/logs",
+    "P35 gate"
+  ],
+  "production_write_authorized": false,
+  "production_repo_untouched": true,
+  "change_whitelist": [
+    "This new isolated P40_UserDocs_V0.1 package only; no other-role files modified"
+  ],
+  "recipient": [
+    "P33",
+    "P35",
+    "P36",
+    "future end user after RC approval"
+  ],
+  "integrator_action": "NO_CROSS_MODULE_INTEGRATION_PERFORMED",
+  "receipt_not_in_zip_to_avoid_self_reference": true
+}

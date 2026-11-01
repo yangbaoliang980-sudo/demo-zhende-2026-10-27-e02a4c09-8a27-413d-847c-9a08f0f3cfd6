@@ -1,0 +1,49 @@
+《言灵旅团》备份、恢复、回滚、卸载残留与数据损坏处理 V0.1
+状态：PRODUCTION_SAVE_PATH=NOT_AVAILABLE | P21_WINDOWS=NOT_RUN | PRODUCTION_BACKUP_RESTORE=NOT_AVAILABLE | P33_RC_RECOVERY=NOT_RUN
+重要：P21 当前 P21-PERSISTENCE/0.1.0-isolated 在 Linux 隔离环境实现 SQLite 物理存档和恢复测试；Windows 与正式游戏生产存档尚未验证。本文件不向用户提供会直接修改未知正式存档的命令。
+
+1. 出现异常的首要安全顺序
+R01 观察报错、失败时间、操作前后版本和 transaction_id/message_id；在不暴露卡片正文、密钥、个人资料的前提下保存截图和脱敏日志。
+R02 如果有 E_COMMIT_UNKNOWN / RETRY_LATER / PENDING_RECONCILIATION / E_ROLLBACK_DETECTED / 备份封印失败，停止继续消费和领取新资源；不要重复制造新 ID 来补救。
+R03 保持现有 Anki 档案与游戏数据不动。不要先删插件、清 outbox、删数据目录、重建空存档或直接用旧 ZIP 覆盖。
+R04 用支持方批准的只读状态查询比对原请求 ID/hash 与当前连续性高水位；当前正式用户查询入口 NOT_AVAILABLE，必须由 P12/P21 所有者提供。
+R05 保存原件和独立证据后再联系故障唯一 owner；需要代价性恢复时由 P01/用户明确批准。
+
+2. 三类数据必须分开看待
+  Anki：用户自己的学习集合、原始复习历史、自己的官方备份；P10 无权修改调度器或直接改数据库。现有版本的菜单/路径由 Anki 自身决定，未在目标 Anki 版本验过，不给硬编码路径。
+  游戏 P21：ledger / meta / stage 三个逻辑领域记录与 SQLite 存档、独立连续性锚点；游戏正式安装路径未知，未授权自动扫描用户电脑。
+  P12 outbox：可能包含尚未确认的原始投递身份；删除它可能破坏待对账证据。正式位置/用户导出方式未知。
+  以上项目不能简单合并为“备份一个目录即可全部恢复”。
+
+3. 当前可执行的无侵入工作
+R10 读取上游文档和校验自己已收到的独立交付文件：在 PowerShell 使用 `Get-FileHash -LiteralPath '真实存在的文件路径' -Algorithm SHA256`；本命令不写游戏存档。
+R11 如已有可靠的 Anki 正式备份机制，请按其对应已安装版本的官方操作执行，并核实备份可读性。不要在 Anki 数据库正在被使用时直接复制活动 SQLite 文件当作“已验证一致备份”。
+R12 对游戏当前不存在的正式保存目录、锚点、用户备份命令：NOT_AVAILABLE，不自行创建这些文件。
+R13 收集版本、进程/磁盘错误、操作序列、备份媒体空闲容量；避免发布完整私人资料或认证密钥。
+
+4. P21 隔离实现的设计语义（开发者理解，不作为 Windows 用户命令）
+  backup(destination)：在一致读取后生成封印并验证的只读备份，返回 BACKUP_VERIFIED；输出目录是新的独立目录。
+  inspect_backup(directory)：只读检查封印、文件 SHA、数据库与回执链；不能把一个普通压缩文件当有效备份。
+  compare_backup(store,directory)：比较实例、连续性、head、文档 hash，不修改活动记录。
+  stage_restore(...)：将旧/不确定备份仅放到 FROZEN/RECOVERY_REVIEW_ONLY 审查区域。
+  recover_exact(...)：仅备份 head 与当前独立连续性记录完全一致、身份可验证时才能恢复，保留损坏原件并重新核验；不会重放奖励。
+  migrate(...)：该隔离组件只验证自身物理 v1→v2；不能据此推断未来正式存档可降级或跨版本互换。
+  有过新的事务的旧备份，不得忽略历史硬覆盖；E_DATA_LOSS_OR_FOREIGN_RESTORE_BLOCKED 必须等待 P01 和用户授权及领域对账。
+
+5. 处理典型错误
+E_COMMIT_UNKNOWN：提交结果可能已写盘但响应丢失；优先查询同一事务 ID/请求 SHA；未取得可信 ABSENT 不得使用新 ID 再发一次。
+E_CONTINUITY_MISSING / E_CONTINUITY_MISMATCH / E_ROLLBACK_DETECTED / E_CONTINUITY_FORK：写入冻结，保留数据库、锚点与审计；禁止手工新建/删改锚点。
+E_CORRUPT / E_RECORD_CHECKSUM / E_RECEIPT_CHECKSUM / E_STRUCTURE_CORRUPT / E_MIGRATION_AUDIT：保全损坏原件，要求 P21 提供受控恢复；不得“修复”哈希或清空历史。
+E_DISK_FULL：先排查磁盘容量，但不能假设操作失败即未提交。提交后锚点写失败也可能属于 UNKNOWN。
+E_BUSY：等待占用条件消除，再以原事务身份查询/重试；不要同时打开多个程序手动编辑活动数据库。
+E_READER_TOO_OLD / E_MIGRATION_REQUIRED / E_SCHEMA_TOO_NEW：暂停写入，按实际 reader/格式版本匹配迁移；不允许旧版进程写新版存档。
+E_P11_P17_WALLET_BINDING_UNBOUND：正式钱包无损映射缺失，不能代币余额补丁绕过。
+
+6. 卸载、回滚和重装的可靠流程入场条件
+U01 P36 提供已验证的真实卸载器及残留目录表；P10 提供 Anki 插件和 outbox 残留政策；P21 提供游戏数据/锚点导出校验与恢复版本矩阵；P38 提供隐私删除说明。
+U02 P33 在同一 RC 和插件版执行：先保全→停用（不丢单据）→正常卸载→重启→检查残留→可选重装→一致性核查。结果与日志必须可追溯。
+U03 以上未满足，当前正式卸载/回滚步骤 NOT_AVAILABLE，不猜测任何软件卸载器名字、注册表键或 AppData 下路径。
+U04 正式版残留项目的“保留、用户可选删除、禁止自动删除”划分，须由数据 owner 和 P38 审批。
+
+7. 升级前必需记录
+当前 RC 完整版本、安装包 SHA、Anki 版本和插件 hash、P12 协议版本、P21 数据格式与现有实例/连续性、尚未确认投递/经济操作、P33 测试证据。缺一项即 BLOCKED。

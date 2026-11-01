@@ -1,0 +1,48 @@
+《言灵旅团》Windows 初装、连接与卸载说明 V0.1
+任务 P40-S08-USERDOC-001 | 2026-11-01 | 当前适用对象：内测准备/核验人员，而非终端安装者
+RC_ID=NOT_AVAILABLE | RC_SHA256=NOT_AVAILABLE | ENGINE_BUILD=NOT_AVAILABLE | ANKI_TARGET_VERSION=NOT_AVAILABLE
+状态：DOCUMENT_DRAFT_ONLY，真实步骤 BLOCKED，Windows 实机执行 NOT_RUN。
+
+A. 使用前资格核验（可以在未安装任何软件时执行）
+A01 获取 P36 签发的 RC 安装文件与固定 Git 提交、release_manifest、真实构建日志、目标 Windows 版本/架构、预期安装/卸载形式；本轮缺失，不能继续 A05。
+A02 获取 P10 的正式安装包、安装/停用/卸载说明与 SHA-256；当前只有 P10 探针报告，NOT_AVAILABLE。
+A03 获取 P13 当前生产实际路径映射与 P35 放行回执；当前 P13 actual_game_repository、commit、engine、target_os 为 null，production_write_authorized=false。
+A04 获取 P34 兼容矩阵的实际通过项、Anki 全版本号与测试数据；当前真机兼容性 NOT_RUN。
+A05 仅当 A01-A04 全部已绑定同一个 RC/Anki/接口版本并被审核时，进行 B 段；否则停止。
+
+B. 文件完整性核验（可复用的 Windows PowerShell 命令，不代表已取得 RC）
+B01 将未来获得的正式安装文件放入你自选的单独目录。不要以管理员身份执行不明来源脚本。
+B02 在 PowerShell 运行：
+  $candidate = 'C:\\replace-with-your-verified-rc-file.exe'
+  Get-FileHash -LiteralPath $candidate -Algorithm SHA256 | Format-List Path,Hash,Algorithm
+  ※ $candidate 是示意用变量，不能照抄当做真实路径；实际扩展名由 P36 签发文件决定，不一定是 exe。
+B03 将 Hash 与同一 RC 的 P36 签发清单精确逐字比较（大小写不影响十六进制值）。无文件或不一致：FAIL，隔离该文件并上报 P36；不得修改扩展名或重打包绕过校验。
+B04 核对 Windows 版本、位数、剩余磁盘与 P34 适用矩阵，不匹配即 BLOCKED。
+B05 无法校验发行者/代码签名/散列的文件不得继续执行。禁止以关闭系统防护方式绕过阻止；请原发行者 P36 处理。
+
+C. 正式安装与初次启动（本次全部 NOT_AVAILABLE，禁止猜测菜单）
+C01 安装入口、交互提示、安装范围及权限要求：NOT_AVAILABLE（P36 未提供候选 RC）。
+C02 目标安装目录、进程名、程序入口/快捷方式：NOT_AVAILABLE（未取得正式构建）。
+C03 初次启动、账户/本机档案绑定与许可说明：NOT_AVAILABLE（P13/P38/P36 未放行）。
+C04 Anki 插件安装、启用/停用、配对、授权范围：NOT_AVAILABLE（详见 docs/anki_addon_guide.txt）。
+C05 首次复习、四个评分按钮、游戏奖励确认、Undo/重答：NOT_AVAILABLE（P10 真机 Hook 身份未验证、P11/P17 生产账务未接线）。
+C06 三人编队、成长消耗、战斗/章节入口、Boss：NOT_AVAILABLE（目前只有独立模块或界面预览，未证明整合）。
+C07 退出游戏、重启与自动重连：NOT_AVAILABLE（没有 P33 针对 RC 的复走日志）。
+
+D. 预计用户体验流程及证据要求（只是 RC 入场条件，不是已存在菜单）
+D01 由 P36 显示可追溯程序版本和构建 SHA（P33 拍摄/文本记录）。
+D02 由 P10 显示已启用的正式插件版本以及 Anki 版本（P33 记录）；不要仅凭图标判断。
+D03 P12 HELLO 应协商同版本协议、同本机配对作用域；状态必须来自真实进程。
+D04 用有授权的测试 Anki 档案做真实四键复习，保留触发身份、账本状态、当前奖励投影和撤销证据；P32/P33 检查重复请求只获得一次收益。
+D05 在已确认游戏权威存档状态下验收三人编队、资源消耗与一场卡牌战斗；特效可关闭而计算不变。
+D06 P33 必须为 D01-D05 绑定同一 RC/插件/Anki 版本、步骤 ID、截图或原始日志；没有证据一律 NOT_RUN。
+
+E. 停用、卸载、重装和旧版回滚
+E01 当前发行版卸载入口/残留目录/是否自动保留存档：NOT_AVAILABLE（P36 未签发目录及卸载规则）。
+E02 在任何未来卸载前，先确认当前是否存在 ACK 未决、恢复冻结、余额待核对；未解决时保存证据并暂停卸载，禁止通过删文件清除 UNKNOWN。
+E03 使用经 P36 签发且被 P33 复走的卸载流程；未知数据目录不得擅自删除。Anki collection、备份、addon/outbox 与游戏存档须分别清点。
+E04 回滚到较旧版本应先核对 P21 Schema/reader 兼容性、P12 协议、P10 Hook 与独立连续性记录；不能简单覆盖新数据库、恢复旧文件或把旧 reader 用于新格式。
+E05 卸载后的残留清单和清理许可：NOT_AVAILABLE，P36/P21/P10/P38 核验后才能补写可执行用户步骤。
+
+F. 审查者复现约束
+每条真实指令需要 P36/P10 源说明的确切路径、命令、exit_code、截图/日志文件 SHA，以及 P33 步骤记录；当前没有这一证据，绝不能标 PASS。P35 独立审核也尚未通过。
