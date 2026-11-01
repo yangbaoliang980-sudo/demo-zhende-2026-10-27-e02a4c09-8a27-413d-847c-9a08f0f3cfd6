@@ -1,0 +1,60 @@
+{
+  "schema_version": "P33-DELIVERY-RECEIPT/0.1.0",
+  "task_id": "P33-S03-S08-MANUAL-E2E-001",
+  "status": "MANUAL_CASES_PREPARED_REAL_RC_BLOCKED_E2E_NOT_RUN",
+  "archive": {
+    "filename": "P33_Manual_E2E_V0.1.zip",
+    "size_bytes": 8597,
+    "sha256": "a0e9ff4f8c4a2344189ea4ff3ec7cdf6cb8d345dcd429256ea593934e3bc0c80"
+  },
+  "exports": [
+    {
+      "filename": "README.md",
+      "package_relative_path": "README.md",
+      "size_bytes": 489,
+      "sha256": "d1bcd2fe8a641b3f556a617ee66198c140130268bc7443c8098dcba6f3c3e44d"
+    },
+    {
+      "filename": "delivery_manifest.json",
+      "package_relative_path": "delivery_manifest.json",
+      "size_bytes": 1622,
+      "sha256": "f3c2e2eb48b646f786b24e4cf056a2ce12238d8e5bac4802dd537081a65b725b"
+    },
+    {
+      "filename": "session_log_template.json",
+      "package_relative_path": "qa/e2e_session_logs/session_log_template.json",
+      "size_bytes": 1808,
+      "sha256": "6c990d3efed88f4132f9ce96a3942b1a93485fa37811991507e5408b36f2d550"
+    },
+    {
+      "filename": "P32-DEF-001_skip_idempotency.md",
+      "package_relative_path": "qa/issue_repros/P32-DEF-001_skip_idempotency.md",
+      "size_bytes": 785,
+      "sha256": "63ed91fd35f99d39f9e82151b205d85e8814fc59de4a69ae201e7bfed2f2d100"
+    },
+    {
+      "filename": "P32-DEF-002_bool_sequence.md",
+      "package_relative_path": "qa/issue_repros/P32-DEF-002_bool_sequence.md",
+      "size_bytes": 757,
+      "sha256": "2fd43b6eba356bb27f9aadb907b860c2a6fdc16531939bebea637fdee32425c5"
+    },
+    {
+      "filename": "P33_manual_test_cases.tsv",
+      "package_relative_path": "qa/manual_test_cases/P33_manual_test_cases.tsv",
+      "size_bytes": 5659,
+      "sha256": "e2f0f1a469af43b5cea82e730d311f522deb9c86c7d48b22f70057bdc897843c"
+    },
+    {
+      "filename": "P33_delivery_report.md",
+      "package_relative_path": "reports/manual_e2e/P33_delivery_report.md",
+      "size_bytes": 2577,
+      "sha256": "2edda0bf0838568515d6783a4ea92c57a3c9a501e76e3be8dc3f8a99d9509a72"
+    }
+  ],
+  "verification": {
+    "zip_crc": "PASS",
+    "archive_members_byte_equal_to_source": 7,
+    "mismatches": 0,
+    "manual_test_case_count": 22
+  }
+}
