@@ -1,0 +1,35 @@
+P42 当前审查结论：正式对外发布暂不放行，状态为 `DEFERRED`。但本次可以完成内部发布准备度审查、素材清点、版权风险登记和反馈机制模板交付。
+
+我已读取你提供的 V6.0 GitHub 仓库，并开始检查四个 `relay-materials` 压缩包及其内部压缩包，而不是仅根据文件名判断。
+
+目前已经确认几个关键问题：
+
+1. V6.0 将 P42 列为条件保留岗位，并非首批常驻岗位。
+2. P27 已有三类敌方视觉草稿，但仍是隔离草稿，P25 正式审美复核、P37 版权复核和 P35 独立审查均未完成。
+3. P24 的 UI 资产仍属于占位资产，来源说明明确写明正式许可审核尚未执行。
+4. P32 的独立测试存在 2 项失败，且没有真实 Unity、Windows 构建、Anki 或完整 E2E 验收。
+5. P40 的用户手册交付仍标记为 RC 阻塞，缺少正式安装包和 P35 放行证据。
+
+因此，不能把现有截图、敌人草稿或隔离测试结果包装成已经发布的游戏功能。
+
+---
+
+## 本次归档的原始文件
+
+- [ZeninTCG - Fan made - Tamers Chibi Sticker Pack.jpg](files/images/ZeninTCG%20-%20Fan%20made%20-%20Tamers%20Chibi%20Sticker%20Pack.jpg)
+- [InnoFusion 3.0 _ The Clan Wars - 30-Hour India's Premier Software + Hardware Hackathon.jpg](files/images/InnoFusion%203.0%20_%20The%20Clan%20Wars%20-%2030-Hour%20India's%20Premier%20Software%20%2B%20Hardware%20Hackathon.jpg)
+- [エレメンタルストーリー公式攻略Wiki _ マッシュエンペラー.jpg](files/images/%E3%82%A8%E3%83%AC%E3%83%A1%E3%83%B3%E3%82%BF%E3%83%AB%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E5%85%AC%E5%BC%8F%E6%94%BB%E7%95%A5Wiki%20_%20%E3%83%9E%E3%83%83%E3%82%B7%E3%83%A5%E3%82%A8%E3%83%B3%E3%83%9A%E3%83%A9%E3%83%BC.jpg)
+- [Glowing arrow creating a neon light speed trail.jpg](files/images/Glowing%20arrow%20creating%20a%20neon%20light%20speed%20trail.jpg)
+- [50 Hit Impact VFX.jpg](files/images/50%20Hit%20Impact%20VFX.jpg)
+- [VFX Area of Effect.jpg](files/images/VFX%20Area%20of%20Effect.jpg)
+- [Unity Game VFX - Light Skill Collection - EricWang(Unity VFX Artist) - BOOTH.jpg](files/images/Unity%20Game%20VFX%20-%20Light%20Skill%20Collection%20-%20EricWang(Unity%20VFX%20Artist)%20-%20BOOTH.jpg)
+- [Download Twinkling Starburst Emblem PNG 05252024 PNG _ Wallpapers.com.jpg](files/images/Download%20Twinkling%20Starburst%20Emblem%20PNG%2005252024%20PNG%20_%20Wallpapers.com.jpg)
+- [Purple Shard Cascade.jpg](files/images/Purple%20Shard%20Cascade.jpg)
+- [千棘海刺 - 洛克王国_手游WIKI_BWIKI_哔哩哔哩.jpg](files/images/%E5%8D%83%E6%A3%98%E6%B5%B7%E5%88%BA%20-%20%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD_%E6%89%8B%E6%B8%B8WIKI_BWIKI_%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9.jpg)
+- [P27_silhouette_review_board.png](files/images/P27_silhouette_review_board.png)
+- [P27_card_layout_studies.png](files/images/P27_card_layout_studies.png)
+- [relay-materials-1-e26970a5e7.zip](files/archives/relay-materials-1-e26970a5e7.zip)
+- [relay-materials-2-ca6ada3652.zip](files/archives/relay-materials-2-ca6ada3652.zip)
+- [relay-materials-3-166c0973a2.zip](files/archives/relay-materials-3-166c0973a2.zip)
+- [relay-materials-4-1c81a8a0fa.zip](files/archives/relay-materials-4-1c81a8a0fa.zip)
+
