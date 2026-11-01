@@ -1,0 +1,17 @@
+source_path	filename	size_bytes	sha256	type	review_status
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/076/第六轮_游戏研发岗位体系最终冻结版V6.0.txt	3__第六轮_游戏研发岗位体系最终冻结版V6.0.txt	226868	4008473917142fdf7cdc440ac278e63804bb50e450b9dbce6f598a951e1e782d	txt	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/075/第六轮_27项接口契约冻结修订V6.0.json	3__第六轮_27项接口契约冻结修订V6.0.json	23619	fb962ab44daae8c7e286ed0b8926f41a33769ce44aacadd36adf7bf7eccd7f43	json	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/039/requirements_baseline_v6.txt	3__requirements_baseline_v6.txt	6715	1d08c3efed7532205eaff97f0aa0726b70eb0635fcc41a04090785afcd1adac1	txt	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/041/prd_scope_v0.md	3__prd_scope_v0.md	2828	1904ac7aba65b22a09589fa4f6ffff693806c96abe9add54edf6606399f67d7f	md	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/040/decisions_pending.tsv	3__decisions_pending.tsv	3021	3acc747185cb78215d30a54c9b855f4d7e34987c9fd46ed6f323752740e498c4	tsv	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/051/actual_path_mapping.json	3__actual_path_mapping.json	16790	388113be16ac8cd4aa84e49cf2a563c2c12f738a528a0d81ba434f5ec61b1d6f	json	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/073/content_id_registry.tsv	3__content_id_registry.tsv	27951	b96ff8cb7e3dc38813d817f23bef6d8a058ba78818143611d40c67d576943805	tsv	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/074/content_schema_spec.md	3__content_schema_spec.md	8881	295e50394e8a7a76999c32c72ef4ddc64533a2aa258fe2ad11be49ab1c8b006d	md	READ_VERIFIED_BYTES
+relay-materials-3!files/001/relay-materials-3-166c0973a2.zip!files/014/typography_accessibility_spec.md	3__typography_accessibility_spec.md	7400	65c25aebd992553aca4c856acea83d081c8481597c653d8b3c05deb72a59d84b	md	READ_VERIFIED_BYTES
+relay-materials-1!files/001/P40_delivery_receipt.json	1_P40_delivery_receipt.json	6139	14064ccff7a0fc5cb8815e106c83baf8a997bc8767a34313d31fb6496ad5a419	json	READ_VERIFIED_BYTES
+relay-materials-2!files/001/relay-materials-2-ca6ada3652.zip!files/006/style_bible.md	2__style_bible.md	15526	b89e7779c11cea6b50a68a7922b2217178655fb8f0226200cc774d09c98d01b4	md	READ_VERIFIED_BYTES
+relay-materials-4!files/001/relay-materials-4-1c81a8a0fa.zip!files/013/P24_delivery_report.md	4__P24_delivery_report.md	6221	a1d3eaa18ad46b0d362b95791bfa5594b49ddc5d682e8f2a444bda57f518c5d0	md	READ_VERIFIED_BYTES
+uploaded-sandbox:/mnt/data/relay-materials-1-b2ca80425a.zip	relay-materials-1-b2ca80425a.zip	11071181	b2ca80425ac091205b6a4b11b9bff3288bb10a0a89f593d5fd3e5a6fb379fbda	zip	ZIP_CRC_AND_MANIFEST_MATCH
+uploaded-sandbox:/mnt/data/relay-materials-2-2e9842b875(4).zip	relay-materials-2-2e9842b875(4).zip	12572377	2e9842b8754cf6071d12788044e282aa99d3ed64bdb97dabd6e373fb23fd5bff	zip	ZIP_CRC_AND_MANIFEST_MATCH
+uploaded-sandbox:/mnt/data/relay-materials-3-742e5f4240(4).zip	relay-materials-3-742e5f4240(4).zip	15634808	742e5f424048577ad1eda5c5c96d0fad01e97a81a270f824272c22c9bf7bd419	zip	ZIP_CRC_AND_MANIFEST_MATCH
+uploaded-sandbox:/mnt/data/relay-materials-4-d74af05e17(4).zip	relay-materials-4-d74af05e17(4).zip	6652787	d74af05e17fdf03dbe3f5a32dbe19df706027120a5ef5f4793f23d09922a5d4c	zip	ZIP_CRC_AND_MANIFEST_MATCH

@@ -1,0 +1,120 @@
+{
+  "verified": {
+    "outer_zip_count": 4,
+    "nested_archive_count": 11,
+    "outer_and_inner_manifest_hash_match": true,
+    "all_archive_crc_checks_pass": true,
+    "source_artifact_count": 16,
+    "standalone_image_reference_count": 12
+  },
+  "p01": {
+    "scope_source": "requirements_baseline_v6.txt / prd_scope_v0.md",
+    "fixed_commit_claimed_by_P01": "8c370d731c323f86ff19642f4cc73f818498f641",
+    "story_scope_approved_in_supplied_evidence": false,
+    "user_story_expansion_approval_in_current_request": false,
+    "p01_approved_P41_story_task_id": null
+  },
+  "p13": {
+    "schema_version": "P13-ACTUAL-PATH-MAPPING/0.1.0",
+    "status": "ISOLATED_MAPPING_VERIFIED_TARGET_BLOCKED",
+    "actual_game_repository": null,
+    "actual_game_commit": null,
+    "production_write_authorized": false,
+    "P41_mapping_entries": 0,
+    "content_story_mapping_entries": 0
+  },
+  "p22": {
+    "registry_count": 137,
+    "lifecycle_counts": {
+      "CANDIDATE": 137
+    },
+    "kind_counts": {
+      "asset_request": 5,
+      "behavior_state": 18,
+      "card": 10,
+      "category": 8,
+      "chapter": 1,
+      "character": 7,
+      "effect": 10,
+      "enemy": 3,
+      "intent": 13,
+      "mapping_release": 1,
+      "phase": 3,
+      "phase_graph": 1,
+      "phase_transition": 2,
+      "progression_row": 21,
+      "reservation": 1,
+      "resource": 2,
+      "reward": 4,
+      "skill": 20,
+      "stage": 2,
+      "stage_edge": 1,
+      "status": 4
+    },
+    "candidate_character_ids": [
+      "MOCK_P03_CHAR_A",
+      "MOCK_P03_CHAR_B",
+      "MOCK_P03_CHAR_C",
+      "MOCK_P03_CHAR_D",
+      "MOCK_P04_CHAR_001",
+      "MOCK_P04_CHAR_002",
+      "MOCK_P04_CHAR_003"
+    ],
+    "candidate_stage_ids": [
+      "MOCK_P07_STAGE_001",
+      "MOCK_P07_STAGE_002"
+    ],
+    "candidate_chapter_ids": [
+      "MOCK_P07_CHAPTER_001"
+    ],
+    "localization_key_registration_count": 0,
+    "production_allowed_true_count": 0,
+    "limitation": "CANDIDATE IDs are not approved published story bindings"
+  },
+  "p23": {
+    "source_version": "P23-A11Y/0.1.0-proposal",
+    "UI_prose_length_numeric_story_limit_present_in_reviewed_file": false,
+    "verified_note": "wrap, CJK line breaking and full-text accessibility requirements; no approved story-specific max chars"
+  },
+  "p04": {
+    "fixed_canonical_personality_and_relationship_matrix_provided_in_checked_files": false
+  },
+  "p07": {
+    "fixed_approved_story_stage_graph_provided_in_checked_files": false
+  },
+  "p40": {
+    "receipt_status": "ISOLATED_DOCUMENTATION_PREPARED_RC_BLOCKED",
+    "claimed_original_zip": {
+      "filename": "P40_UserDocs_V0.1.zip",
+      "size_bytes": 30175,
+      "sha256": "bbcd4bea52805bb1bc1ff2dc9c1ca93299d69e954b12f22f0d08b0a377cf0da9"
+    },
+    "original_P40_archive_bytes_present_in_this_intake": false,
+    "P40_independent_docs_present": true
+  },
+  "contracts": [
+    {
+      "id": "IC-09",
+      "owner": "P04",
+      "implementation_verified": false,
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION"
+    },
+    {
+      "id": "IC-11",
+      "owner": "P07",
+      "implementation_verified": false,
+      "governance_status": "SPEC_FROZEN_PENDING_IMPLEMENTATION_VERIFICATION"
+    }
+  ],
+  "asset_policy": {
+    "reference_images_not_story_canon": true,
+    "third_party_rights_review_P37": "NOT_RUN",
+    "do_not_copy_reference_art_to_package": true
+  },
+  "github_connector": {
+    "repositories_metadata_access": "VERIFIED",
+    "repository_write": "NOT_PERFORMED",
+    "git_commit_by_this_P41_task": null
+  },
+  "caveat": "Absence is limited to supplied text, inspected archive contents and relevant connected evidence; it is not proof files do not exist elsewhere."
+}

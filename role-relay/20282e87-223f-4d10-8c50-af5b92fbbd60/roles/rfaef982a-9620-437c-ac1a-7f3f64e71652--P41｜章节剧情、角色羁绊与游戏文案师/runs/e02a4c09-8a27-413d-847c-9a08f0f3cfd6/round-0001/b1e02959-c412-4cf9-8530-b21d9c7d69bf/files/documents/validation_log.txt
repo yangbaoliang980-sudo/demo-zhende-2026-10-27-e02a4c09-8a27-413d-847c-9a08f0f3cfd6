@@ -1,0 +1,17 @@
+test_blocker_owners_present (__main__.GateTests.test_blocker_owners_present) ... ok
+test_generic_order_cannot_bypass_explicit_approval (__main__.GateTests.test_generic_order_cannot_bypass_explicit_approval) ... ok
+test_missing_content_baseline_blocks_after_approval (__main__.GateTests.test_missing_content_baseline_blocks_after_approval) ... ok
+test_no_production_write (__main__.GateTests.test_no_production_write) ... ok
+test_original_state_is_deferred (__main__.GateTests.test_original_state_is_deferred) ... ok
+test_source_registry_candidate_ids_not_release (__main__.GateTests.test_source_registry_candidate_ids_not_release) ... ok
+test_staged_approval_never_self_marks_pass (__main__.GateTests.test_staged_approval_never_self_marks_pass) ... ok
+test_story_files_absent (__main__.GateTests.test_story_files_absent) ... ok
+test_user_only_without_P01_stays_deferred (__main__.GateTests.test_user_only_without_P01_stays_deferred) ... ok
+test_verified_nested_archive_intake (__main__.GateTests.test_verified_nested_archive_intake) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+
+exit_code=0

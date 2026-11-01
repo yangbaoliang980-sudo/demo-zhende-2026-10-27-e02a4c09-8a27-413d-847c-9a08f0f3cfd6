@@ -1,0 +1,153 @@
+{
+  "manifest_checks": [
+    {
+      "outer": "relay-materials-1-b2ca80425a.zip",
+      "inner": "files/007/relay-materials-1-e69105fc1b.zip",
+      "inner_zip_members": 137,
+      "inner_manifest_verified": 136,
+      "inner_manifest_fail": []
+    },
+    {
+      "outer": "relay-materials-1-b2ca80425a.zip",
+      "outer_members": 8,
+      "outer_manifest_verified": 7,
+      "outer_manifest_fail": [],
+      "sha256": "b2ca80425ac091205b6a4b11b9bff3288bb10a0a89f593d5fd3e5a6fb379fbda"
+    },
+    {
+      "outer": "relay-materials-2-2e9842b875(4).zip",
+      "inner": "files/001/relay-materials-2-ca6ada3652.zip",
+      "inner_zip_members": 31,
+      "inner_manifest_verified": 30,
+      "inner_manifest_fail": []
+    },
+    {
+      "outer": "relay-materials-2-2e9842b875(4).zip",
+      "outer_members": 2,
+      "outer_manifest_verified": 1,
+      "outer_manifest_fail": [],
+      "sha256": "2e9842b8754cf6071d12788044e282aa99d3ed64bdb97dabd6e373fb23fd5bff"
+    },
+    {
+      "outer": "relay-materials-3-742e5f4240(4).zip",
+      "inner": "files/001/relay-materials-3-166c0973a2.zip",
+      "inner_zip_members": 133,
+      "inner_manifest_verified": 132,
+      "inner_manifest_fail": []
+    },
+    {
+      "outer": "relay-materials-3-742e5f4240(4).zip",
+      "outer_members": 2,
+      "outer_manifest_verified": 1,
+      "outer_manifest_fail": [],
+      "sha256": "742e5f424048577ad1eda5c5c96d0fad01e97a81a270f824272c22c9bf7bd419"
+    },
+    {
+      "outer": "relay-materials-4-d74af05e17(4).zip",
+      "inner": "files/001/relay-materials-4-1c81a8a0fa.zip",
+      "inner_zip_members": 31,
+      "inner_manifest_verified": 30,
+      "inner_manifest_fail": []
+    },
+    {
+      "outer": "relay-materials-4-d74af05e17(4).zip",
+      "outer_members": 2,
+      "outer_manifest_verified": 1,
+      "outer_manifest_fail": [],
+      "sha256": "d74af05e17fdf03dbe3f5a32dbe19df706027120a5ef5f4793f23d09922a5d4c"
+    }
+  ],
+  "crc_checks": [
+    {
+      "source": "relay-materials-1-b2ca80425a.zip",
+      "tier": "outer",
+      "member_count": 8,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-1-b2ca80425a.zip!files/007/relay-materials-1-e69105fc1b.zip",
+      "tier": "inner",
+      "member_count": 137,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-1-b2ca80425a.zip!files/007/relay-materials-1-e69105fc1b.zip!files/007/P32_QA_Automation_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 32,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-1-b2ca80425a.zip!files/007/relay-materials-1-e69105fc1b.zip!files/071/P31_AudioFeedback_V0.1_isolated.zip",
+      "tier": "embedded_original",
+      "member_count": 27,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-1-b2ca80425a.zip!files/007/relay-materials-1-e69105fc1b.zip!files/093/P29_BattleAnimationPlayer_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 21,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-1-b2ca80425a.zip!files/007/relay-materials-1-e69105fc1b.zip!files/125/P26_CandidateA_Isolated_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 47,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-2-2e9842b875(4).zip",
+      "tier": "outer",
+      "member_count": 2,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-2-2e9842b875(4).zip!files/001/relay-materials-2-ca6ada3652.zip",
+      "tier": "inner",
+      "member_count": 31,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-2-2e9842b875(4).zip!files/001/relay-materials-2-ca6ada3652.zip!files/001/P25_ArtDirection_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 574,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-3-742e5f4240(4).zip",
+      "tier": "outer",
+      "member_count": 2,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-3-742e5f4240(4).zip!files/001/relay-materials-3-166c0973a2.zip",
+      "tier": "inner",
+      "member_count": 133,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-3-742e5f4240(4).zip!files/001/relay-materials-3-166c0973a2.zip!files/001/P23_UX_Accessibility_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 172,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-4-d74af05e17(4).zip",
+      "tier": "outer",
+      "member_count": 2,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-4-d74af05e17(4).zip!files/001/relay-materials-4-1c81a8a0fa.zip",
+      "tier": "inner",
+      "member_count": 31,
+      "crc_bad_entry": null
+    },
+    {
+      "source": "relay-materials-4-d74af05e17(4).zip!files/001/relay-materials-4-1c81a8a0fa.zip!files/001/P24_UI_VisualAssets_V0.1.zip",
+      "tier": "embedded_original",
+      "member_count": 436,
+      "crc_bad_entry": null
+    }
+  ],
+  "claim": "Byte-level manifest and CRC checks apply only to received archives; archived P40 original ZIP not physically available."
+}

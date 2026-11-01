@@ -1,0 +1,54 @@
+{
+  "schema_version": "P41-ACTIVATION-GATE/0.1.0",
+  "handoff_reference_id": "P41-DEFERRED-PREFLIGHT-2026-11-01",
+  "role_id": "P41",
+  "stage_requested": "S09",
+  "execution_class": "NON_ACTIVATING_AUDIT_ONLY",
+  "policy_source": "V6.0 freeze: P41 DEFERRED until user explicitly approves S09 story and P01 issues approved task_id",
+  "gate_inputs": {
+    "user_s09_story_explicit_approval": false,
+    "p01_approved_task_id": null,
+    "p01_scope_version": null,
+    "p04_character_baseline_approved": false,
+    "p07_stage_baseline_approved": false,
+    "p22_released_ids_and_localization_key": false,
+    "p23_story_ui_limits_approved": false,
+    "p13_p41_actual_path_mapping_authorized": false,
+    "target_environment_bound": false
+  },
+  "status": "DEFERRED",
+  "reason": "S09 storyline expansion was not explicitly authorized; current request explicitly says P41 is not to start without separate approval.",
+  "input_status": "BLOCKED_IF_ACTIVATED",
+  "production_paths_written": [],
+  "story_content_created": false,
+  "localization_strings_created": false,
+  "new_story_characters_created": false,
+  "github_modified": false,
+  "cross_module_integration": "NOT_RUN",
+  "owner_review_status": {
+    "design_review": "NOT_RUN",
+    "story_content_unit": "NOT_RUN",
+    "story_content_contract": "NOT_RUN",
+    "story_UI_layout": "NOT_RUN",
+    "target_runtime": "NOT_RUN",
+    "E2E": "NOT_RUN",
+    "P32_review": "NOT_RUN",
+    "P33_manual": "NOT_RUN",
+    "P35_independent_gate": "NOT_RUN"
+  },
+  "receivers": [
+    "P01",
+    "P07",
+    "P20",
+    "P22",
+    "P37",
+    "P35"
+  ],
+  "unblock_requires": [
+    "explicit_user_story_authorization",
+    "P01_approved_task_id",
+    "P13_authorized_path_mapping",
+    "P04_P07_P22_P23_frozen_inputs"
+  ],
+  "no_upgrade_without_evidence": true
+}

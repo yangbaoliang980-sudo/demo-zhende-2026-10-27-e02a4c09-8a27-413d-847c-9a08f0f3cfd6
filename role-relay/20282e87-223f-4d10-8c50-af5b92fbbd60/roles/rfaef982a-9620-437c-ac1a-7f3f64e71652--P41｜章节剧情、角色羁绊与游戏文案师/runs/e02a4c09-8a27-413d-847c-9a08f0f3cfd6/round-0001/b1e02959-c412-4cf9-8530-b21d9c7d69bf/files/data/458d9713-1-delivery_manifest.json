@@ -1,0 +1,67 @@
+{
+  "schema_version": "P41-FILE-MANIFEST/0.1.0",
+  "meaning": "All package files other than this manifest, avoids self-hash",
+  "exports": [
+    {
+      "filename": "P41_activation_gate.json",
+      "package_relative_path": "P41_ActivationGate_V0.1/P41_activation_gate.json",
+      "size_bytes": 1800,
+      "sha256": "04783a1a05c8063e8157eab989a19681c3065202de51ac9e85e475b44ccc3cd7"
+    },
+    {
+      "filename": "README.md",
+      "package_relative_path": "P41_ActivationGate_V0.1/README.md",
+      "size_bytes": 2349,
+      "sha256": "d4812bfa4385d6143f5c345f2759ec07832bba2ee520b104ffa57358c761541e"
+    },
+    {
+      "filename": "blocker_register.tsv",
+      "package_relative_path": "P41_ActivationGate_V0.1/evidence/blocker_register.tsv",
+      "size_bytes": 2190,
+      "sha256": "e8960a6a0066c0a83fc3f580bb59c85f2bba53c6a431d5116f4881aa63a7e8c2"
+    },
+    {
+      "filename": "image_reference_inventory.json",
+      "package_relative_path": "P41_ActivationGate_V0.1/evidence/image_reference_inventory.json",
+      "size_bytes": 3030,
+      "sha256": "98fdbbc7bd079b27e19bd590c32f810d4d8deb67ee9a8e9c0c754cda9b0cbe1f"
+    },
+    {
+      "filename": "input_inspection.json",
+      "package_relative_path": "P41_ActivationGate_V0.1/evidence/input_inspection.json",
+      "size_bytes": 3704,
+      "sha256": "94cf7ae6bc99a5736016c89f44108cadcac02bd2c9b073044eacc28ea02aa2f2"
+    },
+    {
+      "filename": "relay_archive_checks.json",
+      "package_relative_path": "P41_ActivationGate_V0.1/evidence/relay_archive_checks.json",
+      "size_bytes": 5077,
+      "sha256": "27d0ba4a24500da687ef7eb7dc409b5863f14a8a565d2eecde19fe1dc3c253d4"
+    },
+    {
+      "filename": "source_inventory.tsv",
+      "package_relative_path": "P41_ActivationGate_V0.1/evidence/source_inventory.tsv",
+      "size_bytes": 3529,
+      "sha256": "ddf4b17c6ca9fe398b6e5f59b4e4915431610b19c06cad9a47e9af7b3ed43b65"
+    },
+    {
+      "filename": "gate_review.md",
+      "package_relative_path": "P41_ActivationGate_V0.1/gate_review.md",
+      "size_bytes": 2649,
+      "sha256": "7828869b5cfa6e8a8981c6835fd423bc1cc031ebd6a337388028726193850051"
+    },
+    {
+      "filename": "validation_log.txt",
+      "package_relative_path": "P41_ActivationGate_V0.1/tests/validation_log.txt",
+      "size_bytes": 1152,
+      "sha256": "cdec20ad18198206a7d0c4cb34b3aec32e6cba5da2254536d6b4b2dc1a4a98d2"
+    },
+    {
+      "filename": "verify_activation_gate.py",
+      "package_relative_path": "P41_ActivationGate_V0.1/tests/verify_activation_gate.py",
+      "size_bytes": 3539,
+      "sha256": "20aa45b89128473650a1fa1414c254054ab18b4788d622fbe1e8858f727c92ad"
+    }
+  ],
+  "no_independent_P35_approval": true
+}

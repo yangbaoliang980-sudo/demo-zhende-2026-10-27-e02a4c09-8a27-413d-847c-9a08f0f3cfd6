@@ -1,0 +1,11 @@
+blocker_id	required_evidence	owner	status	observed_reason	unblock_condition
+P41-ACT-001	S09 story scope explicitly approved by user	USER	DEFERRED	No written approval for story expansion in current request; original explicitly excludes P41	Must receive user statement authorizing S09 P41 storyline scope
+P41-ACT-002	P01 approved role activation / task ID and cost ceiling	P01	DEFERRED	V6 requires P01 approved task before P41 activation	P01 approval record + task ID + version + scope
+P41-IN-003	Canonical lore / role arc baseline and restrictions	P01	BLOCKED_AFTER_ACTIVATION	P01 supplied baseline describes game direction but not approved plot/lore	P01 world setting and forbidden elements with source sha
+P41-IN-004	Character personality / affinity / relationship baseline	P04	BLOCKED_AFTER_ACTIVATION	No P04 signed stable character personality map in reviewed sources	fixed P04 character data and approved character_id mappings
+P41-IN-005	Approved stages and chapter narrative slots	P07	BLOCKED_AFTER_ACTIVATION	P22 registry has mock candidate stage IDs only	P07 fixed stage graph, stage IDs and order
+P41-IN-006	Released canonical IDs and localization namespace	P22	BLOCKED_AFTER_ACTIVATION	137 registered definitions are CANDIDATE; zero localization_key definitions	P22 released IDs, localization_key syntax and validation version
+P41-IN-007	Approved text-length limits for story/dialogue/short tooltip	P23	BLOCKED_AFTER_ACTIVATION	Typography proposal covers wrapping but lacks fixed per-component story-length limits	P23 length and layout constraints with version
+P41-IN-008	Authorized target file paths and write scope	P13	BLOCKED_AFTER_ACTIVATION	P13 reports actual_game_repository=null and production_write_authorized=false, no P41 map	P13 actual_path_mapping for P41; user-authorized write scope
+P41-IN-009	Content legal/license and style reviews	P37/P25	NOT_RUN	Reference material is not verified as usable canon or distributable art	P37 review and P25 review for approved story content
+P41-QA-010	Independent contract/QA and release acceptance	P32/P33/P35	NOT_RUN	No active story content or authorized target build to test	Independent reports after content is actually produced
